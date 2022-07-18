@@ -1,0 +1,233 @@
+{
+    "infos": {
+        "title": "Wizard of Ice Dragon",
+        "class": "Wizard",
+        "position": "Middle-200",
+        "attack range": "1900",
+        "damage type": "Magical",
+        "gender": "Male (+Female)",
+        "age": "243 (Dragon: ???)",
+        "height": "172",
+        "race": "Human (Possessing a dragon's soul)",
+        "constellation": "Hexipolia the Wanderer",
+        "birth of month": "December 2nd, Month of Patience",
+        "like": "Peace, silence, reading",
+        "dislike": "Hot weather, loud things",
+        "story": "A curious case of a human wizard possessed by the soul of an ice dragon. Having fought alongside Kyle 100 years ago, this ancient ice wizard has actually existed far before even then. The dragon's soul is usually asleep, but wakes up occasionally to speak to him in the voice of a lover. The empire considers him a key figure, and has dispatched Rodina to monitor and protect him. He himself, however, only wishes to live in peace and quiet, away from the concerns of the world.",
+        "thumbnail": "./data/kr/assets/heroes/Pavel/ico.png",
+        "story_": "A curious case of a human wizard possessed by the soul of an ice dragon. Having fought alongside Kyle 100 years ago, this ancient ice wizard has actually existed far before even then. The dragon's soul is usually asleep, but wakes up occasionally to speak to him in the voice of a lover. The empire considers him a key figure, and has dispatched Rodina to monitor and protect him. He himself, however, only wishes to live in peace and quiet, away from the concerns of the world."
+    },
+    "skills": {
+        "1": {
+            "name": "Wedge of Cold Snap",
+            "cost": "2",
+            "cooldown": "12",
+            "description": "Deal ??? M.DMG to the targeted enemy and inflict Freeze for 5 sec. If any enemies are inflicted with Frost, deal DMG and inflict Freeze to them as well.",
+            "thumbnail": "./data/kr/assets/heroes/Pavel/skills/1.png"
+        },
+        "2": {
+            "name": "Ice Spear",
+            "cost": "2",
+            "cooldown": "8",
+            "description": "Attacks random enemies 5 times, dealing ??? M.DMG and inflicting Frost. When attacking enemies inflicted with Frost, creates an additional spear that deals extra half DMG. Additional spears do not inflict Frost. Enemies inflicted with Freeze take 50% increased DMG.",
+            "thumbnail": "./data/kr/assets/heroes/Pavel/skills/2.png"
+        },
+        "3": {
+            "name": "Icy Conquest",
+            "cost": "4",
+            "cooldown": "20",
+            "description": "Deals ??? M.DMG to all enemies. Enemies inflicted with Frost becomes inflicted with Freeze for 3 sec. Enemies inflicted with Freeze take 100% increased DMG.",
+            "thumbnail": "./data/kr/assets/heroes/Pavel/skills/3.png"
+        },
+        "4": {
+            "name": "Chill of Early Dawn",
+            "cost": null,
+            "cooldown": null,
+            "description": "Deals ??? M.DMG to 3 enemies every 15 sec and inflicts Frost on them to reduce their ATK Spd by 100 for 8 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Pavel/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "DMG is increased by 40%.",
+                    "thumbnail": "./data/kr/assets/heroes/Pavel/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "In exchange for 1 additional Mana Cost, Freeze duration is boosted by 5 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Pavel/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Mana cost is reduced by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Pavel/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Target changes to the enemy with the highest ATK.",
+                    "thumbnail": "./data/kr/assets/heroes/Pavel/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Mana cost is reduced by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Pavel/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Gain CC immunity while using said skill.",
+                    "thumbnail": "./data/kr/assets/heroes/Pavel/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Target's CC resistance is reduced by 250 for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Pavel/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Frost cannot be dispelled by dispel skills.",
+                    "thumbnail": "./data/kr/assets/heroes/Pavel/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit DMG +20%",
+                "thumbnail": "./data/kr/assets/heroes/Pavel/perks/light.png"
+            },
+            "dark": {
+                "effect": "Every 3 sec, attacks all enemies and deals 50% of ATK as M.DMG, inflicting Frost with 50% chance. Enemies already inflicted with Frost takes 300% of ATK as M.DMG over time for 3 sec.",
+                "thumbnail": "./data/kr/assets/heroes/Pavel/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Andarta Andraste, Dragon's Heart",
+        "description": "Every (0) sec, deals (1) of ATK as M.DMG to 2 random enemies and inflicts Frost. Enemies already inflicted with Frost will become inflicted with Freeze the enemy for 5 sec.",
+        "value": {
+            "0": {
+                "0": "15",
+                "1": "14",
+                "2": "12.5",
+                "3": "11",
+                "4": "9.5",
+                "5": "8"
+            },
+            "1": {
+                "0": "160%",
+                "1": "192%",
+                "2": "225%",
+                "3": "276%",
+                "4": "332%",
+                "5": "400%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Pavel/uw.png",
+        "story": "Andarta and Andraste were two dragons who were defeated by the Demons during the war. They were a pair connected at the soul. They were lovers who understood each other better than anyone. Even as they lay dying, they refused to stay apart, and made one final request to Pavel, their comrade. Pavel granted their final wish by transferring their souls into their hearts, and then turning them into a pair of gems. Even though the two have lost their bodies, they remain together, and as inseparable as ever."
+    },
+    "uts": {
+        "1": {
+            "name": "Source of Snow",
+            "description": "[Wedge of Cold Snap] Increases DMG by (0) and upon casting, increases CC ACC by 400 for 10 sec.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Pavel/ut/1.png",
+            "story": "A snow crystal in an ancient form, and a home of the winter elementals. Its beauty imprisons weak minds in an eternal blizzard. Dragons Andarta and Andraste gave this to Pavel after he made their wish come true. It also consoled his lonely heart during his solitary stay in Windland until Rodina came along."
+        },
+        "2": {
+            "name": "Frozen Brooch",
+            "description": "[Ice Spear] Reduces Cooldown by 8% and has a (0) chance to freeze the enemy for 1 sec upon damaging the enemy in Frost state. This effect is not applied to additionally created spears.",
+            "value": {
+                "0": {
+                    "0": "40%",
+                    "1": "48%",
+                    "2": "58%",
+                    "3": "70%",
+                    "4": "84%",
+                    "5": "100%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Pavel/ut/2.png",
+            "story": "The dragon of ice gifted this brooch to a young Pavel, and imbued it with its breath. But after the dragon of ice and Pavel became one, it reminds Pavel to not leave him. It can inflict pain that pierces the heart. Imbues a chill to Pavel's mana, making his magic even sharper."
+        },
+        "3": {
+            "name": "Glacial Heart",
+            "description": "[Icy Conquest] DMG is increased by 50% and Freeze duration is increased by (0) sec.",
+            "value": {
+                "0": {
+                    "0": "1",
+                    "1": "1.2",
+                    "2": "1.4",
+                    "3": "1.7",
+                    "4": "2.1",
+                    "5": "2.5"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Pavel/ut/3.png",
+            "story": "Frozen blood of the winter spirit. Pavel found it deep inside the Ice Cave and made it into earrings. A harsh chill and severe pain can be felt from it, but it increases Pavel's mana to its limit."
+        },
+        "4": {
+            "name": "Ice Dragon's Heart",
+            "description": "[Chill of Early Dawn] Increases the number of targets by 1. Upon a Critical Hit, recovers own Mana by (0).",
+            "value": {
+                "0": {
+                    "0": "100",
+                    "1": "120",
+                    "2": "140",
+                    "3": "170",
+                    "4": "210",
+                    "5": "250"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Pavel/ut/4.png",
+            "story": "A present that a possessed female Dragon gave to Pavel. The Ice Dragon always gave him all kinds of gifts, whether Pavel liked it or not. This orb was one of them, and it has a little part of her soul imbued in it."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon using Skills 5 times.",
+        "description": "Summons the soul of Dragon Hearts, Andarta Andraste, increasing own Crit DMG by 100% for 10 sec. Upon activation, deals ??? M.DMG to enemies in a straight line, increasing M.DMG the target takes by 30% for 10 sec, and inflicting Freeze for 6 sec. Upon attacking the frozen enemy, deals ??? M.DMG that ignores DEF, recovers self's 2 orbs of Mana, and reduces Cooldown of all Skills by 30%.",
+        "cooldown": "21",
+        "uses": "5",
+        "thumbnail": "./data/kr/assets/heroes/Pavel/sw.png",
+        "advancement": {
+            "1": "Changes Skill Activation requirements to 4 times.",
+            "2": "Increases DMG by 80% and dispels positive effect from the hit enemy."
+        },
+        "story": "An ominous wave of mana stroked the dragon's heart.\n\nLewisia had told Pavel about the situation in Orvel, and how Kasel turned into a dark lord. Pavel let out his rage onto the cruel reality, and his freezing fury fiercely permeated throughout the air.\nThe strong vibration of the soul was powerful enough to break the barrier containing immense mana to ensure comfortable rest to the two dragons.\n\nUltimately, Andarta and Andraste resonated with Pavel's freezing fury, and appeared with their gigantic wings."
+    },
+    "splashart": "./data/kr/assets/heroes/Pavel/sa.png",
+    "costumes": "./data/kr/assets/heroes/Pavel/cos",
+    "visual": null,
+    "aliases": null,
+    "gender": "Male"
+}

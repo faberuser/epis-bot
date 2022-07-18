@@ -1,0 +1,54 @@
+{
+    "infos": {
+        "class": "Ascalon",
+        "title": "Sentry of the Sanctuary",
+        "race": "Angel",
+        "damage type": "Physical",
+        "recommended heroes": "Nyx, Rehartna, Erze, Glenwys",
+        "characteristics": "Ascalon constantly reduces Heroes' Mana. So keep a close eye on your Mana when you're facing Ascalon.\nIf you get hit by Ascalon, your Mana Recovery will be reduced. And if your Mana reaches 0, your Skills will be sealed, so watch out!",
+        "thumbnail": "./data/kr/assets/bosses/tm/Ascalon.png"
+    },
+    "skills": {
+        "page 1": {
+            "1": {
+                "name": "Multi-Dimension Barrage",
+                "cost": null,
+                "cooldown": "13",
+                "description": "Charges dimensional energy and lauches Dimension Barrage 4 times(s) at the target that dealt the highest DMG at the moment. Each hit of Dimension Barrage reduces DMG the target deals to enemies by 3%. This effect can be stacked up to max 20 times and is irremovable."
+            },
+            "2": {
+                "name": "Dimension Warp",
+                "cost": null,
+                "cooldown": "33",
+                "description": "Summons Synthetic Demon Beasts near Ascalon and distorts the dimension of All DMG. If all Synthetic Demon Beasts are defeated within the duration of Skill, Ascalon's HP is reduced, and becomes neutralized, taking greatly increased DMG. If all Synthetic Demon Beasts are not defeated within the duration of Skill, Ascalon's ATK is permanently increased."
+            },
+            "3": {
+                "name": "Land of Destruction",
+                "cost": null,
+                "cooldown": "22",
+                "description": "Ascalon roars loudly, destroying the enemy's Shield and temporarily inflicting Stun. Afterward, deals P.DMG to all enemies 2 times and knocks them down."
+            }
+        },
+        "page 2": {
+            "4": {
+                "name": "Dimension Barrage",
+                "cost": null,
+                "cooldown": null,
+                "description": "Summons a dimension gate toward 2 random enemies and launches Dimension Barrage every 7 sec. Dimension Barrage deals P.DMG to the target, reduces Mana of the hit target by 1000, and inflicts [Dimension Interference], reducing Mana Recovery by 1.5%. [Dimension Interference] can be stacked up to max 30 times and is irremovable. If the target's Mana is 0 after Mana Reduction, seals all Skills of the target for 7 sedc. In battles of Stage 4 or above, summons the dimension gate toward 4 random enemies, and targets inflicted with [Dimension Interference] take 1.5% increased DMG."
+            },
+            "5": {
+                "name": "Eye of Ascalon",
+                "cost": null,
+                "cooldown": null,
+                "description": "In battles of Wave 1~4, Ascalon summons a dimension gate toward all targets and launches Surveillance Assault every 7 sec. Surveillance Assault deals P.DMG to the target, reduces Mana of the hit target by 500, and inflicts [Dimension Interference], reducing Mana Recovery by 1.5%. [Dimension Interference] can be stacked up to max 30 times and is irremovable. If the target's Mana is 0 after Mana Reduction, seals all Skills of the target for 4 sec. In battle of Stage 4 or above, targets inflicted with [Dimension Interference] take 1.5% increased DMG."
+            },
+            "6": {
+                "name": "Might of Ascalon",
+                "cost": null,
+                "cooldown": null,
+                "description": "Ascalon is not affected by changes in ATK Spd and All DMG taken Boost effects. Test subjects that receive the Might of Ascalon are also applied with the same effects."
+            }
+        }
+    },
+    "aliases": null
+}

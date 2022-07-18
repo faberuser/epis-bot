@@ -1,0 +1,224 @@
+{
+    "infos": {
+        "title": "Endless Thirst",
+        "class": "Assassin",
+        "position": "Middle-500",
+        "attack range": "5600",
+        "damage type": "Physical",
+        "gender": "Female",
+        "age": "18",
+        "height": "170",
+        "race": "Vampire",
+        "constellation": "Notmun the Tuner",
+        "birth of month": "July 6th, Month of Harmony",
+        "like": "Seria as a sister, chocolate parfait and the blood of the corrupted",
+        "dislike": "Seria as a vampire hunter and spiders",
+        "story": "Born the second daughter of the Shadow Hilt Family, Erze also chose to become a vampire hunter after her beloved sister, Seria. Erze's feeble frame kept her from learning how to fight with swords, but she managed to become known as a hunter with her talents in magic. One day she fell into a trap during an operation and was bitten by a mysterious vampire on the shoulder. Her weak constitution grew worse, and she suffered from frequent headaches and thirst every night. Erze knew what this meant and what would end up happening to her. She hid the bite and tried to find a cure on her own, distancing herself from her comrades in her efforts.",
+        "thumbnail": "./data/kr/assets/heroes/Erze/ico.png",
+        "story_": "Born the second daughter of the ShadowHilt family, Erze also chose to become a vampire hunter after her beloved sister Seria. Erze's feeble frame kept her from learning how to fight with swords, but she managed to become known as a hunter with her talents in magic. One day she fell into a trap during an operation and was bitten by a mysterious vampire on the shoulder. Her weak constitution grew worse, and she suffered from frequent headaches and thirst every night. Erze knew what this meant and what would end up happening to her. She hid the bite and tried to find a cure on her own, distancing herself from her comrades in her efforts. Meanwhile, Seria was dispatched to Windland Snow Mountain to investigate the Vampire Princess that went missing 100 years ago. On the day her sister left... - Ahh, Seria... I cannot control it anymore... Erze quietly and secretly started slitting the throats of her comrades."
+    },
+    "skills": {
+        "1": {
+            "name": "Sweet Blood",
+            "cost": "2",
+            "cooldown": "5",
+            "description": "Deals ??? P.DMG to all enemies and steals HP equal to 10% of DMG dealt. Reduces Cooldown of [Sweet Blood] by ??? sec on each hit, and gains 1 stack of [Sweet Blood]. [Sweet Blood] can be stacked up to 5 times, and using the skill with 5 stacks of [Sweet Blood] grants 1 additional hits and removes [Sweet Blood] stacks. While in [Eternal Thirst] state, reduces Cooldown by 100%. Upon using the Skill at 5 stacks of [Sweet Blood], [Sweet Blood] stacks will not be removed.",
+            "thumbnail": "./data/kr/assets/heroes/Erze/skills/1.png"
+        },
+        "2": {
+            "name": "Soaking Blood",
+            "cost": "2",
+            "cooldown": "35",
+            "description": "Dispels all negative effects and gains immunity to all DMG and CCs for 5 sec and entering into the [Eternal Thirst] state for 15 sec. Afterward, inflicts 1 stack of [Soaking Blood] on all enemies, inflicting 1 additional stack upon hitting a target under [Soaking Blood] with a Skill. [Soaking Blood] can be stacked up to max 6 times. After 5 sec, deals ??? P.DMG to enemies inflicted with [Soaking Blood] stacks and Lifesteals HP equal to 25% of DMG dealt. For every 3 stacks of [Soaking Blood], increases the number of hits by 1 and removes [Soaking Blood] stacks. While in [Eternal Thirst] state, increases own DMG dealt to enemies by 25%. Upon using a Skill, reduces that Skill's Cooldown by 1 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Erze/skills/2.png"
+        },
+        "3": {
+            "name": "Blood Liberation",
+            "cost": "3",
+            "cooldown": "14",
+            "description": "Deals ??? P.DMG to all enemies every 1 sec and recovers 75 Mana each hit for 10 sec. Each hit of [Blood Liberation] causes an additional hit on 1 random enemy. While in [Eternal Thirst] state, increases the duration by 4 sec, and each hit deals ??? additional P.DMG to Non-Hero targets.",
+            "thumbnail": "./data/kr/assets/heroes/Erze/skills/3.png"
+        },
+        "4": {
+            "name": "Life Drinker",
+            "cost": null,
+            "cooldown": null,
+            "description": "Increases own ATK by ??? and Max HP by ???, and DMG dealt to Non-Hero targets by 1% upon killing an enemy, can be stacked up to max 25 times. Upon taking fatal DMG, casts [Soaking Blood], and decreases Max HP by 40%. The [Eternal Thirst] effect does not apply to [Soaking Blood] that activates upon taking fatal DMG. This effect is not applied when [Soaking Blood] is in cooldown. This skill consumes all Mana upon activation.",
+            "thumbnail": "./data/kr/assets/heroes/Erze/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "Increase ATK and MAX HP Boost by 10%.",
+            "III": "Increase ATK and MAX HP Boost by 15%.",
+            "IV": "Increase ATK and MAX HP Boost by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Recovers 150 Mana every hit.",
+                    "thumbnail": "./data/kr/assets/heroes/Erze/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Each use increases DMG by 10%. Stacks 30 times max and is irremovable.",
+                    "thumbnail": "./data/kr/assets/heroes/Erze/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Stuns the target for 3 sec upon hit.",
+                    "thumbnail": "./data/kr/assets/heroes/Erze/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Mana cost is reduced by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Erze/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Changes Mana Recovery per hit to 150.",
+                    "thumbnail": "./data/kr/assets/heroes/Erze/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Mana cost is increased by 1 orb but DMG is boosted by 100%.",
+                    "thumbnail": "./data/kr/assets/heroes/Erze/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Increases Max HP by 100% upon killing an enemy and changes the Max HP reduction after auto-casting [Soaking Blood] to 33%.",
+                    "thumbnail": "./data/kr/assets/heroes/Erze/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Increases ATK by 200% upon killing an enemy, but Max HP boost does not apply.",
+                    "thumbnail": "./data/kr/assets/heroes/Erze/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit Chance +100",
+                "thumbnail": "./data/kr/assets/heroes/Erze/perks/light.png"
+            },
+            "dark": {
+                "effect": "Steals HP equal to 25% of DMG dealt by the final normal attack and gains 1 stack of [Sweet Blood]. Increases ATK by 10% per stack of [Sweet Blood].",
+                "thumbnail": "./data/kr/assets/heroes/Erze/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Essence of Greed, Perion",
+        "description": "Each skill hit increases ATK and ATK Spd by 0.5% for 30 sec. This effect stacks up to (0) times. The stacks will become irremovable.",
+        "value": {
+            "0": {
+                "0": "80",
+                "1": "90",
+                "2": "110",
+                "3": "130",
+                "4": "160",
+                "5": "200"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Erze/uw.png",
+        "story": "When did this all begin...? This torment that comes with unending thirst... But after quenching that thirst... My heart throbs with burning hatred against you, Seria......Ah, Seria. I have no other choice. I need this power to satisfy this endless thirst. This ever-flowing essence of power is the only cure to my eternal torment. Ah... This ecstasy... More... Someone, thrill me more."
+    },
+    "uts": {
+        "1": {
+            "name": "Fang of Thirst",
+            "description": "Reduces Mana Cost of [Sweet Blood] by 1 and increases P.DMG the hit enemy takes by (0). This effect can be stacked up to max 10 times.",
+            "value": {
+                "0": {
+                    "0": "1%",
+                    "1": "1.2%",
+                    "2": "1.4%",
+                    "3": "1.7%",
+                    "4": "2.1%",
+                    "5": "2.5%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Erze/ut/1.png",
+            "story": "A fang of the Vampire that bit Erze. After Erze gained the power of blood that she had been craving, she went to this Vampire, brutally murdered it, and took its fang. When the moon is full, she would fiddle with the fang that once had her blood smeared on it, thinking of the past when she used to be a human, before she suffered from the violent thirst for blood."
+        },
+        "2": {
+            "name": "Wine of Shivers",
+            "description": "Increases DMG of [Soaking Blood] by 50% and reduces Cooldown of [Soaking Blood] by (0) sec.",
+            "value": {
+                "0": {
+                    "0": "5",
+                    "1": "6",
+                    "2": "7",
+                    "3": "8",
+                    "4": "9",
+                    "5": "10"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Erze/ut/2.png",
+            "story": "A wine made by Erze herself with the blood of fallen priests. One of her greatest pleasures is forcing those once considered holy to kneel before her. Inside the bottle is a bloody cross, and those who hear Erze drinking the wine off it shiver and tremble as the sound of the cross clanging inside."
+        },
+        "3": {
+            "name": "Lipstick of Shame",
+            "description": "Increases DMG of [Blood Liberation] by (0) and gains immunity to CC for the duration of [Blood Liberation].",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Erze/ut/3.png",
+            "story": "A dark red lipstick made from the blood of those who died disgraceful deaths. The ones who abandoned their dignity as humans and caved in to their insatiable desires failed to escape Erze's grasp. They died while in a complete trance state, but perhaps they might still feel happy about being used by Erze. Erze uses it to leave a mark on the neck of her prey after she has fed on them."
+        },
+        "4": {
+            "name": "Moonlight Piano",
+            "description": "Increases ATK boost and Max HP boost by (0). Life Drinker becomes irremovable.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Erze/ut/4.png",
+            "story": "A piano played by Erze on the Festival of Blood held on full moon's night. When her unquenchable thirst for blood finally settled down after razing a peaceful town to the ground, she found herself standing in complete silence on the blood-soaked ground. There was not a life that did not belong to her, and it made her want to play a beautiful tune for her silent audience. The sonata echoed around, over the mountain of dead bodies."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up over 22 sec.",
+        "description": "Summons the soul of Essence of Greed, Perion for 7 sec. Every Skill attack grants a stack of [Essence of Greed]. After 7 sec, the soul explodes and deals P.DMG to all enemies. The DMG of this Skill increases by 2% for every 'Essence of Greed' stacks gained for the duration. [Essence of Greed] can be stacked up to max 15 times.",
+        "cooldown": "15",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Erze/sw.png",
+        "advancement": {
+            "1": "DMG per stack of Essence of Greed is changed to 4%.",
+            "2": "Max number of stacks for Essence of Greed is increased by 15, and when the stack of Essence of Greed is at max, DMG dealt per stack is increased by 200%."
+        },
+        "story": "When Erze was presented with eternal thirst by the vampires, she instead killed them and absorbed their power. Perion, an essence created by this incident, was a small and weak sphere then.\nHowever, Erze's hidden talent transformed this sphere into an item that cycles itself to quench Erze's eternal thirst, and manifest the quenched thirst in a form of greed and strength.\nHer thirst exacerbated boundlessly, and eventually, even her mixed feeling toward her sister started to seep into the vortex of an endless cycle. Perion decided to aid Erze, and now it attempts to break its vessel to reborn into a new form."
+    },
+    "splashart": "./data/kr/assets/heroes/Erze/sa.png",
+    "costumes": "./data/kr/assets/heroes/Erze/cos",
+    "visual": null,
+    "aliases": null
+}

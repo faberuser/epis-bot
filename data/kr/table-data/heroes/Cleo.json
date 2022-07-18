@@ -1,0 +1,232 @@
+{
+    "infos": {
+        "title": "Sorceress of Purgatory",
+        "class": "Wizard",
+        "position": "Middle-200",
+        "attack range": "300",
+        "damage type": "Magical",
+        "gender": "Female",
+        "age": "17",
+        "height": "156",
+        "race": "Human",
+        "constellation": "Kandala the Conqueror",
+        "birth of month": "August 1st, Month of Vitality",
+        "like": "Campfire, pillows (?)",
+        "dislike": "Machines",
+        "story": "Cleo's earliest memory begins at the Tower of Sage. Raised by Dominiks the Great Sage as an orphan, she is both a genius wizard and a troublemaker. Her inability to control her own power has often led to trouble, including partial destruction of the Red Tower, her own residence. Despite this, her apparent immunity to the wrath of the Great Sage has caused her to be ostracized from her peers. Although this has led her to become selfish and inconsiderate, deep inside, she is still a kindhearted girl who fears abandonment by others.",
+        "thumbnail": "./data/kr/assets/heroes/Cleo/ico.png",
+        "story_": "Cleo's earliest memory begins at the Tower of Sage. Raised by Dominiks the Great Sage as an orphan, she is both a genius wizard and a troublemaker. Her inability to control her own power has often led to trouble, including partial destruction of the Red Tower, her own residence. Despite this, her apparent immunity to the wrath of the Great Sage has caused her to be ostracized from her peers. Although this has led her to become selfish and inconsiderate, deep inside, she is still a kindhearted girl who fears abandonment by others."
+    },
+    "skills": {
+        "1": {
+            "name": "Fire Needle",
+            "cost": "2",
+            "cooldown": "5",
+            "description": "Attacks a random enemy 5 times to deal a total of ??? M.DMG and stunning the target for 1 sec each hit. Deals ??? additional M.DMG per Ember stack to Non-Hero enemies. Upon a Crit Hit, recovers own Mana by 100.",
+            "thumbnail": "./data/kr/assets/heroes/Cleo/skills/1.png"
+        },
+        "2": {
+            "name": "Fire Ball",
+            "cost": "3",
+            "cooldown": "10",
+            "description": "Attacks the target and the enemies in nearby range, dealing ??? M.DMG and stunning them for 2 sec. Deals ??? + ??? additional M.DMG per Ember stack to Non-Hero enemies. Inflicts 12 Ember stacks on hit targets.",
+            "thumbnail": "./data/kr/assets/heroes/Cleo/skills/2.png"
+        },
+        "3": {
+            "name": "Fire Rain",
+            "cost": "4",
+            "cooldown": "15",
+            "description": "Attacks all enemies 5 times, dealing a total of ??? M.DMG. This attack deals 150% increased Crit DMG. Deals ??? additional M.DMG per Ember stack to Non-Hero enemies.",
+            "thumbnail": "./data/kr/assets/heroes/Cleo/skills/3.png"
+        },
+        "4": {
+            "name": "Flame Diffusion",
+            "cost": null,
+            "cooldown": null,
+            "description": "Inflicts a stack of Ember upon hitting an enemy. Enemies affected by Ember take ??? M.DMG over 20 sec. Ember can be stacked up to max 12 times and upon hitting an enemy with max number of stacks, recovers Mana by 30.",
+            "thumbnail": "./data/kr/assets/heroes/Cleo/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "The skill's DMG is reduced by 50% when attacking more than 5 enemies, but all enemies will take damage.",
+                    "thumbnail": "./data/kr/assets/heroes/Cleo/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Changes target to the enemy with the highest ATK.",
+                    "thumbnail": "./data/kr/assets/heroes/Cleo/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Upon hitting an enemy with 10 or more stacks of Ember, increases M.DMG it takes by 40% for 10 seconds.",
+                    "thumbnail": "./data/kr/assets/heroes/Cleo/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Reduces Cooldown by 10% per enemy hit.",
+                    "thumbnail": "./data/kr/assets/heroes/Cleo/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Increases DMG by 40%.",
+                    "thumbnail": "./data/kr/assets/heroes/Cleo/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Reduces Mana Cost by 2 for 10 sec when attacking more than 5 enemies. 10 sec Cooldown is applied.",
+                    "thumbnail": "./data/kr/assets/heroes/Cleo/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Reduces the target's M.DEF by 2.5% per [Ember] stack.",
+                    "thumbnail": "./data/kr/assets/heroes/Cleo/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Every 10 sec, enemies affected by Ember are stunned for 2 sec. Enemies with more than 10 stacks of Ember are stunned for 3 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Cleo/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit Chance +100",
+                "thumbnail": "./data/kr/assets/heroes/Cleo/perks/light.png"
+            },
+            "dark": {
+                "effect": "If a target has 10 stacks of Ember, increases the M.DMG the target takes by 30%, and adds 2 stacks of Ember per second to all non-hero enemies.",
+                "thumbnail": "./data/kr/assets/heroes/Cleo/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Primal Flame, Flenos",
+        "description": "Increases ATK Spd by (0). Skill hits deal additional M.DMG equal to (1) of ATK per stack of Ember inflicted on enemies.",
+        "value": {
+            "0": {
+                "0": "200",
+                "1": "240",
+                "2": "290",
+                "3": "350",
+                "4": "420",
+                "5": "500"
+            },
+            "1": {
+                "0": "3%",
+                "1": "3.6%",
+                "2": "4.3%",
+                "3": "5.2%",
+                "4": "6.3%",
+                "5": "7.5%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Cleo/uw.png",
+        "story": "The essence of the First Flame of the world. The Fire Elemental Lord bestowed this beautiful gem to a human who entered into a contract with him. Over the ages, it ended up in the hands of an archmage, who turned it into the core of his staff. Later, the archmage presented this staff to his precious disciple."
+    },
+    "uts": {
+        "1": {
+            "name": "Phoenix Lantern",
+            "description": "[Fire Needle] Each hit reduces the target's Mana by (0). Upon every use, increases DMG by 10%. This effect can be stacked up to max 10 times.",
+            "value": {
+                "0": {
+                    "0": "100",
+                    "1": "120",
+                    "2": "140",
+                    "3": "170",
+                    "4": "210",
+                    "5": "250"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Cleo/ut/1.png",
+            "story": "A magical lantern from the Tower of Sage. The ever-burning phoenix, the Tower of Sage's first flame, is sealed inside it. Dominics looked after it with great care as phoenixes are now endangered, but Cleo nonchalantly uses it to enhance her Fire Needle spell without taking her teacher's concerns into consideration."
+        },
+        "2": {
+            "name": "Flamel's Elixir",
+            "description": "[Fire Ball] Reduces Mana Cost by 1 and increases DMG by.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Cleo/ut/2.png",
+            "story": "An elixir that fire alchemist Flamel created by condensing flame essence. Flamel's flames continue to burn and burn. Every wizard praises him for his flames, and the flame essence that he made with the salamanders from the Dragia Volcano maximizes the effect of Fire Ball."
+        },
+        "3": {
+            "name": "Tome of Purgatory",
+            "description": "[Fire Rain] Increases DMG by (0). Upon Critical Hit on an enemy with 5 or more stacks of Ember, Cooldown will be reduced by 5%. Upon killing an enemy with this Skill, Cooldown will be reduced by an additional 20%.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Cleo/ut/3.png",
+            "story": "A scroll written by a fire sorceress who was known as the Goddess of Fire. A scroll left by the greatest Fire Sorceress of Orvelia, Vesta, when she was in the Tower of Sage. It's very powerful, but it also requires a lot of mana. Cleo took the Scroll of Purgatory from the Tower of Sage, which was considered a forbidden scroll. Now she's using it to enhance her Fire Rain."
+        },
+        "4": {
+            "name": "Introduction to Red Witch Spells",
+            "description": "[Flame Diffusion] Ember becomes irremovable and causes the target to take (0) increased M.DMG per stack.",
+            "value": {
+                "0": {
+                    "0": "1%",
+                    "1": "1.2%",
+                    "2": "1.4%",
+                    "3": "1.7%",
+                    "4": "2.1%",
+                    "5": "2.5%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Cleo/ut/4.png",
+            "story": "A textbook of Fire Magic by the Red Witch. This powerful spellbook is spreading all over the Empire in secret, but most mages consider it as taboo because it casts destructive magic and destroys the caster's mind."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon using Skills 6 times.",
+        "description": "Summons the soul of Primal Flame, Flenos, dealing ??? M.DMG to 5 enemies. Dealing DMG to enemies with this Skill increases DEF Penetration by 25 for 60 sec. This effect stacks up to 20 times.",
+        "cooldown": "22",
+        "uses": "7",
+        "thumbnail": "./data/kr/assets/heroes/Cleo/sw.png",
+        "advancement": {
+            "1": "Increases DMG by 50%.",
+            "2": "Increases DMG by 50%. Each stack grants 2.5% ATK Boost effect."
+        },
+        "story": "The flame imbued inside Flenos was arrogant. Due to the Flame resistance Cleo had, she was able to endure the flame, but it had a risk of hurting her. Despite knowing this fact, Cleo pretended to ignore it, as she was confident that she will one day manage to make the flame hers, but also somewhat afraid of it.\nHowever, when her arrogance was met with the wall of reality, Cleo humbly peered into the flame of herself. She wanted to accept the wild, fierce flame completely.\n\nIt was then when Flenos' avatar made an advent, with the shape Cleo had yearned, as if it was greatly moved by Cleo's will."
+    },
+    "splashart": "./data/kr/assets/heroes/Cleo/sa.png",
+    "costumes": "./data/kr/assets/heroes/Cleo/cos",
+    "visual": "./data/kr/assets/heroes/Cleo/visual.png",
+    "aliases": null
+}

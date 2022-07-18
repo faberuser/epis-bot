@@ -1,0 +1,224 @@
+{
+    "infos": {
+        "title": "Arrow of Purity",
+        "class": "Archer",
+        "position": "Back-300",
+        "attack range": "3100",
+        "damage type": "Magical",
+        "gender": "Male",
+        "age": "???",
+        "height": "193",
+        "race": "Angel",
+        "constellation": "Judgment Layan",
+        "birth of month": "September 17th, Month of Truth",
+        "like": "Peace and stability",
+        "dislike": "Demons",
+        "story": "An Angel warrior who descended from the Heavens to punish the Demons and stop the spread of chaos on earth. His delegated tasks include scouting, reconnaissance, and execution of any Demons found on earth. He has a strong sense of responsibility and is quick and decisive against any injustice. He truly loves Mankind and all the lelife forms that inhabit the earth. This is why he strives to prevent the Demons from defiling this world.",
+        "thumbnail": "./data/kr/assets/heroes/Arch/ico.png",
+        "story_": "An Angel warrior who descended from the Heavens to punish the Demons and stop the spread of chaos on earth. His delegated tasks include scouting, reconnaissance, and execution of any Demons found on earth. He has a strong sense of responsibility and is quick and decisive against any injustice. He truly loves Mankind and all the life forms that inhabit the earth. This is why he strives to prevent the Demons from defiling this world."
+    },
+    "skills": {
+        "1": {
+            "name": "Celestial Arrow",
+            "cost": "2",
+            "cooldown": "6",
+            "description": "Deals ??? M.DMG to 3 enemies and push them back, leaving a Judgment Sigil on them for 15 sec and increases M.DMG the targets take by 25% for 10 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Arch/skills/1.png"
+        },
+        "2": {
+            "name": "Purifying Blaze",
+            "cost": "3",
+            "cooldown": "15",
+            "description": "Deals ??? M.DMG to frontal enemies in a straight line. Deals additional ??? M.DMG that ignores DEF to targets with Judgment Sigil, and reduces their Heal Rate by 50% for 10 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Arch/skills/2.png"
+        },
+        "3": {
+            "name": "Arbiter",
+            "cost": "4",
+            "cooldown": "25",
+            "description": "Deals ??? M.DMG to the target and enemies in a nearby range, inflicting Silence for 5 sec. Enemies with Judgment Sigil take 50% increased M.DMG. Afterward, grants immunity to M.DMG to all allies for 5 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Arch/skills/3.png"
+        },
+        "4": {
+            "name": "The Last Judgment",
+            "cost": null,
+            "cooldown": null,
+            "description": "Every 15 sec, deals ??? M.DMG ignoring DEF to enemies inflicted by Judgement Sigil. Once during every battle, upon reaching near death HP, deals ??? M.DMG to enemies inflicted by Judgement Sigils and stuns them for 3 sec, while casting a shield that blocks ??? DMG to all allies for 5 sec. Gains immunity to CC while the shield is in effect. When the shield effect takes place, consumes all mana, and all skill cooldown is increased by 50%.",
+            "thumbnail": "./data/kr/assets/heroes/Arch/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "DMG and Shield are increased by 10%.",
+            "III": "DMG and Shield are increased by 15%.",
+            "IV": "DMG and Shield are increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Recovers 500 Mana upon a Critical Hit.",
+                    "thumbnail": "./data/kr/assets/heroes/Arch/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Reduces Mana by 500 upon hit.",
+                    "thumbnail": "./data/kr/assets/heroes/Arch/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Heal Rate reduction effect is applied to enemies without Judgment Sigil.",
+                    "thumbnail": "./data/kr/assets/heroes/Arch/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Gains immunity to CC for the duration of Skill.",
+                    "thumbnail": "./data/kr/assets/heroes/Arch/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Reduces Mana Cost by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Arch/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "DMG boost is applied to enemies without Judgment Sigil as well, and the duration of the effect is increased by 5 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Arch/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "For 20 sec after activation, auto attacks target 2 enemies.",
+                    "thumbnail": "./data/kr/assets/heroes/Arch/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Effect occurs 3 sec faster.",
+                    "thumbnail": "./data/kr/assets/heroes/Arch/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit Chance +100",
+                "thumbnail": "./data/kr/assets/heroes/Arch/perks/light.png"
+            },
+            "dark": {
+                "effect": "At the beginning of each battle, self gains immunity to M.DMG for 5 sec.",
+                "thumbnail": "./data/kr/assets/heroes/Arch/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Clear Blue Sky, Sherrkyle",
+        "description": "Every 10 sec, inflicts a Judgement Sigil on 1 random enemy for 15 sec, then deals M.DMG equal to (0) of ATK, Ignores DEF if the target is not a Hero.",
+        "value": {
+            "0": {
+                "0": "200%",
+                "1": "240%",
+                "2": "290%",
+                "3": "350%",
+                "4": "420%",
+                "5": "500%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Arch/uw.png",
+        "story": "A powerful weapon of light that can take the form of a spear, a dagger, or a bow. One of the divine treasures of the Angels blessed by an archangel. It is said to be capable of incinerating evil. Due to its versatility, it has traditionally been given to the most talented scout. The number of Demons who perished under its light during the war is too high to count."
+    },
+    "uts": {
+        "1": {
+            "name": "Holy Golden Arrow",
+            "description": "[Celestial Arrow] Increases DMG by (0) and the number of targets by 1.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Arch/ut/1.png",
+            "story": "A golden arrow created by the divine power of Arch. It summons and materializes the purest and holiest light from heaven, its power increasing according to the amount of divine power given to it. For the good of heart, it's merely a beautiful scene to watch, but if evil creatures are shot by it, they become mutilated and slammed into some non-material dimension."
+        },
+        "2": {
+            "name": "Magic Square of Pursuit",
+            "description": "[Purifying Blaze] Reduces Mana Cost by 1 and increases DMG by (0).",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Arch/ut/2.png",
+            "story": "The symbol of Fire Arbiter Army that fought a fierce battle against Ancient Demons. When using the Magic Square of Pursuit blessed by Lua, the Goddess of Light, Arch becomes a merciless arbiter."
+        },
+        "3": {
+            "name": "Eye of Heaven",
+            "description": "[Arbiter] DMG is increased by (0) and all allies' ATK is increased by 30% for the duration of M.Shield.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Arch/ut/3.png",
+            "story": "Angel Arbiter Pilier's soul egg. Pilier was born from Lua's first flame, and is Arch's master. Pilier was the best Angel warrior and was the one to end the war against the Demons. But after using all of his power, he went back to being an Eye of Heaven, which is the soul egg form, and Arch is holding onto his master's soul."
+        },
+        "4": {
+            "name": "Bell of Punishment",
+            "description": "[The Last Judgment] Upon receiving fatal DMG, heals HP of all allies by 15% of Max HP, and silences entire enemies for (0) sec.",
+            "value": {
+                "0": {
+                    "0": "1",
+                    "1": "1.2",
+                    "2": "1.4",
+                    "3": "1.7",
+                    "4": "2.1",
+                    "5": "2.5"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Arch/ut/4.png",
+            "story": "A heavenly bell that rings in the morning star. The bell rings to warn the Angel warriors whenever the earth faces great trouble, letting them know that divine punishment will be needed. Upon hearing the bell, warriors realize that the time has come for them to slit the throats of the bringers of apocalypse under Lua's name."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up over 18 sec.",
+        "description": "Summons the Soul of Clear Blue Sky, Sherrkyle, dealing ??? M.DMG to all enemies and marking Judgment Sigil for 15 sec. Afterward, increases own Crit DMG by 100% for 11 sec.",
+        "cooldown": "20",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Arch/sw.png",
+        "advancement": {
+            "1": "For the duration of Skill, reduces Cooldown of self's all Skills by 1 sec every sec.",
+            "2": "For the duration of Skill, attacks a random enemy, dealing ??? M.DMG every 1 sec and marking Judgment Sigil for 15 sec. If the target is already marked, deals additional ??? M.DMG that ignores DEF."
+        },
+        "story": "Sherrkyle is a strong weapon of light which is also a treasure of angels, blessed by the archangel. With Arch as its master, it purged Demons and wicked beings that tainted the world.\nArch was a cold vanquisher, and sherrkyle also shared its master's trait.\n\nHowever, after descending to the world, Arch started to change slowly.\nAs he watched the humans and lifeforms of the world, Arch slowly began to develop the feeling of love and mercy. Eventually, he recognized the warmth that was blooming inside his heart.\n\nInfluenced by his master's change of heart, Sherrkyle also started to change.\nFrom the weapon of a cold, resolute vanquisher to the weapon of the protector of the world.\n\nFinally when Arch made his descent to save lives from danger, Sherrkyle shined ever-bright and awakened in the form of a guardian. Arch's will to protect others has awakened the great guardian."
+    },
+    "splashart": "./data/kr/assets/heroes/Arch/sa.png",
+    "costumes": "./data/kr/assets/heroes/Arch/cos",
+    "visual": null,
+    "aliases": null
+}

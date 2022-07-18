@@ -1,0 +1,60 @@
+{
+    "infos": {
+        "class": "Tyrfas",
+        "title": "Divine Beast of Absolute Zero",
+        "race": "Beast",
+        "damage type": "Magical",
+        "recommended heroes": "Frey, Aisha, Kara",
+        "characteristics": "When Tyrfas use [Avalanche], quickly deal M.DMG to cancel its skill activation. Watch out for the Chill effect, it will prevent you from HP reovery.",
+        "thumbnail": "./data/kr/assets/bosses/gc/Tyrfas.png"
+    },
+    "skills": {
+        "page 1": {
+            "1": {
+                "name": "Frozen Whip",
+                "cost": null,
+                "cooldown": "15",
+                "description": "Deals M.DMG to frontal enemies in range and knocks them back far away."
+            },
+            "2": {
+                "name": "Icy Breath",
+                "cost": null,
+                "cooldown": "25",
+                "description": "Attacks enemies in a straight line 6 times, dealing M.DMG and with 30% chance, inflicts one stack of Chill. If the targers have over 50 stacks of chill, takes additional M.DMG."
+            },
+            "3": {
+                "name": "Glacier Explosion",
+                "cost": null,
+                "cooldown": "20",
+                "description": "Attacks 3 random enemies 5 times, dealing M.DMG and inflicting one stack of Chill to enemies that took damage."
+            }
+        },
+        "page 2": {
+            "4": {
+                "name": "Avalenche",
+                "cost": null,
+                "cooldown": "28",
+                "description": "Attacks all enemies continously in a stable stance, dealing M.DMG and adding stacks of Chill. Increase DMG as time passes, but its casting is halted once Tyrfas take M.DMG more than 100 times, after which Tyrfas gets knocked down for a certain time. While knocked down, Tyrfas takes greatly increased P.DMG and M.DMG, and the number of M.DMG hits required to stop the next Avalanche is increased."
+            },
+            "5": {
+                "name": "Frozen Wave",
+                "cost": null,
+                "cooldown": null,
+                "description": "Attacks all enemies every sec, dealing M.DMG that has a 30% chance to inflict Chill upon them. Chill reduces M.DEF and Heal Rate of the target, and is stacked up to 200 times. Chill cannot be removed."
+            },
+            "6": {
+                "name": "Shell of a Mythical Beast",
+                "cost": null,
+                "cooldown": null,
+                "description": "Tyrfas is immune to CC, and its ATK Spd and DEF are not affacted by effects. Its target will take increased DMG depending on the number of Chill stacked."
+            }
+        }
+    },
+    "aliases": [
+        "Tyrfas",
+        "GC1",
+        "GC 1",
+        "GR7",
+        "GR 7"
+    ]
+}

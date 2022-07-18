@@ -1,0 +1,15 @@
+{
+    "global": {
+        "AwakeningGear": "1* to 3* = Use 0* till success.\n3* to 4* = Use 1* > 0* till success.\n4* to 5* = Use 3* > 1* > 0* till success. | 2* > 2* > 1* > 0* till success.\n\nhttps://redd.it/7doken",
+        "LevelScaling": "Lets say you're level 80 and the opponent is level 70, the opponent has less effective defence due to level scaling, so you deal more damage.\nAs your opponent's level increases to 80, the level scaling becomes lower, and you have 'normal' scaling and then opponent has normal defences when he is at level 80. As your opponent's level increases above 80, the scaling dictates that your opponent's effective defence increase, and you effectively deal less damage due to the increased defence.",
+        "RubySpendEvent": "https://cdn.discordapp.com/attachments/598414975945670657/730050026784555128/rubyspend_.png",
+        "StarterOption": "2* Ticket:\nGau, Lakrak, Kaulah, Epis, Selene, Miruru, Lorraine, Dimael, Demia, Reina\n\n3* Ticket:\nPhillop, Maria, Rephy, Naila, Rodina, Morrah, Bau, Pavel, Jane, Leo, Fluss, Luna, Aisha, Laias, Arch, Nyx, Annette, Tanya, Mitra\n\n5* Ticket:\n2* and 3* Tickets combined",
+        "BeginnerGear": "https://cdn.discordapp.com/attachments/598414975945670657/631366188395397130/howdoiplaygame.png",
+        "BeginnerStart": "https://cdn.discordapp.com/attachments/598414975945670657/631367280294494208/howtostartgame.png",
+        "BeginnerLogin": "https://cdn.discordapp.com/attachments/598414975945670657/631368069557518356/beginnerlogin.png",
+        "ReasonToPlayKR": "https://cdn.discordapp.com/attachments/598414975945670657/631368956573384704/oppai.png",
+        "Macro": "Nox App Player (04.04.2020)\nhttps://www.reddit.com/r/Kings_Raid/comments/fumrn9/new_loh_macro_for_nox_app_player_04042020/\n\nMEmu App Player (01.04.2020)\nhttps://www.reddit.com/r/Kings_Raid/comments/ft4z91/new_loh_macro_for_memu_play_01042020/\n\nLDPlayer (31.03.2020)\nhttps://www.reddit.com/r/Kings_Raid/comments/fsje29/new_loh_macro_for_ldplayer_31032020/",
+        "Mail": "EN: cs_en@vespainteractive.com\nJP: cs_jp@vespainteractive.com\nVI: cs_vn@vespainteractive.com\nTH: cs_th@vespainteractive.com\nTW: cs_tw@vespainteractive.com"
+    },
+    "652813007981772801": {}
+}

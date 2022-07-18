@@ -1,0 +1,232 @@
+{
+    "infos": {
+        "title": "The Silencing Blade",
+        "class": "Assassin",
+        "position": "Front-500",
+        "attack range": "3700",
+        "damage type": "Physical",
+        "gender": "Female",
+        "age": "18",
+        "height": "169",
+        "race": "Half-Elf",
+        "constellation": "Guardian Mertis",
+        "birth of month": "January 8th, Month of Protection",
+        "like": "Roi",
+        "dislike": "Roi ?, Laughing Mask, Half-Elf blood",
+        "story": "An assassin of the Laughing Mask, and Roi's colleague. Although she has a physical advantage over Roi as a Half-Elf, she lacks his worldly wisdom and his ability to connect with others, traits that made him crucial in large-scale operations. This has given her something of an inferiority complex. As the 'Cleaner' of the organization, she was tasked with eliminating any traitors. When Roi abandoned the organization, she set out to chase him to figure out his motivation, leaving all her other tasks behind. Her plans after finding him remain to be seen.",
+        "thumbnail": "./data/kr/assets/heroes/Tanya/ico.png",
+        "story_": "An assassin of the Laughing Mask, and Roi's colleague. Although she has a physical advantage over Roi as a Half-Elf, she lacks his worldly wisdom and his ability to connect with others, traits that made him crucial in large-scale operations. This has given her something of an inferiority complex. As the 'Cleaner' of the organization, she was tasked with eliminating any traitors. When Roi abandoned the organization, she set out to chase him to figure out his motivation, leaving all her other tasks behind. Her plans after finding him remain to be seen."
+    },
+    "skills": {
+        "1": {
+            "name": "Target Sighted",
+            "cost": "2",
+            "cooldown": "8",
+            "description": "Moves behind the enemy with the lowest P.DEF and increase their P.DMG taken by 30% for 10 sec, while knocking them down for 2 sec and daeling ??? P.DMG. If in a Stealth state, 150% increased Crit DMG applies, and Stealth dispelled. If not, gain Stealth for 10 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Tanya/skills/1.png"
+        },
+        "2": {
+            "name": "Blade Tornado",
+            "cost": "2",
+            "cooldown": "14",
+            "description": "Attacks nearby enemies 3 times and deals a total of ??? P.DMG, inflicting 1 stack of Bleed per each hit. If used in a Stealth state, target's heal rate is reduced by 70%, and Stealth is dispelled. If not, gains Stealth for 10 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Tanya/skills/2.png"
+        },
+        "3": {
+            "name": "Whisper of Death",
+            "cost": "3",
+            "cooldown": "18",
+            "description": "Attacks random enemies 6 times and deals a total of ??? P.DMG, then deals an extra attack that deals ??? P.DMG. If used in Stealth state, dispels positive effects from the target, and Stealth is dispelled. If not, gains Stealth for 10 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Tanya/skills/3.png"
+        },
+        "4": {
+            "name": "Silent Ambush",
+            "cost": null,
+            "cooldown": null,
+            "description": "Increases Crit Chance and Dodge by 300 during Stealth. Upon a Critical Hit, deals ??? additional P.DMG to the enemy and inflicts Silence for 2 sec. If the target is not a Hero, deals ??? additional P.DMG that ignores DEF and reduces the target's ATK Spd by 200 for 10 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Tanya/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Reduces the target's Heal Rate by 30%.",
+                    "thumbnail": "./data/kr/assets/heroes/Tanya/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Changes the target to Priest and reduces target's P.Crit Resistance by 250 for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Tanya/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Each hit reduces the target's Mana by 300.",
+                    "thumbnail": "./data/kr/assets/heroes/Tanya/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Recovers 200 mana upon a Crit hit.",
+                    "thumbnail": "./data/kr/assets/heroes/Tanya/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Mana cost is increased by 1 orb but DMG is boosted by 100%.",
+                    "thumbnail": "./data/kr/assets/heroes/Tanya/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Reduces Mana cost by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Tanya/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Increases additional DMG against non-Hero enemies by 100%.",
+                    "thumbnail": "./data/kr/assets/heroes/Tanya/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Increases Silence duration by 0.5 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Tanya/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit DMG +20%",
+                "thumbnail": "./data/kr/assets/heroes/Tanya/perks/light.png"
+            },
+            "dark": {
+                "effect": "Auto attacks have a 15% chance to activate Stealth mode that lasts for 10 sec. While in Stealth mode, normal attacks deal 50% increased DMG.",
+                "thumbnail": "./data/kr/assets/heroes/Tanya/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Demon of the Calm, Caethasis",
+        "description": "At the beginning of each battle, becomes Stealth for 10 sec and dodges all attacks for (0) sec. While in Stealth mode, own Crit DMG will be increased by (1) for 10 sec.",
+        "value": {
+            "0": {
+                "0": "2",
+                "1": "2.4",
+                "2": "2.9",
+                "3": "3.5",
+                "4": "4.2",
+                "5": "5"
+            },
+            "1": {
+                "0": "30%",
+                "1": "36%",
+                "2": "43%",
+                "3": "52%",
+                "4": "62%",
+                "5": "75%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Tanya/uw.png",
+        "story": "The Demon War dates back to 100 years ago. During this war, the greatest threat to mankind was, without a doubt, the high-ranking Demon officers. Kaitasis, the Demon of the Calm, was especially dangerous among them. Countless wizards and priests were slaughtered by this Demon who specifically targeted magic users for their souls. Eventually, Kaitasis was defeated by Kyle, and its core was sealed away. However, years later, the core came into the possession of the Laughing Mask and it once again served as an instrument of death."
+    },
+    "uts": {
+        "1": {
+            "name": "Copied Codex of Stealth",
+            "description": "[Target Sighted] Increases DMG by 50%, and after use, recovers Mana by (0).",
+            "value": {
+                "0": {
+                    "0": "400",
+                    "1": "480",
+                    "2": "580",
+                    "3": "700",
+                    "4": "840",
+                    "5": "1000"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Tanya/ut/1.png",
+            "story": "Laughing Mask has a secret training manual of veteran assassins' stealth techniques. This book describes stealth skills and their applications in detail. Tanya added her own tips, making this manual even more valuable."
+        },
+        "2": {
+            "name": "Laughing Mask All-round Belt",
+            "description": "[Blade Tornado] Increases DMG by (0) and reduces Cooldown by 8% upon a Crit Hit.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Tanya/ut/2.png",
+            "story": "A multi-purpose tool of Laughing Masks used for assassination. It is a unique item for Laughing Masks, known for their speed and efficiency in eliminating their targets. Optimized to the wearer's attacking patterns, it improves the handling of throwing weapons and enhances continuous attacks while casting Blade Tornado."
+        },
+        "3": {
+            "name": "Dagger of Silence",
+            "description": "[Whisper of Death] DMG is increased by (0) and upon use, immediately gains Stealth. If used in Stealth mode, ATK is increased by 20% for 10 sec.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Tanya/ut/3.png",
+            "story": "A dagger given to those who complete the first mission of the Laughing Mask. There's a rule that says that assassins should always carry the dagger that has traces of their target. The silent dagger that assassins carry like an amulet consistently whispers to them about death."
+        },
+        "4": {
+            "name": "Needle of Silence",
+            "description": "[Silent Ambush] Upon activation, recovers own Mana by (0) while reducing the target's Mana by 200.",
+            "value": {
+                "0": {
+                    "0": "100",
+                    "1": "120",
+                    "2": "140",
+                    "3": "170",
+                    "4": "210",
+                    "5": "250"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Tanya/ut/4.png",
+            "story": "A secret weapon that the leader of the Laughing Masks made for Tanya. After watching Tanya flawlessly accomplish countless missions, the leader decided that Tanya was the right one to be sent to the most dangerous of missions and had this secret weapon of Laughing Mask, 'Needle of Silence' delivered to her. Made with advanced biotechnology, it causes the energy flowing inside the body to regurgitate, killing the opponent in the blink of an eye. Most importantly, it is something that would help Tanya to keep the vow of silence when things go wrong and the mission is compromised."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up over 18 sec.",
+        "description": "Summons the soul of Demon of the Calm, Caethasis, increasing own ATK by 50% for 10 sec. Afterward, hits the enemy with the lowest P.DEF 4 times every 3 sec, dealing a total of ??? P.DMG. If the target's HP is 50% or above, this hit reduces target's P.DEF by 5% for 5 sec. If the target's HP is below 50%, this hit increases its DMG by 2 times and will be a Critical Hit. The P.DEF Reduction effect can be stacked up to max 10 times.",
+        "cooldown": "22",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Tanya/sw.png",
+        "advancement": {
+            "1": "Changes Skill Activation requirements to 14 sec.",
+            "2": "Changes the P.DEF Reduction effect to 7%. The DMG Boost effect applied to enemies below 50% HP applies as 3.6 times."
+        },
+        "story": "Inside Caethasis, there exist the vengeful spirits of wizards and priests who were killed by Caethasis. After death, the soul of Caethasis encountered those it had devoured and had to stand their curses and resentment, Rather than enduring and accepting this, Caethasis chose to devour all the souls voraciously even in its death. The sword was wielded by many masters across time, and no matter what master it served, Caethasis never ceased fighting inside the sword.\nOne day. when Tanya became aware of the rancor of the souls she had killed, she also noticed that there was a similar battle taking place within her sword. Was it Tanya's and Caethasis destiny to fight endlessly against the souls of they had killed? Without any clear answer, Tanya still faces the demon of her sword with a perplexed mind."
+    },
+    "splashart": "./data/kr/assets/heroes/Tanya/sa.png",
+    "costumes": "./data/kr/assets/heroes/Tanya/cos",
+    "visual": null,
+    "aliases": null
+}

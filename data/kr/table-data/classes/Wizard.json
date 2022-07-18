@@ -1,0 +1,11 @@
+{
+    "perks": {
+        "t2": {
+            "Deception": "When receiving DMG, becomes immune to the next 3 hit of DMG. This effect is activated every 40 sec.",
+            "Moral Rise": "Increases ATK of all allies by 15%. If the ally uses the same Perk, only 3% additional ATK applies.",
+            "Blessing of Mana": "Mana recovery per second rises by 250%.",
+            "Circuit Burst": "Receives 15% more DMG but gains 40% ATK. ACC is increases by 200.",
+            "Destruction": "Increases Crit Chance by 200 and DEF Penetration by 200."
+        }
+    }
+}

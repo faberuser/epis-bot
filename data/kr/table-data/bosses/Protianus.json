@@ -1,0 +1,64 @@
+{
+    "infos": {
+        "class": "Protianus",
+        "title": "Ruler of the Sunken City",
+        "race": "Spirit",
+        "damage type": "Magical",
+        "recommended heroes": "Fluss, Mitra, Laias",
+        "characteristics": "You must rescue allies caught by Protianus's [Water Prison] effectively by dealing P.DMG to the boss. Without dispelling [Water Prison], the party will much of their damage dealing capacity.",
+        "thumbnail": "./data/kr/assets/bosses/wb/Protianus.png"
+    },
+    "skills": {
+        "page 1": {
+            "1": {
+                "name": "Deadly Trident",
+                "cost": null,
+                "cooldown": "28",
+                "description": "Attacks the center of the enemy formation with the Trident, dispelling all positive effects from the enemies in range, reducing their Crit Chance by 300 for 18 sec. This effect cannot be dispelled."
+            },
+            "2": {
+                "name": "Brush Away",
+                "cost": null,
+                "cooldown": "22",
+                "description": "Swipes the forward area with the Trident, dealing M.DMG. Damaged enemies are silenced for 5 sec and have their ACC reduced by 200 for 10 sec."
+            },
+            "3": {
+                "name": "Water Prison Lockdown",
+                "cost": null,
+                "cooldown": "35",
+                "description": "Throws water droplets at a single enemy, dealing M.DMG and locking the enemy within a Water Prison. Additionally, lock another random target in a Water Prison every 3 sec."
+            }
+        },
+        "page 2": {
+            "4": {
+                "name": "Tsunami",
+                "cost": null,
+                "cooldown": "40",
+                "description": "Whips up a Tsunami that hits up to 50M in a frontal direction, and deals M.DMG proportional to target's current HP, inflicting Stun for 3 sec with 100% chance. Additionally reduces 600 mana per sec for 10 sec, and reduces ATK by 25%. This additional effect cannot be dispelled."
+            },
+            "5": {
+                "name": "Drowned Souls",
+                "cost": null,
+                "cooldown": null,
+                "description": "Summons 3 Ghosts every 20 sec, increasing self DEF by 25% per each Ghost."
+            },
+            "6": {
+                "name": "Skin of Protianus",
+                "cost": null,
+                "cooldown": null,
+                "description": "Protianus is not affected by ATK Spd related effects. Protianus also takes more DMG after being knocked down, but is affected more heavily by P.DMG. When Protianus damages an enemy, that enemy takes constant M.DMG for 5 sec."
+            },
+            "7": {
+                "name": "Water Prison",
+                "cost": null,
+                "cooldown": null,
+                "description": "Enemies locked in a Water Prison deals greatly reduced DMG, and have their Mana reduced every sec. Target locked inside the Water Prison after 10 sec of casting [Water Prison Lockdown] loses 1000 Mana and has all Skill Cooldowns increased by 70%. Water Prison will be dispelled if Protianus takes P.DMG 75 times."
+            }
+        }
+    },
+    "aliases": [
+        "Protianus",
+        "WB2",
+        "WB 2"
+    ]
+}

@@ -1,0 +1,240 @@
+{
+    "infos": {
+        "title": "The Cursed Blood",
+        "class": "Assassin",
+        "position": "Front-500",
+        "attack range": "3800",
+        "damage type": "Magical",
+        "gender": "Male",
+        "age": "19 (Self-proclaimed)",
+        "height": "195",
+        "race": "Demon (Half-blood)",
+        "constellation": "Mira the Minstrel",
+        "birth of month": "June 6th, Month of Love",
+        "like": "Caramel pudding, sweetened juice",
+        "dislike": "Weaklings who act tough, idiots who think they know everything",
+        "story": "The son of Lucikiel is a powerful Demon officer who brought down the Republic of Gray. Usually considerate and careful, he is actually half Human. In battle, his Demon blood takes over, turning him arrogant and violent. He inherited this power from his father, whom he never even knew. However, he takes pride in his power and does not try to hide it. Since he is only partly Demon, only a single arm undergoes the transformation. However, even just this single arm contains immense power, and it's certainly not easy for him to fully control it yet. elif he loses the control of the arm, the only wise decision is to immediately get as far away from him as possible.",
+        "thumbnail": "./data/kr/assets/heroes/Ezekiel/ico.png",
+        "story_": "The son of Lucikiel is a powerful Demon officer who brought down the Republic of Gray. Usually considerate and careful, he is actually half Human. In battle, his Demon blood takes over, turning him arrogant and violent. He inherited this power from his father, whom he never even knew. However, he takes pride in his power and does not try to hide it. Since he is only partly Demon, only a single arm undergoes the transformation. However, even just this single arm contains immense power, and it's certainly not easy for him to fully control it yet. If he loses the control of the arm, the only wise decision is to immediately get as far away from him as possible."
+    },
+    "skills": {
+        "1": {
+            "name": "Destructive Instinct",
+            "cost": "2",
+            "cooldown": "8",
+            "description": "Swipes nearby enemies in a circular range and deals ??? M.DMG. Then strikes the ground, dealing ??? M.DMG and knocking down enemies for 3 sec. [Fury] - Consumes 15% of current HP to activate. Effect range increases and swipe attack draws in enemies.",
+            "thumbnail": "./data/kr/assets/heroes/Ezekiel/skills/1.png"
+        },
+        "2": {
+            "name": "Dawning Despair",
+            "cost": "2",
+            "cooldown": "10",
+            "description": "Dashes to an enemy with the highest ATK and deals ??? M.DMG to enemies in range, reducing their ATK Spd by 300. [Fury] - Consumes 10% of current HP to activate. Effect range increases, Stuns target for 3 sec, and increases own ATK Spd by 300 for 10 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Ezekiel/skills/2.png"
+        },
+        "3": {
+            "name": "Strike of Doom",
+            "cost": "2",
+            "cooldown": "7",
+            "description": "Charges energy and attacks target enemy, dealing ??? M.DMG and inflicting Stun for 3 sec. This DMG ignores the target's DMG Reduction effect. [Fury] - Consumes 20% of current HP to activate. Attacks enemies in range of target and DMG is tripled.",
+            "thumbnail": "./data/kr/assets/heroes/Ezekiel/skills/3.png"
+        },
+        "4": {
+            "name": "Cursed Blood",
+            "cost": null,
+            "cooldown": null,
+            "description": "Ezekiel gains 1 stack of [Cursed Blood] at the end of skill. Upon the 3th stack, consumes Cursed Blood to reset all skill cooldown, dealing ??? M.DMG to nearby enemies and knocking them down for 3 sec, while activating Fury for 10 sec, that cannot be dispelled. While in Fury state, goes into an auto-battle mode that cannot be controlled, and ATK is increased by ??? , auto attack DMG is doubled, and all Skill effect are reinforced. Cannot gain Cursed Blood during Fury state, except for when killing an enemy.",
+            "thumbnail": "./data/kr/assets/heroes/Ezekiel/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "DMG is increased by 40%.",
+                    "thumbnail": "./data/kr/assets/heroes/Ezekiel/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "After activation, ATK is increased by 40% for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Ezekiel/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Mana cost is reduced by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Ezekiel/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "When activated during Fury state, ignores target DEF.",
+                    "thumbnail": "./data/kr/assets/heroes/Ezekiel/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Becomes immune to CC during activation.",
+                    "thumbnail": "./data/kr/assets/heroes/Ezekiel/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "If there is 1 enemy, DMG is increased by 100%.",
+                    "thumbnail": "./data/kr/assets/heroes/Ezekiel/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "When in Fury state, heal rate is increased by 50%.",
+                    "thumbnail": "./data/kr/assets/heroes/Ezekiel/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Per every stacked **Skill 4**, takes 12% reduced DMG.",
+                    "thumbnail": "./data/kr/assets/heroes/Ezekiel/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / ATK.Spd +100",
+                "thumbnail": "./data/kr/assets/heroes/Ezekiel/perks/light.png"
+            },
+            "dark": {
+                "effect": "When in Fury state, auto attack deals DMG that ignores DEF.",
+                "thumbnail": "./data/kr/assets/heroes/Ezekiel/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Jailer of Despair, Barbatos",
+        "description": "Fury duration is increased by (0) sec and when in Fury stat, Crit DMG is increased by (1) and CC Resist by (2).",
+        "value": {
+            "0": {
+                "0": "2",
+                "1": "3",
+                "2": "4",
+                "3": "5",
+                "4": "6",
+                "5": "7"
+            },
+            "1": {
+                "0": "80%",
+                "1": "90%",
+                "2": "100%",
+                "3": "110%",
+                "4": "120%",
+                "5": "130%"
+            },
+            "2": {
+                "0": "200",
+                "1": "240",
+                "2": "290",
+                "3": "350",
+                "4": "420",
+                "5": "500"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Ezekiel/uw.png",
+        "story": "Ezekiel's father was one of the highest-ranking Demons. Although he does not know his father's name or face, he is aware of the tremendous power of the Demon blood he inherited. The Demon blood flowing within his veins also gave him a second personality. When his human blood prevails, Ezekiel is a young man of excellent character. At other times, he is an immensely powerful and arrogant Demon, just like his father. Barbatos, Jailer of Despair, manifests itself when Ezekiel's Demon blood is in full power. Taking the form of one of his arms, this weapon is powerful enough to slash through dimensions and sever the space itself. It is the physical representation of his father's power."
+    },
+    "uts": {
+        "1": {
+            "name": "Wild Beast's Leather Belt",
+            "description": "[Destructive Instinct] Upon use, heals own HP by 15%, and for 10 sec, increases M.DMG target receives by (0).",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Ezekiel/ut/1.png",
+            "story": "When Ezekiel made a choker with Manticore's leather, he made a double-layered leather belt along with it. The leather has the unique quality of holding demonic energy and causing insanity, so this belt casts fear on the surrounding area when Ezekiel explodes his demonic power. This binds and immobilizes those with weak minds."
+        },
+        "2": {
+            "name": "Wild Beast's Choker",
+            "description": "[Dawning Despair] Gains Immunity to CC for the skill's duration and increases ATK Spd by (0) for 10 sec.",
+            "value": {
+                "0": {
+                    "0": "100",
+                    "1": "120",
+                    "2": "140",
+                    "3": "170",
+                    "4": "210",
+                    "5": "250"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Ezekiel/ut/2.png",
+            "story": "Choker made with the skin of a powerful beast. Loot that celebrates the manticore that Ezekiel hunted after a hard battle against the Demons when he was young. Ezekiel remembers the joy of killing the manticore every time he touches the violent beast's choker, just before he charges at the formidable enemy in front of him."
+        },
+        "3": {
+            "name": "Sealing Binds",
+            "description": "[Strike of Doom] DMG is increased by (0) and gains 1 additional stack of Cursed Blood after using the skill.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Ezekiel/ut/3.png",
+            "story": "A bond containing the mana of an unknown priest. Young Ezekiel used to go berserk frequently. If anyone insulted his mom, he would allow his boiling demon blood to take over. Once he return to his senses, he would stare at his wounded arm and his terrified mom. When he was older, Ezekiel was getting rid of demons when he got into an argument with a bigger priest of Lua. He went berserk, just like any other day. Ezekiel was alone when he came to, and he was taken aback by the bond on his cursed arm. When he tried to take it off, he found that the priest's magic couldn't be shaken off so easily. However, he stopped going berserk and losing his consciousness after that. He's gained greater control over his mana, so it's now one of his most treasured items."
+        },
+        "4": {
+            "name": "Sculpture of Blood",
+            "description": "At the beginning of first battle, Ezekiel gains 2 stacks of [Cursed [Blood]. While under Fury, DMG dealt to bosses increases by (0).",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Ezekiel/ut/4.png",
+            "story": "Sudden surges of energy on young Ezekiel's right arm left countless wounds and scars on his arms and hands. When the arm is calm and the blood drips on the floor, his mind would settle with his eyes fixated on the blood. Ezekiel would wait until the blood stops, pick up a stone soaked in his blue blood, and start carving a small sculpture that looks like his own right hand."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon using Skills 6 times.",
+        "description": "Summons the Soul of Jailer of Despair, Barbatos for 12 sec, dealing ??? M.DMG to nearby enemies within a circular range of self and increasing own ATK by 50%. If Ezekiel is in Fury state for the duration of Skill, he can still be controlled and will not consume HP upon Skill use. After Skill use, gains 1 stack of Cursed Blood. Cursed Blood stacks gained from this Skill can also be gained during Fury state.",
+        "cooldown": "18",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Ezekiel/sw.png",
+        "advancement": {
+            "1": "Gains 1 additional Cursed Blood stacks.",
+            "2": "For the duration of Skill, increases own DMG dealt to enemies by 30%."
+        },
+        "story": "Ever since birth, Ezekiel has never used the power of his arm to the fullest.\nHis human side could not control the power perfectly, and his Demon side has never felt the need to use the power beyond what was already being used, However, through the long journey which Ezekiel started following a coincidental encounter, Ezekiel found those who he wished to protect.\nThe problem, however, was that 'protecting someone' required much more strength and effort than 'killing someone'. To become stronger than what he was, Ezekiel had to find his own way of using power. Since he was not a pure human, its ways had limits.\nHowever, since Ezekiel was also not a pure Demon, its way was not an option to him either. Ezekiels, wrought in agony over their power, had a discussion on one possible option: Fully unleashing the power acquired from father. No power can be properly wielded without understanding it, It was the one thing Ezekiels heard from a credible person. To Ezekie\u013e's surprise, the power of Demon, unleashed with a strong intent, was devastating. His claws left a long cut on a dimension. Ezekiel had witnessed such, and when he approached the dimension's scar with a surprised look, a dense demonic energy leaked out from the scar, Although he had never come into contact with one, the energy felt familiar to him.\nThat moment, Ezekiel realized what he had done. He understood the nature of the demonic energy. From then and onwards, Ezekiel could see the power of Barbatos directly."
+    },
+    "splashart": "./data/kr/assets/heroes/Ezekiel/sa.png",
+    "costumes": "./data/kr/assets/heroes/Ezekiel/cos",
+    "visual": null,
+    "aliases": null
+}

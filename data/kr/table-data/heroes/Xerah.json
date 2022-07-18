@@ -1,0 +1,251 @@
+{
+    "infos": {
+        "title": "Herald of Blood Moon",
+        "class": "Wizard",
+        "position": "Middle",
+        "attack range": "7700",
+        "damage type": "Magical",
+        "gender": "Female",
+        "age": "??? (Human: 17)",
+        "height": "165",
+        "race": "??? (Humanoid)",
+        "constellation": "Armil the Saint",
+        "birth of month": "April 19th, Month of Life",
+        "like": "Darkness, the moon, puppet show, history book (very old), people with negative emotions",
+        "dislike": "Angels, Demons, humans, animals, plants, basiclly every of this world, and innocent child-like beings",
+        "story": "A girl that the Tidhar created to discreetly impose their will on the world. She hides her identity, concealing herself amidst the shadows, operating among regular people. Her main purpose is to gather the power of darkness for the advent and find an ideal vessel from the ancient kingdom of Sekireinel, but the heroes from Sekireinel and a certain mighty-being twarted her plans. But Xerah was not frustrated nor disappointed. The longer it took, the more she'll enjoy destroying this world.",
+        "thumbnail": "./data/kr/assets/heroes/Xerah/ico.png",
+        "story_": "A girl that the Tidhar created to discretely impose their will on the world.\nShe hides her identity, conceiling herself amidst the shadows, operating among regular people.\nHer main purpose is to gather the power of darkness for the advent and find a vessel to contain it.\nShe did find an ideal vessel from the ancient kingdom of Sekireinel and a certain mighty-being thwarted her plans.\nBut Xerah was not frustrated nor disappointed.\nThe longer it took, the more she'll enjoy destroying this world."
+    },
+    "skills": {
+        "page 1": {
+            "1": {
+                "name": "Orbs of Darkness",
+                "cost": "2",
+                "cooldown": "5",
+                "description": "Throws 6 orbs of darkness, dealing ??? M.DMG to a random enemy and enemies in a circular range of the target. When Xerah is in [Darkness Awakened] state, increases DMG of [Orbs of Darkness] by x2, and reduces Cooldown by 100%.\n[Crest of Extortion Level 1 Effect] Destroys shield from the target.",
+                "thumbnail": "./data/kr/assets/heroes/Xerah/skills/1.png"
+            },
+            "2 (1)": {
+                "name": "Crest of Extortion",
+                "cost": "3",
+                "cooldown": "17",
+                "description": "Dispels negative effects from self and casts Crest of Extortion that lasts permanently on self. If Xerah already possesses a Crest of Extortion, the level of Crest of Extortion increases instead. [Crest of Extortion] Deals ??? M.DMG to a random enemy every 5 sec.\nLevel 1: Adds an additional effect to [Orbs of Darkness] Skill.\nLevel 2: Effect activation interval changes to 4 sec, and adds an additional effect to [Blood Moon] Skill.\nLevel 3: Effect activation interval changes to 3 sec, and [Crest of Extortion] Skill changes to [Crest Bestowal] Skill.",
+                "thumbnail": "./data/kr/assets/heroes/Xerah/skills/2 (1).png"
+            },
+            "2 (2)": {
+                "name": "Crest Bestowal",
+                "cost": "2",
+                "cooldown": "17",
+                "description": "Activates upon reaching Crest of Extortion Level 3.\nUpon use, dispels negative effects from self and bestows the power of the Crest of Extortion to an ally with the lowest HP. The ally instantly recovers 1 orb of Mana, heals its HP by a total of ??? for 5 sec, and gains Immunity to CC.",
+                "thumbnail": "./data/kr/assets/heroes/Xerah/skills/2 (2).png"
+            }
+        },
+        "page 2": {
+            "3": {
+                "name": "Blood Moon",
+                "cost": "4",
+                "cooldown": "25",
+                "description": "Creates a [Blood Moon] for 10 sec. For the duration of Blood Moon, increases ATK of all allies by ???, reduces DMG taken by 20%, deals a total of ??? M.DMG to all enemies, and reduces their Heal Rate by 50%.\n[Crest of Extortion Level 2 Effect] Boosts the effect all allies receive by double.",
+                "thumbnail": "./data/kr/assets/heroes/Xerah/skills/3.png"
+            },
+            "4": {
+                "name": "Darkness Awakened",
+                "cost": null,
+                "cooldown": null,
+                "description": "Upon using a Skill, if Xerah is not in Darkness Awakened state, gains an irremovable stack of [Darkness]. Upon gaining 4 [Darkness] stacks, Xerah consumes the stacks to enter [Darkness Awakened] state that is irremovable for 10 sec, increasing Lifesteal by 200 and dealing 50% increased DMG to Non-Hero enemies. When Xerah takes fatal DMG while in [Darkness Awakened] state, [Darkness Awakened] becomes deactivated, consumes entire Mana of self, and heals HP by 30%. Afterward, Xerah cannot gain any Darkness stacks for 10 sec.",
+                "thumbnail": "./data/kr/assets/heroes/Xerah/skills/4.png"
+            }
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "HP Recovery is increased by 10%.",
+            "III": "HP Recovery is increased by 15%.",
+            "IV": "HP Recovery is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Recovers 1 orb of Mana upon use.",
+                    "thumbnail": "./data/kr/assets/heroes/Xerah/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Increases Mana Cost by 1 and changes the target to the enemy with the highest ATK.",
+                    "thumbnail": "./data/kr/assets/heroes/Xerah/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "[Crest of Extortion / Crest Bestowal] Gains Immunity to All DMG while in use.",
+                    "thumbnail": "./data/kr/assets/heroes/Xerah/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "For the duration of the [Crest Bestowal] effect, the ally takes 20% reduced DMG.",
+                    "thumbnail": "./data/kr/assets/heroes/Xerah/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Increases Mana Cost by 1. Upon use, dispels nagative effects from self, and for the duration of Skill, continously dispels negative effects from all allies.",
+                    "thumbnail": "./data/kr/assets/heroes/Xerah/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Increases M.DMG the enemy takes by 30% for the duration of Skill.",
+                    "thumbnail": "./data/kr/assets/heroes/Xerah/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "While in [Darkness Awakened] state, changes to DMG Boost effect against Non-Hero enemies to 100%.",
+                    "thumbnail": "./data/kr/assets/heroes/Xerah/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "At the beginning of every battle, enters [Darkness Awakened] state, and becomes unable to gain [Darkness] stacks for 40 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Xerah/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit Chance +100",
+                "thumbnail": "./data/kr/assets/heroes/Xerah/perks/light.png"
+            },
+            "dark": {
+                "effect": "Dealing DMG with normal or Skill attacks increases M.DMG the target takes by 2% for 10 sec and reduces its Heal Rate by 2%. This effect can be stacked up to max 10 times.",
+                "thumbnail": "./data/kr/assets/heroes/Xerah/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Crest of Extortion, Kaliosk",
+        "description": "Increases Crit DMG by (0), and dealing DMG with [Crest of Extortion] Skill reduces the target's Mana by (1) and recovers own Mana by (2).",
+        "value": {
+            "0": {
+                "0": "20%",
+                "1": "24%",
+                "2": "29%",
+                "3": "35%",
+                "4": "42%",
+                "5": "50%"
+            },
+            "1": {
+                "0": "500",
+                "1": "600",
+                "2": "700",
+                "3": "800",
+                "4": "900",
+                "5": "1000"
+            },
+            "2": {
+                "0": "500",
+                "1": "600",
+                "2": "700",
+                "3": "800",
+                "4": "900",
+                "5": "1000"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Xerah/uw.png",
+        "story": "A chained pendulum was forged from the power of darkness by Tidhar to support Xerah's activities.\nThe power of darkness pulses within the pendulum, and the chains move as if it's alive. The moment a target is attacked by this pendulum, they feel as if the attack erodes their body and soul.\n\nAs the battle progresses, their soul will wither away , making them feel as if they have fallen into the very bottom of an abyss.\nThis tool is useful weapon in battle, but it also has another significant role.\nIt bestows Xerah, an artificial being, the reason for her existence through the extortion of others.\n\nBy doing so, Xerah can disguise her very existence and be accepted by others as someone who originally existed in this world."
+    },
+    "uts": {
+        "1": {
+            "name": "Astral Orb",
+            "description": "[Orbs of Darkness] Increases DMG by (0) and inflicts Stun on the hit enemy for 1 sec.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Xerah/ut/1.png",
+            "story": "A mysterious orb that features the galaxy and the stars inside.\nNobody exactly knows what's inside it, or where it's channeling, but the powerful energy within the orb suggests that the orb is no ordinary magic device.\nXerah communicates with Tidhar through this orb, reporting her progress or receiving her missions.\nShe also uses it as part of her disguise as a fortune teller, pretending to look into a passerby couple's future."
+        },
+        "2": {
+            "name": "Blood Moon Amulet",
+            "description": "[Crest of Extortion] Reduces Cooldown by 7 sec.\n[Crest Bestowal] Changes the number of targets to 4 and increases the duration of the effect by (0) sec.",
+            "value": {
+                "0": {
+                    "0": "2",
+                    "1": "2.4",
+                    "2": "2.9",
+                    "3": "3.5",
+                    "4": "4.2",
+                    "5": "5"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Xerah/ut/2.png",
+            "story": "An amulet adorned with a gem that resembles the blood moon.\nWhile it may look like a beautiful accessory, it's actually a tool/medium that enhances the power of darkness.\nThe power of darkness enhanced by the amulet can absorb the darkness around, growing strong enough to trigger the Eclipse phenomenon.\nOnce the Eclipse is triggered, it then harvests the enormous power of darkness that was created by the Eclipse to the amulet.\nThrough these processes, Xerah's amulet now holds massive darkness energy.\nOnly Xerah and her creators know where and how this power will be used."
+        },
+        "3": {
+            "name": "Puppet Doll",
+            "description": "[Blood Moon] Recovers Mana of all allies by (0) every sec for the duration of Skill, and changes the Heal Rate Reduction effect inflicted upon hit enemy to 80%.",
+            "value": {
+                "0": {
+                    "0": "100",
+                    "1": "120",
+                    "2": "140",
+                    "3": "170",
+                    "4": "210",
+                    "5": "250"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Xerah/ut/3.png",
+            "story": "A puppet doll that Xerah received from Shakmeh during her days helping him abroad to earn his trust.\nShakmeh and Xerah were visiting the town on their day off when they came across a puppet show.\nAmused at the fact that Xerah took an interest in a puppet show when she was indifferent toward any other extravagant show.\nShakmeh gave one of the puppet dolls used at the show to Xerah as a birthday gift.\nShakmeh probably thought that Xerah just really liked the puppet show, but...\nXerah could only come up with a somewhat bittersweet smile at his gift."
+        },
+        "4": {
+            "name": "Portrait of an Unknown Girl",
+            "description": "[Darkness Awakened] Increases the duration by (0) sec, and changes the duration in which [Darkness] stacks cannot be gained upon receiving fatal DMG to 5 sec.",
+            "value": {
+                "0": {
+                    "0": "2",
+                    "1": "2.4",
+                    "2": "2.9",
+                    "3": "3.5",
+                    "4": "4.2",
+                    "5": "5"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Xerah/ut/4.png",
+            "story": "When Xerah was attending the academy for her mission, she had to draw a self-portrait as part of her electives.\nExcelling in everything, Xerah painted her way through the canvas, but she could not seem to draw her face nor her expression.\nThe class was over, and a portrait with a faceless girl stood silently in front of Xerah."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon using Skills 5 times.",
+        "description": "Summons the soul of Crest of Extortion, Kaliosk, dealing ??? M.DMG to an enemy with the highest ATK. For the duration of the soul, reduces the target's ATK by 20%, Mana by 250 every sec, and increases own ATK by 30%.",
+        "cooldown": "22",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Xerah/sw.png",
+        "advancement": {
+            "1": "Changes Skill Activation Requirements to 4 times, reduces ATK Reduction effect to 30%, and Boost effect to 50%.",
+            "2": "Upon use, immediately enters Darkness Awakened state for 10 sec."
+        },
+        "story": "Xerah was just a scarecrow. Just mere scarecrow created to chase away the birds. All she could do was watch, watch, and watch again.\nShe watched the world as countless generations appeared, thrived, declined, and disappeared.\n\nAfter a very long time, all she felt was emptiness.\nIt was only natural since she didn't have meaning to begin with.\n\nHer only joy in life was to watch the birds soar above her.\nThe birds that would freely fly through the vast sky, unchained to anything.\nWhen one of the small birds casually sat on her shoulder, Xerah smiled to herself.\n\nA cry that was more like a shriek piecrced the sky, and a destroyed bird fell onto the ground. There was no room in her heart for other feelings, for her heart with already full of darkness.\nShe tightened her grip which still lingered with cruel pleasure and smiled.\n\n- If I can't have it... no one can."
+    },
+    "splashart": "./data/kr/assets/heroes/Xerah/sa.png",
+    "costumes": "./data/kr/assets/heroes/Xerah/cos",
+    "visual": null,
+    "aliases": null
+}

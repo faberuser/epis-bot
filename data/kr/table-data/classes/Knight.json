@@ -1,0 +1,11 @@
+{
+    "perks": {
+        "t2": {
+            "Experienced Fighter": "Attacked targets take 20% more DMG. Does not stack.",
+            "Excellent Strategy": "Increases CC ACC of all allies by 150. If the ally uses the same Perk, only 50 additional CC ACC applies.",
+            "Battle Cry": "Increases HP of all allies by 15%. If the ally uses the same Perk, only 5% additional HP applies.",
+            "Shield of Protection": "Block Rate is increased by 200 and CC resistance is increased by 200.",
+            "Swift Move": "Increases ATK Spd by 200 and ACC by 400."
+        }
+    }
+}

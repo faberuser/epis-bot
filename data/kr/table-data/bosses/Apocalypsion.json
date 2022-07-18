@@ -1,0 +1,68 @@
+{
+    "infos": {
+        "class": "Apocalypsion",
+        "title": "Calamity of Destruction",
+        "race": "Dragon",
+        "damage type": "Magical",
+        "recommended heroes": "Yanne, Laias, Isaiah",
+        "characteristics": "Since Apocalypsion's [Invitation to the Abyss] deals massive DMG to targets inflicted with [Abyssal Curse], you need to dispel [Abyssal Curse]. Also, when Apocalypsion takes a fatal DMG, [Power of Hatred] is activated and she summons meteors to annihilate all her enemies. Use CC Skills to reduce [Power of Hatred] and stop Apocalypsion's Skill. All attacks from Apocalypsion have high Crit Chance, so watch out!",
+        "thumbnail": "./data/kr/assets/bosses/dragon/Apocalypsion.png"
+    },
+    "skills": {
+        "page 1": {
+            "1": {
+                "name": "Engraving Aura",
+                "cost": null,
+                "cooldown": "22",
+                "description": "Deals M.DMG over 3 times to frontal enemies and explodes the sword aura to deal M.DMG and inflict Stun. Apocalypsion heals her HP proportional to the number of enemies hit. Upon every Skill use, deals increased DMG."
+            },
+            "2": {
+                "name": "Shaking Earth",
+                "cost": null,
+                "cooldown": "25",
+                "description": "Deals M.DMG to frontal enemies in a straight line and destroys their Shield. Each hit reduces the target's Mana by 1000 and inflicts Stun for 2 sec. If the target is inflicted with CC, it takes increased DMG."
+            },
+            "3": {
+                "name": "Invitation to the Abyss",
+                "cost": null,
+                "cooldown": "33",
+                "description": "Deals M.DMG to all enemies, inflicting Stun for 5 sec and inflicting them with [Abyssal Curse]. Afterward, Apocalypsion gains 70 stacks of [Judgment] and charges energy for 8 sec. When fully charged, she deals M.DMG to all enemies and knocks them back far away for 7 sec. If the hit target is inflicted with [Abyssal Curse], destroys the target's Shield and pulls it in front of self, dealing an even greater DMG. Apocalypsion's [Judgment] stack is reduced whenever she takes a Crit Hit. If the [Judgment] stack is fully reduced while she is charging energy. [Abyssal Curse] state will be dispelled. For the duration of Skill, Apocalypsion's All Crit Resistance and All Dodge Chance are increased by 500 and 400 respectively."
+            },
+            "4": {
+                "name": "Destructive Demise",
+                "cost": null,
+                "cooldown": null,
+                "description": "When Apocalypsion's HP reaches 1%, [Power of Hatred] becomes activated, summoning small meteors for 8 sec to deal M.DMG. If her enemies fail to deplete Apocalypsion's [Power of Hatred] within 8 sec, she summons a giant meteor that annihilates all her enemies. Use CC Skills to reduce [Power of Hatred]."
+            }
+        },
+        "page 2": {
+            "5": {
+                "name": "Wrath of the Matriarch",
+                "cost": null,
+                "cooldown": null,
+                "description": "Every 50 sec, increases the stage of [Wrath of the Matriarch]. The effects of each stage stack.\nStage 1: Apocalypsion heals own HP equal to 2.5% of her Max HP every sec and takes 300 less ALl DMG.\nStage 2: Apocalypsion deals 25% increased DMG to enemies and becomes unaffected by DMG Boost effects.\nStage 3: All DMG dealt by Apocalypsion becomes DMG that ignores DEF."
+            },
+            "6": {
+                "name": "Audience With the Matriarch",
+                "cost": null,
+                "cooldown": null,
+                "description": "When there are no enemies nearby upon normal attack, Apocalypsion dispels all positive effects from 1 enemy and pulls it in front of self."
+            },
+            "7": {
+                "name": "Unblemished Form",
+                "cost": null,
+                "cooldown": null,
+                "description": "Apocalypsion is not affected by changes in ATK Spd, DEF and ATK. Her attacks always hit and her Crit Chance is increased by 400."
+            },
+            "8": {
+                "name": "Hauled Into Hell",
+                "cost": null,
+                "cooldown": null,
+                "description": "Every 15 sec, deals M.DMG to 1 enemy with the highest M.DEF to remove from battle for 8 sec and inflict [Infernal Curse]. The [Infernal Curse] effect can be stacked up to max 10 times. Each stack reduces the target's Mana Recovery by 100 and ATK Spd by 100. This effect is irremovable."
+            }
+        }
+    },
+    "aliases": [
+        "lady booba mommy dragon"
+    ]
+}

@@ -1,0 +1,232 @@
+{
+    "infos": {
+        "title": "Holy Priestess of Water",
+        "class": "Priest",
+        "position": "Back-100",
+        "attack range": "3000",
+        "damage type": "Magical",
+        "gender": "Female",
+        "age": "???",
+        "height": "175",
+        "race": "Dragon",
+        "constellation": "Notmun the Tuner",
+        "birth of month": "July 9th, Month of Harmony",
+        "like": "Swimming, washing her hair",
+        "dislike": "Anything that disrupts the world's order",
+        "story": "This beauteliful and gentle priestess of water is actually a morphed blue dragon. In the distant past, she was worshipped by certain desert tribes. However, for some unknown reason, she has been sleeping for ages. She can command water to turn lands fertile, and she always used her powers to help her people. Humans, in return, built a golden shrine in her honor under the lake in the oasis. A flow of evil energy in the desert has awakened her from her sleep, and once again, she began using her powers to help those around her.",
+        "thumbnail": "./data/kr/assets/heroes/Laias/ico.png",
+        "story_": "This beautiful and gentle priestess of water is actually a morphed blue dragon. In the distant past, she was worshipped by certain desert tribes. However, she has been sleeping for ages for some unknown reason. She can command water to turn lands fertile, and she always used her powers to help her people. In return, the humans built the golden Shrine of Flow in her honor under the lake in the oasis. A flow of evil energy in the desert has awakened her from her sleep, and she has once again begun using her powers to help those around her."
+    },
+    "skills": {
+        "1": {
+            "name": "Healing Droplets",
+            "cost": "2",
+            "cooldown": "8",
+            "description": "Heals HP of all allies by ??? and increases Heal Rate by 25% for 10 sec, reduces M.DMG they take by 15% for 5 sec. If the target's HP is below 50%, Heal Rate and the amount of reduced M.DMG the target takes increases by x 1.5.",
+            "thumbnail": "./data/kr/assets/heroes/Laias/skills/1.png"
+        },
+        "2": {
+            "name": "Bubble Shield",
+            "cost": "3",
+            "cooldown": "15",
+            "description": "For 15 sec, casts a shield that blocks ??? DMG on the ally with the lowest HP. While the shield is in effect, it grants Immunity to CC, increases the ATK by ??? , and heals ??? HP every sec for the ally. For 15 sec, the ally takes 30% reduced DMG from Non-Hero targets and increases DMG dealt to Non-Hero enemies by 15%. The DMG Reduction effect and the DMG Boost effect to Non-Hero enemies are irremovable.",
+            "thumbnail": "./data/kr/assets/heroes/Laias/skills/2.png"
+        },
+        "3": {
+            "name": "Festival of the Flow",
+            "cost": "4",
+            "cooldown": "20",
+            "description": "Deals ??? M.DMG to nearby enemies and knocks them down for 3 sec. Upon casting, heals HP of all allies by 15% of their Max HP and recovers 2 orbs of Mana excluding self. Afterwards, for 12 sec, creates a whirlpool every 4 sec that deals ??? M.DMG to random enemies and knocks them down for 2 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Laias/skills/3.png"
+        },
+        "4": {
+            "name": "Blessing of the Water Dragon",
+            "cost": null,
+            "cooldown": null,
+            "description": "Increases Laias's CC Resist by 500, and all allies' M.DEF is increased by ??? + 5% of Laias's M.DEF, and M.Crit Resistance by 250. Whenever Laias casts an active Skill, reduces M.DMG all allies take by 25% for 5 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Laias/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "Heal Rate is increased by 10%.",
+            "III": "Heal Rate is increased by 15%.",
+            "IV": "Heal Rate is increased by 25%."
+        },
+        "2": {
+            "II": "Shield is increased by 10%.",
+            "III": "Shield is increased by 15%.",
+            "IV": "Shield is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "DEF Boost is increased by 10%.",
+            "III": "DEF Boost is increased by 15%.",
+            "IV": "DEF Boost is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Heal rate is increased by 40%.",
+                    "thumbnail": "./data/kr/assets/heroes/Laias/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Upon healing, M. Crit Resistance rises by 25%.",
+                    "thumbnail": "./data/kr/assets/heroes/Laias/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Changes the target to the ally with the highest ATK.",
+                    "thumbnail": "./data/kr/assets/heroes/Laias/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Mana cost is reduced by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Laias/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "DMG effect occurs every 3 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Laias/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Changes the target of the whirlpool to the enemy with the highest ATK.",
+                    "thumbnail": "./data/kr/assets/heroes/Laias/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "M.DEF increase rate increases by 20%, and M. Crit Resistance increases by 150.",
+                    "thumbnail": "./data/kr/assets/heroes/Laias/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "The DMG Reduction effect becomes irremovable.",
+                    "thumbnail": "./data/kr/assets/heroes/Laias/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / M. Block +200",
+                "thumbnail": "./data/kr/assets/heroes/Laias/perks/light.png"
+            },
+            "dark": {
+                "effect": "Recovers 350 Mana of all allies every 3 sec.",
+                "thumbnail": "./data/kr/assets/heroes/Laias/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Flowing Circle, Eltoirre",
+        "description": "Increases the Heal Rate of all allies by (0) and M.DEF by 5% of Laias' ATK. Every 5 sec, heals the ally with the lowest HP by (1) of own ATK.",
+        "value": {
+            "0": {
+                "0": "8%",
+                "1": "10%",
+                "2": "12%",
+                "3": "14%",
+                "4": "17%",
+                "5": "20%"
+            },
+            "1": {
+                "0": "100%",
+                "1": "120%",
+                "2": "140%",
+                "3": "170%",
+                "4": "210%",
+                "5": "250%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Laias/uw.png",
+        "story": "An ankh crafted in the shape of a phoenix. It symbolizes the natural cycle of life. In the ancient days, the nomads of the desert worshipped the blue dragon of the oasis as their protector. In return, she blessed them with rain and gave life to their crops. To show their gratitude, the nomads offered her various treasures, including Lazulia, the gem of water. Although she had no particular interest in material wealth, she accepted their gratitude, and used the treasures to build a temple within the oasis. This ankh is the sacred symbol of the temple, and contains the mighty power of water."
+    },
+    "uts": {
+        "1": {
+            "name": "Water Dragon Scale",
+            "description": "[Healing Droplets] Increases Heal Rate by 50%, and for 10 sec, increases the target's M.Block by (0).",
+            "value": {
+                "0": {
+                    "0": "200",
+                    "1": "240",
+                    "2": "280",
+                    "3": "350",
+                    "4": "420",
+                    "5": "500"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Laias/ut/1.png",
+            "story": "A scale used to decorate Laias's hair accessory, where she has stored her own healing power in case she runs out of energy. When she woke up in the Shrine of Flow by the earnest prayers of Trovatia tribe, she came to think that young Lilia would not be able to protect the children of desert safely if she falls asleep again like she did 100 years ago. After contemplation, she stored her power in the scale so that she could give it to Lilia if anything happens."
+        },
+        "2": {
+            "name": "Oasis Crystal",
+            "description": "[Bubble Shield] Reduces Cooldown by (0) and dispels Negative Effects from the target.",
+            "value": {
+                "0": {
+                    "0": "12%",
+                    "1": "14%",
+                    "2": "17%",
+                    "3": "21%",
+                    "4": "25%",
+                    "5": "30%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Laias/ut/2.png",
+            "story": "Water essence that the Blue Dragons protect. The essence of an oasis that the Blue Dragons brought to the desert at the beginning of the world. Protecting and defending this is the sacred mission of the Priestess of Water Laias, and it is her favorite thing to do. The Oasis Crystal leads the Priestess of Water who uses the Bubble Shield to the person who most needs her help."
+        },
+        "3": {
+            "name": "Papyrus of the Flow",
+            "description": "[Festival of the Flow] Whirlpool effect targets 2 enemies and all allies recover additional (0) mana.",
+            "value": {
+                "0": {
+                    "0": "500",
+                    "1": "600",
+                    "2": "720",
+                    "3": "860",
+                    "4": "1040",
+                    "5": "1250"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Laias/ut/3.png",
+            "story": "A sample of the ancient scripture, the Book of Chaos, that was swept away. The Book of Chaos is a historic scripture that is passed down to the Priest of Water, and it has records of culture, magic, and various fields. It was sealed in the golden Shrine of Flow along with Laias, but most of the book disappeared while she was asleep. The remaining Papyrus of the Flow is a boosting spell of the Festival of the Flow."
+        },
+        "4": {
+            "name": "Tear of God Dragon",
+            "description": "[Blessing of the Water Dragon] Increases DEF boost by 50%. All allies recover Mana by (0) every sec.",
+            "value": {
+                "0": {
+                    "0": "40",
+                    "1": "48",
+                    "2": "58",
+                    "3": "70",
+                    "4": "84",
+                    "5": "100"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Laias/ut/4.png",
+            "story": "A bluish, transparent jewel found where the first Water Dragon returned to the embrace of Mana. It is also known as the Hurt Soul of the First Water Dragon, as people think it contains the sorrow and yearning of the dragon toward its late spouse. Tear-like ripples form around the jewel when it is placed in the water. This is how it got its name, Tear of God Dragon."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon using Skills 5 times.",
+        "description": "Dispels negative effects from self and allies and summons the soul of Flowing Circle, Eltoirre for 12 sec, healing all allies' HP by ??? and Mana by 400 every sec.",
+        "cooldown": "23",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Laias/sw.png",
+        "advancement": {
+            "1": "Increases the healed ally's M.DEF by 10% and M.Block by 200. This effect stacks up to 5 times.",
+            "2": "For the duration of Skill, self becomes immune to All DMG and Cooldown of all active Skills is reduced by 1 sec every sec."
+        },
+        "story": "Laias, after the awakening from a 100-year slumber, she witnessed people suffering from invasion of the Demons that has begun again. This sight reminded her of what she saw befor her sleep: People were suffering, but all she could do was fall into a slumber.\nIt was the best Laias could do to prevent further suffering by stopping herself from turning into a Mad Dragon, but the decision remained as a tiny guilt to her.\nUpon the awakening, Laias actively moved around to help the desert and  its people; however this time again, she could not save people from Demons.\nIn her agony, Laias thought of Eltoirre, the ankh she was grasping. Eltoirre holds the power of water, circulation, and life. Perhaps she thought, if I could draw more power from Eltoirre, I may be able to help more people. Laias immediately begun exploring the power within Eltoirre.\nThe momen when she realized that she had reached the bottom of Eltoirre's power, an elegant phoenix of water appeared in fron of Laias.\n\nThe true power of Eltoirre had been unleashed."
+    },
+    "splashart": "./data/kr/assets/heroes/Laias/sa.png",
+    "costumes": "./data/kr/assets/heroes/Laias/cos",
+    "visual": null,
+    "aliases": null
+}

@@ -1,0 +1,11 @@
+{
+    "perks": {
+        "t2": {
+            "Opportune Strike": "Crit Chance is increased by 150 and Crit DMG is increased by 30%.",
+            "Warlike": "Per each enemy, ATK is increased 7% and CC Resistance is increased by 30. Can be stacked up to max 10 times.",
+            "Offensive Guard": "ATK rises equal to half of P.DEF and received P.DMG is decreased by 15%.",
+            "Tactical Foresight": "Dodge rate is increased by 200 and takes 10% reduced DMG.",
+            "Blood Wrath": "Increases Lifesteal by 200 and ATK Spd by 200."
+        }
+    }
+}

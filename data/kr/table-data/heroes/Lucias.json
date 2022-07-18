@@ -1,0 +1,240 @@
+{
+    "infos": {
+        "title": "Saint of Blessings",
+        "class": "Priest",
+        "position": "Middle-100",
+        "attack range": "5900",
+        "damage type": "Physical",
+        "gender": "Male",
+        "age": "24",
+        "height": "181",
+        "race": "Human",
+        "constellation": "Graham the Thief",
+        "birth of month": "May 21st, Month of Hope",
+        "like": "Dishes made with apple, fishing, prayer, helping people, mysterious magic shows and performances",
+        "dislike": "Rudes ones, undelivered promises and taking human lelife lightly",
+        "story": "Lucias was a member of Lua's Holy Knights before awakening as the Saint of Blessings. Under the command of the living Legend, Ricardo, he protected Orvel and neighboring towns from Demons. However, stigmata started to appear on his body when he was 19, and by the call of Lua, the holy knight became the Saint of Blessings. His mission is to travel around the world and bring the light of Lua to those in need. He stayed true to his duties, wandering the world to share blessings. Now, holds a weapon in his hand again to defeat the power of darkness that has been growing in strength over the past 100 years.",
+        "thumbnail": "./data/kr/assets/heroes/Lucias/ico.png",
+        "story_": "Lucias was a member of Lua's Holy Knights before awakening as the Saint of Blessings. Under the command of the Living Legend, Ricardo, he protected Orvel and neighboring towns from Demons. However, stigmata started to appear on his body when he was 19, and by the call of Lua, the holy knight became the Saint of Blessings. His mission is to travel around the world and bring the light of Lua to those in need. He stayed true to his duties, wandering the world to share blessings. Now, he holds a weapon in his hand again to defeat the power of darkness that has been growing in strength over the past 100 years."
+    },
+    "skills": {
+        "1": {
+            "name": "Path of Blessings",
+            "cost": "2",
+            "cooldown": "10",
+            "description": "Heals 4 allies with the lowest HP by ??? and targets take 20% reduced P.DMG for 7 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Lucias/skills/1.png"
+        },
+        "2": {
+            "name": "Zone of Faith",
+            "cost": "5",
+            "cooldown": "15",
+            "description": "Sets up the [Zone of Faith] at the own location for 6 sec. Increases ATK of allies in [Zone of Faith] by ??? and dispels negative effects on them continuously. Heals allies in area by ??? every second. Deals P.DMG of ??? on enemies within [Zone of Faith] every second, and stuns them for ??? sec.",
+            "thumbnail": "./data/kr/assets/heroes/Lucias/skills/2.png"
+        },
+        "3": {
+            "name": "Stigmata",
+            "cost": "3",
+            "cooldown": "25",
+            "description": "Increases P.Dodge of all allies by 250 and their ATK by ??? for 15 sec. Effects will be dispelled when the self dies. Normal attacks deal additional P.DMG of ??? to targets for 15 sec, and increases P.DMG taken by target by 25% for 5 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Lucias/skills/3.png"
+        },
+        "4": {
+            "name": "Holy Sacrifice",
+            "cost": null,
+            "cooldown": null,
+            "description": "Casting Path of Blessings and Zone of Faith consumes 20% of self's current HP. Upon healing an ally with these spells, the amount of healing is increased by ??? and the target gains ??? additional DEF for 10 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Lucias/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "Heal Rate is increased by 10%.",
+            "III": "Heal Rate is increased by 15%.",
+            "IV": "Heal Rate is increased by 25%."
+        },
+        "2": {
+            "II": "DMG and Heal Rate are increased by 10%.",
+            "III": "DMG and Heal Rate are increased by 15%.",
+            "IV": "DMG and Heal Rate are increased by 25%."
+        },
+        "3": {
+            "II": "ATK Boost and DMG are increased by 10%.",
+            "III": "ATK Boost and DMG are increased by 15%.",
+            "IV": "ATK Boost and DMG are increased by 25%."
+        },
+        "4": {
+            "II": "Heal Rate is increased by 10%.",
+            "III": "Heal Rate is increased by 15%.",
+            "IV": "Heal Rate is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Changes the targets to all allies.",
+                    "thumbnail": "./data/kr/assets/heroes/Lucias/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Recovers target's mana by 500.",
+                    "thumbnail": "./data/kr/assets/heroes/Lucias/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Revovers Mana for allies within range by 200 per sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Lucias/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Continously dispels positive effects from enemies within range.",
+                    "thumbnail": "./data/kr/assets/heroes/Lucias/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Reduces ACC of hit enemies by 150 for 5 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Lucias/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Gains immunity to CC for the duration of skill.",
+                    "thumbnail": "./data/kr/assets/heroes/Lucias/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Increases Heal rate by 40%.",
+                    "thumbnail": "./data/kr/assets/heroes/Lucias/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "No longer consumes HP.",
+                    "thumbnail": "./data/kr/assets/heroes/Lucias/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP +15% / CC Resist +100",
+                "thumbnail": "./data/kr/assets/heroes/Lucias/perks/light.png"
+            },
+            "dark": {
+                "effect": "Increase own Mana Recovery/Sec by 300% for 3 sec upon casting an active skill.",
+                "thumbnail": "./data/kr/assets/heroes/Lucias/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Blessing of Light, Benedicia",
+        "description": "For 30 sec after the battle starts, allies take (0) reduced P.DMG while having their ATK Spd increased by (1) and DMG to Non-Hero enemies increased by (2).",
+        "value": {
+            "0": {
+                "0": "10%",
+                "1": "12%",
+                "2": "14%",
+                "3": "17%",
+                "4": "21%",
+                "5": "25%"
+            },
+            "1": {
+                "0": "100",
+                "1": "120",
+                "2": "140",
+                "3": "170",
+                "4": "210",
+                "5": "250"
+            },
+            "2": {
+                "0": "8%",
+                "1": "10%",
+                "2": "12%",
+                "3": "14%",
+                "4": "17%",
+                "5": "20%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Lucias/uw.png",
+        "story": "A blessed flag representing the Sun, Moon, and the entire sky. It contains the power and teachings of the Creator, Lua. The power of light spreads when he waves the flag, bringing peace to his allies' minds, defeating the powers of darkness. A halidom bestowed upon Lucias, who used to be a flag bearer in Lua's Holy Knights."
+    },
+    "uts": {
+        "1": {
+            "name": "Book of Blessings",
+            "description": "[Path of Blessings] Reduces Mana Cost by 1 and Cooldown by (0).",
+            "value": {
+                "0": {
+                    "0": "12%",
+                    "1": "12%",
+                    "2": "17%",
+                    "3": "21%",
+                    "4": "25%",
+                    "5": "30%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Lucias/ut/1.png",
+            "story": "The bible of infinity that a line of Sages of Blessings used to record their works. The title of a sage is passed down with the memories of its predecessor, so it would seem that there is no reason for them to write anything down. However, the danger of the accumulated memories erasing the identity of the present sage made writing this bible necessary."
+        },
+        "2": {
+            "name": "Dice of Remembrance",
+            "description": "[Zone of Faith] Reduces Mana Cost by 1, and reduces Mana of enemies within range by (0) per sec.",
+            "value": {
+                "0": {
+                    "0": "200",
+                    "1": "240",
+                    "2": "290",
+                    "3": "350",
+                    "4": "420",
+                    "5": "500"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Lucias/ut/2.png",
+            "story": "Lucias had a cherished friend back when he was young. This friend was a member of a troupe named Stardust. He had very nimble hands despite his young age and used to pickpocket countless wallets from gamblers. However, Stardust would only visit Lucias's town once a year, and so the two friends gave each other something they treasured to remember their friendship. This dice is the special trick dice made by Lucias's friend, Esker."
+        },
+        "3": {
+            "name": "Guidance of Morning Star",
+            "description": "[Stigmata] The effect of Stigmata cannot be dispelled by skill removing the positive effects. Reduces Cooldown by (0).",
+            "value": {
+                "0": {
+                    "0": "12%",
+                    "1": "14%",
+                    "2": "17%",
+                    "3": "21%",
+                    "4": "25%",
+                    "5": "30%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Lucias/ut/3.png",
+            "story": "Research materials about the stigmata of the Saint of Blessings. Although Lucias has the memories of the saints, they did not know everything. Lua's priests left this document after researching the secret behind the stigmata, but it was impossible for them to bring everything to light."
+        },
+        "4": {
+            "name": "Sword of Sacrifice",
+            "description": "[Holy Sacrifice] Increases DEF boost by 50%. Targets have their ATK increased by (0) for 5 sec.",
+            "value": {
+                "0": {
+                    "0": "8%",
+                    "1": "10%",
+                    "2": "12%",
+                    "3": "14%",
+                    "4": "17%",
+                    "5": "20%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Lucias/ut/4.png",
+            "story": "The holy sword that Lucias used when he was under Ricardo's command as a Holy Knight. High priests of Lua blessed it directly, imbuing it with strong holy energy. Lucia was later chosen as the Saint of Blessings, and his blessings are actually much more powerful than the blessing invested in the sword. He always carries the sword to remember his days as the Holy Knight, but he never draws it. Gossipers say that it is because he fears he would not look like a saint if he is to be seen wielding a sword..."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon using Skills 4 times.",
+        "description": "Summons the soul of Blessing of Light, Benedicia for 10 sec, increasing all allies' Heal Rate by 35% and ATK Spd by 350.",
+        "cooldown": "24",
+        "uses": "7",
+        "thumbnail": "./data/kr/assets/heroes/Lucias/sw.png",
+        "advancement": {
+            "1": "Increases ATK of all allies by 35% for the duration of Skill.",
+            "2": "Every 1 sec, Skill Cooldown of self is reduced by 1 sec for the duration of Skill."
+        },
+        "story": "The truth of creation is engraved unto the sky. All places were influenced by Lua, life and the truth of creation existed there.\n\nThe truth points the goddess' will, and Benedicia is the sacred flag that carries Lua's will, purging those that oppose the goddess. It is Lua's warning and crusade against evil, and a sacred soul that shines ever-bright to evangelize Lua's will even to those afar.\nBenedicia, as a holy gear that carries with it the memory and faith of all flagbearers that held it through the history, takes a form of a righteous knight that warns and smites those foolish enough to oppose the goddess."
+    },
+    "splashart": "./data/kr/assets/heroes/Lucias/sa.png",
+    "costumes": "./data/kr/assets/heroes/Lucias/cos",
+    "visual": null,
+    "aliases": null
+}

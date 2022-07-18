@@ -1,0 +1,11 @@
+{
+    "perks": {
+        "t2": {
+            "Target Weakness": "ATK rises by 20% and DEF Penetration rises by 200.",
+            "Ready Cannons": "Mana recovery per second rises by 62.5% per enemy.",
+            "Pressure Point": "Crit chance increases by 400.",
+            "Special Bullet": "Attacked target loses 15% of ATK and 150 of crit. Chance. Does not stack.",
+            "Amplified Gunpowder": "Increases Crit DMG of all allies by 30%. If the ally uses the same Perk, only 10% additional Crit DMG is applied."
+        }
+    }
+}

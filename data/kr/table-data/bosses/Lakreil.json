@@ -1,0 +1,60 @@
+{
+    "infos": {
+        "class": "Lakreil",
+        "title": "Stakes of Wrath",
+        "race": "Lizardman",
+        "damage type": "Physical",
+        "recommended heroes": "Naila, Juno, Rodina",
+        "characteristics": "[Deadly Boomerage] cast after [Body Crash] leaves permanent scars on enemies. As Lakreil will stop casting [Dealy Boomerang] once [Rage of Lakreil expires, you should dodge his attacks or deal massive P.DMG to him.",
+        "thumbnail": "./data/kr/assets/bosses/gc/Lakreil.png"
+    },
+    "skills": {
+        "page 1": {
+            "1": {
+                "name": "Deadlly Boomerang",
+                "cost": null,
+                "cooldown": null,
+                "description": "Throws a boomerang to all frontal enemies, dealing P.DMG 4 times, and reduces ther Heal Rate by 1% permanently. The attack does not cease until [Rage of Lakreil] expires."
+            },
+            "2": {
+                "name": "Body Crash",
+                "cost": null,
+                "cooldown": "30",
+                "description": "Charges at frontal enemies, dealing P.DMG and knocking them down. Afterward, gains [Rage of Lakreil] and casts [Deadly Boomerang]."
+            },
+            "3": {
+                "name": "Raging Strike",
+                "cost": null,
+                "cooldown": "25",
+                "description": "Leaps up high and strikes the ground, removing positive effect from all enemies, dealing P.DMG, and reducing their All Dodge Chance by 300 for 10 sec. This attack is unavoidable."
+            }
+        },
+        "page 2": {
+            "4": {
+                "name": "Enrage",
+                "cost": null,
+                "cooldown": "18",
+                "description": "Increases the caster's ATK by 50% and ACC by 300 for 20 sec."
+            },
+            "5": {
+                "name": "Rage of Lakreil",
+                "cost": null,
+                "cooldown": null,
+                "description": "Decreases by 5 when the enemy successfully dodges an attack of the caster, and by 1 when the caster takes P.DMG When Rage of Lakreil expires, the caster becomes powerless and takes increased DMG for a certain time."
+            },
+            "6": {
+                "name": "Stakes of Wrath",
+                "cost": null,
+                "cooldown": null,
+                "description": "Lakreil's ATK Spd and DEF cannot be reduced and Lakreil ignores all DMG Reduction effects of enemies. Additionally, enemies become unable to recover their Mana for 1 sec after using a Skill."
+            }
+        }
+    },
+    "aliases": [
+        "Lakreil",
+        "GC2",
+        "GC 2",
+        "GR8",
+        "GR 8"
+    ]
+}

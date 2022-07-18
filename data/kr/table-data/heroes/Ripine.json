@@ -1,0 +1,243 @@
+{
+    "infos": {
+        "title": "Swordswoman of the Silver Moon",
+        "class": "Assassin",
+        "position": "Front",
+        "attack range": "8900",
+        "damage type": "Magical",
+        "gender": "Female",
+        "age": "???",
+        "height": "163",
+        "race": "Dark Elf",
+        "constellation": "Judgment Layan",
+        "birth of month": "September 30th, Month of Truth",
+        "like": "Her brother, comrades at the Black Edge, books, writing",
+        "dislike": "Human (especially the ones in power), Demons",
+        "story": "An outlander who hails from an Orvel of another world that is similar, yet different. As inhabitants from a world where Dark Elves are oppressed bu humans, the siblings Riheet and Ripine were quite confused with Orvel of this world, where racial discrimination isn't as prevalent. After seeing different races working together to build a better world, Ripine hoped that her world will someday also strive to become the ideal world... However, she was well aware that there are things that needed to be taken care of in her world and wished to return to her world to finish the deed.",
+        "thumbnail": "./data/kr/assets/heroes/Ripine/ico.png",
+        "story_": "An outlander who hails from an Orvel of another world that is similar, yet different. As inhabitants from a world where Dark Elves are oppressed by humans, the siblings Riheet and Ripine were quite confused with Orvel of this world, where racial discrimination isn't as prevalent. After seeing different races working together to build a better world, Ripine hoped that her world will someday also strive to become the ideal world... However, she was well aware that there are things that needed to be taken care of in her world and wished to return to her world to finish the deed."
+    },
+    "skills": {
+        "1": {
+            "name": "Silver Moon Gust",
+            "cost": "2",
+            "cooldown": "12",
+            "description": "Deals ??? M.DMG to the target over 4 times and delivers an additional attack that deals ??? M.DMG and inflicts Stun on the target for 2 sec. The last hit deals additional ??? M.DMG that ignores DEF per stack of [Otherworldly Curse].",
+            "thumbnail": "./data/kr/assets/heroes/Ripine/skills/1.png"
+        },
+        "2": {
+            "name": "Silver Moon Mark",
+            "cost": "3",
+            "cooldown": "15",
+            "description": "Dispels CC effects from self and moves to the farthest enemy to inflict an irremovable [Silver Moon Mark] for 15 sec, dealing ??? M.DMG. If there is an enemy inflicted with [Black Moon Mark], Ripine attacks the target inflicted with [Black Moon Mark] and changes the mark to [Full Moon Mark]. If the target is inflicted with [Full Moon Mark], [Full Moon Execution] becomes activated for 10 sec. Ripine prioritizes the target inflicted with [Silver Moon Mark] or [Full Moon Mark].",
+            "thumbnail": "./data/kr/assets/heroes/Ripine/skills/2.png"
+        },
+        "3": {
+            "name": "Silver Moon Bladestorm",
+            "cost": "3",
+            "cooldown": "20",
+            "description": "Attacks the target 5 times, dealing ??? M.DMG and delivers an additional attack that deals ??? M.DMG. The last hit deals additional ??? M.DMG that ignores DEF per stack of [Otherworldly Curse].",
+            "thumbnail": "./data/kr/assets/heroes/Ripine/skills/3.png"
+        },
+        "4 (1)": {
+            "name": "Otherworldly Mana",
+            "description": "Uses Otherworldly Mana to increase own DMG dealt to enemies by 35% and inflict 1 stack of [Otherworldly Curse] on the target each hit. [Otherworldly Curse] can be stacked up to max 30 times.",
+            "thumbnail": "./data/kr/assets/heroes/Ripine/skills/4 (1).png"
+        },
+        "4 (2)": {
+            "name": "Full Moon Execution",
+            "description": "Dispels CC effects from self and attacks an enemy inflicted with [Full Moon Mark] 2 times, dealing ??? M.DMG. The last hit explodes [Full Moon Mark], dealing ??? M.DMG that ignores DEF. If the target is not a Hero, deals ??? additional M.DMG that ignores DEF. Upon exploding [Full Moon Mark], deals ??? additional M.DMG that ignores DEF per stack of [Otherwordly Curse]. This skill is used together with [Riheet]. If this Skill kills an enemy, Cooldown of [Silver Moon Mark] and Riheet's [Black Moon Mark] will be reset.",
+            "thumbnail": "./data/kr/assets/heroes/Ripine/skills/4 (2).png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "Increases DMG dealt to enemies by an additional 5%.",
+            "III": "Increases DMG dealt to enemies by an additional 5%.",
+            "IV": "Increases DMG dealt to enemies by an additional 5%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "The last hit reduces the target's Mana by 2000.",
+                    "thumbnail": "./data/kr/assets/heroes/Ripine/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Reduces Cooldown by 3 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Ripine/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Changes the target to the enemy with the highest ATK.",
+                    "thumbnail": "./data/kr/assets/heroes/Ripine/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Increase M.DMG the hit target takes by 30% for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Ripine/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Each hit inflicts Stun on target for 1 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Ripine/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Increases DMG by 40%.",
+                    "thumbnail": "./data/kr/assets/heroes/Ripine/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Each hit reduces the target's ATK Spd by 30 for 10 sec. This effect can be stacked up to max 10 times.",
+                    "thumbnail": "./data/kr/assets/heroes/Ripine/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "When there is 1 enemy, each hit inflicts 1 additional stack of [Otherworldly Curse].",
+                    "thumbnail": "./data/kr/assets/heroes/Ripine/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit Chane +100",
+                "thumbnail": "./data/kr/assets/heroes/Ripine/perks/light.png"
+            },
+            "dark": {
+                "effect": "At the beginning of each battle, increases DMG dealt to bosses by 15%. This effect can be stacked up to max 5 times.",
+                "thumbnail": "./data/kr/assets/heroes/Ripine/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Silver Lunar Wing, Clarapheon",
+        "description": "Increases Crit Chance by (0), and at the beginning of each battle, increases DMG dealt to enemies by (1) and DMG dealt to bosses by (2) for 120 sec. This effect is irremovable.",
+        "value": {
+            "0": {
+                "0": "200",
+                "1": "240",
+                "2": "290",
+                "3": "350",
+                "4": "420",
+                "5": "500"
+            },
+            "1": {
+                "0": "6%",
+                "1": "7%",
+                "2": "8%",
+                "3": "10%",
+                "4": "12%",
+                "5": "15%"
+            },
+            "2": {
+                "0": "6%",
+                "1": "7%",
+                "2": "8%",
+                "3": "10%",
+                "4": "12%",
+                "5": "15%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Ripine/uw.png",
+        "story": "A sibling sword of Black Lunar Wing, Noctipheus. It is one of the twin blades that was wielded by the hero of legend who saved the kingdom of Dark Elves long ago. Containing the power of the Silver Moon, this long sword is considered on of the greatest Dark Elven treasures, as it is worthy of being called the essence of Moonlight Magic, the unique magic harnessed by the Dark Elves. The legend further foretold the return of the sword of a nameless hero when the kingdom of the Dark Elves is in peril once again. According to the lore, it is the Will of the Dark Elven kings that choose the owner. However, following the decline of the Dark Elven royalty that took place after the conclusion of the Demon War 100 yearsa go, many speculated that the sword will never return..."
+    },
+    "uts": {
+        "1": {
+            "name": "Silver Moon Gust",
+            "description": "[Silver Moon Gust] Increases the duration of Stun by 2 sec and M.DMG the target takes by (0) for 10 sec.",
+            "value": {
+                "0": {
+                    "0": "12%",
+                    "1": "14%",
+                    "2": "17%",
+                    "3": "21%",
+                    "4": "25%",
+                    "5": "30%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Ripine/ut/1.png",
+            "story": "Ever since she was young, Ripine always loved to read books. Naturally, she had a talent for writing. When Riheet got his first big paycheck, he bought his sister an expensive, premium pen. it was Riheet's way of giving his sister a choice to seek a different career should she decide to give up the way of the sword. Ripine, however, did not forsake her sword. Instead, she writes from time to time at her own leisure, trying to convey what she has learned through her experiences in her writing in hopes of telling others a message that is rather difficult to express in spoken words."
+        },
+        "2": {
+            "name": "Silver Moon Mark",
+            "description": "Dispels positive effects from the target and reduces M.Crit Resistance by (0) for 10 sec.",
+            "value": {
+                "0": {
+                    "0": "200",
+                    "1": "240",
+                    "2": "290",
+                    "3": "350",
+                    "4": "420",
+                    "5": "500"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Ripine/ut/2.png",
+            "story": "A flower that Riheet and Ripine's parents liked. Their mother especially loved this flower, and in hyacinth season, the family's house would be decorated with fresh hyacinths. After their parents passed away, Ripine decorated her hideout every year on the date of their passing with a newly-bought flower pot to commemorate her parents. During those times, she reminded herself to never forget what happened that day."
+        },
+        "3": {
+            "name": "Silver Moon Bladestorm",
+            "description": "[Silver Moon Bladestorm] When there is 1 enemy, reduces Cooldown by 7 sec and increases DMG by (0).",
+            "value": {
+                "0": {
+                    "0": "40%",
+                    "1": "48%",
+                    "2": "58%",
+                    "3": "70%",
+                    "4": "84%",
+                    "5": "100%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Ripine/ut/3.png",
+            "story": "A book of fairy tales that Ripine enjoyed when she was young. Ripine lost it as a child during her years as a fugitive, but she found the same book in an old bookstore, which she would visit from time to time as an adult. Fond of her memories with the book, Ripine eventually bought the book. Since then, she would store it in her bag and read it occasionally. Ripine has no intention of discarding it."
+        },
+        "4": {
+            "name": "Ripine: Reminiscent Meal",
+            "description": "[Otherworldly Mana] Increases ATK Spd by 300, and at the beginning of each battle, inflicts (0) stack of [Otherwordly Curse] to all enemies.",
+            "value": {
+                "0": {
+                    "0": "8",
+                    "1": "10",
+                    "2": "12",
+                    "3": "14",
+                    "4": "17",
+                    "5": "20"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Ripine/ut/4.png",
+            "story": "After losing their parents early in their life, Riheet and Ripine had no choice but to live as runaways. There was no food they could afford, and they ended up resorting to stealing bread and fruits. But one day, a generous, non-judgemental merchant handed them some ingridients. Using the ingredients, Riheet and Ripine prepared a simple meal. To this day, they still remember the meal of that day. For her meal, Ripine prepared a big grilled salmon with refreshing lemon-garlic sauce that increases one's appetite."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up over 20 sec.",
+        "description": "Summons the soul of Silver Lunar Wing, Clarapheon for 8 sec, increasing own ATK by 30% and creating a shield that absorbs DMG and increases Crit DMG by 50% for 8 sec. If there is [Riheet] in the team, [Riheet] gains the same shield.",
+        "cooldown": "20",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Ripine/sw.png",
+        "advancement": {
+            "1": "Changes the duration of the soul and the shield to 12 sec.",
+            "2": "Changes ATK Boost to 50% and Crit DMG Boost to 100%. The shield becomes irremovable."
+        },
+        "story": "According to the legend of the Dark Elves, the Silver Lunar Wing, Clarapheon, is a sword that accumulated power over the centuries by drawing in pure moonlight. Forged by a blacksmith whose name remains unknown, the legend says the sword selects the hero of deliverance according to the Will of the Kings and disappears once the crisis is over. The pure, silver light within its body is known as the embodiment of love and compassion of the kings, and it is said that the blade is so elegant, that it is enchanting.\n\nRipine does not know why such an amazing sword chose her as its master, but the silver sword already understood everything about Ripine, including her reason for existence and the potential that her soul carries. That is why, even after the crisis that tormented the Dark Elves was solved, Clarapheon chose to stay by Ripine's side until she departs to her home world. It hoped to ease the pain Ripine acquired from her past and the pain that will follow when she walks into her arduous future."
+    },
+    "splashart": "./data/kr/assets/heroes/Ripine/sa.png",
+    "costumes": "./data/kr/assets/heroes/Ripine/cos",
+    "visual": null,
+    "aliases": null
+}

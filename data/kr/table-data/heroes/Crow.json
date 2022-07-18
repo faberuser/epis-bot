@@ -1,0 +1,232 @@
+{
+    "infos": {
+        "title": "The Punishing Bullet",
+        "class": "Mechanic",
+        "position": "Middle-200",
+        "attack range": "5200",
+        "damage type": "Physical",
+        "gender": "Male",
+        "age": "32",
+        "height": "193",
+        "race": "Human",
+        "constellation": "Notmun the Tuner",
+        "birth of month": "July 8th, Month of Harmony",
+        "like": "Candy canes, a pendant safeguarding a memory, the forgotten nagging of a loved one",
+        "dislike": "Pirates, Gods who have taken everything away from him. And now, tobacco",
+        "story": "Code name: Hound. A bounty hunter known as the hound of hell. It is said that no one can escape from this former Imperial Navy officer once he targets them. The only consolation for criminals is that this man isn't motivated by their bounties alone. While there are many theories, the most convincing one is that he's after revenge. There are moments when this cold-hearted man seems to warm up, they say. It's when he pulls out an old pendant, which nobody has actually seen.",
+        "thumbnail": "./data/kr/assets/heroes/Crow/ico.png",
+        "story_": "Code name: Hound. A bounty hunter known as the hound of hell. It is said that no one can escape from this former Imperial Navy officer once he targets them. The only consolation for criminals is that this man isn\u2019t motivated by their bounties alone. While there are many theories, the most convincing one is that he\u2019s after revenge. There are moments when this cold-hearted man seems to warm up, they say. It's when he pulls out an old pendant, which nobody has actually seen."
+    },
+    "skills": {
+        "1": {
+            "name": "Target will be Eliminated.",
+            "cost": "2",
+            "cooldown": "10",
+            "description": "Deals a total of ??? P.DMG to enemies in front over 15 times and leaves 2 'Hunting Dog's Fang Marks' for 40 sec. Hunting Dog's Fang Mark stacks up to max 100 times.",
+            "thumbnail": "./data/kr/assets/heroes/Crow/skills/1.png"
+        },
+        "2": {
+            "name": "Struggle is Meaningless.",
+            "cost": "3",
+            "cooldown": "15",
+            "description": "Attacks a random enemy 10 times and deals a total of ??? P.DMG. Shoots a Frost Bullet that deals ??? P.DMG to target and surrounding enemies, freezing them for 4 sec. The special Frost Bullet creates a freezing area for 6 seconds that deals ??? P.DMG every 2 sec, with a 50% chance to freeze for 2 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Crow/skills/2.png"
+        },
+        "3": {
+            "name": "Even Gods shall Die.",
+            "cost": "4",
+            "cooldown": "20",
+            "description": "Takes position and focuses to shoot a laser, dealing ??? P.DMG to frontal enemies within range, and consumes target's stack of Hunting Dog's Fang Mark to deal ??? additional P.DMG per each stack. Depending on the focusing time, the effect's range increases, and DMG is increased up to max 100%. Once the focus is completed, knocks back the enemy far away.",
+            "thumbnail": "./data/kr/assets/heroes/Crow/skills/3.png"
+        },
+        "4": {
+            "name": "Hunting Preparation",
+            "cost": null,
+            "cooldown": null,
+            "description": "Crow is not affected by changes in ATK Spd. ATK increases by ??? and Crit DMG by 80%. Recovers 300 Mana every second. It also leaves a 'Hunting Dog's Fang Mark' to target for 40 sec when dealing a normal attack.",
+            "thumbnail": "./data/kr/assets/heroes/Crow/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "ATK Boost is increased by 10%.",
+            "III": "ATK Boost is increased by 15%.",
+            "IV": "ATK Boost is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Upon each DMG dealt, recovers 30 Mana.",
+                    "thumbnail": "./data/kr/assets/heroes/Crow/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Gains immunity to CC while in use.",
+                    "thumbnail": "./data/kr/assets/heroes/Crow/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Cooldown is reduced by 3 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Crow/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Freezing chance of the Freezing Area increases by 30%.",
+                    "thumbnail": "./data/kr/assets/heroes/Crow/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Increases cooltime by 10 sec and DMG by 100%.",
+                    "thumbnail": "./data/kr/assets/heroes/Crow/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Reduces Mana Cost by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Crow/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Boss monster takes 15% increased DMG.",
+                    "thumbnail": "./data/kr/assets/heroes/Crow/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Mana recovery increases by 40%.",
+                    "thumbnail": "./data/kr/assets/heroes/Crow/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit DMG +20%",
+                "thumbnail": "./data/kr/assets/heroes/Crow/perks/light.png"
+            },
+            "dark": {
+                "effect": "Increases Mana Cost of all skills by 1 and DMG by 75%.",
+                "thumbnail": "./data/kr/assets/heroes/Crow/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Hellhound, Akistra",
+        "description": "The normal attack shoots an additional bullet that deals (0) of ATK as P.DMG. When the skill ends, 'Hellhound, Akistra' is activated, increasing ATK and Crit DMG by (1) for 20 sec. 'Hellhound, Akistra' is only activated once at 20 sec.",
+        "value": {
+            "0": {
+                "0": "50%",
+                "1": "60%",
+                "2": "70%",
+                "3": "85%",
+                "4": "100%",
+                "5": "125%"
+            },
+            "1": {
+                "0": "30%",
+                "1": "36%",
+                "2": "43%",
+                "3": "52%",
+                "4": "62%",
+                "5": "75%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Crow/uw.png",
+        "story": "It is unarguably the culmination of the latest imperial technomagi technology. It can transform into three modes, the last of which uses magic that is so devastating that its use has to be restricted. According to Valance, the head of the imperial weapons development organization MagosLe\u2019Flamme, the new weapon Archistra was stolen, immediately after its development, by Crow, a former naval officer who was dishonorably discharged. It remains to be confirmed whether Crow really did manage to infiltrate one of the Empire's most important organizations to steal Archistra... It's also possible that Valance simply handed it over to him, given their long friendship."
+    },
+    "uts": {
+        "1": {
+            "name": "Teeth-mark Bullet",
+            "description": "[Target will be Eliminated.] Reduces Cooldown by 3 sec, and upon every hit, reduces the target's Mana by (0).",
+            "value": {
+                "0": {
+                    "0": "20",
+                    "1": "24",
+                    "2": "29",
+                    "3": "35",
+                    "4": "42",
+                    "5": "50"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Crow/ut/1.png",
+            "story": "A bullet that has teeth marks of a Hellhound. Those hit by this bullet are branded with the mark of the Hellhound, which won't disappear until they draw their last breath. No matter how far they run, the teeth of the Hellhound will find them."
+        },
+        "2": {
+            "name": "Cold Barrage",
+            "description": "[Struggle is Meaningless] Reduces Mana Cost by 1 and has a (0) chance to freeze target for 3 sec upon every strike.",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Crow/ut/2.png",
+            "story": "Magos Le'Flamme, the imperial weapons development organization, succeeded in enhancing the Ground Chill Missile. They tried to equip it on the new weapon Akistra to test it out. However, Crow stole Akistra, so the missile that was equipped on it was stolen as well. This missile contains a powerful chill, and it's enough to freeze the surrounding land."
+        },
+        "3": {
+            "name": "Pendant of Memories",
+            "description": "[Even Gods shall Die] Gains immunity to CC during skill activation and DMG is increased by (0).",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Crow/ut/3.png",
+            "story": "A precious pendant containing the picture of Crow's deceased wife and daughter. He's frequently stares at the picture while sucking on candy, looking extremely sad and yet calm. It's a pendant even more precious than his life, so you better not lay a finger on it. Even if you are a god, you will have to pay with your life."
+        },
+        "4": {
+            "name": "Carousel Music Box",
+            "description": "[Hunting Preparation] Increases ATK boost by (0). Hunting Dog's Fang Mark becomes irremovable.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Crow/ut/4.png",
+            "story": "A carousel music box that Crow's wife Rose liked. Crow was walking on the street of Orvelia and saw this old music box in the shop display. He stood still on the road, looking at it for a long time, and went inside the shop. He wound the music box and stood there, listening to the melody silently. - It's the same one. - I said I would buy her a new one, but she just liked this old, worn music box. He murmured quietly, and bought the music box. In his eyes, his wife was playing the music box to her daughter with a big smile on her face."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon using Skills 4 times.",
+        "description": "Summons the soul of Hellhound, Arkistra for 15 sec. When Crow casts [Even Gods shall Die], it deals additional ??? P.DMG. At max charge, deals 100% increased DMG. The soul disappears after dealing DMG.",
+        "cooldown": "30",
+        "uses": "3",
+        "thumbnail": "./data/kr/assets/heroes/Crow/sw.png",
+        "advancement": {
+            "1": "DMG increased by 80%.",
+            "2": "For the duration of Skill, increase own ATK by 40%."
+        },
+        "story": "Despite having its firepower significantly reduced, Akistra still places heavy burdon on its user's body, but its power is so mighty that some say it might even kill a God.\nWhen Crow first used Akistra, 'Crow's life energy', a user authentication code registered by Rose, synchronized with Akistra's main core. As Crow accumulated his use of Akistra, the attunement rate increased gradually, leading to releasing the Akistra's lock, and altough temporary, started awakening Akistra's true power."
+    },
+    "splashart": "./data/kr/assets/heroes/Crow/sa.png",
+    "costumes": "./data/kr/assets/heroes/Crow/cos",
+    "visual": null,
+    "aliases": null
+}

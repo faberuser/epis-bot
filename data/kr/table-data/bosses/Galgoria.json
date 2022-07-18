@@ -1,0 +1,56 @@
+{
+    "infos": {
+        "class": "Galgoria",
+        "title": "Grasp of Death",
+        "race": "Angel",
+        "damage type": "Magical",
+        "recommended heroes": "Morrah, Arch, Annette",
+        "characteristics": "Galgoria constantly recovers its HP. Reduces its Heal Rate or attack it with massive DMG to defeat it.\nIf you deal DMG to Galgoria several times, the ally that dealt the highest DMG will be sealed for a certain period, so be careful!",
+        "thumbnail": "./data/kr/assets/bosses/tm/Galgoria.png"
+    },
+    "skills": {
+        "page 1": {
+            "1": {
+                "name": "Swamp Destroyer",
+                "cost": null,
+                "cooldown": "10",
+                "description": "Attacks enemies in front of Galgoria 3 times, dealing M.DMG. Afterward, launches a final attack on enemies within a wider range, dealing M.DMG proportional to the targets' current HP and knocking them down for 3 sec."
+            },
+            "2": {
+                "name": "Poisonous Swamp",
+                "cost": null,
+                "cooldown": "17",
+                "description": "Creats [Poisonous Swamp] in a circular area in front of Galgoria for 5 sec. Enemies within range take M.DMG every sec and have their Mana Recovery reduced by 40%, but their ATK increases by 40%."
+            },
+            "3": {
+                "name": "Poisonous Explosion",
+                "cost": null,
+                "cooldown": "18",
+                "description": "Galgoria attacks all enemies over 2 times. The first attack reduces the target's ATK by 50% for 10 sec and the second attack reduces the target's Crit Chance by 500 for 10 sec."
+            }
+        },
+        "page 2": {
+            "4": {
+                "name": "Fatal Venom",
+                "cost": null,
+                "cooldown": null,
+                "description": "After using a Skill 3 times, Galgoria attacks all enemies, dealing M.DMG. Hit enemies' Heal Rate is permanently reduced, and Galgoria's ATK is permanently increased."
+            },
+            "5": {
+                "name": "Persistent Life Force",
+                "cost": null,
+                "cooldown": null,
+                "description": "Galgoria is not affected by changes in ATK Spd effects and has a high Heal Rate, recovering HP every sec. When battling Galgoria, Heroes cannot Lifesteal. In battles of Stage 4 or above, Galgoria's Heal Rate is increased by 50%, Heal Rate of Heroes is reduced by 40%, and Shield of Heroes is reduced by 60%."
+            },
+            "6": {
+                "name": "Swamp Imprisonment",
+                "cost": null,
+                "cooldown": null,
+                "description": "Upon taking DMG 150 times, Galgoria dispels imprisonment inflicted upon all Heroes, imprisons 1 Hero that dealt the highest DMG to Galgoria to remove from the battle for 8 sec, and increases DMG dealt by all Heroes that are not imprisoned for 8 sec."
+            }
+        }
+    },
+    "aliases": [
+        "Gal"
+    ]
+}

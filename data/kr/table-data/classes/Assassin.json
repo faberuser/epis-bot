@@ -1,0 +1,11 @@
+{
+    "perks": {
+        "t2": {
+            "Target Weakness": "ATK rises by 20% and DEF Penetration rises by 200.",
+            "Swift and Nimble": "Per every sec, Dodge rate is increased by 100. This effect can be stacked up to max 5 times, and resets upon dodging an Attack.",
+            "Tactical Foresight": "Dodge rate is increased by 200 and takes 10% reduced DMG.",
+            "Opportune Strike": "Crit Chance is increased by 150 and Crit DMG is increased by 30%.",
+            "Vital Detection": "Upon attack, causes the target to take 10% increased All DMG and have their ATK Spd reduced by 100 for 10 sec. This effect activates once every 3 sec."
+        }
+    }
+}

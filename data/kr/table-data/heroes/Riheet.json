@@ -1,0 +1,235 @@
+{
+    "infos": {
+        "title": "Lightning Flash of the Black Moon",
+        "class": "Warrior",
+        "position": "Front",
+        "attack range": "8800",
+        "damage type": "Magical",
+        "gender": "Male",
+        "age": "???",
+        "height": "183",
+        "race": "Dark Elf",
+        "constellation": "Judgment Layan",
+        "birth of month": "September 25th, Month of Truth",
+        "like": "His sister, comrades at the Black Edge, practicing combat and sword skills",
+        "dislike": "Humans (especially the ones in power), Demons",
+        "story": "An outlander who hails from an Orvel of another world that is similar, yet different. As inhabitants from a world where Dark Elves are oppressed bu humans, the siblings Riheet and Ripine were quite confused with Orvel of this world, where racial discrimination isn't as prevalent. After seeing different races working together to build a better world, Riheet couldn't help but feel perplexed; he didn't know if he was angry of simply amused. In the world he came from, humans are but a sworn enemy to the Dark Elves, but it seems that such is not the case with the humans of his world...",
+        "thumbnail": "./data/kr/assets/heroes/Riheet/ico.png",
+        "story_": "An outlander who hails from an Orvel of another world that is similar, yet different. As inhabitants from another world where Dark Elves are oppressed by humans, the siblings Riheet and Ripine were quite confused with Orvel of this world, where racial discrimination isn't as prevelant. After seeing different races working together to build a better world, Riheet couldn't help but feel perplexed; he didn't know if he was angry or simply amused. In the world he came from, humans are but a sworn enemy to the Dark Elves, but it seems that such is not the case with the humans of this world..."
+    },
+    "skills": {
+        "1": {
+            "name": "Black Moon Brand",
+            "cost": "2",
+            "cooldown": "7",
+            "description": "Deals ??? M.DMG to frontal enemies within range, inflicting [Black Moon Brand] for 3 sec on hit targets and knocking them down for 3 sec. Upon hit, deals additional ??? M.DMG that ignores Block per stack of [Otherworldly Curse]. Targets inflicted with [Black Moon Brand] cannot recover Mana for the duration.",
+            "thumbnail": "./data/kr/assets/heroes/Riheet/skills/1.png"
+        },
+        "2": {
+            "name": "Black Moon Mark",
+            "cost": "3",
+            "cooldown": "15",
+            "description": "Dispels CC effects from self and leaves an irremovable [Black Moon Mark] on the target for 15 sec, dealing ??? M.DMG. If there is an enemy inflicted with [Silver Moon Mark], Riheet attacks the target inflicted with [Silver Moon Mark] and changes the mark to [Full Moon Mark]. If the target is inflicted with [Full Moon Mark], [Full Moon Execution] becomes activated for 10 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Riheet/skills/2.png"
+        },
+        "3": {
+            "name": "Black Moon Strike",
+            "cost": "3",
+            "cooldown": "15",
+            "description": "Attacks the frontal area 10 times, dealing ??? M.DMG and inflicting Stun for 2 sec. Afterward, delivers a final blow that deals M.DMG and additional M.DMG that ignores Block per stack of [Otherworldly Curse]. While in use, gains immunity to all CC effects.",
+            "thumbnail": "./data/kr/assets/heroes/Riheet/skills/3.png"
+        },
+        "4 (1)": {
+            "name": "Otherworldly Mana",
+            "description": "Uses Otherworldly Mana to increase own DMG dealt to enemies by 35% and inflict 1 stack of [Otherworldly Curse] on the target each hit. [Otherworldly Curse] can be stacked up to max 30 times.",
+            "thumbnail": "./data/kr/assets/heroes/Riheet/skills/4 (1).png"
+        },
+        "4 (2)": {
+            "name": "Full Moon Execution",
+            "description": "Dispels CC effects from self and attacks an enemy inflicted with [Full Moon Mark] 2 times, dealing ??? M.DMG. The last hit explodes [Full Moon Mark], dealing ??? M.DMG that ignores Block. If the target is not a Hero, deals ??? additional M.DMG that ignores Block. Upon exploding [Full Moon Mark], deals ??? additional M.DMG that ignores Block per stack of [Otherwordly Curse]. This Skill is used together with [Ripine]. If this Skill kills an enemy, Cooldown of [Black Moon Mark] and Ripine's [Silver Moon Mark] will be reset.",
+            "thumbnail": "./data/kr/assets/heroes/Riheet/skills/4 (2).png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "Increases DMG dealt to enemies by an additional 5%.",
+            "III": "Increases DMG dealt to enemies by an additional 5%.",
+            "IV": "Increases DMG dealt to enemies by an additional 5%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Increases DMG by 40%.",
+                    "thumbnail": "./data/kr/assets/heroes/Riheet/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "[Black Moon Brand] becomes irremovable.",
+                    "thumbnail": "./data/kr/assets/heroes/Riheet/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Inflicts Stun on the hit enemy for 5 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Riheet/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Increases M.DMG the hit target takes by 30% for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Riheet/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Gains immunity to All DMG while in use.",
+                    "thumbnail": "./data/kr/assets/heroes/Riheet/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Increase the duration of Stun by 1 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Riheet/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "When there are 3 or more enemies, each hit inflicts 1 additional stack of [Otherworldly Curse].",
+                    "thumbnail": "./data/kr/assets/heroes/Riheet/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "When there is 1 enemy, each hit inflicts 1 additional stack of [Otherworldly Curse].",
+                    "thumbnail": "./data/kr/assets/heroes/Riheet/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / ATK Spd +100",
+                "thumbnail": "./data/kr/assets/heroes/Riheet/perks/light.png"
+            },
+            "dark": {
+                "effect": "At the beginning of each battle, HP does not fall below 10% for 7 sec. If HP falls below 15% for duration of Skill, DMG dealt to Heroes reduces by 70% for 5 sec. All effects are irremovable.",
+                "thumbnail": "./data/kr/assets/heroes/Riheet/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Black Lunar Wing, Noctipheus",
+        "description": "Increases ATK by (0), and dealing DMG to an enemy increases M.DMG the target takes by (1) for 5 sec.",
+        "value": {
+            "0": {
+                "0": "20%",
+                "1": "24%",
+                "2": "29%",
+                "3": "35%",
+                "4": "42%",
+                "5": "50%"
+            },
+            "1": {
+                "0": "20%",
+                "1": "24%",
+                "2": "29%",
+                "3": "35%",
+                "4": "42%",
+                "5": "50%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Riheet/uw.png",
+        "story": "A sibling sword of Silver Lunar Wing, Clarapheon. It is one of the twin baldes that was wielded by the hero of legend who saved the kingdom of Dark Elves long ago. This long sword contains the power of the Black Moon and is known to represent the power of the untainted moon that cannot be stained by darkness. The legend further foretold the return of the sword of the nameless hero when the kingdom of the Dark Elves is at peril once again. According to the lore, it is the Will of the Dark Elven kings that chooses its owner. However, following the decline of the Dark Elven royalty that took place after the conclusion of the Demon War 100 years ago, many speculated that the sword will never return..."
+    },
+    "uts": {
+        "1": {
+            "name": "Family Charm",
+            "description": "[Black Moon Brand] Dispels positive effects from hit targets and [Black Moon Brand] additionally reduces Heal Rate by (0).",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Riheet/ut/1.png",
+            "story": "A braclet Ripine gave to Riheet before forming the Black Edge. Altough it is a makeshift braclet made of tough leather from a black water buffalo and a metal band plated with silver, the bracelet carries a sentiment that is far more precious than any other treasure. It is now worn and old, but Riheet still carries it with him."
+        },
+        "2": {
+            "name": "Black Edge Hood",
+            "description": "[Black Moon Mark] Upon using this Skill, increases own ATK by (0) for 10 sec and reduces hit target's M.DEF by 30% for 10 sec.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Riheet/ut/2.png",
+            "story": "A hood of the Dark Elven assault squad that was formed by Riheet. It is used to conceal the wearer's identity as a Dark Elf, and it is sometimes a key item for certain missions. on the surface, Black Edge was created to vanquish Demons, but its true goal remains a secret. To whom will their blade, fueled by their burning vengeance towards humans, especially those in power at Orvel, be pointing in the end? This, of course,is a story of an Orvel in another world..."
+        },
+        "3": {
+            "name": "Old Pendant",
+            "description": "[Black Moon Strike] Increases DMG by (0) and reduces Cooldown by 30%.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Riheet/ut/3.png",
+            "story": "A pendant that is passed down in Riheet's family for generations. It is told that this pendant, engraved with a brilliant red gem, was created by one of Riheet's ancestors. Both Riheet and Ripine are unsure of its purpose or meaning, but they carry it as a keepsake of their parents."
+        },
+        "4": {
+            "name": "Riheet: Reminiscent Meal",
+            "description": "[Otherworldly Mana] Increases DEF Penetration by 300 and when Riheet inflicts a stack of [Otherworldly Curse], Riheet increases M.DMG the target takes by (0) per stack of [Otherworldly Curse]. The M.DMG Boost can be stacked up to max 30 times.",
+            "value": {
+                "0": {
+                    "0": "0.5%",
+                    "1": "0.6%",
+                    "2": "0.7%",
+                    "3": "0.8%",
+                    "4": "0.9%",
+                    "5": "1%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Riheet/ut/4.png",
+            "story": "After losing their parents early in their life, Riheet and Ripine had no choice but to live as runaways. There was no food they could afford, and they ended up resorting to stealing bread and fruits. But one day, a generous, non-judgemental merchant handede them some ingredients. Using the ingridients, Riheet and Ripine prepared a simple meal. To this day, they still remember the meal of that day. For his meal, Riheet prepared a healthy, well-balanced sandwich composed of various ingredients."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up over 20 sec.",
+        "description": "Summons the soul of Black Lunar Wing, Noctipheus, dealing M.DMG to the target and nearby enemies, and inflicts 30 stacks of [Otherworldly Curse] on hit targets. After use, gains a stack of [Black Moon Force]. Each stack of [Black Moon Force] increases DMG dealt to enemies by 5%. [Black Moon Force] can be stacked up to max 3 times and it is irremovable. If [Ripine] is in the team, [Ripine] also gains stacks of [Black Moon Force].",
+        "cooldown": "16",
+        "uses": "5",
+        "thumbnail": "./data/kr/assets/heroes/Riheet/sw.png",
+        "advancement": {
+            "1": "[Black Moon Force] additionally reduces DMG taken by 5%.",
+            "2": "Increases the max number of [Black Moon Force] stacks by 2."
+        },
+        "story": "According to the legend of the Dark Elves, the Black Lunar Wing, Noctipheus, is an exceptional sword that harnesses the perfect harmony of the power of darkness and the power of moonlight. Forged by a blacksmith whose name remains unknown, the legend says that the sword selects the hero of deliverance according to the Will of the Kings and disappears once the crisis is over. The dark, black light within its blade known as the embodiment of the righteous fury of the kings, and it is said that the very sight of the blade is enough to make all shudder\n\nThe reasons why the sword chose Riheet as its wielder are clear: the anger and vengeance that accumulated within his soul, the love that still exists amidst, and his mind that has not yet succumbed to sin and guilt. Even after the crisis that tormented the Dark Elves was solved, Noctipheus, hoping that Riheet's power would be used to do good, chose to stay by Riheet's side until he departs to his home world."
+    },
+    "splashart": "./data/kr/assets/heroes/Riheet/sa.png",
+    "costumes": "./data/kr/assets/heroes/Riheet/cos",
+    "visual": null,
+    "aliases": null
+}

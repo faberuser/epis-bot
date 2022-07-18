@@ -1,0 +1,240 @@
+{
+    "infos": {
+        "title": "The Wind of Purity",
+        "class": "Knight",
+        "position": "Front-700",
+        "attack range": "9600",
+        "damage type": "Magical",
+        "gender": "Female",
+        "age": "???",
+        "height": "166",
+        "race": "Elf",
+        "constellation": "Kandala the Conqueror",
+        "birth of month": "August 27th, Month of Vitality",
+        "like": "Whispers of Elementals, Selene, making friends",
+        "dislike": "Loneliness, boredom",
+        "story": "A sentinel of Elidora Kingdom guarding the Tower of Challenge. According to the rules, those from a royal family in the position of guardian almost never get released from their duty before their service ends, but desperate times call for all sorts of exceptions. Dosarta was allowed to leave the Tower of Challenge to carry out missions if need be, now she's determined to use the opportunity to make a lot of friends. How many friends could this Elven guardian make?",
+        "thumbnail": "./data/kr/assets/heroes/Dosarta/ico.png",
+        "story_": "A sentinel of Elidora Kingdom guarding the Tower of Challenge. According to the rules, those from a royal family in the position of guardian almost never get released from their duty before their service ends, but desperate times call for all sorts of exceptions. Dosarta was allowed to leave the Tower of Challenge to carry out missions if need be, and now she's determined to use the opportunity to make a lot of friends. How many friends could this Elven guardian make?"
+    },
+    "skills": {
+        "1": {
+            "name": "This Will Hurt!",
+            "cost": "3",
+            "cooldown": "14",
+            "description": "After increasing CC Resist of allies within self's range by 200 for 10 sec, attacks enemies to deal ??? M.DMG and causes them to take 30% increased M.DMG for 10 sec. Hit enemies become unable to recover Mana for 3 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Dosarta/skills/1.png"
+        },
+        "2": {
+            "name": "On Guard!",
+            "cost": "2",
+            "cooldown": "16",
+            "description": "Dispels negative effects from all allies, increases their P.DEF by ??? + 4% of Dosarta's ATK and the effect of [Let Us Challenge Together!] by 2 times for 10 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Dosarta/skills/2.png"
+        },
+        "3": {
+            "name": "Hya~ Kya! Take This!",
+            "cost": "4",
+            "cooldown": "20",
+            "description": "Attacks a target 4 times, dealing a total of ??? M.DMG and stunning it for 4 sec. Afterward, launches a final attack on frontal enemies within range, dealing ??? M.DMG and pulling them to the center. Against Non-Hero enemies, each attack deals additional ??? M.DMG that ignores DEF.",
+            "thumbnail": "./data/kr/assets/heroes/Dosarta/skills/3.png"
+        },
+        "4": {
+            "name": "Let Us Challenge Together!",
+            "cost": null,
+            "cooldown": null,
+            "description": "Upon using a Skill, Dosarta blocks All DMG. Upon blocking, reduces Cooldown of self's active Skills by 1 sec, and increases self's P.DEF by ??? + 1% of Dosarta's ATK and P.Crit Resistance by 250 for 4 sec. A 4 sec Cooldown will be applied.",
+            "thumbnail": "./data/kr/assets/heroes/Dosarta/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DEF boost is increased by 10%.",
+            "III": "DEF boost is increased by 15%.",
+            "IV": "DEF boost is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "DEF boost is increased by 10%.",
+            "III": "DEF boost is increased by 15%.",
+            "IV": "DEF boost is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Recovers 1 orb of Mana of allies within range.",
+                    "thumbnail": "./data/kr/assets/heroes/Dosarta/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Reduces a target's M.Block by 500 for 5 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Dosarta/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Reduces Mana Cost by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Dosarta/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Gains immunity to CC for 2 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Dosarta/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Gains immunity to CC for the duration of skill.",
+                    "thumbnail": "./data/kr/assets/heroes/Dosarta/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Increases the amount of M.DMG that a target takes by 25% for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Dosarta/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "The DEF Boost and P.Crit Resistance Boost effects become irremovable.",
+                    "thumbnail": "./data/kr/assets/heroes/Dosarta/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Upon activation, increases P.Block of all allies by 250 for 5 sec. This effect only activates once every 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Dosarta/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP +15% / HP + 10%",
+                "thumbnail": "./data/kr/assets/heroes/Dosarta/perks/light.png"
+            },
+            "dark": {
+                "effect": "Reduces all enemies' DMG that ignores DEF by 25%. When Dosarta uses a Skill, this effect is multiplied by 2 for 3 sec.",
+                "thumbnail": "./data/kr/assets/heroes/Dosarta/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Ancient Valor, Seliere",
+        "description": "Increases ATK and All DEF of all allies by (0) and (1) respectively. This effect is multiplied by 2 for (2) sec at the beginning of each battle. At the beginning of each battle, reduces self's Mana Cost by 1 orb for the next Mana use. All effects are irremovable.",
+        "value": {
+            "0": {
+                "0": "5%",
+                "1": "6%",
+                "2": "7%",
+                "3": "8.5%",
+                "4": "10.5%",
+                "5": "12.5%"
+            },
+            "1": {
+                "0": "10%",
+                "1": "12%",
+                "2": "14%",
+                "3": "17%",
+                "4": "21%",
+                "5": "25%"
+            },
+            "2": {
+                "0": "10",
+                "1": "11",
+                "2": "12",
+                "3": "13",
+                "4": "14",
+                "5": "15"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Dosarta/uw.png",
+        "story": "An ancient shield made with a drawing found in the Tower of Challenge and Artifact Pieces that were left over after restoration. The shield holds ancient protective spells, whose limits remain unknown to the world. Even Dosarta herself is not fully acquainted with its powers, but she doesn't really care either.\n'I have plenty of time to play around with it and figure out what it does,' was what she said. Guarding the Tower of Challenge was so boring that even training her skills became a pastime for her."
+    },
+    "uts": {
+        "1": {
+            "name": "Bracelet of Elidora",
+            "description": "[This Will Hurt!] Increases Heal Rate of allies within range by (0) for 4 sec and reduces Heal Rate of hit enemies by 50% for 4 sec.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Dosarta/ut/1.png",
+            "story": "A pair of blue bracelets that resembles the thick and lively forest of Elidora. One of the hobbies that Dosarta took up in her lonely hours in the Tower of Challenge was handicraft, and this powerful magical tool is filled with the vitality of Elidora. Dosarta thinks that they're merely a pair of pretty-looking accessories though..."
+        },
+        "2": {
+            "name": "Crystal of the Forest",
+            "description": "[On Guard!] Increases DEF Boost by 50%, and increases Crit Chance by (0) for 5 sec.",
+            "value": {
+                "0": {
+                    "0": "200",
+                    "1": "240",
+                    "2": "290",
+                    "3": "350",
+                    "4": "420",
+                    "5": "500"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Dosarta/ut/2.png",
+            "story": "An ancient crystal orb passed down in the royal family of Elidora. It's a magical tool made with Artifact Pieces by the royal Elves running the Tower of Challenge. It is said that the owner of this crystal orb can talk to anyone in the world remotely, wherever they are. To respond to any contingencies in the Tower of Challenge, the royal family made it a rule that only the manager of the Tower of Challenge can keep it in possession. Despite its strategic and historical importance, the crystal is nothing but a means of communication to Dosarta that she uses to have casual conversations with her big sister, Selene."
+        },
+        "3": {
+            "name": "Wind Elemental's Nest",
+            "description": "[Hya! Kya! Take This!] Increases ACC by 750 and CC ACC by (0) for the duration of skill.",
+            "value": {
+                "0": {
+                    "0": "300",
+                    "1": "360",
+                    "2": "430",
+                    "3": "520",
+                    "4": "630",
+                    "5": "750"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Dosarta/ut/3.png",
+            "story": "An ornament that Dosarta made to play with Wind Elementals while guarding the Tower of Challenge all alone. She ground the Mana stones that the elementals like, added the powder into the metal treated with Elven magic, and infused it with Rune Magic. Maybe the effort put into this plaything was a little bit too much. It restores the natural powers of elementals. However, rumor has it that Dosarta was downhearted when the Elementals came and did nothing but sit around near it without doing anything fun with its maker."
+        },
+        "4": {
+            "name": "Feather of Wind",
+            "description": "[Let Us Challenge Together!] Applies P.DEF Boost and P.Crit Resistance Boost to all allies. Additionally, all allies take (0) reduced P.DMG for the duration of Skill.",
+            "value": {
+                "0": {
+                    "0": "6%",
+                    "1": "7%",
+                    "2": "8%",
+                    "3": "10%",
+                    "4": "12%",
+                    "5": "15%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Dosarta/ut/4.png",
+            "story": "Aulen, the Bird of Wind, is a symbol of the royal family of Elidora. Its blue feathers are known to raise a soft, refreshing wind. Selene used to have a pet Aulen that Dosarta took great care of. When Dosarta left her home to the Tower of Challenge, Selene made this quill with a feather from her beloved Aulen to make her feel close to it all the time. Dosarta has never used it since she got it, and she just keeps it in a safe place."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon using Skills 5 times.",
+        "description": "Summons the soul of Ancient Valor, Seliere, increasing P.Block chance of all allies by 500 for 10 sec. Afterward, deals ??? M.DMG near self every 3 sec and inflicts the target with Silence for 1 sec, increases M.DMG it takes by 25% for 5 sec, and creates a shield that grants immunity to CC and absorbs DMG equal to 300% of Dosarta's ATK for 4 sec on an ally with the lowest HP.",
+        "cooldown": "25",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Dosarta/sw.png",
+        "advancement": {
+            "1": "Increases the duration of Skill 5 sec and dispels negative effects from the target upon creating the shield.",
+            "2": "Reduces Skill Activation Requirements by 1 time and changes the number of targets applied by the shield to 3."
+        },
+        "story": "Dosarta took it slow with Seliere in getting to know its power. This was because of the time she spent at the Tower of Challenge enhanced her patience. It was also because Dosarta rather started treating Seliere as a good friend who listened to her words. Then one day. Dosarta realized that Seliere was not following her directions.\n\u2018Why are you being so naughty all of a sudden? You've been good to me so far!\u2019\nDosarta, out of sadness, refused to talk to Seliere for a long time like a child, but she realized at one point that she did not even try to understand Seliere. Dosarta was afraid that she might lose her friend permanently and tried her best to communicate with her friend. Seliere did not respond, but Dosarta did not wish to depart with her friend like this.\n\u2018I\u2019m so sorry... You are my most precious friend... I don't want to lose you like this!\u2019\nIt was one day when Dosarta spent the night up with regret and resolve. As she was looking at Seliere and its blueprints, she suddenly realized that a shield rose again to protect Dosarta as if it has forgiven her. This time, the shield carried her trust and friendship toward Dosarta in its form."
+    },
+    "splashart": "./data/kr/assets/heroes/Dosarta/sa.png",
+    "costumes": "./data/kr/assets/heroes/Dosarta/cos",
+    "visual": null,
+    "aliases": null
+}

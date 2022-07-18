@@ -1,0 +1,50 @@
+{
+    "infos": {
+        "class": "Siegfried",
+        "title": "Distorted Dawn",
+        "race": "Angel",
+        "damage type": "Physical",
+        "recommended heroes": "Dosarta, Hilda, Requina, Nicky",
+        "characteristics": "Siegfried can revive 2 times if he is near death. Each time he overcomes death, the power of his sword becomes stronger. In his final state, the aura of his sword will become increadibly big and start preying upon the Heroes in the backline. Make sure to protect your Heroes located in the back.\nSiegfried becomes incredibly powerful when his Mana is full, so prevent him from recovering Mana to the max.",
+        "thumbnail": "./data/kr/assets/bosses/tm/Siegfried.png"
+    },
+    "skills": {
+        "page 1": {
+            "1": {
+                "name": "Divine Strike",
+                "cost": null,
+                "cooldown": "17",
+                "description": "Siegfried charges energy and swings his sword, dealing P.DMG to frontal enemies in a straight line. Afterward, attacks the target and knocks it down for 3 sec. Targets hit by this Skill have their DEF reduced by a certain amount permanently. DEF Reduction increases as the difficulty rises.\n(Stage 1 DEF Reduction: 2000)"
+            },
+            "2": {
+                "name": "Divine Storm of Blades",
+                "cost": null,
+                "cooldown": "21",
+                "description": "Siegfried summons small swords of light, dealing P.DMG to all enemies over 20 times. Each hit recovers the target's Mana. Afterward, deals P.DMG to all enemies with the divine sword of light. If the target's Mana is full, seals all Skills of the target for 7 sec.\nAfterward, Siegfried loses power and falls for 7 sec, taking greatly increased DMG for the duration."
+            },
+            "3": {
+                "name": "Divine Power",
+                "cost": null,
+                "cooldown": null,
+                "description": "Upon taking a fatal DMG, Siegfried is granted with Divine Power, dispelling negative effects upon self, fully recovering HP, and permanently increasing ATK of self by 30%. This Skill is activated only 2 times during the battle, and each time it's activated, increases Siegfried's Max HP and enhances the power of his divine sword, increasing the range of his normal attacks. The HP Recovery effect is not affected by Heal Rate Reduction effect."
+            }
+        },
+        "page 2": {
+            "4": {
+                "name": "Divine Rampage",
+                "cost": null,
+                "cooldown": null,
+                "description": "Siegfried is not affected by changes in DEF and ATK Spd, and his Divine Power increases All Block Chance by 1000. In battles of Stage 4 or above. All Block Chance is additionally increased by 1000. If his Mana is fully charged, his DEF Penetration is greatly increased for 10 sec. This effect is irremovable and has a cooldown of 10 sec."
+            },
+            "5": {
+                "name": "Distorted Dawn",
+                "cost": null,
+                "cooldown": null,
+                "description": "Siegfried recovers Mana each hit, but if his attack is blocked, his Mana is reduced, and all of his attacks destroy the target's Shield. From battles of Stage 4 or above, Siegfried's normal attacks deal greatly increased DMG, but Siegfried also takes greatly increased DMG from normal attacks."
+            }
+        }
+    },
+    "aliases": [
+        "Sieg"
+    ]
+}

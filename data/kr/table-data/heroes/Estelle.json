@@ -1,0 +1,247 @@
+{
+    "infos": {
+        "title": "Endless Thirst",
+        "class": "Archer",
+        "position": "Back",
+        "attack range": "10100",
+        "damage type": "Physical",
+        "gender": "Female",
+        "age": "18",
+        "height": "163",
+        "race": "Human",
+        "constellation": "Gisla the Sharpshooter",
+        "birth of month": "November 20th, Month of Fortune",
+        "like": "Rhino beetles, people with a bad sense of direction, pinwheels, cute Animal Hybirds, egg-and-rice, half-done eggs",
+        "dislike": "Hornets, bellflower juice, mosquitoes, people pretending to know directions",
+        "story": "No one knows where she is from and her behaviors may appear to be clumsy at times, but still all Raiders in Orvel trusts Estelle and accepts her guidance. Starters who have just started using their weapons and battle experts who have gone through numerous battles. Almost everyone in Orvel has received help from her.\nOne thing's for sure, you can trust her, and she will take you to your destination. Her smiles and cheers will always lift your spirits.\n'It's like a dream come true! I'm glad to assist you! Leave it to me and I will take you to your destination!'",
+        "thumbnail": "./data/kr/assets/heroes/Estelle/ico.png",
+        "story_": "'Welcome! How can I you today?'\n\nAll Raiders who visit the Kingdom of Orvel for the first time are greeted by an interesting figure: a girl with spinning pinwheels on her head and a pocket full of maps by her waist. This figure gues by the name of Estelle.\n\nEver since she was young, she desired of becoming a guide instead of a Raider. Estelle felt a sense of achievement not through successful, self-initiated adventures, but through helping others achieve success. And luckily enough, Estelle was gifted with eyes that discover paths, the abiliuty to discern geographical terrains, remarkable dexterity, and unyielding tenacity, all essential attributes of a great guide. She is the kind of person who would risk everything for those who need her.\n\nSince her dispatch to Orvel, she has been creating guidelines for all Raiders so that each Raider may reach their goal and fulfill what they desire. Hoping her support may be of help to the Raiders, she continues to guide them even to this day."
+    },
+    "skills": {
+        "1 (1)": {
+            "name": "Blow, Tailwind!!",
+            "cost": "3",
+            "cooldown": "14",
+            "description": "Dispels negative effects from all allies, heals their HP by ???, and grants [Tailwind] that lasts for 10 sec. For the duration of [Tailwind], the affected ally gains immunity to CC. After use, changes the Skill to [Blow, Headwind!!]. When used during [Adventure Guide] state, the duration of [Tailwind] increases by 5 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Estelle/skills/1 (1).png"
+        },
+        "1 (2)": {
+            "name": "Blow, Headwind!!",
+            "cost": "2",
+            "cooldown": "14",
+            "description": "Deals ??? P.DMG to all enemies and inflicts [Headwind] that lasts for 10 sec. For the duration of [Headwind], increases P.DMG the targets take by 25%. After use, changes the Skill to [Blow, Tailwind!!]. When used during [Adventure Guide] state, the duration of [Headwind] increases by 5 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Estelle/skills/1 (2).png"
+        },
+        "2": {
+            "name": "Here's a Wake-Up Call!!",
+            "cost": "3",
+            "cooldown": "20",
+            "description": "Grants [Cheer] that lasts for 10 sec to 1 ally with the highest ATK, deals ??? P.DMG to 1 enemy with the highest ATK, and inflicts [Discouragement] that lasts for 10 sec. For the duration of [Cheer], increases the target's Crit DMG by 50%. For the duration of [Discouragement], reduces the target's ATK by 30%. When used during [Adventure Guide] state, the duration of [Cheer] and [Discouragement] increases by 5 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Estelle/skills/2.png"
+        },
+        "3": {
+            "name": "It's Cheering Time!!",
+            "cost": "3",
+            "cooldown": "18",
+            "description": "For 10 sec, increases ATK Spd of all allies by 200, reduces P.DMG they take by 20%, and heals their HP by ??? every sec. When used in [Adventure Guide] state, the duration of the effect increases by 5 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Estelle/skills/3.png"
+        },
+        "4": {
+            "name": "I'm the Adventure Guide!!",
+            "cost": null,
+            "cooldown": null,
+            "description": "Increases own ATK Spd by 200. Normal attacks grant 1 stack of [Accompany], and Skill attacks grant 5 stacks. Upon gaining 30 stacks of [Accompany], Estelle consumes all stacks to recover 1 orb of Mana of all allies and enter into [Adventure Guide] state for 15 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Estelle/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "Heal Rate is increased by 10%.",
+            "III": "Heal Rate is increased by 15%.",
+            "IV": "Heal Rate is increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "3": {
+            "II": "Heal Rate is increased by 10%.",
+            "III": "Heal Rate is increased by 15%.",
+            "IV": "Heal Rate is increased by 25%."
+        },
+        "4": {
+            "II": "ATK Spd Boost is increased by an additional 50.",
+            "III": "ATK Spd Boost is increased by an additional 50.",
+            "IV": "ATK Spd Boost is increased by an additional 50."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Increases the target's P.Block Chance by 300 for the duration of [Tailwind].",
+                    "thumbnail": "./data/kr/assets/heroes/Estelle/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Reduces the target's P.DEF by 30% for the duration of [Headwind].",
+                    "thumbnail": "./data/kr/assets/heroes/Estelle/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Increases the number of targets for [Cheer] by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Estelle/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Upon activation of [Discouragement], dispels positive effects from the target.",
+                    "thumbnail": "./data/kr/assets/heroes/Estelle/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Increases melee Heroes' DMG dealt to Non-Hero enemies by 15% for the duration of Skill.",
+                    "thumbnail": "./data/kr/assets/heroes/Estelle/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Increases ranged Heroes' DMG dealt to Non-Hero enemies by 15% for the duration of Skill.",
+                    "thumbnail": "./data/kr/assets/heroes/Estelle/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "MP recovery rate is increased by 100%.",
+                    "thumbnail": "./data/kr/assets/heroes/Estelle/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Dealing normal attacks during [Adventure Guide] state increases P.DMG the target takes by 20% for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Estelle/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / ATK. Spd +100",
+                "thumbnail": "./data/kr/assets/heroes/Estelle/perks/light.png"
+            },
+            "dark": {
+                "effect": "Increases Mana Recovery per attack of all allies by 300. This effect is irremovable.",
+                "thumbnail": "./data/kr/assets/heroes/Estelle/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Chant of Tailwinds, Stosmos",
+        "description": "Increases the duration of [Adventure Guide] by (0) sec, and ATK of all allies by (1) while Estelle is in [Adventure Guide] state.",
+        "value": {
+            "0": {
+                "0": "1",
+                "1": "2",
+                "2": "3",
+                "3": "4",
+                "4": "5",
+                "5": "6"
+            },
+            "1": {
+                "0": "10%",
+                "1": "12%",
+                "2": "14%",
+                "3": "17%",
+                "4": "21%",
+                "5": "25%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Estelle/uw.png",
+        "story": "Estelle comes from a continent far away north of Orbis. The nation she hails from is advanced in neither magic nor Technomagic, but pure science. All the exotic tools she takes out from time to time are those that she brought with her from home. Among those tools, one exceptionally stands out: Model 'PEF-12.' It's a palm-sized mechanical air blower that Estelle carries with her. It's an everyday item back in her homeland, but her machine is a bit different.\nIt's a custom, teensy-weensy, twinkle-twinkling version! (Modification by Estelle)\nIt's also got remodeled software that surpasses its original capacity! (Modification by Estelle)\nLast but not least, an amplifying feature that operates solely on Estelle's Mana (Feat. Tower of Sage)\nWith these gimmicks, Estelle's machine has become something more than just an ordinary air blower. It possesses the power to greatly alter the air current, temperature, and wind. Because of these, it can be utilized as a weapon, but for Estelle, who isnt exactly a big fan of conflicts, these gimmicks are just an added bonus. The main usage of this machine named Stosmos is to cool down Estelle's sweaty forhead and to advance the back of a new Raider with a tailwind."
+    },
+    "uts": {
+        "1": {
+            "name": "Smile Badge",
+            "description": "[Blow, Tailwind!!] Reduces Mana Cost by 1, and [Tailwind] additional increases All Dodge Chance of all allies by (0).\n[Blow, Headwind!!] Silences the hit targets for 3 sec, and [Headwind] additionally reduces the target's DMG dealt to Heroes by (1).",
+            "value": {
+                "0": {
+                    "0": "100",
+                    "1": "120",
+                    "2": "140",
+                    "3": "170",
+                    "4": "210",
+                    "5": "250"
+                },
+                "1": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Estelle/ut/1.png",
+            "story": "Smile, always. A smile badge for the children. It is Estelle's first reward as a guide, one she received after guiding an adventurer to a town 10 years ago. Estelle still remembers the moment so clearly even to this date. She wasn't as eloquent with her descriptions and she'd even gotten too nervous that they got lost on the way. Even so, the adventurer kept his calm smile and followed Estelle without complaints. Once they successfully arrived at the destination, the adventurer gave her this badge and expressed his gratitude. No gold or any other monetary reward could make Estelle happier than this badge. This is why, during times of difficulties, she would always turn to it. Looking at the badge, she would portray the same smile on her face, reminding herself of the adventurer she had met 10 years ago, and telling herself that she will smile at everyone she meets. She knows how empowering her smile can be to those around her."
+        },
+        "2": {
+            "name": "Estelle's Trip Memoir VI",
+            "description": "[Here's a Wake-Up Call!!] Reduces Cooldown by 6 sec, and [Cheer] additionally increases DMG dealt to Bosses by (0).",
+            "value": {
+                "0": {
+                    "0": "6%",
+                    "1": "7.2%",
+                    "2": "8.6%",
+                    "3": "10.4%",
+                    "4": "12.5%",
+                    "5": "15%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Estelle/ut/2.png",
+            "story": "A travel journal Estelle is writing on her own. It is already on its 6th volume. Whenever she gets the chance to travel outside of Orvel, she would write down everything she sees or hears. Contrary to popular beliefs, she would never share the content of the journal with anyone else. Assuming from her character, onw would easily expect her writings to be messy and spacious. However, according to a witness who discovered one of her books left open at the Tower of Sage, it was actually the exact opposite of what was expected. The journal is indeed filled with practical and professional content. It also contains stories of poeple she encountered during her travels... but many of them are too messy a story that some people would want to get rid of it."
+        },
+        "3": {
+            "name": "Whistle of Hundred Tones.",
+            "description": "[It's Cheering Time!!] Increases Heal Rate by (0), and all effects become irremovable.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Estelle/ut/3.png",
+            "story": "A special whistle, made in Estelle's homeland. The dials on each side allow precise control of the sound output. With this, Estelle can engage in simple conversations with insects and animals. It has been advertised that when one masters the use of this whistle, one could even mimic the howling of dragons, but that advertisement turned out to be fraudulent and exaggerated one. Nonetheless, it is a treasure that Estelle finds useful even in the continent of Orbis. She has been practicing using it ever since she first got it as a birthday present earlier in her life. The whistle is notorious for its difficulty in usage, but with passion and perseverance, Estelle managed to produce more than 50 different kinds of sounds. The problem is that she not understand the message of the sound she creates. What she meant as a friendly message would sometimes turn out to be an outcry of provocation to the animals."
+        },
+        "4": {
+            "name": "Second Homeland",
+            "description": "[I'm the Adventure Guide!!] [Adventure Guide] becomes irremovable. Normal attacks have a (0) chance of reducing the target's Mana by 400 for the duration of Skill. This effect is activated only once every 3 sec.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Estelle/ut/4.png",
+            "story": "'Alright, say CHEESE!' Click. BOOM! A photograph that holds the babbles and happiness of that day. Estelle does not come from the Continent of Orbis. She started her adventure from her homeland, a nation far away north from Orbis, and ended up discovering traces of the Tower of Sage in the borders. Her curiosity led her to follow the traces, and she would eventually be acknowledged by Dominix for her talent and determination and ways admitted as a member of the Tower of Sage. It was all fun and games at first, sharing her knowledge of science and learning magic, until she started getting homesick after a few months. Surprisingly, it was Cleo that had the solution for her homesickness. Cleo remembered about a 'camera' that Estelle once told her and sought helped to make one. Roi prepared the raw materials, Sonia created the circuits, Aisha installed the power source, and Evan drew the blueprint. There were some disputes on the way, but everyone was more than willing to father to help Estelle. And on the day the camera was completed, the group suggested taking a group photograph, and this deeply touched Estelle. Though the actual photo session... ended with a huge blast resulted from Cleo's mana explosion and all that was left was a pitch-black stained photo, that was enough to cure Estelle's homesickness for good. This photograph is like a certificate for Estelle, proving that the Tower of Sage is her second homeland."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon using Skills 4 times.",
+        "description": "Summons the soul of Chant of Tailwinds, Stosmos for 10 sec, healing HP of all allies every sec, increasing ATK Spd of the ally with the highest ATK by 150, and increasing P.DMG all enemies take by 15% for the duration.",
+        "cooldown": "18",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Estelle/sw.png",
+        "advancement": {
+            "1": "Changes ATK Spd Boost to 250 and P.DMG Boost to 25%.",
+            "2": "Increases DMG dealt to Bosses of the ally with the highest ATK by 15% for the duration of Skill."
+        },
+        "story": "What does it mean to be a guide? Estelle would often ask herself this question. If a guide's role is to simply guide the directions and showing the safe roads, it is a jobe that anyone can do. She kept searching for her own definition of what it means to be a guide, pondering and contemplating on her own without anyone knowing. Until one day, she came to a realization that the true meaning of being a guide lies not in 'guidance,' but in 'encouragement.' A guide's duty, without a doubt, is guiding Raiders in the right direction, but it is also a guide's role to encourage and inspire the Raiders so that they make it to the end. Upon coming to this realization, Estelle no longer asked herself the question. Whoever they may be, whichever goals they may have, she would always root and cheer for the Raiders so that theay may never be ashamed of themselves. For anyone who had been losing confidence, Estelle was always the best patron and supporter. When her pure desire to encourage others reached its climax, Stosmos appeared in fron of her in a new form: a boost of morale and tailwinds. It was the best form of encouragement she could have ever wish for."
+    },
+    "splashart": "./data/kr/assets/heroes/Estelle/sa.png",
+    "costumes": "./data/kr/assets/heroes/Estelle/cos",
+    "visual": null,
+    "aliases": null
+}

@@ -1,0 +1,240 @@
+{
+    "infos": {
+        "title": "Shadow of the Sun",
+        "class": "Knight",
+        "position": "Front",
+        "attack range": "8000",
+        "damage type": "Physical",
+        "gender": "Male",
+        "age": "21",
+        "height": "192",
+        "race": "Tidhar",
+        "constellation": "Asiphia the Empress",
+        "birth of month": "October 30th, Month of Friendship",
+        "like": "Things that give power, strong entities",
+        "dislike": "Aegina Desert, weak entities",
+        "story": "I've come back through the door of the deceased and nothing's stopping me now. All memories are crystal clear, but nothing can be done to go back to the past. I will have to pay the price for the choices I have made. So then, there's no time to hesitate. I will cut off everything which is right, expectations, and desires. The power I have grasped. This darkness is starting to palpitate inside me. I will destroy, cut off, and crush everything. Until the day I reach my final destination.",
+        "thumbnail": "./data/kr/assets/heroes/Shakmeh/ico.png",
+        "story_": "The second prince of Ancient Sekireinel Kingdom who abandoned the desert and chose otherwordly darkness. He emerged as a threat to the world but was defeated by the new successor of the desert. However, he was born again with the fragment of darkness that remained from being the vessel of Tidhar. It is unclear whether he is fully Shakmeh himself or one of the Tidhar, the otherwordly Darkness, but his twisted obsession toward his brother, Cain, persists and serves as proof that he is, in fact, Shakmeh. Shakmeh's life until now was covered in dark emotions, but after being reborn, he wishes to move forward by obtaining a greater power of darkness to destroy Aegina Desert and surpass Cain. Though Shakmeh is aware better than anyone what the path he chose means, he has made up his mind not to hesitate or falter no matter what direction the results will lea him - for he has become the one who walks inside the darkness."
+    },
+    "skills": {
+        "1": {
+            "name": "Wind of Hatred",
+            "cost": "2",
+            "cooldown": "13",
+            "description": "Attacks frontal enemies in a straight line, dealing ??? P.DMG over 5 times. Each hit recovers self's Mana by 100.",
+            "thumbnail": "./data/kr/assets/heroes/Shakmeh/skills/1.png"
+        },
+        "2": {
+            "name": "Gate of Grudges",
+            "cost": "3",
+            "cooldown": "20",
+            "description": "Creates [Gate of Grudges] in front of self for 7 sec, dealing ??? P.DMG to enemies in range. Each hit inflicts a stack of [Grudge] that lasts for 15 sec on enemies. [Grudge] can be stacked up to max 5 times, and each stack reduces the target's Heal Rate by 4%. If the target is not a Hero, Heal Rate Reduction is increased by 2 times.",
+            "thumbnail": "./data/kr/assets/heroes/Shakmeh/skills/2.png"
+        },
+        "3": {
+            "name": "Advent of Despair",
+            "cost": "3",
+            "cooldown": "20",
+            "description": "Dispels negative effects from self and spends all [Dark Spirit] stacks to increase ATK of all allies by 10% + 0.5% per [Dark Spirit] stack for 15 sec, deals additional ??? P.DMG to all enemies, stuns them for 3 sec, and increases P.DMG the targets take by 20% + 1% per [Dark Spirit] stack for 15 sec. DMG of this skill increases by 10% per [Dark Spirit] stack. If the target is Non-Hero, DMG Boost per stack increases by 2.",
+            "thumbnail": "./data/kr/assets/heroes/Shakmeh/skills/3.png"
+        },
+        "4": {
+            "name": "Vessel of Dark Spirit",
+            "cost": null,
+            "cooldown": null,
+            "description": "Increases Max HP by 20%. Dealing DMG to an enemy with a Skill deals additional P.DMG equal to 1% of self's Max HP, heals HP of all allies equal to 0.1% of self's Max HP, increases their M.DEF for 15 sec, and stacks [Dark Spirit] that lasts for 30 sec upon self. [Dark Spirit] can be stacked up to max 30 times, is irremovable. The M.DEF Boost effect can be stacked up to max 30 times.",
+            "thumbnail": "./data/kr/assets/heroes/Shakmeh/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "Max HP is increased by an additional 5%.",
+            "III": "Max HP is increased by an additional 5%.",
+            "IV": "Max HP is increased by an additional 5%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Increases P.DMG the hit target takes by 25% for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Shakmeh/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Dispels positive effects from the target.",
+                    "thumbnail": "./data/kr/assets/heroes/Shakmeh/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Reduces Cooldown by 6 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Shakmeh/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "For the duration of Skill, stun targets for 1 sec every hit.",
+                    "thumbnail": "./data/kr/assets/heroes/Shakmeh/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Increases DMG by 40%.",
+                    "thumbnail": "./data/kr/assets/heroes/Shakmeh/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Dispels negatives effects from all allies.",
+                    "thumbnail": "./data/kr/assets/heroes/Shakmeh/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Changes additional DMG proportional to Max HP % to 1.5%",
+                    "thumbnail": "./data/kr/assets/heroes/Shakmeh/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "When there is 1 enemy, changes Heal Rate proportional to Max HP to 1%.",
+                    "thumbnail": "./data/kr/assets/heroes/Shakmeh/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / HP +20%",
+                "thumbnail": "./data/kr/assets/heroes/Shakmeh/perks/light.png"
+            },
+            "dark": {
+                "effect": "Increases ATK of 1 ally with the highest ATK by 0.1% of own Max HP and takes 20% of All DMG dealt to the target instead. This effect is irremovable, and when Shakmeh DMG of the allies instead, that DMG is reduced by 50%. ATK Boost rate is reduced to half in the Arena.",
+                "thumbnail": "./data/kr/assets/heroes/Shakmeh/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Encroaching Darkness, Leifende",
+        "description": "Upon each time dealing DMG to an enemy with a normal attack, heals own HP equal to 0.5% of Max HP, and adds an irremovable stack of [Demon Beast]. [Demon Beast] can be stacked up to max 10 times, and upon reaching max stacks, increases P.DMG all enemies take by (0) for 15 sec, spends all stacks, and enters an irremovable state of [Demon Beast of Darkness] for 15 sec, increasing ATK Spd by (1) and Heal Rate by (2). During the [Demon Beast of Darkness] state, Shakmeh does not gain stacks of [Demon Beast], and all allies receive half of the ATK Spd and Heal Rate Boost effects gained by Shakmeh.",
+        "value": {
+            "0": {
+                "0": "20%",
+                "1": "24%",
+                "2": "28%",
+                "3": "34%",
+                "4": "42%",
+                "5": "50%"
+            },
+            "1": {
+                "0": "100",
+                "1": "120",
+                "2": "140",
+                "3": "170",
+                "4": "210",
+                "5": "250"
+            },
+            "2": {
+                "0": "10%",
+                "1": "12%",
+                "2": "14%",
+                "3": "17%",
+                "4": "21%",
+                "5": "25%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Shakmeh/uw.png",
+        "story": "A pair of scimitars given to the honorable warrior of Ancient Sekireinel who protects the borders of the desert. When Shakmeh was given the duty to protect the borders of the desert, Cain himself commanded the blacksmith to create a weapon for Shakmeh and gifted him these unqiue swords. The ornaments of the sword resemble a jackal, one of the guardians that the brave desert warriors worship. Cain had hoped that the sword could remind Shakmeh to not lose his strong rightous out in the faraway borders, but after Shakmeh was tainted with darkness, unnerving energy took over the blade. Long ago in the past, when Cain and Shakmeh battled against each other in Sekireinel, Shakmeh brought these scimitars to battle, exacerbating Cain's sorrow. After Shakmeh's second battle against his brother as the Shadow of Aegina, the blade broke in hald with Shakmeh's fall. When Shakmeh was revived as a Tidhar, the broken scimitars returned to their original form emitting grim energy through the darkness seeped within the blade."
+    },
+    "uts": {
+        "1": {
+            "name": "The Herald's Gift",
+            "description": "[Wind of Hatred] Reduces Mana Cost by 1 and All Block Chance of the target by (0) for 10 sec.",
+            "value": {
+                "0": {
+                    "0": "200",
+                    "1": "240",
+                    "2": "290",
+                    "3": "350",
+                    "4": "420",
+                    "5": "500"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Shakmeh/ut/1.png",
+            "story": "A pendant engraved with a mysterious pattern. Xerah gifted this to Shakmeh when he was studying abroad in a faraway land. Back in the days, Shakmeh researched and analyzed various knowledge unknown to Sekireinel, hoping to that he could be of help to his brother, Cain. Each new knowledge he absorbed contributed to the quelling of his turbulent thoughts, and it became Shakmeh's hobby to seek new knowledge whenever curiosity arose. This pendant Shakmeh received as a gift merely served as a cornerstone for Shakmeh to research the best ways to embrace the darkness and the wisdom to use it. The prince of the desert retained his composure as he expressed his gratitude upon receiving this gift from Xerah, buit his eyes showed genuine joy like a child gifted with a new toy."
+        },
+        "2": {
+            "name": "Fragment of Darkness",
+            "description": "[Gate of Grudges] Changes the max number of stacks for [Grudge] to (0) times, and [Grudge] stackes additionally increase P.DMG by 3%.",
+            "value": {
+                "0": {
+                    "0": "6",
+                    "1": "7",
+                    "2": "8",
+                    "3": "9",
+                    "4": "10",
+                    "5": "12"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Shakmeh/ut/2.png",
+            "story": "A fragment engraved with a bizarre pattern. It is a medium that Xerah gave to Shakmeh when she was corrupting him with Darkness so that Shakmeh could establish a deeper connection witht he darkness of Tidhar. The pattern is a representation of Tidhar's sorcery, but Xerah refined it once to avoid Shakmeh's suspicion, and that became the current pattern. It is now an empty shell since the Tidhar's darkness it once contained has been transferred to Shakmeh. Still, Shakmeh continues to use this item when he gathers the power of darkness, as the sorcery engraved into the stone can further refine the power of darkness and prevent it from being leaked externally."
+        },
+        "3": {
+            "name": "Scroll of Royalty",
+            "description": "[Advent of Despair] Increases DMG by (0) and ignores the target's DEF.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Shakmeh/ut/3.png",
+            "story": "A painting of Sekireinel's royal family.\nLong ago, the boy who had to travel to foreign lands far away looked at this painting of his family every day. THough he was far away from home, the boy inside the picture remained by his family's side, smiling. During times of trouble, being homesick, with overwhelming grief, or even when he was happy... He endured through it all, hoping that he could return to his country when he was old enough and laugh with his family like in the painting. However, though the boy matured and became a yound man, his wishes never came true. Even greater tragedy plunged him into the bayss, and eventually, he nver looked at the painting ever again. His feelings from the past are now tainted, existing only as one of the darknesses of his past that need to be eliminated."
+        },
+        "4": {
+            "name": "Broken Seal",
+            "description": "[Vessel of Dark Spirit] Increases CC Resist by (0) and changes M.DEF Boost effect to All DEF Boost.",
+            "value": {
+                "0": {
+                    "0": "300",
+                    "1": "360",
+                    "2": "430",
+                    "3": "520",
+                    "4": "630",
+                    "5": "750"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Shakmeh/ut/4.png",
+            "story": "A golden extravagant decorative balde. It is said that this blade was crafted using a star from the heavens and has the power to drive away darkness and call in positive energy. Shakmeh gifted this to Cain when he returned to Sekireinel from his long journey, and it was also used as a medium to seal Shakmeh when he first went berserk in the Kingdom of Sekireinel long ago. This item is what Shakmeh first saw when he woke up from his sealing with Cain, and he was consumed by rage and disappointment against Cain, who used his gratitude against him. Filled with hatred for Cain from the betrayal, Shakmeh made his vow to destroy everything Cain holds dear and gathared the fragments of the broken blade before leaving."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up over 20 sec.",
+        "description": "Summons the soul of Encroaching Darkness, Leifende for 10 sec, dealing P.DMG equal to 5% of own Max HP to frontal enemies in range every 3 sec. Each hit increases P.DMG the target takes by 30% for 5 sec. Increases DMG dealt to enemies of Shakmeh and the ally with the highest ATK excluding self by 10% for the duration of the soul.",
+        "cooldown": "16",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Shakmeh/sw.png",
+        "advancement": {
+            "1": "For the duration of the soul, recovers Mana by 400 every sec.",
+            "2": "Changes the Skill Activation Requirements to 15 sec and DMG Boost against enemies to 20%."
+        },
+        "story": "As Shakmeh reached out for the power of darkness, more darkness puled up within his blades. When the darkness that originally existed in this land and the darkenss twisted with otherwordly energy intertwined and stacked withc each other, the blades eventually held power worthy of a god's messenger, allowing Shakmeh to draw out stronger power. Even though Shakmeh held the overwhelming power he wished for, he wasn't satisfied enough. He wished to erase the motion that grew in size within him. The respect he had for Cain, the love he once had for the desert, and trust for his comrades... All these emotions betryed Shakmeh, and all the things he loved betryed him. Shakmeh wanted to be completely free from the memories of the past that tortured him so that he can move forward. To Shakmeh, the love and trust he once had for them was only a shackle that serves to weaken him. Since then, Shakmeh kept gaining power with only one goal. It didn't matter what he did after or what future he wished for; his goal was to break free from his past. As a result, the darkness within the blades deepened over-time. Eventually, the darkness grew strong enough to develop a consciousness, and it materialized to become Shakmeh's faithful servant. As if reflecting Shakmeh's determination to break free from the past and move forward, this servant took the form of the god of ancient Sekireinel who failed his brother."
+    },
+    "splashart": "./data/kr/assets/heroes/Shakmeh/sa.png",
+    "costumes": "./data/kr/assets/heroes/Shakmeh/cos",
+    "visual": null,
+    "aliases": null
+}

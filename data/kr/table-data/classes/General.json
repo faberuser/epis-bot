@@ -1,0 +1,11 @@
+{
+    "perks": {
+        "t1": {
+            "ATK Up": "ATK is increased by 30%.",
+            "HP Up": "HP is increased by 30%.",
+            "DEF Up": "DEF is increased by 35%.",
+            "Crit Resist Up": "Crit Resistance is increased by 250.",
+            "Monster Hunting": "Increases DMG to Non-Hero Enemies by 10% and takes 10% reduced DMG."
+        }
+    }
+}

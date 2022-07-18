@@ -1,0 +1,52 @@
+{
+    "infos": {
+        "class": "Nordik",
+        "title": "Ancient Lich",
+        "race": "Undead",
+        "damage type": "Magical",
+        "recommended heroes": "Reina, Rodina, Fluss",
+        "characteristics": "Upon taking M.DMG, reflects M.DMG and silences the aggressor. Physical heroes and CC Resistance stats are advantageous in this stage.",
+        "thumbnail": "./data/kr/assets/bosses/gr/Nordik.png"
+    },
+    "skills": {
+        "page 1": {
+            "1": {
+                "name": "Mana Shield",
+                "cost": null,
+                "cooldown": "20",
+                "description": "Create a shield that constantly absorbs enemy mana every sec."
+            },
+            "2": {
+                "name": "Ray of Darkness",
+                "cost": null,
+                "cooldown": "25",
+                "description": "Fires an energy beam that deals M.DMG to enemies in a straight line and knocks them away."
+            },
+            "3": {
+                "name": "Mana Tempest",
+                "cost": null,
+                "cooldown": "45",
+                "description": "Deals M.DMG to a random enemy and inflict knock down for 2 sec."
+            },
+            "4": {
+                "name": "Destroyer of Magic",
+                "cost": null,
+                "cooldown": "1",
+                "description": "Every time this monster takes M.DMG, silence said enemy for 1 sec as well as deal M.DMG."
+            }
+        },
+        "page 2": {
+            "5": {
+                "name": "Purify",
+                "cost": null,
+                "cooldown": null,
+                "description": "Every 30 sec, remove all negative effects and increase ATK SPD."
+            }
+        }
+    },
+    "aliases": [
+        "Nordik",
+        "GR2",
+        "GR 2"
+    ]
+}

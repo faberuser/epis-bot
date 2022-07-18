@@ -1,0 +1,254 @@
+{
+    "infos": {
+        "title": "Brilliant Gemologist",
+        "class": "Archer",
+        "position": "Back",
+        "attack range": "9900",
+        "damage type": "Magical",
+        "gender": "Female",
+        "age": "27",
+        "height": "168",
+        "race": "Human",
+        "constellation": "Mira the Minstrel",
+        "birth of month": "June 18th, Month of Love",
+        "like": "Jewels, crystals, rumors, shiny things",
+        "dislike": "Cassandra (I'm fine with everything as long as it's not her. I'm serious)",
+        "story": "Talisha is a bright, outgoing person, yet even someone like her isn't free from jealousy or simple curiosity. Rumors about her have started to spread. 'Did you hear? Talisha can see through souls with her treasure!!' Talisha herself responds to these gossips or direct questions simply with a smile... What could be the answer hiding behind her mysterious smile? Leaving all those curious glances upon her behind, Talisha gracefully greets those who are in need of her service just like any other day. 'Welcome, brilliant one.'",
+        "thumbnail": "./data/kr/assets/heroes/Talisha/ico.png",
+        "story_": "Anyone who's been to the streets of Orvel has met this girl at least once. She passes on useful information to others at the Orvel Plaza, gives directions, and sometimes offers advice like a friend. She knows many people and is very experienced, but also sometimes gives others quite a shock by being friendly towards an expected person.\nThough she looks like a regular wanderer who enjoys traveling at first glance, she has rather concrete goal: 'to see the most beautiful soul.' Ever since she was young, Talisha could see the lights of souls by using jewels. Clever Talisha soon realized that it was a special power only given to her, and she often enjoyed peeking into other person's souls. Later, she chose to be an information dealer because she could see more people, and meeting more people meant more lights of souls.\nAs time passed, she became more and more skilled as an information dealer and soul appraiser. She learned that the best jewels to appraise souls were crystals imbued with mana. The more mana there was, the better she could see, and the more souls she appraised, the brighter the gem shone. She also learned that the color of people's souls never stayed the same, and were constantly changing.\n\nTalisha, captivated by the beautiful color and hues of souls, wanted to appraise even more souls. She wanted to see the constantly changing brilliance of the souls and the momentary flash of glittering light with her very own eyes. In order to do that, she needed crystals that were imbued with lots of mana. Naturally, those kind of crystals were very rare and expensive. Talisha gave out information to gather crystals and people, and sometimes herself would set out to find the source of some rumors. In the process, she once worked in a partnership with 'the owner of the Gold Bar,' but due to a particular event, they became quite hostile towards each other, and ended up not being able to stand hearing the other's name. Of course, to Talisha, that was just one of the 'small things' that happened during her journey. Talisha met Dosarta, who waits for the day when she can finally leave the Tower of  Challenge, Turan, who Talisha considers a sister, a noble lady who she briefly met in Penteonia, Evan, the kind alchemist, and the energetic Knight Commander Taily...\nTalisha saw the color of all their souls and committed every one of them to memory. Even the soul of the Gold Bar's owner, whom she didn't even want to thin about. Talisha was content with her life, and firmly believed she would be happy if she could continue to travel and see souls.\n\nBut one day, she came across a particular piece of gossip. It was a rumor that The Crystal of Blue Water, which had never been seen before and was treated as an old legend, had finally appeared. in Talisha's content life, a single question started to form. What would she be able to see if she look at the soul with that crystal? If she saw the world's most beautiful soul with it, how brilliantly would those colors shine? Talisha made a decision. She promised herself that she would get her hands on that crystals by any means, and see the most brilliant flash of light."
+    },
+    "skills": {
+        "1 (1)": {
+            "name": "Radiance of Cimatis",
+            "cost": "2",
+            "cooldown": "17",
+            "description": "Deals ??? M.DMG to the target and nearby enemies. Upon attacking the same target again with this Skill within 7 sec, deals ??? additional M.DMG that ignores DEF. Cooldown will be applied every time this Skill is used 2 times.",
+            "thumbnail": "./data/kr/assets/heroes/Talisha/skills/1 (1).png"
+        },
+        "1 (2)": {
+            "name": "Dance of Luberry",
+            "cost": "2",
+            "cooldown": "6",
+            "description": "Attacks the target and nearby enemies within a small range 9 times, dealing a total of ??? M.DMG and inflicting Stun on the target for 1 sec each hit. If the target is a boss, the last hit deals ??? additional M.DMG that ignores DEF.",
+            "thumbnail": "./data/kr/assets/heroes/Talisha/skills/1 (2).png"
+        },
+        "2 (1)": {
+            "name": "Splendor of Cimatis",
+            "cost": "3",
+            "cooldown": "25",
+            "description": "Explodes Cimatis around the target, dealing ??? M.DMG and creating [Splendor of Cimatis] for 10 sec. [Splendor of Cimatis] recovers Mana of allies within range by 400 every sec and deals ??? M.DMG to enemies within range every sec.",
+            "thumbnail": "./data/kr/assets/heroes/Talisha/skills/2 (1).png"
+        },
+        "2 (2)": {
+            "name": "Full Bloom of Luberry",
+            "cost": "3",
+            "cooldown": "25",
+            "description": "Explodes Luberry in front of self, healing HP of allies within range by ??? and creating [Full Bloom of Luberry] for 10 sec. [Full Bloom of Luberry] heals HP of all allies within range by ??? every sec and reduces ATK of Enemies within range by 30%.",
+            "thumbnail": "./data/kr/assets/heroes/Talisha/skills/2 (2).png"
+        },
+        "3": {
+            "name": "Crystal of Resonance",
+            "cost": null,
+            "cooldown": null,
+            "description": "Talisha projects Light of Luberry to the crystal she owns, healing own HP by ??? and changes [Radicance of Cimatis] and [Splendor of Cimatis] to [Dance of Luberry] and [Full Bloom of Luberry] respectively. Upon using this Skill again, Talisha projects Light of Cimatis to the crystal and recovers Mana by 500. Upon every use, increases own ATK by 5% and All DEF by 5%. These effects can be stacked up to max 10 times.",
+            "thumbnail": "./data/kr/assets/heroes/Talisha/skills/3.png"
+        },
+        "4": {
+            "name": "Brilliant Gemologist",
+            "cost": null,
+            "cooldown": null,
+            "description": "Talisha appraises a gem, increasing ATK by ???, ATK Spd by ???, and DMG dealt to non-Hero enemies by 1% every sec. This effect can be stacked up to max 60 times.",
+            "thumbnail": "./data/kr/assets/heroes/Talisha/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG and Heal Rate are increased by 10%.",
+            "III": "DMG and Heal Rate are increased by 15%.",
+            "IV": "DMG and Heal Rate are increased by 25%."
+        },
+        "3": {
+            "II": "Heal Rate is increased by 10%.",
+            "III": "Heal Rate is increased by 15%.",
+            "IV": "Heal Rate is increased by 25%."
+        },
+        "4": {
+            "II": "ATK Boost is increased by 10%.",
+            "III": "ATK Boost is increased by 15%.",
+            "IV": "ATK Boost is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "[Radiance of Cimatis] Changes Cooldown to 25 sec, and Cooldown will be applied every time this Skill is used 3 times.",
+                    "thumbnail": "./data/kr/assets/heroes/Talisha/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "[Dance of Luberry] At the beginning of each battle, increases DMG by 20%. This effect can be stacked up to max 20 times.",
+                    "thumbnail": "./data/kr/assets/heroes/Talisha/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "[Splendor of Cimatis] Reduces Mana Cost by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Talisha/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "[Full Bloom of Luberry] After 2 sec of the beginning of each battle, creates [Full Bloom of Luberry] that lasts for 3 sec in front of self.",
+                    "thumbnail": "./data/kr/assets/heroes/Talisha/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "The HP Recovery effect applies to all allies, but Heal Rate is reduced by 50%.",
+                    "thumbnail": "./data/kr/assets/heroes/Talisha/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Upon every Skill use, increase own DMG dealt to Bosses by 2%. This effect can be stacked up to max 10 times.",
+                    "thumbnail": "./data/kr/assets/heroes/Talisha/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Changes the activation interval to 0.5 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Talisha/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "The effect becomes irremovable.",
+                    "thumbnail": "./data/kr/assets/heroes/Talisha/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP + 15% / Crit DMG +20%",
+                "thumbnail": "./data/kr/assets/heroes/Talisha/perks/light.png"
+            },
+            "dark": {
+                "effect": "When there is only 1 enemy or more than 5 enemies, reduces Mana Cost of all Skills by 1.",
+                "thumbnail": "./data/kr/assets/heroes/Talisha/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Colorful Splendr, Diogemme",
+        "description": "Increase own ATK by (0). Normal and Skill attacks reduce the target's ATK by (1) for 5 sec. If the target is a Boss, increases All DMG it takes by (2). The All DMG taken Boost effect is irremovable.",
+        "value": {
+            "0": {
+                "0": "12%",
+                "1": "14%",
+                "2": "17%",
+                "3": "21%",
+                "4": "25%",
+                "5": "30%"
+            },
+            "1": {
+                "0": "12%",
+                "1": "14%",
+                "2": "17%",
+                "3": "21%",
+                "4": "25%",
+                "5": "30%"
+            },
+            "2": {
+                "0": "12%",
+                "1": "14%",
+                "2": "17%",
+                "3": "21%",
+                "4": "25%",
+                "5": "30%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Talisha/uw.png",
+        "story": "Diogemme, the magic crystal that Talisha cherishes the most. Though it looks like a normal crystal at first glance, to Talisha, it is a crystal that is worth more than any other treasure, to the extent that it's almost part of her.\nThe first time she saw the crystal was inside a box she was given as her 10th birthday present. Her father had obtained it especially for Talisha, who had liked shiny things ever since she was young. Talisha was overjoyed at the gift and spent every minute playing with the crystal or staring into its depths. Beyond the crystal, there was a shining world that one couldn't see with the naked eye. Young Talisha imagined that a group of fairies were dancing gracefully within the crystal, or that the crystal contained a mysterious magical power.\nIt came as quite a shock when she found out that the crystal wasn't special as she had thought. The feeling of loss when she realized that what she had thought to be special treasure was nothing but a common toy... But in the end, she accepted it. Rather, it seemed to glitter even more brightly now that she knew the truth. Talisha came to love the crystal even more and named her one and only trasure 'Diogemme'.\nAs if it was proving Talisha's ability to make crystals shine brighter the more she looked, Diogemme always shined a new light. Eventually, others were able to see Diogemme's light as well. A fancy yet fierce red light and an elegant and calm blue light. Like other gems that have different names depending on their color,  Talisha decided to call Diogemme by two different names. Luberry for Diogemme when its light is red, and Cimatis for the Diogemme when its light is blue. Diogemme, as if it knew how long it's been resonating with Talisha, responded to Talisha's affection by projecting a light that matched the color of the name Talisha calls."
+    },
+    "uts": {
+        "1": {
+            "name": "Compass of Ancient Power",
+            "description": "[Radiance of Cimatis] Recovers 500 Mana upon use.\n[Dance of Luberry] Reduces Cooldown by (0) sec.",
+            "value": {
+                "0": {
+                    "0": "1",
+                    "1": "1.2",
+                    "2": "1.4",
+                    "3": "1.7",
+                    "4": "2.1",
+                    "5": "2.5"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Talisha/ut/1.png",
+            "story": "Talisha went anywhere where there were jewels, crystals and information. So ti was natual that she went to remote places or places that were hard to go to, and one of which was the Tower of Challenge. Lonely Dosarta, with no one but her sister Selene to talk to, enthusiastically greeted Talisha, giving her a warm welcome. Luckily, the sociable Talisha was happy to talk to her and relayed many of the stories and gossip of the world that she'd heard and seen.\nThe two soon became fast friends. Talisha stayed by Dosarta's side for quite some time to keep her company, so Dosarta wanted to give Talisha something in return. But as Dosarta hadn't left the tower for such a long time, she didn't have any stories that Talisha might be interested in, or any crystals or glittering gems that she might like. Dosarta became sad and lonely, and to cheer her up, Talisha made a suggestion.\n'Dosarta, you said you could restore ancient artifacts, right? Could you make and artifact for me?'\n'But... I won't be able to make shiny, pretty jewels.'\n'It's alright. You're my friend! I'm fine with anything you give me! Oh, how about this? Since I love traveling, I'd like something that would help me in my travels. I'll think of you and be grateful for your kindness, no matter what you give me.'\nReassured by Talisha's kind words, Dosarta put all her effort into making an artifact. It was a compass embedded with a jewel of the same color as Talisha. Every time Talisha uses this compass in her travels, she promises herself that she'll relay the stories that she's heard to Dosarta, no matter what."
+        },
+        "2": {
+            "name": "Magnifying Glass with Ribbon",
+            "description": "[Splendor of Cimatis] Upon activation, creates [Splendor of Cimatis] around self for 5 sec.\n[Full Bloom of Luberry] Increases Heal Rate of allies within range by (0).",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Talisha/ut/2.png",
+            "story": "A magnifying glass used by gemologists. It's light and easy to carry around since it's a partable version, and one of the things that Talisha cares about the most. Talisha has used it ever since she went on her first journey, and even now, whenever she has a jewel or crystal she is interested in, she always takes out this magnifying glass. Because of this habit, rumors popped up that her magnifying glass could peer into people souls. When she heard these stories, Talisha only laughed out loud, which is a rare sight for her.\nShe also has a fond memory of this magnifying glass. It was when the magnifying glass hadn't been decorated with an Eastern-style ribbon yet. Around the time when Talisha had been enjoying her travel in Orvelia, a jeweler's shop caught her eye. When she arrived, she found that a crooked merchant was trying to cheat a young Eastern Girl. He was passing off a fake jewel as the real thing, asking for many times its actual price. Talisha saw the suspicious and dirty color of his soul and stepped in to save the girl. Though the crook denied everything, he couldn't fool Talisha's eye.\nAs son as they left the store, the girl expressed her gratitude to Talisha. The girl, who said she was from the eastern continent, was name Turan. If it weren't for Talisha, she had almost bought a fake to send to her homeland with the very first salary she had received and thanked Talisha repeatedly for the kindness she had shown her in this unfamiliar land.\n'You, a good person. I want to tank you.'\n'I only did what I naturally should have done. You don't have to give me anything.'\n'But you could have just ignored, passed by. You did not. I want to thank you for your help.'\nIn the end, Talisha accepted her gift. It was a knot that Turan had made herself. The two soon became close, and began to treat each other like sisters, relying on each other. Although they weren't able to see each other very much after Turan settled in the Orvelia Guild Domain, Talisha still reminiscences about the time that they first met whenever she sees the ribbon or whenever Turan sends a letter."
+        },
+        "3": {
+            "name": "Luminous Brooch",
+            "description": "[Crystal of Resonance] Reduces Cooldown by (0) sec, and the Skill dispels negative effects from self upon use.",
+            "value": {
+                "0": {
+                    "0": "2",
+                    "1": "2.4",
+                    "2": "2.9",
+                    "3": "3.5",
+                    "4": "4.2",
+                    "5": "5"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Talisha/ut/3.png",
+            "story": "It was around the time when Talisha was traveling through Penteonia. As Penteonia was a country filled with light magic and mana, Talisha could get as many jewels and crystals as she wanted. To commemorate a fulfilling trip, Talisha bought a brooch with a ribbon from a stall in the streets. But right before she crossed the border, she opened her pocket only to find that a few crystals, including the brooch, had gone missing.\nTalisha was deeply downhearted. Although the stolen items weren't particularly expensive or precious, she felt their loss keenly as she had bought them to commemorate the end of her trip. She agonized for a long time, wondering if she should search for a little longer for her lost things, or if she should just forget about them and set out. That is, until someone tapped her on the shoulder.\n'You seem to have a problem. May I ask what it is? Perhaps you do not have enough money for travel, or... perhaps you have lost something.'\n'What? How did you...'\n'Well, well. What a coincidence. I happen to pick this up. Do you wish to see whether it is yours?'\nIn the hand that the confidently smiling girl held out were the brooch and the stolen crystals. Taking her items from the girl's hand, Talisha instinctively realized the that this girl was someone special. Though her face looked young, it had an air nobility, and the light that shone from her could be seen even without using a crystal. But the girl didn't introduce herself to the end, and Talisha didn't pry any further either. She just smiled and watched the girl leave for a long time.\nA few days after that, Talisha sensed a mysterious light glowing in the brooch. The light shone sometimes blue, sometimes red, and sometimes white. She hadn't noticed those beautiful colors when she had first bought the brooch. As she recalled the girl, Talisha smiled softly.\n'It really is a beautiful light. One could almost say it holds the light of a queen.'"
+        },
+        "4": {
+            "name": "Lamp with Crude Handle",
+            "description": "[Brilliant Gemologist] Increases self's All DEF by 1% per stack, and changes the max number of stacks to (0).",
+            "value": {
+                "0": {
+                    "0": "72",
+                    "1": "74",
+                    "2": "77",
+                    "3": "81",
+                    "4": "85",
+                    "5": "90"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Talisha/ut/4.png",
+            "story": "Traveling isn't always comfortable and easy. Talisha was no exception to this rule, and she once had to spend the night in a dark land all by herself, without even a single light. However, this kind of misfortune can turn into an opportunity for meeting new people. This was when Talisha met Taily, the Valiant Kngiht Commander of the Shuti Tribe, and Evan, the alchemist from the Tower of Sage, who all appeared with quite a commotion in the darkness. As all three were very friendly by nature, they talked deep into the night and became close friends. All of them spent a lot of time wandering around in distant areas, so there was a lot of information to be shared.\n'I'm cso glad i met you two. I was a little worried about how I should spend this night all by myself.'\n'Huh?! Talisha, are ya scared of da night?!'\n'I wouldn't say scared... It's just that I feel lonely and a little sad. You think I'd be used to traveling alone by now, but in these times those kinds of emotions just rush up.'\n'Agreed. Umm... Oh, how about this then? Taily, can you give me a hand?'\n'Hap! Okey-dokey! Ya can count on me! Talisha and Evan are my friends, so I'll help ya both!!'\nAfter a short while, Evan created a wonderful lamp containing a mana crystal. Though the handle on the top was bumpy and crude, the paw print Taily left on it made Talisha smile brightly at the effort and care that went into making this lamp. This Lamp, which shines whenever mana is injected into it, will always protect Talisha with a bright light, even when the night is long and lonely."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon using Skills 5 times.",
+        "description": "Summons the soul of Colorful Splendor, Diogemme, increasing own Crit DMG by 100% for 12 sec. Afterward, attacks all enemies, dealing ??? M.DMG and increasing All DMG the hit targets take by 35% for 15 sec. If the target is a Boss, deals ??? additional M.DMG that ignores DEF.",
+        "cooldown": "18",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Talisha/sw.png",
+        "advancement": {
+            "1": "Increases DMG by 60% and reduces Cooldown by 4 sec.",
+            "2": "Every 1 sec, reduces self's Cooldown of Skills by 1 sec for the duration of Skill."
+        },
+        "story": "Talisha felt no qualms about looking into another person's soul. It wasn't like it was harming anyone, and she didn't get any material gain from it, just simple pleasure. but one day, when she looked at her soul in a mirror, she was shocked and was very shaken at what she found. her soul, which had once shone like everyone else, was murky and stained. Talisha had seen this color before. It was the color of greedy, selfish, and insatiable people.\n'I can't believe it. Is this really my soul? Why has it changed like this?'\nTalisha thought frantically. What kind of values had she once pursued as an information dealer? Why had she ended up parting ways with Cassandra, who was once her business partner? It was because she had wanted to occasionally give out free information to those needed it, and she had done so gladly. Something that was above materialistic gain or calculations. Survival, coexistence... and harmony. Talisha sadly acknowledged that she wasn't the person she used to be.\n'Yes. I'd forgotten... I had tried so hard to live in harmony with others, and yet I winded up forgetting something so simple.'\nTalisha decided to let her secret pleasure go. Even though only she could see the light of a soul, she believed that someday, it could help someone in need. That's how she would restore the happiness that she once considered to be the greatest. Talisha repented from the bottom of her heart and tried to recall those pure intentions from her past days. She wished she could share the brilliant light that she saw with more people, and through  the happiness she experienced, give a wonderful memory to others.\nWhen Talisha finally saw the thing that was more valuable than what was merely on the surface, 'she' appeared. It was 'Diogemme,' the soul of jewels, born with all the color of the jewels that Talisha had gathered.\n'Look, my dearest friend. Your soul is shining brightly more than anyone right now.'\nWhile she gently smiled, the crystals and jewels in her hair reflected Talisha's soul and radiated a dazzling, radiant light."
+    },
+    "splashart": "./data/kr/assets/heroes/Talisha/sa.png",
+    "costumes": "./data/kr/assets/heroes/Talisha/cos",
+    "visual": null,
+    "aliases": null
+}

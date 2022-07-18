@@ -1,0 +1,237 @@
+{
+    "infos": {
+        "title": "Shieldless Knight",
+        "class": "Warrior",
+        "position": "Front",
+        "attack range": "8300",
+        "damage type": "Physical",
+        "gender": "Male",
+        "age": "20",
+        "height": "195",
+        "race": "Human",
+        "constellation": "Asiphia the Empress",
+        "birth of month": "October 22nd, Month of Friendship",
+        "like": "His new family",
+        "dislike": "Causing harm to friends, the Goddess Lua",
+        "story": "He had no special past, no superhuman strength, or no exceptional intellect. In a time when many orphans streamed out into the streets for countless reasons, Clause was just another ordinary, forgettable boy at the orphanage. He couldn't even remember who named him or whether his birthday was really his birthday. Ricardo was strict yet kind. But he could never stay at the orphanage for long. So the younger kids turned to Clause, who was only a couple of years older than them, for support and affection. Though Clause himself was just a small child, he quickly became used to taking care of and protecting someone. Ad a boy who took on his kind of responsibility without a doubt, it was only natural that Clause wanted to become a knight that protects others. The he met Frey and Kasel. Among all the children at the orphanage, they were the most special. Their conversations, how they looked at him, and the time they spent together- all of them turned Clause from an ordinary boy into an extraordinary young man.",
+        "thumbnail": "./data/kr/assets/heroes/Rebel Clause/ico.png",
+        "story_": "He had no special past, no superhuman strength, or no exceptional intellect. In a time when many orphans streamed out into the streets for countless reasons, Clause was just another ordinary, forgettable boy at the orphanage. He couldn't even remember who named him or whether his birthday was really his birthday.\nRicardo was strict yet kind. but he could never stay at the orphanage for long. So the younger kids turned to Clause, who was only a couple of years older than them, for support and affection. Though Clause himself was just a small child, he quickly became used to taking care of and protecting someone. As a boy who took on this kind of responsibility without a doubt, it was only natural that Clause wanted to become a knight that protects others.\nThen he met Frey and Kasel. Among all the children at the orphanage, they were the most special. Their conversations, how they looked at him, and the time they spent toghether - all of them turned  CLause from an ordinary boy into an extraordinary young man. Clause started calling Kasel and Frey his family. When other kids tried to tease the two, Clause would always up and take their side.There was a time when he believed that the threee of them would always remain a family, even if he became a knight and even if they all grew up and left the orphanage.\nHe who abandoned the shield that failed to protect kept on reminding himself that the pain he felt every time he raised his sword was a punishment for his failure. But he knew he couldn't just stop and beat himself up forever. his family was waiting for him. They are waiting for him to rescue them, just like he always did in their childhood days. To end the long wait, to keep his dearest promise, Clause takes another step today.\n\nEven when the darkness covers your eyes, and the night is so long that you feel as if it will never end, do not worry. Don't be scared. The morning sun will rise.\nAnd I'll be right by your side, holding your hands."
+    },
+    "skills": {
+        "1": {
+            "name": "Determined Strike",
+            "cost": "3",
+            "cooldown": "7",
+            "description": "Deals ??? P.DMG to frontal enmemies within range and inflicts Stun for 2 sec. If the target is a boss, deals ??? additional P.DMG.",
+            "thumbnail": "./data/kr/assets/heroes/Rebel Clause/skills/1.png"
+        },
+        "2": {
+            "name": "Indomitable Will",
+            "cost": "2",
+            "cooldown": "18",
+            "description": "Deals ??? P.DMG to nearby enemies, entering into the irremoveable state [Indomitable Will] for 10 sec. While in [Indomitable Will] state, ATK Spd is increased by 500 and the duration of CC inflicted upon self is reduced by 50%.",
+            "thumbnail": "./data/kr/assets/heroes/Rebel Clause/skills/2.png"
+        },
+        "3": {
+            "name": "Perish",
+            "cost": "4",
+            "cooldown": "20",
+            "description": "Attacks a random enemy 6 times, dealing ??? P.DMG each hit. Afterward, delivers an additional attack that deals ??? P.DMG to nearby enemies and knocks them down for 3 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Rebel Clause/skills/3.png"
+        },
+        "4": {
+            "name": "Power of Galicta",
+            "cost": null,
+            "cooldown": null,
+            "description": "Rebel Clause is not affected by Block stats, but his Crit Chance is increased by 200, and when his DEF Penetration reaches 1000 or above, all of his attacks ignore the target's DEF. Additionally, his normal attack deal ??? additional P.DMG to all enemies and inflict [Curse of Galicta] upon them for 6 sec. If the target is already inflicted with [Curse of Galicta], the target won't take additional DMG.",
+            "thumbnail": "./data/kr/assets/heroes/Rebel Clause/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "Crit Chance Boost is increased by 50.",
+            "III": "Crit Chance Boost is increased by 50.",
+            "IV": "Crit Chance Boost is increased by 50."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Increases DMG by 100% when there is one enemy.",
+                    "thumbnail": "./data/kr/assets/heroes/Rebel Clause/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Increases the duration of Stun by 1 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Rebel Clause/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Increases Crit DMG by 50% while in [Indomitable Will] state.",
+                    "thumbnail": "./data/kr/assets/heroes/Rebel Clause/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Upon using the skill, dispels all negative effects from self.",
+                    "thumbnail": "./data/kr/assets/heroes/Rebel Clause/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Recovers own Mana by 100 each hit.",
+                    "thumbnail": "./data/kr/assets/heroes/Rebel Clause/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Gains immunity to CC while in use.",
+                    "thumbnail": "./data/kr/assets/heroes/Rebel Clause/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Additionally reduces the target's P.DEF by 50% for the duration of [Curse of Galicta].",
+                    "thumbnail": "./data/kr/assets/heroes/Rebel Clause/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Deals additional P.DMG equal to 100% of ATK to Non-Hero enemies.",
+                    "thumbnail": "./data/kr/assets/heroes/Rebel Clause/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP +15% / Crit Chance +100",
+                "thumbnail": "./data/kr/assets/heroes/Rebel Clause/perks/light.png"
+            },
+            "dark": {
+                "effect": "At the beginning of each battle, Rebel Clause deals 12% increased DMG to Non-Hero enemies and takes 5% reduced DMG. This effect can be stacked up to max 5 times and is irremovable.",
+                "thumbnail": "./data/kr/assets/heroes/Rebel Clause/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Adversary of the Goddess, Galicta",
+        "description": "Increases DEF Penetration by (0). Upon every Skill use, consumes 20% of own current HP but increases DMG dealt to enemies by (1) for 30 sec instead. The DMG Boost effect can be stacked up to max 5 times and is irremoveable.",
+        "value": {
+            "0": {
+                "0": "200",
+                "1": "240",
+                "2": "290",
+                "3": "350",
+                "4": "420",
+                "5": "500"
+            },
+            "1": {
+                "0": "2%",
+                "1": "2.4%",
+                "2": "2.9%",
+                "3": "3.5%",
+                "4": "4.2%",
+                "5": "5%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Rebel Clause/uw.png",
+        "story": "The great legacy left behind by the Technomagic Kingdom was the ultimate wepaon, Galicta, created by hundreds of experts after decades of hard work. After it passed through the hands of the last king of Lucern, Siegfried, the sword was sealed away in the King's Sanctum and wasn't used for a long time. Perhaps realizing that this world was ruled by the goddess's whims and its irrationalities was a tragedy. All who came to know the truth tried to rebel against their fate. Knowing the truth, they couldn't remain as the mindless pawns of the goddess. They couldn't escape the goddess even in death... They wanted to escape from her control. To avert the goddess's gaze, only a handful of people participated in the research in the utmost secrecy. And after long years of experimentation, they created the grand weapon called 'Galicta.'\nIt was a power for men, created by men, and only accessible by men. But the weapon chose its own master and gave death to those deemed unworthy. Its incredible power, impossible to be wielded by any common man, was so powerful to the extent that the weapon was considered fickle and particular. As it was designed to prevent the goddess's servants from stealing it, neither the goddess's magic nor power worked on it.\nThe only thing that could move the blade was the life force of a human. It was materialized pwoer with nothing but its user's will, and corrupted and absorbed energy from around it, making it impossible for anyone to use it. The early kings of Lucern were no exception. Some died wihtout even being able to raise the sword; others could barely swing it. Until the day the beings of the goddess launched an invasion and Siegfried took up the sword, no one had been able to draw on the true power of Galicta.\nAs it had chosen only a single master among countless candidates, it seemed as no one would ever wield Galicta again after Siegfried's death. but when the doors of the sanctum opened - in that deperate moment - Galicta chose a complete outsider, one who had nothing to do with the Technomagic Kingdom. Perhaps it admired his courage of standing against Ascalon with nothing but his frail, human body, or perhaps it was being temperamental as always.\nThe important thing is that Galicta will lend Clause its power until the day he lets the weapon fall from his hands. As long as Clause hold onto his will, Galicta will serve him  - even at the cost of burning his life force to ashes."
+    },
+    "uts": {
+        "1": {
+            "name": "Cloak of Despair",
+            "description": "[Determined Strike] Reduces Mana Cost by 1 and increases additional P.DMG by (0) if the target is a boss.",
+            "value": {
+                "0": {
+                    "0": "40%",
+                    "1": "48%",
+                    "2": "58%",
+                    "3": "70%",
+                    "4": "84%",
+                    "5": "100%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Rebel Clause/ut/1.png",
+            "story": "The cloak that was bestowed upon Clause on the day he officially became a knight. Each time he took it out and reflected on his early resolutions, Kasel would sit next to him and talk about how he wanted to become a knight as well. Just thinking about those precious memories were so painful to him... The object that once guided him whenever he felt doubt now became a symbol of his failure to protect his brother. Every time clause laid eyes on his cape, he became overcome with guilt. Unable to bear the pain, he ended up howling in agony and ripping the cloak to pieces."
+        },
+        "2": {
+            "name": "Irreversible Hatred",
+            "description": "[Indomitable Will] Increases the duration of [Indomitable Will] by 5 sec, and increases ATK by (0) for the duration of Skill.",
+            "value": {
+                "0": {
+                    "0": "12%",
+                    "1": "14%",
+                    "2": "17%",
+                    "3": "21%",
+                    "4": "25%",
+                    "5": "30%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Rebel Clause/ut/2.png",
+            "story": "While he was searching for Kasel and Frey, Clause happened to come across an apprentice priest and an apprentice knight surrounded by Demons. Being strongly reminded of his siblings, who he had failed to protect, there was no way Clause could just pass them by. After the battle ended, the apprentice priest gave Clause a priest's brooch as a token of her gratitude. The same brooch that his sister Frey owned was also a sign of Lua, who betrayed his dearest siblings Kasel and Frey.\nClause couldn't bear to throw it away - his longing for Frey was greater than his hate for Lua. But this rage eventually overpowered him, and he destroyed the brooch in his hand."
+        },
+        "3": {
+            "name": "Old Mittens",
+            "description": "[Perish] Reduces Cooldown by (0) sec, and each hit inflicts Stun on the target for 1 sec.",
+            "value": {
+                "0": {
+                    "0": "2",
+                    "1": "2.4",
+                    "2": "2.9",
+                    "3": "3.5",
+                    "4": "4.2",
+                    "5": "5"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Rebel Clause/ut/3.png",
+            "story": "A pair of gloves that Clause still treasures. Though the threads are unraveling at the edges and fur is ragged, Clause still takes these gloves out and looks at them whenever he misses his family. but every time he takes the gloves out, Clause finds that it has unraveld a little more, just like his life force is slowly dwindling every time he uses Galicta's power.\n'I must reach them... Before these gloves unravel, before it comes to an end... I must see them one more time...'"
+        },
+        "4": {
+            "name": "Everlasting Protection",
+            "description": "[Power of Galicta] Increases CC Resist by (0), and reduces the targets DEF Penetration by 200 for the duration of [Curse of Galicta].",
+            "value": {
+                "0": {
+                    "0": "300",
+                    "1": "360",
+                    "2": "430",
+                    "3": "520",
+                    "4": "630",
+                    "5": "750"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Rebel Clause/ut/4.png",
+            "story": "Exian, a weapon given only to the Knight with the mostnoble beliefs. It symbolized aknight's duty to protect his country, the poeple, and life itself, but Clause tried to throw it all away. He couldn't bear it all when he had failed to protect anything. But Maria stopped him and remade Exian into a new form.\n'The soul inside this weapon still wants to protect you. Dont turn your back on its wishes.'\nWill the day ever come when he will take up his shield again? Even Clause himself couldn't answer that question. But when he accepted from Maria, Clause felt himself become enveloped by a warm, kind soul. It was the voice of the ancient Dragon, promising it would protect Clause so that his beliefs would never falter."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon using Skills 4 times.",
+        "description": "Summons the soul of the Adversary of the Goddess, Galicta, increasing own ATK by 40% for 10 sec. Afterward, attack a random target and nearby enemies in a circular range, dealing ??? P.DMG and knocking them down for 3 sec.",
+        "cooldown": "16",
+        "uses": "5",
+        "thumbnail": "./data/kr/assets/heroes/Rebel Clause/sw.png",
+        "advancement": {
+            "1": "Increases DMG by 50%.",
+            "2": "Increases own DMG that ignores DEF by 30% for the duration of soul."
+        },
+        "story": "Galicta is a weapon that continuously consumes the user's life force. But contrary to Hilda's warnings, Galicta didn't seem to be in any hurry to devour Clause. Clause couldn't understand why Galicta was so generous towards him, even though he wasn't of royal Blood. Maria and Morrah found it strange as well.\n 'They did say this weapon was fickle. Always be careful when using it. You never know when it might suddenly turn on you.'\n'I know.'\n'Don't go dying before you even get to meet those siblings of yours. That'd be a waste. Act smart and listen to Maria.'\nThe thruth was that Clause didn't care whatever fate he would end up in, as long as he could wield Galicta's power. He has made his decision the moment Hilda removed Galicta's barrier -  no, from the moment he stepped foot in the Technomagic Kingdom. As if Morrah guessed Clause's innermost thoughts, she warned him against the weapon, albeit in a brusque manner. But even even this could deter Clause from his goal.\nAfter parting ways with them, Clause swing the sword like he had forgotten all the advice he received.\nHe was being cruel towards himself. It wasn't that he was randomly slaightering life. He was just not preserving his strength nor hesitating. As he continued to mindlessly cut through all that stood in his way, the pain in his eyes ebeed away. The faded blue-grey eyes that occasionally looked to a faraway place only showed longing and sorrow.\nPerhaps the weapon was aware of Clause's iron will. Galicta was heartless, but at the same time, benevolent. It have as much power as it took away. A mere sword was more merciful to Clause than the cruel hands of fate that took his siblings away in an instant.\nBut the wepaon was not famed for its fickleness for nothing. The moment Clause laid eyes on the young priestess and knight being attacked by Demons, he felt an overpowering rage, sadness, regret... and desperation. As if it was absorbing all those emotions, Galicta sliced out his life force in an instant. Just when his vision was blurred and went dark from the unbearable pain, he cried out.\n'Not yet.\nI can still fight. I won't falter here.\nTake whatever you want.\n I can stand it all.\nSo give me your strentgh to save those children!!!'\nHis cry echoed in the sky like a roar from a wounded beast. Ignoring the pain that hammered down on his heart, Clause took hold of Galicta once more. The blueish lgiht surged around him like it was trying to devour him completely.\nBut it responded to Clause's will once more. What felt like eternal pain was over, and Clause saw a strange sight as he struck down the sword. It was a shape of a blue sword, so vast it seemed to cover the sky, piercing the ground. Was it the will of Galicta? Or was it Clause's desperation?\nWhatever it was, as long as clause could draw that power again, he was prepared to give up everything he had to Galicta - no matter how painful it would be."
+    },
+    "splashart": "./data/kr/assets/heroes/Rebel Clause/sa.png",
+    "costumes": "./data/kr/assets/heroes/Rebel Clause/cos",
+    "visual": null,
+    "aliases": [
+        "rb",
+        "rclause",
+        "r clause",
+        "re clause"
+    ]
+}

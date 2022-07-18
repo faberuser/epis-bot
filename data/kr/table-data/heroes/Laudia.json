@@ -1,0 +1,246 @@
+{
+    "infos": {
+        "title": "Dancer of the Oasis",
+        "class": "Assassin",
+        "position": "Front-500",
+        "attack range": "5800",
+        "damage type": "Magical",
+        "gender": "Female",
+        "age": "22",
+        "height": "169",
+        "race": "Human",
+        "constellation": "Asiphia the Empress",
+        "birth of month": "October 11th, Month of Friendship",
+        "like": "Laias, Lilia, people in the desert",
+        "dislike": "Watching people suffer",
+        "story": "Trovatias are a nomadic tribe of Aegina Desert who inherited the tradition and religion of the ancient desert kingdom. Laudia is the daughter of the tribe leader and serves the Priestess of Water, Laias. She also looks after the tribe on behalf of her old father. When she prayed for help, God Dragon Laias and her sister Lilia woke up from their long sleep and led her and her tribe into the shrine, protecting them. Ever since, Laudia has been defeating demons in the desert with Zafir, the leader of the Mauhata tribe of Desert Warriors.",
+        "thumbnail": "./data/kr/assets/heroes/Laudia/ico.png",
+        "story_": "Trovatias are a nomadic tribe of Aegina Desert who inherited the tradition and religion of the ancient desert kingdom. Laudia is the daughter of the tribe leader and serves the Priestess of Water, Laias. She also looks after the tribe on behalf of her old father. When she prayed for help, God Dragon Laias and her sister Lilia woke up from their long sleep and led her and her tribe into the shrine, protecting them. Ever since, Laudia has been defeating demons in the desert with Zafir, the leader of the Mauhata tribe of Desert Warriors."
+    },
+    "skills": {
+        "1": {
+            "name": "Whisper of Sand",
+            "cost": "2",
+            "cooldown": "11",
+            "description": "Attacks target enemy and deals ??? M.DMG to enemies in close range, decreasing enemy block chance by ??? and Crit resistance by 500 for 8 sec. Additionally, attacks and deals ??? M.DMG and stuns them for 3 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Laudia/skills/1.png"
+        },
+        "2 (1)": {
+            "name": "Enchanting Flow",
+            "cost": "2",
+            "cooldown": "20",
+            "description": "Increases own ATK by ??? and Crit DMG by 70% for 10 sec. Then moves a short distance forward, dealing ??? M.DMG to enemies in movement range and Charms them for 5 sec if the skill was used in the Arena. Can activate [Alluring Ambush] once within 5 sec after use.",
+            "thumbnail": "./data/kr/assets/heroes/Laudia/skills/2 (1).png"
+        },
+        "2 (2)": {
+            "name": "Alluring Ambush",
+            "cost": "1",
+            "cooldown": "0",
+            "description": "Attacks target enemy 3 times, dealing a total of ??? M.DMG. Deals extra ??? M.DMG ignoring the target's DEF to Boss enemies and enemies inflicted by Charm.",
+            "thumbnail": "./data/kr/assets/heroes/Laudia/skills/2 (2).png"
+        },
+        "3 (1)": {
+            "name": "Dance of the Desert",
+            "cost": "2",
+            "cooldown": "20",
+            "description": "Attacks enemies in range 30 times, dealing a total of ??? M.DMG. Additionally throws the 'Blades of Arlaq' at random enemies 30 times, dealing a total of ??? M.DMG. Extra ??? DMG is stacked every time the blade hits the same enemy. [Blinding Acceleration] can be used once during skill activation, and the 'Blades of Arlaq' prioritize targets inflicted by Charm.",
+            "thumbnail": "./data/kr/assets/heroes/Laudia/skills/3 (1).png"
+        },
+        "3 (2)": {
+            "name": "Blinding Acceleration",
+            "cost": "1",
+            "cooldown": "0",
+            "description": "Gains immunity to CC for 3 sec and ATK Spd is increased by 800.",
+            "thumbnail": "./data/kr/assets/heroes/Laudia/skills/3 (2).png"
+        },
+        "4": {
+            "name": "Blessing of Oasis",
+            "cost": null,
+            "cooldown": null,
+            "description": "Decreases CC duration inflicted on self by ???%. Upon using a skill, gains [Blessing of Oasis] for 20 sec, increasing own Penetration by 30 and DEF by ???. [Blessing of Oasis] can be stacked up to max 10 times and cannot be dispelled.",
+            "thumbnail": "./data/kr/assets/heroes/Laudia/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "ATK Boost and DMG are increased by 10%.",
+            "III": "ATK Boost and DMG are increased by 15%.",
+            "IV": "ATK Boost and DMG are increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "DEF Penetration and DEF Boost are increased by 10%.",
+            "III": "DEF Penetration and DEF Boost are increased by 15%.",
+            "IV": "DEF Penetration and DEF Boost are increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Mana cost is reduced by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Laudia/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Target takes 25% increased M.DMG for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Laudia/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Gains 2 orbs of mana after movement. Gained Mana is consumed over 5 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Laudia/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "After using **Skill 2**, [Alluring Ambush] can be used twice within 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Laudia/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Recovers 30 Mana every hit.",
+                    "thumbnail": "./data/kr/assets/heroes/Laudia/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Mana cost is increased by 1 and DMG is increased by 100%.",
+                    "thumbnail": "./data/kr/assets/heroes/Laudia/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Gains 2 stack of **Skill 4**.",
+                    "thumbnail": "./data/kr/assets/heroes/Laudia/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Per each stack, takes 2% less DMG from enemies other than heroes.",
+                    "thumbnail": "./data/kr/assets/heroes/Laudia/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / ATK.Spd +100",
+                "thumbnail": "./data/kr/assets/heroes/Laudia/perks/light.png"
+            },
+            "dark": {
+                "effect": "At the start of each battle, gains immunity to CC for 5 sec, and ACC, CC ACC are increased by 300 for 10 sec.",
+                "thumbnail": "./data/kr/assets/heroes/Laudia/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Whispering Sands, Arlaq",
+        "description": "[Blessing of Oasis] can be stacked up to max (0) times, and upon auto attack, all skill cooldown is decreased by (1) with 10% chance.",
+        "value": {
+            "0": {
+                "0": "14",
+                "1": "15",
+                "2": "16",
+                "3": "17",
+                "4": "18",
+                "5": "20"
+            },
+            "1": {
+                "0": "4%",
+                "1": "4.8%",
+                "2": "5.8%",
+                "3": "7%",
+                "4": "8.4%",
+                "5": "10%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Laudia/uw.png",
+        "story": "A rare treasure that is the manifestation of passion burning like a flame in the desert. A pair of these beautiful weapons is known to have been stored in the ancient God King's repositorium. When swung, they beautifully sound like the wind with the scent of a breeze. It is a sweet but lethal temptation, just like a mirage in the desert..."
+    },
+    "uts": {
+        "1": {
+            "name": "Anklet of Oasis",
+            "description": "[Whisper of Sand] Makes the effect irremovable, and recovers Mana by (0) upon Critical hit.",
+            "value": {
+                "0": {
+                    "0": "140",
+                    "1": "170",
+                    "2": "210",
+                    "3": "250",
+                    "4": "300",
+                    "5": "360"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Laudia/ut/1.png",
+            "story": "An anklet of the Trovatia tribe that's used for the dance to summon the God Dragon in the Shrine of Flow. Only one individual chosen by the great desert can wear it after being tested by the sandstorm. Laudia, the leader of Trovatia, is its current owner. The anklet does not reveal its true powers until it is soaked for days in the holy oasis that only shows itself to the chosen one."
+        },
+        "2": {
+            "name": "Halidom of Trovatia",
+            "description": "[Enchanting Flow] After movement, absorbs DMG equal to (0) of ATK for 3 sec, then creates a shield that is immune to CC, and mana cost of [Alluring Ambush] is decreased by 1.",
+            "value": {
+                "0": {
+                    "0": "160%",
+                    "1": "190%",
+                    "2": "230%",
+                    "3": "270%",
+                    "4": "330%",
+                    "5": "400%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Laudia/ut/2.png",
+            "story": "A chest containing the artifacts needed for worship rituals for the Dragon of Water. Some ornaments on it are crafted with 'Azure Lapis Lazuli,' a gem that represents complete fullness. It is the dearest thing that Laudia's father treasures, and is only given to those who have the ability to lead the entire Trovatia tribe."
+        },
+        "3": {
+            "name": "Veil of Charm",
+            "description": "[Dance of the Desert] Skill cooldown is decreased by 30% and Penetration is increased by (0) during skill activation.",
+            "value": {
+                "0": {
+                    "0": "100",
+                    "1": "120",
+                    "2": "140",
+                    "3": "170",
+                    "4": "210",
+                    "5": "250"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Laudia/ut/3.png",
+            "story": "A legendary Veil only given to the best dancer in the continent. Performing a dance with it on can mesmerize those who are watching. Laudia used the veil to mesmerize enemies with her seductive dance and achieved everything she wanted."
+        },
+        "4": {
+            "name": "Earrings of God Dragon",
+            "description": "[Blessing of Oasis] Increases DEF boost by 50%. Upon gaining Blessing of Oasis, increases ATK Spd by (0) for 5 sec.",
+            "value": {
+                "0": {
+                    "0": "100",
+                    "1": "120",
+                    "2": "140",
+                    "3": "170",
+                    "4": "210",
+                    "5": "250"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Laudia/ut/4.png",
+            "story": "Earrings that the God Dragon Laias bestowed upon Laudia. On the last day Laudia performed the ritual for the God Dragon at the Shrine of Flow, Laias finally opened her eyes. Then, some orbs of water appeared around Laudia, releasing blue, blinding light. The orbs landed upon the hands of Laudia and became a beautiful pair of earrings. It was a gift blessed by the oasis, the token of gratitude that Laias gave to Laudia in recognition of the painstaking effort Laudia made to bring her back."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up over 21 sec.",
+        "description": "Summons Whispering Sands, Arlaq for 6 sec, recovering own Mana by 500 every sec, and reducing ATK Spd of enemies within circular range of self by 120. The ATK Spd Reduction effect stacks up to 5 times, and enemies inflicted with 5 stacks take 50% increased M.DMG for 7 sec, and become Petrified.",
+        "cooldown": "22",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Laudia/sw.png",
+        "advancement": {
+            "1": "Increases own ATK by 40% for the duration of Skill.",
+            "2": "For every sec, dispels positive effects from an enemy within range and deals ??? M.DMG."
+        },
+        "story": "Arlaq was supposed to carry the power of a Soul Weapon through Cain.\nWhen Laudia was first bestowed with the awakened Arlaq as a Soul Weapon. she recognized a fragrance which is feint, yet existent. However, the fragrance had disappeared when she attempted to get a whiff of its smell after going through numerous incidents.\nAfter a few trial-and-errors, Laudia realized that Arlaq must be fully awakened in order to invigorate that fragrance. At the end of severe training, Laudia was finally rewarded.\nLaudia was dancing as if she was being guided by a sandstorm when a captivating fragrance pleasantly entered her system from both her hands. After the dances, Laudia was struck with enlightenment that she had just achieved the zenith of blade arts.\nIt marked the birth of the greatest Desert Dancer of all ages. Arlaq accepted Laudia as one worthy of its power, and granted her its maximum power.\nArlaq's fragrance is no longer just a simple scent with captivating odor. Now its ever-alluring fragrance is capable of completely bewitching its target, shaking the willpower of the target at very core.\n\nThis irresistible fragrance, when blended with Laudia's dance, can charm both sight and smell of living beings."
+    },
+    "splashart": "./data/kr/assets/heroes/Laudia/sa.png",
+    "costumes": "./data/kr/assets/heroes/Laudia/cos",
+    "visual": null,
+    "aliases": null
+}

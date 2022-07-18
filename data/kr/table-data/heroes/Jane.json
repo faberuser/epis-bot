@@ -1,0 +1,240 @@
+{
+    "infos": {
+        "title": "Alabaster Corpse",
+        "class": "Knight",
+        "position": "Front-700",
+        "attack range": "2500",
+        "damage type": "Magical",
+        "gender": "Female",
+        "age": "118",
+        "height": "150",
+        "race": "Undead",
+        "constellation": "Armil the Saint",
+        "birth of month": "April 17th, Month of Life",
+        "like": "I don't remember exactly... My...",
+        "dislike": "Large bones...",
+        "story": "She was once the princess of the fallen Republic of Gray. The Republic of Gray, wiped off the map by the Demon invaders during the Demon War, was the protector of countless secrets, including the ruins and technologies of an ancient civilization. Jane, too, lost her lelife to protect those secrets. Later, she was brought back to the world as an undead by Malduk, a high-ranking officer and a strategist of the Demon Army. She was given a new consciousness by a strange, dark magic. Now, she seeks to go on a journey to find her past self and her lost memories.",
+        "thumbnail": "./data/kr/assets/heroes/Jane/ico.png",
+        "story_": "She was once the princess of the fallen Republic of Gray. The Republic of Gray, wiped off the map by the Demon invaders during the Demon War, was the protector of countless secrets, including the ruins and technologies of an ancient civilization. Jane, too, lost her life to protect those secrets. Later, she was brought back to the world as an undead by Malduk, a high-ranking officer and a strategist of the Demon Army. She was given a new consciousness by a strange, dark magic. Now, she seeks to go on a journey to find her past self and her lost memories."
+    },
+    "skills": {
+        "1": {
+            "name": "Funeral Rites",
+            "cost": "2",
+            "cooldown": "8",
+            "description": "Deals ??? M.DMG to enemies in range, stunning them for 5 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Jane/skills/1.png"
+        },
+        "2": {
+            "name": "Mark of Death",
+            "cost": "1",
+            "cooldown": "6",
+            "description": "Engraves a Mark on all enemies for 30 sec and deals ??? M.DMG over time. Enemies engraved with Mark takes 25% more M.DMG. This effect increases by 20% upon every use. This effect can be stacked up to max 5 times and is irremovable.",
+            "thumbnail": "./data/kr/assets/heroes/Jane/skills/2.png"
+        },
+        "3": {
+            "name": "Day of Ruin",
+            "cost": "3",
+            "cooldown": "12",
+            "description": "Deals M.DMG to all enemies every sec for 15 sec, heals own HP equal to 100% of DMG dealt, and inflicts Stun on the hit target for 1 sec with a 10% chance. For the duration of Skill, gains immunity to CC. Against Marked targets, deals increased ??? M.DMG.",
+            "thumbnail": "./data/kr/assets/heroes/Jane/skills/3.png"
+        },
+        "4": {
+            "name": "Rest in Peace",
+            "cost": null,
+            "cooldown": null,
+            "description": "Increases M.DEF of all allies. Upon taking fatal DMG, enters a coffin for 5 sec and heals HP equal to proportional to ATK + 6% of Max HP. While inside the coffin, Jane is not affected by ATK Spd effects, ignores All DMG, and deals M.DMG equal to 5% of Max HP to nearby enemies every sec.",
+            "thumbnail": "./data/kr/assets/heroes/Jane/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "MP is recovered by 1%."
+        },
+        "4": {
+            "II": "Heal Rate is increased by 10%.",
+            "III": "Heal Rate is increased by 15%.",
+            "IV": "Heal Rate is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Target takes 25% increased M.DMG for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Jane/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "In exchange for 1 additional Mana Cost, the skill has a 100% chance to draw the target in.",
+                    "thumbnail": "./data/kr/assets/heroes/Jane/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Duration is reduced to 10 sec and DMG is boosted by 250%.",
+                    "thumbnail": "./data/kr/assets/heroes/Jane/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Engraved Mark is not be dispelled when negative effects are dispelled.",
+                    "thumbnail": "./data/kr/assets/heroes/Jane/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "DMG is increased by 40%.",
+                    "thumbnail": "./data/kr/assets/heroes/Jane/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Upon use, dispels negative effects of all allies.",
+                    "thumbnail": "./data/kr/assets/heroes/Jane/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Upon activation, dispels positive effect of all enemies.",
+                    "thumbnail": "./data/kr/assets/heroes/Jane/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Upon activation, stun all enemies for 2 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Jane/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / M. Block +200",
+                "thumbnail": "./data/kr/assets/heroes/Jane/perks/light.png"
+            },
+            "dark": {
+                "effect": "Each hit of Jane's attacks increase her ATK and Recovery Rate by 1% each. (Maximum stack number is 50)",
+                "thumbnail": "./data/kr/assets/heroes/Jane/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Unchanging Mind, Erekura",
+        "description": "Deals M.DMG equal to (0) of ATK to nearby enemies and reduces their ATK by (1) every sec. Additionally, increases DMG dealt against Non-Hero enemies of the ally with the highest ATK excluding self by (2). The DMG Boost effect is irremovable. When the Passive Skill is activated, recovers 30% of Mana.",
+        "value": {
+            "0": {
+                "0": "10%",
+                "1": "12%",
+                "2": "14%",
+                "3": "17%",
+                "4": "20%",
+                "5": "25%"
+            },
+            "1": {
+                "0": "14%",
+                "1": "17%",
+                "2": "20%",
+                "3": "24%",
+                "4": "29%",
+                "5": "35%"
+            },
+            "2": {
+                "0": "6%",
+                "1": "7%",
+                "2": "8%",
+                "3": "10%",
+                "4": "12%",
+                "5": "15%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Jane/uw.png",
+        "story": "When Malduk's magic resurrected Jane as an undead, she should not have felt anything. Yet, she felt warm and comfortable as mysterious energy surrounded her dead body. She should not have been able to even feel it. But when Malduk took her, she instinctively reached out to the warm presence. Later, when a mysterious magic brought her back to consciousness, the first thing she did was to inspect her coffin, which radiated with tragic yet warm love. Inside, she found the following message carefully engraved: 'My unchanging love for you.'"
+    },
+    "uts": {
+        "1": {
+            "name": "Funeral Doll",
+            "description": "[Funeral Rites] For 10 sec, reduces the target's CC Resist by 250 and M.Block by (0).",
+            "value": {
+                "0": {
+                    "0": "200",
+                    "1": "240",
+                    "2": "290",
+                    "3": "350",
+                    "4": "420",
+                    "5": "500"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Jane/ut/1.png",
+            "story": "A doll used in funeral ceremonies in the Republic of Gray. It is normally made to look like the deceased and put in front of the tombstone. After the republic fell and Jane died, people put this doll beside her body."
+        },
+        "2": {
+            "name": "Death-imbued Cushion",
+            "description": "[Mark of Death] Increases ATK by 5% and Crit DMG by (0) for 20 sec when the marked enemy dies. This effect stacks up to 8 times.",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Jane/ut/2.png",
+            "story": "The cushion that Jane hugs to sleep inside the coffin. It's imbued with the spirits that fell asleep with her inside the coffin. They constantly give the hollowness of death to Jane."
+        },
+        "3": {
+            "name": "Flowers of a Forgotten Dukedom",
+            "description": "[Day of Ruin] DMG is increased by (0) and with every DMG dealt, target's M.DEF is reduced by 5% for 5 sec. This effect can stack a max 10 times.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Jane/ut/3.png",
+            "story": "A flower of the Republic that can no longer be found. It is also known as the Flower of Boundaries that connects life and death, and it gets its nourishment from destruction. A painfully beautiful flower. If you gift it to someone, you will be able to share that person's last moment in a dream."
+        },
+        "4": {
+            "name": "First Friend Doll",
+            "description": "[Rest in Peace] Upon activation, dispels all negative effects from all allies and reduces All DMG dealt on self by (0) for 10 sec.",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Jane/ut/4.png",
+            "story": "A doll that looks just like Rephy, Jane's first friend. Jane froze in front of a shop selling poison. Seeing Jane's eyes locked on the limited edition of Rephy Doll on the shop display, Epis decided to buy her the doll. Since the doll could only be purchased with mileage, Epis was almost crying after spending all her pocket money. However, Jane's smile after getting this doll as her first friend was probably worth it."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up every sec and upon each DMG dealt. This Skill can be cast upon gaining 80 charges.",
+        "description": "Summons the soul of Unchanging Mind, Erekura for 10 sec, increasing Heal Rate of self by 50%. Every 0.5 sec, increases M.DMG all enemies take by 10% for 5 sec. This effect stacks up to 5 times. After 10 sec, consumes the stacks from the target to deal M.DMG per stack (x2 than usual).",
+        "cooldown": "20",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Jane/sw.png",
+        "advancement": {
+            "1": "Reduces activation requirements to 60.",
+            "2": "Changes M.DMG Boost per stack to 20%."
+        },
+        "story": "The unwavering love of the one who yearns for his dearest and endearing Jane, and the ardent wish of Jane to meet that person became the very seed that was planted in Erekura. Whenever Jane recovered her lost emotion, the seed entwined deeper with Jane and took the form Of a thorny vine that protects her. The soul of Erekura which started sprouting and extending its reach bloomed every time her emotions became stronger and deeper, as if it was resonating with Jane.\nWhen Jane finally reunited with the one whom she yearned for so dearly. the slumbering flower buds resonated with her overjoyed heart and fully blossomed into flowers. Wherever the pollen from these bloomed flowers touch, the place becomes covered in flowers of the fallen republic, leaving scarlet hills behind."
+    },
+    "splashart": "./data/kr/assets/heroes/Jane/sa.png",
+    "costumes": "./data/kr/assets/heroes/Jane/cos",
+    "visual": "./data/kr/assets/heroes/Jane/visual.png",
+    "aliases": null
+}

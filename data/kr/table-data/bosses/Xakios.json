@@ -1,0 +1,46 @@
+{
+    "infos": {
+        "class": "Xakios",
+        "title": "Cursed Root of the World Tree",
+        "race": "Spirit",
+        "damage type": "Physical, Magical",
+        "recommended heroes": "Gau, Rephy, Annette",
+        "characteristics": "[Strike of the Gaint Beast] deals massive DMG to knocked over enemies. Clear the knocked over state of [Gaint Earthquake] or use heroes with [CC Resistance] skills are advantageous in this stage.",
+        "thumbnail": "./data/kr/assets/bosses/gr/Xakios.png"
+    },
+    "skills": {
+        "page 1": {
+            "1": {
+                "name": "Strike of the Giant Beast",
+                "cost": null,
+                "cooldown": null,
+                "description": "Deals P.DMG to frontal enemies. If they were knocked over when hit, deals even greater P.DMG."
+            },
+            "2": {
+                "name": "Giant Earthquake",
+                "cost": null,
+                "cooldown": "17",
+                "description": "Strikes the ground 3 times, dealing P.DMG to all enemies. The last hit knocks all enemies over for 8 sec."
+            },
+            "3": {
+                "name": "Acid Breath",
+                "cost": null,
+                "cooldown": "25",
+                "description": "Gathers energy and exhales an acid breath that deals M.DMG to all enemies and reduces M.DMG."
+            }
+        },
+        "page 2": {
+            "4": {
+                "name": "Purify",
+                "cost": null,
+                "cooldown": null,
+                "description": "Every 30 sec, remove all negative effects and increase ATK SPD."
+            }
+        }
+    },
+    "aliases": [
+        "Xakios",
+        "GR1",
+        "GR 1"
+    ]
+}

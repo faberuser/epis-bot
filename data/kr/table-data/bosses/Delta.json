@@ -1,0 +1,48 @@
+{
+    "infos": {
+        "class": "Delta",
+        "title": "Predator MK-XX",
+        "race": "Golem",
+        "damage type": "Physical",
+        "recommended heroes": "Gau, Cecilia, Mediana",
+        "characteristics": "Since ARCDIM X Delta continously stacks Bleed, you need to use Skills that dispel negative effects. Also, because it greatly increases P.Dodge until it takes a certain number of hits in a specific pattern, you need to use effects related to ACC.\nAlso, be aware that ARCDIM X Delta has high Crit Resistance.",
+        "thumbnail": "./data/kr/assets/bosses/arcdim/Delta.png"
+    },
+    "skills": {
+        "page 1": {
+            "1": {
+                "name": "Saw Blade Cutter",
+                "cost": null,
+                "cooldown": "15",
+                "description": "Deals P.DMG to enemies in the backline over 8 times. Each hit inflicts a stack of Bleed. Bleed deals massive P.DMG to the target every sec, stacking up to max 100 times."
+            },
+            "2": {
+                "name": "Blade Spiral",
+                "cost": null,
+                "cooldown": "32",
+                "description": "Attacks nearby enemies in a circular range of self, dealing P.DMG and greatly increasing own Dodge Chance for the duration of Skill. This attack lasts until the boss takes a certain number of hits, and it becomes stronger over time. When the number of hits is all consumed, the boss becomes neutralized for a certain period of time and takes greatly increased DMG. Additionally, when there are no targets hit by the attack for a certain period of time, it is automatically dispelled. The number of hits and Dodge Chance Boost increase as the diffculty rises.\n(Stage 1 Number of Hits: 120)\n(Stage 1 Dodge Chance Boost: 500)"
+            }
+        },
+        "page 2": {
+            "3": {
+                "name": "Wave Wing Massacre",
+                "cost": null,
+                "cooldown": null,
+                "description": "When ARCDIM X Delta's HP falls to 66%, it enters into the irremovable state of [Wave Wing Massacre]. During the [Wave Wing Massacre] state, ARCDIM X Delta's normal attacks are enhanced, dealing increased DMG in a wide range."
+            },
+            "4": {
+                "name": "Plasma Limit Break",
+                "cost": null,
+                "cooldown": null,
+                "description": "When ARCDIM X Delta's HP falls to 3%, it enters into the irremovable state of [Plasma Limit Break]. During the [Plasma Limit Break] state, ARCDIM X Delta's ATK and ATK Spd are greatly increased, becoming stronger over time."
+            },
+            "5": {
+                "name": "Adaptive Metadium Armor Delta",
+                "cost": null,
+                "cooldown": null,
+                "description": "ARCDIM X Delta is not affected by ATK Spd and DEF Reduction effects. It gains immunity to DMG taken Boost effects and has high Crit Resistance.\nAdditionally, all of ARCDIM X Delta's attacks ignore target's' DMG Reduction effects. Crit Resistance increases as the difficulty rises.\n(Stage 1 Crit Resistance: 300)"
+            }
+        }
+    },
+    "aliases": null
+}

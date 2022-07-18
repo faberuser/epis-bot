@@ -1,0 +1,248 @@
+{
+    "infos": {
+        "title": "Intellect of Technomagic",
+        "class": "Mechanic",
+        "position": "Middle",
+        "attack range": "11100",
+        "damage type": "Physical",
+        "gender": "Female",
+        "age": "28",
+        "height": "167",
+        "race": "Human",
+        "constellation": "Lasiphil the Prophet",
+        "birth of month": "March 20th, Month of Insight",
+        "like": "Warm black tea, Crow, Rose, Loah, Research",
+        "dislike": "Cold coffee, Those who take advantage of others",
+        "story": "\u201cWhat\u2019s your dream, Valance?\u201d\n\u201cI want to find out how far can I develop the Technomagic field with my own hands.\u201d\nValance answered to Rose\u2019s question without hesitating.\n\u201cYou\u2019re really into researching.\u201d\n\u201cI\u2019ve never done or thought of doing anything else besides researching. If there is a possibility that I cannot continue working in the Technomagic field\u2026 I will have no choice but to think about other options\u2026 However, that\u2019s not the case right now. I\u2019m just trying my best to concentrate on what I have day by day.\u201d\n\u201cHaha. That\u2019s the Valance I know. I do admire you sometimes. I believe this is the reason you were friends with Crow all this time.\u201d\n\u201cYeah, perhaps.\u201d\nValance, known to have no friends or lover, is not a social nor affable person at all. Valance is a straight-talker, and Crow is a man of few words, who usually speaks through his eyes than his mouth. There\u2019s quite an age difference between these two, however, they were able to get close to each other as they shared similar personalities. They both have mentioned they wouldn\u2019t date or marry anyone at all, but things turned out unexpectedly. Who would have thought Valance\u2019s best friend would become the wife of that foolish man?",
+        "thumbnail": "./data/kr/assets/heroes/Valance/ico.png",
+        "story_": "Magos Le'Flamme is the Vespian Empire's largest weapons development organization and the best Technomagic research institution. Its chief director is Valance de Charlie, the greatest mind of Technomagic. Like anyone with natural talents in a certain field, ever since her teenage years, Valance displayed great skills in handling Technomagic and crafting. Valance was recognized for her talent and joined the academy at a young age after skipping grades. Of course, not everything was flowers and roses for her as there were those who were jealous of her brilliance as as others who wished to take hold of her researches. Yet Valance ignored them all, focusing only on her research and study. Right after graduating from the academy. she officially became a researcher in Magos Le'Flamme, the Technomagic research institution where the Empire's most talented Technomagic experts gather.\nBeing rather unfriendly and having scathing remarks, she was not known to have many friends. Still, there were few precious individuals that could be considered as her friend: Crow who graduated from the same school (he failed to advance to the next grade several times), and Rose who was her classmate. Rose loved Crow unconditionally, wishing for his happiness, and was the only one who understood Valance. Crow silently accompanied Rose who showed him such love. Valance deeply cherished both her friends. But Rose, the one whom Valance could fall back to and trusted, was killed tragically along with her daughter after being caught in a huge conspiracy that was starting to take root in the Empire and drawing attention from a group called Pandora. And so Rose became Valance's only regret and sadness. Remembering her, she joined forces with Crow and swore vengeance on those who orchestrated Rose's demise.\nHer silent and lofty exterior belie her assertive and straightforward demeanor. She will not hesitate to blurt out and play rough, believing that one needs to be proactive to achieve success. Adventurous and progressive , Valance believes that the future is for those who grab it with their own hands, and such a mindset shows her enterprising tendency. On a side note, she has a strong desire to learn. Whenever she encounters a situation that she cannot understand - especially if it is related to Technomagic - she will become agitated while muttering 'This doesn't make sense.' It might be seen as an unexpected charming point for her who is being rational all the time.\nSometimes she crafts weapons for the Hound Unit for free, but she still accepts payments whenever she performs an enhancement or repair. Those in the unit seem to be unaware, but it is certain that someone's wallet got lighter."
+    },
+    "skills": {
+        "1": {
+            "name": "Prototype - VA",
+            "cost": "3",
+            "cooldown": "15",
+            "description": "Dispels negative effects from the ally with the highest ATK and grants [Hologram] for 15 sec. [Hologram] increases the target's ATK by ???, Crit Chance by 350, heals HP by ??? every sec, and reduces its Cooldown of all active Skills by 0.2 sec. While [Hologram] is active, the target gains immunity to negative effects.",
+            "thumbnail": "./data/kr/assets/heroes/Valance/skills/1.png"
+        },
+        "2": {
+            "name": "Absolute Protection Field - VA",
+            "cost": "5",
+            "cooldown": "20",
+            "description": "Creates an [Violet Force Field] that lasts for 5 sec within a wide range of self. Allies withing the range of [Violet Force Field] have their All DEF inreased by 15%, gain immunity to CC, and have thier HP healed by ??? and Mana recovered by 600 every sec. Crit does not activate for the HP Healing effect.",
+            "thumbnail": "./data/kr/assets/heroes/Valance/skills/2.png"
+        },
+        "3": {
+            "name": "Ultimate Laser Cannon - NCE",
+            "cost": "4",
+            "cooldown": "20",
+            "description": "Summons laser cannons behind self that fire laser beams, dealing ??? P.DMG to the enemy. The hit targets is inflicted with Stun for 3 sec and becomes [Manipulated] for 15 sec. Afterward, the cannons additionally fire a total of 9 laser beams to random enemies. Each laser beam deals ??? P.DMG, inflict Stun on the hit target for 1.5 sec. Enemies who are [Manipulated] have their Heal Rate reduced by 5% and take 7% increased All DMG. [Manipulated] can be stacked up to max 7 times.",
+            "thumbnail": "./data/kr/assets/heroes/Valance/skills/3.png"
+        },
+        "4": {
+            "name": "Technomagic Awakening",
+            "cost": null,
+            "cooldown": null,
+            "description": "Increases self's All DEF by ???, Mana Recovery/Attack by 400, and ATK of all allies by 10%. In Technomagic Kingdom, increases all allies' DMG dealt to Bosses by 15%.",
+            "thumbnail": "./data/kr/assets/heroes/Valance/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "ATK Boost is increased by 10%.",
+            "III": "ATK Boost is increased by 15%.",
+            "IV": "ATK Boost is increased by 25%."
+        },
+        "2": {
+            "II": "DEF Boost is increased by 10%.",
+            "III": "DEF Boost is increased by 15%.",
+            "IV": "DEF Boost is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "ATK Boost is increased by 10%.",
+            "III": "ATK Boost is increased by 15%.",
+            "IV": "ATK Boost is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "[Hologram] applies to 2 allies with the highest ATK.",
+                    "thumbnail": "./data/kr/assets/heroes/Valance/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "[Hologram] additionally increases Crit DMG by 50%.",
+                    "thumbnail": "./data/kr/assets/heroes/Valance/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "[Violet Force Field] additionally reduces DMG taken by 25%.",
+                    "thumbnail": "./data/kr/assets/heroes/Valance/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "[Violet Force Field] additionally increases ATK Spd by 300.",
+                    "thumbnail": "./data/kr/assets/heroes/Valance/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Dispels postive effects from the hit target.",
+                    "thumbnail": "./data/kr/assets/heroes/Valance/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Reduces Mana Cost by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Valance/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Reduces DMG all allies take by 30% in Technomagic Kingdom.",
+                    "thumbnail": "./data/kr/assets/heroes/Valance/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Additionally increases all allies' DMG dealt to Bosses by 15% in Technomagic Kingdom.",
+                    "thumbnail": "./data/kr/assets/heroes/Valance/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / ATK Spd +100",
+                "thumbnail": "./data/kr/assets/heroes/Valance/perks/light.png"
+            },
+            "dark": {
+                "effect": "Reduces All DMG all allies take by 2.5% and increases All DMG all enemies take by 2.5%. This number can be stacked up to the number of Technomagic Gear equipped on self.",
+                "thumbnail": "./data/kr/assets/heroes/Valance/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Wonder of Magos Le'Flamme, Corbeau Rose",
+        "description": "The following buffs are applied to the target based on the number of Technomagic Gear equipped to each ally.\n1 Part: Increases ATK by (0)\n2 Parts: Increases All DEF by (1)\n3 Parts: Increases Max HP by (2)\n4 Parts: Increases DMG dealt to enemies by (3)",
+        "value": {
+            "0": {
+                "0": "6%",
+                "1": "7.2%",
+                "2": "8.6%",
+                "3": "10.4%",
+                "4": "12.6%",
+                "5": "15%"
+            },
+            "1": {
+                "0": "6%",
+                "1": "7.2%",
+                "2": "8.6%",
+                "3": "10.4%",
+                "4": "12.6%",
+                "5": "15%"
+            },
+            "2": {
+                "0": "6%",
+                "1": "7.2%",
+                "2": "8.6%",
+                "3": "10.4%",
+                "4": "12.6%",
+                "5": "15%"
+            },
+            "3": {
+                "0": "4%",
+                "1": "4.8%",
+                "2": "5.8%",
+                "3": "7%",
+                "4": "8.4%",
+                "5": "10%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Valance/uw.png",
+        "story": "A weapon made by Valance that shows the full extent of Magos Le'Flamme's Technological prowess. It contains cutting-edge Technomagic technology that allows the user to freely switch between attack mode and other modes with a command. Its three wings can move freely. regularly hovering around Valance to surveil and scan her surroundings.\nApplied with the latest Technomagic technology, the weapon had been developed for a very lone time. At first, it was designed to operate in a way that matches Valance's\u00a0hand signs and movements, but when Valance went to the Technomagic Kingdom with the Hound Unit, she found a new technology that could be a breakthrough for her weapon. Inside the temporary workshop that belonged to a nameless technomagi with unprecedented brilliance, she spent days and nights dedicated to her research. At last, she succeeded in interpreting the automatic maneuver process of the Technomagic Kingdom Guardians and inputting it into her weapon.\n- Oh,you made something impressive again! It can move on its own? This is amaz-argh!!\n- That's\u00a0why you shouldn't go around touching other people's\u00a0stuff.\n- Hahaha!! You have a hole in your clothes, mongrel!! \n...Valance sighed as she watched the Hound Unit that unexpectedly helped to test the weapon's effectiveness and wondered what it should be named. Behind the members stood Crow with his arms crossed\n- ...She would've liked it.\n- What?\n- Rose would've liked it. It's\u00a0her favorite color.\nLooking at Crow holding a lollipop in his mouth and putting a faint smile of reminiscing the past, Valance was suddenly struck with inspiration. Corbeau Rose. Only the names of those whom she cherished would be fitting for the glory and happiness that would be with her."
+    },
+    "uts": {
+        "1": {
+            "name": "Formula Input Device",
+            "description": "[Prototype - VA] [Hologram] The effect additionally increases DMG dealt to Non-Hero enemies by (0) and target's Cooldown Reduction by 50%.",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Valance/ut/1.png",
+            "story": "A handheld formula input device that Valance carries around. Linked with Magos Le'Flamme's computation device, it can perform various tasks despite being small enough for Valance to hold it with her one hand. It has features of searching for information based on the data of Magos Le'Flamme, input, save, and send simple memos, communicate with Magos Le'Flamme, and many more. But as the device is not so generous with storage space, it needs to be backed up consistently.\nThe device was originally linked with Corbeau Rose, and even now, if Valance wants to, it can still be entered with a command for her to manually operate the weapon. But the feature was not used after the weapon was equipped with the automatic maneuver system, so she transformed the gadget into a simple input device. While it looks plain, its structure is surprisingly complicated: it operates by recognizing Valance's fingerprints and the password needs to be entered within a set period of time. Valance added multiple security measures just in case someone takes hold of the device and tries to hack into Magos Le'Flamme. There used to be one more person who could use the device. A brilliant mind who could understand and memorize the complicated code like Valance, the only figure that she willingly allowed to use Magos Le'Flamme's database: Rose Christina. But after she passed away, only Valance remains as the user and manager of the device."
+        },
+        "2": {
+            "name": "A Moment of Tea",
+            "description": "[Absolute Protection Field - LA] Dispels negative effects from self upon use. For the duration of [Violet Force Field], increases the target's All Block Chance by (0).",
+            "value": {
+                "0": {
+                    "0": "200",
+                    "1": "240",
+                    "2": "290",
+                    "3": "350",
+                    "4": "420",
+                    "5": "500"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Valance/ut/2.png",
+            "story": "One of Valance's hobbies is drinking black tea. Even during her researches, she would take time to enjoy sipping the beverage to sort out the ideas in her head or take a moment's respite. Naturally, she always carried a small number of tea leaves inside her pockets. But the cup posed a challenge. Valance could use Corbeau Rose to pour water at the right temperature, but a cup was difficult to carry around because it could be easily broken.\nIn the end, Valance came up with a solution, ordering a teacup holder that can be tied around her waist, one that is capable of storing a teacup and cup mat. It could also have a small teaspoon. Because it was made with leather, it was sturdy enough to contain a slightly heavy cup as well. One of the researchers joked if Valance, as a chief director, is okay with draping a leather belt instead of a Technomagic device, and to this Valance replied, 'As a Chief Director, I should not be picky with any technologies and materials.' Whether she was joking or was being serious remains a mystery in Magos Le'Flamme."
+        },
+        "3": {
+            "name": "Sloppy Sincerity",
+            "description": "[Ultimate Laser Cannon - NCE] Reduces Cooldown by (0) sec and changes the max number of [Manipulated] stacks to 10.",
+            "value": {
+                "0": {
+                    "0": "2",
+                    "1": "3",
+                    "2": "4",
+                    "3": "5",
+                    "4": "6",
+                    "5": "7"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Valance/ut/3.png",
+            "story": "An assortment of the weirdest, strangest, and most unexpected among Valance's possessions. Still, she placed it on one corner of her lab, taking time to keep them clean whenever possible.\nThe most normal-looking item is a storage box made by one of the few artisans in the Vespian Empire. It is a gift given by Crow and Rose soon after their marriage, chosen and ordered for their friend Valance. She keeps letters and presents from Rose, Loah, and Crow inside the box, cherishing them deeply. The toy clockwork she received from Loah is given the innermost seat in the box.\nThe rest of the items are supposed to be presents given by the Hound Unit members before they went to the Technomagic Kingdom... yet Valance could only put a wry smile on her face when she saw them.\n- I mean, let me tell you! This is the very best hammer used only by the finest researchers in the Empire! Oh, of course, you would use a better one. But it never hurts to be prepared! I even learned how to use it! So, connect this, and then do this, and... Wait, why isn't it working?\n- Hahaha! You're a fool, mongrel! You should gift something that can be used anytime! Now see this, this is a helmet that can protect your head!! Fits right into your head, don't you think so? Hehe.\n- Haha... You all gave her something quite remarkable. I don't know much about machines, so i brought something from the East. So there was a nasty fiend. No, I mean, the one with gorgeous nine tails. I personally took this from that fiend. Oh, there isn't any blood, but I cleaned it just in case.\n- ...Once again I'm reminded of the limit of your intelligence.\nStill, though a bit shabby, the items were given no other than by the Hound Unit members. Valance kept the items - those she could not find a use for - in a secure place. Whenever she felt exhausted by her researches, she would appreciate the collection and smile."
+        },
+        "4": {
+            "name": "First Failure",
+            "description": "[Technomagic Awakening] All DEF Boost and Mana Recovery/Attack Boost effect now apply to all allies. Increase Heal Rate of all allies by (0).",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Valance/ut/4.png",
+            "story": "It may surprise people that the history of Technomagic research in Vespian Empire is a new and short one. Only after the fourth Empress of the Empire Arentzevelia succeeded the throne was there progress; the Empress started allocating a large portion of the Empire's resources to train technomagis and develop the technology. Until then, the Empire's scientific technology merely mimicked that of the Republic of Grat. But with the Empress' support, the Empire developed military technology, unlike the Republic that mainly developed technology related to improving social infrastructure and utility. While the Empire is yet to catch up with the technologies of the Republic, it is innovating unique military aspects. It was during this period when Valance who was studying in the academy began researching Technomagic.\nBut being in a nation that did not have much history in technology, her progress was slow and was met with numerous impediments. After gathering books about Technomagic from all over the Empire and studying them, she invented a device that could generate Technomagic energy. But as if reminding that this was her first attempt, the device refused to even turn on.\n- Where did it go wrong? No matter what I try. I can't seem to figure out the problem. I think it would be best to start all over.\n- Hold on. Let's try one more time. Your research wasn't wrong. A little tweak would be all that is needed.\n- But this is the third time. Didn't you see it for yourself, Rose?\n- Then we do it the fourth time! It might work this time. Believe in yourself, Valance. You'll be able to make it this time.\nHearing Rose's encouraging words, Valance changed her mind and fixed a part of the device instead of completely disposing of it. Eventually, she succeeded in creating an energy source by operating the device. Her success encouraged the academy to give her full support and she soon became a researcher of Magos Le'Flamme. Even if you fail multiple times, it is important to try one more time. Remembering her dear friend's encouragement, Valance still keeps the switch that she used in her first experiment."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up over 23 sec.",
+        "description": "Dispels negative effects from self and summons the soul of Wonder of Magos Le'Flamme, Corbeau Rose for 10 sec, amplifying the effect of Wonder of Magos Le'Flamme, Corbeau Rose by 3 times.",
+        "cooldown": "18",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Valance/sw.png",
+        "advancement": {
+            "1": "Increases the duration by 5 sec and recovers Mana of all allies by 1500.",
+            "2": "Reduces Skill Activation Requirements by 10 sec. Upon activation, reduces all allies' Cooldown of all active Skills by 5 sec."
+        },
+        "story": "Corbeau Rose made by Valance was an impressive weapon on its own, but it could not fully harbor every battle technology of Magos Le'Flamme. It was not that Valance was lacking in her skills or the weapon was faulty; it is because Corbeau Rose was made with heavy focus on portability. Valance, of course, knew the limits of her weapon well. But instead of improving its combat efficiency,\u00a0she sought to improve it in other fields.\n- That dummy, Mitra, Pansirone, and Kibera... they are all specialized in combat. So long as I have them to protect me, the current combat system is enough. Then... what I\u00a0need is this. A support feature to\u00a0utilize them appropriately. Increasing the scan range to figure out where the troublemakers are, adding search and analysis features to quickly identify unknown enemies, generating jamming signals to retreat or buy time to recuperate... Once she decided what to do,\u00a0it did not take long for her to establish the needed system. Having witnessed the highly advanced technology of Lucern, the origin of Technomagic, with her own eyes, obstacles hold her back.\nAfter finishing the final maintenance, she tested the weapon's call signal inside the storeroom of Magos Le'Flamme. She knew whom she could ask for the final test.\n- What do you think? Do you think it will be useful?\nHer taciturn friend replied by blasting the targets quicker and more precisely than any previous moments with help of the coordinates given by Corbeau Rose's enhanced system.\u00a0Once again\u00a0Valance would leave a mark in the history of the Empire's Technomagic technology."
+    },
+    "splashart": "./data/kr/assets/heroes/Valance/sa.png",
+    "costumes": "./data/kr/assets/heroes/Valance/cos",
+    "visual": null,
+    "aliases": null
+}

@@ -1,0 +1,11 @@
+{
+    "perks": {
+        "t2": {
+            "Precision Shot": "ATK rises by 20% and ACC rises by 400%.",
+            "Eagle Eye": "Increases all allies DEF Penetration by 150 and ACC by 75. If the ally uses the same Perk, only 50 additional DEF Penetration and 25 additional ACC apply.",
+            "Mortal Wound": "Successful Crit Attack reduces enemy recovery rate by 50% and deal Physical continuous DMG every second equal to 20% ATK. Does not stack.",
+            "Opportune Strike": "Crit Chance is increased by 150 and Crit DMG is increased by 30%.",
+            "Concentration": "Every 5 sec, increases own Crit DMG by 4%. This effect can be stacked up to max 25 times and is irremovable."
+        }
+    }
+}

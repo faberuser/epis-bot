@@ -1,0 +1,224 @@
+{
+    "infos": {
+        "title": "Fallen Witch",
+        "class": "Wizard",
+        "position": "Middle-200",
+        "attack range": "1100",
+        "damage type": "Magical",
+        "gender": "Female",
+        "age": "125 (Physically always 25)",
+        "height": "168",
+        "race": "Human",
+        "constellation": "Notmun the Tuner",
+        "birth of month": "July 19th, Month of Harmony",
+        "like": "Corrupting the believers of Lua",
+        "dislike": "Lua and her church",
+        "story": "Although she was a Holy Maiden of Lua in the past, she eventually fell into corruption. Now, this cynical, crow-commanding witch curses her former Goddess from the darkness. There was a time when she was a friend of Kyle and a heroine of the people. However, when Kyle disappeared, she hid herself from the world as well. She eventually came back as a fallen witch, threatening mankind as the spearhead of the Demon Army. These days, however, she appears to be plotting some scheme, not as a Demon commander, but completely on her own.",
+        "thumbnail": "./data/kr/assets/heroes/Maria/ico.png",
+        "story_": "Although she was a Holy Maiden of Lua in the past, she eventually fell into corruption. Now, this cynical, crow-commanding witch curses her former Goddess from the darkness. There was a time when she was a friend of Kyle and a heroine of the people. However, when Kyle disappeared, she hid herself from the world as well. She eventually came back as a fallen witch, threatening mankind as the spearhead of the Demon Army. These days, however, she appears to be plotting some scheme, not as a Demon commander, but completely on her own."
+    },
+    "skills": {
+        "1": {
+            "name": "Raven Storm",
+            "cost": "3",
+            "cooldown": "9",
+            "description": "Deals ??? M.DMG to enemies in frontal range and pushes them back. Reduces hit enemies' ATK Spd by 250 and M.DEF by 30% for 15 sec. Deals additional ??? M.DMG to Non-Hero enemies.",
+            "thumbnail": "./data/kr/assets/heroes/Maria/skills/1.png"
+        },
+        "2": {
+            "name": "Claw of Restriction",
+            "cost": "2",
+            "cooldown": "13",
+            "description": "Deals ??? M.DMG to 2 enemies, and shackles them for 6 sec. Hit enemies will take ??? M.DMG over 6 sec and take 30% increased M.DMG for the duration of Skill.",
+            "thumbnail": "./data/kr/assets/heroes/Maria/skills/2.png"
+        },
+        "3": {
+            "name": "Area of Darkness",
+            "cost": "4",
+            "cooldown": "25",
+            "description": "Draws in nearby enemies towards the center 5 times and deals a total of ??? M.DMG. The last attack stuns enemies for 3 sec. Deals additional ??? M.DMG to Non-Hero enemies.",
+            "thumbnail": "./data/kr/assets/heroes/Maria/skills/3.png"
+        },
+        "4": {
+            "name": "Black Wind",
+            "cost": null,
+            "cooldown": null,
+            "description": "Increases Crit Chance by 150 and each hit inflicts [Curse of Lea] on the target for 10 sec. Targets inflicted with [Curse of Lea] have their Crit Chance reduced by 250 and ATK by 25% for the duration of Skill.",
+            "thumbnail": "./data/kr/assets/heroes/Maria/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "Crit Chance Boost is increased by 50.",
+            "III": "Crit Chance Boost is increased by 50.",
+            "IV": "Crit Chance Boost is increased by 50."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "DMG is increased by 40%.",
+                    "thumbnail": "./data/kr/assets/heroes/Maria/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Has a 20% chance of inflicting a 3 sec Shackle.",
+                    "thumbnail": "./data/kr/assets/heroes/Maria/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Mana cost is increased by 1 and the skill targets 3 enemies.",
+                    "thumbnail": "./data/kr/assets/heroes/Maria/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Shackle duration is increased by 1.5 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Maria/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Target takes 25% increased M.DMG for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Maria/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Mana cost is reduced by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Maria/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "For every 1 target inflicted with [Curse of Lea], Maria's ATK increases by 10%. This effect can be stacked up max 5 times and is irremovable.",
+                    "thumbnail": "./data/kr/assets/heroes/Maria/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Reduces enemy M. Crit Resistance by 25% for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Maria/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit Chance +100",
+                "thumbnail": "./data/kr/assets/heroes/Maria/perks/light.png"
+            },
+            "dark": {
+                "effect": "Upon a Crit Hit, target's CC resistance is reduced by 250 for 10 sec, and all Skill Cooldown, excluding the skill in use, is reduced by 2% each.",
+                "thumbnail": "./data/kr/assets/heroes/Maria/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Lea's Messenger, Cocytus",
+        "description": "Upon a Crit Hit, reduces Heal Rate of the target by 50% and increases own Crit DMG by (0) for 10 sec. Crit DMG increase effect can be stacked up to max 20 times.",
+        "value": {
+            "0": {
+                "0": "2%",
+                "1": "2.4%",
+                "2": "2.9%",
+                "3": "3.5%",
+                "4": "4.2%",
+                "5": "5%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Maria/uw.png",
+        "story": "A mysterious raven that can travel across dimensions. Its intelligence and shrewdness are certainly not those of a mere bird. In truth, it is a monster filled with dark energy, much like Demons. Indeed, it is said that this beast is as powerful as a high-ranking Demon. Some claim that it occasionally flies over fields of battle, speaking in human languages. Much of this creature's identity is still shrouded in mystery."
+    },
+    "uts": {
+        "1": {
+            "name": "Turbulent Dance",
+            "description": "[Raven Storm] Gains immunity to CC for the skill's duration, and reduces the target's Mana by (0).",
+            "value": {
+                "0": {
+                    "0": "100",
+                    "1": "120",
+                    "2": "140",
+                    "3": "170",
+                    "4": "210",
+                    "5": "250"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Maria/ut/1.png",
+            "story": "A magic mirror that summons Tempest Elemental Aerial. This magical mirror is made with an obsidian stone from Pandemonium, and Tempest Elemental Aerial sleeps inside it. Whenever Raven Storm is used, Aerial awakes and amplifies its effect with its violent dance."
+        },
+        "2": {
+            "name": "Spirit's Sabaton",
+            "description": "[Claw of Restrictions] Increases DMG by 50% and increases M.Weakness of the affected enemy by (0) for 10 sec.",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Maria/ut/2.png",
+            "story": "A claw armor that Maria gifted to Lea's messenger. The claw armor that is made with fancy gold contains a binding curse that never lets go of any enemy that it grabs. Enemies bound by the messenger's Sabaton will become defenseless against magic attacks and will receive great damage."
+        },
+        "3": {
+            "name": "Pendant of Darkness",
+            "description": "[Area of Darkness] DMG is increased by (0) and the last attack reduces the target's P.DEF and M.DEF by 30% for 7 sec.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Maria/ut/3.png",
+            "story": "Ashes of a grey messenger that announces the end. These are the ashes of the raven that flew into the Church of Lua right before the Republic of Gray collapsed a hundred years ago. Everyone ignored the ominous messenger, and only Priestess Maria cared for it until its last day. Even after its death, it has helped Maria expand her area of darkness by pouring its dark energy on her."
+        },
+        "4": {
+            "name": "Abyssal Letter",
+            "description": "[Black Wind] Every 10 sec, attacks enemies affected by Black Wind, dealing M.DMG equal to 200% of ATK. Increases own ATK by (0) for 20 sec per hit enemy. This effect can be stacked up to max 10 times.",
+            "value": {
+                "0": {
+                    "0": "2%",
+                    "1": "2.4%",
+                    "2": "2.9%",
+                    "3": "3.5%",
+                    "4": "4.2%",
+                    "5": "5%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Maria/ut/4.png",
+            "story": "A letter of notice issued from Lea's Messenger. This letter created by the Essence of Darkness contains a warning and the terms of the contract that Maria made with the darkness."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon using Skills 4 times.",
+        "description": "Summons the Soul of Lea's Messenger, Cocytus, dealing ??? M.DMG to frontal enemies in a straight line, knocking them back far away for 3 sec and inflicting 'Raven Catastrophe' for 10 sec. Targets inflicted with 'Raven Catastrophe' have their ATK reduced by 40%.",
+        "cooldown": "15",
+        "uses": "8",
+        "thumbnail": "./data/kr/assets/heroes/Maria/sw.png",
+        "advancement": {
+            "1": "Reduces Heal Rate of the target inflicted with 'Raven Catastrophe' by 50%.",
+            "2": "Reduces Skill Activation requirements to 3 times."
+        },
+        "story": "Over a long time, the crow stayed with Maria and watched over her. It knew what it had to do. At the same time, the crow also knew that the allotted time to complete all the tasks was not nearly enough. After embracing the deep darkness, the crow once again gazed at Maria. As it was looking at her, it reminded itself of what it had to do. The crow opened its black, large, grim wings and flew up towards the sky."
+    },
+    "splashart": "./data/kr/assets/heroes/Maria/sa.png",
+    "costumes": "./data/kr/assets/heroes/Maria/cos",
+    "visual": "./data/kr/assets/heroes/Maria/visual.png",
+    "aliases": null
+}

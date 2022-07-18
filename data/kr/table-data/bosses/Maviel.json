@@ -1,0 +1,52 @@
+{
+    "infos": {
+        "class": "Maviel",
+        "title": "Berserker Assassin",
+        "race": "Dark Elf",
+        "damage type": "Physical",
+        "recommended heroes": "Demia, Baudouin, Aisha",
+        "characteristics": "[Shadow Stealth] is a special state that gives 100% dodge rate to all attacks up to 100 times, after which the skill is dispelled for a set amount of time. Heroes with high hit-rate and atk spd are advantageous in this stage.",
+        "thumbnail": "./data/kr/assets/bosses/gr/Maviel.png"
+    },
+    "skills": {
+        "page 1": {
+            "1": {
+                "name": "Shadow Slash",
+                "cost": null,
+                "cooldown": "15",
+                "description": "Moves swiftly, dealing P.DMG to 5 random enemies and inflict Bleeding. Also inflict a Recovery Reduction status that cannot be dispelled for the rest of the battle."
+            },
+            "2": {
+                "name": "Berserk Burst",
+                "cost": null,
+                "cooldown": "15",
+                "description": "Enter a Berserker Rage, increasing ATK, Crit Chance and ATK Spd greatly for 10 sec."
+            },
+            "3": {
+                "name": "No Mercy",
+                "cost": null,
+                "cooldown": "30",
+                "description": "Jump up, and upon landing, slash at the enemy with the lowest HP, dealing immense P.DMG."
+            },
+            "4": {
+                "name": "Shadow Stealth",
+                "cost": null,
+                "cooldown": "40",
+                "description": "Dodge 100 attacks every 40 seconds. After dodging 100 attacks, fall into a stun state."
+            }
+        },
+        "page 2": {
+            "5": {
+                "name": "Purify",
+                "cost": null,
+                "cooldown": null,
+                "description": "Every 30 sec, remove all negative effects and increase ATK SPD."
+            }
+        }
+    },
+    "aliases": [
+        "Maviel",
+        "GR5",
+        "GR 5"
+    ]
+}

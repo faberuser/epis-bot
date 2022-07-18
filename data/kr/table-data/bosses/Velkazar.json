@@ -1,0 +1,66 @@
+{
+    "infos": {
+        "class": "Velkazar",
+        "title": "Hellspawn Torturer",
+        "race": "Demon",
+        "damage type": "Magical",
+        "recommended heroes": "Cleo, Nyx, Shea",
+        "characteristics": "Enemies hit by the [Scorching Heat] is knocked back into the [Zone of Inferno]. [Zone of Inferno] deals great DMG and weakens your DEF, so fast escape is crucial. When [Executioner's Casket] is summoned, focus fire to destroy the casket, which whill deal great DMG to Velkazar, and will cancel out [Hellfire].",
+        "thumbnail": "./data/kr/assets/bosses/gc/Velkazar.png"
+    },
+    "skills": {
+        "page 1": {
+            "1": {
+                "name": "Sword of Punishment",
+                "cost": null,
+                "cooldown": "11",
+                "description": "Strikes the ground with the sword of Velkazar, dealing M.DMG and summoning flaming balls of fire from the sky that inflicts stun to enemies for 4 sec and reduces their heal rate by 10 sec."
+            },
+            "2": {
+                "name": "Scorching Heat",
+                "cost": null,
+                "cooldown": "14",
+                "description": "Deals M.DMG to all enemies with the power of heat, knocking them back into the Zone of Inferno and inflicting knockdown for 6 sec. This effect cannot be resisted."
+            },
+            "3": {
+                "name": "Roar of the Executioner",
+                "cost": null,
+                "cooldown": "17",
+                "description": "Emits a roar that deals M.DMG to nearby enemies and inflicts knockback. Additionally creates blazing fire around self for 15 sec, dealing M.DMG to nearby enemies per each sec and reducing their Mana."
+            }
+        },
+        "page 2": {
+            "4": {
+                "name": "Hellfire",
+                "cost": null,
+                "cooldown": null,
+                "description": "Belches out a breath of fire to frontal enemies for 15 sec, dealing M.DMG. DMG is increased per each sec."
+            },
+            "5": {
+                "name": "Flesh of Inferno",
+                "cost": null,
+                "cooldown": null,
+                "description": "Velkazar is immune to ATK Spd effects. If Velkazar takes DMG 400 times, it summons flaming balls of fire from the sky that deals M.DMG and inflicts stun."
+            },
+            "6": {
+                "name": "Zone of Inferno",
+                "cost": null,
+                "cooldown": null,
+                "description": "The blazing Zone of Inferno deals great M.DMG every sec and decreases enemies's DEF."
+            }
+        },
+        "page 3": {
+            "7": {
+                "name": "Executioner's Casket",
+                "cost": null,
+                "cooldown": null,
+                "description": "After every third skill that Velkazar casts, it summons the Executioner's Casket that lasts for 20 sec and casts Hellfire. The Executioner's Casket leaves pernament wounds on nearby enemies every 10 sec, reducing their Heal Rate and increasing DMG they talk. Velkazar takes 90% of DMG dealt to the Executioner's Casket instead. HP of the Executioner's Casket grows every time it's summoned. If the Casket is destroyed befor it disappears, Velkazar will take massive DMG and become neutralized for a certain time. While neutralized, Velkazar summons an Executioner's Casket with infinite HP. The [increasing (%) of damage to non-hero enemies] effect will not be overlaid with the DMG that Velkazar receives instead of Executioner's Casket."
+            }
+        }
+    },
+    "aliases": [
+        "Velkazar",
+        "GC3",
+        "GC 3"
+    ]
+}

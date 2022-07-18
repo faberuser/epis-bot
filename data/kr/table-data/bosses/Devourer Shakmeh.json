@@ -1,0 +1,68 @@
+{
+    "infos": {
+        "class": "Devourer Shakmeh",
+        "title": "Devourer",
+        "race": "Tidhar",
+        "damage type": "Physical",
+        "recommended heroes": "Lakrak, Rehartna, Xerah",
+        "characteristics": "Devourer Shakmeh dungeon is consisted of 5 Waves. The Sekireinel Totem that appears in each Wave reduces the Heal Rate every set amount of time. From stage 5 battles or above, it dispels positive effects from the enemy with the highest ATK, so be careful. Shakmeh becomes stronger if he has more Mana, and all of his attacks ignore the enemy's DEF. Use Heroes that reduce the enemy's Mana and Heroes that reduce the enemy's ATK to defeat him.",
+        "thumbnail": "./data/kr/assets/bosses/shakmeh/Devourer Shakmeh.png"
+    },
+    "skills": {
+        "page 1": {
+            "1": {
+                "name": "Shadow of Sword",
+                "cost": null,
+                "cooldown": "14",
+                "description": "Attacks the wide frontal range with the Shadow of Sword, dealing P.DMG and recovering Shakmeh's Mana. The higher the current Mana of Shakmeh, the greater the DMG. The lower the current Mana, the higher the Mana Recovery."
+            },
+            "2": {
+                "name": "Tide of Sin",
+                "cost": null,
+                "cooldown": "15",
+                "description": "Summons the Otherworldly Sword to cause Tide of Sin, dealing P.DMG to enemies in a wide range and inflicting them with [Pleasure of Sin]. Heroes inflicted by [Pleasure of Sin] state cannot Lifesteal, have their Heal Rate reduced, and take continuous P.DMG, but deals increased DMG. [Pleasure of Sin] cannot be removed until the target's current HP falls to 30% or below."
+            },
+            "3": {
+                "name": "Storm of Hatred",
+                "cost": null,
+                "cooldown": "21",
+                "description": "Summons the Storm of Hatred onto the wide frontal range, dealing P.DMG over 7 times and reducing ATK Spd for 10 sec. This Skill deals more DMG to enemies with low ATK Spd."
+            }
+        },
+        "page 2": {
+            "4": {
+                "name": "Vassel of Darkness",
+                "cost": null,
+                "cooldown": null,
+                "description": "Shakmeh is not affected by ATK Spd or DEF Reduction. Additionally, he recovers Mana quickly, and if he has high Mana, his All Block Chance is increased. When Shakmeh's Mana becomes 0, he cannot recover Mana for 7 sec and takes increased DMG, but he gains an irremovable shield. After 7 sec, Shakmeh recovers Mana by a massive amount."
+            },
+            "5": {
+                "name": "Fall of the One Consumed by the Abyss",
+                "cost": null,
+                "cooldown": null,
+                "description": "Shakmeh uses the Power of Abyss to deal attacks that always hit and deal DMG that ignores the enemy's DEF, but his DEF is very low."
+            }
+        },
+        "page 3": {
+            "6": {
+                "name": "Corrupted Power of Devourer Shakmeh",
+                "cost": null,
+                "cooldown": null,
+                "description": "Devourer Shakmeh commands Corrupted Power. This power is reduced when Shakmeh is inflicted with CC. If Shakmeh consumes all of his Corrupted Power, he will be neutralized and permanently take increased DMG, but he will become stronger."
+             },
+            "7": {
+                "name": "Sekireinel Totem",
+                "cost": null,
+                "cooldown": null,
+                "description": "Heals HP of all allies every set amount of time, reduces ATK Spd and DMG dealt of the enemy with the highest ATK, and reduces Heal Rate of all enemies. From Stage 5 or above, dispels positive effects from the enemy with the highest ATK."
+            }
+        }
+    },
+    "aliases": [
+        "DevourerShakmeh",
+        "SmallShakmeh",
+        "TinyShakmeh",
+        "BabyShakmeh",
+        "SmolShakmeh"
+    ]
+}

@@ -1,0 +1,224 @@
+{
+    "infos": {
+        "title": "Kindhearted Messenger",
+        "class": "Priest",
+        "position": "Middle-300",
+        "attack range": "4800",
+        "damage type": "Physical",
+        "gender": "Female",
+        "age": "18",
+        "height": "159",
+        "race": "Human",
+        "constellation": "Armil the Saint",
+        "birth of month": "April 26th, Month of Life",
+        "like": "Family, friends, orange pound cake, high quality materials",
+        "dislike": "Her brother who keeps raiding her snacks, blueprints with late-found errors, irresponsible people, tangled ribbons",
+        "story": "The owner and artisan of 'Aselerando', an instrument atelier located at the Empire's capital. Her cheerful personality, along with her gentle tone and diligence, is well-received by the customers. With her excellent customer service towards her regulars along with her great crafting skills, Rehartna is known as an accomplished entrepreneur even at a young age. She appears to be just an ordinary artisan, but in reality, she is actually a member of the Resistance. She works as an intel collector who also arranges contacts while traveling around the Empire, disguised as a trader. Rehartna is a very punctual and heavy-mouthed individual who has earned great trust from her fellow Resistance comrades. Moreover, her atelier's backroom serves as one of the hideouts of the Resistance, providing space for Resistance members from delifferent places to exchange information.",
+        "thumbnail": "./data/kr/assets/heroes/Rehartna/ico.png",
+        "story_": "The owner and artisan of 'Aselerando', an instrument atelier located at the Empire's capital. Her cheerful personality, along with her gentle tone and diligence, is well-received by the customers. With her excellent customer service towards her regulars along with her great crafting skills, Rehartna is known as an accomplished entrepreneur even at a young age. She appears to be just an ordinary artisan, but in reality, she is actually a member of the Resistance.\nShe works as an intel collector who also arranges contacts, and she mostly performs her duty while traveling around the Empire, disguised as a trader Rehartna is very punctual and heavy-mouthed individual who has earned great trust from her fellow Resistance comrades.\nMoreover, her atelier's backroom serves as one of the hideouts of the Resistance, providing space for Resistance members from different places to exchange information."
+    },
+    "skills": {
+        "1": {
+            "name": "Release! Ultrasonic Wave!",
+            "cost": "2",
+            "cooldown": "13",
+            "description": "Attacks frontal enemies in a straight line, dealing a total of ??? P.DMG over 4 times. Each hit inflicts stun for 3 sec, and reduces enemies's ATK by 25% for 10 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Rehartna/skills/1.png"
+        },
+        "2": {
+            "name": "Crystal Clear, Matimaruma!",
+            "cost": "2",
+            "cooldown": "17",
+            "description": "Immediately heals HP of the lowest HP ally by ???, creating a shield that absorbs ??? DMG and grants Immunity to CC for 10 sec. While the shield is active, heals HP of all allies near target by ??? every sec, increases All DEF by 23182. Enemies take ??? DMG and have their ATK Spd reduced by 250",
+            "thumbnail": "./data/kr/assets/heroes/Rehartna/skills/2.png"
+        },
+        "3": {
+            "name": "You've Never Seen a Weapon Like This!",
+            "cost": "3",
+            "cooldown": "25",
+            "description": "Reduces 4 random allies' Cooldown of all Skills by 4 sec. For 15 sec, recovers allies's Mana by 150 every sec and increases ATK by 84303. Upon every use, ATK Boost is increased by an additional 8430.",
+            "thumbnail": "./data/kr/assets/heroes/Rehartna/skills/3.png"
+        },
+        "4": {
+            "name": "Battle March Melody",
+            "cost": null,
+            "cooldown": null,
+            "description": "At the beginning of each battle. heals HP of all allies by ???, and increases Heal Rate by 10%. Heal Rate Boost effect can be stacked up to max 3 times, and is irremovable.",
+            "thumbnail": "./data/kr/assets/heroes/Rehartna/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "Shield is increased by 10%.",
+            "III": "Shield is increased by 15%.",
+            "IV": "Shield is increased by 25%."
+        },
+        "3": {
+            "II": "ATK Boost is increased by 10%.",
+            "III": "ATK Boost is increased by 15%.",
+            "IV": "ATK Boost is increased by 25%."
+        },
+        "4": {
+            "II": "Heal Rate is increased by 10%.",
+            "III": "Heal Rate is increased by 15%.",
+            "IV": "Heal Rate is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Increases Mana Cost by 1 and dispels positive effects from the target.",
+                    "thumbnail": "./data/kr/assets/heroes/Rehartna/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Reduces DEF Penetration of the hit target by 250 for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Rehartna/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Reduces Mana Cost by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Rehartna/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "For the duration of Skill, enemies within range take 25% increased P.DMG.",
+                    "thumbnail": "./data/kr/assets/heroes/Rehartna/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "The effect applies to 6 allies.",
+                    "thumbnail": "./data/kr/assets/heroes/Rehartna/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Reduces Cooldown by 7 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Rehartna/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "At the beginning of each battle, recovers own Mana by 1000.",
+                    "thumbnail": "./data/kr/assets/heroes/Rehartna/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Each stack increases Crit DMG of all allies by 12%.",
+                    "thumbnail": "./data/kr/assets/heroes/Rehartna/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP +15% / CC Resist +100",
+                "thumbnail": "./data/kr/assets/heroes/Rehartna/perks/light.png"
+            },
+            "dark": {
+                "effect": "Upon every Skill use, increases 4 random allies' ATK by 3% and All DEF by 3%. This effect can be stacked up to max 10 times, and is irremovable.",
+                "thumbnail": "./data/kr/assets/heroes/Rehartna/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Anthem of a New Road, Matimaruma",
+        "description": "Upon using Skills 3 times, dispels negative effects from all allies and reduces All DMG they take by (0) for 10 sec.",
+        "value": {
+            "0": {
+                "0": "10%",
+                "1": "12%",
+                "2": "14%",
+                "3": "17%",
+                "4": "21%",
+                "5": "25%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Rehartna/uw.png",
+        "story": "On the surface, its just a big, complicated instrument. However, there's more to this instrument than meets the eye. Just a slight change to the sound generator component, this instrument transforms into a weapon that discharges special ultrasonic waves."
+    },
+    "uts": {
+        "1": {
+            "name": "Classifield Resistance Document",
+            "description": "[Release! Ultrasonic Wave!] Rehartna becomes immune to CC while in use. Each hit reduces enemy's Mana by (0).",
+            "value": {
+                "0": {
+                    "0": "140",
+                    "1": "170",
+                    "2": "210",
+                    "3": "250",
+                    "4": "300",
+                    "5": "360"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Rehartna/ut/1.png",
+            "story": "A small letter with a sealing wax stamped on it. It's a telegram containing info or news sent out to the outer base from the capital base, or from outer base to the capital base.\nDue to the nature of their organization, the Resistance prefers to convey information verbally, but there are cases when the info must be scribed and sent in a document form.\nThis is when Rehartna, who is also a contact, makes her move. Rehartna is best suited for this job because she can move in and out of the capital freely to do 'business' for her atelier. Rehartna gives excuses such as arranging a deal that involves expensive instruments, and sometimes, she even disguises the letter as a of commission from the customer.\nTo make the disguise look even more convincing, Rehartna uses expensive envelopes and premium sealing wax."
+        },
+        "2": {
+            "name": "Ultrasonic Wave Generator",
+            "description": "[Crystal Clear, Matimaruma!] Increases Crit Resistance of allies within range by (0) and recovers their Mana by 150 every sec.",
+            "value": {
+                "0": {
+                    "0": "100",
+                    "1": "120",
+                    "2": "140",
+                    "3": "170",
+                    "4": "210",
+                    "5": "250"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Rehartna/ut/2.png",
+            "story": "The core component of Matimaruma. It replaces the sound-generating component of Matimaruma to transform it into a weapon. Since the effect of each ultrasonic wave is different, Rehartna gave a different color to each of them to tell them apart.\nBack when Rehartna was busy making Matimaruma, she crafted all other parts with ease, but she could not craft the most essential part to way she wanted to.\nWorried about Rehartna stressing over the solution, her comrades helped her out by collecting every resources they could find through research.\nThey did not forget to place a note between a book, which said: 'You don't have to do everything by yourself. It's okay to ask for help'. Upon readin the note, Rehartna felt a surge of energy from within and managed to finish crafting the ultrasonic wave generator.\nThe part was made by utilizing the arts of technomagic, and the colors of each wave are Rehartna's tribute to her comrades."
+        },
+        "3": {
+            "name": "Medley Sheet",
+            "description": "[You've Never Seen a Weapon Like This!] Reduces Cooldown of all Skills by an additional (0) sec, and grants immunity to CC to the target for 5 sec.",
+            "value": {
+                "0": {
+                    "0": "1",
+                    "1": "1.2",
+                    "2": "1.4",
+                    "3": "1.7",
+                    "4": "2.1",
+                    "5": "2.5"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Rehartna/ut/3.png",
+            "story": "A night concert is held once every few evenings at the backroom of Aselerando, Rehartna's atelier.\nIn reality, it is actually an information-gathering session for the Resistance.\nThe reason they are holding a concert rather than a party is because the sound of music covers the sound of Resistance members exchanging information. The concert itself also does not draw suspicion becuase it is held in a place of musical instruments.\nOnly long medleys, handpicked by Rehartna, are played at the concert to prevent conversations from being interrupted by paises between the pieces."
+        },
+        "4": {
+            "name": "Dragon Drawing",
+            "description": "[Battle March Melody] Max number of stacks increases to 6 times and each stack increases DMG dealt to Bosses by (0).",
+            "value": {
+                "0": {
+                    "0": "3%",
+                    "1": "3.6%",
+                    "2": "4.3%",
+                    "3": "5.2%",
+                    "4": "6.2%",
+                    "5": "7.5%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Rehartna/ut/4.png",
+            "story": "A dragon drawn on paper. The edge of the papar is wrinkled due to the paper's age. It Happened not too long after Rehartna was forced to take a break because she was suffering from a nightmare which occured every night. In the dream, she was being chased by someone. When Rehartna was cleaning the storeroom to keep herself busy, she found an old drawing. Ever since she was a child, Rehartna would suffer from nightmares whenever she was under extreme stress. one day, when Rehartna was crying after waking up from the nightmare, her brother gave her the drawing and said, 'This dragon is super strong. It will protect you even in your dreams!' Upon seein the drawing, Rehartna remembered the reason why she joined the Resistance. As for the drawing, Rehartna put it up above her bed, and Rehartna never suffered from a nightmare again."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon using Skills 5 times.",
+        "description": "Summons the soul of Anthem of a New Road, Matimaruma, increasing all allies' ATK by 50% for 10 sec. After 10 sec, deals ??? P.DMG to frontal enemies in a straight line, knocking them down for 3 sec.",
+        "cooldown": "24",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Rehartna/sw.png",
+        "advancement": {
+            "1": "Increases ATK Spd of all allies by 400 for the duration.",
+            "2": "Increases P.DMG the enemy takes by 50% for 15 sec."
+        },
+        "story": "Even though it was developed as an experimental weapon, Matimaruma proved to be quite potent.\nRehartna, however, was not satified and continued to research ways to improve Matimaruma.\nRehartna, of course, did not just only look for ways to improve its firepower.\nAlthough Rehartna has many side jobs, her main job was nonetheless, an artisan of instruments.Her pride as an artisan did not allow her to craft just a simple tool of mediocre quality.\nAlthough making a tool that is both a great instrument and a great weapon proved to be a challenge that demanded patience and effort, that didn't bother Rehartna who was determined to help her comrades.\nAs Rehartna continued making various instruments, she thought to herself that it's about time she made an instrument that is capable of producing the grandest richest sound in the world:\nThe instrument that can play the whole orchestra, a pipe organ. The research did not end, and there were many failures along the way.\nHowever, Rehartna prevailed and created a pipe organ of her dreams that can withstand anything.\nThe melody filled the room, and its sound carried a warmth that even Rehartna never felt before.\nRehartna was sure of it.\nShe was sure that the pipe organ she had created is a masterpiece, worthy of being calledher magnum opus.\nThe organ warched Rehartna as she cried out of happiness.\nThe stars of dawn were shining upon the organ."
+    },
+    "splashart": "./data/kr/assets/heroes/Rehartna/sa.png",
+    "costumes": "./data/kr/assets/heroes/Rehartna/cos",
+    "visual": null,
+    "aliases": null
+}

@@ -1,0 +1,232 @@
+{
+    "infos": {
+        "title": "The Eye of Discernment",
+        "class": "Wizard",
+        "position": "Back-500",
+        "attack range": "9200",
+        "damage type": "Magical",
+        "gender": "Female",
+        "age": "22",
+        "height": "165",
+        "race": "Human",
+        "constellation": "Lasiphil the Prophet",
+        "birth of month": "March 10th, Month of Insight",
+        "like": "Smart people, fast results, clean documents",
+        "dislike": "Messy rooms, working inefficiently",
+        "story": "A genius scholar from the Tower of Sage who remembers everything she sees. After developing her own theories and systems of Rune Magic, she quickly grew bored and moved onto a different subject. Soon, she was appointed as the highest ranking royal secretary of finance. Unfortunately, many politicians refused to accept a commoner as their superior. After many lies and ill rumors, Veronica eventually decided to leave the palace on her own. But this was hardly a defeat for her, and she soon set out to conquer a new path. She headed to the Orvel Guild Alliance, where she would be measured only for her abilities and nothing else. As expected, her incredible perception and analytical skills made her an indispensable asset to numerous guilds.",
+        "thumbnail": "./data/kr/assets/heroes/Veronica/ico.png",
+        "story_": "A genius scholar from the Tower of Sage who remembers everything she sees. After developing her own theories and systems of Rune Magic, she quickly grew bored and moved onto a different subject. Soon, she was appointed as the highest ranking royal secretary of finance. Unfortunately, many politicians refused to accept a commoner as their superior. After many lies and ill rumors, Veronica eventually decided to leave the palace on her own. But this was hardly a defeat for her, and she soon set out to conquer a new path. She headed to the Orvel Guild Alliance, where she would be measured only by her abilities and nothing else. As expected, her incredible perception and analytical skills made her an indispensable asset to numerous guilds."
+    },
+    "skills": {
+        "1": {
+            "name": "This will hurt a little!",
+            "cost": "2",
+            "cooldown": "9",
+            "description": "Deals ??? M.DMG to enemy and surrounding enemies within range, and inflicts Stun for 2 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Veronica/skills/1.png"
+        },
+        "2": {
+            "name": "Let me help you",
+            "cost": "4",
+            "cooldown": "25",
+            "description": "Grants a Rune to all allies to increase their ATK by ??? and any DMG to bosses by 15% for 12 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Veronica/skills/2.png"
+        },
+        "3": {
+            "name": "Get out of my sight!",
+            "cost": "4",
+            "cooldown": "25",
+            "description": "Attacks target and enemies in a wide surrounding area 2 times to deal ??? M.DMG, and knocks them down for 5 sec. Hit enemies take 30% increased M.DMG for 10 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Veronica/skills/3.png"
+        },
+        "4": {
+            "name": "Top Financier's Knowledge",
+            "cost": null,
+            "cooldown": null,
+            "description": "Increases ATK of all allies by ??? and gains Experience stack upon using a Skill. When 3 Experiences are stacked, gains Top Financier's Knowledge that increases own Crit DMG by 30% and the effects of all active Skills by 10%. The Top Financier's Knowledge effect is irremovable and stacks up to 5 times.",
+            "thumbnail": "./data/kr/assets/heroes/Veronica/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "ATK Boost is increased by 10%.",
+            "III": "ATK Boost is increased by 15%.",
+            "IV": "ATK Boost is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "ATK Boost is increased by 10%.",
+            "III": "ATK Boost is increased by 15%.",
+            "IV": "ATK Boost is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "DMG is increased by 100% when there is 1 enemy.",
+                    "thumbnail": "./data/kr/assets/heroes/Veronica/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Number of targets changes to 2.",
+                    "thumbnail": "./data/kr/assets/heroes/Veronica/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "After the beginning of the first battle, the DMG Boost against Bosses is changed to 25% for 3 Skill use.",
+                    "thumbnail": "./data/kr/assets/heroes/Veronica/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Reduces cooldown by 5 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Veronica/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Increases Mana Cost by 1 and DMG by 100%.",
+                    "thumbnail": "./data/kr/assets/heroes/Veronica/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Target takes increased M.DMG and P.DMG.",
+                    "thumbnail": "./data/kr/assets/heroes/Veronica/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Recovers the caster's MP by 2 orbs when activated.",
+                    "thumbnail": "./data/kr/assets/heroes/Veronica/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "When activated, increases the caster's ATK by 50% for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Veronica/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit Chance +100",
+                "thumbnail": "./data/kr/assets/heroes/Veronica/perks/light.png"
+            },
+            "dark": {
+                "effect": "Reduces the cooldown of the caster's all skills by 15% every 20 sec.",
+                "thumbnail": "./data/kr/assets/heroes/Veronica/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Infinite Charter, Accordio",
+        "description": "Changes the max number of stacks for Top Financier's Knowledge to (0) and gains additional Experience stack every (1) sec.",
+        "value": {
+            "0": {
+                "0": "9",
+                "1": "10",
+                "2": "11",
+                "3": "12",
+                "4": "13",
+                "5": "15"
+            },
+            "1": {
+                "0": "14",
+                "1": "13",
+                "2": "12",
+                "3": "11",
+                "4": "10",
+                "5": "9"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Veronica/uw.png",
+        "story": "Her approval is needed to process any important items in the Guild Alliance. An office item cherished by the founder of the Guild Alliance. A feather pen and folder put together in a set. The pen has a mana ball embedded in it so it requires mana instead of ink, and it must be used on a magic parchment that cannot be written on with a regular pen. The letters that are written by the writer cannot be erased without the writer's mana. Also, text can be written on the magic parchment without any limit, and it has a function to search for stuff one has written before. It makes Veronica's work that much more effective. Of course, it's useful when it's used for work, but outside of work..."
+    },
+    "uts": {
+        "1": {
+            "name": "Guild Code of Conduct",
+            "description": "[This Will Hurt A Little!] increases DMG by 50%, and increases DMG to Bosses by (0) for 30 sec upon Critical Hit. This effect stacks up to max 10 times.",
+            "value": {
+                "0": {
+                    "0": "2%",
+                    "1": "2.4%",
+                    "2": "2.9%",
+                    "3": "3.5%",
+                    "4": "4.2%",
+                    "5": "5%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Veronica/ut/1.png",
+            "story": "A manual that provides behavioral guidelines for the members of the guild. It is more than 3 times as thick as an ordinary book, and it's proof of Veronica's meticulous nature. It would take a long time for any reader to cover with all of its content."
+        },
+        "2": {
+            "name": "Pen Point of Firm Will",
+            "description": "[Let Me Help You] Reduces Mana Cost by 1 and increases skill duration by (0) sec.",
+            "value": {
+                "0": {
+                    "0": "1.6",
+                    "1": "1.9",
+                    "2": "2.3",
+                    "3": "2.7",
+                    "4": "3.3",
+                    "5": "4"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Veronica/ut/2.png",
+            "story": "Pen point that Veronica always carries around. She had soaked it in the Spring of Promise for 100 days, just like Blacksmith Jin had advised. With the power of magic, the letters written by this pen turn red when the actions are not carried out accordingly. Veronica says it's very helpful when managing supplies."
+        },
+        "3": {
+            "name": "Seal of Guild Manager",
+            "description": "[Get out of my sight!] DMG is increased by (0) and per each enemy hit, cooldown is reduced by 10%.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Veronica/ut/3.png",
+            "story": "A seal given to the best guild manager of Orvel. All guild affairs can't be processed without this seal. The meticulous Veronica doesn't stamp a document unless it's perfect. An item that shows Veronica's professional spirit."
+        },
+        "4": {
+            "name": "Guild Accounts Report",
+            "description": "[Top Financier's Knowledge] Increases ATK boost by 50%. Upon gaining Top Financier's Knowledge, increases Crit DMG of all allies by (0) for 10 sec.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Veronica/ut/4.png",
+            "story": "A compilation of guild account reports that Veronica makes every month and every year. No one can process these documents as perfectly as she does. Those who saw the height of documents piled up would immediately walk out of the room every single time. These piled documents are the evidence that shows why Veronica is the Top Financier."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon using Skills 5 times.",
+        "description": "Summons the Soul of Infinite Charter, Accordio and immediately acquires 2 stacks of Top Financier's Knowledge, increasing Crit DMG of the ally with the highest ATK by 50% and DMG dealt to Bosses by 20% for 10 sec.",
+        "cooldown": "18",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Veronica/sw.png",
+        "advancement": {
+            "1": "Increases the duration of Skill by 4 sec.",
+            "2": "Increases Boost effect that the ally with the highest ATK gains by 100%."
+        },
+        "story": "Accordio is Veronica's office tool which is also a top-classed magic item, but Veronica wanted it to be able to do something more. Thus, Veronica started the experiment on Accordio to enhance its capabilities, so that it can have stronger abilities. Although she had strayed away from magic and academia since leaving the Tower of Sage, her innate ingenuity allowed Veronica to smoothly proceed with the research.\nAt last, when Veronica's research reached its climax, Accordio finally awakened as a being with its own shape and ego, as if it was impressed by Veronica's persistence and her challenging spirit."
+    },
+    "splashart": "./data/kr/assets/heroes/Veronica/sa.png",
+    "costumes": "./data/kr/assets/heroes/Veronica/cos",
+    "visual": null,
+    "aliases": null
+}

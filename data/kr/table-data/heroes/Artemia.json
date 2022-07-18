@@ -1,0 +1,234 @@
+{
+    "infos": {
+        "title": "Empress of Light",
+        "class": "Wizard",
+        "position": "Back-500",
+        "attack range": "6400",
+        "damage type": "Magical",
+        "gender": "Female",
+        "age": "19",
+        "height": "165",
+        "race": "Human",
+        "constellation": "Lasiphil the Prophet",
+        "birth of month": "March 22nd, Month of Insight",
+        "like": "Sweet cakes, the eyes of righteous knights",
+        "dislike": "Demons",
+        "story": "Penteonia is an impenetrable kingdom. Even the Demon Army could not breach its defense 100 years ago. Ruling over this iron kingdom is Artemia, the Empress of Light. Ever since childhood, she has lived under the weight of responsibility of the throne she would eventually inherit. When she finally realized that the victory of her kingdom was only made possible by the sacrelifices of her people, she swore to never hide from her duties. She would face the pressure of royal responsibility with courage. Penteonia has historically been a selfish kingdom, only interested in its own safety. Now, with Artemia as its ruler, everything is about to change.",
+        "thumbnail": "./data/kr/assets/heroes/Artemia/ico.png",
+        "story_": "Penteonia is an impenetrable kingdom. Even the Demon Army could not breach its defense 100 years ago. Ruling over this iron kingdom is Artemia, the Empress of Light. Ever since childhood, she has lived under the weight of responsibility of the throne she would eventually inherit. When she finally realized that the victory of her kingdom was only made possible by the sacrifices of her people, she swore to never hide from her duties. She would face the pressure of royal responsibility with courage. Penteonia has historically been a selfish kingdom, only interested in its own safety. Now, with Artemia as its ruler, everything is about to change."
+    },
+    "skills": {
+        "1": {
+            "name": "Pillar of Light",
+            "cost": "2",
+            "cooldown": "7",
+            "description": "Places a Pillar of Light on target enemy, dealing a total of ??? M.DMG for 3 sec and reducing enemy ATK by 20% for 10 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Artemia/skills/1.png"
+        },
+        "2": {
+            "name": "Critical Intensity",
+            "cost": "3",
+            "cooldown": "14",
+            "description": "Deals ??? M.DMG to frontal enemies in a straight line. This attack's Crit DMG is increased by 100%.",
+            "thumbnail": "./data/kr/assets/heroes/Artemia/skills/2.png"
+        },
+        "3": {
+            "name": "Light's Judgment",
+            "cost": "4",
+            "cooldown": "20",
+            "description": "Attacks all enemies 3 times, dealing a total of ??? M.DMG and stunning the enemy for 5 sec. If the target is not a Hero, each hit deal ??? additional M.DMG. Per each enemy killed with this skill, cooldown is reduced by 30%.",
+            "thumbnail": "./data/kr/assets/heroes/Artemia/skills/3.png"
+        },
+        "4": {
+            "name": "Blessing of Light",
+            "cost": null,
+            "cooldown": null,
+            "description": "Each attack has a 60% chance of dealing ??? M.DMG to target and nearby enemies, while Artemia gains 1 stack of Blessing of Light. Blessing of Light can be stacked up to 10 times max. Per every stack, ATK is increased by ???, DMG dealt to Non-Hero enemies is increased by 7% and DMG received by Non-Hero enemies is reduced by 3%.",
+            "thumbnail": "./data/kr/assets/heroes/Artemia/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "DMG is increased by 40%.",
+                    "thumbnail": "./data/kr/assets/heroes/Artemia/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Each hit has a 25% chance to stun the enemy for 1 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Artemia/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Mana cost reduced by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Artemia/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "When Blessing of Light reaches 10 stacks, cooldown is reduced by 50%.",
+                    "thumbnail": "./data/kr/assets/heroes/Artemia/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Cooldown is reduced by 3 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Artemia/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Mana cost is increased by 1 orb but DMG is boosted by 100%.",
+                    "thumbnail": "./data/kr/assets/heroes/Artemia/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "DMG dealt to enemies Non-Hero enemies is increased by an additional 2.5%.",
+                    "thumbnail": "./data/kr/assets/heroes/Artemia/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Changes DMG Reduction from Non-Hero enemies to DMG Reduction from all enemies.",
+                    "thumbnail": "./data/kr/assets/heroes/Artemia/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit Chance +100",
+                "thumbnail": "./data/kr/assets/heroes/Artemia/perks/light.png"
+            },
+            "dark": {
+                "effect": "When HP falls below 50%, gain 2 sec of immunity to all DMG. This effect activates only once every 30 sec.",
+                "thumbnail": "./data/kr/assets/heroes/Artemia/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Brilliant Praise, Brauxio",
+        "description": "Upon using a Skill 3 times, creates a Shield for 10 sec that blocks DMG proportional to (0) of own ATK, and ATK is increased by (1). While the Shield is in effect, gains immunity to CC.",
+        "value": {
+            "0": {
+                "0": "200%",
+                "1": "240%",
+                "2": "290%",
+                "3": "350%",
+                "4": "420%",
+                "5": "500%"
+            },
+            "1": {
+                "0": "20%",
+                "1": "24%",
+                "2": "29%",
+                "3": "35%",
+                "4": "42%",
+                "5": "50%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Artemia/uw.png",
+        "story": "This sacred treasure of Penteonia is said to have been sent from the Heavens to eradicate the Demons. This Light Staff, known to respond only to those worthy of sainthood, radiated with splendid light in the hands of the young Artemia, as if to honor the future empress. It calls upon the power of absolute light, unleashing heaven's vengeance upon its enemies while protecting its wielder with divine light."
+    },
+    "uts": {
+        "1": {
+            "name": "Dignity of Queen",
+            "description": "[Pillar of Light] Reduces Mana Cost by 1 and increases M.DMG target receives by (0) for 10 sec.",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Artemia/ut/1.png",
+            "story": "A brooch crafted by the best blacksmith of Penteonia Kingdom in honor of the beautiful Queen. People call it Queen's Dignity. Made with smithing skills that the blacksmith learned from dwarves, the jewel on it has a mystical power. It can concentrate Artemia's energy of light and release it all at once."
+        },
+        "2": {
+            "name": "Queen's Pride",
+            "description": "[Critical Intensity] Gains Immunity to CC and increases DMG by (0).",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Artemia/ut/2.png",
+            "story": "Earrings made from light kveril, a rare mineral that is said to only come out in Penteonia. When Artemia was crowned Empress, she received it along with the crown. It doesn't lose its light even at night, and it actually shines even more brightly in the dark. It's known as the jewel of principles and brilliance amongst the people. An item that raises the dignity of the queen as they shine from her ears."
+        },
+        "3": {
+            "name": "Crown of Brilliance",
+            "description": "[Light's Judgment] DMG is increased by (0) and upon killing an enemy, recovers 700 mana.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Artemia/ut/3.png",
+            "story": "A crown that is passed down to the king of Penteonia. A part of it had been broken by a previous tyrant, but it's been repaired. A new red gem called the Soul of the Sun has been embedded at the center of the crown. Its dignified form compels one to kneel before it in a show of respect."
+        },
+        "4": {
+            "name": "Mirror of Blessings",
+            "description": "[Blessings of Light] Increases DMG by 50% and DMG Boost to Non-Hero enemies by an additional (0).",
+            "value": {
+                "0": {
+                    "0": "1%",
+                    "1": "1.2%",
+                    "2": "1.4%",
+                    "3": "1.7%",
+                    "4": "2.1%",
+                    "5": "2.5%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Artemia/ut/4.png",
+            "story": "A mystical mirror that contains the spells of royal elder wizards, passed down to generations in the royal family of Penteonia. It is known that the first king made it himself for the eternal prosperity of Penteonia. Only the leader of the country could look into it, and the one standing in front of the mirror receives the blessing of light. This would then lead the kings to be the light themselves to all his people in the country."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon 20 sec.",
+        "description": "Summons the soul of Brilliant Praise, Brauxio for 10 sec, increasing all allies' ATK and DEF by 40% and reducing DMG all allies take from enemies by 30%.",
+        "cooldown": "21",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Artemia/sw.png",
+        "advancement": {
+            "1": "Dispels negative effects from all allies and positive effect from all enemies every 2 sec for the duration of Skill.",
+            "2": "Increases own DMG dealt to enemies by 30% for the duration of Skill."
+        },
+        "story": "Whenever Artemia used her magic, she felt that she is indeed, the chosen.\n\nDuring her yound days, Artemia did not consider her staff special. However, as she witnessed how her staff drew the magic of light as if it was guiding the light, and how the power from the staff embraced her warmly, she started to accept the staff as not just a simple weapon, but as her most reliable compannion.\n'As long as i have you in my hands, I am the most incandescent light that brilliantly lights the world.'\nJust as she promised, Artemia felt the most reliable light from behind her.\n\nAnd just like her, Brauxio think of Artemia earnestly."
+    },
+    "splashart": "./data/kr/assets/heroes/Artemia/sa.png",
+    "costumes": "./data/kr/assets/heroes/Artemia/cos",
+    "visual": null,
+    "aliases": [
+        "arte"
+    ]
+}

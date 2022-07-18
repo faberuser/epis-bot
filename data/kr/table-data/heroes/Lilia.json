@@ -1,0 +1,232 @@
+{
+    "infos": {
+        "title": "The Daughter of Storm and Sea",
+        "class": "Wizard",
+        "position": "Back-400",
+        "attack range": "5700",
+        "damage type": "Physical",
+        "gender": "Female",
+        "age": "???",
+        "height": "120",
+        "race": "Dragon",
+        "constellation": "Judgment Layan",
+        "birth of month": "September 14th, Month of Truth",
+        "like": "Laias, sweet drinks, people in the desert",
+        "dislike": "Those flirting with her sister (Neraxis, Sereinel)",
+        "story": "A God Dragon of the Oasis and a sister of the Priestess of Water. Laias. She is still a young Blue Dragon who lolves her sister who is much older than her. When Laias fell into a deep sleep after exhausting her powers in the battle 100 years ago, Lilia defended the Shrine of Flolw on her own. It was when she heard the children of the desert making desperate prayers that she finally woke up the Priestess of Water to protect them. Unlike her mild and thoughtful sister, she is somewhat strict, and the way she controls the power of flolw and water is more aggressive, too. She feels the need to protect her beauteliful sister against flirting, unworthy men.",
+        "thumbnail": "./data/kr/assets/heroes/Lilia/ico.png",
+        "story_": "A God Dragon of the Oasis and a sister of the Priestess of Water. Laias. She is still a young Blue Dragon who loves her sister who is much older than her. When Laias fell into a deep sleep after exhausting her powers in the battle 100 years ago, Lilia defended the Shrine of Flow on her own. It was when she heard the children of the desert making desperate prayers that she finally woke up the Priestess of Water to protect them. Unlike her mild and thoughtful sister, she is somewhat strict, and the way she controls the power of flow and water is more aggressive, too. She feels the need to protect her beautiful sister against flirting, unworthy men."
+    },
+    "skills": {
+        "1": {
+            "name": "Aqua Tempest",
+            "cost": "3",
+            "cooldown": "8",
+            "description": "For 8 sec, summons Aqua Tempest to a random target and enemies in target's range and deals ??? P.DMG every 0.5 sec. If the target is killed, Aqua Tempest is summoned to attack another random target for the remaining time.",
+            "thumbnail": "./data/kr/assets/heroes/Lilia/skills/1.png"
+        },
+        "2": {
+            "name": "Everlasting Oasis",
+            "cost": "3",
+            "cooldown": "20",
+            "description": "When activated, turns into the Everlasting Oasis state for 15 sec. During the Everlasting Oasis state, mana recovery rate per sec is increased by 150% and ATK is increased by ???. Additionally, all DEF is increased by ???.",
+            "thumbnail": "./data/kr/assets/heroes/Lilia/skills/2.png"
+        },
+        "3": {
+            "name": "Celestial Cataract",
+            "cost": "3",
+            "cooldown": "12",
+            "description": "Throws water drops 15 times to random enemies, dealing a total of ??? P.DMG. Additionally, throws big water drops 5 times to target and other enemies in target's range, dealing ??? P.DMG. Enemies hit by the big water drop are inflicted by Stun for 2 sec. Per each water drop thrown, 25 mana is consumed, and mana consumption rate is increased by 13. Stops use when mana becomes 0.",
+            "thumbnail": "./data/kr/assets/heroes/Lilia/skills/3.png"
+        },
+        "4": {
+            "name": "Aqua Purification",
+            "cost": null,
+            "cooldown": null,
+            "description": "Mana recovery upon ATK is fixed, but own ATK is increased by ???, Crit Chance by 300 and Mana Recovery per sec is increased to 120. Per 6 Mana Recovery per sec, ATK is increased by 1%.",
+            "thumbnail": "./data/kr/assets/heroes/Lilia/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "Mana Recovery and ATK Boost are increased by 10%.",
+            "III": "Mana Recovery and ATK Boost are increased by 15%.",
+            "IV": "Mana Recovery and ATK Boost are increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "ATK Boost is increased by 10%.",
+            "III": "ATK Boost is increased by 15%.",
+            "IV": "ATK Boost is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Hit target's ATK Spd is decreased by 250 for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Lilia/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Each use increases DMG by 20%. Stacks 15 times max.",
+                    "thumbnail": "./data/kr/assets/heroes/Lilia/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Mana cost is increased by 1 and is additionally activated on the ally with the highest ATK excluding self.",
+                    "thumbnail": "./data/kr/assets/heroes/Lilia/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Skill duration is decreased by 5 sec and all effects are increased by 100%.",
+                    "thumbnail": "./data/kr/assets/heroes/Lilia/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "While in use, gain immunity to CC.",
+                    "thumbnail": "./data/kr/assets/heroes/Lilia/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Per each water drop thrown, mana cost and mana consumption rate are increased by 100%, and per each water drop thrown, there is a 50% chance of throwing an extra water drop.",
+                    "thumbnail": "./data/kr/assets/heroes/Lilia/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "At the start of each battle, recovers 1000 mana.",
+                    "thumbnail": "./data/kr/assets/heroes/Lilia/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Deals 15% increased DMG to Boss monsters.",
+                    "thumbnail": "./data/kr/assets/heroes/Lilia/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit DMG +20%",
+                "thumbnail": "./data/kr/assets/heroes/Lilia/perks/light.png"
+            },
+            "dark": {
+                "effect": "ATK is increased by 15% per 1 orb of mana.",
+                "thumbnail": "./data/kr/assets/heroes/Lilia/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Infinite Spring, Cielamaha",
+        "description": "Mana is recovered by (0) per each sec, and upon each ATK there is an 80% chance of dealing (1) of ATK as P.DMG.",
+        "value": {
+            "0": {
+                "0": "50",
+                "1": "60",
+                "2": "70",
+                "3": "85",
+                "4": "105",
+                "5": "125"
+            },
+            "1": {
+                "0": "20%",
+                "1": "24%",
+                "2": "28%",
+                "3": "34%",
+                "4": "42%",
+                "5": "50%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Lilia/uw.png",
+        "story": "An infinite spring that endlessly spouts water. It is a jar made by the first Blue Dragon, who ruled all waters on earth. It reacts to the imagination of the user. To a young, sensitive and creative girl like Lilia, it is the greatest treasure and weapon."
+    },
+    "uts": {
+        "1": {
+            "name": "Whisper of Sea",
+            "description": "[Aqua Tempest] Reduces Cooldown by 2.5 sec and enemies inflicted by Aqua Tempest take (0) increased P.DMG.",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Lilia/ut/1.png",
+            "story": "A hairpin, made with gemstones and coral stones from the Sea of Eternity, that Laias gave to Lilia. It looks like a simple hairpin for a child, but the materials from the Sea of Eternity contain the energy of Water Dragons, making Lilia's Aqua Tempest much more powerful."
+        },
+        "2": {
+            "name": "Heart of Flow",
+            "description": "[Everlasting Oasis] The effect cannot be dispelled, and Crit DMG is increased by (0) during skill duration.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Lilia/ut/2.png",
+            "story": "A gold necklace for girls that Laias crafted for Lilia with a Gem of Protection. It gleams with the energy of water elementals in it. It is a symbol of Laias's care for her little sister."
+        },
+        "3": {
+            "name": "Bottomless Kettle of Elementals",
+            "description": "[Celestial Cataract] Upon each ATK there is a 7% chance of throwing a big water drop, dealing 100% of ATK as P.DMG and increasing own Crit DMG by (0) for 7 sec.",
+            "value": {
+                "0": {
+                    "0": "2%",
+                    "1": "2.4%",
+                    "2": "2.9%",
+                    "3": "3.5%",
+                    "4": "4.2%",
+                    "5": "5%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Lilia/ut/3.png",
+            "story": "A kettle that Lilia's old cacti friends made for her on her birthday. The kettle infinitely produces the cleanest and purest water there is. However, if too much water is used at once, it shuts its spout, which is a featured added by the Cacti to help Lilia stay in control of the water until she becomes more skilled at it."
+        },
+        "4": {
+            "name": "Key of Purity",
+            "description": "[Aqua Purification] Every 10 sec, increases own Crit DMG by 80% and Mana Recovery/Sec by (0) for 5 sec.",
+            "value": {
+                "0": {
+                    "0": "30%",
+                    "1": "36%",
+                    "2": "43%",
+                    "3": "52%",
+                    "4": "63%",
+                    "5": "75%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Lilia/ut/4.png",
+            "story": "A sacred key found in the center of the oasis. When the tribe was performing an evil-purging ritual for the First Water Dragon, a strange chest floated up in the center of oasis. No one could open it until Lilia came, summoned by her tribespeople. The chest started shaking as soon as Lilia approached, and it opened on its own after releasing a bright light. Inside the chest was a key. Lilia knew as soon as she saw it that it was not an ordinary key and has been keeping it safe until now. What it opens is still unknown, but it is certain that the key maximizes Lilia's purifying powers."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon dealing DMG 70 times.",
+        "description": "Summons the soul of Infinite Spring, Cielamaha for 12 sec. Normal and Skill attacks have a 10% chance to deal additional ??? P.DMG. Increasing own DMG dealt to enemies by 20%.",
+        "cooldown": "22",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Lilia/sw.png",
+        "advancement": {
+            "1": "Fully recovers Mana for the duration of Skill.",
+            "2": "Increases DMG by 100%."
+        },
+        "story": "The very first Blue Dragon. In the ancient time, it had attuned all water of the world.\nCielamaha is the legacy of that dragon, a relic which Lilia considers most precious, and the strongest weapon she could fathom. Lilia had never met the First Blue Dragon. The only thing she could do is to picture how the dragon would have looked like from his legacy that is Cielamaha.\nOne day, Lilia questioned herself:'Why did the First Blue Dragon create Cielamaha?' It was a simple question, but was enough to her curiosity. The young dragon's imagination flowed like a stream of water from a lake, and reached the conclusion nobody thought of: it awakened the water elemental residing in Cielamaha, an entity that accompanied the First Blue Dragon in the ancient times.\nThe awakened water elemental had a doubt on young Lilia's potential, and on whether she was worthy of wielding Cielamaha. Trials were given to her, yet she overcame them through the flexible use of water.\n\nIt then accepted Lilia, and now Lilia can harness a water tempest stronger than that of other Blue Dragons with the aid of the water elemental."
+    },
+    "splashart": "./data/kr/assets/heroes/Lilia/sa.png",
+    "costumes": "./data/kr/assets/heroes/Lilia/cos",
+    "visual": null,
+    "aliases": null
+}

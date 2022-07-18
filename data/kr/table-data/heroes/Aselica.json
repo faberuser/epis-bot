@@ -1,0 +1,224 @@
+{
+    "infos": {
+        "title": "Guardian of the Sun",
+        "class": "Knight",
+        "position": "Front-700",
+        "attack range": "5100",
+        "damage type": "Magical",
+        "gender": "Female",
+        "age": "???",
+        "height": "170",
+        "race": "Angel",
+        "constellation": "Judgment Layan",
+        "birth of month": "September 22nd, Month of Truth",
+        "like": "Fellow kinsmen, enforcing order",
+        "dislike": "Demons",
+        "story": "A powerful angel who defends the haven of angels. Even among the Angels who wield the power of light, she has a special connection to the sun, whose divine light she uses to fight against darkness. She is tasked with the protection of the souls of other angels awaiting resurrection. When the Holy Sword reappeared in the world, she heeded the divine call to join the new protector of the world. She will see to it that no chosen warrior would ever succumb to the darkness again.",
+        "thumbnail": "./data/kr/assets/heroes/Aselica/ico.png",
+        "story_": "A powerful angel who defends the haven of angels. Even among the Angels who wield the power of light, she has a special connection to the sun, whose divine light she uses to fight against darkness. She is tasked with the protection of the souls of other angels awaiting resurrection. When the Holy Sword reappeared in the world, she heeded the divine call to join the new protector of the world. She will see to it that no chosen warrior would ever succumb to the darkness again."
+    },
+    "skills": {
+        "1": {
+            "name": "Sword of the Sun",
+            "cost": "2",
+            "cooldown": "9",
+            "description": "Deals ??? M.DMG to enemy and surrounding enemies within range, and inflicts Stun for 5 sec. After use, increases own ATK Spd by 350 for 5 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Aselica/skills/1.png"
+        },
+        "2": {
+            "name": "Blessing of the Sun",
+            "cost": "2",
+            "cooldown": "20",
+            "description": "Imbues the Blessing of the Sun to the ally with the highest ATK, reducing cooldown of all skills by 20% and increasing ATK by ??? + 8% of Aselica's P.DEF and DMG dealt to Non-Hero enemies by 20% for 15 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Aselica/skills/2.png"
+        },
+        "3": {
+            "name": "Judgment of the Sun",
+            "cost": "4",
+            "cooldown": "20",
+            "description": "Takes position, focuses to heal HP of nearby allies 8 times for a total of ??? + 12% of Aselica's P.DEF and increases their P.DEF by ??? for 10 sec. Enemies within range take M.DMG over 8 times and have their M.DEF reduced by ??? for 10 sec. At the end of casting, heals HP of allies within range by ??? + 2% of Aselica's Max HP, deals M.DMG to enemies and knocks them down for 3 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Aselica/skills/3.png"
+        },
+        "4": {
+            "name": "Curse of the Sun",
+            "cost": null,
+            "cooldown": null,
+            "description": "Upon attack, inflicts Curse of the Sun on the target for 10 sec. Enemies with 10 stacks of Curses of the Sun will consume the stack to receive ??? M.DMG. Become inflicted with Blind for 2 sec, having their ATK reduced by 30% for 10 sec. Upon using this Skill, grants Blessing of the Angel to allies excluding self for 5 sec. Blessing of the Angel reduces P.DMG the granted allies take by 15% and heals their HP by 0.1% of Aselica's Max HP every sec.",
+            "thumbnail": "./data/kr/assets/heroes/Aselica/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "ATK Boost is increased by 10%.",
+            "III": "ATK Boost is increased by 15%.",
+            "IV": "ATK Boost is increased by 25%."
+        },
+        "3": {
+            "II": "DMG and Heal Rate are increased by 10%.",
+            "III": "DMG and Heal Rate are increased by 15%.",
+            "IV": "DMG and Heal Rate is increased by 25%."
+        },
+        "4": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Increases M.DMG the target takes by 25% for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Aselica/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Reduces cooldown by 2 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Aselica/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Increases Mana Cost by 1, and grants the effect to the 2 allies with the highest ATK.",
+                    "thumbnail": "./data/kr/assets/heroes/Aselica/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Used while ignoring negative effects on self and removes negative effects on the target ally.",
+                    "thumbnail": "./data/kr/assets/heroes/Aselica/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Reduces Mana Cost by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Aselica/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Upon use, dispels negative effects from self.",
+                    "thumbnail": "./data/kr/assets/heroes/Aselica/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "[Blessing of the Angel] becomes irremovable.",
+                    "thumbnail": "./data/kr/assets/heroes/Aselica/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Activates the effect upon reaching the 7th stack of Curse of the Sun.",
+                    "thumbnail": "./data/kr/assets/heroes/Aselica/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / P. Block +200",
+                "thumbnail": "./data/kr/assets/heroes/Aselica/perks/light.png"
+            },
+            "dark": {
+                "effect": "At the beginning of the first battle, increases P.DEF of the ally with the highest ATK by 20% of P.DEF. This effect cannot be dispelled.",
+                "thumbnail": "./data/kr/assets/heroes/Aselica/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Solar Halo, Ignisius",
+        "description": "When a normal attack hits the enemy 5 times, the target takes (0) more M.DMG for 10 sec and is stunned for 0.5 seconds. The M.DMG Boost is irremovable.",
+        "value": {
+            "0": {
+                "0": "20%",
+                "1": "24%",
+                "2": "29%",
+                "3": "35%",
+                "4": "42%",
+                "5": "50%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Aselica/uw.png",
+        "story": "Legends speak of a mysterious metal, gold as the glorious rays of the sun, blue as the pure sky, and white as the blinding light. This holy sword and shield set has been forged from that special metal that only Angels can handle. These are divine relics of protection, created to banish the darkness and fill the world with light. Bestowed only to the most righteous Guardian Knight of the Angels, these relics can instantly incinerate any Demon that faces their light."
+    },
+    "uts": {
+        "1": {
+            "name": "Light of the Dawn",
+            "description": "Dispels all positive effects from enemies within range, and recovers own Mana by (0) upon hit.",
+            "value": {
+                "0": {
+                    "0": "200",
+                    "1": "240",
+                    "2": "290",
+                    "3": "350",
+                    "4": "420",
+                    "5": "500"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Aselica/ut/1.png",
+            "story": "A fragment that fell out from the eternally shining Morning Star. Morning Star is the holy light that has existed since the beginning of time, guarding the heavens and protecting the swords of angels from losing their holy flame. The Archangel bestowed this upon Aselica along with the Sword of the Sun before she came down to earth."
+        },
+        "2": {
+            "name": "Bracelet of the Sun",
+            "description": "[Blessing of the Sun] Reduces Mana Cost by 1 and target takes (0) decreased P.DMG for 10 sec.",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Aselica/ut/2.png",
+            "story": "Bracelet made by the Archangels to protect the Angels when they descend down to earth. It contains the sun, so it shines brilliantly. When the angels feel fear, it is said that the sunlight from the bracelet protects their souls. And the fates of the angels are intertwined in the bracelet, so when they feel like their lives are threatened, they can feel each other's pain instinctively."
+        },
+        "3": {
+            "name": "Guardian's Trumpet",
+            "description": "[Judgment of the Sun] Gains Immunity to CC while in use, and increases P.DEF Boost and M.DEF Reduction by (0).",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Aselica/ut/3.png",
+            "story": "The trumpet that is said to be blown by the leader of the Archangels when the catastrophe that will end the Material World arrives. It is said that once the guardians hear the sound of the trumpet, they wake up and come down to protect this land."
+        },
+        "4": {
+            "name": "Will of Light",
+            "description": "[Curse of the Sun] Increases the duration of Blind by 1 sec. Upon activation, targets take (0) increased M.DMG for 10 sec.",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Aselica/ut/4.png",
+            "story": "A hair accessory decorated with golden laurel leaves and the wing feather of Sacred Bird, 'Illaira'. It shines brightly even in complete darkness. It protects its wearer against curses and burns ominous energy with its light. It was bestowed upon Aselica by the Archangel when she was appointed as a guardian angel."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon using Skills 5 times.",
+        "description": "Summons the Soul of Solar Halo, Ignisius, increasing all allies's ATK by 30% and P.DEF by 60% respectively for 10 sec. Afterward, attacks the target and enemies nearby within a small range 20 times, dealing a total of ??? M.DMG. Afterwards, each hit inflicts Judgment of Ignisius, increasing M.DMG the target takes by 2% for 5 sec. Judgment of Ignisius can be stacked up to 20 times.",
+        "cooldown": "20",
+        "uses": "7",
+        "thumbnail": "./data/kr/assets/heroes/Aselica/sw.png",
+        "advancement": {
+            "1": "Increases the duration by 5 sec and additionally reduces target's M.DEF by 2% per stack of Judgment of Ignisius.",
+            "2": "Changes the M.DMG Boost effect to 3%, and reduces P.DMG all allies take by 60% for the duration of Skill."
+        },
+        "story": "A weapon given to the most righteous guardian angels of heaven.\n\nAselica received this weapon from the archangels as she was descending upon the world to watch the Warrior of the Holy Sword, and swore to only use the weapon to deliver Lua's justice.\nHowever, the power of darkness was becoming stronger over-time, and Aselica had to fight stronger enemies.\nShe had to fight the Demons, Draconics, and even entities of darkness.\nShe fought them with her life, but it was impossible for her to handle all the enemies at once.\nThat time when her power and courage reached the limit, to Aselica's suprise, her weapon started shining brilliantly, and after whispering to Aselica to deliver justice, the weapon bestowed incremental strength and courage to her.\nThat's when the will of all guardian knights that was stored inside the weapon became one and awakened as a mighty being."
+    },
+    "splashart": "./data/kr/assets/heroes/Aselica/sa.png",
+    "costumes": "./data/kr/assets/heroes/Aselica/cos",
+    "visual": null,
+    "aliases": null
+}

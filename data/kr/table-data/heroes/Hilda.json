@@ -1,0 +1,247 @@
+{
+    "infos": {
+        "title": "Spear of Dawn",
+        "class": "Warrior",
+        "position": "Front",
+        "attack range": "8100",
+        "damage type": "Magical",
+        "gender": "Female",
+        "age": "???",
+        "height": "170",
+        "race": "???",
+        "constellation": "Guardian Mertis",
+        "birth of month": "January 4th, Month of Protection",
+        "like": "Siegfried, simple labor",
+        "dislike": "Goddess, humans, anything that harms her king",
+        "story": "You can always hear the sound of Golem engines in the hidden ruins of the Technomagic Kingdom, at the City of Moonlight - Serineu. Patrolling for intruders, restoring the ruined city, other tasks they used to do in the once beautiful city. The Golems bustle about under the moonlight that shines upon the ruins... A figure with eyes that remind you of the twilight sky stands alone.",
+        "thumbnail": "./data/kr/assets/heroes/Hilda/ico.png",
+        "story_": "Project: Brunhild started long ago in the early ages of the Technomagic Kingdom by the royal family, who feared the coming of the cycle's end. The first step of the project was to make a vessel that could contain the authority of god so that they could create 'an imitation god would do the bidding of the humans.'\nThough they created various synthetic Demon Beasts, Golems, and even humans, every one of their subjects failed to retain their form and ended up falling to pieces. The scientists of the research facility turned their attention to the powerful beings called 'Transcendants,' who were already close to the source. With the data of the Transcendants gathered by the kingdom, the scientists created Hilda, an artifical Transcendant.\nHilda was simply a tool to create a new world; her purpose was to escapoe the cycle and destroy the current rules. She existed only as a 'weapon' to oppose the current goddess and therefore was not granted a personality or a will of her own. She spend her entire life in a deep slumber, except when she was undergoing adjustment to prepare her for the title of god or when she was being brainwashed to think a certain way, starting from a cold test tube and later locked up in the research facility.\nTrapped in an endless cycle of sleeping and waking up, Hilda chose to accept her identity as aweapon to protect her sanity instead of trying to learn names of her emotions. Project: Brynhild was shut down right before the completion of the new god. Itwas none other by command of the new ruler of the kingdom, Siegfried Felix Liesnel..."
+    },
+    "skills": {
+        "1": {
+            "name": "Void Whirlwind",
+            "cost": "3",
+            "cooldown": "18",
+            "description": "Deals a total of ??? M.DMG over 12 hits to frontal enemies. Each hit reduces the targets Mana by 150.",
+            "thumbnail": "./data/kr/assets/heroes/Hilda/skills/1.png"
+        },
+        "2 (1)": {
+            "name": "Transcendant",
+            "cost": "3",
+            "cooldown": "8",
+            "description": "Dispels negative effects from self and deals ??? M.DMG to all enemies, entering [Transcendant] state and enhancing normal attacks. During [Transcendant] state, Hilda cannot use Skills, gains immunity to CC, and her normal attacks inflict [Void] stacks that can be stacks up to max 20 times on the target. Hilda also reduces Heal Rate of nearby enemies within circular range by 30%, and consumes own mana by 100 every sec. The mana consumption gradually increases over time, and [Transcendant] state deactivates upon consuming all Mana or using a Skill.",
+            "thumbnail": "./data/kr/assets/heroes/Hilda/skills/2 (1).png"
+        },
+        "2 (2)": {
+            "name": "Deactivate Transcendant",
+            "cost": null,
+            "cooldown": null,
+            "description": "Deactivates [Transcendant] and applies 8 sec Cooldown to the [Transcendant] Skill. This skill activates automatically upn consuming all Mana.",
+            "thumbnail": "./data/kr/assets/heroes/Hilda/skills/2 (2).png"
+        },
+        "3": {
+            "name": "Void Strike",
+            "cost": "4",
+            "cooldown": "20",
+            "description": "Deals ??? M.DMG to frontal enemies within circular range of self and knocks them down for 3 sec. Upon hitting an enemy inflicted with [Void], consumes all Void stacks from the target and deals ??? additional M.DMG per stack.",
+            "thumbnail": "./data/kr/assets/heroes/Hilda/skills/3.png"
+        },
+        "4": {
+            "name": "Void Frenzy",
+            "cost": null,
+            "cooldown": null,
+            "description": "Increases ATK by ???, applies all Mana recovery at 50% higher, and increases DEF Penetration by 100 per orb of Mana Hilda has. At max Mana, Hilda enters [Void Frenzy] state for 30 sec. For the duration, self's all attacks ignore Block effects of enemies and fixes the DEF Penetration boost per Mana orb to 1000. [Void Frenzy] state has a Cooldown of 15 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Hilda/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "ATK Boost is increased by 10%.",
+            "III": "ATK Boost is increased by 15%.",
+            "IV": "ATK Boost is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Each hit recovers 100 Mana.",
+                    "thumbnail": "./data/kr/assets/heroes/Hilda/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Gains immunity to CC while in use.",
+                    "thumbnail": "./data/kr/assets/heroes/Hilda/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Increases ATK Spd by 500 during [Transcendant] state.",
+                    "thumbnail": "./data/kr/assets/heroes/Hilda/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Takes 20% reduced DMG during [Transcendant] state.",
+                    "thumbnail": "./data/kr/assets/heroes/Hilda/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Dispels postive effect from enemies within range.",
+                    "thumbnail": "./data/kr/assets/heroes/Hilda/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Increases DMG by 40%.",
+                    "thumbnail": "./data/kr/assets/heroes/Hilda/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Changes the Cooldown of [Void Freny] to 7 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Hilda/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Increeases DMG dealt to bosses by 50% during [Void Frenzy] state.",
+                    "thumbnail": "./data/kr/assets/heroes/Hilda/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / ATK Spd +100",
+                "thumbnail": "./data/kr/assets/heroes/Hilda/perks/light.png"
+            },
+            "dark": {
+                "effect": "[Void] stacks become irremoveable and normal attacks have a 25% chance to inflict 1 [Void] stack.",
+                "thumbnail": "./data/kr/assets/heroes/Hilda/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Dream of an Artifical God, Innocentia",
+        "description": "Increases own ATK by (0) and Heal Rate by (1). Upon entering [Transcendant] state, changes ATK Boost to 20% and Heal Rate Boost to (2).",
+        "value": {
+            "0": {
+                "0": "10%",
+                "1": "12%",
+                "2": "14%",
+                "3": "17%",
+                "4": "21%",
+                "5": "25%"
+            },
+            "1": {
+                "0": "10%",
+                "1": "12%",
+                "2": "14%",
+                "3": "17%",
+                "4": "21%",
+                "5": "25%"
+            },
+            "2": {
+                "0": "20%",
+                "1": "24%",
+                "2": "29%",
+                "3": "35%",
+                "4": "42%",
+                "5": "50%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Hilda/uw.png",
+        "story": "The Transcendent vessel of god needed both a mind that could bear the 'voice' and obedience that would comply with the will of the humans. The subjects of Project: Brunhild's were of no use, as they usually failed to handle the 'voice' and went insane, and as a result, couldn't follow orders. Against this impasse, the scientists of the research facility worked hard for a long time and created a special spell called 'Innocentia.' Innocentia, when implanted into the vessel's body, controlled the vessel's mind to boost the state of their mentality, and was sometimes uised as a method of restraint by giving them imaginary pain. Although Siegfried wanted to extract the spell planted in Hilda's body, it could not be separated, as Innocentia was already a part of her physical form. Pressured by Heimann, who wanted to comfort the saddened king, Doctor Ignio greatly modified Innocentia's spell."
+    },
+    "uts": {
+        "1": {
+            "name": "Sweet Dreams",
+            "description": "[Void Whirlwind] Each hit draws the target to the front of self, and inflicts 2 [Void] stacks with a (0) chance.",
+            "value": {
+                "0": {
+                    "0": "40%",
+                    "1": "48%",
+                    "2": "58%",
+                    "3": "70%",
+                    "4": "84%",
+                    "5": "100%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Hilda/ut/1.png",
+            "story": "A dried flower bouquet, not decorated with fancy wrappings or colorful ribbons, but nonetheless beautiful in its simplicity, showing the good taste of the person who made it. The bouquet that Clause, Maria, and Morrah left for the sleeping Hilda has been preserved and dried for her, as there is no telling when she'll wake up.\nIt is enchanted with Maria's gentle amgic so that Hilda, who dreams endlessly of the past, may wake up with a smile and move on to tomorrow without being overwhelmed by her painful emotions."
+        },
+        "2": {
+            "name": "Present of an Intruder",
+            "description": "[Transcendant] Reduces Mana Cost that increases over time by 40%, and increases DMG of normal attacks by (0) for the duration.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Hilda/ut/2.png",
+            "story": "A basket containing yarn and knitting needles.\n\nEvery time Rose visited Serineu, she always brought an armful of new toys, stories, and snacks. She wanted to show Hilda, who had been alone in this timeless, unchanging city, the things that the humans of today had made from outside the city.\nPerhaps it was due to her calm personality, but Hilda didn't even glance at the things brought at first. However, she unexpectedly showed interest in a basket containing knitting yarn.\nIt was something Rose brought not for Hilda, but herself so that she could finish knitting Crow and Loah's scarves while she talked with Hilda. But when Hilda showed interest, Rose excitedly showed her how to knit. Since Hilda had shown nothing but disinterest up to that day, Rose took this chance to buy a new entire set of yarn and needles from the market for Hilda, and presented her with a basket Rose decorated herself the next time she visited.\n\nWhen Rose asked Hilda why she suddenly expressed interest only in knitting and not anything else, Hilda replied nonchalantly while knitting, 'It's useful in reflecting my memories, as I do not have to think much'"
+        },
+        "3": {
+            "name": "Everlasting Longing",
+            "description": "[Void Strike] Increases DMG by (0) and changes the max number of stacks to 40.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Hilda/ut/3.png",
+            "story": "A beautiful, ornate pendant engraved with intricate marking on the jewel.\n\nThe people of Lucern all had an identification tag, with no exceptions. The tags were used to pass through the country or to identify oneself. From small, simple ones to ones decorated with flashy gems, the Technomagic work existed in many different forms according to each person's tastes. Those who did not own one were not granted any rights, and were treated like ghosts.\nHolda was not given a tag of her own in the research facility, as she wasn't treated as a human. When Siegfried found out about this, he ordered the royal jewel to make a pendant for Hilda.\nAs the pendant of the royal family was engraved with an identification code in the jewel, only a select few craftsmen from Lucern could do this. The resulting pendant was not only a beautiful combination of skill and art, but also a sign that the bearer was a part of the royal family. no one could understand why the king would give such a precious item to a mere weapon, but he had a small smile on his face as he placed the pendant in Hilda's hand.\n\n'Don't open it just yet. There will come a time when you'll need it.'"
+        },
+        "4": {
+            "name": "Tagalong No. XII",
+            "description": "[Void Frenzy] Recovers 100 mana every sec, and increases ATK by (0) for the duration of [Void Frenzy].",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Hilda/ut/4.png",
+            "story": "Model Name: ZRZL 367-12p\nAKA: Tagalong No.12\n\nThe latest work of Doctor Ignio, the greatest genius in Lucern! A high-tech pet unit!\nA smart pet that enhances its recommended functions, such as day-to-day support, navigation, cooking recipe transmission, etc., according to the owner's preferences through a learning algorithm!\nSay goodbye to the days when you trembled in fear of an angel suddenly falling from the sky and taking off your head!\nComes with enhanced security functions for additional protection in these times of trouble! Experience this refreshing firepower that can send any Angel or Demon packing with a single blast!\n\n...The Tagalong No.12 was not approved for official production from the Spell Bureau. After Heimann discovered Ignio's ridiculous advertisement slogan and confiscated this 'genius invention' before Ignio could send in a request for approval, Siegfried found out about the confiscation and the invention ended up in Hilda's hands. Despite the fact that this invention had the power to rewrite history, the process was far from dignified.\nBut thanks to that undignified process, Hilda didn't have to suffer alone in the oppressive silence of the great city."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up over 20 sec.",
+        "description": "Summons the soul of Dreams of an Artificial God, Innocentia for 10sec, increasing own ATK by 40%, recovering Mana by 200 every sec, and reducing ATK of all enemies by 30% for the duration of Skill.",
+        "cooldown": "20",
+        "uses": "5",
+        "thumbnail": "./data/kr/assets/heroes/Hilda/sw.png",
+        "advancement": {
+            "1": "Changes the Skill Activation Requirements to 15 sec, and reduces DEF of all enemies by 30% for the duration of Skill.",
+            "2": "Changes the duration of soul to 15 sec and increases DMG dealt to enemies by 20% for the duration of Skill."
+        },
+        "story": "After a very long time had passed after Clause and his companions left, the king appeared in Hilda's dreams. To be exact, it was something that resembled the king. When Hilda realized it was Innoctia, she frowned with irritation. Innocentia, apparently having decided to mimic the king's temperament, smiled gently like him and spoke.\n'Don't hate me so much. I just borrowed the shape of the person you love most so we could have a decent conversation. I know I wasn't nice to you before... Still, that's kind of your fault too. The algorithm that the doctor modified gives me the authorization to make contact with your mind according to your psychological state. But until just a while ago, your mind was a messed-up battlefield, including an incredible amount of self-induced delusions. It was honestly hard to watch, even for me.'\nThough the spell had taken the shape of the king, its way of talking was more like the doctor.\n'I'm sorry for barging into your unconsciousness like this. But now that I have the authorization, I need to tell you something about Brunhild. The god that everyone at the research facility dreamed of. It's all programmed into me. And if it ever becomes activated, the process of making you into a god will start. Until now, you didn't have the proper qualifications to become a vessel, so there was no reason to use it, but...'\nThe spell scratched the bridge of its nose with a finger. It was a habit of her king, whenever he had something unpleasant to tell.\n'Normally, you'd need other Transcendents for this, but as the energy of the Void has been accumulated for so long... The activation requirements are nearly completed. Once the requirements are met, I have no choice but to activate the code, even though you probably don't want to become a god. So I've thought about this a little bit. How about if I keep consuming the energy by bearing it instead of you? No, it's not like I want to become god... Stop getting so angry. Do you know that you're really hot-headed? Anyway, I'm suggesting that we keep the energy levels below the line by consuming a large amount of energy over several times. You're not planning to stay here forever, are you? You have to investigate other cities too, you know. The world is probably still under the reign of the goddess and her beings, so wouldn't it be better off to have a secret move or two up your sleeve? Not to mention that never leaving this city is going to be bad for your mental health. Hasn't it been enough, protecting this city all by yourself for all this time?'\n The spell folded its arms after it finished speaking.\nHilda, too, was aware of the fact that she needed to leave the city.\n\nIn her entire life, there was only one eccentric fellow who told her that she was human. He tried to teach her many things, both as a teacher and a parent. Under his guidance, Hilda brought out and named the emotions that had been declared unnecessary and erased, and through that process, she involuntarily ended up unable to choose anything else besides walking in his footsteps. With her half-formed human nature, she could only take the person standing in those footsteps, not the starry sky that he had pointed to. All she had to do was raise her head, and she would have been able to stand in the same place and see what he was looking at. But she had spent staring at her own feet up until now, confining her world into a small, narrow cage. She herself knew this very well. His stars were outside of the footsteps she had followed. Now it was time to step forward. Hilda closed her eyes. The dawn was rising.\n\n'I accept your proposal. I'll check your performance starting by destroying the experiment subjects left in the city.'\nThe wrongs that the humans of the kingdom had committed ran deep. Since it seemed like it would take some time to clean it all up, it was a perfect chance to test the new strength of Innocentia."
+    },
+    "splashart": "./data/kr/assets/heroes/Hilda/sa.png",
+    "costumes": "./data/kr/assets/heroes/Hilda/cos",
+    "visual": null,
+    "aliases": null
+}

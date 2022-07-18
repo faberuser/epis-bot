@@ -1,0 +1,240 @@
+{
+    "infos": {
+        "title": "Royal Technomagi",
+        "class": "Mechanic",
+        "position": "Middle-200",
+        "attack range": "3400",
+        "damage type": "Magical",
+        "gender": "Female",
+        "age": "17",
+        "height": "158",
+        "race": "Human",
+        "constellation": "Armil the Saint",
+        "birth of month": "April 16th, Month of Life",
+        "like": "Technomagic, research funds",
+        "dislike": "People who look down on Technomagic",
+        "story": "A genius technomagi from the Kingdom of Orvelia. She is highly optimistic, and failure never seems to bother her. She dreams of inventing a device that would allow anyone to handle magic one day. She has a magically engineered assistant whom she brought to lelife after years of research. Following the arrival of the Demons, she incorporated her research into developing weapons that would allow anyone to fight against the invaders.",
+        "thumbnail": "./data/kr/assets/heroes/Annette/ico.png",
+        "story_": "A genius technomagi from the Kingdom of Orvelia. She is highly optimistic, and failure never seems to bother her. She dreams of inventing a device that would allow anyone to handle magic one day. She has a magically engineered assistant whom she brought to life after years of research. Following the arrival of the Demons, she incorporated her research into developing weapons that would allow anyone to fight against the invaders."
+    },
+    "skills": {
+        "1": {
+            "name": "Blasting Ray",
+            "cost": "2",
+            "cooldown": "11",
+            "description": "Attacks enemies in a straight line to deal ??? M.DMG, reducing their ATK by 15% and increasing M.DMG they take by 25% for 10 sec. If the skill is used during [Overcharge] state, deals ??? additional M.DMG to the enemies, additionally reduces their ATK by 15%, and additionally increases M.DMG they take by 25%.",
+            "thumbnail": "./data/kr/assets/heroes/Annette/skills/1.png"
+        },
+        "2": {
+            "name": "Emergency Treatment",
+            "cost": "2",
+            "cooldown": "17",
+            "description": "Dispels negative effects of all allies and heals their HP by ??? for 10 sec, increasing CC Resist by 250. If the Skill is used during [Overcharge] state, increases all allies' Crit Chance by 250 and DMG dealt to Non-Hero enemies by 10% and grants immunity to CC.",
+            "thumbnail": "./data/kr/assets/heroes/Annette/skills/2.png"
+        },
+        "3": {
+            "name": "Process of Elimination",
+            "cost": "3",
+            "cooldown": "25",
+            "description": "Explodes an energy orb to a random target and nearby enemies in range, dealing a total of ??? M.DMG. If the Skill is used during [Overcharge] state, deals ??? M.DMG, increasing M.DMG enemies take by 25% for 10 sec, and inflicts Stun for 5 sec when the energy orb explodes.",
+            "thumbnail": "./data/kr/assets/heroes/Annette/skills/3.png"
+        },
+        "4": {
+            "name": "Charge",
+            "cost": null,
+            "cooldown": null,
+            "description": "Gains 1 stack of [Charge] every 0.5 sec, and gains 10 stacks of [Charge] per 1 orb of Mana consumbed. Upon reaching 100 [Charge] stacks, enters [Overcharge] state, increasing ATK by ??? + 5% of Annette's ATK and reducing Cooldown of all Skills by 10% upon normal attack for 15 sec. All effects are irremovable, and Annette cannot gain any [Charge] stacks during [Overcharge] state.",
+            "thumbnail": "./data/kr/assets/heroes/Annette/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "Upon use, the ammount of Charge gained is increased by 30%."
+        },
+        "2": {
+            "II": "Heal Rate is increased by 10%.",
+            "III": "Heal Rate is increased by 15%.",
+            "IV": "Upon use, the ammount of Charge gained is increased by 30%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "Upon use, the ammount of Charge gained is increased by 30%."
+        },
+        "4": {
+            "II": "ATK Boost is increased by 10%.",
+            "III": "ATK Boost is increased by 15%.",
+            "IV": "When Overcharge, ATK Spd is increased by 250."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Target takes 25% increased M.DMG for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Annette/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Charge amount is boosted by 40% upon use.",
+                    "thumbnail": "./data/kr/assets/heroes/Annette/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "The heal effect becomes irremovable.",
+                    "thumbnail": "./data/kr/assets/heroes/Annette/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Charge amount is boosted by 40% upon use.",
+                    "thumbnail": "./data/kr/assets/heroes/Annette/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "DMG is increased by 40%.",
+                    "thumbnail": "./data/kr/assets/heroes/Annette/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Target takes 25% increased M.DMG.",
+                    "thumbnail": "./data/kr/assets/heroes/Annette/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Applies the ATK Boost effect to all allies.",
+                    "thumbnail": "./data/kr/assets/heroes/Annette/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Increases the duration of [Overcharge] by 5 sec. Upon normal attack, changes the Cooldown Reduction effect of all Skills to 12%.",
+                    "thumbnail": "./data/kr/assets/heroes/Annette/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / ATK.Spd +100",
+                "thumbnail": "./data/kr/assets/heroes/Annette/perks/light.png"
+            },
+            "dark": {
+                "effect": "Increases all allies' ATK Spd by 200 and ATK by 5% of Annette's ATK for the duration of [Overcharge].",
+                "thumbnail": "./data/kr/assets/heroes/Annette/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Crystallized Technomagic, Rascal",
+        "description": "Gains 1 stack of Charge every (0) sec, and recovers Mana by 1%. Charge stacks can also be gained during [Overcharge] state. Additionally, increases all allies' DMG dealt to Bosses by (1) and reduces DMG all allies take by (2) for the duration of [Overcharge]. This effect is multiplied by 2 for the ally with the highest ATK.",
+        "value": {
+            "0": {
+                "0": "1.5",
+                "1": "1.4",
+                "2": "1.3",
+                "3": "1.1",
+                "4": "0.9",
+                "5": "0.7"
+            },
+            "1": {
+                "0": "2%",
+                "1": "2.4%",
+                "2": "2.9%",
+                "3": "3.5%",
+                "4": "4.2%",
+                "5": "5%"
+            },
+            "2": {
+                "0": "2%",
+                "1": "2.4%",
+                "2": "2.9%",
+                "3": "3.5%",
+                "4": "4.2%",
+                "5": "5%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Annette/uw.png",
+        "story": "The essence of technomagic, created based on Annette's theory. Five of the highest-ranking court wizards of Orvel have poured their energy into creating this magical being. It has its own will, making it capable of making independent decisions and acting on them. While it shares its mana with Annette, it can also utilize any other available mana nearby. As such, it is the first great milestone in Annette's effort to make magic available to all."
+    },
+    "uts": {
+        "1": {
+            "name": "Triplex Condensing Lens",
+            "description": "[Ray of Annihilation] For 10 sec, reduces the target's Crit Chance by 250 and the target's Mana by (0).",
+            "value": {
+                "0": {
+                    "0": "400",
+                    "1": "480",
+                    "2": "580",
+                    "3": "700",
+                    "4": "840",
+                    "5": "1000"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Annette/ut/1.png",
+            "story": "A triplex condensing lens invented by Annette to let Rascal use Blasting Ray. This special lens can be rotated to control its condensing rate and reflection angle, so that the shape of the photons fired can be easily manipulated. If all layers are aligned, Rascal shoots a linear photonic laser, and when the layers are cross-linked, it diffuses the reflection of photonic energy to perform Process of Elimination."
+        },
+        "2": {
+            "name": "Script of Healing",
+            "description": "[Emergency Treatment] Reduces Mana Cost by 1 and increases heal rate by (0),",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Annette/ut/2.png",
+            "story": "A healing script for emergencies. It's a product of the secret society of magic engineering, Babel's workshop for the month, 'Battles are Self-serve! Winning scripts in Mechanic Script Battles.' Created by Annette, it's a skill that can heal allies just through engineering, without borrowing any healing magic powers."
+        },
+        "3": {
+            "name": "Code of Annihilation",
+            "description": "[Process of Elimination] DMG is increased by (0) and upon ATK, gains 2 stack of Charge. This stack can be gained while in Overcharge state.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Annette/ut/3.png",
+            "story": "The top secret code of Babel, the secret society of magic engineering. Magic for normal people! The secret society of technomagi, Babel, is an anonymous society that dreams of making magic available to all. They have each provided a technomagical technique as a secret code, and they've only allowed the use of it to those who can decipher it. Annette deciphered a top secret code in 4 minutes and is using it in the annihilation process."
+        },
+        "4": {
+            "name": "High Performance Battery",
+            "description": "[Charge] Gains (0) stacks of Charge at the beginning of every battle. While in Overcharge, Normal attacks increase Cooldown Reduction by 5%.",
+            "value": {
+                "0": {
+                    "0": "30",
+                    "1": "36",
+                    "2": "43",
+                    "3": "52",
+                    "4": "63",
+                    "5": "75"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Annette/ut/4.png",
+            "story": "A battery that Annette developed with her technomagic knowledge using a strange material extracted from a fossil of an ancient civilization. It was initially made to supply backup power to Rascal in emergencies, but it was too powerful that it would overcharge Rascal a little too often. After thinking about it, Annette decided to use it in combat and customized Rascal's parts to utilize its powers."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up over 20 sec.",
+        "description": "Summons the soul of Crystallized Technomagic, Rascal, recovering Mana of all allies by 300 every sec for 15 sec. Afterward, enters [Overcharge] state, increasing M.DMG all enemies take by 30% for the duration. If the target is a Boss, changes the DMG Boost effect to 60%.",
+        "cooldown": "25",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Annette/sw.png",
+        "advancement": {
+            "1": "Increases all allies' ATK by 30% and Crit DMG by 50% for the duration of Skill.",
+            "2": "Reduces Skill Activation Requirements by 5 sec. Additionally, reduces all allies' Cooldown of all Skills by 0.5 sec every sec."
+        },
+        "story": "Rascal is an autonomous technomagic lifeform with free will, and is one of the wonders of Orverl.\nHowever, Annette's success with the creation of a technomagic lifeform brought heated discussion among scholars.\nDiscussion soon turned into debates, and later into conflicts.\n\nSome clained that Rascal's existence is a treacherous act against the God, and that it should be elminated at once, while others viewed Rascal as a miracle, a grand discovery, a salvation to the future of mankind.\n\nAnnette did not appreciate this conflict. She only wished to invent items that would help, protect, and make humans happy.\nShe had zero intention of unmaking Rascal. Rascal was her friend, her inventor partner, and a great assistant.\nThe source of Annette's happiness was watching Rascal improve.\nThere was no way Annette would think about being separated from it.\nMeanwhile, Rascal strives to upgrade itself more and more to please Annette who always watched it with a grand expectation..."
+    },
+    "splashart": "./data/kr/assets/heroes/Annette/sa.png",
+    "costumes": "./data/kr/assets/heroes/Annette/cos",
+    "visual": null,
+    "aliases": null
+}

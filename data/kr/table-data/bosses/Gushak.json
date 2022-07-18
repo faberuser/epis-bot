@@ -1,0 +1,52 @@
+{
+    "infos": {
+        "class": "Gushak",
+        "title": "Chieftain of the Blood Altar",
+        "race": "Orc",
+        "damage type": "Physical",
+        "recommended heroes": "Leo, Nyx, Tanya",
+        "characteristics": "Stacks [Orc Rage] each time the boss takes DMG. Stacks up to 100 times, which causes Enragement, greatly increasing stats. Heroes that can [Dispel] are advantageous in this stage.",
+        "thumbnail": "./data/kr/assets/bosses/gr/Gushak.png"
+    },
+    "skills": {
+        "page 1": {
+            "1": {
+                "name": "Vermilion Slash",
+                "cost": null,
+                "cooldown": "15",
+                "description": "Twirls weapon in a circle, dealing P.DMG to nearby enemies. The final hit emits a shockwave, knocking over enemies for 2 sec."
+            },
+            "2": {
+                "name": "Blade Frenzy",
+                "cost": null,
+                "cooldown": "25",
+                "description": "Attacks the enemy 3 times and then strikes downwards, dealing P.DMG to nearby enemies and stunning them for 5 sec."
+            },
+            "3": {
+                "name": "Blood Strike",
+                "cost": null,
+                "cooldown": "45",
+                "description": "Stomp the ground, stunning nearby enemies for 4 sec. Then, gathering energy, attack enemies with a wide swing to deal massive P.DMG to nearby enemies."
+            },
+            "4": {
+                "name": "Orc Rage",
+                "cost": null,
+                "cooldown": null,
+                "description": "Stacks 1 stack of Orc Rage per every time he takes DMG. Lasts 10 sec and each time ATK and DEF rise by 0.7%. Stacks to a max of 100 times, and upon 100 stacks, gain CC immunity and boosted stats for 7 sec."
+            }
+        },
+        "page 2": {
+            "5": {
+                "name": "Purify",
+                "cost": null,
+                "cooldown": null,
+                "description": "Every 30 sec, remove all negative effects and increase ATK SPD."
+            }
+        }
+    },
+    "aliases": [
+        "Gushak",
+        "GR4",
+        "GR 4"
+    ]
+}

@@ -1,0 +1,246 @@
+{
+    "infos": {
+        "title": "Forsaken Faith",
+        "class": "Priest",
+        "position": "Back",
+        "attack range": "8500",
+        "damage type": "Magical",
+        "gender": "Female",
+        "age": "18",
+        "height": "170",
+        "race": "Corrupted Angel",
+        "constellation": "Guardian Mertis",
+        "birth of month": "January 1st, Month of Protection",
+        "like": "Kasel",
+        "dislike": "Lua, everything that threatens Kasel",
+        "story": "A being that always remains by the Dark Lord's side, and would follow him through anything. Although she was an exceptional priestess and was expected to do great things, she fell into despair and rage when the goddess Lua abandoned Kasel. She corrupted herself by unleashing the darkness that she had bound deep within her soul. At the same time, all the memories of her past life came back to her, and she realized why she had such a strong divine power, but she could no longer go back to the days when she blindly followed the goddess. The divine power within her turned into demonic energy fueled with rage and hatred, and her once-devout faith became shattered by sadness and confusion. The corruption that was foretold the moment Frey descended to the World Tree...",
+        "thumbnail": "./data/kr/assets/heroes/Fallen Frey/ico.png",
+        "story_": "A being that always remains by the Dark Lord's side, and would follow him through anything. Altough she was an exceptional priestess and was expected to do great things, she fell into despair and rage when the goddess Lua abandoned Kasel. She corrupted herself by unleashing the darkness that she had bound deep within her soul. At the same time, all the memories of her past life came ack to her, and she realized why she had such a strong divine pwoer, but she could no longer go back to the days when she blindly followed the goddess. The divine power within her turned into demonic energy fueled with rage and hatred, and her once-devout faith became shattered by sadness and confusion. The corruption that was foretold the moment Frey descended to the World Tree... Frey turned her back to Lua's will that commanded her to protect the Warrior of the Holy Sword, and instead, accompanies the Dark Lord on his path, for that is what her heart desires. All while keeping the unwavering vow that she will talk the same path Kasel walks, forever."
+    },
+    "skills": {
+        "1": {
+            "name": "Light of Doom",
+            "cost": "2",
+            "cooldown": "9",
+            "description": "Heals HP of the ally with the lowest HP and nearby allies by ??? and increases Heal Rate by 20% for 10 sec. Afterwards, explodes the area around the target and deals ??? M.DMG to enemies in range, reducing their Heal Rate by 20% for 10 seconds. If this skill is used when there are 1 or more stacks of [Darkened Power], consumes 1 stack and dispels positive effects of enemies within range.",
+            "thumbnail": "./data/kr/assets/heroes/Fallen Frey/skills/1.png"
+        },
+        "2": {
+            "name": "Blessing of Doom",
+            "cost": "3",
+            "cooldown": "17",
+            "description": "Grants [Blessing of Doom] to 4 allies with the lowest HP, absorbing ??? DMG for 10 seconds. For the duration of the shield, target gains immunity to CC, and ATK Spd is increased by 500. If this skill is used when there are 1 or more stacks of [Darkened Power], consumes 1 stack and uses skill while ignoring negative effects upon self, and additionally dispels negative effects from allies.",
+            "thumbnail": "./data/kr/assets/heroes/Fallen Frey/skills/2.png"
+        },
+        "3": {
+            "name": "Heaven's Vengeance",
+            "cost": "5",
+            "cooldown": "22",
+            "description": "Brings Heaven's Vengeance upon a random enemy and nearby targets over 20 hits, dealing ??? M.DMG and increases All DMG the target takes by 10% for 20 sec. This skill is applied with a bonus DEF Penetration of 500. If this skill is used when there are 1 or more stacks of [Darkened Power], consumes 1 stack and stuns the hit targets for 0.5 seconds. DMG Boost effect can be stacked up to max 5 times.",
+            "thumbnail": "./data/kr/assets/heroes/Fallen Frey/skills/3.png"
+        },
+        "4": {
+            "name": "Tainted Angel",
+            "cost": null,
+            "cooldown": null,
+            "description": "As Fallen Frey has been corrupted by the darkness, she takes increased DMG by 15%, but she recovers 400 Mana per sec, and when her Mana is at 100%, she obtains [Darkened Power] every sec. [Darkened Power] can be stacked up to max 2 times and is irremovable.",
+            "thumbnail": "./data/kr/assets/heroes/Fallen Frey/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "Heal Rate and DMG are increased by 10%.",
+            "III": "Heal Rate and DMG are increased by 15%.",
+            "IV": "Heal Rate and DMG are increased by 25%."
+        },
+        "2": {
+            "II": "Shield is increased by 10%.",
+            "III": "Shield is increased by 15%.",
+            "IV": "Shield is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "Mana Recovery is increased by 10%.",
+            "III": "Mana Recovery is increased by 15%.",
+            "IV": "Mana Recovery is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Increases all DMG the hit enemies take by 20% for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Fallen Frey/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Mana Cost is increased by 1 and Heal Rate is increased by 100%.",
+                    "thumbnail": "./data/kr/assets/heroes/Fallen Frey/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Target of shield changes to all allies.",
+                    "thumbnail": "./data/kr/assets/heroes/Fallen Frey/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "All Block Chance of shielded allies is increased by 400.",
+                    "thumbnail": "./data/kr/assets/heroes/Fallen Frey/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "DMG is increased by 40%.",
+                    "thumbnail": "./data/kr/assets/heroes/Fallen Frey/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Each hit reduces Mana by 200.",
+                    "thumbnail": "./data/kr/assets/heroes/Fallen Frey/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "At the beginning of the first battle, bestows [Blessing of the Fallen Angel] to all allies excluding self and reduces All DMG the targets take by 10%, and increases All DEF by 20%. The [Blessing of the Fallen Angel] effect is irremovable.",
+                    "thumbnail": "./data/kr/assets/heroes/Fallen Frey/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "At the beginning of the first battle, bestows [Bond of the Fallen Angel] to 1 ally with the highest ATK excluding self, increasing the target's ATK Spd by 200 and increases the ATK equal to 7% of Fallen Frey's ATK. The [Bond of the Fallen Angel] effect is irremovable.",
+                    "thumbnail": "./data/kr/assets/heroes/Fallen Frey/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit Chance +100",
+                "thumbnail": "./data/kr/assets/heroes/Fallen Frey/perks/light.png"
+            },
+            "dark": {
+                "effect": "At the beginning of each battle, increases ATK Spd of the ally with the highest ATK excluding self by 150 and it's DMG dealt to non-hero enemies by 15% for 30 sec. This effect is irremovable.",
+                "thumbnail": "./data/kr/assets/heroes/Fallen Frey/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Angel's Despair, Rosmerta",
+        "description": "Upon using a Skill, heals HP of 2 allies with the highest ATK equal to (0) of Fallen Frey's ATK and increases DEF Penetration by (1) for 7 sec. If [Dark Lord Kasel] is an ally, increases ATK Spd of [Dark Lord Kasel] by (2).",
+        "value": {
+            "0": {
+                "0": "140%",
+                "1": "170%",
+                "2": "210%",
+                "3": "250%",
+                "4": "300%",
+                "5": "360%"
+            },
+            "1": {
+                "0": "200",
+                "1": "240",
+                "2": "290",
+                "3": "350",
+                "4": "420",
+                "5": "500"
+            },
+            "2": {
+                "0": "200",
+                "1": "240",
+                "2": "290",
+                "3": "350",
+                "4": "420",
+                "5": "500"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Fallen Frey/uw.png",
+        "story": "The holy relic, containing the power of a high angel, had been named 'Rosmerta' after the angel who entrusted its power to the church. It had always been kept secure by the Church of Lua until Iris entrusted Rosmerta with Frey, whom she wished to leave along with Kasel. Altough they didn't realize at the time, Rosmerta was able to easily assimilate with Frey since it used to be Frey's own Power. Like a mirror reflecting Frey's faith, it always sent out a kind, warm light. But because it reflected Frey's heart, once Frey lost her faith after the battle at the Dark Lord's Castle, along with Frey whose heart was lost, 'Rosmerta' also lost her power of light and became distorted into a dark, wretched shape of darkness."
+    },
+    "uts": {
+        "1": {
+            "name": "Shattered Faith",
+            "description": "[Light of Doom] Increases Heal Rate and DMG by (0). The Heal Rate Boost and Reduction effect becomes irremovable.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Fallen Frey/ut/1.png",
+            "story": "For Frey, who had been born and raised in the Churche of Lua, the goddess Lua was a powerful and familiar spiritual anchor to Frey as much as Kasel was. Whenever Frey was going through a hard time or unsure of what to do, she always prayed to the goddess, hoping for wisdom and guidance. She gave everything to fulfill the will of the goddess, but her devout faith was betrayed in the cruelest way. When the goddes threw Frey's dearest person aside like he was nothing but a pawn, Frey became engulfed in a unimaginable despair, which soon turned into rage at the disloyal goddess who had abandoned her trust. Perhaps it was because of this rage; the small goddess statue that Frey had always devotedly used for prayer, had ended up shattered into a blasphemous shape."
+        },
+        "2": {
+            "name": "Broken Angel's Egg",
+            "description": "[Blessings of Doom] Increases the duration of shield by (0) sec and ATK of targets by 30% for the duration of shield.",
+            "value": {
+                "0": {
+                    "0": "3",
+                    "1": "4",
+                    "2": "5",
+                    "3": "6",
+                    "4": "7",
+                    "5": "8"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Fallen Frey/ut/2.png",
+            "story": "The crystal orb that Frey had as a baby used to have a luster like an angel's hair. But when the darkness inside Frey awoke, the orb's light also became corrupted, and it was enveloped with a dim, bleak aura. The orb, unable to endure the darkness, slowly started to crack and eventually shattered. As the corruptive energy spread, the orbs shape became more and more twisted, until it could no longer be called an Angel's Egg. When Frey saw the treasure she had once so dearly loved took on such a hideous form along with her transformation, Frey felt as if it was reflecting her fallen state. Frey simply laighed at this feeling and threw the broken Angel's Egg away."
+        },
+        "3": {
+            "name": "Blossomed Dream",
+            "description": "[Heaven's Vengeance] Increases DMG by (0) and gains immunity to CC while in use.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Fallen Frey/ut/3.png",
+            "story": "As his travels continued, Kasel's trust and friendship towards his companions grew bigger, and he came to regard them as precious friends. Frey, who treasured Kasel the most in the world, loved his companions only as much as Kasel, the kind boy who gave his heart to his dear companions who had stayed with him to the end without giving up on him. Because she had stayed by his side for such a long time, she knew how much he cared for his companions and how grateful he was for them. She decided to make dolls in the form of their companions as a special present for him. She continued to sew late into the night imagining the smile that Kasel would make upon seeing the dolls. But just before the dolls were finished, Kasel's bright smile was painted over by the Dark Lord's demonic energy and was no more."
+        },
+        "4": {
+            "name": "Ring of Allure",
+            "description": "[Tainted Angel] Increases Mana Recovery per sec by 50% and ATK of all allies by (0). If the target is [Dark Lord Kasel], the ATK Boost effect multiplies by 3 times.",
+            "value": {
+                "0": {
+                    "0": "8%",
+                    "1": "10%",
+                    "2": "12%",
+                    "3": "14%",
+                    "4": "17%",
+                    "5": "20%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Fallen Frey/ut/4.png",
+            "story": "The pwoer of darkness that corrupted Frey continued to spread as she grew. At the battle of the Dark Lord's Castle, when Frey's despair became the deepest, the darkness broke through her inner barrier of light like a raging river bursting a dam. The angel who obtained a new strength called darkness without even acknowledgement entered a fallen state as a punishment for her betrayal against her master Lua. As Frey rewrote her existence as a fallen angel, she realized there was an unfamiliar ring on her hand. The ring emitted a cold, threatening aura that was even too twisted compared to the demonic energy that had taken over Kasel's body. 'This power isn't Kasel's, so I don't need it.' Frey murmured quietly and was about to take off the rung when a sinister coice crawled in her ear.\n'This is going to be of use someday. Just wait a little longer.'"
+        }
+    },
+    "sw": {
+        "requirement": "Charges up over 20 sec.",
+        "description": "Summons the soul of Angel's Despair, Rosmarta, increasing DMG of Heaven's Vengeance by 50% for 10 sec, and applies [Angel's Despair] to all enemies, reducing their ATK by 25%. Afterward, delivers [Judgment of the Fallen Angel] to a random enemy and nearby every 1 sec, dealing ??? M.DMG each hit and reducing ATK Spd by 100 for 10 sec. The ATK Spd Reduction effect can be stacked up to max 5 times.",
+        "cooldown": "18",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Fallen Frey/sw.png",
+        "advancement": {
+            "1": "The activation requirement will be reduced by 4 seconds and [Angel's Despair] will reduce the ATK by 40%.",
+            "2": "Removes buffs from enemies each hit and increases damage taken by 40% for 10 seconds."
+        },
+        "story": "Altough the deperate prayers begging for Kasel's return failed to reach the goddess, the chilling anguish of that plea touched the heart of the holy artifact 'Rosmerta.' Though Frey chose to betray the goddess again she was unwavering in her faith and showed loeve towards Kasel. The kind, warm light answered her deperate, miserable plea, giving her black winfs that suited her prayer to envelop her wretched heart gently. Deeply feeling Frey's anguish, despair, sadness, and confusion, it promised Frey tthat ti would stay by her side no matter what path she took."
+    },
+    "splashart": "./data/kr/assets/heroes/Fallen Frey/sa.png",
+    "costumes": "./data/kr/assets/heroes/Fallen Frey/cos",
+    "visual": null,
+    "aliases": [
+        "ff",
+        "ffrey",
+        "dfrey",
+        "darkfrey",
+        "dark frey"
+    ]
+}

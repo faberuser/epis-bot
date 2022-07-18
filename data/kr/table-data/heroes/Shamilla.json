@@ -1,0 +1,232 @@
+{
+    "infos": {
+        "title": "The Vessel of Curses",
+        "class": "Archer",
+        "position": "Back-300",
+        "attack range": "5300",
+        "damage type": "Magical",
+        "gender": "Female",
+        "age": "???",
+        "height": "165",
+        "race": "Demon",
+        "constellation": "Mira the Minstrel",
+        "birth of month": "June 2nd, Month of Love",
+        "like": "Unexpected situations, people who fight against the flow of things",
+        "dislike": "Boring scenarios, obvious stories",
+        "story": "A powerful Demon who used to be one of the officers serving Dark Lord Angmund. She is capable of holding all of the curses in the world. But her real goal isn't the resurrection of the Dark Lord, nor world domination. Everything that happens in the world is a part of a drama, and she thinks of herself as the audience. Her actions are like that of a scriptwriter who revises the scenario, pulling the strings from the shadows and looking forward to how the scenes she's written play out.",
+        "thumbnail": "./data/kr/assets/heroes/Shamilla/ico.png",
+        "story_": "A powerful Demon who used to be one of the officers serving Dark Lord Angmund. She is capable of holding all of the curses in the world. But her real goal isn't the resurrection of the Dark Lord, nor world domination. Everything that happens in the world is a part of a drama, and she thinks of herself as the audience. Her actions are like that of a scriptwriter who revises the scenario, pulling the strings from the shadows and looking forward to how the scenes she's written play out."
+    },
+    "skills": {
+        "1": {
+            "name": "Curse of Petrification",
+            "cost": "2",
+            "cooldown": "12",
+            "description": "Attacks 2 enemy dealing ??? M.DMG and inflicting irremovable [Curse of Petrification] for 3 sec. Enemies under the [Curse of Petrification] have ATK Spd reduced by 200, and this effect gets stronger up to max 600% as time passes. When the curse ends, petrifies the target for 3 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Shamilla/skills/1.png"
+        },
+        "2": {
+            "name": "Curse of Time",
+            "cost": "2",
+            "cooldown": "18",
+            "description": "Attacks an enemy, dispelling positive effects from the target, dealing ??? M.DMG and inflicting [Curse of Time] for 10 sec which increases Cooldown of all Skills by 1.5 sec. Every 3 sec, an enemy under the [Curse of Time] state has its Cooldown of all Skills increased by 1 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Shamilla/skills/2.png"
+        },
+        "3": {
+            "name": "Curse of Pain",
+            "cost": "3",
+            "cooldown": "9",
+            "description": "Attacks en enemy dealing ??? M.DMG and inflicting knockback. Also inflicts Curse of Pain for 8 seconds, dealing a total of ??? M.DMG over time.",
+            "thumbnail": "./data/kr/assets/heroes/Shamilla/skills/3.png"
+        },
+        "4": {
+            "name": "The Vessel of Curses",
+            "cost": null,
+            "cooldown": null,
+            "description": "At the beginning of every battle or whenever self kills an enemy, obtains [The Vessel of Curses] and creates an irremovable Shield that absorbs ??? DMG for 10 sec upon self. For the duration of the Shield, increases CC ACC by 400, gains immunity to CC, and upon using a Skill, consumes [The Vessel of Curses] to change the number of targets to 4 enemies.",
+            "thumbnail": "./data/kr/assets/heroes/Shamilla/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "Shield is increased by 10%.",
+            "III": "Shield is increased by 15%.",
+            "IV": "Shield is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Reduces Cooldown by 3 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Shamilla/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Reduces hit enemy's Mana by 1000.",
+                    "thumbnail": "./data/kr/assets/heroes/Shamilla/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Reduces Mana Cost by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Shamilla/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Changes the target to the enemy with the highest ATK.",
+                    "thumbnail": "./data/kr/assets/heroes/Shamilla/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Target takes 25% increased M.DMG for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Shamilla/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Increases DMG by 40%.",
+                    "thumbnail": "./data/kr/assets/heroes/Shamilla/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Reduces DMG taken by 30% when not owning [The Vessel of Curses]",
+                    "thumbnail": "./data/kr/assets/heroes/Shamilla/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "[The Vessel of Curses] can now be dispelled, but increases Shield by 100%.",
+                    "thumbnail": "./data/kr/assets/heroes/Shamilla/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / ATK.Spd +100",
+                "thumbnail": "./data/kr/assets/heroes/Shamilla/perks/light.png"
+            },
+            "dark": {
+                "effect": "All effects of curse are enhanced. [Curse of Petrification] Petrification duration is increased by 2 sec. [Curse of Time] Curse of Time duration is increased by 3 sec. [Curse of Pain] Curse of Pain DOT is increased by 50%.",
+                "thumbnail": "./data/kr/assets/heroes/Shamilla/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Wings of Corruption, Apoliox",
+        "description": "Every (0) seconds, obtains The Vessel of Curses and increases ATK by (1) for 10 seconds.",
+        "value": {
+            "0": {
+                "0": "20",
+                "1": "18",
+                "2": "16",
+                "3": "14",
+                "4": "12",
+                "5": "10"
+            },
+            "1": {
+                "0": "20%",
+                "1": "24%",
+                "2": "29%",
+                "3": "35%",
+                "4": "42%",
+                "5": "50%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Shamilla/uw.png",
+        "story": "Curses are born from negative feelings such as hatred, jealousy, and resentment. These are the best food for Shamilla. The wings that grew powerful during the Demon War by absorbing the curses of countless people are terrifying to normal people. Those who are touched by the feathers are said to be bound by many curses, and they fall into a vortex of emotions. In that abyss, a captivating and seductive laughter echoes. The laughter of a demon that enjoys the different kinds of human feelings."
+    },
+    "uts": {
+        "1": {
+            "name": "Liberation of Curses",
+            "description": "[Curse of Petrification] Increases the number of targets by 1, and for 10 sec, reduces the target's M.Dodge by (0) for the duration of skill.",
+            "value": {
+                "0": {
+                    "0": "120",
+                    "1": "140",
+                    "2": "170",
+                    "3": "210",
+                    "4": "250",
+                    "5": "300"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Shamilla/ut/1.png",
+            "story": "A jewel that releases the curses that Shamilla has inside her. Shamilla sometimes uses this jewel to release curses from her body, just to watch an exciting story unfold according to her plans. The most common curse she releases is petrification, mostly to make sure that the right characters are in play for her scheme."
+        },
+        "2": {
+            "name": "Ancient Demon's Heart",
+            "description": "[Curse of Time] Additionally increases Cooldown by 0.7 sec and reduces M.DEF of the target by (0) for 10 sec.",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Shamilla/ut/2.png",
+            "story": "A strange jewel from which the resentful whispers of ancient demons can be heard. A cursed item filled with the souls of long forgotten ancient demons. They wish to escape every day, but she won't let them out that easily. Her soul has accepted all the curses of the world, so it is as deep and dark as the abyss."
+        },
+        "3": {
+            "name": "The Jar of Curses",
+            "description": "[Curse of Pain] Increases DMG by (0), and continuous DMG becomes irremovable.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Shamilla/ut/3.png",
+            "story": "Shamilla has been cursed to hold all the curses in the world inside her, but could also be seen as a savior who binds all those curses. Her death would mean that all the evil she holds within would go back out into the world. This Jar of Curses that Shamilla made is used to retrieve the curses that Shamilla spat out."
+        },
+        "4": {
+            "name": "Primal Curse",
+            "description": "[The Vessel of Curses] Upon gaining the Vessel of Curses, self's Cooldown of all skills is reduced by (0) and All DEF is increased by 50% for 5 sec. The DEF Boost effect is irremovable.",
+            "value": {
+                "0": {
+                    "0": "12%",
+                    "1": "14%",
+                    "2": "17%",
+                    "3": "21%",
+                    "4": "25%",
+                    "5": "30%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Shamilla/ut/4.png",
+            "story": "The very source of all curses. Its root sprouted when hatred was born, and the evil became known to world at the beginning. It is located in deep within Shamilla, the Vessel of Curses, growing more hideous as more curses are derived from it."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up over 20 sec.",
+        "description": "Dispels negative effects from self and summons the soul of Wings of Corruption, Apoliox, inflicting [Curse of Apoliox] to all enemies and granting [The Vessel of Curses] on self. [Curse of Apoliox] reduces enemy's M.DEF by 50% and Heal Rate by 50% for 10 sec.",
+        "cooldown": "18",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Shamilla/sw.png",
+        "advancement": {
+            "1": "Reduces Skill requirements by 5 sec, and recovers 2000 mana upon use of Skill.",
+            "2": "[Curse of Apoliox] becomes irremovable and enemies inflicted with [Curse of Apoliox] have their Mana reduced by 300 every sec."
+        },
+        "story": "Shamilla, after tearing her own wings apart, lived and walked among the humans.\nAt times, she lived as a noble, and at times, she lived as a commener.\nShe manipulated and made humans act as she desired, editing the script of the world as she fits, and feasted upon hatred, resentment, and sadness which were the products of conflicts her manipulation caused.\n\nShamilla however, found herself drowning in tedium.\nShe deeply wished to see and experience unexpected situations from the actors of her script which she had edited thousands of times. Shamilla was hungry for new emotion, one she had never felt before.\nShe wanted to feel the fresh, mystical curse, one that had never existed.\n\nShamilla then came up with a thought: If there is someone who's different from me, but has a similar purpose, perhaps then, I might reach my goal faster, and find a different ending.\n\nAfter closing her thought, she imbued her wings with a part of her soul and..."
+    },
+    "splashart": "./data/kr/assets/heroes/Shamilla/sa.png",
+    "costumes": "./data/kr/assets/heroes/Shamilla/cos",
+    "visual": null,
+    "aliases": null
+}

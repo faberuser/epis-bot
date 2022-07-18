@@ -1,0 +1,102 @@
+{
+    "infos": {
+        "class": "Otherworldly Shakmeh",
+        "title": "Otherworldly Darkness",
+        "race": "Tidhar",
+        "damage type": "Physical",
+        "recommended heroes": "Kirze, Xerah, Lakrak",
+        "characteristics": "You will battle Otherworldly Darkness Shakmeh with 2 parties, and you must be careful since the two parties will not affect each other. Also, Shakmeh will be equipped with new Skills for battles above Stage 3 and Stage 5, so you need to be prepared. You can use [Protection of the Oasis] and [Wrath of the Desert] Skills when you are battling Otherworldly Darkness Shakmeh. Use them to defeat Shakmeh.",
+        "thumbnail": "./data/kr/assets/bosses/shakmeh/Otherworldly Darkness Shakmeh.png"
+    },
+    "skills": {
+        "page 1": {
+            "1": {
+                "name": "Shadow of Sword which devoured Resentment",
+                "cost": null,
+                "cooldown" : "9",
+                "description": "Attacks all enemies with the Shadow of Sword, dealing P.DMG and recovering Shakmeh's Mana. The higher the Shakmeh's current Mana is, the more DMG the Skill deals. The lower the current Mana, the higher the Mana Recovery."
+            },
+            "2": {
+                "name": "Tide of Sin which devoured Darkness",
+                "cost": null,
+                "cooldown": "20",
+                "description": "Summons an Otherworldly Sword to send Tide of Sin toward the Path of the Shadow, dealing P.DMG and inflicting [Pleasure of Sin]. Heroes inflicted by [Pleasure of Sin] cannot Lifesteal, heave their Heal Rate reduced, and take continuous P.DMG, but deals increased DMG. [Pleasure of Sin] is irremovable until the target's current HP falls to 25% or below."
+            },
+            "3": {
+                "name": "Storm of Hatred which devoured Despair",
+                "cost": null,
+                "cooldown" : "20",
+                "description": "Summons the Storm of Hatred upon the Path of the Sun, dealing P.DMG over 14 times, reducing ATK Spd for 10 sec, and disabling Lifesteal within the storm. This Skill deals more DMG to enemies with low ATK Spd."
+            }
+        },
+        "page 2": {
+            "4": {
+                "name": "Judgment of Radiance which devoured Life",
+                "cost": null,
+                "cooldown": "23",
+                "description": "Judges the enemies on the Path of the Shadow over 6 times every 2 sec, dispelling positive effects, dealing P.DMG, and inflicting Stun. If the target is already inflicted with Stun, reduces the target's Heal Rate permanently and recovers Shakmeh's Mana. The higher the Shakmeh's current Mana, the higher the DMG. The lower the current Mana, the higher the Mana Recovery."
+            },
+            "5": {
+                "name": "Pulse of Absolute Darkness which devoured Rage",
+                "cost": null,
+                "cooldown": "23",
+                "description": "Attacks the enemies on the Path of the Sun, dealing P.DMG, reducing DMG the target deals, and summoning the [Tree of Sin] for 10 sec. [Tree of Sin] reduces ATK of nearby enemies every sec. After 10 sec, if the [Tree of Sin] is alive, Shakmeh causes Pulse of Absolute Darkness to instantly kill the enemies on the Path of the Sun."
+            }
+        },
+        "page 3": {
+            "6": {
+                "name": "Revenge of the Uncrowned",
+                "cost": null,
+                "cooldown": null,
+                "description": "When Shakmeh's HP falls to 66% and 33%, he summons the Sword of Revenge, dispels positive effects from all enemies, and deals P.DMG. If Corrupted Power is at 50% or higher, he annihilates all enemies."
+            },
+            "7": {
+                "name": "Vessel that Consumed Sin",
+                "cost": null,
+                "cooldown": null,
+                "description": "Shakmeh is not affected by ATK Spd or DEF Reduction. Additionally, he recovers Mana quickly, and if he has high Mana, his All Block Chance is increased. When Shakmeh's Mana becomes 0, he cannot recover Mana for 7 sec, takes more DMG, but he gains an irremovable shield. After 7 sec, Shakmeh recovers Mana by a massive amount."
+            },
+            "8": {
+                "name": "Fall of the One Consumed by the Abyss",
+                "cost": null,
+                "cooldown": null,
+                "description": "Shakmeh uses the Power of Abyss to deal attacks that always hit and deal DMG that ignores the enemy's DEF, but his DEF is very low. In stage 3 or above, Shakmeh can use the [Revenge of the Uncrowned] Skill. In Stage 5 or above, he can use the [Pulse of Absolute Darkness which devoured Rage] Skill."
+            }
+        },
+        "page 4": {
+            "9": {
+                "name": "Corrupted Power of Otherworldly Darkness Shakmeh",
+                "cost": null,
+                "cooldown": null,
+                "description": "Otherworldly Darkness Shakmeh commands Corrupted Power. This power is reduced when Shakmeh is inflicted with CC. If Shakmeh consumes all of his Corrupted Power, he will take increased DMG. However, if Shakmeh uses his [Revenge of the Uncrowned] Skill, he recovers all of the consumed Corrupted Power."
+            },
+            "10": {
+                "name": "Path of the Sun/Path of the Shadow",
+                "cost": null,
+                "cooldown": null,
+                "description": "In the battle against Shakmeh, Melee Heroes must enter the [Path of the Sun], and Ranged Heroes must enter [Path of the Shadow]. The Heroes on different paths cannot affect the Heroes of the other side in any way."
+            }
+        },
+        "page 5": {
+            "11": {
+                "name": "Protection of the Oasis",
+                "cost": null,
+                "cooldown": "5",
+                "description": "For 7 sec, Heroes on the Path of the Sun take reduced DMG, become immune to negative effects, and heal HP proportional to their Max HP every sec. This effects is available after 10 sec of charging."
+            },
+            "12": {
+                "name": "Wrath of the Desert",
+                "cost": null,
+                "cooldown": "5",
+                "description": "Attacks Shakmeh, reducing his Mana and [Corrupted Power] greatly, and destroys his shield afterward. This effect is available after 15 sec of charging. After first use, it can be charged additionally for 15 sec, additionally enhancing all effect."
+            }
+        }
+    },
+    "aliases": [
+        "OtherworldlyShakmeh",
+        "DarknessShakmeh",
+        "BigShakmeh",
+        "HugeShakmeh",
+        "AdultShakmeh"
+    ]
+}

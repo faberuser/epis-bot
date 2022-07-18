@@ -1,0 +1,232 @@
+{
+    "infos": {
+        "title": "Lua's Judgment",
+        "class": "Knight",
+        "position": "Front-700",
+        "attack range": "3600",
+        "damage type": "Physical",
+        "gender": "Male",
+        "age": "71",
+        "height": "215",
+        "race": "Human",
+        "constellation": "Kandala the Conqueror",
+        "birth of month": "August 23rd, Month of Vitality",
+        "like": "People, helping others",
+        "dislike": "Demons, especially those who attack people for no reason",
+        "story": "A hero who saved countless lives from the Demons, and the current commander of the Holy Knights of the Church of Lua. This brave and seasoned knight has been hunting down Demons all across Orvelia since his younger days. He is also the headmaster of the orphanage where Kasel, Frey, and Clause grew up. He trained countless warriors in Orvelia and is considered their spiritual leader. He is preparing to step down from the position due to his age, but his age-defying strength has always led to the denial of his retirement request.",
+        "thumbnail": "./data/kr/assets/heroes/Ricardo/ico.png",
+        "story_": "A hero who saved countless lives from the Demons, and the current commander of the Holy Knights of the Church of Lua. This brave and seasoned knight has been hunting down Demons all across Orvelia since his younger days. He is also the headmaster of the orphanage where Kasel, Frey, and Clause grew up. He trained countless warriors in Orvelia and is considered their spiritual leader. He is preparing to step down from the position due to his age, but his age-defying strength has always led to the denial of his retirement request."
+    },
+    "skills": {
+        "1": {
+            "name": "Destruction",
+            "cost": "2",
+            "cooldown": "8",
+            "description": "Deals ??? P.DMG to frontal enemies in range and knocks them down for 3 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Ricardo/skills/1.png"
+        },
+        "2": {
+            "name": "Divine Protection",
+            "cost": "1",
+            "cooldown": "30",
+            "description": "Deals ??? P.DMG to enemies in range and inflicts Stun for 1 sec. Additionally, own M.DEF is increased by ??? for 10 sec, and takes 80% of M.DMG instead of allies.",
+            "thumbnail": "./data/kr/assets/heroes/Ricardo/skills/2.png"
+        },
+        "3": {
+            "name": "Divine Judgment",
+            "cost": "4",
+            "cooldown": "23",
+            "description": "Attacks frontal enemies in a straight line 3 times. The first 2 attacks deal ??? P.DMG to enemies and stun them for 4 sec, and the last attack deals ??? P.DMG to enemies in a 20% wider range, while stunning them for 4 sec. Each attack has a 50% chance of dispelling positive effects from the enemy.",
+            "thumbnail": "./data/kr/assets/heroes/Ricardo/skills/3.png"
+        },
+        "4": {
+            "name": "Divine Blessing",
+            "cost": null,
+            "cooldown": null,
+            "description": "When allies excluding self take M.DMG, increases their M.DEF by ??? for 5 sec. Can be stacked up to 5 times max.",
+            "thumbnail": "./data/kr/assets/heroes/Ricardo/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "Gains immunity to CC while in use."
+        },
+        "2": {
+            "II": "DEF Boost is increased by 10%.",
+            "III": "DEF Boost is increased by 15%.",
+            "IV": "For 10 sec, heals 1% of own HP per sec."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "Blocks all DMG while the skill is in use."
+        },
+        "4": {
+            "II": "DEF Boost is increased by 10%.",
+            "III": "DEF Boost is increased by 15%.",
+            "IV": "Duration is increased by 2 sec."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Target receives 25% increased P.DMG for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Ricardo/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Deals extra P.DMG equal to 200% of M.DEF.",
+                    "thumbnail": "./data/kr/assets/heroes/Ricardo/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "In exchange for 1 additional Mana Cost, Ricardo gains 30% DMG resistance to DMG taken due to covering for allies.",
+                    "thumbnail": "./data/kr/assets/heroes/Ricardo/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "This skill's effect cannot be dispelled.",
+                    "thumbnail": "./data/kr/assets/heroes/Ricardo/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Stun duration is increased by 2 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Ricardo/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Mana cost is reduced by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Ricardo/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "M.DEF increase rate is boosted by 40%.",
+                    "thumbnail": "./data/kr/assets/heroes/Ricardo/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Max stack count is boosted to 8.",
+                    "thumbnail": "./data/kr/assets/heroes/Ricardo/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / P. Block +200",
+                "thumbnail": "./data/kr/assets/heroes/Ricardo/perks/light.png"
+            },
+            "dark": {
+                "effect": "When own HP goes below 40%, HP does not go under 10% for 6 sec, and all allies' ATK is increased by 50% of own M.DEF. This effect is activated once every 60 sec.",
+                "thumbnail": "./data/kr/assets/heroes/Ricardo/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Light of Judgment, Theoria",
+        "description": "When an ally other than the caster takes DMG, there is a (0) chance that a shield is cast upon them to absorb DMG equal to (1) of ATK for 5 sec while granting immunity to CC. This effect does not trigger more than once in 5 sec.",
+        "value": {
+            "0": {
+                "0": "10%",
+                "1": "12%",
+                "2": "14%",
+                "3": "17%",
+                "4": "20%",
+                "5": "25%"
+            },
+            "1": {
+                "0": "320%",
+                "1": "384%",
+                "2": "460%",
+                "3": "552%",
+                "4": "660%",
+                "5": "800%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Ricardo/uw.png",
+        "story": "When the Holy Sword Aea was bestowed upon Kyle, it appeared in the Temple of Lua located north of the King's Plains. When Kyle removed the sword from the altar, it released a powerful wave of light that turned the entire vicinity into a sacred ground. Everything contained within the Temple was turned into holy relics. Teoria, the central pillar of the Temple, absorbed the greatest amount of holy energy of them all."
+    },
+    "uts": {
+        "1": {
+            "name": "Stole of Templar",
+            "description": "[Destruction] For 10 sec, reduces the target's ATK by 20% and increases P.DMG and M.DMG target receives by (0).",
+            "value": {
+                "0": {
+                    "0": "5%",
+                    "1": "6%",
+                    "2": "7%",
+                    "3": "8.5%",
+                    "4": "10.5%",
+                    "5": "12.5%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Ricardo/ut/1.png",
+            "story": "A ceremonial stole bestowed upon the Grand Master of the Holy Knights. Ricardo made it into an insignia and put it on his armor to boost the morale of his comrades on the battlefield. When the stole waves as he swings Theoria at evil creatures, courage fills the hearts of his allies who see it."
+        },
+        "2": {
+            "name": "Pride of Holy Warrior",
+            "description": "[Divine Protection] Gains Immunity to CC and increases M.Resistance by (0) for the duration of skill.",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Ricardo/ut/2.png",
+            "story": "Shield of the arbiter of Lua's Holy Knights. Artifact given to those who've earned the title of Arbiter from the Lua's Holy Knights. An artifact imbued with Goddess Lua's blessing, it protects those under the benevolence of the god, and punishes enemies without mercy."
+        },
+        "3": {
+            "name": "Guardian Knight Insignia",
+            "description": "[Divine Judgement] dispels enemies' positive effects with a 75% chance, and reduces target's ATK Spd by (0) for 10 sec.",
+            "value": {
+                "0": {
+                    "0": "100",
+                    "1": "120",
+                    "2": "140",
+                    "3": "170",
+                    "4": "210",
+                    "5": "250"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Ricardo/ut/3.png",
+            "story": "The seal that Ricardo used for the pledge of the Holy Warrior. When first appointed as a Holy Warrior, knights leave their names on the certificate of oath with their seals. Ricardo made his seal with his affection for the Church of Lua. He still carries it now, after all this time."
+        },
+        "4": {
+            "name": "Mittens",
+            "description": "[Divine Blessing] Increases duration by 5 sec. Reduces M.DMG dealt to self by (0) per stack.",
+            "value": {
+                "0": {
+                    "0": "1%",
+                    "1": "1.2%",
+                    "2": "1.4%",
+                    "3": "1.7%",
+                    "4": "2.1%",
+                    "5": "2.5%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Ricardo/ut/4.png",
+            "story": "The symbol of Ricardo Orphanage, which has a small cross at the center of a bigger one. It was made when the orphanage was built, in the hope that Ricardo's prayers could include the unspoken wishes of the youngest children who did not know any words. Great Priestess Iris also blessed it in the name of Lua, and it is said that it keeps diseases away from children while they grow up."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up every sec and every time self takes DMG. This skill can be cast upon gaining 100 charges.",
+        "description": "Summons the soul of Light of Judgment, Theoria for 15 sec, increasing own DEF by 50%. If Ricardo takes DMG for the duration of Skill, there is a 10% chance to deal ??? P.DMG to the attacker and inflict stun for 2 sec.",
+        "cooldown": "25",
+        "uses": "5",
+        "thumbnail": "./data/kr/assets/heroes/Ricardo/sw.png",
+        "advancement": {
+            "1": "Increases the duration of stun by 2 sec.",
+            "2": "Increases activation chance by 10%, and reduces Mana of the hit target by 500."
+        },
+        "story": "A strong soul that manifests Ricardo's conviction as well as his faith towards Lua.\nThe soul of Theoria, with its foundation built on the will to protect everything they believe in and loves, takes the form of a holy golem.\nJust like Ricardo's unflinching resolve that triumphed over countless battles throughout the decades, Theoria is a symbol of indomitable will.\n\nJust like how the Holy Sword Aea emitted immense power of light and tuned the lands nearby holy when it first appeared, Theoria with its soul unleashed purifies all energy in its vicinity, guiding the light and abolishing darkness in the process.\nIn the wake of the hallowed light of this soul, the corrupted shall lose their power and be banished.\nThe purified souls will find eternal peace in Lua's light.\n\n...At least that is what Great Priestess Iris thinks. To Ricardo, perhaps this power is the reason behind the extension of his retirement..."
+    },
+    "splashart": "./data/kr/assets/heroes/Ricardo/sa.png",
+    "costumes": "./data/kr/assets/heroes/Ricardo/cos",
+    "visual": null,
+    "aliases": null
+}

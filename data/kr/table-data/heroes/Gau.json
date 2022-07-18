@@ -1,0 +1,232 @@
+{
+    "infos": {
+        "title": "Barbarian of Frozen Lands",
+        "class": "Warrior",
+        "position": "Front-600",
+        "attack range": "500",
+        "damage type": "Physical",
+        "gender": "Male",
+        "age": "33",
+        "height": "231",
+        "race": "Barbarian",
+        "constellation": "Judgment Layan",
+        "birth of month": "September 23rd, Month of Truth",
+        "like": "Children, animals",
+        "dislike": "Destructive and violent people",
+        "story": "Gau is a powerful warrior from the Barbarian Kingdom. Whenever he swung his twin axes, a bloodbath would follow. As a warrior, he was feared for his peerless ferocity. However, he suddenly disappeared for 10 years. When he returned, he was a completely changed man. His violent Barbarian tendencies were all gone, even when others criticized him. Instead, he now faces them with smiles and jolly laughter. The kind, warm gaze he now shows to children and animals is especially surprising.",
+        "thumbnail": "./data/kr/assets/heroes/Gau/ico.png",
+        "story_": "Gau is a powerful warrior from the Barbarian Kingdom. Whenever he swung his twin axes, a bloodbath would follow. As a warrior, he was feared for his peerless ferocity. However, he suddenly disappeared for 10 years. When he returned, he was a completely changed man. His violent Barbarian tendencies were all gone, even when others criticized him. Instead, he now faces them with smiles and jolly laughter. The kind, warm gaze he now shows to children and animals is especially surprising."
+    },
+    "skills": {
+        "1": {
+            "name": "Smash",
+            "cost": "2",
+            "cooldown": "8",
+            "description": "Deals ??? P.DMG to enemies within range, and the first attack knocks them down for 3 sec and reduces their DEF Penetration by 250 for 10 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Gau/skills/1.png"
+        },
+        "2": {
+            "name": "Battle Roar",
+            "cost": "2",
+            "cooldown": "12",
+            "description": "All allies' ATK is increased by ???, ATK Spd by 300 and P.DEF by ??? for 15 sec. Upon activation, dispels all negative effects from allies.",
+            "thumbnail": "./data/kr/assets/heroes/Gau/skills/2.png"
+        },
+        "3": {
+            "name": "Vortex",
+            "cost": "3",
+            "cooldown": "20",
+            "description": "Deals ??? P.DMG over 12 times to nearby enemies within a circular range of self and draws them in while use. While using the Skill, gains immunity to CC. The last attack freezes the enemy for 4 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Gau/skills/3.png"
+        },
+        "4": {
+            "name": "Enrage",
+            "cost": null,
+            "cooldown": null,
+            "description": "Increases own ATK by ???, CC resist by 30, and DMG to Non-Hero enemies by 1.5% every sec. This effect can be stacked up to max 20 times. At 20 stacks or more, increases DMG of normal attacks by 100%.",
+            "thumbnail": "./data/kr/assets/heroes/Gau/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "ATK and DEF Boost is increased by 10%.",
+            "III": "ATK and DEF Boost is increased by 15%.",
+            "IV": "ATK and DEF Boost is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "ATK Boost is increased by 10%.",
+            "III": "ATK Boost is increased by 15%.",
+            "IV": "ATK Boost is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Mana cost is reduced by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Gau/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Each use increases DMG by 15%. Stacks 10 times max.",
+                    "thumbnail": "./data/kr/assets/heroes/Gau/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "All effects become irremovable.",
+                    "thumbnail": "./data/kr/assets/heroes/Gau/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "ATK Spd boost of 200 is added to the effect.",
+                    "thumbnail": "./data/kr/assets/heroes/Gau/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Cooldown reduced by 3 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Gau/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Immune to all types of DMG while in use.",
+                    "thumbnail": "./data/kr/assets/heroes/Gau/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "All effects become irremovable.",
+                    "thumbnail": "./data/kr/assets/heroes/Gau/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Reduces own DEF by 3% per stack, but changes DMG against Non-Hero enemies to 2.5%.",
+                    "thumbnail": "./data/kr/assets/heroes/Gau/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / P. Block +200",
+                "thumbnail": "./data/kr/assets/heroes/Gau/perks/light.png"
+            },
+            "dark": {
+                "effect": "Heals HP worth 10% of ATK every second, and every 1% of HP lost reduces received DMG by 0.6%.",
+                "thumbnail": "./data/kr/assets/heroes/Gau/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Holy Bird, Numinu",
+        "description": "Increases own Max HP by (0). Normal attacks have a 15% chance of dealing additional P.DMG equal to (1) of ATK and freezing them for 2 sec.",
+        "value": {
+            "0": {
+                "0": "12%",
+                "1": "14%",
+                "2": "17%",
+                "3": "21%",
+                "4": "25%",
+                "5": "30%"
+            },
+            "1": {
+                "0": "200%",
+                "1": "240%",
+                "2": "290%",
+                "3": "350%",
+                "4": "420%",
+                "5": "500%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Gau/uw.png",
+        "story": "It is said that there lives a sacred beast protecting the Barbarians in the Windland Snow Mountain. This beast, capable of dispelling the power of darkness, is supposed to be a blue phoenix composed of ice. Created in the shape of this beast is Numinu, its name means 'holy.' It has been crafted from enchanted ice that never melts. Considered a holy relic among Barbarians, this weapon is bestowed to their mightiest warrior. The wielder of this weapon is the most powerful warrior among Barbarians, and may be considered their king."
+    },
+    "uts": {
+        "1": {
+            "name": "King of Frost Helmet",
+            "description": "[Smash] Reduces the target's ATK by 20% and increases P.DMG target receives by (0) for 10 sec.",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Gau/ut/1.png",
+            "story": "A worn-out helmet of Frost Giant King. It was last used by the darkness-ridden Frost Giant King. Gau, hoping that the tragedy of Windland Snow Mountain won't repeat itself, keeps this broken helmet to mourn the fallen hero."
+        },
+        "2": {
+            "name": "Fighter's Horn",
+            "description": "[Battle Roar] Reduces Mana Cost by 1 and increases target's Crit DMG by (0) for the duration of Skill.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Gau/ut/2.png",
+            "story": "Trumpet made with the horn of the guardian beast of Windland Snow Mountain, Orox. Orox of the Snowy Mountain grants noble warriors great power and the ability to see the truth. When a warrior who has received the blessing of Orox blows this horn, it will boost the morale of comrades and bring clarity to their minds."
+        },
+        "3": {
+            "name": "Barbarian Mug",
+            "description": "[Vortex] DMG is increased by 50%, and the last hit increases All DMG the target takes by (0) for 10 sec.",
+            "value": {
+                "0": {
+                    "0": "8%",
+                    "1": "10%",
+                    "2": "12%",
+                    "3": "14%",
+                    "4": "17%",
+                    "5": "20%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Gau/ut/3.png",
+            "story": "Mug of the Barbarian King who first settled down in the snowy mountains. When the first Barbarian King settled down in Windland, he swore to become the guardian of the snowy mountains and shared this mug with the holy beings of the mountains. The protect magic of the frost wolf imbued in the Barbarian Mug increases the ATK of Vortex and the effect of Freeze."
+        },
+        "4": {
+            "name": "Snowdrop Bracelet",
+            "description": "[Enrage] Changes the max number of stacks to 30 and upon gaining 30 stacks, increases own DEF Penetration by (0).",
+            "value": {
+                "0": {
+                    "0": "100",
+                    "1": "120",
+                    "2": "140",
+                    "3": "170",
+                    "4": "210",
+                    "5": "250"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Gau/ut/4.png",
+            "story": "A bracelet made with a Snowdrop Flower. Although it was made with clumsy hands, the children at the orphanage made this bracelet as a birthday gift for Gau after seeing him grieve for his fallen Barbarian tribes. A Snowdrop means hope and comfort in the language of flowers."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon using Skills 4 times.",
+        "description": "Summons the sould of Holy Bird, Numinu, increasing own ATK by 60% for 8 sec. Upon activation, summons the Storm of Numinu for 8 sec in the front, dealing ??? P.DMG every 0.5 sec on the enemies within range and reducing the target's ATK Spd by 100 for 5 sec. The ATK Spd Reduction effect can be stacked up to max 10 times, and enemies with 10 stacks are inflicted with Freeze and take 30% increased P.DMG for 5 sec.",
+        "cooldown": "22",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Gau/sw.png",
+        "advancement": {
+            "1": "Increases the duration of Storm of Numinu and soul by 4 sec.",
+            "2": "Changes the P.DMG Boost effect to 50%, and every hit dispels positive effects from the enemy."
+        },
+        "story": "Numinu is the weapon that only the strongest Barbarian warrior may carry.\nHowever, its current master, Gau, did not dare to use the weapon.\nFor he knew Numinu was the sacred relic of the Barbarian Tribe to slay darkness, and as someone who had abandoned his kingdom and his people, he believed that he was not worthy of holding it.\nAll he could do was to repent for his past sins silently by help rebuilding the kingdom.\nBut it did not take long until his endless devotion toward his people saw the light. The Barbarians started praising Gau's display of diligence and truthfulness, and one by one, the Barbarians recognized him as their leader.\nNuminu, who was watching over Gau ever since the beginning, launched itself far upwards the sky and incarnated before Gau.\nIt was the day Gau became the true king of the Barbarians."
+    },
+    "splashart": "./data/kr/assets/heroes/Gau/sa.png",
+    "costumes": "./data/kr/assets/heroes/Gau/cos",
+    "visual": null,
+    "aliases": null
+}

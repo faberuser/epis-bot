@@ -1,0 +1,240 @@
+{
+    "infos": {
+        "title": "Knight of Loyalty",
+        "class": "Warrior",
+        "position": "Front-600",
+        "attack range": "4000",
+        "damage type": "Magical",
+        "gender": "Male",
+        "age": "123",
+        "height": "194",
+        "race": "Human",
+        "constellation": "Armil the Saint",
+        "birth of month": "April 15th, Month of Life",
+        "like": "My lady, Jane",
+        "dislike": "Demons and their officers",
+        "story": "A knight who served the Republic of Gray 100 years ago, and an admirer of Jane Gray. Theo was the First Knight of the Republic and the wielder of the Lightning Legios. During the Duchy's battle against the Demon Army, the Mountain Fortress went on a rampage when its seal was lelifted. Under Jane's order, Theo set out to contain it. In his absence, powerful Demon officers attacked the royal palace. Theo returned to fight them despite heavy injury, but was unable to defeat them by himself. When the battle was over, he held the body of the princess in his arms and cried out from the ruins of the palace. Suddenly, a mysterious entity offered him a chance to defend his princess for all eternity. When he accepted, he fell into a deep slumber.",
+        "thumbnail": "./data/kr/assets/heroes/Theo/ico.png",
+        "story_": "A knight who served the Republic of Gray 100 years ago, and an admirer of Jane Gray. Theo was the First Knight of the Republic and the wielder of the Lightning Legios. During the Duchy's battle against the Demon Army, the Mountain Fortress went on a rampage when its seal was lifted. Under Jane's order, Theo set out to contain it. In his absence, powerful Demon officers attacked the royal palace. Theo returned to fight them despite heavy injury, but was unable to defeat them by himself. When the battle was over, he held the body of the princess in his arms and cried out from the ruins of the palace. Suddenly, a mysterious entity offered him a chance to defend his princess for all eternity. When he accepted, he fell into a deep slumber."
+    },
+    "skills": {
+        "1": {
+            "name": "Final Crash",
+            "cost": "2",
+            "cooldown": "12",
+            "description": "Attacks 16 times, dealing a total of ??? M.DMG to enemies in range. Upon each Crit Hit, Crit DMG is increased by 3% for 10 sec, and there is a 30% chance to deal ??? extra M.DMG, inflicting stun for 0.3 sec. Crit DMG boost can be stacked up to 30 times max.",
+            "thumbnail": "./data/kr/assets/heroes/Theo/skills/1.png"
+        },
+        "2": {
+            "name": "God of Lightning",
+            "cost": "2",
+            "cooldown": "20",
+            "description": "Upon casting, activates [God of Lightning] and throws a spear of lightning at the enemy, dealing ??? M.DMG. For 15 sec, hit enemy takes 50% increased M.DMG and activation chance of [For Jane] is increased by 40% and ATK is increased by ???.",
+            "thumbnail": "./data/kr/assets/heroes/Theo/skills/2.png"
+        },
+        "3": {
+            "name": "Lightning Explosion",
+            "cost": "3",
+            "cooldown": "22",
+            "description": "Jumps and strikes, thrusting the spear to the ground and hitting target enemy and enemies in range 5 times, dealing a total of ??? M.DMG and inflicting Stun for 3 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Theo/skills/3.png"
+        },
+        "4": {
+            "name": "For Jane",
+            "cost": null,
+            "cooldown": null,
+            "description": "Each auto attack has a 20% chance of dealing ??? M.DMG and inflicting Stun for 0.7 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Theo/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "ATK Boost and DMG is increased by 10%.",
+            "III": "ATK Boost and DMG is increased by 15%.",
+            "IV": "ATK Boost and DMG is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "If there is 1 enemy, DMG is increased by 100%.",
+                    "thumbnail": "./data/kr/assets/heroes/Theo/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Cooldown is reduced by 2 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Theo/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Mana cost is reduced by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Theo/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Increases ATK Boost by 100% during God of Lightning State.",
+                    "thumbnail": "./data/kr/assets/heroes/Theo/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "DMG is increased by 40%.",
+                    "thumbnail": "./data/kr/assets/heroes/Theo/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Stun duration is increased by 1 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Theo/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "DMG is increased by 40%.",
+                    "thumbnail": "./data/kr/assets/heroes/Theo/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Stun duration is increased by 0.2 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Theo/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit Chance +100",
+                "thumbnail": "./data/kr/assets/heroes/Theo/perks/light.png"
+            },
+            "dark": {
+                "effect": "When mana is full, ATK is increased by 50% for 15 sec. This effect only activates once every 20 sec.",
+                "thumbnail": "./data/kr/assets/heroes/Theo/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Lightning Bolt, Legios",
+        "description": "Normal and Skill attacks stack 'Lightning' upon self. At 50 stacks, activates 'Lightning Bold, Legios,' increasing own ATK Spd by (0), Crit DMG by (1), and DEF Penetration by (2) for 15 sec. While 'Lightning Bolt, Legios' is activated, 'Lightning' does not stack. This effect is irremovable.",
+        "value": {
+            "0": {
+                "0": "300",
+                "1": "360",
+                "2": "430",
+                "3": "520",
+                "4": "620",
+                "5": "750"
+            },
+            "1": {
+                "0": "100%",
+                "1": "120%",
+                "2": "144%",
+                "3": "173%",
+                "4": "205%",
+                "5": "250%"
+            },
+            "2": {
+                "0": "300",
+                "1": "360",
+                "2": "430",
+                "3": "520",
+                "4": "620",
+                "5": "750"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Theo/uw.png",
+        "story": "A spear said to have been forged from a bolt of lightning. Electricity constantly flows around this impressive spear that stands as tall as an average adult male. Forging a spear from lightning was a tremendous task. But then again, Jin was no ordinary blacksmith. He smelted a huge mana stone infused with a red dragon's blood. He used this to contain the lightning before forging it into a spear. Aside from its chosen master, no person can touch this weapon. When its two pieces are combined, it lets out a tremendous flux of energy that resembles a dragon's roar."
+    },
+    "uts": {
+        "1": {
+            "name": "Fur Decoration of Sable",
+            "description": "[Final Crash] Dispels all negative effects from self, and upon each hit, has an (0) chance to remove all positive effects from the target.",
+            "value": {
+                "0": {
+                    "0": "8%",
+                    "1": "10%",
+                    "2": "12%",
+                    "3": "14%",
+                    "4": "17%",
+                    "5": "20%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Theo/ut/1.png",
+            "story": "A decoration that functions as a charm and is made with the fur of Sereblos, the holy sable. Legios's electric signals can push the body to its limit, but it is also physically taxing. The sable's lustrous fur absorbs the kickback, significantly reducing the burden on Theo's body. Sereblos's fur works as a conductor that conveys Legios's electric signals to the entire body while protecting Theo's veins with holy energy, allowing him to fight without damaging his body."
+        },
+        "2": {
+            "name": "God of Lightning's Necklace",
+            "description": "[God of Lightning] ATK Spd is increased by 250 for the duration of skill, and the activation chance of [For Jane] is increased by an additional (0).",
+            "value": {
+                "0": {
+                    "0": "8%",
+                    "1": "9.6%",
+                    "2": "11.5%",
+                    "3": "13.8%",
+                    "4": "16.5%",
+                    "5": "20%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Theo/ut/2.png",
+            "story": "Called a thunderbolt from the sky. Legios is also called a holy beast. The power of Legios was so strong that when they made it into a weapon, the Republic of Gray couldn't contain all of its power. So the greatest piece was put in the Spear of Lightning, and the remaining pieces were put into different places. One of those pieces was put into God of Lightning's Necklace. It is said that anyone with this necklace can commune with the Spear of Lightning and get closer to the power of Legios."
+        },
+        "3": {
+            "name": "Essence of Red Lightning",
+            "description": "[Lightning Explosion] Skill cooldown is reduced by 30% and upon attack, deals (0) of ATK as extra M.DMG.",
+            "value": {
+                "0": {
+                    "0": "40%",
+                    "1": "48%",
+                    "2": "58%",
+                    "3": "70%",
+                    "4": "84%",
+                    "5": "100%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Theo/ut/3.png",
+            "story": "Legacy of the fallen Republic of Gray. A treasure that a respected palace wizard of the Republic of Gray gave to the 1st Knight Theo, who received the Lightning Bolt Legios. The Lightning Essence that has the energy of the Lightning Bolt maximizes the effect of Lightning Explosion."
+        },
+        "4": {
+            "name": "Another Funeral Doll",
+            "description": "[For Jane] Increases activation chance by (0) and own ATK Spd by 350 for 30 sec at the beginning of every battle.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Theo/ut/4.png",
+            "story": "A funeral doll that Theo asked May to make. He put the doll that looks exactly like him where the tombstone of his eternal love once rested. Even when time flows again and he returns back to soil, he would still be by her side."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon dealing DMG 100 times.",
+        "description": "Summons the soul of Lightning Bolt, Legios, attacking nearby enemies 4 times. Each attack deals ??? M.DMG and stuns enemies for 0.5 sec. Afterwards, increases ATK by 30% for 10 sec, and activates [Fury of Legios] every sec that deals ??? M.DMG to a random enemy and nearby enemies within range. Hit enemies are stunned for 1 sec.",
+        "cooldown": "25",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Theo/sw.png",
+        "advancement": {
+            "1": "Target hit by Fury of Legios takes 30% increased M.DMG for 5 sec.",
+            "2": "Upon activation, the effect of 'Lightning Bolt, Legios' will be activated."
+        },
+        "story": "The soul of Legios had existed as a part of Transcendent of Lightning since the early ages. However, over the course of time, it gradually lost its power while being caged inside a pair of spears by a Red Dragon blacksmith.\nLegios decided to stay dormant until one worthy to carry the title of the Transcendent appeared. When Theo picked up Legios, it resonated strongly with Theo's soul, waking up from its long slumber. When Legios opened its eyes, Theo started feeling the presence of a great soul bound to the pair of spears. Despite Theo and Legios' effort to match the wavelengths, as Legios recovered more of its power, it started having detrimental effects on Theo's body. The alteration in Legios' wavelength due to a swing of emotion started to influence Theo's soul which became more and more sporadic. It was not until when he met his lady whom he lost 100 years ago that Theo's soul would become stabilized.\n\nThe soul of Theo and Legios started matching each other's wavelength, and together, they became truly worthy to be called as the new Transcendent."
+    },
+    "splashart": "./data/kr/assets/heroes/Theo/sa.png",
+    "costumes": "./data/kr/assets/heroes/Theo/cos",
+    "visual": null,
+    "aliases": null
+}

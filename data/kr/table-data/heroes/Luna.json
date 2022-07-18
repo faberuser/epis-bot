@@ -1,0 +1,240 @@
+{
+    "infos": {
+        "title": "Child of Moonlight",
+        "class": "Archer",
+        "position": "Back-300",
+        "attack range": "2900",
+        "damage type": "Magical",
+        "gender": "Female",
+        "age": "???",
+        "height": "110",
+        "race": "Animal Hybrid (Rabbit)",
+        "constellation": "Kandala the Conqueror",
+        "birth of month": "August 8th, Month of Vitality",
+        "like": "Carrots, friends",
+        "dislike": "Hunger",
+        "story": "Lulus, very rarely sighted and often considered mythical, are a race of animal hybrids. They live in an extremely cold region, and are very fearful of contacting the outside world. One day, a Lulu child was born with the exact opposite personality that is typical her race. That child is Luna. It's not that she was unhappy with the ways of her people. Nor did she have any grand purpose of experiencing the world outside. She was simply picking flowers, one step at a time. Another step to pick up some frozen branches for her slingshot. And another step to follow the scent of some sweet, red fruit. Before she knew it, she was outside, running toward a carrot field away from the mountain.",
+        "thumbnail": "./data/kr/assets/heroes/Luna/ico.png",
+        "story_": "Lulus, very rarely sighted and often considered mythical, are a race of animal hybrids. They live in an extremely cold region, and are very fearful of contacting the outside world. One day, a Lulu child was born with the exact opposite personality that is typical her race. That child is Luna. It's not that she was unhappy with the ways of her people. Nor did she have any grand purpose of experiencing the world outside. She was simply picking flowers, one step at a time. Another step to pick up some frozen branches for her slingshot. And another step to follow the scent of some sweet, red fruit. Before she knew it, she was outside, running toward a carrot field away from the mountain."
+    },
+    "skills": {
+        "1": {
+            "name": "Pew!",
+            "cost": "2",
+            "cooldown": "8",
+            "description": "Deals ??? M.DMG by shooting a bouncing projectile which bounces 3 times starting from the nearest enemy. The further the enemy, the more DMG inflicted.",
+            "thumbnail": "./data/kr/assets/heroes/Luna/skills/1.png"
+        },
+        "2": {
+            "name": "Look Out Above!",
+            "cost": "2",
+            "cooldown": "12",
+            "description": "Deals ??? M.DMG to enemies furthest away in a small range, and stuns them for 3 sec. The further the enemy, the more DMG they will take.",
+            "thumbnail": "./data/kr/assets/heroes/Luna/skills/2.png"
+        },
+        "3": {
+            "name": "Twinkle Twinkle",
+            "cost": "1",
+            "cooldown": "15",
+            "description": "Deals ??? M.DMG to target enemies in range, and reduces target's Crit Chance by 100% for 7 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Luna/skills/3.png"
+        },
+        "4": {
+            "name": "Gotcha!",
+            "cost": null,
+            "cooldown": null,
+            "description": "When inflicted by CC, dispels negative effects from self and attacks the farthest enemy, dealing ??? M.DMG and knocking it away for 2 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Luna/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Gains immunity to CC for the duration of Skill.",
+                    "thumbnail": "./data/kr/assets/heroes/Luna/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Enemies hit are stunned for 2 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Luna/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "In exchange for 2 additional Mana Cost, attacks random enemies 3 times.",
+                    "thumbnail": "./data/kr/assets/heroes/Luna/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Ignores enemy Block.",
+                    "thumbnail": "./data/kr/assets/heroes/Luna/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Reduces ACC of hit enemies by 150 for 7 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Luna/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "In exchange for 1 additional Mana Cost, knock back the enemy over a long distance.",
+                    "thumbnail": "./data/kr/assets/heroes/Luna/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Dispels enemy's positive effects.",
+                    "thumbnail": "./data/kr/assets/heroes/Luna/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Number of targets changes to 2.",
+                    "thumbnail": "./data/kr/assets/heroes/Luna/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit DMG +20%",
+                "thumbnail": "./data/kr/assets/heroes/Luna/perks/light.png"
+            },
+            "dark": {
+                "effect": "Grants Blessing of the Carrot. Blessing of the Carrot increases DMG dealt to Non-Hero enemies by 30%, and reduces DMG received by 30%.",
+                "thumbnail": "./data/kr/assets/heroes/Luna/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Flower of Eternity, Hyacinth",
+        "description": "Increases Crit DMG by (0), DMG of normal attacks by (1) and the Range by (2).",
+        "value": {
+            "0": {
+                "0": "40%",
+                "1": "48%",
+                "2": "58%",
+                "3": "70%",
+                "4": "84%",
+                "5": "100%"
+            },
+            "1": {
+                "0": "20%",
+                "1": "24%",
+                "2": "29%",
+                "3": "35%",
+                "4": "42%",
+                "5": "50%"
+            },
+            "2": {
+                "0": "6%",
+                "1": "7.2%",
+                "2": "8.6%",
+                "3": "10.5%",
+                "4": "12.5%",
+                "5": "15%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Luna/uw.png",
+        "story": "A slingshot made from hyacinth, a silver tree that only grows in extremely cold regions. It is said that hyacinths have been blessed by the Queen of Ice, and are able to bear bright red fruits even in the coldest weather. Simply holding onto a hyacinth branch allows one to ignore the coldness around the holder. These blessed trees also have the power to call upon snowstorms and frost. Needless to say, these powers are best harnessed by a weapon carved from one of these trees."
+    },
+    "uts": {
+        "1": {
+            "name": "Golden Bell of Luck",
+            "description": "[Pew!] Increases DMG by 20%, and upon Critical Hit, recovers Mana by (0).",
+            "value": {
+                "0": {
+                    "0": "200",
+                    "1": "240",
+                    "2": "290",
+                    "3": "350",
+                    "4": "420",
+                    "5": "500"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Luna/ut/1.png",
+            "story": "A golden bell that brings luck. It's Luna's second favorite thing after carrots, and it brightly glitters when she walks and trots. The sound of the golden bell has a mystical power that summons luck from her homeland."
+        },
+        "2": {
+            "name": "Moonlight Carrot",
+            "description": "[Look Out Above!] Increases DMG by (0) and reduces Cooldown by 10% upon a Crit Hit.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Luna/ut/2.png",
+            "story": "A carrot that grew from receiving moonlight a thousand times. Those hit by this carrot will have all evil stripped away from them, and they'll be able to tell apart good from bad."
+        },
+        "3": {
+            "name": "Never-Melting Snow Flower",
+            "description": "[Twinkle Twinkle] Crit Chance Reduction will not be dispelled, and the effect duration will increase by (0) sec.",
+            "value": {
+                "0": {
+                    "0": "2",
+                    "1": "2.4",
+                    "2": "2.9",
+                    "3": "3.5",
+                    "4": "4.2",
+                    "5": "5"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Luna/ut/3.png",
+            "story": "A legendary snowfield flower that blossomed from the never melting land of Windland Snow Mountain. It is said that it makes the energy of its master's body flow clearly and beautifully. An item that makes Luna's pure energy shine even brighter."
+        },
+        "4": {
+            "name": "Carrot Cake",
+            "description": "[Gotcha!] Greatly increases the knockback range, and Cooldown is reduced by (0) sec.",
+            "value": {
+                "0": {
+                    "0": "2",
+                    "1": "2.4",
+                    "2": "2.9",
+                    "3": "3.5",
+                    "4": "4.2",
+                    "5": "5"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Luna/ut/4.png",
+            "story": "Juno's special carrot cake. This special carrot cake was made especially for Luna, who misses her family back in her hometown and the carrots she used to eat. As it has the exact same taste like the ones Luna would eat back at home, the cake has become Luna's new soul food."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up over 17 sec.",
+        "description": "Summons the Soul of Flower of Eternity, Hyacinth, dealing ??? M.DMG to nearby enemies within a circular range of self, freezing them for 5 sec and knocking them back far away. Afterward,the Soul of Hyacinth deals ??? additional M.DMG to frozen enemies and increases own Crit DMG by 100% for 10 sec.",
+        "cooldown": "17",
+        "uses": "5",
+        "thumbnail": "./data/kr/assets/heroes/Luna/sw.png",
+        "advancement": {
+            "1": "Hit targets take increased M.DMG by 40% for 10 sec.",
+            "2": "For the duration of Skill, increases the number of targets that Normal Attacks hit by 3. The range of Normal Attacks increases by 30%, knocking back the hit target."
+        },
+        "story": "The flower never withered. No matter how hard the rain fell. no matter how much snow poured, it stayed strong. Like Luna's endless innocence, the flower did not wither but showed off its presence instead... The flower abolished the cold of the steep snow mountain, and quelled the raging snowstorm for the tiny, weak girl, and followed wherever she went. Eventually, when the innocent girl's curiosity touched the flower, it showed the girl its true form.\n'You have finally found me, dear little girl.'"
+    },
+    "splashart": "./data/kr/assets/heroes/Luna/sa.png",
+    "costumes": "./data/kr/assets/heroes/Luna/cos",
+    "visual": null,
+    "aliases": null
+}

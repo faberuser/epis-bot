@@ -1,0 +1,243 @@
+{
+    "infos": {
+        "title": "Faith of Silver",
+        "class": "Warrior",
+        "position": "Front-600",
+        "attack range": "6200",
+        "damage type": "Physical",
+        "gender": "Female",
+        "age": "18",
+        "height": "168",
+        "race": "Human",
+        "constellation": "Judgment Layan",
+        "birth of month": "September 21st, Month of Truth",
+        "like": "Honest people Just people",
+        "dislike": "Opportunists Oppressors of the weak",
+        "story": "King Veroglance the Second of Orvelia grew weaker by the day. He was once a stout monarch whom no one dared to cross. However, he, too, began to show weakness with age. When he finally fell ill, those with aspirations of power began gathering around him like flies. Scarlet tried her hardest to protect her father in this chaos. But the man being swayed by the flatterers around him was no longer the respected king she once knew. The king turned his back on his daughter's pleas. The nobles were unhappy to accept her, the king's only child, as the next queen, to say the least. The atmosphere of the royal palace darkened quickly.",
+        "thumbnail": "./data/kr/assets/heroes/Scarlet/ico.png",
+        "story_": "King Veroglance the Second of Orvelia grew weaker by the day. He was once a stout monarch whom no one dared to cross. However, he, too, began to show weakness with age. When he finally fell ill, those with aspirations of power began gathering around him like flies. Scarlet tried her hardest to protect her father in this chaos. But the man being swayed by the flatterers around him was no longer the respected king she once knew. The king turned his back on his daughter's pleas. The nobles were unhappy to accept her, the king's only child, as the next queen, to say the least. The atmosphere of the royal palace darkened quickly. She knows. The nobles would pressure her incessantly. But she would never yield. She is prepared to fight to protect her kingdom, to protect her people. She would never let those who are greedy for power to take control of the kingdom. No matter what..."
+    },
+    "skills": {
+        "page 1": {
+            "1": {
+                "name": "Halt!",
+                "cost": "3",
+                "cooldown": "8",
+                "description": "Attacks all frontal enemies, dealing ??? P.DMG and knocking them down for 3 sec, and healing own HP equal to 30% of DMG dealt. The hit target takes 25% increased P.DMG for 10 sec. If the target is not a Hero, deals ??? additional P.DMG. Afterward, places [Consecrated Ground] for 4 sec. Allies on [Consecrated Ground] have their ATK increased by 25% and Crit Chance increased by 150. Additionally, enemies within range have their DEF Penetration reduced by 250 and All Block reduced by 500.",
+                "thumbnail": "./data/kr/assets/heroes/Scarlet/skills/1.png"
+            },
+            "2 (1)": {
+                "name": "Justice Served!",
+                "cost": "2",
+                "cooldown": "15",
+                "description": "Dispels negative effects of all allies and dispels positive effects of all enemies, while dealing ??? P.DMG.",
+                "thumbnail": "./data/kr/assets/heroes/Scarlet/skills/2 (1).png"
+            },
+            "2 (2)": {
+                "name": "This Is the True Might of Orvelia!!",
+                "cost": "2",
+                "cooldown": "15",
+                "description": "Dispels negative effects of all allies and dispels positive effects of all enemies, while dealing ??? P.DMG. This attack always hit. The hit target becomes stunned for 4 sec and have its ATK Spd reduced by 300 for 10 sec. Afterward, increases All Crit Resistance of all allies by 250 for 10 sec.",
+                "thumbnail": "./data/kr/assets/heroes/Scarlet/skills/2 (2).png"
+            }
+        },
+        "page 2": {
+            "3": {
+                "name": "Sword of Honor!!",
+                "cost": "3",
+                "cooldown": "17",
+                "description": "Attacks an enemy 2 times, dealing a total of ??? P.DMG and inflicting Stun on the target for 3 sce each hit. Afterward, fires 2 additional sword wave, dealing ??? P.DMG to frontal enemies in a straight line and inflicting Stun for 5 sec.",
+                "thumbnail": "./data/kr/assets/heroes/Scarlet/skills/3.png"
+            },
+            "4": {
+                "name": "Goddess of War",
+                "cost": null,
+                "cooldown": null,
+                "description": "All Crit Resistance increases by 300. With 10% chance, deals additional ??? P.DMG during auto attack and stuns target enemy for 1 sec. Each hit increases P.DMG the target takes by 3%. This effect can be stacked up to max 10 times. Normal and Skill attacks grant [Spirit of Orvelia] which is stacked 1 time upon normal attack and 10 times upon using Skill. This effect can be stacked up to max 30 times. Upon reaching the max number of stack, consumes all stacks to enter into the irremovable state of [Blessing of the Kings] for 15 sec. While in [Blessing of the Kings], [Spirit of Orvelia] cannot be gained. For the duration, gains immunity to CC and reduces All DMG taken by 350.",
+                "thumbnail": "./data/kr/assets/heroes/Scarlet/skills/4.png"
+            }
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Mana cost is reduced by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Scarlet/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Dispels all harmful effects on oneself upon use.",
+                    "thumbnail": "./data/kr/assets/heroes/Scarlet/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Reduces ATK Spd of hit targets by 300 for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Scarlet/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "All allies' P.Crit Resistance is increased by 250 for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Scarlet/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Each hit destroys the target Shield.",
+                    "thumbnail": "./data/kr/assets/heroes/Scarlet/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Damaged enemies receive 40% reduced heals for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Scarlet/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "At the beginning of each battle, gains 15 stacks of [Spirit the Orvelia]",
+                    "thumbnail": "./data/kr/assets/heroes/Scarlet/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "The P.DMG taken boost effect becomes irremovable.",
+                    "thumbnail": "./data/kr/assets/heroes/Scarlet/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / ATK Spd +100",
+                "thumbnail": "./data/kr/assets/heroes/Scarlet/perks/light.png"
+            },
+            "dark": {
+                "effect": "When receiving Critical DMG, there is a 5% chance the attacker is dispelled of all positive effects and is stunned for 1 sec. Skill cooldown is 8 sec.",
+                "thumbnail": "./data/kr/assets/heroes/Scarlet/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Blade of Conviction, White Belona",
+        "description": "Per every skill in cooldown, DMG is increased by (0). For the duration of [Blessing of the Kings], increases DEF Penetration by (1).",
+        "value": {
+            "0": {
+                "0": "8%",
+                "1": "10%",
+                "2": "12%",
+                "3": "14%",
+                "4": "17%",
+                "5": "20%"
+            },
+            "1": {
+                "0": "200",
+                "1": "240",
+                "2": "290",
+                "3": "350",
+                "4": "420",
+                "5": "500"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Scarlet/uw.png",
+        "story": "The most legendary sword in Orvelia. This sacred blade has been passed down the royal lineage of Orvelia since the kingdom's birth, symbolizing the true authority of the monarch. King Kyle used this sword as well, until he was chosen by the Holy Sword Aea. Blessed with the power of light, its blade can disable any magic by cutting through its flow. Only a knight of noble bloodline and righteous pride can wield this sword. Those who wish to lift it must pass the trial of the royal family, a feat only accomplished by Scarlet, aside from Kyle."
+    },
+    "uts": {
+        "1": {
+            "name": "Gauntlet of Wave",
+            "description": "[Halt!] Increases DMG by (0) and for 10 sec, target receives 25% increased P.DMG.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Scarlet/ut/1.png",
+            "story": "A gauntlet made by rare, high-density ores found in the Ziltrion family's mine. It is what Scarlet received from Demia when they exchanged gifts after completing the final part of their swordsmanship training together. Scarlet considers it as a token that proves Demia is her best training partner as well as her closest friend. Scarlet has never used it, worrying that it might get a scratch."
+        },
+        "2": {
+            "name": "Wings of Justice",
+            "description": "[Justice Served!] Increases DMG by (0) and reduces Cooldown of all allies by 10%.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Scarlet/ut/2.png",
+            "story": "Pendant made by Scarlet, whose principles won't let her ignore injustice or kneel in the face of cowardice. She gifted one each to the people she relies on: Clause and Demia. The shining wings of the royal emerald, which symbolize justice, are embedded inside the pendant. One can straighten oneself out by staring at the pendant that reflects one's eyes. She looks at it each time she feels despair by looking at the people who lay blame on her father Veroglance II."
+        },
+        "3": {
+            "name": "Pride of Orvelia",
+            "description": "[Sword of Honor!!] Increases DMG by (0) and reduces Cooldown by 30%.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Scarlet/ut/3.png",
+            "story": "A celebratory flag that was made to praise the king when Orvelia was first founded. Whenever she sees the flag in the office, it angers her to think of the treacherous subjects who reduced her father to a scarecrow and the flatterers who ruined the country. This made Scarlet even more determined to restore Orvelia's days of glory and to establish a stronger throne."
+        },
+        "4": {
+            "name": "Heart of Silver",
+            "description": "[Goddess of Battlefield] Activation chance changes to 20%. Upon activation, increases own ATK Spd by (0) for 5 sec.",
+            "value": {
+                "0": {
+                    "0": "200",
+                    "1": "240",
+                    "2": "290",
+                    "3": "350",
+                    "4": "420",
+                    "5": "500"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Scarlet/ut/4.png",
+            "story": "Blacksmith Jin especially worked on this jewel for Scarlet of Orvel. It was made as a pendant at first, but later was crafted again into a charm that Scarlet could put on and take off from her armor and clothes when she joined the war as a knight. When she was in the battlefield with the Heart of Silver, soldiers would think of her as the goddess of victory."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon using Skills 5 times.",
+        "description": "Summons the Soul of Blade of Conviction, White Belona for 8 sec, increasing own ATK by 50% fir the duration. Upon activation, dispels positive effects of the enemy with the highest ATK and deals P.DMG. For once after use, changes [Justice Served!] to [This Is the True Might of Orvelia!!].",
+        "cooldown": "16",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Scarlet/sw.png",
+        "advancement": {
+            "1": "Increases the duration by 4 sec.",
+            "2": "Increases DMG by 70%. Upon use of the Soul Weapon Skill, reduces Cooldown of Scarlet's Skills by 50%."
+        },
+        "story": "Only the one who's worthy of becoming a king can wield the king's sword, and it was considered as a sacred proof that bestowed the king's authority to its wielder.\nThe Holy Sword Aea, the sword that carries the blessing and proof of Lua, maybe the sword acknowledged by the Church of Lua as the king's sword, but Belona is the sword most acknowledged by the royal family, nobles, and knights.\nAlthough it may not have been powerful enough to deal with the royal crisis, Belona remained as the icon of royal authority and was influenced by memories and experiences of all the kings. Naturally, Belona's soul started taking the form of a knight king as time passed by.\n\nBelona had a much larger body and blade 1000 years ago when it was in Kyle's hand before he switched to the Holy Sword Aea.\n\nHowever, the resentment and curses of demons who were slain by Belona gradually tainted its blade.\nAfter the war, the royal family started grinding and purifying the tainted blade of Belona with holy light spells, in hopes of restoring the icon of royalty to its former glory.\nThe taint of darkness started disappearing, and the blessing of light started accumulating within the sword. Eventually, Belona's blade, after enduring the long, arduous purification process, was reborn as an elegant yet sturdy blade, sharp enough to cut through any entity of darkness.\n\nAlthough Belona was reborn as a legendary blade that far-surpassed the shadow of its former self, it needed the wielder to shine. Belona, believing that it will not find another who is as king-worthy as Kyle, was crestfallen. However, Belona found new hope in Scarlet who was striving to overcome the royal crisis. Scarlet, even it would lead to her getting surrounded by enemies and hardships, would never abandon her conviction to protect the weak, and march on with her well-established chivalry. Belona, in the end, revealed its true form and power -which was not present even to King Kyle - to this proud royalty of silver."
+    },
+    "splashart": "./data/kr/assets/heroes/Scarlet/sa.png",
+    "costumes": "./data/kr/assets/heroes/Scarlet/cos",
+    "visual": null,
+    "aliases": null
+}

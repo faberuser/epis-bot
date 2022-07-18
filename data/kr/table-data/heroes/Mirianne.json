@@ -1,0 +1,232 @@
+{
+    "infos": {
+        "title": "Servant of Blue",
+        "class": "Assassin",
+        "position": "Middle-500",
+        "attack range": "6500",
+        "damage type": "Magical",
+        "gender": "Female",
+        "age": "12 (Physical age: 18)",
+        "height": "162",
+        "race": "Half-Elf",
+        "constellation": "Asiphia the Empress",
+        "birth of month": "October 5th, Month of Friendship",
+        "like": "Sonia, and everyone at the orphanage",
+        "dislike": "Bugs with many legs",
+        "story": "She is Sonia's maid and sister-like friend from the orphanage. When her village of Humans and Elves was attacked by the Demons, she was the only survivor. Ricardo found her and took her into his orphanage. For some unknown reason, she experienced explosive growth phase at the age of 6. Her body now resembles that of an 18-year-old, but she still has the mind of a child. She is pure and devotional to a fault. Perhaps these traits are related to the loss of her childhood memories.",
+        "thumbnail": "./data/kr/assets/heroes/Mirianne/ico.png",
+        "story_": "She is Sonia's maid and sister-like friend from the orphanage. When her village of Humans and Elves was attacked by the Demons, she was the only survivor. Ricardo found her and took her into his orphanage. For some unknown reason, she experienced explosive growth phase at the age of 6. Her body now resembles that of an 18-year-old, but she still has the mind of a child. She is pure and devotional to a fault. Perhaps these traits are related to the loss of her childhood memories."
+    },
+    "skills": {
+        "1": {
+            "name": "Target Lock On",
+            "cost": "1",
+            "cooldown": "6",
+            "description": "Attacks the enemy with the lowest M.DEF 3 times, dealing a total of ??? M.DMG and inflicting stun for 1 sec, and if the target is under 'Target Lock On', target takes additional ??? M.DMG. The last attack inflicts 'Target Lock On' on the enemy for 10 sec. Lock On cannot be dispelled, and the target's M.Block rate has decreased by 500.",
+            "thumbnail": "./data/kr/assets/heroes/Mirianne/skills/1.png"
+        },
+        "2": {
+            "name": "Restrain and Protect",
+            "cost": "3",
+            "cooldown": "12",
+            "description": "Deals ??? M.DMG to target enemy and other enemies in range, and Stuns them for 2 sec. Then moves to an ally with the lowest P.DEF, excluding self, and creates Shield for two that can block ??? DMG for 10 sec. Shield will be ineffective when there is no ally. Gains immunity to CC while the Shield lasts.",
+            "thumbnail": "./data/kr/assets/heroes/Mirianne/skills/2.png"
+        },
+        "3": {
+            "name": "Assassination",
+            "cost": "2",
+            "cooldown": "14",
+            "description": "Moves to an enemy with the lowest HP, deals ??? M.DMG then returns to the furthest ally. If the enemy is not a hero, deals ??? additional M.DMG that ignores DEF. Defeating a target with this skill instantly triggers 'Restrain and Protect'.",
+            "thumbnail": "./data/kr/assets/heroes/Mirianne/skills/3.png"
+        },
+        "4": {
+            "name": "Target Eliminated",
+            "cost": null,
+            "cooldown": null,
+            "description": "If an enemy is inflicted by [Target Lock On], ATK increases by ??? and all attacks skills prioritize Locked On enemies. When the Locked On enemies dies, [Target Lock On] is inflicted on another enemy for 10 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Mirianne/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG and Shield are increased by 10%.",
+            "III": "DMG and Shield are increased by 15%.",
+            "IV": "DMG and Shield are increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "ATK Boost is increased by 10%.",
+            "III": "ATK Boost is increased by 15%.",
+            "IV": "ATK Boost is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "When there is 1 enemy, DMG is boosted by 100%.",
+                    "thumbnail": "./data/kr/assets/heroes/Mirianne/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Stun duration is increased by 1 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Mirianne/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Gain CC immunity while using said skill.",
+                    "thumbnail": "./data/kr/assets/heroes/Mirianne/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Stun duration is increased by 2 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Mirianne/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Dispels target's positive effects and inflicts Stun for 1 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Mirianne/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "DMG is increased by 40%.",
+                    "thumbnail": "./data/kr/assets/heroes/Mirianne/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "When there are enemies inflicted by **Skill 1**, Crit Chance is increased by 400.",
+                    "thumbnail": "./data/kr/assets/heroes/Mirianne/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Receives 30% reduced DMG when enemy is inflicted by **Skill 1**.",
+                    "thumbnail": "./data/kr/assets/heroes/Mirianne/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit DMG +20%",
+                "thumbnail": "./data/kr/assets/heroes/Mirianne/perks/light.png"
+            },
+            "dark": {
+                "effect": "Upon killing an enemy, all skill cooldown is reduced by 50%, and recovers 1 orb of mana.",
+                "thumbnail": "./data/kr/assets/heroes/Mirianne/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Endless Acceleration, Riventina",
+        "description": "Increases ATK Spd by (0) and attacks on Locked On enemies, dealing (1) of ATK as extra M.DMG. Extra damage effect occurs once in 2 sec.",
+        "value": {
+            "0": {
+                "0": "200",
+                "1": "240",
+                "2": "290",
+                "3": "350",
+                "4": "420",
+                "5": "500"
+            },
+            "1": {
+                "0": "200%",
+                "1": "240%",
+                "2": "290%",
+                "3": "350%",
+                "4": "420%",
+                "5": "500%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Mirianne/uw.png",
+        "story": "A magic gear created by Sonia, the Archmage of Blue. It is enchanted with magic that allows it to reach incredible speeds. It is also enchanted with a special spell that always guides it back to its owner after it's thrown. It is the best gift Sonia could give to Mirianne, who is both a family and a friend to her. In other words, it's a unique expression of love reserved only for Mirianne."
+    },
+    "uts": {
+        "1": {
+            "name": "Proof of Endeavor",
+            "description": "[Target Lock On] Increases DMG by (0) and reduces the target's M.Crit Resistance by 500 for 10 sec.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Mirianne/ut/1.png",
+            "story": "A throwing dagger made by Ricardo that Mirianne used for practice. Mirianne was the only survivor of a village where elves and humans lived together. When Ricardo took her to the orphanage, he feared that she might close her heart after realizing that she was different from the others in the town. Sonia, who was visiting Orvelia, would be the one to allay his worries. He asked Sonia to look after the little girl and gave her this training dagger to prepare her for the journey."
+        },
+        "2": {
+            "name": "Gemini Ring of Instant Teleportation",
+            "description": "[Restrain and Protect] Reduces Mana Cost by 1 and upon Crit hit recovers (0) Mana.",
+            "value": {
+                "0": {
+                    "0": "160",
+                    "1": "190",
+                    "2": "230",
+                    "3": "270",
+                    "4": "330",
+                    "5": "400"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Mirianne/ut/2.png",
+            "story": "Ring that Mirianne purchased at the 'Amazing Magic Toy Shop' in Orvel. She engraved Sonia's and her name in the ring. The two make a set, and it allows each other to teleport to the location of the other once a day. Though, Sonia doesn't use it since it's troublesome... It may be a toy, but Mirianne is happy that there's one more way for her to protect Sonia."
+        },
+        "3": {
+            "name": "Magic Powder of Lightning",
+            "description": "[Assassination] DMG is increased by 50% and upon Crit Hit increases own ATK by (0) for 10 sec.",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Mirianne/ut/3.png",
+            "story": "A collection of beautiful matter that is sprayed in Sonia's crystal ball like stars. Mirianne collected it to pull a prank, but it's so powerful that it's being used as a tool for assassination."
+        },
+        "4": {
+            "name": "Birth of Miracle",
+            "description": "[Target Eliminated] Increases ATK boost by 50%. Every 5 sec, stuns enemies under Target Lock On for (0) sec.",
+            "value": {
+                "0": {
+                    "0": "1",
+                    "1": "1.2",
+                    "2": "1.4",
+                    "3": "1.7",
+                    "4": "2.1",
+                    "5": "2.5"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Mirianne/ut/4.png",
+            "story": "A leaf necklace Mirianne's mother made to celebrate her birth. Her mother, praying that her beloved daughter would grow up in the town of Ella without harm, stuck an Elven jewel of luck into the wooden pendant. However, destiny had other plans, as Ella was invaded by demonic creatures. She died, leaving all that is left in her into Mirianne's necklace. It protected Mirianne until Ricardo found her, and the necklace crumbled into dust after serving its purpose. Ricardo pitied Mirianne, the lone survivor of Ella. A few years later, he asked Loman to make a similar necklace and gave it to Mirianne."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon using Skills 5 times.",
+        "description": "Places Endless Acceleration, Riventina on the ground for 10 sec. Endless Acceleration, Riventina attacks the enemy with the lowest M.DEF, dealing ??? M.DMG and inflicting Target Lock On. Afterwards, attacks the enemy every few sec, dealing ??? M.DMG and inflicting stun for 2 sec. All effects prioritize the enemy inflicted with Target Lock On.",
+        "cooldown": "23",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Mirianne/sw.png",
+        "advancement": {
+            "1": "Upon activation, Increases Mirianne's Crit DMG by 100% and ACC by 300 for 10 sec.",
+            "2": "Upon activation, [Assassination] ignores the enemy's DEF, and Increases its DMG by 30% for 10 sec."
+        },
+        "story": "A magical weapon Sonia crafted for Mirianne, Riventina.\nWhen Sonia infused the power of lightning into Riventina, Baikal within Sonia also infused part of itself into the new weapon.\n\nMirianne learned, experienced, and felt many aspects of life as time passed by, and the shard of lightning within Mirianne's dagger grew with her.\nThe shard would shift its shape to project Mirianne's emotion, experience, and her way of life.\n\nThe shard stayed with her, and watched over her whenever she went on an adventure to bring back her lost memory, whenever she suffered from nightmares and spent the night without getting any sleep, and whenever she concealed her tears with laughter.\n\nThe shard of lightning watched her journey unfold, and stayed by her side, waiting for the day it will become a strong power of lightning, powerful enough to protect Mirianne..."
+    },
+    "splashart": "./data/kr/assets/heroes/Mirianne/sa.png",
+    "costumes": "./data/kr/assets/heroes/Mirianne/cos",
+    "visual": null,
+    "aliases": null
+}

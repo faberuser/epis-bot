@@ -1,0 +1,240 @@
+{
+    "infos": {
+        "title": "Indolent Desaster",
+        "class": "Assassin",
+        "position": "Middle",
+        "attack range": "8600",
+        "damage type": "Magical",
+        "gender": "Female",
+        "age": "???",
+        "height": "156",
+        "race": "Demon",
+        "constellation": "Gisla the Sharpshooter",
+        "birth of month": "November 11th, Month of Fortune",
+        "like": "Naps, doing nothing, fluffy blankets, Sinful Fruit: Hot & Spicy",
+        "dislike": "Work, moving around, being awake, having to say the same thing more than three times",
+        "story": "The goddess of destruction and chaos, Lea, took a portion of herself aside and shaped it into the beings called the Primal Demons to bring an everlasting end to the cycle. Gremory was the very first fragment to be born as the incarnation of disaster. She has been an unintentional contributor to keeping the peace of the Material World to this day. It was a great stroke of luck for all living creatures that this great Demon, who could create terrible calamities with a single gesture, was so lazy - for she took a completely different course of action from what Lea, who wished to bring an end to the cycle, had originally planned. Gremory wasn't interested in ending some cycle. There was no reason for her to become embedded in the cogwheels of the cycle, not when she had finally obtained a brand-new consciousness and life. Besides, the Material World contained many attractions, like fluffy blankets, exciting snacks and endless amounts of delightfully creative works. These irresistible temptations made Gremory, who was a slacker to her bones, become even lazier.",
+        "thumbnail": "./data/kr/assets/heroes/Gremory/ico.png",
+        "story_": "The goddess of destruction and chaos, Lea, took a portion of herself aside and shaped it into the beings called the Primal Demons to bring an everlasting end to the cycle.\nGremory was the very first fragment to be born as the incarnation of disaster. She has been an unintentional contributor to keeping the peace of the Material World to this day. It was a great stroke of luck for all living creatures that this great Demon, who could create terrible calamities with a single gesture, was so lazy - for she took a completely different course of action from what Lea, who wished to bring an end to the cycle, had originally planned. Gremory wasn't interested in ending some cycle. There was no reason for her to become embedded in the cogwheels of the cycle, not when she had finally obtained a brand-new consciousness and life. Besides, the Material World contained many attractions, like fluffy blankets, exciting snacks and endless amounts of delightfully creative works. These irresistible temptations made Gremory, who was a slacker to her bones, become even lazier.\nTo this day, she puts her small body, formed in a way to make moving around easier, on a comfy sofa and mumbles to herself.\n'Work...? Sure, I'll do it... Right after the sequel of Deadly Sweet Laughning Strike Force comes out...'"
+    },
+    "skills": {
+        "1": {
+            "name": "Pochi, bite them!",
+            "cost": "3",
+            "cooldown": "999",
+            "description": "Attacks an enemy 5 times, dealing ??? M.DMG and inflicting [Pochi's Mark] each hit. The M.DMG of each hit increases by 15% per every stack of [Mana Charge]. [Pochi's Mark] reduces target's ATK by 6% for 15 sec, and it can be stacked up to max 5 times. If the target is a Boss, each hit deals ??? additional M.DMG. The additional M.DMG increases by 30% per every stack of [Mana Charge]. This skill is sealed after use.",
+            "thumbnail": "./data/kr/assets/heroes/Gremory/skills/1.png"
+        },
+        "2": {
+            "name": "Puchi, knock them away!",
+            "cost": "3",
+            "cooldown": "999",
+            "description": "Attacks the farthest enemy from behind, dealing ??? M.DMG. Afterward, inflicts Stun for 5 sec and [Puchi's Mark] on the target. [Puchi's Mark] reduces the target's M.Block Chance by 500 for 12 sec. This skill is sealed after use.",
+            "thumbnail": "./data/kr/assets/heroes/Gremory/skills/2.png"
+        },
+        "3": {
+            "name": "Pippi, wrap them!",
+            "cost": "4",
+            "cooldown": "999",
+            "description": "Deals a total of ??? M.DMG over 10 times to a target and the enemies within a large are around the target, inflicting [Pippi's Mark] on hit targets each hit. If this Skill daels DMG to a target inflicted with 10 stacks of [Pippi's Mark], each hit deals additional M.DMG that ignores DEF. [Pippi's Mark] increases M.DMG the target takes by 5% for 12 sec and it can be stacked up to max 10 times. This Skill is sealed after use.",
+            "thumbnail": "./data/kr/assets/heroes/Gremory/skills/3.png"
+        },
+        "4": {
+            "name": "Eh, wahtever. I'm gonna sleep.",
+            "cost": null,
+            "cooldown": null,
+            "description": "Available once all Skills are sealed. Upon use, dispels CC effects from self. While in use, Gremory gains immunity to CC, takes 40% reduced All DMG, and unlocks all of her sealed Skills. Every time she uses [Eh, whatever. I'm going to sleep.], she gains a [Mana Charge] stack. Each [Mana Charge] stack increases Gremory's DMG dealt to enemies by 2% and her ATK by 10%. [Mana Charge] can be stacked up to max 5 times and is irremovable.",
+            "thumbnail": "./data/kr/assets/heroes/Gremory/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "DMG Boost is increased by an additional 1%.",
+            "III": "DMG Boost is increased by an additional 1%.",
+            "IV": "DMG Boost is increased by an additional 1%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "When there is 1 enemy, additional M.DMG dealt against Bosses ignores DEF.",
+                    "thumbnail": "./data/kr/assets/heroes/Gremory/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "[Pochi's Mark] additionally reduced M.DEF by 6%.",
+                    "thumbnail": "./data/kr/assets/heroes/Gremory/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "The M.Block Chance Reduction effect of [Puchi's Mark] will fix the M.Block Chance to 0 instead.",
+                    "thumbnail": "./data/kr/assets/heroes/Gremory/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Knocks the target away instead of inflicting Stun.",
+                    "thumbnail": "./data/kr/assets/heroes/Gremory/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Reduces Mana Cost by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Gremory/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Increases Mana Cost by 1 and DMG by 100%.",
+                    "thumbnail": "./data/kr/assets/heroes/Gremory/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Increases All DMG Reduction effect by 20% while in use.",
+                    "thumbnail": "./data/kr/assets/heroes/Gremory/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "At the beginning of each battle, [Eh, whatevery. I'm gonna sleep.] becomes activated.",
+                    "thumbnail": "./data/kr/assets/heroes/Gremory/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit Chance +100",
+                "thumbnail": "./data/kr/assets/heroes/Gremory/perks/light.png"
+            },
+            "dark": {
+                "effect": "Increases DMG dealt to Non-Hero enemies by 50% when there is 1 enemy.",
+                "thumbnail": "./data/kr/assets/heroes/Gremory/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Gateway to Purgatory, Pigritia",
+        "description": "Increases ATK Spd by (0). Upon using [Eh, whatever. I'm gonna sleep.], Gremory heals HP equal to (1) of her Max HP and recovers Mana by (2) over 2 sec.",
+        "value": {
+            "0": {
+                "0": "200",
+                "1": "240",
+                "2": "290",
+                "3": "350",
+                "4": "420",
+                "5": "500"
+            },
+            "1": {
+                "0": "20%",
+                "1": "24%",
+                "2": "29%",
+                "3": "35%",
+                "4": "42%",
+                "5": "50%"
+            },
+            "2": {
+                "0": "20%",
+                "1": "24%",
+                "2": "29%",
+                "3": "35%",
+                "4": "42%",
+                "5": "50%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Gremory/uw.png",
+        "story": "When Demons first entered the Material world from the pandemonium, they take on a form completely different from the one they had in Pandemonium. Weak, little Demons cant choose their shape nor have the power to form consciousness, but none of that concerned Gremory, who was once a part of the goddess. Any Demon worth their salt could will their shape into a form that suited their individual preferences. But as for Gremory, her true form was too great and powerful; no matter how much she tried to make herself smaller, she always ended up bigger than most mountains of the Material World. On top of the fact that Gremory didn't like to move in the first place, her colossal, burdensome body made even the most simple actions take vast amounts of time and effort. As she couldn't stand all this fuss and bother, she ended up leaving her true form in pandemonium and took only a small fragment of her to send out into the Material World.\n\nThough her new body gave her much more room for activity, being the incarnation of sloth, she didn't even turn over the pages of her comic book by herself. She made one of her many servants do it instead. And to make sure she could easily summon her servants whenever she had a task she couldn't be bothered to do, Gremory created a cube. Then where do her servants come from? Where does the inside of her cube Lead? The cube is connected to Gremory's true form in Pandemonium. In the belly of every massive being, there exists a strange, twisted ecosystem. The servants that Gremory uses are little Demons who made Gremory's insides their home. Her insides are a shapeless hell, filled with screams and agony, devouring souls and burning them alive.\n...Though her cube is a terrifying weapon that can send anyone straight to hell in an instant, Gremory uses it as a comfortable bed frame so that she can lie down anywhere and anytime."
+    },
+    "uts": {
+        "1": {
+            "name": "Fluffy Pillow",
+            "description": "[Pochi, bite them!] Increases DMG by (0), and [Pochi's Mark] additionally reduces Heal Rate by 6%.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Gremory/ut/1.png",
+            "story": "A soft, fluffy pillow.\nIt looks as if it can send the user to sleep the moment they lay their head on this pillow, but it seems to be emitting ominous mana.\nWoven with the finest of threads, its softness is second to none. Gremory loves this pillow so much that if anyone asks her, 'What is the one thing you want with you if you ever get stranded on a deserted island?' she will immediately answer, 'My Pillow.' Designed by Gremory herself, the pillow cover depicts one of her favourite servants, who is unfortunately too big to call into the Material World.\nNaturally, the cloth that makes up this pillow is far from normal. Sewn from nightmares hand-picked by the vanished queen of the succubi, the succubi provided Gremory with this high-quality product in return for their protection, as their queen is currently absent. The pillow's intense ominous aura makes ordinary humans get dizzy just by looking at it.\nBeware! Once you put your head on this pillow, you will become trapped in an everlasting nightmare, doomed to wander eternally as a tortured soul."
+        },
+        "2": {
+            "name": "Yum Yum Treats",
+            "description": "[Puchi, Knock them away!] Increases CC ACC by (0) for the duration of Skill, and dispels positive effects from the target.",
+            "value": {
+                "0": {
+                    "0": "300",
+                    "1": "360",
+                    "2": "430",
+                    "3": "520",
+                    "4": "630",
+                    "5": "750"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Gremory/ut/2.png",
+            "story": "For Gremory, ger servants are no more than obedient pets.\nAll they did for her was clean the room, wipe the cube, stand in line in front of a famous bakery at the crack of dawn to get their limited edition products, turn the pages of the comic book Gremory was reading, unwrap snacks, etc... Nothing but trivial, menial work.\nGremory didn't love them, nor was she affectionate towards them. Every time they took care of something that she couldn't be bothered to do, she said 'Good Work' to them, and that was it. Servants are originally beings that are far weaker than Gremory. As their very lives could be snuffed out any moment, some might think that the servants should consider themselves lucky to have even received a name from a great Demon like Gremory. After all, affection between Demons is vastly different from the one between humans. Naturally, normal people can't fully understand the unique relationship between Demon servants and their masters.\nHowever, even though she comes off as aloof towards her servants, Gremory never forgets her duty as a master. With a special good bowl in one hand, she always makes sure her servants that followed her to the Material World are well fed."
+        },
+        "3": {
+            "name": "Carrier Cage",
+            "description": "[Pippi, wrap them!] Increases the duration of [Pippi's Mark] by 8 sec and M.DMG Boost effect by (0).",
+            "value": {
+                "0": {
+                    "0": "1%",
+                    "1": "1.4%",
+                    "2": "1.8%",
+                    "3": "2.2%",
+                    "4": "2.6%",
+                    "5": "3%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Gremory/ut/3.png",
+            "story": "Most of Gremory's servants go back and forth from the Material World to Pandemonium using Gremory's cube. But it was too much of a pain for Gremory to open and shut the cube every time she wanted to order a servant to do something. Hence, she uses a special cage for her servants, always keeping a few handy in case someone wants to use some of her servants, like when Shamilla wants help with her evil plans or when the Dark Legion needs new troops. All because - Germory didn't want to open and close the cube. Every. Single. Time.\nTo prevent her servants from getting out of control with their excitement at finally coming to the Material World, Gremory placed a magical cloth on the cage that can suck and trap all nearby souls. If you ever see a cage covered with a cloth embroidered with strange patterns, be careful not to touch it. Any human from the Meterial World who unwittingly lifts up the cloth will find themselved trapped in Gremory's cage. Unfortunately... Gremory doesn't bother to check the contents of her cage before throwing it into her cube."
+        },
+        "4": {
+            "name": "Sinful Fruit: Hot & Spicy",
+            "description": "[Eh, whatever. I'm gonna sleep.] Increases the DMG Reduction effect by 20% for the duration of Skill, and [Mana Charge] additionally increases Crit DMG by (0).",
+            "value": {
+                "0": {
+                    "0": "4%",
+                    "1": "4.8%",
+                    "2": "5.8%",
+                    "3": "7%",
+                    "4": "8.4%",
+                    "5": "10%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Gremory/ut/4.png",
+            "story": "One of the main items from the Selva Company. It is undoubtedly the most popular as well. The sensational spices and fiery taste of these potato chips can set fire to one's tongue and stomach, but its strangely addictive flavor somehow keeps bringing customers back for more. Unlike other potato chips sold by the Selva Commpany, the Hot & Spicy flavor is a season-limited product. Since it's limited edition, there are limited quantities of the item, and they're sold out in minutes every single time they're avaiable. These potato chips are also famous due to the number of patients it brings to the Church of Lua from overdosing on this fiery treat every year. It is literally a 'Sinful Fruit.' Not even Gremory, a Primal Demon, could escape from its spicy temptation.\nThe moment the sharp, burning flavor penetrated Gremory's languid laziness and jolted her awake, she became completely hooked. Now, whenever the sale of those season-limited potato chips start, Gremory calls forth every single one of her servants and puts together a virtual army, managing to grab at least half of the entire supply. Thanks to that, she has now become used to the taste, happily munching on the delightful stinging chips every time she reads a comic book."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon using Skills 4 times.",
+        "description": "With the power of the Gateway to Purgatory, Pigritia, Gremory transforms into her true form and attacks enemies with a wide frontal range 2 times, dealing a total of ??? M.DMG. Afterward, she lets out a deafening roar, dealing ??? M.DMG to enemies within a wide range. Each stack of [Mana Charge] increases DMG of Soul Weapon by 20%.",
+        "cooldown": "12",
+        "uses": "8",
+        "thumbnail": "./data/kr/assets/heroes/Gremory/sw.png",
+        "advancement": {
+            "1": "Increases DMG by 80%.",
+            "2": "Increases the max number of [Mana Charge] stacks by an additional 2."
+        },
+        "story": "The Gremory of the Material World was nothing but a small part of the true form of Gremory that existed in Pandemonium. But that didn't mean Gremory's power was weak or that it caused any different kind of danger.\nThough it may be a fragment, it's the fragment of a Primal Demon that was part of Lea, the goddess of destruction. On top of that, Gremory's true form is one of the biggest in Pandemonium. Gremory has more than enough power to bring forth her true form in an instant if there was ever a direct order from Lea so that she can get the task over with and go back to her sleep. The only reason why Gremory didn't bother to was that she liked lazing about in the Material World, and also because she didn't want to lose the things she enjoyed in the Material World right away.\nSo, as long as Lea doesn't order her to bring terrible calamities down on the Material World at this moment, Gremory is content threatening the small, pitifully weak being on the Material World with her equally small body. It's more like she does just enough work to avoid getting reprimanded for slacking off. Obviously, from the viewpoint of the fragile beings on the Material World, Gremory remains the embodiment of catastrophic disaster - as her small body contains the immense full power of the original form."
+    },
+    "splashart": "./data/kr/assets/heroes/Gremory/sa.png",
+    "costumes": "./data/kr/assets/heroes/Gremory/cos",
+    "visual": null,
+    "aliases": null
+}

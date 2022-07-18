@@ -1,0 +1,232 @@
+{
+    "infos": {
+        "title": "Spatial Coordinator",
+        "class": "Wizard",
+        "position": "Back-400",
+        "attack range": "3300",
+        "damage type": "Physical",
+        "gender": "Male",
+        "age": "36",
+        "height": "186",
+        "race": "Human",
+        "constellation": "Judgment Layan",
+        "birth of month": "September 3rd, Month of Truth",
+        "like": "Interdimensional travel, magic experiments",
+        "dislike": "People who do not listen to others",
+        "story": "A mysterious dimension-crossing wizard with distinctly recognizable heterochromia. The perpetual smile on his face seems to come from the wisdom of someone who sees through the entire universe. He shows great interest in those with special abilities and enjoys testing them. His space teleportation ability seems to surpass the realm of mortals, and he can even travel across dimensions. It is unsure what his true motivation is, but it seems certain enough that he always intends to help others.",
+        "thumbnail": "./data/kr/assets/heroes/Nyx/ico.png",
+        "story_": "A mysterious dimension-crossing wizard with distinctly recognizable heterochromia. The perpetual smile on his face seems to come from the wisdom of someone who sees through the entire universe. He shows great interest in those with special abilities and enjoys testing them. His space teleportation ability seems to surpass the realm of mortals, and he can even travel across dimensions. It is unsure what his true motivation is, but it seems certain enough that he always intends to help others."
+    },
+    "skills": {
+        "1": {
+            "name": "Dimension Blade",
+            "cost": "1",
+            "cooldown": "4",
+            "description": "Deals ??? P.DMG to target enemies and gains 1 stack of Blade per each hit enemy. The number of target increases depending on the number of Blade stacks. Blade can be stacked up to max 5 times, and lasts for 20 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Nyx/skills/1.png"
+        },
+        "2": {
+            "name": "Dimension Cleaver",
+            "cost": "3",
+            "cooldown": "14",
+            "description": "Dispels all positive effects of target enemy and deals ??? P.DMG. Hit enemies take ??? P.DMG for 10 sec, and are knocked down for 3 sec. The number of target increases depending on the number of Blade stacks.",
+            "thumbnail": "./data/kr/assets/heroes/Nyx/skills/2.png"
+        },
+        "3": {
+            "name": "Infinity Blades",
+            "cost": "4",
+            "cooldown": "25",
+            "description": "Deals ??? P.DMG to frontal enemies in range, and the final attack deals ??? P.DMG to one enemy, inflicting knockdown for 3 sec. The number of target for the last attack increases depending on the number of Blade stacks.",
+            "thumbnail": "./data/kr/assets/heroes/Nyx/skills/3.png"
+        },
+        "4": {
+            "name": "Hidden Blade",
+            "cost": null,
+            "cooldown": null,
+            "description": "Each normal attack will have a 10% chance of gaining 1 Blade stack. Increases the number of targets and Nyx's ATK by 10% for each Blade stack.",
+            "thumbnail": "./data/kr/assets/heroes/Nyx/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "When there are over 5 enemies, 20 sec cooldown is reset, and DMG is increased by 200%. Has a cooldown of 20 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Nyx/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Max Blade stack is increased by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Nyx/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Mana cost is reduced by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Nyx/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Target receives 25% increased P.DMG for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Nyx/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Cooldown is reduced by 5 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Nyx/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "When there are 5 blade stacks or more, DMG is increased by 70%.",
+                    "thumbnail": "./data/kr/assets/heroes/Nyx/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "DMG is increased by 15% per each enemy on the field.",
+                    "thumbnail": "./data/kr/assets/heroes/Nyx/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "There is a 10% chance of dispelling enemy positive effects.",
+                    "thumbnail": "./data/kr/assets/heroes/Nyx/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit DMG +20%",
+                "thumbnail": "./data/kr/assets/heroes/Nyx/perks/light.png"
+            },
+            "dark": {
+                "effect": "At the beginning of each battle, increases DMG dealt to Non-Hero enemies by 7%. This effect is irremovable, and it can be stacked up to max 5 times.",
+                "thumbnail": "./data/kr/assets/heroes/Nyx/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Dimensional Key, Magnus Fille",
+        "description": "Auto attack penetrates through enemies in a straight line and DMG is increased by (0) Per each blade stack, DMG is increased by an extra (1).",
+        "value": {
+            "0": {
+                "0": "30%",
+                "1": "36%",
+                "2": "43%",
+                "3": "52%",
+                "4": "62%",
+                "5": "75%"
+            },
+            "1": {
+                "0": "4%",
+                "1": "4.8%",
+                "2": "5.7%",
+                "3": "5.9%",
+                "4": "8.3%",
+                "5": "10%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Nyx/uw.png",
+        "story": "There exists a universal string that connects different dimensions. This sword is the key that can sever and reconnect this string. It is bestowed upon the dimensional arbitrator sworn to protect the balance of the universe. It can be duplicated indefinitely, but will only grant its powers to the chosen one."
+    },
+    "uts": {
+        "1": {
+            "name": "Dimensional Magical Circle",
+            "description": "[Dimension Blade] Increases the number of targets by 1, and for 10 sec, reduces the target's P.Block by (0).",
+            "value": {
+                "0": {
+                    "0": "200",
+                    "1": "240",
+                    "2": "290",
+                    "3": "350",
+                    "4": "420",
+                    "5": "500"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Nyx/ut/1.png",
+            "story": "A magical circle that allows for cross-galactic travel. Nyx's dimensional travel begins and ends with this circle. As the rules of galactic travel and the sequence of light and darkness varies according to the spatiotemporal situations, those who do not possess enough knowledge of dimensions cannot use the circle. Nyx can summon anything using this magical circle."
+        },
+        "2": {
+            "name": "Sword of Flow Cutting",
+            "description": "[Dimension Cleaver] DMG is increased by 50% and own Crit DMG is increased by (0) for 8 sec per each hit enemies. This effect can be stacked max 5 times.",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Nyx/ut/2.png",
+            "story": "A legendary sword that has transcended eras. A legendary sword that was made with the light of the sun and the melted souls of those in pain. It is one of the required items for Dimension Cleaver since it is durable enough to withstand dimension and can be made very sharp."
+        },
+        "3": {
+            "name": "Dimension Stone",
+            "description": "[Infinity Blades] Mana cost is reduced by 1 and DMG is increased by (0).",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Nyx/ut/3.png",
+            "story": "A required item for wizards who go through dimensions. The Dimensional Stone is a magic stone that is loved by those who go through dimensions, and it contains unlimited energy. However, the power that one can use from it depends on the individual's ability. Only high ranking wizards can use it effectively."
+        },
+        "4": {
+            "name": "Spring of Galaxy",
+            "description": "[Hidden Blade] Increases DMG by 50%. Increases own Crit DMG by (0) for 5 sec upon each successful hit. Crit DMG boost can be stacked up to max 20 times.",
+            "value": {
+                "0": {
+                    "0": "1%",
+                    "1": "1.2%",
+                    "2": "1.4%",
+                    "3": "1.7%",
+                    "4": "2.1%",
+                    "5": "2.5%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Nyx/ut/4.png",
+            "story": "A pendant that Nyx used to store the coordinates of numerous magical views he found while traveling the infinite space. The pendant is connected to galaxies in dimension, and the jewel on the pendant changes its color according to the color of the galaxy that is currently connected. One can know the galaxy is gradually moving by looking at the pendant. According to dimensional coordinates, the jewel on the pendant changes its color."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon dealing DMG 70 times.",
+        "description": "Summons the Soul of Dimensional Key, Magnus Fille for 10 sec and immediately recovers 3 Mana. For the duration of Skill, increases own Crit DMG by 150%.",
+        "cooldown": "24",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Nyx/sw.png",
+        "advancement": {
+            "1": "Reduces Skill Activation requirements to 50 times.",
+            "2": "Increases the duration by 4 sec, and self becomes immune to CC for the duration of Skill."
+        },
+        "story": "There is another world called World of Swords, and Nyx was its leader as well as a sage.\nHe was beloved by all humans there, and he led the world to the right path.\nHowever, calamity struck the world. The sky was filled with flames, and the grounds were torn, opening the maw of abyss.\nNyx agonized, despaired, and suffered in his efforts to save the world.\nMany were sacrificed, and many of his loved ones were lost.\n\nAfter giving and sacrificing his everything Nyx finally managed to obtain the most powerful sword in the world.\nWith the sword of his soul, he saved his world by destroying the calamity but the world forced Nyx to make the worst sacrifice, for the last time.\n\nAfter forsaking everything he had at the cost of gaining the power to save the world, his existence was lost to his world.\nAll the memories of him were erased from his world, history, and everyone.\nNyx, after gone from history, left his world and wandered between different dimensions.\n\nEach time Nyx glances at the true key of the dimension in his hands, he reminisces the past.\n\nThe World of Swords...\nA homeland where he cannot go back. A place so beautiful yet hurts to think about."
+    },
+    "splashart": "./data/kr/assets/heroes/Nyx/sa.png",
+    "costumes": "./data/kr/assets/heroes/Nyx/cos",
+    "visual": null,
+    "aliases": null
+}

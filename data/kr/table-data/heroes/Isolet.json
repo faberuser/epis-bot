@@ -1,0 +1,232 @@
+{
+    "infos": {
+        "title": "Hope of Gray",
+        "class": "Wizard",
+        "position": "Back",
+        "attack range": "8200",
+        "damage type": "Physical",
+        "gender": "Female",
+        "age": "22",
+        "height": "167",
+        "race": "Human",
+        "constellation": "Judgement Layan",
+        "birth of month": "September 9th, Month of Truth",
+        "like": "Courageous people, responsible people, black tea",
+        "dislike": "Ignorant poeple, powerless people",
+        "story": "A witch who's associated with Pandora. Scarred by the dark side of the Empire that encourages scrificing small for the greater good, Isolet's mind delved deeper into the abyss as she directly faced the ambivalence of the Empire. Isolet is equipped with great knowledge which she gained from being a witch, truths of the world she found out in secret, and the great power granted to ther by Pandora. Carrying a deep feeling of loss in her heart, Isolet wields her weapon and proceeds to the execution site to punish the hypocrites who oppress the weak.",
+        "thumbnail": "./data/kr/assets/heroes/Isolet/ico.png",
+        "story_": "A witch who's associated with Pandora.\n\nScarred by the dark side of the Empire that encourages scrificing small for the greater good, Isolet's mind delved deeper into the abyss as she directly faced the ambivalenve of the Empire. Isolet is equipped with great knowledge which she gained from being a witch, truths of the world she found out in secret, and the great power granted to her by Pandora. Carrying a deep feeling of loss in her heart, Isolet wields her weapon and proceeds to the execution site to punish the hypocrites who oppress the weak.\nHer elemental spells have become more powerful through the mechines Pnadora gave her. She is also among the few people who can provide a large amount of Mana to the hearts of Pandora's automata to make them do her bidding. Both the Empire and Pandora desire Isolet for her invaluable knowledge and power.\nWhenever she reminisces about the Witch Association, which is her family and her hime, her eyes tend to soften. But the bloody path she has walked as the executioner of Pandora binds her with its cold chains."
+    },
+    "skills": {
+        "1": {
+            "name": "Devouring Flame - Caienne",
+            "cost": "2",
+            "cooldown": "7",
+            "description": "Deals ??? P.DMG to frontal enemies and inflicts them with [Ignite]. Enemies inflicted with [Ignite] have their Heal Rate reduced by 25% for 7s.",
+            "thumbnail": "./data/kr/assets/heroes/Isolet/skills/1.png"
+        },
+        "2": {
+            "name": "Frost of Absolute Zero - Devion",
+            "cost": "3",
+            "cooldown": "15",
+            "description": "Deals a total of ??? P.DMG to frontal enemies over 5 times, freezing the targets for 3 sec each hit. Dealing DMG to an enemy inflicted by [Ignite] creates [Explosive Reaction] that deals ??? additional DMG that ignores DEF.",
+            "thumbnail": "./data/kr/assets/heroes/Isolet/skills/2.png"
+        },
+        "3": {
+            "name": "Raging Storm - Icarus",
+            "cost": "4",
+            "cooldown": "20",
+            "description": "Deals ??? P.DMG each hit over 20 times to frontal enemies for 10s, reducing ATK of targets by 15% for 10s. Upon dealing DMG to an enemy inflicted with [Ignite], the Skill changes to [Blazing Storm], dealing ??? P.DMG and reducing enemy's Heal Rate by 1.5% for 60 sec each hit. This effect can be stacked up to max 30 times.",
+            "thumbnail": "./data/kr/assets/heroes/Isolet/skills/3.png"
+        },
+        "4": {
+            "name": "Quintessence of Technomagic",
+            "cost": null,
+            "cooldown": null,
+            "description": "Isolet's ATK Spd is fixed to 1000 and she is not affected by Skill Cooldown Reduction effects, by she recovers 1500 Mana and increases her Crit DMG by 100% every time she uses a Skill.\nWhen she creates [Explosive Reaction], her ATK increases by 4%. This effect can be stacked up to max 15 times and is irremovable. When she creates [Blazing Storm], M.DMG all allies take is reduced by 7%. This effect can be stacked up to max 3 times and is irremovable.",
+            "thumbnail": "./data/kr/assets/heroes/Isolet/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "Additionally increases own Crit DMG by 10%.",
+            "III": "Additionally increases own Crit DMG by 15%.",
+            "IV": "Additionally increases own Crit DMG by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Enemies inflicted with [Ignite] additionally take 25% increased P.DMG.",
+                    "thumbnail": "./data/kr/assets/heroes/Isolet/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Increases the duration of [Ignite] by 5 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Isolet/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Each hit reduces enemy's mana by 200.",
+                    "thumbnail": "./data/kr/assets/heroes/Isolet/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Increases DMG of [Explosive Reaction] by 60% instead of freezing enemies.",
+                    "thumbnail": "./data/kr/assets/heroes/Isolet/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Reduces Mana Cost by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Isolet/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Changes Heal Rate Reduction effect of [Blazing Storm] to 2.5%.",
+                    "thumbnail": "./data/kr/assets/heroes/Isolet/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Additionally increases DMG dealt to non-Hero enemies by 1% upon creating [Explosive Reaction].",
+                    "thumbnail": "./data/kr/assets/heroes/Isolet/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Additionally increases Heal Rate by 10% upon creating [Blazing Storm].",
+                    "thumbnail": "./data/kr/assets/heroes/Isolet/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit Chance +100",
+                "thumbnail": "./data/kr/assets/heroes/Isolet/perks/light.png"
+            },
+            "dark": {
+                "effect": "When there is 1 enemy, increases own DMG dealt to bosses by 50%. When there are 6 or more allies, increases all allies DMG dealt to bosses excluding self by 5%.",
+                "thumbnail": "./data/kr/assets/heroes/Isolet/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Conqueror of Darkness, Del Terravion",
+        "description": "Increases P.DMG the enemy with the highest ATK takes by (0) for 12 sec and own DMG dealt to enemies by (1) every 10 sec. The DMG Boost effect can be stacked up to max 6 times and is irremovable.",
+        "value": {
+            "0": {
+                "0": "10%",
+                "1": "12%",
+                "2": "14%",
+                "3": "17%",
+                "4": "21%",
+                "5": "25%"
+            },
+            "1": {
+                "0": "2%",
+                "1": "2.4%",
+                "2": "2.9%",
+                "3": "3.5%",
+                "4": "4.2%",
+                "5": "5%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Isolet/uw.png",
+        "story": "Witches have their own way of foretelling fate. Pilgrimage toward fate is considered a divine rite that all witches must undertake. It was also the duty of witches to light the path ahead. Some witches take pride in their sublime mission while some avoid their duty with the best of their abilities as they consider this pilgrimage as an act of plunging oneself into an unstable current that surges violently.\nSince Isolet was someone with a great sense of responsibility, she chose to uphold her sublime mission. The Witch Association recognized Isolet, who had absorbed the numerous wisdom it had kept, and decided to choose her as the next successor of the relic they've been holding onto\u2014Del Terravion, a staff made with a dragon's heart.\nDel Terravion is a dragon that nests in the sky like the angelic envoys of the goddess. It lives its life among the sky, and as the celestial guardian that guides on to their fate, it has been worshipped by several witches.\nAs a witch whose specialty is celestial divination, Isolet was greatly honored to be the next successor of Del Terravion. The moment she first wielded the staff, she swore that she will never disappoint the stars by walking the path of a witch who is righteous and pure."
+    },
+    "uts": {
+        "1": {
+            "name": "Witch Association Certificate",
+            "description": "[Devouring Flame - Caienne] Dispels positive effects from enemies within range and additionally reduces their Heal Rate by (0) upon inflicting [Ignite].",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Isolet/ut/1.png",
+            "story": "A certificate that proves that the awardee is officially a witch of the Witch Association. Witchcraft is considered a trade that consists of various work, such as foreseeing fate to light people's path ahead and helping people with special wisdom passed down for generations. The Witch Association trains those with the potential to become capable witches, manages witches on official active duty, and hosts divine rites considered important by witches. While the witches do prevent those who pretend to be witches and perform illegal acts under their disguise, they don't restrict each other's personal freedom for the sake of their job unless someone has committed an act that violates their work ethics.\nEven Isolet, who shed the blood of many as the Executioner of Pandora, retains her status as a witch because she diligently upholds her duty as a witch."
+        },
+        "2": {
+            "name": "Card of Peace: Serenity",
+            "description": "[Frost of Absolute Zero - Devion] Increases DMG by (0) and the additional DMG from [Explosive Reaction] ignores the target's Block effects.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Isolet/ut/2.png",
+            "story": "To Ophelia, Isolet was always carrying a heavy burden on her shoulders. Ophelia respected Isolet, who's more experienced and noble than anyone else, but she seemed so unstable, almost as if simply standing on the ground required tremendous effort.\nOphelia did not directly ask Isolet how she was doing as she believed it was out of line for her to do so. Still, Ophelia always felt something was off with Isolet. If Isolet's heart, as impenetrable as it seems, was affected by scars and anxiety unknown, Ophelia wished for Isolet a peace of mind. Although Isolet may look strict and intimidating to Ophelia, Isolet was a kind person who looked after her.\nThe kindhearted Ophelia decided to ask for her friends' aid to help Isolet. Hoping that Isolet would be happy and serene, at least in her dreams, Ophelia gifted Isolet with a card that portrayed Serenity as a blue butterfly peacefully sleeping."
+        },
+        "3": {
+            "name": "Bracelet of Wishes",
+            "description": "[Raging Storm - Icarus] Reduces ATK Spd of enemies within range by 300 for the duration and increases P.DMG the enemies hit with [Blazing Storm] take by (0) for 5 sec.",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Isolet/ut/3.png",
+            "story": "A friendship bracelet Isolet received as a gift from the now-dead friend whom she relied on and trusted the most.\nHis warm and sincere will to protect Pegareth, an artifact of the Empire, inspired Isolet to help him with all her knowledge. Isolet believed that it was her mission to help him and guide him to the righteous fate and guard the artifact together. To show his appreciation to Isolet, his guiding star, he made a bracelet for Isolet based on the tales of a charm\u2014ones he heard during the journey\u2014that guards one\u2019s sleep and instills tranquility in their heart. He wanted the bracelet to be an item that will give Isolet the strength to rise again if she falls from exhaustion since she bears the burden of knowing the crushing truth. He wanted the bracelet to be an item that helps her sustain her will.\nUnfortunately, the charm worked against his wishes. His gift of kindness became a wedge, etched into her heart as a reminder of the day when she confronted him, horribly defiled by the Empire\u2026 The day when she lost her precious friend."
+        },
+        "4": {
+            "name": "Celestial Compass",
+            "description": "[Quintessence of Technomagic] Increases the max number of stacks of [Explosive Reaction] by 5 and the max number of stacks of [Blazing Storm] by 1. Increases Crit DMG by (0).",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Isolet/ut/4.png",
+            "story": "A compass that looks like the night sky.\nMany witches who perform celestial divination to foretell the future use this compass as an assisting tool because it has patterns that represent the sun, the moon, and the stars. When Isolet was wandering aimlessly after losing her precious friend, Rose made this and gave it to Isolet as a gift so that she could find and continue to walk the right path. The end of the compass usually directs to the path that leads to one's fate, but it is up to the witch to find out what the path exactly is and when it will appear. Isolet, however, did not feel the need for tools as she had a firm belief that she will never lose her way.\nWhen Isolet first received that compass from Rose, the compass fixed its direction toward Rose as if it was telling Isolet to set Rose, whom Isolet's final ounce of compassion applies, as a guideline. However, after Rose's death, the compass seems to have lost its sense of direction and just spins around endlessly."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon using Skills 4 times.",
+        "description": "Summons the soul of Conquerer of Darkness, Del Terravion, dealing ??? P.DMG to all enemies and locking hit targets within an irremovable special barrier. Targets within the special barrier cannot receive positive effects and they take 25% increased P.DMG for 8 sec. Afterward, the Skill lasts for 12 sec and increases Isolet's ATK by 30%.",
+        "cooldown": "20",
+        "uses": "5",
+        "thumbnail": "./data/kr/assets/heroes/Isolet/sw.png",
+        "advancement": {
+            "1": "Increases the duration of the special barrier by 4 sec.",
+            "2": "Increases Isolet's DMG dealt to non-Hero enemies by 35% for the duration of soul."
+        },
+        "story": "The life of someone who has suffered loss can never be the same as before. The magnitude of those that once supported their faith and ideolofy is no longer the same as before and can no longer support them fully. Eventually, parts of themselves fall apart, little by little Isolet was one of the people that changed due to loss. On the surface, however, nothing seemed changed. Isolet's personality remained the same, and she didn't commit wrongs. She remained the same Isolet who's good and righteous. But those who know her well noticed that she had changed. Her change was manifested via Del Terravion.\nWhen Isolet joined Pandora, an organization that opposes the Empire, she wa able to add an extra power output device on Del Terravion using Pandora's technomagic technology. She swore that she will never be powerless nor have anything taken away from her. To do so, she needed power more than ever, even it it meant that she will have to walk the path painted in blood and covered in curses and resentment. The forced technomagic output device engulfed Del Terravion's heart with sunlight, removing any trace of the azure color that once existed. Each time the staff was processed, Isolet could hear Del Terravion's scream - the scream of Del Terravion struggling in pain and sorrow. Only Isolet who could hear these painful screams, and she thought that they sounded exactly like her. To her, sounded exactly like her cries form her nightmare, from when she had to watch her friend die every night. Thus, Isolet guarded Pandora#s workshop every time Del Terravion was processed. It was Isolet's way of executing herself. Because she was pure, she ended up experiencign loss.\nOnce Del Terravion, the relic of the witches, was combined with the power of the technomagic taht mocks magic, it exuded overwhelming power like nothing before. The dragon within the staff with wings that once embraced the sky, is now boudn to a desolate apparatus. It is now but an empty shell of a guardian that is stripped of its glory. Isolet named this shell Gigantes."
+    },
+    "splashart": "./data/kr/assets/heroes/Isolet/sa.png",
+    "costumes": "./data/kr/assets/heroes/Isolet/cos",
+    "visual": null,
+    "aliases": null
+}

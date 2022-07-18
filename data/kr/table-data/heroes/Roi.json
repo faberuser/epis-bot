@@ -1,0 +1,232 @@
+{
+    "infos": {
+        "title": "Swelift Assassin",
+        "class": "Assassin",
+        "position": "Front-500",
+        "attack range": "400",
+        "damage type": "Physical",
+        "gender": "Male",
+        "age": "20",
+        "height": "179",
+        "race": "Human",
+        "constellation": "Armil the Saint",
+        "birth of month": "April 1st, Month of Life",
+        "like": "Current self",
+        "dislike": "Past self",
+        "story": "He is Cleo's escort and is protecting her at Dominiks's request. A former member of a group of assassins, he risked his lelife and went rogue for some unknown reason. Having lived as an assassin, he rarely shows much respect toward others, but his hardships have made him an experienced and shrewd man who treats those who help him with fairness.",
+        "thumbnail": "./data/kr/assets/heroes/Roi/ico.png",
+        "story_": "He is Cleo's escort and is protecting her at Dominiks's request. A former member of a group of assassins, he risked his life and went rogue for some unknown reason. Having lived as an assassin, he rarely shows much respect toward others, but his hardships have made him an experienced and shrewd man who treats those who help him with fairness."
+    },
+    "skills": {
+        "1": {
+            "name": "Merciless",
+            "cost": "2",
+            "cooldown": "8",
+            "description": "Attacks an enemy 3 times, dealing ??? P.DMG and increasing ??? P.DMG the target takes by 25% for 10 sec. Afterward, each hit inflicts 1 stack of [Mortal Wound] that deals ??? P.DMG over 16 sec. [Mortal Wound] can be stacked up to max 5 times.",
+            "thumbnail": "./data/kr/assets/heroes/Roi/skills/1.png"
+        },
+        "2": {
+            "name": "Curtain of Darkness",
+            "cost": "2",
+            "cooldown": "15",
+            "description": "Increases all allies' ATK and P.Dodge by 250 for 10 sec. Afterward, Roi grants [Specter's Breath] upon self for 10 sec. For the duration of [Specter's Breath], increases own ATK Spd by 250, DMG dealt to enemies by 20%, and evades all P.DMG attacks",
+            "thumbnail": "./data/kr/assets/heroes/Roi/skills/2.png"
+        },
+        "3": {
+            "name": "Blade Claw",
+            "cost": "3",
+            "cooldown": "20",
+            "description": "Moves behind an enemy and deals ??? P.DMG. Consumes stacks of [Mortal Wound] from the target adding ??? P.DMG for every 1 stack. Upon a Crit Hit recovers 2 orbs of Mana and resets Cooldown of [Hack].",
+            "thumbnail": "./data/kr/assets/heroes/Roi/skills/3.png"
+        },
+        "4": {
+            "name": "Hack",
+            "cost": null,
+            "cooldown": null,
+            "description": "Increases Crit Chance by 300. If normal attack is landed as a Crit Hit attacks the target 6 times, dealing additional ??? P.DMG and inflicting a stack of [Mortal Wound] with a 50% chance.",
+            "thumbnail": "./data/kr/assets/heroes/Roi/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "ATK Boost is increased by 10%.",
+            "III": "ATK Boost is increased by 15%.",
+            "IV": "ATK Boost is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Mana cost is reduced by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Roi/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Changes the number of hits to 5 times.",
+                    "thumbnail": "./data/kr/assets/heroes/Roi/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Upon use, dispels negative effect from self.",
+                    "thumbnail": "./data/kr/assets/heroes/Roi/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Auto attack DMG is boosted by 100% for the duration.",
+                    "thumbnail": "./data/kr/assets/heroes/Roi/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "In exchange for 1 additional Mana Cost, DMG dealt is increased by 100%.",
+                    "thumbnail": "./data/kr/assets/heroes/Roi/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Changes the target to an enemy with the lowest HP.",
+                    "thumbnail": "./data/kr/assets/heroes/Roi/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Each attack recovers 300 mana.",
+                    "thumbnail": "./data/kr/assets/heroes/Roi/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Each hit reduces the hit target's Mana by 150.",
+                    "thumbnail": "./data/kr/assets/heroes/Roi/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit DMG +20%",
+                "thumbnail": "./data/kr/assets/heroes/Roi/perks/light.png"
+            },
+            "dark": {
+                "effect": "Upon a Crit Hit, ATK Spd is increased by 300 and Crit DMG is increased by 60% for 5 sec. Does not activate again during activation.",
+                "thumbnail": "./data/kr/assets/heroes/Roi/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Specter's Breath, Redeal",
+        "description": "Each auto attack has a (0) chance of inflicting 1 stack of [Mortal Wound]. Each stack of [Mortal Wound] deals additional DMG equal to (1) of ATK.",
+        "value": {
+            "0": {
+                "0": "20%",
+                "1": "24%",
+                "2": "29%",
+                "3": "35%",
+                "4": "42%",
+                "5": "50%"
+            },
+            "1": {
+                "0": "12%",
+                "1": "14%",
+                "2": "17%",
+                "3": "21%",
+                "4": "25%",
+                "5": "30%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Roi/uw.png",
+        "story": "The group of assassins known as the Laughing Mask has been the master of the Orvel's underworld for a long time. Only the best assassin of the Laughing Mask is allowed to wield this dreadful pair of daggers. It is said that the wounds inflicted by these daggers never heal, and that their victims inevitably bleed to death. According to the legend, these daggers were made from the scythe of the Grim Reaper."
+    },
+    "uts": {
+        "1": {
+            "name": "Shadow Blade",
+            "description": "[No Mercy] Dispels all negative effects from self, and recovers Mana by (0) upon Critial hit.",
+            "value": {
+                "0": {
+                    "0": "200",
+                    "1": "240",
+                    "2": "290",
+                    "3": "350",
+                    "4": "420",
+                    "5": "500"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Roi/ut/1.png",
+            "story": "A bagh nakh in the shape of a beast's claw. It's a concealed weapon made with a Damascus blade, used by the assassins from the east, to maximize the effect of Shadow Blade. Forged with heat and blood, Shadow Blade is known as a cursed weapon lusting for blood. Most people, with the exception of skilled assassins, keep away from it."
+        },
+        "2": {
+            "name": "Soma's Hood",
+            "description": "[Curtain of Darkness] For the duration of Skill, recovers own Mana by 150 every sec and increases own DMG dealt against Bosses by (0).",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Roi/ut/2.png",
+            "story": "A dangerous hood made with the secret method of the Laughing Mask. It was made with the legendary soma that is said to provide endless vitality and the secret of the Laughing Mask. Soma's hood increases the morale of an assassin inside the dark curtain, increasing their ATK, and granting dexterity, maximizing P. Dodge."
+        },
+        "3": {
+            "name": "Cracked Mask",
+            "description": "[Blade Claw] Reduces Cooldown by 1 sec and increases DMG by (0).",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Roi/ut/3.png",
+            "story": "The mask that Roi destroyed when he left the Laughing Mask assassins. Assassins mercilessly aim for their enemy's vital points, and they wear masks to suppress their emotions when they eliminate their targets. Roi faces the split mask, and goes behind his enemies to kill them with his Blade Claws to protect his friends."
+        },
+        "4": {
+            "name": "Specter's Ring",
+            "description": "[Hack] Increases DMG by 50%. Upon a Critical Hit, increases own ATK Spd by (0) for 5 sec.",
+            "value": {
+                "0": {
+                    "0": "200",
+                    "1": "240",
+                    "2": "290",
+                    "3": "350",
+                    "4": "420",
+                    "5": "500"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Roi/ut/4.png",
+            "story": "A ring to commemorate Roy's completion of mastering a new skill. Roy crafted this ring to celebrate for mastering his new Hacking techniques without relying on the techniques of the Laughing Masks. Engraved on the ring is an image of Specter Redeal, which serves as a purpose to overcome the past and remind him of his mistakes."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon using Skills 6 times.",
+        "description": "Summons the soul of Specter's Breath, Redeal for 12 sec, increasing own Crit DMG by 80%. Each time Roi casts [Blade Claw], deals additional ??? DMG to the target and inflicts 1 stack of [Mortal Wound].",
+        "cooldown": "18",
+        "uses": "7",
+        "thumbnail": "./data/kr/assets/heroes/Roi/sw.png",
+        "advancement": {
+            "1": "For the duration of Skill, [Blade Claw] does not remove [Mortal Wound] stacks.",
+            "2": "For the duration of Skill, fixes Cooldown of [Blade Claw] to 0 sec, and additionally recovers 1 orb of Mana upon use."
+        },
+        "story": "Blades always carry with them a vile stench of blood and death, Sometimes, one might hear the scream of the victim s the blades fell. It is a symbol of Laughing Mask, and the proof of the cruelest killer.\nRoi, upon realizing that he will neither escape nor ignore this weapon, swore to remain as the last wielder of this weapon, no matter what it costs.\n'I will not deny any sins that have committed in the past. I will embrace them all, and walk as a shadow.'\nIt was that moment, a specter reaper made his appearance from the dark, as if he was rising up. The reaper's aura of death was so strong that it felt like it would consume Roi at any moment, but his eyes were also beaming with bizarre curiosity. That was when Roi realized that the reaper will be watching his every move, until the day he meets his end."
+    },
+    "splashart": "./data/kr/assets/heroes/Roi/sa.png",
+    "costumes": "./data/kr/assets/heroes/Roi/cos",
+    "visual": "./data/kr/assets/heroes/Roi/visual.png",
+    "aliases": null
+}

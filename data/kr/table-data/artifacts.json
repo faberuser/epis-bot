@@ -1,0 +1,813 @@
+{
+    "Earth Storm": {
+        "description": "When inflicted by CC, recovers Mana by (0) and gains [Earth Storm] for 10 sec, increasing All DMG nearby enemies take by (1) every sec. If activated in the Arena, [Earth Storm] deals P.DMG equal to 3% of the target's max HP to neaby enemies every sec. This effect will not inflict a Crit Hit. The effect of [Earth Storm] has a Cooldown of 20 sec.",
+        "value": {
+            "0": "600, 700, 800, 1000, 1200, 1500",
+            "1": "12%, 14%, 17%, 21%, 25%, 30%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Earth Storm.png",
+        "aliases": null
+    },
+    "Earth Protection": {
+        "description": "At the beginning of battle, gain CC immunity and a 50% boost to P. and M. DEF stats for (0) sec.",
+        "value": {
+            "0": "8, 10, 12, 14, 17, 20"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Earth Protection.png",
+        "aliases": null
+    },
+    "Blessing of Earth": {
+        "description": "When there is 1 enemy, ATK is boosted by (0).",
+        "value": {
+            "0": "40%, 48%, 58%, 69%, 83%, 100%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Blessing of Earth.png",
+        "aliases": ["boe"]
+    },
+    "Earth Core": {
+        "description": "ATK, HP and all DEF rises by (1).",
+        "value": {
+            "0": "10%, 12%, 14%, 17%, 20%, 25%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Earth Core.png",
+        "aliases": null
+    },
+    "Earth Fortress": {
+        "description": "When there is 1 enemy, reduces the targets's Heal Rate by (0) and increases own DMG dealt to Bosses by (0). This effect does not stack with effects from other allies.",
+        "value": {
+            "0": "10%, 12%, 14%, 17%, 21%, 25%",
+            "1": "10%, 12%, 14%, 17%, 21%, 25%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Earth Fortress.png",
+        "aliases": null
+    },
+    "Nail Ornament of the Deep": {
+        "description": "At the beginning of each battle, fixes self's DEF to 0 and increases DMG dealt to bosses by (0) for 200 sec. This effect is irremovable.",
+        "value": {
+            "0": "20%, 24%, 29%, 35%, 42%, 50%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Nail Ornament of the Deep.png",
+        "aliases": ["nod", "nootd", "nail deep"]
+    },
+    "Belt Ornament of the Deep": {
+        "description": "At the beginning of first battle, and every 30 sec, reduces DMG all allies take from enemies by (0) for 3 sec. This effect is irremovable and does not stack with effects from other allies. Each time the effect expires, dispels negative effects from all allies.",
+        "value": {
+            "0": "20%, 24%, 29%, 35%, 42%, 50%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Belt Ornament of the Deep.png",
+        "aliases": ["bod", "bootd", "belt deep"]
+    },
+    "Trident of the Deep": {
+        "description": "Dealing DMG to enemies 100 times increases ATK by (0) and Crit Chance by (1) for 15 sec. This effect cannot be dispelled.",
+        "value": {
+            "0": "30%, 36%, 44%, 53, 63%, 75%",
+            "1": "200, 240, 290, 350, 420, 500"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Trident of the Deep.png",
+        "aliases": ["tod", "totd", "trident deep"]
+    },
+    "Ring of Spirit Morph": {
+        "description": "At the beginning of every battle, HP does not fall below 10% for (0) seconds. If HP falls below 15% for the duration of Skill, DMG dealt to Heroes will be reduced by 70% for 5 sec. All effects are irremovable.",
+        "value": {
+            "0": "4, 5, 6, 7, 8, 9"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Ring of Spirit Morph.png",
+        "aliases": ["rosm", "rsm"]
+    },
+    "Spellbound Ring of the Deep": {
+        "description": "Upon the start of a battle for (0) sec, limit 1 enemy's ATK Spd to 1000 and reduce ATK by (1).",
+        "value": {
+            "0": "8, 10, 12, 14, 17, 20",
+            "1": "20%, 24%, 29%, 35%, 42%, 50%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Spellbound Ring of the Deep.png",
+        "aliases": ["spd", "srotd", "ring deep"]
+    },
+    "Guardian Crystal of the Deep": {
+        "description": "When there is 1 enemy, all DEF is increased by (0).",
+        "value": {
+            "0": "50%, 60%, 72%, 86%, 103%, 125%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Guardian Crystal of the Deep.png",
+        "aliases": ["gcd", "gcotd", "crystal deep", "guardian deep"]
+    },
+    "Abyssal Breath": {
+        "description": "Increases DMG dealt to Non-Hero enemies of 2 allies with the highest ATK excluding self by (0) and heals HP of all allies equal to 2.5% of Max HP every (1) sec. When there is 1 enemy, increases Heal Rate by x2. This effect does not stack with effects from other allies.",
+        "value": {
+            "0": "5%, 6%, 7.2%, 8.6%, 10.4%, 12.5%",
+            "1": "10, 9, 8, 7, 6, 5"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Abyssal Breath.png",
+        "aliases": null
+    },
+    "Abyssal Crown": {
+        "description": "30 sec after the battle starts, increases ATK of the ally with the highest ATK by (0). This effect cannot be dispelled, and it does not stack with other effects for allies.",
+        "value": {
+            "0": "30%, 36%, 43%, 52%, 63%, 75%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Abyssal Crown.png",
+        "aliases": null
+    },
+    "Abyssal Eye": {
+        "description": "Upon taking damage, deals M.DMG of (0) own ATK to the target and reduces ATK Spd of the target by (1) for 1.5 sec. After the ATK Spd Reduction Effect expires, the target is petrified for (2) sec. This effect will be activated only once every 30 sec.",
+        "value": {
+            "0": "50%, 60%, 72%, 86%, 105%, 125%",
+            "1": "400, 480, 580, 700, 840, 1000",
+            "3": "2, 2.4, 2.9, 3.5, 4.2, 5"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Abyssal Eye.png",
+        "aliases": null
+    },
+    "Abyssal Nail Ornament": {
+        "description": "Upon attack, deals P.DMG equal to (0) of ATK that ignores DEF to the enemy every 0.5 sec for 10 sec. This effect will be activated once in 20 sec.",
+        "value": {
+            "0": "4%, 4.8%, 5.8%, 7%, 8.4%, 10%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Abyssal Nail Ornament.png",
+        "aliases": ["abyss nail"]
+    },
+    "Heart of the Abyss": {
+        "description": "At the beginning of every battle, increases ATK of the ally with the highest ATK by (0) and reduces ATK of the enemy with the highest ATK by 15% for 100 sec. The ATK Boost effect can be stacked up to max 5 times, and all effects are irremovable.",
+        "value": {
+            "0": "8%, 10%, 12%, 14%, 17%, 20%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Heart of the Abyss.png",
+        "aliases": null
+    },
+    "Infernal Bond": {
+        "description": "At the start of every battle, increases all skill cooldown by (0) sec of 1 random enemy.",
+        "value": {
+            "0": "2.5, 3, 3.5, 4, 5, 6"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Infernal Bond.png",
+        "aliases": null
+    },
+    "Otherworldly Sword": {
+        "description": "Consumes (0) of self's current HP every sec and disable Lifesteal, but increases DMG dealt per sec by 0.5% and Crit DMG by 0.5%. DMG and Crit DMG Boost effect can be stacked up to max (1) times. This effect automatically deactivates when HP falls below 25%.",
+        "value": {
+            "0": "4%, 4.8%, 5.7%, 6.9%, 8.3%, 10%",
+            "1": "50, 60, 70, 80, 90, 100"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Otherworldly Sword.png",
+        "aliases": ["shakmeh sword"]
+    },
+    "Infernal Greatsword": {
+        "description": "Own heal rate decreases by 30%, while Penetration increases by (0) and Crit DMG increases by (1).",
+        "value": {
+            "0": "300, 360, 430, 520, 630, 750",
+            "1": "30%, 36%, 43%, 52%, 63%, 70%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Infernal Greatsword.png",
+        "aliases": ["vel sword"]
+    },
+    "Infernal Whip": {
+        "description": "Every 8 sec, attacks all enemies and deals (0) of ATK as M.DMG. Targets take (1) increased DMG for the next 5 sec. DMG boost effect increases by (2) with every activation, and can be stacked max 25 times. DMG boost effect cannot be used simultaneously with same effects of other allies.",
+        "value": {
+            "0": "20%, 24%, 29%, 35%, 42%, 50%",
+            "1": "10%, 12%, 14%, 17%, 21%, 25%",
+            "3": "0.4%, 0.5%, 0.6%, 0.7%, 0.8%, 1%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Infernal Whip.png",
+        "aliases": null
+    },
+    "Infernal Gate": {
+        "description": "Increases All DEF by (0), DMG dealt to enemies by (1) and DMG dealt to Non-Hero enemies by (2).",
+        "value": {
+            "0": "10%, 12%, 14%, 17%, 21%, 25%",
+            "1": "6%, 7.2%, 8.6%, 10.5%, 12.5%, 15%",
+            "2": "6%, 7.2%, 8.6%, 10.5%, 12.5%, 15%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Infernal Gate.png",
+        "aliases": null
+    },
+    "Heart Cotton Candy": {
+        "description": "When the battle starts, increases ATK of self and the ally with the highest ATK by (0) for 20 sec. This effect will not stack with other similar effects cast by allies.",
+        "value": {
+            "0": "10%, 12%, 14%, 17%, 21%, 25%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Heart Cotton Candy.png",
+        "aliases": null
+    },
+    "Cross Pumpkin Head": {
+        "description": "Max HP is increased by (0) and deal P.DMG worth 2% of Max HP to all nearby enemies within a small range. (Effect is based on your hero's max HP, triggered every sec, and does not crit. Radius of the effect is 3000.)",
+        "value": {
+            "0": "20%, 24%, 29%, 35%, 42%, 50%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Cross Pumpkin Head.png",
+        "aliases": ["sad pumpkin"]
+    },
+    "Angry Pumpkin Head": {
+        "description": "All DMG taken is reduced by (0) and deal (1) more DMG to enemies.",
+        "value": {
+            "0": "10%, 12%, 14%, 17%, 20%, 25%",
+            "1": "10%, 12%, 14%, 17%, 20%, 25%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Angry Pumpkin Head.png",
+        "aliases": null
+    },
+    "Happy Pumpkin Head": {
+        "description": "Every 7 sec, increases Heal Rate by (0) and heals HP by (1) of own ATK. Heal rate increase can be stacked up to max 15 times and cannot be removed.",
+        "value": {
+            "0": "2%, 2.4%, 2.8%, 3.4%, 4.2%, 5%",
+            "1": "100%, 120%, 140%, 170%, 210%, 250%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Happy Pumpkin Head.png",
+        "aliases": null
+    },
+    "Surprised Pumpkin Head": {
+        "description": "When inflicted by CC, immediately recovers Mana by (0) and increases ATK Spd by (1) for 5 sec. This effect activates once every 30 sec.",
+        "value": {
+            "0": "12%, 14%, 17%, 21%, 25%, 30%",
+            "1": "200, 240, 290, 350, 420"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Surprised Pumpkin Head.png",
+        "aliases": null
+    },
+    "Pumpkin-Stuck Evil Spirit": {
+        "description": "Increases own Max HP by (0). When there is 1 enemy, increases ATK of all allies by (0). This effect will not stack with other similar effects cast by allies.",
+        "value": {
+            "0": "20%, 24%, 29%, 35%, 42%, 50%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Pumpkin-Stuck Evil Spirit.png",
+        "aliases": null
+    },
+    "Frost Giant Mask": {
+        "description": "ATK upon Frost Giants increase by (0), and DMG resistance against Frost Giants increase by (1).",
+        "value": {
+            "0": "40%, 48%, 57%, 69%, 83%, 100%",
+            "1": "20%, 24%, 28%, 34%, 41%, 50%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Frost Giant Mask.png",
+        "aliases": null
+    },
+    "Golden Mask of Ancient King": {
+        "description": "Upon taking a hit, there is a 5% chance to gain invulnerability to all DMG for (0) sec. Has a cooldown of 5 secs.",
+        "value": {
+            "0": "3, 3.5, 4, 5, 6, 7.5"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Golden Mask of Ancient King.png",
+        "aliases": null
+    },
+    "Mask of Dark Elf": {
+        "description": "ATK upon Dark Elves increase by (0), and DMG resistance against Dark Elves increases by (1).",
+        "value": {
+            "0": "40%, 48%, 57%, 60%, 83%, 100%",
+            "1": "20%, 24%, 28%, 34%, 41%, 50%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Mask of Dark Elf.png",
+        "aliases": null
+    },
+    "Mask of Draconic": {
+        "description": "ATK upon Draconics increase by (0), and DMG resistance against Draconics increase by (1).",
+        "value": {
+            "0": "40%, 48%, 57%, 69%, 83%, 100%",
+            "1": "20%, 24%, 28%, 34%, 41%, 50%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Mask of Draconic.png",
+        "aliases": null
+    },
+    "Mask of Goblin": {
+        "description": "ATK upon Goblins increase by (0), and DMG resistance against Goblins increases by (1).",
+        "value": {
+            "0": "40%, 48%, 57%, 69%, 83%, 100%",
+            "1": "20%, 24%, 28%, 34%, 41%, 50%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Mask of Goblin.png",
+        "aliases": null
+    },
+    "Mask of Harpy": {
+        "description": "ATK upon Harpies increase by (0), and DMG resistance against Harpies increases by (1).",
+        "value": {
+            "0": "40%, 48%, 57%, 69%, 83%, 100%",
+            "1": "20%, 24%, 28%, 34%, 41%, 50%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Mask of Harpy.png",
+        "aliases": null
+    },
+    "Mask of Lizardman": {
+        "description": "ATK upon Lizardmen increase by (0), and DMG resistance against Lizardmen increase by (1).",
+        "value": {
+            "0": "40%, 48%, 57%, 69%, 83%, 100%",
+            "1": "20%, 24%, 28%, 34%, 41%, 50%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Mask of Lizardman.png",
+        "aliases": null
+    },
+    "Mask of Orc": {
+        "description": "ATK upon Orcs increase by (0), and DMG resistance against Orcs increases by (1).",
+        "value": {
+            "0": "40%, 48%, 57%, 69%, 83%, 100%",
+            "1": "20%, 24%, 28%, 34%, 41%, 50%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Mask of Orc.png",
+        "aliases": null
+    },
+    "Undead Mask": {
+        "description": "Increases DMG to Undead by (0) and Resistance against Undead by (1).",
+        "value": {
+            "0": "40%, 48%, 57%, 69%, 83%, 100%",
+            "1": "20%, 24%, 28%, 34%, 42%, 50%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Undead Mask.png",
+        "aliases": null
+    },
+    "Assassin's Veil": {
+        "description": "Increases P.Dodge by (0). Each successful dodge increases ATK by (1) , stacking up to max 20 times.",
+        "value": {
+            "0": "100, 120, 140, 170, 210, 250",
+            "1": "1%, 1.2%, 1.4%, 1.7%, 2.1%, 2.5%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Assassin's Veil.png",
+        "aliases": null
+    },
+    "Book of the Mad": {
+        "description": "Every second, own Mana is reduced by (0), but own DMG to enemies is increased by (1).",
+        "value": {
+            "0": "100, 120, 140, 170, 210, 250",
+            "1": "14%, 17%, 21%, 25%, 30%, 35%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Book of the Mad.png",
+        "aliases": ["bom", "botm"]
+    },
+    "Burning Brazier of Elf": {
+        "description": "Upon attacking an enemy, there is a (0) chance to recover 1 MP.",
+        "value": {
+            "0": "10%, 12%, 14%, 17%, 21%, 25%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Burning Brazier of Elf.png",
+        "aliases": null
+    },
+    "Christmas Star Ornament": {
+        "description": "At the beginning of each battle, for 5 sec, increase Mana Recovery per sec by (0). Also, Crit Resistance is increased by (1) . This effect cannot be dispelled.",
+        "value": {
+            "0": "260%, 310%, 370%, 450%, 540%, 650%",
+            "1": "100, 120, 140, 170, 210, 250"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Christmas Star Ornament.png",
+        "aliases": null
+    },
+    "Warm Turkey Dish": {
+        "description": "Increases own Max HP by (0) and ALl Block Chance by (1).",
+        "value": {
+            "0": "10%, 12%, 14%, 17%, 21%, 25%",
+            "1": "100, 120, 140, 170, 210, 250"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Warm Turkey Dish.png",
+        "aliases": null
+    },
+    "Well-Done Turkey Roast": {
+        "description": "Every 15 sec, recover HP equal to (0) of Max HP for 3 secs.",
+        "value": {
+            "0": "1%, 1.2%, 1.4%, 1.7%, 2%, 2.5%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Well-Done Turkey Roast.png",
+        "aliases": null
+    },
+    "Christmas Tree of Holy Night": {
+        "description": "Crit DMG is increased by (0).",
+        "value": {
+            "0": "50%, 60%, 72%, 87%, 105%, 125%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Christmas Tree of Holy Night.png",
+        "aliases": null
+    },
+    "Cooling Delicacy in the Summer": {
+        "description": "When the battle begins, reduces DMG from non-Hero enemies by (0) for 30 seconds, and recovers (1) MP every 2 sec.",
+        "value": {
+            "0": "20%, 24%, 28%, 34%, 42%, 50%",
+            "1": "100, 120, 140, 170, 210, 250"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Cooling Delicacy in the Summer.png",
+        "aliases": null
+    },
+    "Crystal Music Box": {
+        "description": "Increases DMG to Heroes by (0) but takes (1) increased DMG.",
+        "value": {
+            "0": "20%, 24%, 29%, 35%, 42%, 50%",
+            "1": "10%, 12%, 14%, 17%, 21%, 25%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Crystal Music Box.png",
+        "aliases": ["cmb"]
+    },
+    "Dice of Magical Letters": {
+        "description": "Upon attacking an enemy, deal (0) M.DMG for a 3% chance.",
+        "value": {
+            "0": "400%, 480%, 570%, 690%, 830%, 1000%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Dice of Magical Letters.png",
+        "aliases": null
+    },
+    "Drinking Horn of Ancient Cow": {
+        "description": "Upon auto attacking, there is a 10% chance that ATK rises by (0) and ATK Spd riese by (1).",
+        "value": {
+            "0": "10%, 12%, 14%, 17%, 21%, 25%",
+            "1": "100, 120, 140, 170, 210, 250"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Drinking Horn of Ancient Cow.png",
+        "aliases": null
+    },
+    "Fancy Traditional Pendant": {
+        "description": "Crit Chance is increased by (0) and Crit DMG is increased by (1).",
+        "value": {
+            "0": "100, 120, 140, 170, 210, 250",
+            "1": "20%, 24%, 29%, 35%, 42%, 50%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Fancy Traditional Pendant.png",
+        "aliases": null
+    },
+    "Fantastic Hybrid Animals": {
+        "description": "When the battle starts, increases DMG to Non-Hero enemies by (0) and takes (1) reduced DMG for 200 sec.",
+        "value": {
+            "0": "12%, 14%, 17%, 21%, 25%, 30%",
+            "1": "12%, 14%, 17%, 21%, 25%, 30%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Fantastic Hybrid Animals.png",
+        "aliases": ["fha"]
+    },
+    "Feather of Sacrifice": {
+        "description": "For 120 sec after the battle starts, takes (0) extra DMG and increases all DMG taken by the enemy boss by (1). This effect cannot be dispelled, and it does not stack with other effects for allies.",
+        "value": {
+            "0": "10%, 12%, 14%, 17%, 21%, 25%",
+            "1": "10%, 12%, 14%, 17%, 21%, 25%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Feather of Sacrifice.png",
+        "aliases": null
+    },
+    "Golden Apple of a Goddess": {
+        "description": "When the hero's HP falls below 25%, recover (0) of max HP and dispel all debuffs. Activates 1 time only.",
+        "value": {
+            "0": "30%, 36%, 43%, 51%, 62%, 75%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Golden Apple of a Goddess.png",
+        "aliases": null
+    },
+    "Golden Cat Statue": {
+        "description": "Every Battle, Spd increases by (0) for the first 15 secs.",
+        "value": {
+            "0": "400, 480, 570, 680, 820, 1000"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Golden Cat Statue.png",
+        "aliases": null
+    },
+    "Insignia of Iron Conviction": {
+        "description": "Every 50 times this character takes M.DMG, dispel all harmful effects and gain a shield worth (0) of ATK for 5 sec. While this shield is in effect, gain immunity to CC and DMG Stacking effects.",
+        "value": {
+            "0": "480%, 580%, 690^, 830%, 1000%, 1200%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Insignia of Iron Conviction.png",
+        "aliases": null
+    },
+    "Judgment of Light Bracelet": {
+        "description": "ACC and CC ACC rise by (0).",
+        "value": {
+            "0": "300, 360, 430, 510, 620, 750"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Judgment of Light Bracelet.png",
+        "aliases": null
+    },
+    "Kiddy Chick": {
+        "description": "ATK Spd is increased by (0).",
+        "value": {
+            "0": "80, 96, 115, 138, 165, 200"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Kiddy Chick.png",
+        "aliases": null
+    },
+    "Lion of Protection": {
+        "description": "Increases own P.DEF by (0), and P.Block (1).",
+        "value": {
+            "0": "20%, 24%, 29%, 35%, 42%, 50%",
+            "1": "100, 120, 140, 170, 210, 250"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Lion of Protection.png",
+        "aliases": null
+    },
+    "LuLu's Necklace": {
+        "description": "When the battle starts, increases DMG to Non-Hero enemies by (0) for 30 sec, and recovers Mana by (1) every 5 sec.",
+        "value": {
+            "0": "20%, 24%, 28%, 34%, 42%, 50%",
+            "1": "200, 240, 280, 340, 420, 500"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/LuLu's Necklace.png",
+        "aliases": null
+    },
+    "Juno's Special Dessert": {
+        "description": "Upon taking ahit, there is a 20% chance to increase All DMG the target takes by (0) for 5 sec. This effect cannot be used with other similar effect cast by allies.",
+        "value": {
+            "0": "10%, 12%, 14%, 17%, 21%, 25%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Juno's Special Dessert.png",
+        "aliases": null
+    },
+    "Juno's Special Vitality Stew": {
+        "description": "Upon normal attack, deals P.DMG equal to (0) of ATK over time for 5 sec. This effect cannot be used with other similar effects cast by allies.",
+        "value": {
+            "0": "200%, 240%, 350%, 420%, 500%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Juno's Special Vitality Stew.png",
+        "aliases": null
+    },
+    "Madame's Bronze Mirrors": {
+        "description": "Raises own M.Block Chance by (0) and M.DMG Reduction is increased by (1).",
+        "value": {
+            "0": "300, 360, 420, 510, 630, 750",
+            "1": "100, 120, 140, 170, 210, 250"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Madame's Bronze Mirrors.png",
+        "aliases": null
+    },
+    "Magical Flute": {
+        "description": "Every 8 sec, increases ATK Spd of 2 random allies and the caster by (0) for 4 sec.",
+        "value": {
+            "0": "100, 120, 140, 170, 210, 250"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Magical Flute.png",
+        "aliases": null
+    },
+    "New Year's Fireworks": {
+        "description": "ATK is increased by (0) for 60 sec at the start of each battle.",
+        "value": {
+            "0": "5%, 6%, 7.2%, 8.6%, 10.4%, 12.5%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/New Year's Fireworks.png",
+        "aliases": null
+    },
+    "New Year's Fanfare": {
+        "description": "Increases ATK of 4 allies by (0) for 20 sec at the beginning of every battle. This effect will not stack with other similar effects cast by allies.",
+        "value": {
+            "0": "5%, 6%, 7.2%, 8.6%, 10.4%, 12.5%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/New Year's Fanfare.png",
+        "aliases": null
+    },
+    "New-Type Thruster": {
+        "description": "When inflicted by CC, reduces self's Cooldown of all Skills by (0) sec and recovers (1) Mana every sec for 3 sec. Has a Cooldown of 20 sec.",
+        "value": {
+            "0": "5, 6, 7, 8, 9, 10",
+            "1": "500, 600, 700, 800, 900, 1000"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/New-Type Thruster.png",
+        "aliases": null
+    },
+    "Orbs of Contract": {
+        "description": "Every 7 sec, increase M.DEF by (0) of ATK. This effect stacks up to 6 times.",
+        "value": {
+            "0": "1%, 1.2%, 1.4%, 1.7%, 2%, 2.5%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Orbs of Contract.png",
+        "aliases": null
+    },
+    "Perfume of the Queen": {
+        "description": "When inflicted by CC 3 times, removes own Negative Effects, and increases ATK Spd by 500 and gains immunity to CC for (0) sec. Refreshes after activation.",
+        "value": {
+            "0": "4, 4.8, 5.8, 7, 8.4, 10"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Perfume of the Queen.png",
+        "aliases": null
+    },
+    "Pocket Watch of Ancient Civilization": {
+        "description": "Every 10 sec, reduce all cooldowns by (0) sec and increase ATK Spd by (1) for 5 sec.",
+        "value": {
+            "0": "1, 1.2, 1.4, 1.7, 2, 2.5",
+            "1": "80, 96, 115, 138, 165, 200"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Pocket Watch of Ancient Civilization.png",
+        "aliases": null
+    },
+    "Primer for the Heroes": {
+        "description": "When HP falls below 20%, ATK rises by (0) while Speed and all DMG Reduction is increased by (1).",
+        "value": {
+            "0": "30%, 36%, 43%, 51%, 62%, 75%",
+            "1": "300, 360, 430, 510, 620, 750"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Primer for the Heroes.png",
+        "aliases": null
+    },
+    "Roaring Tiger Statue": {
+        "description": "When Hero health falls below 35%, deal DMG equal to 100% of ATK to nearby enemies and knock them down. Targeted enemies lose (0) ATK and (1) ATK Speed for 10 sec. Has a cooldown of 30 sec.",
+        "value": {
+            "0": "14%, 16%, 20%, 24%, 29%, 35%",
+            "1": "140, 160, 200, 240, 290, 350"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Roaring Tiger Statue.png",
+        "aliases": null
+    },
+    "Sealed Chain of Ancient God": {
+        "description": "Every (0) sec, cast Silence to a random enemy for (1) sec and remove positive effects.",
+        "value": {
+            "0": "20, 19, 18, 17, 16, 15",
+            "1": "3, 3.5, 4, 4.5, 5, 6"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Sealed Chain of Ancient God.png",
+        "aliases": null
+    },
+    "Solar Stone": {
+        "description": "Deals P.DMG equal to (0) of ATK to nearby enemies in a circular range every second and decreases their Heal Rate by (1) for 5 sec.",
+        "value": {
+            "0": "20%, 24%, 29%, 35%, 42%, 50%",
+            "1": "30%, 36%, 43%, 52%, 62%, 75%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Solar Stone.png",
+        "aliases": null
+    },
+    "Sorcerous Black Dagger": {
+        "description": "Upon auto-attacking, there is a (0) chance to reduce the enemy's mana by (1). Has a cooldown of 6 sec.",
+        "value": {
+            "0": "10%, 12%, 14%, 16%, 18%, 20%",
+            "1": "600, 700, 800, 1000, 1200, 1500"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Sorcerous Black Dagger.png",
+        "aliases": null
+    },
+    "Soul Spring Water": {
+        "description": "At the beginning of each battle, recover (0) HP and (1) mana.",
+        "value": {
+            "0": "24%, 28%, 34%, 42%, 50%, 60%",
+            "1": "12%, 14%, 17%, 21%, 25%, 30%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Soul Spring Water.png",
+        "aliases": ["ssw"]
+    },
+    "Talismans of Resistance": {
+        "description": "Removes debuffs upon receiving them. After removal, gain immunity to CC for (0) sec. Has a cooldown for (1) sec.",
+        "value": {
+            "0": "1, 1.5, 2, 3, 4, 5",
+            "1": "20, 19, 18, 17, 16, 15"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Talismans of Resistance.png",
+        "aliases": null
+    },
+    "Tarot Card of Loss": {
+        "description": "Reduces Crit Chance by (0) and increases ATK by (1).",
+        "value": {
+            "0": "150, 180, 210, 260, 310, 375",
+            "1": "30%, 36%, 43%, 52%, 63%, 75%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Tarot Card of Loss.png",
+        "aliases": null
+    },
+    "The Ancient Scope": {
+        "description": "When MP is at 100%, Crit Chance and ACC rises by (0) for 10 sec. Has a cooldown of 20 sec.",
+        "value": {
+            "0": "400, 480, 570, 680, 820, 1000"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/The Ancient Scope.png",
+        "aliases": null
+    },
+    "Tome of Black Magic": {
+        "description": "Every 10 sec, target a single enemy. Said enemy takes DMG that ignores DEF equal to (0) of current HP each second for 5 sec, and reduces Mana by (1). This skill is effective only in the Arena.",
+        "value": {
+            "0": "2%, 2.4%, 2.9%, 3.5%, 4.2%, 5%",
+            "1": "200, 240, 290, 350, 420, 500"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Tome of Black Magic.png",
+        "aliases": null
+    },
+    "Vase of Sacrifice": {
+        "description": "Upon taking DMG 50 times, heals HP of 1 random ally by (0) of own ATK and increases the target's ATK by (1) for 10 secs.",
+        "value": {
+            "0": "200%, 240%, 290%, 350%, 420%, 500%",
+            "1": "30%, 36%, 43%, 51%, 63%, 75%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Vase of Sacrifice.png",
+        "aliases": null
+    },
+    "Fragment of an Ancient Kingdom": {
+        "description": "Increases CC Resist by (0) and CC ACC by (1).",
+        "value": {
+            "0": "200, 240, 290, 350, 420, 500",
+            "1": "200, 240, 290, 350, 420, 500"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Fragment of an Ancient Kingdom.png",
+        "aliases": null
+    },
+    "Goddess of Glory": {
+        "description": "Increases ATK Spd of 4 allies by (0) for 20 sec when the battle starts. This effect will not be stacked with other similar effects cast by allies.",
+        "value": {
+            "0": "100, 120, 140, 170, 210, 250"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Goddess of Glory.png",
+        "aliases": null
+    },
+    "Master Chef's Recipe Book": {
+        "description": "Increase self's All DEF by (0) and Heal Rate by (1).",
+        "value": {
+            "0": "10%, 12%, 14%, 17%, 21%, 25%",
+            "1": "10%, 12%, 14%, 17%, 21%, 25%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Master Chef's Recipe Book.png",
+        "aliases": null
+    },
+    "Pendulum of Fantasy": {
+        "description": "At the beginning of each battle, ATK is permanently increased by (0). This effect stacks up to max 5 times, and is irremovable.",
+        "value": {
+            "0": "10%, 12%, 14%, 17%, 21%, 25%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Pendulum of Fantasy.png",
+        "aliases": null
+    },
+    "Otherworldly Radiance": {
+        "description": "At the beginning of the first battle, and every 15 sec, gains [Otherworldly Radiance] that lasts for 4 sec. If [Otherworldly Radiance] is still active after 4 sec, dispels negative effects from self and reduces All DMG taken by (0) for 4 sec. If [Otherworldly Radiance] is dispelled in 4 sec, dispels positive effect from 2 random enemies, knocks them away for 3 sec, and reduces their Mana by (1). DMG Reduction effect is irremovable.",
+        "value": {
+            "0": "20%, 24%, 29%, 35%, 42%, 50%",
+            "1": "800, 1000, 1200, 1400, 1700, 2000"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Otherworldly Radiance.png",
+        "aliases": null
+    },
+    "Ancient God King's Coin": {
+        "description": "Increases ATK and Crit DMG by (0).",
+        "value": {
+            "0": "20%, 24%, 29%, 35%, 42%, 50%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Ancient God King's Coin.png",
+        "aliases": null
+    },
+    "Amethyst Pendulum": {
+        "description": "Increases All Crit Resistance by (0) for 7 sec every 10 sec.",
+        "value": {
+            "0": "200, 240, 290, 350, 420, 500"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Amethyst Pendulum.png",
+        "aliases": ["amethyst"]
+    },
+    "Otherworldly Helm": {
+        "description": "Increases self's Max HP by (0), and upon taking DMG 3 times, reduces [DMG dealt to Heroes] of self and 2 enemies with the highest ATK by (1) for 5 sec. This effect is irremovable and has a 30 sec Cooldown.",
+        "value": {
+            "0": "20%, 24%, 29%, 35%, 42%, 50%",
+            "1": "50%, 55%, 60%, 65%, 70%, 75%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Otherworldly Helm.png",
+        "aliases": null
+    },
+    "Treasure Hunt Capsule": {
+        "description": "At the beginning of each battle, immediatly reduces Cooldown of all Skills of self by (0) sec and increases DMG dealt to Non-Hero enemies by (1). DMG Boost against Non-Hero enemies can stack up to max 10 times and is irremovable. Upon reaching 10 stacks, Cooldown reduction effect is doubled.",
+        "value": {
+            "0": "1, 1.2, 1.4, 1.7, 2.1, 2.5",
+            "1": "1%, 1.2%, 1.4%, 1.7%, 2.1%, 2.5%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Treasure Hunt Capsule.png",
+        "aliases": null
+    },
+    "Forge Hammer MK-II": {
+        "description": "Normal attacks have a 5% chance to increase ATK Spd by (0) for 5 sec.",
+        "value": {
+            "0": "400, 480, 570, 690, 830, 1000"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Forge Hammer MK-II.png",
+        "aliases": ["hammer"]
+    },
+    "Honorary Trophy": {
+        "description": "Increases ATK by (0) and Crit Chance by (1).",
+        "value": {
+            "0": "25%, 30%, 35%, 40%, 45%, 50%",
+            "1": "250, 300, 350, 400, 450, 500"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Honorary Trophy.png",
+        "aliases": ["trophy"]
+    },
+    "Honorary Medal": {
+        "description": "Increases ATK, HP, and All DEF of all allies by (0). This effect does not stack with same effects from other allies",
+        "value": {
+            "0": "7.5%, 9%, 10.5%, 12%, 13.5%, 15%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Honorary Medal.png",
+        "aliases": ["medal"]
+    },
+    "Hero's Plaque of Appreciation": {
+        "description": "Increases Max HP by (0). 30 sec after the battle starts, increases Crit DMG of the ally with the highest ATK excluding self by (1). This effect is irremovable and does not stack with same effects from other allies.",
+        "value": {
+            "0": "25%, 30%, 35%, 40%, 45%, 50%",
+            "1": "50%, 60%, 70%, 80%, 90%, 100%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Hero's Plaque of Appreciation.png",
+        "aliases": ["plaque"]
+    },
+    "Academic Achievement Award": {
+        "description": "Increases ATK of all allies by (0), and All DEF of self by (1). This effect will not stack with other similar effects cast by allies.",
+        "value": {
+            "0": "8%, 10%, 12%, 14%, 17%, 20%",
+            "1": "10%, 12%, 14%, 17%, 21%, 25%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Academic Achievement Award.png",
+        "aliases": ["aaa"]
+    },
+    "Dragon's Doomstone": {
+        "description": "Increase DMG dealt to Non-Hero enemies by (0) and takes (1) reduced DMG from them. If the target is a [Dragon], the effect is tripled.",
+        "value": {
+            "0": "10%, 12%, 14%, 17%, 21%, 25%",
+            "1": "5%, 6%, 7%, 8.5%, 10.5%, 12.5%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Dragon's Doomstone.png",
+        "aliases": null
+    },
+    "Apocalypsion's Tear": {
+        "description": "When there is only 1 enemy or more than 5 enemies, increases ATK and Crit DMG of all allies by (0) and (1) respectively. This effect does not stack with other similar effects cast by allies.",
+        "value": {
+            "0": "12%, 14%, 17%, 21%, 25%, 30%",
+            "1": "24%, 28%, 34%, 42%, 50%, 60%"
+        },
+        "thumbnail": "./data/kr/assets/artifacts/Apocalypsion's Tear.png",
+        "aliases": null
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "infos": {
+        "class": "Mountain Fortress",
+        "title": "Legacy of Ancient Royal Technomagic",
+        "race": "Golem",
+        "damage type": "Physical",
+        "recommended heroes": "Frey, Luna, Jane",
+        "characteristics": "The Mountain Fortress loses DEF and takes increased M.DMG while its Core is vulnerable. When it uses [Defense Mode] use M.DMG to strip out the Core, creating an opportunity to deal massive DMG.",
+        "thumbnail": "./data/kr/assets/bosses/wb/Mountain Fortress.png"
+    },
+    "skills": {
+        "page 1": {
+            "1": {
+                "name": "Eliminate Targets",
+                "cost": null,
+                "cooldown": "15",
+                "description": "Fires lasers, attacking a single target 6 times and dealing massive DMG. Each hit reduces target P. and M. DEF by 10% for 10 sec. This attack has a high Crit. Chance."
+            },
+            "2": {
+                "name": "Defensive Mode",
+                "cost": null,
+                "cooldown": "24",
+                "description": "Increases P. and M. DEF by a large margin for 15 sec and activates [Avalanche] for 15 sec. In this time frame, M.DMG makes it easier for the Core to be exposed."
+            },
+            "3": {
+                "name": "Earth Blow",
+                "cost": null,
+                "cooldown": "26",
+                "description": "Strikes the earth, dealing P.DMG to all enemies in wide range and knocks them down for 5 sec."
+            }
+        },
+        "page 2": {
+            "4": {
+                "name": "Ray of Annihilation",
+                "cost": null,
+                "cooldown": "40",
+                "description": "Fires a ray that blasts all enemies in straight line far away while dealing P.DMG. Enemies blasted beyond a certain range will be stunned for 5 sec."
+            },
+            "5": {
+                "name": "Avalanche",
+                "cost": null,
+                "cooldown": null,
+                "description": "Every 3 sec, apply 1 stack of Avalanche. Upon reaching 5 stacks, attack 5 random enemies 3 times, dealing massive P.DMG and stunning them for 5 sec."
+            },
+            "6": {
+                "name": "Boulder Shell",
+                "cost": null,
+                "cooldown": null,
+                "description": "The gigantic Mountain Fortress is immune to Atk. Spd effects and ATK rises as time passes. Time by time, it will drop boulders on enemies, stunning them."
+            }
+        }
+    },
+    "aliases": [
+        "MountainFortress",
+        "WB1",
+        "WB 1"
+    ]
+}

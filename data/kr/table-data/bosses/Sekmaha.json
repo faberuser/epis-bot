@@ -1,0 +1,53 @@
+{
+    "infos": {
+        "class": "Sekmaha",
+        "title": "Envoy of the Flow",
+        "race": "Golem",
+        "damage type": "Magical",
+        "recommended heroes": ":** Priest, Wizard",
+        "characteristics": "** Lilia, Kaulah, May",
+        "thumbnail": "./data/kr/assets/bosses/trial/Sekmaha.png"
+    },
+    "skills": {
+        "page 1": {
+            "1": {
+                "name": "Icon of Life",
+                "cost": null,
+                "cooldown": "12",
+                "description": "Dispels positive effects from all enemies, heals own HP, and activates [Flow Control] to change its flow."
+            },
+            "2": {
+                "name": "Ruler of Waterfalls",
+                "cost": null,
+                "cooldown": "20",
+                "description": "Creates a massive droplet above the target and drops it, dealing M.DMG to all enemies and dealing additionally continuous M.DMG for a short period of time. While in [Waterfall] state, the Skill ignores DMG Reduction effects, stuns, and reduces enemies's Mana. While on [Sea] state, self temporarily takes increased DMG."
+            }
+        },
+        "page 2": {
+            "3": {
+                "name": "Icon of the Sea",
+                "cost": null,
+                "cooldown": "20",
+                "description": "Creates the flow of a gaint ocean, dispelling positive effects from all enemies, and dealing M.DMG. While in [Sea] state, launches an attack that ignores Block and knocks enemies far away, and reduces ATK Spd. While in [Waterfall] state, self temporarily takes increased DMG."
+            },
+            "4": {
+                "name": "Flow Control",
+                "cost": null,
+                "cooldown": null,
+                "description": "When Sekmaha's CC gauge is depleted, the flow changes. If Sekmaha is in Waterfall state, changes the flow to Sea, and vice-versa. [Sea] - All enemies cannot heal HP, and increases DMG the enemies deal based on the amount of their Mana. [Waterfall] - Greatly reduces Mana Recovery of all enemies, and reduces DMG the enemies take based on the ammount of their Mana."
+            },
+            "5": {
+                "name": "Guardian of Sekireinel",
+                "cost": null,
+                "cooldown": null,
+                "description": "A Guardian of Sekireinel is blessed with a mighty power that prevents its DEF and ATK Spd from being affected. Additionally, in Stage 6 or above. Sekmaha generates a droplet barrier from time to time."
+            }
+        }
+    },
+    "aliases": [
+        "TrialoftheFlow",
+        "TrialofFlow",
+        "TrialFlow",
+        "Sekmaha"
+    ]
+}

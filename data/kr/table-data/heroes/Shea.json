@@ -1,0 +1,240 @@
+{
+    "infos": {
+        "title": "Aria of Fantasy",
+        "class": "Priest",
+        "position": "Back-100",
+        "attack range": "6600",
+        "damage type": "Magical",
+        "gender": "Female",
+        "age": "16",
+        "height": "165",
+        "race": "Human",
+        "constellation": "Mira the Minstrel",
+        "birth of month": "June 22nd, Month of Love",
+        "like": "Beauteliful melody, soft breezes",
+        "dislike": "Ghosts, pumpkin ghouls",
+        "story": "Listening to the beauteliful melody on the battlefield makes me wonder elif I am truly in the middle of a battlefield.' 'I dropped the sword from my hand. All the other soldiers present also dropped their swords.' 'It felt as though the girl was in an entirely delifferent plane of existence, removed from the rest of us.' The sensational tale of the pink-haired girl, whose sudden appearance and performance stopped the battle, quickly spread. Her beauteliful, captivating melody and her demure, lovely presence has captured everyone's imagination. However, no one really knew where she came from or where she was headed. 'She seemed kind of strange to me, the way she was talking to thin air, as elif there was somebody there...'",
+        "thumbnail": "./data/kr/assets/heroes/Shea/ico.png",
+        "story_": "'Listening to the beautiful melody on the battlefield makes me wonder if I am truly in the middle of a battlefield.' 'I dropped the sword from my hand. All the other soldiers present also dropped their swords.' 'It felt as though the girl was in an entirely different plane of existence, removed from the rest of us.' The sensational tale of the pink-haired girl, whose sudden appearance and performance stopped the battle, quickly spread. Her beautiful, captivating melody and her demure, lovely presence has captured everyone's imagination. However, no one really knew where she came from or where she was headed. 'She seemed kind of strange to me, the way she was talking to thin air, as if there was somebody there...' Of course, some have suggested more convincing theories on the girl\u2019s whereabouts, but her mysterious beauty has drowned out all speculation."
+    },
+    "skills": {
+        "1": {
+            "name": "Green Nature's Melody",
+            "cost": "2",
+            "cooldown": "28",
+            "description": "Heals a total of ??? HP for all allies over 8 times, and all allies take reduced DMG by 35% for 8 seconds. If used during [Trance] state, this skill's Heal rate increases by 100% and changes the DMG Reduction Effect to 70%.",
+            "thumbnail": "./data/kr/assets/heroes/Shea/skills/1.png"
+        },
+        "2": {
+            "name": "Blue Wind's Song",
+            "cost": "3",
+            "cooldown": "28",
+            "description": "Recovers a total of ??? MP for all allies over 8 times, heals ??? HP for a target with max MP, and reduces the duration of CC by 50% for 8 seconds. If used during [Trance] state, this skill's MP Recovery and Heal rate increase by 50% and all allies will gain Immunity to CC for 8 seconds.",
+            "thumbnail": "./data/kr/assets/heroes/Shea/skills/2.png"
+        },
+        "3": {
+            "name": "Dance of Red Passion",
+            "cost": "3",
+            "cooldown": "28",
+            "description": "Deals a total of ??? M.DMG. to all enemies over 8 times, and increases ATK of all allies by ??? for 8 seconds. If used during [Trance] state, this skill's DMG and ATK Boost increase by 100%, and all enemies' buffs are continuously canceled.",
+            "thumbnail": "./data/kr/assets/heroes/Shea/skills/3.png"
+        },
+        "4": {
+            "name": "Trance",
+            "cost": null,
+            "cooldown": null,
+            "description": "After Skill is used. Shea gains 1 stack of [Blissful Performance] can be stacked up to max 3 times. At 3 stacks of [Blissful Performance]. Shea enter [Trance] state for 12 sec and heals HP of all allies. [Blissful Performance] and [Trance] are irremovable.",
+            "thumbnail": "./data/kr/assets/heroes/Shea/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "Heal Rate is increased by 10%.",
+            "III": "Heal Rate is increased by 15%.",
+            "IV": "Heal Rate is increased by 25%."
+        },
+        "2": {
+            "II": "Mana Recovery is increased by 10%.",
+            "III": "Mana Recovery is increased by 15%.",
+            "IV": "Mana Recovery is increased by 25%."
+        },
+        "3": {
+            "II": "ATK Boost is increased by 10%.",
+            "III": "ATK Boost is increased by 15%.",
+            "IV": "ATK Boost is increased by 25%."
+        },
+        "4": {
+            "II": "Heal Rate is increased by 10%.",
+            "III": "Heal Rate is increased by 15%.",
+            "IV": "Heal Rate is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Heals 15% HP of all allies when used.",
+                    "thumbnail": "./data/kr/assets/heroes/Shea/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Increases all allies' DMG dealt to Non-Hero enemies by 20% for 8 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Shea/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Heals 500 MP of all allies when used.",
+                    "thumbnail": "./data/kr/assets/heroes/Shea/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Increases ATK Spd of all allies by 250 for 8 seconds.",
+                    "thumbnail": "./data/kr/assets/heroes/Shea/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "ATK Boost is increased by 40%.",
+                    "thumbnail": "./data/kr/assets/heroes/Shea/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "All enemies take 15% more DMG for 8 seconds.",
+                    "thumbnail": "./data/kr/assets/heroes/Shea/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Increases Heal rate of Trance by 100%.",
+                    "thumbnail": "./data/kr/assets/heroes/Shea/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "When Shea enters [Trance] state, inflicts M.DMG to enemies instead of healing allies, and reduces all DEF by 20% for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Shea/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / CC Resist +100",
+                "thumbnail": "./data/kr/assets/heroes/Shea/perks/light.png"
+            },
+            "dark": {
+                "effect": "At the start of every battle, adds 1 stack of [Blissful Performance].",
+                "thumbnail": "./data/kr/assets/heroes/Shea/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Charming Melody, Schnwanheite",
+        "description": "Increases CC Resist by (0). Upon gaining a stack of [Blissful Performance], reduces own Cooldown of all Skills by (1) and recovers own Mana by (2).",
+        "value": {
+            "0": {
+                "0": "300",
+                "1": "360",
+                "2": "430",
+                "3": "520",
+                "4": "630",
+                "5": "750"
+            },
+            "1": {
+                "0": "10%",
+                "1": "12%",
+                "2": "14%",
+                "3": "17%",
+                "4": "21%",
+                "5": "25%"
+            },
+            "2": {
+                "0": "400",
+                "1": "480",
+                "2": "580",
+                "3": "700",
+                "4": "840",
+                "5": "1000"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Shea/uw.png",
+        "story": "This powerful and awe-inspiring equipment that can converse with their wielders, sometimes even dominating the owners themselves. Schwanheite is counted among these awesome weapons. This harp, which insists that it be called 'Mr. Schute,' can significantly amplify the wielder\u2019s mana and spray it all around the wielder. Since the amplified mana is scattered about, it cannot be effectively used as offensive magic. However, depending on how it's used it can prove to be extremely effective in other ways. Mr. Schute is quite a chatterbox, but only to those he considers as his friends. These days he only talks to Shea."
+    },
+    "uts": {
+        "1": {
+            "name": "Flower of Life",
+            "description": "[Green Nature's Melody] Increases Heal Rate by 50%, and for 8 sec, increases the target's CC Resist by (0).",
+            "value": {
+                "0": {
+                    "0": "100",
+                    "1": "120",
+                    "2": "140",
+                    "3": "170",
+                    "4": "210",
+                    "5": "250"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Shea/ut/1.png",
+            "story": "A mystical flower that contains the energy of life. Unlike the flora of pandemonium that grows from evil residue, the flower of life gets nutrients from clean, pure substances such as dewdrops of dawn and the energy of the star-filled Milky Way. The pure energy that the flower stored during its growth becomes a great support to Shea when she plays Green Nature's Melody."
+        },
+        "2": {
+            "name": "Windy Flower",
+            "description": "[Blue Wind's Song] Increases ACC by 250 for 8 sec and recovers (0) MP every time an ally uses a skill.",
+            "value": {
+                "0": {
+                    "0": "160",
+                    "1": "190",
+                    "2": "230",
+                    "3": "270",
+                    "4": "330",
+                    "5": "400"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Shea/ut/2.png",
+            "story": "A flower that was by Shea's head the day after she performed Happiness from the Wind. According to Schwanheite, it was also a gift from the fairies of the forest for her beautiful music. It contains Shea's wish that the wind will carry happiness all over the world."
+        },
+        "3": {
+            "name": "Fairy's Crown",
+            "description": "[Dance of Red Passion] Upon activation, enemies are inflicted with Silence for 2 sec, and all allies' Crit DMG is increased by (0) for the duration of skill.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Shea/ut/3.png",
+            "story": "A chaplet that was by Shea's head the day after she performed Lullaby to the Dreams in the forest. According to Schwanheite, it was a gift from the fairies of the forest for her beautiful music. It is said that items that went through the hands of fairies have the power to return a soul back to its purest form."
+        },
+        "4": {
+            "name": "Dream of Mira",
+            "description": "[Trance] Increases own ATK by 20% and ATK Spd by (0) for 5 sec.",
+            "value": {
+                "0": {
+                    "0": "200",
+                    "1": "240",
+                    "2": "290",
+                    "3": "350",
+                    "4": "420",
+                    "5": "500"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Shea/ut/4.png",
+            "story": "When Shea sang the song of life with the spirits for the creatures on earth, Mira, the goddess of love, gave her this jewel in return in her dream. When Shea woke up, she found it in her hand. The jewel shines like the goddess of love herself, and people would feel amazed by just looking at it. Shea decided to call it the Dream of Mira."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon using Skills 7 times.",
+        "description": "Summons the Soul of Charming Melody, Schwanheite for 20 sec, increases all allies' ATK and DEF by 25%, recovering own Mana by 100 every sec.",
+        "cooldown": "30",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Shea/sw.png",
+        "advancement": {
+            "1": "Increases Crit DMG by 50% for duration of soul.",
+            "2": "Changes ATK Boost and DEF Boost to 50%, Crit DMG Boost to 100%."
+        },
+        "story": "Schwanheite, or Mr. Schube, is a talkative harp that occasionally tells the tale of the time when he was a human, The bard of free spirit would talk about the time when he sang the songs of love and whispered love to beautiful fianc\u00e9s who were often the source of inspiration. He would often end up swimming in the sea of nostalgia.\n'Oh, good times they were. That witch caused a worldly loss by cursing me. Oh, my lovely fianc\u00e9es, how I miss thee.' Staring with the lamentation. Mr, Schube would go on day and night to tell Shea his past stories, and this lead to Shea fantasizing about forms or love.\nBoth Shea and Mr. Schube were full of love, but their definitions of love were slightly different.\nBut what would it feel like to love something or someone with an endlessly burning passion? What would a burning passion, burning love feel like? A simple curiosity of a girl breathed in a new wind to the soul of the talkative harp.\n'Want me to tell you about it?'\nMr. Schube took the form of a human and appeared with a sudden flash of light, flashing a grin. Shea responded:\n\n'Yes! Eh, but before that, how should I play you now that you are a human?'"
+    },
+    "splashart": "./data/kr/assets/heroes/Shea/sa.png",
+    "costumes": "./data/kr/assets/heroes/Shea/cos",
+    "visual": null,
+    "aliases": null
+}

@@ -1,0 +1,240 @@
+{
+    "infos": {
+        "title": "Shaman of Lightning",
+        "class": "Priest",
+        "position": "Back-100",
+        "attack range": "800",
+        "damage type": "Magical",
+        "gender": "Male",
+        "age": "46",
+        "height": "210",
+        "race": "Orc",
+        "constellation": "Lasiphil the Prophet",
+        "birth of month": "March 11th, Month of Insight",
+        "like": "Fellow kinsmen, world peace",
+        "dislike": "Malduk, war",
+        "story": "This great Orc shaman wields the power of lightning. He is the chieftain of the Skywind Tribe and a respected elder of the Orc Alliance. He has trained countless Orc shamans and is considered their spiritual leader. He is also one of the few shamans who has clairvoyant dreams, and he is wise enough to properly interpret them.",
+        "thumbnail": "./data/kr/assets/heroes/Kaulah/ico.png",
+        "story_": "This great Orc shaman wields the power of lightning. He is the chieftain of the Skywind Tribe and a respected elder of the Orc Alliance. He has trained countless Orc shamans and is considered their spiritual leader. He is also one of the few shamans who has clairvoyant dreams, and he is wise enough to properly interpret them."
+    },
+    "skills": {
+        "1": {
+            "name": "Thunderbolt",
+            "cost": "3",
+            "cooldown": "10",
+            "description": "Drops 5 lightning bolts upon a random enemy, dealing ??? M.DMG and inflicting Electrify. Electrified enemy is stunned for 3 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Kaulah/skills/1.png"
+        },
+        "2": {
+            "name": "Healing Rain",
+            "cost": "2",
+            "cooldown": "11",
+            "description": "HP of all allies is healed by ??? for 5 sec. For the duration of SKill, Kaulah gains immunity to CC and takes 50% reducesd All DMG.",
+            "thumbnail": "./data/kr/assets/heroes/Kaulah/skills/2.png"
+        },
+        "3": {
+            "name": "Swift Wind",
+            "cost": "4",
+            "cooldown": "15",
+            "description": "For 15 sec, increases all allies' ATK by ???, ATK Spd by 350, and Crit Chance by 350.",
+            "thumbnail": "./data/kr/assets/heroes/Kaulah/skills/3.png"
+        },
+        "4": {
+            "name": "Chain Lightning",
+            "cost": null,
+            "cooldown": null,
+            "description": "Deals ??? M.DMG to 4 enemies every 15 sec, inflicting them with Electric shock for 20 sec, and inflicting stun for 1 sec upon a Critical Hit. Enemies inflicted with Electric Shock take a total of ??? M.DMG over 20 sec. For every enemy under Electric, Kaulah takes 15% reduced DMG. This effect can be stacked up to max 3 times and is irremovable.",
+            "thumbnail": "./data/kr/assets/heroes/Kaulah/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "Crit Chance is increased by 250."
+        },
+        "2": {
+            "II": "Heal Rate is increased by 10%.",
+            "III": "Heal Rate is increased by 15%.",
+            "IV": "Heal Rate is increased by 25%."
+        },
+        "3": {
+            "II": "ATK Boost is increased by 10%.",
+            "III": "ATK Boost is increased by 15%.",
+            "IV": "ATK Boost is increased by 25%."
+        },
+        "4": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Mana cost is reduced by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Kaulah/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Target takes 25% increased M.DMG for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Kaulah/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Allies take 25% less DMG while skill is in effect.",
+                    "thumbnail": "./data/kr/assets/heroes/Kaulah/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "In exchange for 1 additional Mana Cost, additionally heal allies by 5% of their Max HP.",
+                    "thumbnail": "./data/kr/assets/heroes/Kaulah/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Recovers 1 orb of Mana for all allies.",
+                    "thumbnail": "./data/kr/assets/heroes/Kaulah/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "All effect will become irremovable.",
+                    "thumbnail": "./data/kr/assets/heroes/Kaulah/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Electric Shock effect becomes irremovable.",
+                    "thumbnail": "./data/kr/assets/heroes/Kaulah/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Upon activation, dispels the target's positive effects if there are 3 or less enemies.",
+                    "thumbnail": "./data/kr/assets/heroes/Kaulah/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit Chance +100",
+                "thumbnail": "./data/kr/assets/heroes/Kaulah/perks/light.png"
+            },
+            "dark": {
+                "effect": "When taking DMG, decreases ATK Spd of the attacking enemy by 300 for 5 sec and its Mana by 200 every sec. This effect is activated only once every 5 sec.",
+                "thumbnail": "./data/kr/assets/heroes/Kaulah/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "The Bluewind, Coventina",
+        "description": "Normal attacks have a (0) chance to deal M.DMG equal to (1) of ATK and inflicts against 2 random enemies and reduce their ATK by (2). If the target is already inflicted with Electric Shock, stuns the target for 2 sec.",
+        "value": {
+            "0": {
+                "0": "12%",
+                "1": "14%",
+                "2": "17%",
+                "3": "21%",
+                "4": "25%",
+                "5": "30%"
+            },
+            "1": {
+                "0": "100%",
+                "1": "120%",
+                "2": "140%",
+                "3": "170%",
+                "4": "210%",
+                "5": "250%"
+            },
+            "2": {
+                "0": "10%",
+                "1": "12%",
+                "2": "14%",
+                "3": "17%",
+                "4": "21%",
+                "5": "25%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Kaulah/uw.png",
+        "story": "A staff resembling the four-winged thunderbird. Indeed, it has been crafted from a feather of a thunderbird, a beast considered holy among the Skywind Orcs. The staff has the power to communicate with the sky, read the weather, and control the air. To a Skywind shaman who uses the power of lightning, this staff is the ultimate medium."
+    },
+    "uts": {
+        "1": {
+            "name": "Thunderstone Bracelet",
+            "description": "[Thunderbolt] Reduces the target's Heal Rate by 30% and the target's Mana by (0) for 10 sec.",
+            "value": {
+                "0": {
+                    "0": "100",
+                    "1": "120",
+                    "2": "140",
+                    "3": "170",
+                    "4": "210",
+                    "5": "250"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Kaulah/ut/1.png",
+            "story": "A bracelet made from a holy thunderstone. Also known as Thunder God's Tear, the thunderstone on the bracelet maximizes the power of Thunderbolt. It's passed down through generations among the orc shamans."
+        },
+        "2": {
+            "name": "Thunderbird Mask",
+            "description": "[Healing Rain] Absorbs DMG of (0) ATK and creates a shield that grants Immunity to CC for 1 sec when used upon allies with full HP.",
+            "value": {
+                "0": {
+                    "0": "200%",
+                    "1": "240%",
+                    "2": "290%",
+                    "3": "350%",
+                    "4": "420%",
+                    "5": "500%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Kaulah/ut/2.png",
+            "story": "Mask of the auspicious thunderbird that brings rain. Once the Healing Droplets of the Skywind shaman begin, the soul of the thunderbird stays by those who were hit by Healing Rain and recovers their tired bodies."
+        },
+        "3": {
+            "name": "Skywind Feather Decoration",
+            "description": "[Swift Wind] Mana cost is reduced by 1, and Crit DMG (0) boost effect is added.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Kaulah/ut/3.png",
+            "story": "Feather from a thunderbird, guardian of rain and thunder. The high ranking shamans of the Skywind Tribe commune through the feathers of a thunderbird. Shamans use this feather accessory when using Swift Wind to become one with the thunderbird, increasing ATK and ATK Spd of all allies."
+        },
+        "4": {
+            "name": "Skywind Stone",
+            "description": "[Chain Lightning] Reduces the target's ATK Spd by 250 and increases M.DMG it takes by (0) for 10 sec.",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Kaulah/ut/4.png",
+            "story": "A mysterious stone that summons Thunderbird. Holding the Thunder Elemental inside, it is a legendary stone that can infinitely bring forth the power of the Thunder Bird."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up over 20 sec.",
+        "description": "Summons the soul of The Bluewind, Coventina, recovering Mana of all allies by 2000. Afterward, reduces Heal Rate of all enemies by 30%, increase M.DMG the enemies take by 30% for 10 sec, and attacks a random enemy with lightning every 3 sec, dispelling positive effects, dealing ??? M.DMG, and reducing the enemy's Mana by 500. After 10 sec, deals ??? M.DMG to all enemies and inflicts Stun for 5 sec.",
+        "cooldown": "20",
+        "uses": "7",
+        "thumbnail": "./data/kr/assets/heroes/Kaulah/sw.png",
+        "advancement": {
+            "1": "Changes Heal Rate Reduction effect to 50% and M.DMG Boost effect to 50%.",
+            "2": "Increases DEF Penetration of all allies by 500 for the duration of Skill."
+        },
+        "story": "Thunderbird, the guardian of rain and thunder, is a sacred entity considered holy by the Skywind Tribe. Thunderbird, however, had never intervened in the matters of earthen beings, because it strongly believed that they should be the ones who control their fate's course.\nEven when the Demons first invaded 100 years ago, Thunderbird only offered to lend its power, and did not fight in battles. However, its idle choices resulted in a grand catastrophe.\nCountless lives suffered horrible deaths in the hands of Demons, and even Ogria was not safe from such devastation. Although the terrible war ended when Kyle defeated Dark Lord Angmund, Thunderbird regretted its decision ever since. 100 years have passed since then, and just when scars of the past were being mended, darkness unfolded over the world once again, dragging Ogria into chaos.\nCountless Orcs were slaughtered by Demons, and even Sieg, their high chieftain, fell, Not only that, dead Orcs were turned into undeads, and turned against their once-kin. Although Kaulah had been still fighting the Demons with Orc survivors, the outlook did not seem great.\nHence, Thunderbird made its decision to directly aid the Orcs to save Ogria in crisis and to not repeat the same mistake from 100 years ago. Thunderbird appeared in front of Kaulah, and after hearing about the situation in detail, offered to lend its true power to Kaulah to save chaos-engulfed Ogria. Through his encounter with Thunderbird, Kaulah finally learned the ability to harness the power of the sacred entity, and the holy power he harnesses will purify all evil from the land."
+    },
+    "splashart": "./data/kr/assets/heroes/Kaulah/sa.png",
+    "costumes": "./data/kr/assets/heroes/Kaulah/cos",
+    "visual": null,
+    "aliases": null
+}

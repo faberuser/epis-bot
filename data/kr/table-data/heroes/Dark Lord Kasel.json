@@ -1,0 +1,243 @@
+{
+    "infos": {
+        "title": "Corrupted Warrior of the Holy Sword",
+        "class": "Warrior",
+        "position": "Front",
+        "attack range": "8400",
+        "damage type": "Physical",
+        "gender": "Male",
+        "age": "???",
+        "height": "185",
+        "race": "Demon",
+        "constellation": "Asiphia the Empress",
+        "birth of month": "October 15th, Month of Friendship",
+        "like": "Demonic Energy",
+        "dislike": "Lua's creations, the artifact that protects the world",
+        "story": "The new Dark Lord that was born when the seed of the Dark Lord concealed within the Holy Sword finally corrupted Kasel. His actions have an almost mechanic feel to them as if he is repressing the newly crowned Dark Lord Kasel's will. As the Dark Lord had the power to multiply his vessel's potential explosively, he used Kasel's remarkable power that exceeded Kyle's to fully embrace the purpose of destroying Lua's artifacts that protects the world, which was planted within the Dark Lord's instinct by the goddess Lea. He soon grew to be a formidable enemy, firmly establishing his position as a new Dark Lord.",
+        "thumbnail": "./data/kr/assets/heroes/Dark Lord Kasel/ico.png",
+        "story_": "The new Dark Lord that was born when the seed of the Dark Lord concealed within the Holy Sword finally corrupted Kasel. His actions have an almost mechanic feel to them as if he is repressing the newly crowned Dark Lord Kasel's will. As the Dark Lord had the power to multiply his vessel's potential explosively, he used Kasel's remarkable power that exceeded Kyle's to fully embrace the purpose of destroying Lua's artifacts that protects the world, which was planted within the Dark Lord's instinct by the goddess Lea. He soon grew to be a formidable enemy, firmly establishing his position as a new Dark Lord."
+    },
+    "skills": {
+        "1": {
+            "name": "Judgement Blade",
+            "cost": "0",
+            "cooldown": "11",
+            "description": "Attacks frontal enemies in a straight line 2 times, dealing a total of ??? P.DMG and preventing enemies from recovering Mana for 2 seconds. [Dark Lord] Additionally attacks enemies in a wide range 1 time, dealing ??? P.DMG and knocking them down for 3 seconds. Requires 5 or more stacks of [Dark Energy] for use.",
+            "thumbnail": "./data/kr/assets/heroes/Dark Lord Kasel/skills/1.png"
+        },
+        "2": {
+            "name": "Doom",
+            "cost": "0",
+            "cooldown": "15",
+            "description": "Explodes darkness and attacks frontal enemies in a straight line 3 times, dealing a total of ??? P.DMG and knocking them away for 3 seconds. [Dark Lord] Deals ??? P.DMG to 1 enemy furthest away and pulls them in front of self, exploding darkness afterward. Can be used with 15 or more stacks of [Dark Energy].",
+            "thumbnail": "./data/kr/assets/heroes/Dark Lord Kasel/skills/2.png"
+        },
+        "3": {
+            "name": "Advent of the Dark Lord",
+            "cost": "0",
+            "cooldown": "25",
+            "description": "Dispels negative effects from self and enters into an irremovable [Dark Lord] state for 20 sec, dealing ??? P.DMG to nearby enemies in a circular range of self. During [Dark Lord] state, all Skills are enhanced, gains immunity to CC, and normal attacks deal ??? additional P.DMG each hit. Requires 25 or more stacks of [Dark Energy] for use. Upon use, consumes all stacks to increase own ATK by 2000 and DEF Penetration by 10 per stack.",
+            "thumbnail": "./data/kr/assets/heroes/Dark Lord Kasel/skills/3.png"
+        },
+        "4": {
+            "name": "One Fallen to Darkness",
+            "cost": null,
+            "cooldown": null,
+            "description": "Although Dark Lord Kasel cannot recover Mana since he is granted the power of Darkness, his ATK increases by ???, deals attacks that always hit, and requires [Dark Energy] stacks to use Skills. Normal attacks grant [Dark Energy] stacks. [Dark Energy] can be stacked up to max 40 times and is irremovable.",
+            "thumbnail": "./data/kr/assets/heroes/Dark Lord Kasel/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "3": {
+            "II": "ATK Boost is increased by 10%.",
+            "III": "ATK Boost is increased by 15%.",
+            "IV": "ATK Boost is increased by 25%."
+        },
+        "4": {
+            "II": "ATK Boost is increased by 10%.",
+            "III": "ATK Boost is increased by 15%.",
+            "IV": "ATK Boost is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Increases number of Dark Energy stacks required for use by 10 and increases DMG by 80%.",
+                    "thumbnail": "./data/kr/assets/heroes/Dark Lord Kasel/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Increases the duration of disabling Mana recovery by 2 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Dark Lord Kasel/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Increases P.DMG the hit targets take by 30% for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Dark Lord Kasel/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Inflicts Stun on enemies instead of knocking them away.",
+                    "thumbnail": "./data/kr/assets/heroes/Dark Lord Kasel/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Increases P.Block Chance by 400 for the duration of Skill.",
+                    "thumbnail": "./data/kr/assets/heroes/Dark Lord Kasel/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Increases DMG of normal attacks by 50% for the duration of Skill.",
+                    "thumbnail": "./data/kr/assets/heroes/Dark Lord Kasel/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "At the beginning of each battle, gains 10 stacks of [Dark Energy].",
+                    "thumbnail": "./data/kr/assets/heroes/Dark Lord Kasel/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "When there is 1 enemy, gains 2 additional stacks of [Dark Energy].",
+                    "thumbnail": "./data/kr/assets/heroes/Dark Lord Kasel/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit DMG +20%",
+                "thumbnail": "./data/kr/assets/heroes/Dark Lord Kasel/perks/light.png"
+            },
+            "dark": {
+                "effect": "Normal attacks increase own ATK by 1% and DMG dealt to bosses by 1% for 20 sec. This effect can be stacked up to max 30 times and is irremovable.",
+                "thumbnail": "./data/kr/assets/heroes/Dark Lord Kasel/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Corrupted Holy Sword, Aea",
+        "description": "Normal attacks and skill attacks reduce the Heal Rate of targets by (0) for 10 sec and have a 35% chance of dealing additional P.DMG to (1) of ATK. Heal Rate Reduction effect can be stacked up to max 12 times.",
+        "value": {
+            "0": {
+                "0": "1%",
+                "1": "1.2%",
+                "2": "1.4%",
+                "3": "1.7%",
+                "4": "2.1%",
+                "5": "2.5%"
+            },
+            "1": {
+                "0": "100%",
+                "1": "120%",
+                "2": "140%",
+                "3": "170%",
+                "4": "210%",
+                "5": "250%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Dark Lord Kasel/uw.png",
+        "story": "The blessing of the goddess Lua that resides in the Holy Sword protects the Warrior of the Holy Sword and lets them use the authority of the goddess Lua. It acts as the indisputable proof that the users of the Holy Sword represent the goddess herself. But 100 years ago, in the heat of the battle between the warrior Kyle and the Dark Lord Angmund, the Dark Lord's corruptive demonic energy penetrated the Holy Sword and contaminated the power of the goddess Lua. The Holy Sword, now imbued not only with the blessing of Lua but also the curse that Lea implanted in the Dark Lord, slowly began to corrupt the Warrior of the Holy Sword with its demonic energy every time the power of Lua was unleashed. Finally, as the Dark Lord took over Kasel's body and awakened as the Dark Lord, the Holy Sword lost its blessing of holy light and became encircled by black demonic energy. It was as if goddess Lea had prepared the perfect present for the new Dark Lord 100 years ago..."
+    },
+    "uts": {
+        "1": {
+            "name": "Authority of Corruption",
+            "description": "[Judgment Blade] Increases DMG by (0) and dispels positive effects from the target.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Dark Lord Kasel/ut/1.png",
+            "story": "Before they departed for the Dark Lord's Castle, Frey spent many days tormented by a dark, black energy. Every night she would toss and turn, filled with unexplainable anxiety. Kasel, who was worried about Frey, tried to find a way to make her feel better and recalled a beautiful flower that he had found by the lake. I hope Frey will be able to smile... He picked the flower, hoping to calm her, but it was hard to catch a moment alone with her. He ended up fighting the final battle against the Black Knight Kyle without giving Frey the flower. When the Dark Lord overtook Kasel, the act of kindness that never reached its recipient was twisted into a Demon's cursed flower."
+        },
+        "2": {
+            "name": "Faint Lifeforce",
+            "description": "[Doom] Increases DMG by (0) and changes the number of pulled enemies to 2 during [Dark Lord] state.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Dark Lord Kasel/ut/2.png",
+            "story": "Shortly after Kasel became a Dark Lord, a small bird flew near him. The small bird, unheeding or unknowing of death, landed by the Dark Lord's side. Seeing this, the Dark Lord reached out a hand to the small bird, possibly affected by Kasel's sleeping unconsciousness within him. The small, young bird didn't have any resistance against the power of corruption\u2014it soon became surrounded by demonic energy and turned into a demon that fell under the Dark Lord's authority. The Dark Lord, staring at the bird with an unreadable expression, let it fly away, deciding to use it as his messenger. It was as if he was warning others to run away instead of resisting, as a Dark Lord like him will only twist young, small lives into miserable beings."
+        },
+        "3": {
+            "name": "Traveler's Portrait",
+            "description": "[Advent of the Dark Lord] Increases DMG dealt to Non-Hero enemies by (0) and Crit DMG by 80% during [Dark Lord] state.",
+            "value": {
+                "0": {
+                    "0": "12%",
+                    "1": "14%",
+                    "2": "17%",
+                    "3": "21%",
+                    "4": "25%",
+                    "5": "30%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Dark Lord Kasel/ut/3.png",
+            "story": "After Kasel and the others left the King's Plains, they happened to save a wandering artist who was being chased by wild animals. As a token of the artist's gratitude. Kasel's party received a portrait of themselves. Hastily drawn on ragged parchment with simple charcoal, it was a far cry from the bright, colorful portraits of nobles. But for Kasel, it symbolized the bond between him and the first companions he had ever\u00a0made. He always kept it close to his heart, only taking it out when he was going through difficulties and needed comfort. This portrait of him and his companions who decided to travel with him despite his shortcomings was a treasure that gave him strength. The tender emotions that Kasel felt for his companions continued even after Kasel became corrupted by the Dark Lord, slumbering in a far corner of his unconsciousness."
+        },
+        "4": {
+            "name": "Twisted Tear",
+            "description": "[One Fallen to Darkness] Changes the max number of stacks to (0) and normal attacks have a 35% chance of stacking 1 additional stack of [Dark Energy].",
+            "value": {
+                "0": {
+                    "0": "60",
+                    "1": "64",
+                    "2": "69",
+                    "3": "75",
+                    "4": "82",
+                    "5": "90"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Dark Lord Kasel/ut/4.png",
+            "story": "The artifact of the goddess exists to protect the Warrior of the Holy Sword. The goddess's blessing not only healed wounds but also acted as a shield, protecting the Warrior of the Holy Sword from the dangers of all evil things with its holy power. But the Dark Lord's power was unlike anything the Holy Sword had ever known. Unable to endure the intense power of the Dark Lord corrupting Kasel, the goddess's artifact ended up shattering. The broken artifact, contaminated by the Dark Lord's corruptive power, turned into an artifact of fear, signaling that an unprecedented, dreadful doom of ruthless power is drawing ever closer."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon dealing DMG 80 times.",
+        "description": "Summons the soul of the Corrupted Holy Sword, Aea for 10 seconds to increase ATK by 50% and judge enemies when using skills. [Judgment Blade] Deals ??? P.DMG to the enemy with the highest ATK and the targets nearby in a circular range and reduces their Mana by 1000. [Doom] Deals ??? P.DMG with higher DEF Penetration by 500 to the enemy with the highest ATK and the targets nearby in a circular range.",
+        "cooldown": "22",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Dark Lord Kasel/sw.png",
+        "advancement": {
+            "1": "Activation requirement is reduced from dealing damage 80 times to 60 times. The Mana reduction effect will now reduce Mana by 2000.",
+            "2": "The soul of the Corrupted Holy Sword, Aea will now be summoned for 15 seconds and will increase damage dealt to enemies by a further 20%."
+        },
+        "story": "The Holy Sword, shining with the strong light of Lua's protective will, tried its best to stop the chosen Warrior from being corrupted by the Dark Lord. But the stronger the Warrior of the Holy Sword became, the faster the demonic energy spread. After Kasel realized he was the Warrior of the Holy Sword and firmly decided what he had to do, he underwent an unprecedented psychological development. The protective will in the Holy Sword couldn't endure the increasing demonic energy, and Kasel ended up becoming the Dark Lord. However, even with Kasel's transformation to the Dark Lord, the Holy Sword didn't give up on his master\u2014for it knew that Kasel, who slumbered inside the Dark Lord still had a strong will and was continuing to fight against the demonic energy that had engulfed him. Even if it becomes corrupted by Lea's power like its master and changes into her tool... The Holy Sword continues to cherish the hope that one day, the Warrior of the Holy Sword will break through the walls imprisoning him and call forth the light once more. For now, it slumbers in deep darkness, dreaming of the dawn that will someday come."
+    },
+    "splashart": "./data/kr/assets/heroes/Dark Lord Kasel/sa.png",
+    "costumes": "./data/kr/assets/heroes/Dark Lord Kasel/cos",
+    "visual": null,
+    "aliases": [
+        "dlkasel",
+        "dl kasel",
+        "dkasel",
+        "d kasel",
+        "fkasel",
+        "darkkasel",
+        "fallenkasel",
+        "fallen kasel",
+        "dark kasel",
+        "dlk"
+    ]
+}

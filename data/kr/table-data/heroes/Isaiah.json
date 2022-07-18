@@ -1,0 +1,243 @@
+{
+    "infos": {
+        "title": "Shepherd of Chaos",
+        "class": "Priest",
+        "position": "Middle",
+        "attack range": "10200",
+        "damage type": "Magical",
+        "gender": "Female",
+        "age": "???",
+        "height": "167",
+        "race": "Demon",
+        "constellation": "Satua the Sage",
+        "birth of month": "February 16th, Month of Wisdom",
+        "like": "Lea, salvation, good deeds, siblings",
+        "dislike": "Lua, heretics",
+        "story": "Penteonia, the land that was protected by the protection of the creator, now has been reached out by the hands of evil. Mighty piences of plans that will be leading the world to the right path has been gathering one by one. Miserable pieces of plans that will be destroying the world confront against them. The holy war of the goddesses is now heading to the next chapter. The most faithful and trustworthy believer of destruction has descended to land by the call of the Goddess. By holding tight to her beliefs, she walks towards the land where she has been called. 'Everything will be fulfilled according to mother's will.' The shepherd will continue to worship. Everything is in the name of the goddess, everything will be fulfilled by the desires of the goddess.",
+        "thumbnail": "./data/kr/assets/heroes/Isaiah/ico.png",
+        "story_": "Isaiah is one of the fice fragments torn out of the Goddess of Destruction, and among those who faced her, only a fewlived to tell the tale. Her alias, the Shepherd of Chaos, holds both fear and awe for her fanaticism towards the Goddess and her commitment to the cycle.\nIsaiah, a demon who blindly follows and obeys Lea like no other, gladly accepted her destiny as Lea's agent and descended to the Material World, the land of the blind. Regardless of the derelictions of her siblings who have set foot on the Material World beforehand, she hearitly carries out what she has to accomplish.\nAs the Fragment of Chaos, as a servant of the Goddess, and as one of the Five Primal Demons, she appreciates what was given to her, and her generosity seems to know no bounds. Her kindness and generosity are comparable to, if not on the same level as the saintesses of Lua. Some poeple hold faith that Isaiah could be the new saintess of Lua who's still unknown to the world, praying for salvation.\nTo those poeple, Isaiah gladly present the salvation of chaos. That is, in the form that no frail creatures wishing to live would desire: death."
+    },
+    "skills": {
+        "page 1": {
+            "1": {
+                "name": "Light of Salvation",
+                "cost": "3",
+                "cooldown": "15",
+                "description": "Dispels all negative effects from self upon use. Dispels negative effects from allies within a wide range of self, granting them a Shield that absorbs DMG equal to 7% of Isaiah's Max HP for 5 sec and healing HP of allies excluding self equal to 5% of Isaiah's Max HP + ???. While the Shield is active, heals ??? HP every sec and gains immunity to CC. To enemies, deals ??? M.DMG and silences the hit target for 3 sec. Upon use, Isaiah consumes 20% of self's current HP and gains an irremovable stack of [Sin].",
+                "thumbnail": "./data/kr/assets/heroes/Isaiah/skills/1.png"
+            },
+            "2 (1)": {
+                "name": "Touch of the Goddess - Mercy",
+                "cost": "2",
+                "cooldown": "12",
+                "description": "Moves to the back of the enemy with the highest ATK to deal ??? M.DMG and leave [Touch of Mercy] for 15 sec. [Touch of Mercy] reduces the target's ATK by 30% and ATK Spd by 300. Upon use, consumes 15% of self's current HP and gains an irremovable stack of [Sin].",
+                "thumbnail": "./data/kr/assets/heroes/Isaiah/skills/2 (1).png"
+            },
+            "2 (2)": {
+                "name": "Touch of the Goddess - Embrace",
+                "cost": "3",
+                "cooldown": "12",
+                "description": "Moves to the back of the ally with the highest ATK to leave [Touch of Embrace] for 15 sec. [Touch of Embrace] heals the target's HP  by a total of ??? and increases the target's ATK equal to 0.1% of Isaiah's Max HP. Upon use, consumes 15% of self's current HP and gains an irremovable stack of [Sin].",
+                "thumbnail": "./data/kr/assets/heroes/Isaiah/skills/2 (2).png"
+            }
+        },
+        "page 2": {
+            "3": {
+                "name": "Offering of Atonement",
+                "cost": null,
+                "cooldown": null,
+                "description": "Dispels all negative effects from self upon use. Grants Invincibility to allies within a wide range of self for 3 sec and prevents the enemies from receiving positive effects for 3 sec. Afterward, creates [Field of Atonement] that lasts for 12 sec at self's location. Every 2 sec, heals HP of all allies within [Field of Atonement] equal to 1% of Isaiah's Max HP + ??? and dispels negative effects. Enemies within the area take ??? M.DMG every 2 sec and the hit target take 20% increased All DMG for 8 sec. Upon use, consumes 50% of self's current HP.",
+                "thumbnail": "./data/kr/assets/heroes/Isaiah/skills/3.png"
+            },
+            "4": {
+                "name": "Baptism of the Goddess",
+                "cost": null,
+                "cooldown": null,
+                "description": "At the beginning of the first battle, reduces own DMG dealt to enemies by 50% and increases DMG taken from enemies by 25%. Increases DMG dealt to enemies of allies excluding self by 10% and reduces DMG the allies take from enemies by 10%. Additionally, grants [Baptism of the Goddess] effect to an ally with the highest ATK, increasing its ATK by 10% and DEF by 10%. At 4 stacks of [Sin], enters into the irremovable state of [Path of Salvation]. During [Path of Salvation], Isaiah does not gain any [Sin] stacks and [Offering of Atonement] becomes available.",
+                "thumbnail": "./data/kr/assets/heroes/Isaiah/skills/4.png"
+            }
+        }
+    },
+    "books": {
+        "1": {
+            "II": "Heal Rate and DMG are increased by 10%.",
+            "III": "Heal Rate and DMG are increased by 15%.",
+            "IV": "Heal Rate and DMG are increased by 25%."
+        },
+        "2": {
+            "II": "Heal Rate and DMG are increased by 10%.",
+            "III": "Heal Rate and DMG are increased by 15%.",
+            "IV": "Heal Rate and DMG are increased by 25%."
+        },
+        "3": {
+            "II": "Heal Rate and DMG are increased by 10%.",
+            "III": "Heal Rate and DMG are increased by 15%.",
+            "IV": "Heal Rate and DMG are increased by 25%."
+        },
+        "4": {
+            "II": "ATK and DEF Boost are increased by 5%.",
+            "III": "ATK and DEF Boost are increased by 5%.",
+            "IV": "ATK and DEF Boost are increased by 5%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Increases Heal Rate by 40%.",
+                    "thumbnail": "./data/kr/assets/heroes/Isaiah/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Increases All DMG the hit target takes by 20% for 12 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Isaiah/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "[Touch of the Goddess - Embrace] Reduces Mana Cost by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Isaiah/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "[Touch of the Goddess - Mercy] Additionally dispels the target's positive effects.",
+                    "thumbnail": "./data/kr/assets/heroes/Isaiah/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "For every 2 sec, [Field of Atonement] additionally increases DMG dealt to bosses of allies within range by 10% for 8 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Isaiah/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Heal Rate and DMG of [Field of Atonement] increases by 30% and 30% respectively.",
+                    "thumbnail": "./data/kr/assets/heroes/Isaiah/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "[Baptism of the Goddess] Effect granted to the ally with the highest ATK additionally increases Crit DMG by 50%.",
+                    "thumbnail": "./data/kr/assets/heroes/Isaiah/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "At the beginning of the first battle, gains 1 stack of [Sin].",
+                    "thumbnail": "./data/kr/assets/heroes/Isaiah/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / HP +10%",
+                "thumbnail": "./data/kr/assets/heroes/Isaiah/perks/light.png"
+            },
+            "dark": {
+                "effect": "Reduces All DMG self takes by 150 and increases Heal Rate by 15%.",
+                "thumbnail": "./data/kr/assets/heroes/Isaiah/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Bladebound Faith, Ezaias",
+        "description": "Upon every Skill use, heals own HP equal to (0) of Max HP over 4 sec. Normal and Skill attacks increase All DMG the hit target takes by (1) for 8 sec.",
+        "value": {
+            "0": {
+                "0": "4%",
+                "1": "4.8%",
+                "2": "5.6%",
+                "3": "6.8%",
+                "4": "8.4%",
+                "5": "10%"
+            },
+            "1": {
+                "0": "8%",
+                "1": "9.6%",
+                "2": "11.2%",
+                "3": "13.6%",
+                "4": "16.8%",
+                "5": "20%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Isaiah/uw.png",
+        "story": "'I shall prech the will of chaos to the darkest land of the blind.' This was the first thought that came to Isaiah when she gained her own consciousness after breaking away from the fragment of Lea. There were too many fools to look after in the Material World, and since there were no other beings who could spread the will, she believed it was only herself, the proxy of Lea, who could save those poor children.\nThe form she took as she came down to the Material World implies this faith strongly and turned out to depict her inherent benignity. Unlike her siblings, she is without an ounce of enmity and is instead filled with benevolence and kindness.\nDetermined to go on a journey to spread the truth throughout the Material World, she created a weapon that will accompany her.\nFaith towards the Goddess, the might bestowed by Lea, and her own enlightenment of the cycle as she continues her journey to spread the gospel... All that was bestowed to Isaiah and all that she learned imbued the staff and blade with holy Mana as it was created and ultimately, the weapon took the shape of a relic once it was completed.\nThe weapon, containing Mana tantamount to that of the acclaimed relics within the Church of Lua but also holding the unhallowed energy of the Demons, accompanies Isaiah on her long journey."
+    },
+    "uts": {
+        "1": {
+            "name": "Heretical Rosary",
+            "description": "[Light of Salvation] Increases the duration of Shield by (0) and Silence by 1 sec.",
+            "value": {
+                "0": {
+                    "0": "1.2",
+                    "1": "1.4",
+                    "2": "1.7",
+                    "3": "2.1",
+                    "4": "2.5",
+                    "5": "3"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Isaiah/ut/1.png",
+            "story": "The rosaries tied together with violet jewels is recorded as a holy relic to praise Lea, created by humans of the Material World who were chosen and given promises by Lea.\nLater on, when Isaiah, the proxy of Lea, came down to the Material World, she gained possession of this relic.\nThe rosaries used by the followers of Lea in their prayers are modeled after this relic, and hold a similar appearance to the Rosaries used in the Church of Lua. However, if you look closely, you can surely differentiate the two. The Church of Lua advises its followers to ramain vigilant of heresy and sicern the rosary from the heretical one based on the official methods of differentiation."
+        },
+        "2": {
+            "name": "Flame of Benevolence",
+            "description": "[Touch of the Goddess - Mercy] The target hit by [Touch of Mercy] takes (0) increased All DMG for 15 sec.\n[Touch of the Goddess - Embrace] [Touch of Embrace] additionally increases the target's ATK Spd by 300.",
+            "value": {
+                "0": {
+                    "0": "8%",
+                    "1": "9.6%",
+                    "2": "11.2%",
+                    "3": "13.6%",
+                    "4": "16.8%",
+                    "5": "20%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Isaiah/ut/2.png",
+            "story": "To Isaiah who descended to the Material World, Lea bestowed a flame with calamity within.\nWhen the time comes, the flame could be lit to bring a great fire to the Material World.\nThe small blue flame held in silver glass glows bright as it awaits its time to burn down everything beneath the sky and free all mortals from agony."
+        },
+        "3": {
+            "name": "Sculpture of Chaos",
+            "description": "[Offering of Atonement] Increases the duration of Invincibility by 1 sec and the effect of preventing enemies from receiving positve effects by 1 sec. [Field of Atonement] additionally recovers allies' Mana by (0) and reduces enemies' Mana by (1) every 2 sec.",
+            "value": {
+                "0": {
+                    "0": "160",
+                    "1": "190",
+                    "2": "230",
+                    "3": "280",
+                    "4": "340",
+                    "5": "400"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Isaiah/ut/3.png",
+            "story": "Upon her arrival to the Material World, Isaiah skupped not a single day in giving prayers to Lea. Her prayers are yet to be answered, but she continues to pray ardently with all her heart for what she sees every day in the Material World. Her prayers carry the symphathy towards the lost creations of Lua, hopes of saving those creations, and other feelings she regards important.\nThe followers of the Church of Lua in the Material World would do the same too, except that many pray to a sculpture of Lua, and Isaiah discovered some followers of Lua doing exactly that during her travels.\n'Ahh, if Mother has such means too, would it be easier to draw more children and preach chaos?' As the thought crossed her mind, she began to craft a sculpture of Lea by herself. She destroyed her first-ever sculpture as an offering to the Mother, the sculptures that were made after were given out to her siblings, and the rest were later gifted to the children who promised to worship Lea."
+        },
+        "4": {
+            "name": "Picture Book About Laws of Chaos",
+            "description": "[Baptism of the Goddess] Increases the number of the ally with the highest ATK by 1 and [Baptism of the Goddess] effect additionally increases DMG dealt to Non-Hero enemies of the ally with the highest ATK by (0).",
+            "value": {
+                "0": {
+                    "0": "3%",
+                    "1": "4%",
+                    "2": "5%",
+                    "3": "6%",
+                    "4": "7%",
+                    "5": "8%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Isaiah/ut/4.png",
+            "story": "Isaiah would wander off to different corners of the Material World and look after children of villages. Distant areas where the Church of Lua cannot reach, places where there are barely traces of the Church left as it was abandoned...\nRegardless of the locales, she gathers the children living in distant areas untouched by the Church of Lua and teaches them about serving Lea. She loves children so much that reading passages with her soft voice to the gathered children has become a part of her daily life.\nShe happily does her job believes it is the duty of the proxy of the Goddess to save the children from false faith. The villagers who pass by praise Isaiah as the true Saintess, one who takes care of the children and others with such an angelic smile in the farthest reaches.\nThe content of the book she reads to the children cannot be more ominous and vicous, but there are various colors and drawings to help the children come back to the passages even after Isaiah leaves the area.\nShe did this so that the children may find out, sometime in the future, that death is the only road to the truth."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up over 20 sec.",
+        "description": "Summons the soul of Bladebound Faith, Ezaias, increasing all allies' DMG dealt to enemies by 10%, reducing DMG all allies take from enemies by 10%, and healing HP of the target equal to 2% of Isaiah's Max HP every sec for 8 sec.",
+        "cooldown": "20",
+        "uses": "4",
+        "thumbnail": "./data/kr/assets/heroes/Isaiah/sw.png",
+        "advancement": {
+            "1": "Increases duration by 4 sec and reduces Skill Activation Requirements by 4 sec.",
+            "2": "Upon every Soul Weapon Skill use, increases DMG dealt to enemies by an additional 3% and reduces DMG taken from enemies by an additional 3%."
+        },
+        "story": "While Isaiah did not have to exert much of her power to show the way to the truth to the beings of the Material World, someitme she had no choice but to raise her weapon when the infidels appeared; for it is also a duty of a proxy of the Goddess to vanquish foolish heretics and separate them from the false beliefs. Isaiah prays for the poor Souls: 'Oh, Mother... They not to blame, for they are merely blinded and deceived by the foolish and greedy Lua. May they take the right path at the end of the cycle. Please grant me your guidance so that I may lead them to the right path...'\nIsaiah's whispers were filled with benevolence and sympathy.\nChanting words and truths set by Lea, Isaiah prayed deeply. Through the blessing of Lea that was granted to her, Isaiah gained the strength to bring salvation. However, use of the Goddess' power would inevitably lead to torment, for it was an overwhelming honor for the creation to borrow the power of the Goddess. Even for Isaiah, usage of the Goddess' power caused unimaginable pain, but it was not enough to stop Isaiah from attempting to save others, for her determination to love and save the heretics was far too great. Whenever she wielded her sword uttering words resembling Lea's truths, her determination to save others and her reverence to her Goddess were etched continuously on her blade. One day, she found that her sword could summon a book filled with revelations. This was the visible proof of Isaiah's beliefs and faith.\nThe book would continue to be added with more pages showing Isaiah's worship for her Goddess."
+    },
+    "splashart": "./data/kr/assets/heroes/Isaiah/sa.png",
+    "costumes": "./data/kr/assets/heroes/Isaiah/cos",
+    "visual": null,
+    "aliases": null
+}

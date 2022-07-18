@@ -1,0 +1,248 @@
+{
+    "infos": {
+        "title": "Hunter of the Hand Cannon",
+        "class": "Mechanic",
+        "position": "Middle-400",
+        "attack range": "700",
+        "damage type": "Physical",
+        "gender": "Male",
+        "age": "19",
+        "height": "120",
+        "race": "Goblin",
+        "constellation": "Graham the Thief",
+        "birth of month": "May 12th, Month of Hope",
+        "like": "Gunpowder, guns, cannons",
+        "dislike": "Foolish Goblins",
+        "story": "This eccentric albino Goblin enjoys developing powerful weapons more than anything else. Having been harassed and ostracized by other Goblins due to his skin color, he feels no compassion toward his kind. He would gladly shoot, blow up, and smash even a fellow Goblin to test his weapons. However, he also expresses his gratitude to those who help him, and this is how he became Roi's friend. Unfortunately, he is terrible at remembering faces, so he often tries to shoot Roi before he recalls who he is.",
+        "thumbnail": "./data/kr/assets/heroes/Lakrak/ico.png",
+        "story_": "This eccentric albino Goblin enjoys developing powerful weapons more than anything else. Having been harassed and ostracized by other Goblins due to his skin color, he feels no compassion toward his kind. He would gladly shoot, blow up, and smash even a fellow Goblin to test his weapons. However, he also expresses his gratitude to those who help him, and this is how he became Roi's friend. Unfortunately, he is terrible at remembering faces, so he often tries to shoot Roi before he recalls who he is."
+    },
+    "skills": {
+        "1": {
+            "name": "Rapid Fire",
+            "cost": "2",
+            "cooldown": "8",
+            "description": "Attacks all frontal enemies in a straight line, dealing ??? P.DMG and stunning them for 3 sec. If the target is not a Hero, deals ??? additional P.DMG. [Experiment Success!] Removes Cooldown",
+            "thumbnail": "./data/kr/assets/heroes/Lakrak/skills/1.png"
+        },
+        "2": {
+            "name": "Smoke Bomb",
+            "cost": "3",
+            "cooldown": "15",
+            "description": "Deals ??? P.DMG to target and nearby enemies within range and inflict them with [Explosive Meterial] for 10 sec, causing them to take 20% increased P.DMG and additional inflicting Blind for 4 sec. [Experiment Success!] Dispels positive effects from enemies within range.",
+            "thumbnail": "./data/kr/assets/heroes/Lakrak/skills/2.png"
+        },
+        "3": {
+            "name": "Glue Bomb",
+            "cost": "2",
+            "cooldown": "12",
+            "description": "Attaches a Glue Bomb to a random enemy that explodes in 3 sec, dealing ??? P.DMG to the target and nearby enemies, inflicting Stun for 3 sec. If the target is inflicted with [Explosive Material], deals ??? additional P.DMG. [Experiment Success!] Glue Bomb explodes immediately after attachment.",
+            "thumbnail": "./data/kr/assets/heroes/Lakrak/skills/3.png"
+        },
+        "4": {
+            "name": "Load Cannon",
+            "cost": null,
+            "cooldown": null,
+            "description": "Each auto attack has a 15% chance of firing a bomb that deals ??? P.DMG and stuns them for 2 sec. After each Skill use, Lakrak conducts an experiment. The experiment has a 50% success rate. Upon success, enhances the effects of the next Skill use. Experiment does not occur when Lakrak uses the enhanced Skill.",
+            "thumbnail": "./data/kr/assets/heroes/Lakrak/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "Deals DMG and Stuns the enemy for 1 sec."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "DMG is increased by 40%.",
+                    "thumbnail": "./data/kr/assets/heroes/Lakrak/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Reduce target mana by 700.",
+                    "thumbnail": "./data/kr/assets/heroes/Lakrak/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Mana cost reduced by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Lakrak/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Blind duration is increased by 2 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Lakrak/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Mana cost is increased by 1, and attacks a random target 2 times.",
+                    "thumbnail": "./data/kr/assets/heroes/Lakrak/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Target change to the enemy with the highest attack.",
+                    "thumbnail": "./data/kr/assets/heroes/Lakrak/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Activation chance is boosted by 10% and stun duration increases by 1 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Lakrak/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Retore 500 mana on successful experimentation.",
+                    "thumbnail": "./data/kr/assets/heroes/Lakrak/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit DMG +20%",
+                "thumbnail": "./data/kr/assets/heroes/Lakrak/perks/light.png"
+            },
+            "dark": {
+                "effect": "Each time Lakrak succeed an Experiment, his attack rate increase by 300 for 10 sec.",
+                "thumbnail": "./data/kr/assets/heroes/Lakrak/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Lakrak MK-1",
+        "description": "Lakrak's chances of successful Experiment are increased by (0), and each successful experiment increases his ATK by (1), ATK Spd by (2) and damage against none-Heroes by (3). This effect can stack up to 4 times and is irremovable.",
+        "value": {
+            "0": {
+                "0": "20%",
+                "1": "24%",
+                "2": "29%",
+                "3": "35%",
+                "4": "42%",
+                "5": "50%"
+            },
+            "1": {
+                "0": "6%",
+                "1": "7.2%",
+                "2": "8.3%",
+                "3": "10.5%",
+                "4": "12.5%",
+                "5": "15%"
+            },
+            "2": {
+                "0": "60",
+                "1": "72",
+                "2": "86",
+                "3": "105",
+                "4": "125",
+                "5": "150"
+            },
+            "3": {
+                "0": "6%",
+                "1": "7.2%",
+                "2": "8.3%",
+                "3": "10.5%",
+                "4": "12.5%",
+                "5": "15%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Lakrak/uw.png",
+        "story": "The destructive yet artistic magnum opus of a quirky Goblin inventor. This single-hand cannon packs the maximum amount of firepower a single Goblin can physically handle. Despite the dangerous amount of gunpowder used, this weapon has fortunately not blown up yet."
+    },
+    "uts": {
+        "1": {
+            "name": "Cudgel Bullet",
+            "description": "[Rapid Fire] Increases DMG by 50% and restores (0) mana on critical hit",
+            "value": {
+                "0": {
+                    "0": "200",
+                    "1": "240",
+                    "2": "290",
+                    "3": "350",
+                    "4": "420",
+                    "5": "500"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Lakrak/ut/1.png",
+            "story": "A self-defense bullet with lower killing power. This bullet, whose design is based on Lakrak's knowledge in precise explosive engineering, is used to cause knock-back when using Rapid Fire. To minimize unnecessary killing, he makes it a point to label all his explosives."
+        },
+        "2": {
+            "name": "Special Gas Mask",
+            "description": "[Smoke Bomb] Reduces Cooldown by 30% and increases blind duration by (0) sec.",
+            "value": {
+                "0": {
+                    "0": "1",
+                    "1": "1.2",
+                    "2": "1.4",
+                    "3": "1.7",
+                    "4": "2.1",
+                    "5": "2.5"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Lakrak/ut/2.png",
+            "story": "A high-performing mask that was made with special materials that Lakrak obtained from around the Orbis Continent. This mask is made from Harpy's first feather, a dragon's scales, a leaf from the World Tree, and the empire's mithril, which are all hard to find. This mask protects one from poisonous gas as well as the blinding effect of Smoke Bombs."
+        },
+        "3": {
+            "name": "Goblincraft Special High-Density Gunpowder",
+            "description": "[Glue Bomb] Increases DMG by 50% and reduces Heal Rate of the hit target by (0) for 7 sec.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Lakrak/ut/3.png",
+            "story": "Gunpowder made with Lakrak's dangerous secret recipe. Lakrak believed that simple explosions weren't effective enough in terms of battle strategy, so he added some formic acid and stinging nettle poison to add a stunning effect. It requires an extremely accurate filtering process, and he uses it in secret to avoid abuse."
+        },
+        "4": {
+            "name": "Bada Boom Cannonball",
+            "description": "[Load Cannon] Reduces Mana of hit enemies by (0). The first strike in a battle will activate [Load Cannon].",
+            "value": {
+                "0": {
+                    "0": "400",
+                    "1": "480",
+                    "2": "580",
+                    "3": "700",
+                    "4": "840",
+                    "5": "1000"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Lakrak/ut/4.png",
+            "story": "A cannon shell Lakrak made in collaboration with Miruru Pirates. After overcoming many hardships, Miruru Pirates and Lakrak joined hands and worked together for this monster of a weapon. The special Miruru gunpowder added a significant amount of destructive power to Lakrak's cannonball."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up over 18 sec.",
+        "description": "Summons the soul of Lakrak MK-1, increasing own ATK by 50% for 12 sec. Afterward, deals a total of ??? P.DMG to enemies within range of a random enemy over 5 times every 4 sec, stunning them for 2 sec and increasing P.DMG they take by 30% for 8 sec.",
+        "cooldown": "19",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Lakrak/sw.png",
+        "advancement": {
+            "1": "Reduces Skill Activation requirements by 2 sec and gains immunity to CC for 12 sec.",
+            "2": "Reduces Skill Activation requirements by an additional 4 sec, and immediately reduces Cooldown of all Skills by 3 sec every 4 sec."
+        },
+        "story": "Lakrak had made many weapons, but nothing surpassed Lakrak MK-1. Not only did this weapon not malfunction even it was overloaded with excess black powder, but also consistently delivered powerful blasts which met Lakrak's standard for 'ideal' firepower.\nLakrak however, did not stop there.\nAltough Lakrak was a small, weak goblin, he never stopped with the development of the ultimate weapon, and it was his everything. In the end, Lakrak's endless desire to create the ultimate weapon awakened the soul accumulated within Lakrak MK-1.\nTo satiate its creator's needs, the soul of Lakrak MK-1 became obsessed with devastating firepower, but it seems to be neglecting the fact that its obession is potentially life-threatening to its master."
+    },
+    "splashart": "./data/kr/assets/heroes/Lakrak/sa.png",
+    "costumes": "./data/kr/assets/heroes/Lakrak/cos",
+    "visual": null,
+    "aliases": null
+}

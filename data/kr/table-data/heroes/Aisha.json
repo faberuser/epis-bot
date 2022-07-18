@@ -1,0 +1,232 @@
+{
+    "infos": {
+        "title": "The Violet Princess",
+        "class": "Wizard",
+        "position": "Back-200",
+        "attack range": "2600",
+        "damage type": "Magical",
+        "gender": "Female",
+        "age": "16",
+        "height": "155",
+        "race": "Human",
+        "constellation": "Gisla the Sharpshooter",
+        "birth of month": "November 1st, Month of Fortune",
+        "like": "Tea time with Priscilla",
+        "dislike": "Rude people",
+        "story": "A daughter of a noble family from Orvel. As one of the most talented wizards in the Tower of Sage, she has been granted the title of 'Purple' in recognition of her magic capability. She was raised in the Tower of Sage since childhood at her parents' request, but she still retains her dignity as an aristocrat. As a child, she never realized why her parents sent her away on her own, but now she understands their reasons. Now, she is back home, and is always attended by her handmaiden, who is like another member of the family to her.",
+        "thumbnail": "./data/kr/assets/heroes/Aisha/ico.png",
+        "story_": "A daughter of a noble family from Orvel. As one of the most talented wizards in the Tower of Sage, she has been granted the title of 'Purple' in recognition of her magic capability. She was raised in the Tower of Sage since childhood at her parents' request, but she still retains her dignity as an aristocrat. As a child, she never realized why her parents sent her away on her own, but now she understands their reasons. Now, she is back home, and is always attended by her handmaiden, who is like another member of the family to her."
+    },
+    "skills": {
+        "1": {
+            "name": "Mystic Barrage",
+            "cost": "2",
+            "cooldown": "8",
+            "description": "Deals ??? M.DMG to enemies within a small range. Upon a Crit Hit, cooldown is reduced by 1 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Aisha/skills/1.png"
+        },
+        "2": {
+            "name": "Destruction Ray",
+            "cost": "2",
+            "cooldown": "13",
+            "description": "Every 0.5 sec, deals ??? M.DMG to enemies in a straight line. After 5 sec, consumes 3% mana every 0.5 sec while DMG is increased by 100%. Max duration is 10 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Aisha/skills/2.png"
+        },
+        "3": {
+            "name": "Torrential Rainfall",
+            "cost": "3",
+            "cooldown": "17",
+            "description": "Deals ??? M.DMG to random enemies for 3 sec, and reduces targets' M.DEF by 5%. Can be stacked up to max 5 times.",
+            "thumbnail": "./data/kr/assets/heroes/Aisha/skills/3.png"
+        },
+        "4": {
+            "name": "Mystic Boost",
+            "cost": null,
+            "cooldown": null,
+            "description": "Upon a Crit Hit, deals extra ??? M.DMG to the enemy.",
+            "thumbnail": "./data/kr/assets/heroes/Aisha/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "If there is 1 enemy, DMG is increased by 100%.",
+                    "thumbnail": "./data/kr/assets/heroes/Aisha/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Upon a Crit Hit, recovers 300 mana.",
+                    "thumbnail": "./data/kr/assets/heroes/Aisha/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Increase Mana Cost by 1 and becomes immune to CC during activation.",
+                    "thumbnail": "./data/kr/assets/heroes/Aisha/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "The mana cost of the Boosted Ray is doubled and the DMG increase is boosted from 100% to 200%.",
+                    "thumbnail": "./data/kr/assets/heroes/Aisha/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Deals AoE DMG.",
+                    "thumbnail": "./data/kr/assets/heroes/Aisha/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "M.DEF reduction effect now stacks up to 10 times max.",
+                    "thumbnail": "./data/kr/assets/heroes/Aisha/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "DMG is increased by 40%.",
+                    "thumbnail": "./data/kr/assets/heroes/Aisha/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Ignores enemy Block.",
+                    "thumbnail": "./data/kr/assets/heroes/Aisha/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit Chance +100",
+                "thumbnail": "./data/kr/assets/heroes/Aisha/perks/light.png"
+            },
+            "dark": {
+                "effect": "Upon using a Skill, increases Mana Recovery/Sec by 10% and Crit DMG by 7%. This effect stacks up to 20 times and is irremovable.",
+                "thumbnail": "./data/kr/assets/heroes/Aisha/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Noble Fate, Mahitra",
+        "description": "Increases own Crit DMG by (0) and DEF Penetration by (1). Upon dealing DMG to an enemy 500 times, all effects are increased by x2.",
+        "value": {
+            "0": {
+                "0": "10%",
+                "1": "12%",
+                "2": "14%",
+                "3": "17%",
+                "4": "21%",
+                "5": "25%"
+            },
+            "1": {
+                "0": "100",
+                "1": "120",
+                "2": "140",
+                "3": "170",
+                "4": "210",
+                "5": "250"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Aisha/uw.png",
+        "story": "In the Tower of Sage, the title of Purple indicates the pinnacle of mana capacity. Aisha's seemingly endless mana was simply too much for regular means of output. For this reason, the von Daphnel family bought out all the best mana stones they could find, and took them to Annette, the best technomagi in Orvel Castle. Annette gladly agreed to take on this new project. Soon after, she created Mahitra, a beautiful umbrella befitting an aristocratic wizard of noble destiny."
+    },
+    "uts": {
+        "1": {
+            "name": "Flower of Purple",
+            "description": "[Mystic Barrage] Reduces Cooldown by (0) sec, and for 10 sec, increases M.DMG target receives by 25%.",
+            "value": {
+                "0": {
+                    "0": "1",
+                    "1": "1.2",
+                    "2": "1.4",
+                    "3": "1.7",
+                    "4": "2.1",
+                    "5": "2.5"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Aisha/ut/1.png",
+            "story": "It is one of the items that the Tower of Sage granted with the title of Purple. It makes a set with the Ring of Mana. Purple represents an abundance of mana, and staying true to its name, the Flower of Purple has a crystal ball on it that boosts Aisha's mana and makes it explode. Since its power was too great, Priscilla made Aisha promise that she would only use it when absolutely necessary."
+        },
+        "2": {
+            "name": "Noble Hand Mirror",
+            "description": "[Destruction Ray] Increases DMG by 50% and recovers (0) MP immediately upon use.",
+            "value": {
+                "0": {
+                    "0": "500",
+                    "1": "600",
+                    "2": "720",
+                    "3": "860",
+                    "4": "1040",
+                    "5": "1250"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Aisha/ut/2.png",
+            "story": "A sacred treasure passed down through generations of the von Daphnel family. It was a shaman tool to save mana in ancient times. After Aisha embedded the Noble Purple gem with her mana, its power came out. Now it shines brilliantly."
+        },
+        "3": {
+            "name": "Ring of Infinite Mana",
+            "description": "[Torrential Rainfall] DMG is increased by 50% and upon Crit Hit, recovers (0) mana.",
+            "value": {
+                "0": {
+                    "0": "30",
+                    "1": "36",
+                    "2": "43",
+                    "3": "52",
+                    "4": "62",
+                    "5": "75"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Aisha/ut/3.png",
+            "story": "A ring that was given along with the title of Purple from the Tower of Sage. It is an artifact of witch Eucaletus, who lived in the Swamp of Wisdom. The power it displays depends on the owner's ability. For some, it could be a source of unlimited mana. It's perfect for Aisha, who uses powerful magic cannons."
+        },
+        "4": {
+            "name": "Eyes of Truth",
+            "description": "[Mystic Boost] Increases DMG by 50%. Upon activation, increases own Crit DMG by (0). This effect can be stacked up to max 20 times.",
+            "value": {
+                "0": {
+                    "0": "1%",
+                    "1": "1.2%",
+                    "2": "1.4%",
+                    "3": "1.7%",
+                    "4": "2.1%",
+                    "5": "2.5%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Aisha/ut/4.png",
+            "story": "A mysterious pendant found in ancient ruins. It was found in the tomb of someone known as the God of Wisdom and Ancient Knowledge. Aisha bought it at a shop in a back alley, fascinated by its purple jewel. After she realized that it reinforced her Mystic powers, she named it the Eyes of Truth and has been wearing it often."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon dealing DMG a 120 times.",
+        "description": "Summons the soul of Noble Fate, Mahitra for 8 sec. While the soul is summoned, increases own Crit DMG by 50%, deals ??? DMG to the enemy every 0.5 sec, and increases M.DMG the target takes by 25% for 5 sec.",
+        "cooldown": "22",
+        "uses": "7",
+        "thumbnail": "./data/kr/assets/heroes/Aisha/sw.png",
+        "advancement": {
+            "1": "Recharges mana to the max for the duration of Skill.",
+            "2": "Increases Skill duration by 4 sec, and grants CC immunity to self for the duration of Skill."
+        },
+        "story": "Made of a massive amount of refined Mana Stones, Mahitra was more than capable of handling Aisha's mana that earned the title of 'Violet'.\n\nBorn with a noble destiny, and also as a child of Daphnel von, a great noble family of Orvel, she has used Mahitra sometimes to aid th weak, sometimes for the honor of her family, and sometimes to fulfill her duty as an archmage.\nOne day, while she was using Mahitra, Aisha discovered an interesting phenomenon. Whenever Aisha uses her mana, Mahitra would react to it as if it was a living being, and change the flow of mana to harness its power more efficiently.\n\nUpon discussing the matter with Annette, the creator of Mahitra, Aisha learned that her will and her mana seeped into Mahitra's mana stone, modifying Mahitra to something like a technomagic lifeform. Aisha decided to research this new phenomenon."
+    },
+    "splashart": "./data/kr/assets/heroes/Aisha/sa.png",
+    "costumes": "./data/kr/assets/heroes/Aisha/cos",
+    "visual": null,
+    "aliases": null
+}

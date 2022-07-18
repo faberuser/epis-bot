@@ -1,0 +1,64 @@
+{
+    "infos": {
+        "class": "Xanadus",
+        "title": "The Abyssal Goddess",
+        "race": "Spirit",
+        "damage type": "Magical, Physical",
+        "recommended heroes": "Seria, Chrisha, Crow, Priscilla",
+        "characteristics": "She was once a goddess of the Underworld that was forgotten by history. Empowered with the Abyssal Darkness, the ancient being has become a World Boss.",
+        "thumbnail": "./data/kr/assets/bosses/wb/Xanadus.png"
+    },
+    "skills": {
+        "page 1": {
+            "1": {
+                "name": "Invitation to Abyss",
+                "cost": null,
+                "cooldown": "18",
+                "description": "Charms 1 enemy and deals M.DMG to the target, withdrawing it from the battle for 5 sec. The withdrawn target cannot perform any actions or be targeted."
+            },
+            "2": {
+                "name": "Curtain of Darkness",
+                "cost": null,
+                "cooldown": "21",
+                "description": "Creates a Curtain of Darkness in front of her for 10 sec to deal M.DMG to all enemies every 0.5 sec, reducing their ATK by 50% for 20 sec."
+            },
+            "3": {
+                "name": "Wings of Blade",
+                "cost": null,
+                "cooldown": "26",
+                "description": "Strikes the ground with huge wings, dealing P.DMG to all enemies and knocking them away."
+            }
+        },
+        "page 2": {
+            "4": {
+                "name": "Abyssal Nightmare",
+                "cost": null,
+                "cooldown": null,
+                "description": "Deals M.DMG to all enemies and heals own HP every 0.5sec for 10 sec. Upon every heal, permanently reduces damage taken. In Abyss Nightmare status, takes greatly increased DMG with the Abyssal Eye exposed"
+            },
+            "5": {
+                "name": "Resistance of Ancient Species",
+                "cost": null,
+                "cooldown": null,
+                "description": "Xanadus cannot have ATK Spd and DEF reduced, and has a Crit Resistance.Casts Abyssal Nightmare after casting skills 3 times.A portion of DMG dealt to the Abyssal Curse Stone and Abyssal Guard Stone is transfered to Xanadus."
+            },
+            "6": {
+                "name": "Obsidian Goddess",
+                "cost": null,
+                "cooldown": null,
+                "description": "The Abyssal Curse Stone and Abyssal Soul Stone of Xanadues can only take 1 DMG at a time from all attacks until the shield is broken.The shield will be removed for the duration of Abyssal Nightmare, and it will be cast again when Abyssal Nightmare ends."
+            },
+            "7": {
+                "name": "Abyssal Core",
+                "cost": null,
+                "cooldown": null,
+                "description": "Abyssal Soul Stone increases ATK of Xanadus for 10 sec every 30 sec.Abyssal Curse Stone reduces ATK of 2 enemies that are furthest away every 20 sec. This effect cannot be disppelled."
+            }
+        }
+    },
+    "aliases": [
+        "Xanadus",
+        "WB3",
+        "WB 3"
+    ]
+}

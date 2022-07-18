@@ -1,0 +1,224 @@
+{
+    "infos": {
+        "title": "Prince of Sandstorms",
+        "class": "Archer",
+        "position": "Middle-300",
+        "attack range": "4600",
+        "damage type": "Physical",
+        "gender": "Male",
+        "age": "20",
+        "height": "185",
+        "race": "Human",
+        "constellation": "Notmun the Tuner",
+        "birth of month": "July 30th, Month of Harmony",
+        "like": "Cats, sand art, people in the desert",
+        "dislike": "Those who try to harm the people that he cares for",
+        "story": "A Prince and successor to the God King of the ancient desert kingdom who possesses the power to control desert sand. As the young leader of the Mauhata tribe of Desert Warriors, he has been trained and educated to be the worthy successor to the great king. When the Trovatia tribe, their sworn brothers, were praying at the Shrine of Flow to awake the God Dragon, he led his warriors to defeat all demons approaching the oasis. Assisted by the God Dragon and Laudia, her priestess, he is fulfilling his role as a Desert Warrior defending his home. He hopes that his efforts make the late God King proud.",
+        "thumbnail": "./data/kr/assets/heroes/Zafir/ico.png",
+        "story_": "A Prince and successor to the God King of the ancient desert kingdom who possesses the power to control desert sand. As the young leader of the Mauhata tribe of Desert Warriors, he has been trained and educated to be the worthy successor to the great king. When the Trovatia tribe, their sworn brothers, were praying at the Shrine of Flow to awake the God Dragon, he led his warriors to defeat all demons approaching the oasis. Assisted by the God Dragon and Laudia, her priestess, he is fulfilling his role as a Desert Warrior defending his home. He hopes that his efforts make the late God King proud."
+    },
+    "skills": {
+        "1": {
+            "name": "Judgment of the Desert",
+            "cost": "2",
+            "cooldown": "5",
+            "description": "Deals ??? P.DMG to enemies in a wide range, and per each enemies hit, reduces Cooldown by 1 sec. Deals ??? P.DMG to enemies inflicted by [Mark of Desert] and removes 1 stack of [Mark of Desert]. Upon each Skill use, Crit DMG is increased by 5%. This effect can be stacked up to max 18 times and is irremovable.",
+            "thumbnail": "./data/kr/assets/heroes/Zafir/skills/1.png"
+        },
+        "2": {
+            "name": "Blessing of the Sand Spirit",
+            "cost": "2",
+            "cooldown": "14",
+            "description": "Creates a shield around the ally with the lowest HP that absorbs ??? DMG for 5 sec. Gains immunity to CC while the shield lasts. When the shield duration is over, 'Sand Storm' is activated and deals ??? P.DMG to enemies in a wide range, inflicting 2 stacks of [Mark of Desert]. If the shield is dispelled or destroyed, [Sand Storm] does not activate.",
+            "thumbnail": "./data/kr/assets/heroes/Zafir/skills/2.png"
+        },
+        "3": {
+            "name": "Doom of the Desert",
+            "cost": "3",
+            "cooldown": "20",
+            "description": "Deals ??? P.DMG to frontal enemies in a wide range and inflicts 1 stack of [Mark of Desert]. Then summons 'Pit of Sand' for 5 sec, dealing ??? P.DMG every 0.5 sec, and decreasing their P.DEF by 30% for 10 sec. 'Pit of Sand' has a 25% chance of inflicting 1 stack of [Mark of Desert] and draws in all enemies in range to the center.",
+            "thumbnail": "./data/kr/assets/heroes/Zafir/skills/3.png"
+        },
+        "4": {
+            "name": "Calling of the Guardian",
+            "cost": null,
+            "cooldown": null,
+            "description": "Each auto attack has a 15% chance of dealing ??? P.DMG that ignores DEF to all enemies, inflicting 1 stack of [Mark of Desert]. [Mark of Desert] can be stacked up to max 10 times.",
+            "thumbnail": "./data/kr/assets/heroes/Zafir/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG and Shield are increased by 10%.",
+            "III": "DMG and Shield are increased by 15%.",
+            "IV": "DMG and Shield are increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Crit DMG boost per use changes to 10%.",
+                    "thumbnail": "./data/kr/assets/heroes/Zafir/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Stuns the enemy for 1 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Zafir/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "If there are 3 or less allies, applies shield to all allies. Sand Storm does not activate during this time.",
+                    "thumbnail": "./data/kr/assets/heroes/Zafir/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "At the beginning of each batlle, creates shield on self for 5 sec. [Sand Storm] does not activate during this time.",
+                    "thumbnail": "./data/kr/assets/heroes/Zafir/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Gains immunity to CC while in use.",
+                    "thumbnail": "./data/kr/assets/heroes/Zafir/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Duration of [Sand Storm] is increased by 2 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Zafir/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Inflicts [Mark of Desert] to all enemies every second if there are more than 5 enemies.",
+                    "thumbnail": "./data/kr/assets/heroes/Zafir/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Activation chance changes to 30%.",
+                    "thumbnail": "./data/kr/assets/heroes/Zafir/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit Chance +100",
+                "thumbnail": "./data/kr/assets/heroes/Zafir/perks/light.png"
+            },
+            "dark": {
+                "effect": "Recovers 700 mana upon using a skill. If there are over 5 enemies, mana recovery rate is doubled and ATK Spd is increased by 500 for 5 sec. This effect cannot be stacked.",
+                "thumbnail": "./data/kr/assets/heroes/Zafir/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Glory of the God King, Zaries",
+        "description": "Upon using a skill, gains a stack of 'Will of Desert'. 'Will of Desert' increases ATK and Crit DMG by (0) for 30 sec, and can be stacked to max 8 times. This effect cannot be dispelled.",
+        "value": {
+            "0": {
+                "0": "4%",
+                "1": "4.8%",
+                "2": "5.6%",
+                "3": "6.8%",
+                "4": "8.4%",
+                "5": "10%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Zafir/uw.png",
+        "story": "An ancient Weapon forged for the most glorious being on earth. Only permitted to the successor to the God King, one should undergo tremendous ordeals to prove his worth as its owner. This bow, allowed only for the chosen successor to the God King, has absolute power in the desert."
+    },
+    "uts": {
+        "1": {
+            "name": "Sandstorm Arrow",
+            "description": "[Judgment of the Desert] Increases DMG by (0) upon every use. There is a 30% chance that the hit enemy is inflicted with the Mark of Desert. DMG increase effect can be stacked up to max 20 times.",
+            "value": {
+                "0": {
+                    "0": "2%",
+                    "1": "2.4%",
+                    "2": "2.9%",
+                    "3": "3.5%",
+                    "4": "4.2%",
+                    "5": "5%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Zafir/ut/1.png",
+            "story": "A treasure that Zafir received from the Mauhata tribe. It's an arrow made with the tail feather of an animal regarded as holy in the ancient kingdom. Its radiance is blinding, as if representing the honor and glory of the ancient kingdom. Normally, it's hung on a wall and used in ceremonies, but it's actually one of the best defense weapons used by the royal family. Enemies shot by this arrow face the Judgment of the Desert within a massive sandstorm."
+        },
+        "2": {
+            "name": "Sand of Mirage",
+            "description": "[Blessing of the Sand Spirit] Dispels negative effects from self, and recovers (0) Mana every sec while the shield is active.",
+            "value": {
+                "0": {
+                    "0": "80",
+                    "1": "100",
+                    "2": "120",
+                    "3": "140",
+                    "4": "170",
+                    "5": "200"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Zafir/ut/2.png",
+            "story": "An hourglass that was buried underground for a long time by an enormous sandstorm that struck Aegina Desert. When the sand in the hourglass moves, it calls for the mirage of an ancient city coming back to life. The high priest of the ancient kingdom used this to show the glory of the kingdom to its people in the past. Seeing their city shining in gold, people grew proud of their kingdom."
+        },
+        "3": {
+            "name": "Soul of Oasis",
+            "description": "[Doom of the Desert] Skill cooldown is decreased by 30% and effect activation chance is increased by (0).",
+            "value": {
+                "0": {
+                    "0": "8%",
+                    "1": "9.6%",
+                    "2": "11.5%",
+                    "3": "13.8%",
+                    "4": "16.5%",
+                    "5": "20%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Zafir/ut/3.png",
+            "story": "A magical sword passed down through the God King's descendants. The name 'Oasis' comes from how it was used to serve the people in dire times. After the kingdom fell, its whereabouts was unknown to the world until Zafir saw it among Kumuro's art collections and bought it at an incredibly high price. With the sword finally returning to the worthy descendant, Zafir was able to inherit his forefather's spirits, maximizing his potentials."
+        },
+        "4": {
+            "name": "Black Cat, Hoabis",
+            "description": "[Calling of the Guardian] Upon a Critical Hit, stuns the target for 2 sec and increases P.DMG it takes by (0) for 10 sec.",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Zafir/ut/4.png",
+            "story": "It is known that a black cat always stayed next to the God King in the Ancient Desert Kingdom as a symbol of peace and prosperity. No one knows how the sacred black cat appears generation after generation. When the same black cat came to Zafir, he named it 'Hoabis,' and he has been taking care of it wholeheartedly."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon using Skills 6 times.",
+        "description": "Summons the soul of Glory of the God King, Zaries for 10 sec, increasing P.DMG all enemies take by 25% and increasing ATK Spd of self by 500 for the duration of Skill.",
+        "cooldown": "25",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Zafir/sw.png",
+        "advancement": {
+            "1": "Increases DEF Penetration of self by 500 for the duration of Skill.",
+            "2": "Increases the duration by 4 sec, and becomes immune to CC for the duration of Skill."
+        },
+        "story": "A descendant of the God King must bear the fate of the desert, and rise above all its people like the sun.\nTo become that sun, one does not need great strength and charisma. One needs be of the right bloodline.\nThe people of the desert will follow the one who has proved that he is the successor of the bloodline, no matter how lowly that person may appear to be.\nThe most direct, sure way of proving such is by being chosen by Zaries.\nIn the past, when Cain bound his soul to the desert, the desert gave birth to Zaries which would act as the medium, the proof of the desert's loyalty toward Cain. As Zaries always stays by Cain's side and gives blessing of the desert to the worthy, one who is chosen by Zaries is most certainly recognized as the one blessed by the God King's desert.\nZaries took a form of a bow, fell into a slumber, and waited for a descendant of the God King who would awaken its true form.\n\nAfter passing the trial of the ancient God King, Zafir gained the ability to detect the soul of Zaries. Zafir, the chosen of Zaries, and the one accepted as the true descendant of the God King, heeds to the call of the God King, and makes his enemies tremble in fear with his might desert storm."
+    },
+    "splashart": "./data/kr/assets/heroes/Zafir/sa.png",
+    "costumes": "./data/kr/assets/heroes/Zafir/cos",
+    "visual": null,
+    "aliases": null
+}

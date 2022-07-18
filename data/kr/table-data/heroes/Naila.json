@@ -1,0 +1,240 @@
+{
+    "infos": {
+        "title": "Wind's Fighter",
+        "class": "Warrior",
+        "position": "Front-600",
+        "attack range": "2100",
+        "damage type": "Physical",
+        "gender": "Female",
+        "age": "19",
+        "height": "180",
+        "race": "Harpy",
+        "constellation": "Hexipolia the Wanderer",
+        "birth of month": "December 16th, Month of Patience",
+        "like": "Fellow kinsmen, those who possess a warrior's pride",
+        "dislike": "Cowards, hypocrites",
+        "story": "A stout and honorable warrior of the Harpies, the wielders of the power of wind. Her dignity as a Harpy warrior is more important to her than anything else in the world. She draws upon her willpower and desire to uphold her warrior's honor to bring down any enemy. Her skills are exceptional, even among her peers, and she is the ideal role model for younger Harpy warriors.",
+        "thumbnail": "./data/kr/assets/heroes/Naila/ico.png",
+        "story_": "A stout and honorable warrior of the Harpies, the wielders of the power of wind. Her dignity as a Harpy warrior is more important to her than anything else in the world. She draws upon her willpower and desire to uphold her warrior's honor to bring down any enemy. Her skills are exceptional, even among her peers, and she is the ideal role model for younger Harpy warriors."
+    },
+    "skills": {
+        "1": {
+            "name": "Fierce Winds",
+            "cost": "3",
+            "cooldown": "8",
+            "description": "Naila dashes toward the enemy 2 times. The first attack moves behind the target, dealing ??? P.DMG and knocking it down for 3 sec. The second attack moves behind the enemy with highest attack, dealing ??? P.DMG, knocking it down and increasing P.DMG they take by 25% for 10 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Naila/skills/1.png"
+        },
+        "2": {
+            "name": "Wind Reading",
+            "cost": "2",
+            "cooldown": "20",
+            "description": "Dispels negative effects from self, and casts [Wind Reading] to all allies for 15 sec, increasing their ATK by ??? and P.Dodge by 250. If an ally under [Wind Reading] successfully dodges an attack, their Crit DMG increases by 5% for 20 sec. The Crit DMG Boost effect can be stacked up to max 10 times.",
+            "thumbnail": "./data/kr/assets/heroes/Naila/skills/2.png"
+        },
+        "3": {
+            "name": "Dive Bomb",
+            "cost": "3",
+            "cooldown": "12",
+            "description": "Attacks nearby enemies in a circular range of self, dealing ??? P.DMG and stunning them for 3 sec. When using this Skill, 500 DEF Penetration is increased.",
+            "thumbnail": "./data/kr/assets/heroes/Naila/skills/3.png"
+        },
+        "4": {
+            "name": "Tornado Strike",
+            "cost": null,
+            "cooldown": null,
+            "description": "Increases Naila's DEF Penetration by 150 and DEF by ???. Normal attacks and Skill attacks ignore target's DMG Reduction effect. Also, her normal attacks have a 15% chance to deal ??? P.DMG and stunning them for 1 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Naila/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "ATK Boost is increased by 10%.",
+            "III": "ATK Boost is increased by 15%.",
+            "IV": "ATK Boost is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Gains CC Immunity for the duration of Skill.",
+                    "thumbnail": "./data/kr/assets/heroes/Naila/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Increases P.DMG the target takes by 25% for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Naila/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Mana cost increases by 1 and dispels positive effects of all enemies upon activation.",
+                    "thumbnail": "./data/kr/assets/heroes/Naila/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Max number of stacks for Crit DMG Booost increases to 20.",
+                    "thumbnail": "./data/kr/assets/heroes/Naila/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "DMG is increased by 40%.",
+                    "thumbnail": "./data/kr/assets/heroes/Naila/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Reduces Heal Rate of the hit target by 40% for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Naila/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "DMG of normal attacks increases by 25% and reduces cooldown of all skills by 2 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Naila/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "At the beginning of each battle, own DEF Penetration increases by 400 for 20 sec. When activated in Guild Battle, upon activation during Guild War, gains immunity to CC for 10 sec. The DEF Penetration Boost effect is irremovable.",
+                    "thumbnail": "./data/kr/assets/heroes/Naila/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit Chance + 100",
+                "thumbnail": "./data/kr/assets/heroes/Naila/perks/light.png"
+            },
+            "dark": {
+                "effect": "Upon a Critical Hit, increases own ATK by 3% and P.Dodge by 30 for 10 sec. This effect stacks up to 10 times.",
+                "thumbnail": "./data/kr/assets/heroes/Naila/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Cursed Claws, Baroro",
+        "description": "Upon Crittical Hit, increases P.DMG the target takes by (0) for 10 sec and reduce CC Resist by (1). If the target is a Boss, Naila deals (2) increased DMG. The DMG Boost effect against Bosses can be stacked up to max 10 times.",
+        "value": {
+            "0": {
+                "0": "20%",
+                "1": "24%",
+                "2": "29%",
+                "3": "35%",
+                "4": "42%",
+                "5": "50%"
+            },
+            "1": {
+                "0": "200",
+                "1": "240",
+                "2": "290",
+                "3": "350",
+                "4": "420",
+                "5": "500."
+            },
+            "2": {
+                "0": "2%",
+                "1": "2.4%",
+                "2": "2.9%",
+                "3": "3.5%",
+                "4": "4.2%",
+                "5": "5%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Naila/uw.png",
+        "story": "A cursed pair of gauntlets crafted from the claws of the Mad Demon Baroro, which was defeated during the war. Several times the size of the average human hands, these gauntlets directly connect to the nerves of the wearer, allowing the wielder to control them effortlessly. Although they grant immense power, they also break into the mind of the wearer, slowing eating away at the soul. Only a true warrior of noble conviction, strong will and undying spirit may handle these cursed weapons. They are the perfect weapons for a warrior with a strong will that shines even in the darkness of the abyss."
+    },
+    "uts": {
+        "1": {
+            "name": "Soul of Gust",
+            "description": "[Fierce Winds] Increases DMG by 50%, and reduces Mana by (0) upon Critical Hit.",
+            "value": {
+                "0": {
+                    "0": "200",
+                    "1": "240",
+                    "2": "290",
+                    "3": "350",
+                    "4": "420",
+                    "5": "500"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Naila/ut/1.png",
+            "story": "This piece of amber containing a giant tornado is a treasure of the Harpies. According to myth, a gust of wind that Divine Beast Tyrfas raised out of rage hit the sap of the holy tree, solidified, and turned into amber. Time passed, and now it's divided into several fragments, but the gust inside has not died out. Harpies consider it to be divine and call it the Soul of Gust."
+        },
+        "2": {
+            "name": "Himmullis's Scarf",
+            "description": "[Wind Reading] All effects become irremovable and upon activation, recovers own HP equal to (0) of Max HP.",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Naila/ut/2.png",
+            "story": "The scarf that the dead Himmullis had on. Naila always has it on her. Himmullis use to always tell Naila to be proud of being a Harpy. The scarf contains the sadness of losing family, and this makes Naila furious."
+        },
+        "3": {
+            "name": "Tempest Pride",
+            "description": "[Dive Bomb] Reduces Mana cost by 1 and increases DMG by (0).",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Naila/ut/3.png",
+            "story": "A ritual offering of ancient religious people who worshipped the wind. It is a precious treasure among the Harpies, and it is said to be given to the most powerful Harpy warrior. The moment one wears this mask, they'll be able to freely use the wind. They can also attack at the speed of light."
+        },
+        "4": {
+            "name": "Green Ribbon",
+            "description": "[Tornado Strike] Increases chance of dealing additional DMG by 10% and upon activation during Guild War, deals additional P.DMG equal to (0) of target's max HP.",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Naila/ut/4.png",
+            "story": "A ribbon that holds the grace of a Wind Elemental. Selene gave this green ribbon to Naila, who wanted high speed. It contains a spell of Notos, the Wind Elemental, and it grants Naila rapid and powerful attacks."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon using Skills 5 times.",
+        "description": "Summons the soul of Cursed Claws, Baroro, increasing own ATK by 40% for 10 sec. For the duration of Skill, deals P.DMG to frontal enemies every 3 sec. Hit enemies are inflicted with Curse of Baroro for 5 sec, taking 30% increased P.DMG and having their Heal Rate reduced by 30%. If the target is a Boss, the Curse of Baroro effect increases by 1.5 times.",
+        "cooldown": "23",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Naila/sw.png",
+        "advancement": {
+            "1": "Petrifies the hit enemy for 3 sec.",
+            "2": "Changes Skill Activation requirements to 4 times and increases the duration of the soul by 3 sec."
+        },
+        "story": "Evil Demon Baroro is a being more corrupted and dishonorable than anything else.\nDuring the Demon war, he was defeated in a fair combat, but he never accepted the outcome. Furthermore, to prove that his lowly, dishonorable attitude is the answer, he placed himself inside the gauntlet made of his claws, Afterwards, Baroro not only devoured the mind and souls of those who used the gauntlet, but also turned them into his host, and caused even more destruction to the innocents to quench his thirst for their souls and blood. This time however, the user was not like any other Baroro came across.\nAlthough merely a harpy, she not only withstood Baroro's mental attack, but also freely wielded the evil gauntlet.\nFurthermore, her noble resolve and her brilliant will eventually overwhelm the Evil Demon. After succumbing to its master's strong mind, Baroro as an evil that devours other evil fervently vanquishes its master's enemies."
+    },
+    "splashart": "./data/kr/assets/heroes/Naila/sa.png",
+    "costumes": "./data/kr/assets/heroes/Naila/cos",
+    "visual": null,
+    "aliases": null
+}

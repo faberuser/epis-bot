@@ -1,0 +1,232 @@
+{
+    "infos": {
+        "title": "Dragon Slayer",
+        "class": "Archer",
+        "position": "Back-300",
+        "attack range": "4500",
+        "damage type": "Physical",
+        "gender": "Female",
+        "age": "21",
+        "height": "185",
+        "race": "Barbarian",
+        "constellation": "Mira the Minstrel",
+        "birth of month": "June 30th, Month of Love",
+        "like": "Delicious dishes, cooking, monster hunting",
+        "dislike": "Monsters that cannot be defeated physically",
+        "story": "A Barbarian warrior who specializes in dealing with monsters that threaten people. Thanks to a unique physical trait, her muscular strength is several times stronger than that of a normal Barbarian warrior. She wields a greatbow larger than her own body with such ease that people call her a walking siege weapon. While she is a kindhearted woman who enjoys helping others, once engaged in a combat, her Barbarian aggressiveness begins to surface. She once slayed a mad dragon named Svelta, a feat that earned her the nickname Dragon Slayer.",
+        "thumbnail": "./data/kr/assets/heroes/Yanne/ico.png",
+        "story_": "A Barbarian warrior who specializes in dealing with monsters that threaten people. Thanks to a unique physical trait, her muscular strength is several times stronger than that of a normal Barbarian warrior. She wields a greatbow larger than her own body with such ease that people call her a walking siege weapon. While she is a kindhearted woman who enjoys helping others, once engaged in a combat, her Barbarian aggressiveness begins to surface. She once slayed a mad dragon named Svelta, a feat that earned her the nickname Dragon Slayer."
+    },
+    "skills": {
+        "1": {
+            "name": "Focus Shot!",
+            "cost": "2",
+            "cooldown": "9",
+            "description": "Sets in position and focuses for a while, dealing P.DMG to frontal enemies in a straight line and increasing P.DMG the target takes by 25% for 10 sec. If the target is a Dragon, inflicts Stun for 5 sec. DMG and the duration of Stun increase up to max 100% depending on the focus time. Upon focusing to the maximum, the attack will be a Crit Hit.",
+            "thumbnail": "./data/kr/assets/heroes/Yanne/skills/1.png"
+        },
+        "2": {
+            "name": "Wipeout!",
+            "cost": "3",
+            "cooldown": "10",
+            "description": "Deals ??? P.DMG to target enemy and other enemies in range, inflicting Stun for 2 sec. If the target is a Dragon, deals ??? extra DMG that ignores DEF.",
+            "thumbnail": "./data/kr/assets/heroes/Yanne/skills/2.png"
+        },
+        "3": {
+            "name": "No Holding Back!",
+            "cost": "4",
+            "cooldown": "25",
+            "description": "Removes all negative effects on self. For 30 sec, ATK is increased by ??? and Penetration is increased by 500, ATK Spd by 250, and takes 25% reduced All DMG. For the duration of the skill, auto attacks are changed to consuming 3% mana to deal DMG to all enemies in a straight line and deals ??? extra P.DMG to Dragons ignoring DEF. This effect is irremovable.",
+            "thumbnail": "./data/kr/assets/heroes/Yanne/skills/3.png"
+        },
+        "4": {
+            "name": "Dragon Slayer",
+            "cost": null,
+            "cooldown": null,
+            "description": "Increases self's ATK and Max HP by 30% respectively. DMG of normal attacks ignores Block effects of enemies. Additionally, increases own DMG dealt to Dragons by 100% and reduces DMG that all allies take from Dragons by 20%.",
+            "thumbnail": "./data/kr/assets/heroes/Yanne/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "3": {
+            "II": "ATK Boost is increased by 10%.",
+            "III": "ATK Boost is increased by 15%.",
+            "IV": "ATK Boost is increased by 25%."
+        },
+        "4": {
+            "II": "ATK Boost is increased by 10%.",
+            "III": "ATK Boost is increased by 15%.",
+            "IV": "ATK Boost is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "DMG is increased by 40%.",
+                    "thumbnail": "./data/kr/assets/heroes/Yanne/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "If the target is a Dragon, deals additional P.DMG equal to 300% of ATK that ignores DEF.",
+                    "thumbnail": "./data/kr/assets/heroes/Yanne/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "When there is 1 enemy, DMG is boosted by 100%.",
+                    "thumbnail": "./data/kr/assets/heroes/Yanne/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Reduces the hit target's P.Crit Resistance by 500 for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Yanne/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Increases Mana consumed by normal attacks by 100% and additional P.DMG that ignore DEF dealt to Dragons by 50%.",
+                    "thumbnail": "./data/kr/assets/heroes/Yanne/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Reduces the duration of CC effects inflicted upon self by 50% for the duration of Skill.",
+                    "thumbnail": "./data/kr/assets/heroes/Yanne/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Changes the DMG Reduction effect from Dragons of all allies to 30%.",
+                    "thumbnail": "./data/kr/assets/heroes/Yanne/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "The DMG Reduction effect from DRagons is not applied to allies, but self's DMG Boost effect against Dragons is applied as 130%.",
+                    "thumbnail": "./data/kr/assets/heroes/Yanne/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit DMG +20%",
+                "thumbnail": "./data/kr/assets/heroes/Yanne/perks/light.png"
+            },
+            "dark": {
+                "effect": "Upon landing 10 normal attacks, dispels all positive effects from the target and deals additional P.DMG equal to 500% of ATK.",
+                "thumbnail": "./data/kr/assets/heroes/Yanne/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Dragonbane, Svelta",
+        "description": "Upon a Crit Hit, deals additional P.DMG equal to (0) of ATK and recovers 150 Mana. If the target is a Dragon, deals additional P.DMG equal to (1) of ATK and inflict Stun for 1.5 sec. A 0.5 sec Cooldown is applied to this effects.",
+        "value": {
+            "0": {
+                "0": "50%",
+                "1": "60%",
+                "2": "72%",
+                "3": "86%",
+                "4": "103%",
+                "5": "125%"
+            },
+            "1": {
+                "0": "80%",
+                "1": "96%",
+                "2": "115%",
+                "3": "138%",
+                "4": "166%",
+                "5": "200%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Yanne/uw.png",
+        "story": "An enchanted weapon made from the bones, tendons, and pieces of hide the Mad Dragon Svelta. Too heavy for a normal human to even lift, let alone draw, this monstrous greatbow is a combination of the siege weapon technologies from the Dark Elves and Dwarves. Only those with incredible muscular strength such as Yanne can hope to handle this ridiculous bow. The Mad Dragon's soul still remains in this bow. Her ferocious energy rides on every arrow it fires, granting it the power to shatter through even the mightiest of walls."
+    },
+    "uts": {
+        "1": {
+            "name": "Talisman of Concentration",
+            "description": "[Focus Shot!] Gains immunity to CC while in use and increases P.DMG target receives by (0) for 10 sec.",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Yanne/ut/1.png",
+            "story": "Bracelet that Yanne received from the townspeople when she slayed Svelta. Made from Red Dragon leather, it gathers the yang energy inside the wearer to allow them to achieve a high level of concentration. When Yanne takes aim, it helps her successfully fire a single, killing shot."
+        },
+        "2": {
+            "name": "Giant Arrow of Sudden Death",
+            "description": "[Wipeout!] Increases DMG by (0) and reduces Cooldown by 12% upon a Crit Hit.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Yanne/ut/2.png",
+            "story": "An arrow made from Mad Dragon Svelta's spine, who spews out powerful magic cannons. It's Yanne's loot. The arrowhead has the Mad Dragon's burning red eye. It's still imbued with its madness, always ready to burn the enemy."
+        },
+        "3": {
+            "name": "Dragon Steak",
+            "description": "[No Holding Back!] Reduces Mana Cost by 1 and increases DMG dealt to Non-Hero enemies by (0) for the duration of skill.",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Yanne/ut/3.png",
+            "story": "T-bone steak from which you can taste a dragon's sirloin and tenderloin at the same time. The taste is truly wonderful. The dragon's holy energy enters the body, and increases Yanne's battle stamina to the max."
+        },
+        "4": {
+            "name": "Blazing Heart of Giant",
+            "description": "[Dragon Slayer] Reduces DMG that all allies take from Dragons by an additional 10% and increases DMG dealt to Dragons by (0).",
+            "value": {
+                "0": {
+                    "0": "6%",
+                    "1": "7.2%",
+                    "2": "8.6%",
+                    "3": "10.4%",
+                    "4": "12.6%",
+                    "5": "15%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Yanne/ut/4.png",
+            "story": "When Yanne was requested to kill off the giants, she met the Fire Giant, the leader of them all, and fought three days and three nights to defeat it. The heart of the Fire Giant was pierced, but strong flames were still blazing in it. There, she found a fist-sized stone. When she took the stone out, the flames died out. Since then, Yanne's arrows have been imbued with flame energy."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up over 18 sec.",
+        "description": "Summons the soul of Dragonbane, Svelta for 20 sec, increasing own and all allies ATK Spd by 300, recovering own Mana by 400 every sec. For the duration of Skill, increases All DMG that all enemies take by 20%. If the target is a Dragon, the DMG Boost effect changes to 60%.",
+        "cooldown": "25",
+        "uses": "7",
+        "thumbnail": "./data/kr/assets/heroes/Yanne/sw.png",
+        "advancement": {
+            "1": "For the duration of Skill, increases own ATK by 50%.",
+            "2": "Normal attacks ignore enemies's DEF for the duration of Skill."
+        },
+        "story": "Even in death, Mad Dragon Svelta's soul did not fully rest in peace.\nHis rage and resentment lingered in Yanne's great bow, and let out a cry of destruction. However, after spending years as Yanne's weapon, Svelta's soul acquired the ability to control its anger which had been slowly eating away its mind.\n\nPerhaps it was because Svelta's soul had touches with Demone and Mad Dragons that Yanne had hunted for years.\nGradually, it learned the ability to understand the nature of those who had to face the Mad Dragon's anger.\nNot all the creations of the world deserved anger.\nDemons, Mad Dragons, evil creatures, and the corrupted beings were the ones that had to be destroyed.\n\nSvelta's soul attained serenity, and it communed with Yanne's soul.\nNow the soul of the Mad Dragon shares the same path with the dragon slayer of the dragon heritage."
+    },
+    "splashart": "./data/kr/assets/heroes/Yanne/sa.png",
+    "costumes": "./data/kr/assets/heroes/Yanne/cos",
+    "visual": null,
+    "aliases": null
+}

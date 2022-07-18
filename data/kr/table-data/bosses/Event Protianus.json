@@ -1,0 +1,59 @@
+{
+    "infos": {
+        "class": "Event Protianus",
+        "title": "The Unstoppable Lonely King",
+        "race": "Spirit",
+        "damage type": "Magical",
+        "recommended heroes": "Mediana, Fluss, Reina",
+        "characteristics": "The Unstoppable Lonely King receives only 1 DMG from all attacks. His attacks deal DMG proportional to enemy Max HP.",
+        "thumbnail": "./data/kr/assets/bosses/wb/Protianus (Christmas).png"
+    },
+    "skills": {
+        "page 1": {
+            "1": {
+                "name": "Deadly Trident",
+                "cost": null,
+                "cooldown": "18",
+                "description": "Attacks enemy in range with the Trident, dealing M.DMG proportional to enemy Max HP, while dispelling all positive effects and stunning them for 4 sec."
+            },
+            "2": {
+                "name": "Brush Away",
+                "cost": null,
+                "cooldown": "24",
+                "description": "Swipes the forward area with the Trident, dealing M.DMG. Damaged enemies are silenced for 5 sec and their ACC reduced by 200 for 10 sec."
+            },
+            "3": {
+                "name": "Water Prison Lockdown",
+                "cost": null,
+                "cooldown": "32",
+                "description": "Throws water droplet, locking the enemy within a Water Prison and dealing M.DMG proportional to enemy Max HP. Additional Random targets will be locked in a Water Prison every 5 sec."
+            }
+        },
+        "page 2": {
+            "4": {
+                "name": "Tsunami",
+                "cost": null,
+                "cooldown": "40",
+                "description": "Whips up a 50M Tsunami ahead, dealing M.DMG proportional to enemy Max HP with a 30% chance to stunning them for 5 sec. Hit enemies' Mana is reduced by 1000 per sec for 10 sec. This effect cannot be dispelled."
+            },
+            "5": {
+                "name": "Skin of Protianus",
+                "cost": null,
+                "cooldown": null,
+                "description": "Protianus is not affected by ATK Spd related effects. When hit by Protianus, the enemy will take M.DMG proportional to enemy Max HP for 5 sec."
+            },
+            "6": {
+                "name": "Water Prison",
+                "cost": null,
+                "cooldown": null,
+                "description": "Enemies locked in a Water Prison cannot move or use skills. If the Water Prison is still active after 20 sec of casting [Water Prison Lockdown], the locked target loses 3000 mana and has all skill cooldowns increased by 100%. Water Prison will be dispelled when Protianus takes P.DMG 350 times."
+            }
+        }
+    },
+    "aliases": [
+        "EventProtianus",
+        "ChristmasProtianus",
+        "WB4",
+        "WB 4"
+    ]
+}

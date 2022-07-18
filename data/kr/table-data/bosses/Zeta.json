@@ -1,0 +1,48 @@
+{
+    "infos": {
+        "class": "Zeta",
+        "title": "Predator MK-XX",
+        "race": "Golem",
+        "damage type": "Magical",
+        "recommended heroes": "Theo, Laudia, Kaulah",
+        "characteristics": "Since ARCDIM X Zeta deals massive M.DMG that permanently reduces Heroes' Heal Rate until it takes a certain number of hits in a specific pattern, you need to use Heroes that can deliver multiple hits and increases Heal Rate.\nAlso be aware that ARCDIM X Zeta has high Crit Resistance.",
+        "thumbnail": "./data/kr/assets/bosses/arcdim/Zeta.png"
+    },
+    "skills": {
+        "page 1": {
+            "1": {
+                "name": "Charged Blast Cannon",
+                "cost": null,
+                "cooldown": "15",
+                "description": "Concentrates power for a short time and deals massive M.DMG to frontal enemies in a straight line, knocking them down for 5 sec."
+            },
+            "2": {
+                "name": "Meteor Prison of Extinction",
+                "cost": null,
+                "cooldown": "32",
+                "description": "Attacks frontal enemies in a circular range of self to deal M.DMG. Each hit reduces the target's Heal Rate and destroys Shield effects. The Heal Rate Reduction effect stacks up to max 100 times and irremovable. This attack lasts until the boss takes a certain number of hits, and it becomes stronger over time. When the number of hits is all consumed, the boss becomes neutralized for a certain period of time and takes greatly increased DMG. The number of hits and Heal Rate Reduction increase as the difficulty rises.\n(Stage 1 Number of Hits: 140)\n(Stage 1 Heal Rate Reduction: 0.5%)"
+            }
+        },
+        "page 2": {
+            "3": {
+                "name": "Annihilator Pulse Beam",
+                "cost": null,
+                "cooldown": null,
+                "description": "Gathers energy and attacks a random enemy for a total of 8 times to deal massive M.DMG and reduce M.DEF by 30%."
+            },
+            "4": {
+                "name": "Nano Protective Force Field",
+                "cost": null,
+                "cooldown": null,
+                "description": "When ARCDIM X Zeta's HP falls to 66% and 33%, it generates a [Nano Protective Force Field] to permanently reduce All DMG self takes. When used for a second time, it generates an enhanced [Nano Protective Force Field]."
+            },
+            "5": {
+                "name": "Adaptive Metadium Armor Zeta",
+                "cost": null,
+                "cooldown": null,
+                "description": "ARCDIM X Zeta is not affected by ATK Spd and DEF Reduction effects. It gains immunity to DMG taken Boost effects and has high Crit Resistance.\nAdditionally, all of ARCDIM X Zeta's attacks ignore target's' DMG Reduction effects. Crit Resistance increases as the difficulty rises.\n(Stage 1 Crit Resistance: 300)"
+            }
+        }
+    },
+    "aliases": null
+}

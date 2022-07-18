@@ -1,0 +1,232 @@
+{
+    "infos": {
+        "title": "The Royal Vermilion Blood",
+        "class": "Wizard",
+        "position": "Back-400",
+        "attack range": "3200",
+        "damage type": "Magical",
+        "gender": "Female",
+        "age": "???",
+        "height": "172",
+        "race": "Vampire",
+        "constellation": "Satua the Sage",
+        "birth of month": "February 22nd, Month of Wisdom",
+        "like": "Traveling leisurely and comfortably",
+        "dislike": "War and disorder",
+        "story": "A Vampire princess who joined Kyle in his war against the Demons 100 years ago. She is a pure-blood Vampire who has lived for over 500 years. Often considered the Queen of Vampires, she is nigh immortal. The tremendous expenditure of her power during the war against the Demons has taken its toll, and the immortal princess now assumes a child-like form. After the war, she blended into Human society and watched the world change over the next 100 years while slowly restoring her power. When the Demons reappeared and the Holy Sword awoke, Lewisia sensed the sudden shelifts of energy. Soon after, she left on a journey to find and observe the newly chosen warrior.",
+        "thumbnail": "./data/kr/assets/heroes/Lewisia/ico.png",
+        "story_": "A Vampire princess who joined Kyle in his war against the Demons 100 years ago. She is a pure-blood Vampire who has lived for over 500 years. Often considered the Queen of Vampires, she is nigh immortal. The tremendous expenditure of her power during the war against the Demons has taken its toll, and the immortal princess now assumes a child-like form. After the war, she blended into Human society and watched the world change over the next 100 years while slowly restoring her power. When the Demons reappeared and the Holy Sword awoke, Lewisia sensed the sudden shifts of energy. Soon after, she left on a journey to find and observe the newly chosen warrior."
+    },
+    "skills": {
+        "1": {
+            "name": "Blood Orb",
+            "cost": "1",
+            "cooldown": "8",
+            "description": "Deals ??? M.DMG to target enemy, and target takes 25% increased M.DMG for 10 sec. Per every stacked Blood Curse, DMG is increased by 1%. Upon use, consumes 10% of current HP.",
+            "thumbnail": "./data/kr/assets/heroes/Lewisia/skills/1.png"
+        },
+        "2": {
+            "name": "Blood Zone",
+            "cost": "3",
+            "cooldown": "17",
+            "description": "Deals ??? M.DMG to target enemy and creates a Blood Zone that lasts for 10 sec around the target. Enemies within the Blood Zone receives ??? M.DMG every 0.5 sec, and M.DEF is reduced by 30%. Per every stacked Blood Curse, DMG is increased by 1%. Upon use, consumes 20% of current HP.",
+            "thumbnail": "./data/kr/assets/heroes/Lewisia/skills/2.png"
+        },
+        "3": {
+            "name": "Blood Banquet",
+            "cost": "3",
+            "cooldown": "12",
+            "description": "Attacks enemies in a straight line 3 times, dealing a total of ??? M.DMG and inflicting Stun for 3 sec. Per every stacked Blood Curse, DMG is increased by 1% Upon use, consumes 10% of current HP.",
+            "thumbnail": "./data/kr/assets/heroes/Lewisia/skills/3.png"
+        },
+        "4": {
+            "name": "Blood Dominator",
+            "cost": null,
+            "cooldown": null,
+            "description": "When HP is 50% or above, ATK is increased by ??? and DEF Pen. is increased by 250. Upon attack, inflicts target with Blood Curse, dealing a total of ??? M.DMG over time for 20 sec, and recovering 10% of DMG dealt from Blood Curse as HP. Blood Curse can be stacked max 60 times, and cannot be dispelled.",
+            "thumbnail": "./data/kr/assets/heroes/Lewisia/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Mana cost is increased by 1 orb but DMG is boosted by 100%.",
+                    "thumbnail": "./data/kr/assets/heroes/Lewisia/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Target takes 25% increased M.DMG for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Lewisia/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "DMG is increased by 40%.",
+                    "thumbnail": "./data/kr/assets/heroes/Lewisia/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Cooldown is reduced by 3 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Lewisia/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Upon attacking an enemy with over 80 stacks of Blood Curse, all skill cooldown is reduced by 5%.",
+                    "thumbnail": "./data/kr/assets/heroes/Lewisia/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Mana cost is reduced by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Lewisia/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Max stack of Blood Curse is changed to 120 stacks.",
+                    "thumbnail": "./data/kr/assets/heroes/Lewisia/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "All allies' heal rate is increased by 20% and all enemies' heal rate is reduced by 20%.",
+                    "thumbnail": "./data/kr/assets/heroes/Lewisia/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit Chance +100",
+                "thumbnail": "./data/kr/assets/heroes/Lewisia/perks/light.png"
+            },
+            "dark": {
+                "effect": "All skill HP consumption is increased by 50% but cooldowns are reduced by 20%.",
+                "thumbnail": "./data/kr/assets/heroes/Lewisia/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Scarlet Ruler, Dominicia",
+        "description": "If HP is over 50%, ATK is increased by (0). If HP is under 50%, takes (1) reduced DMG.",
+        "value": {
+            "0": {
+                "0": "20%",
+                "1": "24%",
+                "2": "29%",
+                "3": "35%",
+                "4": "42%",
+                "5": "50%"
+            },
+            "1": {
+                "0": "10%",
+                "1": "12%",
+                "2": "14%",
+                "3": "17%",
+                "4": "21%",
+                "5": "25%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Lewisia/uw.png",
+        "story": "A staff of blood that has been passed down in the family of the Vampire Lord through the generations. Its crimson color symbolizes the authority, insight, and the absolute power of the Vampire Lord. Deep in the underground of the Galia Plains is the holy land of the Vampires. This legendary staff lies there, ready to appear at the call of the master worthy of it, wherever that may be."
+    },
+    "uts": {
+        "1": {
+            "name": "Old Silver Cup",
+            "description": "[Blood Orb] Increases DMG by 50% and leaves (0) stacks of Blood Curse on the target.",
+            "value": {
+                "0": {
+                    "0": "5",
+                    "1": "6",
+                    "2": "7",
+                    "3": "8",
+                    "4": "9",
+                    "5": "10"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Lewisia/ut/1.png",
+            "story": "An old silver cup of the first Vampire Queen. Queen used this cup to hold the blood of the one she cherished the most. It is a symbol of her immense sorrow and lunatic pleasure. It is a core item for holy rituals of Vampires, and the ones that go through the ritual of the cup are granted more beautiful and darkly colored Blood Orbs."
+        },
+        "2": {
+            "name": "Spell of Bloody Mist",
+            "description": "[Blood Zone] Increases DMG by (0) and the effect duration by 2 sec.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Lewisia/ut/2.png",
+            "story": "Magic tool of the successor of blood. The spells of the pure Vampire Lord's family have been passed down through generations.\u00a0 The successor of Lewisia is Vampire Sir Lusben, and the Spell of Bloody Mist is a gift from him.\u00a0 Lewisia hates anything that has to do with being a successor, but she likes how the Blood Zone reduces her fatigue, so she enjoys using it."
+        },
+        "3": {
+            "name": "Blood of the Ancients",
+            "description": "[Blood Banquet] DMG is increased by (0) and upon Crit Hit, recovers 400 mana.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Lewisia/ut/3.png",
+            "story": "Ancient vampire queen's blood. The more pure-blooded a vampire is, the stronger their mana blood. The greatest of them all is the ancient vampire queen's blood, and vampires who drink her blood will have unlimited life and mana. It is a highly addictive type of blood, so be careful when using it."
+        },
+        "4": {
+            "name": "Red Ring",
+            "description": "[Blood Dominator] Increases DMG of Blood Curse by 50%. Upon attacking enemies inflicted with 100 or more stacks of Blood Curse, increases own ATK by 1% for 10 sec. ATK boost can be stacked up to max (0) times.",
+            "value": {
+                "0": {
+                    "0": "10",
+                    "1": "12",
+                    "2": "14",
+                    "3": "17",
+                    "4": "20",
+                    "5": "25"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Lewisia/ut/4.png",
+            "story": "A ring that the underworld Vampire society in Galluah Plains presented to the Scarlet Ruler in respect. Since then the Vampires show their respect by kissing on the ring. When Lewisia was born, the previous Ruler passed the ring to her on the spot, proclaiming the birth of the new Ruler. Little did Lewisia know that the proclamation was actually the beginning of the ordeal she had to go through to become a new Ruler."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon dealing DMG 60 times.",
+        "description": "Summons the soul of Scarlet Ruler, Dominicia, increasing Lewisia's ATK by 40% and M.DMG the enemy takes by 20% for 12 sec. Afterward, deals a total of ??? M.DMG over 10 times on the enemy and heals all allies' HP equal to 5% of the DMG dealt. After 10 sec, deals ??? M.DMG. If the target is a Boss, deals ??? additional M.DMG.",
+        "cooldown": "23",
+        "uses": "7",
+        "thumbnail": "./data/kr/assets/heroes/Lewisia/sw.png",
+        "advancement": {
+            "1": "Reduces Cooldown by 8 sec.",
+            "2": "Increases DMG by 70%, and changes ATK Boost to 60%."
+        },
+        "story": "Blood of the Vampire lords have been engraved into Dominicia, which also contains strengths and wisdom of the vampire Lords.\nUntil now, Lewisia had only used her innate power as the pure-blooded vampire princess, using Dominicia as just an ordinary staff which she summoned freely.\nOne day, the moment Lewisia decided that she would use Dominicia's power as the ruler, all her surroundings became painted in blood-red. It was as if Dominicia had been waiting for Lewisia's decision"
+    },
+    "splashart": "./data/kr/assets/heroes/Lewisia/sa.png",
+    "costumes": "./data/kr/assets/heroes/Lewisia/cos",
+    "visual": null,
+    "aliases": null
+}

@@ -1,0 +1,38 @@
+{
+    "Galgoria (Perseverance)": {
+        "colour": [0,162,162],
+        "classes": {
+            "Knight": "Increases DMG dealt to enemies by 10% and takes 10% reduced All DMG. This effect increases up to max 20% over 50 sec.",
+            "Warrior": "Increases DMG dealt to enemies by 10%, and ATK by 10%. This effect increases up to max 25% over 100 sec.",
+            "Assassin": "Increases DMG dealt to enemies by 10%, and ATK by 10%. This effect increases up to max 25% over 100 sec.",
+            "Archer": "Increases DMG dealt to enemies by 10%, and ATK by 10%. This effect increases up to max 25% over 100 sec.",
+            "Mechanic": "Increases DMG dealt to enemies by 10% and Crit DMG by 20%. This effect increases DMG dealt to enemies up to max 25%, and Crit DMG up to max 50% over 100 sec.",
+            "Wizard": "Increases DMG dealt to enemies by 10% and Crit DMG by 20%. This effect increases DMG dealt to enemies up to max 25%, and Crit DMG up to max 50% over 100 sec.",
+            "Priest": "Increases the amount own Heal Rate effects by 25% and Shield by 25%."
+        }
+    },
+    "Siegfried (Hope)": {
+        "colour": [181,230,29],
+        "classes": {
+            "Knight": "Increases all allies' All DEF by 10% and ATK by 5%.",
+            "Warrior": "Increases ATK Spd of all allies by 100. If the Hero is a Melee Hero, the effect multiplies by 2 times.",
+            "Assassin": "Increases Crit DMG by 40%. Upon Skill use, recovers Mana by 300 and additionally increases Crit DMG by 40% for 3 sec.",
+            "Archer": "Increases Crit DMG of all allies by 20%. If the Hero is a Ranged Hero, the effect multiplies by 2 times.",
+            "Mechanic": "Recovers all allies' Mana by 500 and reduces Cooldown of all Skills by 0.5 sec every 10 sec.",
+            "Wizard": "Increases all allies' DMG dealt to enemies by 2%. After 30 sec, increases the effect of 1 allies who dealt the highest DMG to enemies by 2 times.",
+            "Priest": "Increases Heal Rate of all allies by 6%. After 5 sec, increases Mana Recovery of all allies by 6%."
+        }
+    },
+    "Ascalon (Authority)": {
+        "colour": [237,28,28],
+        "classes": {
+            "Knight": "Increases own All Block Chance by 300. Upon successful Block, reduces Cooldown of all Skills by 1 sec. This effect activates only once every 2.5 sec.",
+            "Warrior": "Increases own Max HP by 30%. For 1 time only during the battle, recovers 30% of Max HP and permanently increases ATK Spd by 300 if own HP percentage falls below 50%.",
+            "Assassin": "Increases DEF Penetration by 250 and DMG that ignores DEF by 12%. By killing an enemy, additionally increases DEF Penetration by 250 and DMG that ignores DEF by 12%.",
+            "Archer": "Increases own ATK by 25%. At the beginning of each battle, this effect multiplies by 2 times for 20 sec.",
+            "Mechanic": "Increases own Crit Chance by 300. If own Crit Chance is over 1400, all hits become a Crit Hit.",
+            "Wizard": "After fully recovering Mana for the first time, increases Mana Recovery by 20% and ATK by 40%.",
+            "Priest": "Increases ATK of all allies by 10%."
+        }
+    }
+}

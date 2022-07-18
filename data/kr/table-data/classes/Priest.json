@@ -1,0 +1,11 @@
+{
+    "perks": {
+        "t2": {
+            "Vengeful Curse": "When hit by an enemy, attacker's DMG is reduced by 70% for 3 sec. This effect only activates once in 40 sec, and cannot be dispelled.",
+            "Goddess Blessing": "Increases Crit Chance of all allies by 150. If the ally uses the same Perk, only 50 additional Crit Chance applies.",
+            "Inner Peace": "Heal all allies by 1% every sec and increases CC Resist by 75. If the ally uses the same Perk, only 0.3% additional healing per sec and 25 additional CC Resist apply.",
+            "Blessing of Mana": "Mana recovery per second rises by 250%.",
+            "Swiftness": "Increases ATK Spd of all allies by 150. If the ally uses the same Perk, only 50 additional ATK Spd applies."
+        }
+    }
+}

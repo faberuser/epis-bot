@@ -1,0 +1,232 @@
+{
+    "infos": {
+        "title": "Holy Ruffian",
+        "class": "Priest",
+        "position": "Middle-100",
+        "attack range": "2400",
+        "damage type": "Magical",
+        "gender": "Male",
+        "age": "28",
+        "height": "190",
+        "race": "Human",
+        "constellation": "Judgment Layan",
+        "birth of month": "September 12th, Month of Truth",
+        "like": "Lua",
+        "dislike": "Lua?",
+        "story": "As the most unlikely priest in the Church of Lua, Baudouin is, in a word, a maverick. Since childhood, he has always been a black sheep in the Church of Lua that emphasizes piety. He entered the church with the help of the High Priest Berman, but the religious lelife was painfully ill-suited for him. One day, however, he suddenly decided to quit his deviant ways, and started following the path of the high priesthood.",
+        "thumbnail": "./data/kr/assets/heroes/Baudouin/ico.png",
+        "story_": "As the most unlikely priest in the Church of Lua, Baudouin is, in a word, a maverick. Since childhood, he has always been a black sheep in the Church of Lua that emphasizes piety. He entered the church with the help of the High Priest Berman, but the religious life was painfully ill-suited for him. One day, however, he suddenly decided to quit his deviant ways, and started following the path of the high priesthood."
+    },
+    "skills": {
+        "1": {
+            "name": "Holy Nova",
+            "cost": "2",
+            "cooldown": "6",
+            "description": "Targets the ally with the lowest HP and allies nearby to heal ??? HP. Deals ??? M.DMG to enemies near the target, and reduces enemy ATK Spd by 25% for 10 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Baudouin/skills/1.png"
+        },
+        "2": {
+            "name": "Spear of Light",
+            "cost": "2",
+            "cooldown": "15",
+            "description": "Deals ??? M.DMG, inflicts knockback, and shackles the target enemy for 6 sec. Enemies inflicted by shackle take 25% increased M.DMG while the effect lasts.",
+            "thumbnail": "./data/kr/assets/heroes/Baudouin/skills/2.png"
+        },
+        "3": {
+            "name": "Holy Sanctuary",
+            "cost": "1",
+            "cooldown": "60",
+            "description": "Grants Invincibility to all allies for 7 sec and heals ??? HP for the duration of skill.",
+            "thumbnail": "./data/kr/assets/heroes/Baudouin/skills/3.png"
+        },
+        "4": {
+            "name": "Training of God",
+            "cost": null,
+            "cooldown": null,
+            "description": "Each attack has a 20% chance of dealing ??? M.DMG to target and inflicting stun for 1.5 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Baudouin/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG and Heal Rate are increased by 10%.",
+            "III": "DMG and Heal Rate are increased by 15%.",
+            "IV": "DMG and Heal Rate are increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "3": {
+            "II": "Heal Rate is increased by 10%.",
+            "III": "Heal Rate is increased by 15%.",
+            "IV": "ATK Spd is increased by 250 for the duration of skill."
+        },
+        "4": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "DMG and Heal rate is increased by 40%.",
+                    "thumbnail": "./data/kr/assets/heroes/Baudouin/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Enemies hit are stunned for 1 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Baudouin/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Mana cost is reduced by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Baudouin/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Number of targets changes to 2.",
+                    "thumbnail": "./data/kr/assets/heroes/Baudouin/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Invincibility duration is increased by 1.5 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Baudouin/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "In exchange for 2 additional Mana Cost and a 3 sec reduction of Invincibility duration, all allies gain 50% ATK.",
+                    "thumbnail": "./data/kr/assets/heroes/Baudouin/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Activation chance is boosted by 10%.",
+                    "thumbnail": "./data/kr/assets/heroes/Baudouin/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Attack range is boosted by 20%.",
+                    "thumbnail": "./data/kr/assets/heroes/Baudouin/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / M. Block +200",
+                "thumbnail": "./data/kr/assets/heroes/Baudouin/perks/light.png"
+            },
+            "dark": {
+                "effect": "When attacking with Holy Nova and Spear of Light, deal extra M.DMG equal to 100% of ATK and reduce the used skill's cooldown by 20%.",
+                "thumbnail": "./data/kr/assets/heroes/Baudouin/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "God's Book, Genesis",
+        "description": "Increasing the casting speed of all skills, and upon every skill use, increases ATK by (0) and DEF by (1). This effect can stack up to 7 times.",
+        "value": {
+            "0": {
+                "0": "2%",
+                "1": "2.4%",
+                "2": "2.9%",
+                "3": "3.5%",
+                "4": "4.2%",
+                "5": "5%"
+            },
+            "1": {
+                "0": "2%",
+                "1": "2.4%",
+                "2": "2.9%",
+                "3": "3.5%",
+                "4": "4.2%",
+                "5": "5%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Baudouin/uw.png",
+        "story": "Even among the holy relics bestowed to the high priests of the Church of Lua, the God's Book Genesis is special. According to the legend, this book, guarded throughout the ages by the Grand Priests of the church, was written by Lua herself. Iris, the current Grand Priest, upon receiving a revelation regarding Baudouin, entrusted this book to his step father, Berman. Later, the book was given to Baudouin when he became a high priest. It is said that this divine relic provides infinite holy energy to its owner, along with the power to unlock the true potential of those who have faith."
+    },
+    "uts": {
+        "1": {
+            "name": "Old Holy Grail",
+            "description": "[Holy Nova] Reduces Mana Cost by 1 and increases Heal Rate by (0).",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Baudouin/ut/1.png",
+            "story": "A wooden grail that has Goddess Lua's face engraved on it. When the people first learned of Lua's existence, they made a grail for her in praise of her divinity. As the civilization in Orbis Continent fell, the grail was also buried underground, and it's only been mentioned in records. However, on the day that Baudouin repented his sins and realized the truth of the holy book, this old grail appeared in front of him, shining like the sun."
+        },
+        "2": {
+            "name": "Last Chapter of the Bible",
+            "description": "[Spear of Light] Gains Immunity to CC for the skill's duration and increases M.Weakness of the target by (0) for 10 sec.",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Baudouin/ut/2.png",
+            "story": "The last chapter of the legend that was too horrifying and terrifying to put in the Bible. It talks about the holy light that kills the darkest enemy in the world."
+        },
+        "3": {
+            "name": "Well-Worn Rosary",
+            "description": "[Holy Sanctuary] ATK is increased by 25% for the duration of skill, and recovers (0) Mana per sec.",
+            "value": {
+                "0": {
+                    "0": "120",
+                    "1": "140",
+                    "2": "170",
+                    "3": "200",
+                    "4": "250",
+                    "5": "300"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Baudouin/ut/3.png",
+            "story": "The rosary that holy priest Evelyn of the Church of Lua carried until her death. It's as if Lua's holy voice can be heard from the rosary, praying that the world won't collapse. The undeniable holy energy engulfs the body, and it maximizes Baudouin's power."
+        },
+        "4": {
+            "name": "Scorched Journal",
+            "description": "[Training of God] Increases Stun duration by (0) sec. Hit enemies take 25% increased M.DMG for 5 sec.",
+            "value": {
+                "0": {
+                    "0": "0.5",
+                    "1": "0.6",
+                    "2": "0.7",
+                    "3": "0.8",
+                    "4": "0.9",
+                    "5": "1"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Baudouin/ut/4.png",
+            "story": "The last journal of a great teacher. It contains the treatment that Priest Berman carried out for Dark Plague patients, and his own battle with his illness. Baudouin managed to save this from the flames when they were burning the teacher's belongings after he died. Then, he transcribed it with Leo and named it Berman's Journal, which made a great contribution to Dark Plague treatment. The original journal is kept by Baudouin in safekeeping, reminding him of his teacher's will."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon using Skills 5 times.",
+        "description": "Summons the soul of God's Book, Genesis, increasing the number of targets of normal attacks to 2 for 10 sec, healing HP of all allies by ??? and dispelling negative effects every 2 sec.",
+        "cooldown": "22",
+        "uses": "5",
+        "thumbnail": "./data/kr/assets/heroes/Baudouin/sw.png",
+        "advancement": {
+            "1": "Changes Skill Activation requirements of Soul Weapon to 4.",
+            "2": "Reduces All DMG that all allies take by 30% and increases their Heal Rate by 50% for the duration of Skill."
+        },
+        "story": "'Heavens, this book is boring.'\nBaudouin said as he closed the book. He prepared to rest his head on the book and take a nap. That moment, the book released a strong,shimmering light, and Baudouin fell off immediately out of surprise. The shining book rapidly flipped the pages on its own. Eventually, the flipping stopped, and from the shining light appeared an old man whom Baudouin had never seen before. Baudouin watched the whole event unfold with an idiotic face.\n'You there! I can't just sit by and watch anymroe! I had high hopes for you! You are gifted with great divine power and some potential! I had plans for...'\n'Um, who are you again...?'\n'What!? You don't even know what book you were reading?! That very book that gave you strength?! I am Genesis! I am the avatar of that book you inherited from your foster father.'"
+    },
+    "splashart": "./data/kr/assets/heroes/Baudouin/sa.png",
+    "costumes": "./data/kr/assets/heroes/Baudouin/cos",
+    "visual": null,
+    "aliases": null
+}

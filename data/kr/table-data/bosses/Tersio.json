@@ -1,0 +1,68 @@
+{
+    "infos": {
+        "class": "Tersio",
+        "title": "Deranged Dragon",
+        "race": "Dragon",
+        "damage type": "Magical",
+        "recommended heroes": "Yanne, Laias, Isaiah",
+        "characteristics": "As [Deathly Dragon] state increases Tersio's DMG dealt to enemies and his Crit Chance, you must dispel it. [Death's Door] constantly deals massive M.DMG and increases M.DMG the target takes. Since it becomes irremovable upon reaching the max number of stacks, it must be dispeled regularly. Also, when Tersio takes a certain amount of DMG, [Power of Hatred] is activated and he soars to the sky after a while to annihilate all enemies. Use CC Skills to reduce [Power of Hatred] and stop Tersio from using the Skill.",
+        "thumbnail": "./data/kr/assets/bosses/dragon/Tersio.png"
+    },
+    "skills": {
+        "page 1": {
+            "1": {
+                "name": "Deathly Dragon's Breath",
+                "cost": null,
+                "cooldown": "28",
+                "description": "Deals M.DMG to all enemies and inflicts Stun. Afterward, leaves [Deathly Dragon's Fire] on the ground that lasts for 5 sec. [Deathly Dragon's Fire] destroys the target's Shield and deals M.DMG that ignores Block each hit."
+            },
+            "2": {
+                "name": "Overwhelming Annihilation",
+                "cost": null,
+                "cooldown": "28",
+                "description": "Concentrates power for a while and fires a ray to frontal enemies in a straight line for 3 sec, dealing M.DMG. This Skill reduces the target's Mana by 250 each hit and inflicts knockback. The farther the target is, the greater the DMG."
+            },
+            "3": {
+                "name": "Death's Door",
+                "cost": null,
+                "cooldown": "32",
+                "description": "Tersio summons spectral Dragons for 8 sec by opening a gateway to hell. Spectral Dragons attack enemies to deal M.DMG and increase M.DMG the hit targets take by 5%. The M.DMG Boost effect can be stacked up to max 15 times. Upon reaching the max number of stacks, the M.DMG Boost effect becomes irremovable."
+            },
+            "4": {
+                "name": "Incarnation of Hell",
+                "cost": null,
+                "cooldown": null,
+                "description": "When Tersio's HP reaches 33%. [Power of Hatred] becomes activated and Tersio concentrates all of his power for 8 sec to fly. If his enemies fail to deplete [Power of Hatred] during the time of conentration, Tersio soars to the sky and annihilates all his enemies. Use CC Skills to reduce [Power of Hatred]"
+            }
+        },
+        "page 2": {
+            "5": {
+                "name": "Lost Self",
+                "cost": null,
+                "cooldown": null,
+                "description": "At the beginning of the first battle and every 15 sec, Tersio enters into the [Deathly Dragon] state. During the [Deathly Dragon] state, increases Crit Chance by 400 and DMG dealt to enemies by 50%."
+            },
+            "6": {
+                "name": "Complete Form",
+                "cost": null,
+                "cooldown": null,
+                "description": "Tersio is not affected by changes in ATK Spd, DEF and ATK. His All Crit Resistance is increased by 1000 and his attacks always hit."
+            },
+            "7": {
+                "name": "Firstborn",
+                "cost": null,
+                "cooldown": null,
+                "description": "Tersio's normal attacks deal M.DMG to the target's nearby enemies, and the hit target deals 4% reduced DMG to enemies. This effect can be stacked up max 20 times and is irremovable."
+            },
+            "8": {
+                "name": "Hauled Into Hell",
+                "cost": null,
+                "cooldown": null,
+                "description": "Every 15 sec, deals M.DMG to 1 enemy with the highest M.DEF to remove from battle for 8 sec and inflict [Infernal Curse]. The [Infernal Curse] effect can be stacked up to max 10 times. Each stack reduces the target's Mana Recovery by 100 and ATK Spd by 100. This effect is irremovable."
+            }
+        }
+    },
+    "aliases": [
+        "baby dragon"
+    ]
+}

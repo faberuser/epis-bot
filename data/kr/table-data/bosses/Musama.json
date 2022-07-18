@@ -1,0 +1,53 @@
+{
+    "infos": {
+        "class": "Musama",
+        "title": "Eye of the Sun",
+        "race": "Golem",
+        "damage type": "Physical",
+        "recommended heroes": ":** Assassin, Archer, Mechanic",
+        "characteristics": "** Nia, Zafir, Annette",
+        "thumbnail": "./data/kr/assets/bosses/trial/Musama.png"
+    },
+    "skills": {
+        "page 1": {
+            "1": {
+                "name": "Solar Wave",
+                "cost": null,
+                "cooldown": "20",
+                "description": "Attacks the enemies in a straight line, dealing P.DMG and reducing their Mana."
+            },
+            "2": {
+                "name": "Tempest Sand",
+                "cost": null,
+                "cooldown": "25",
+                "description": "Creates a tempest of sand that reflects some of DMG dealt to self, and attacks the enemies within range over 20 times, dealing P.DMG and reducing DEF for a short period of time. DEF Reduction can stack up to 20 times, and at 15 stacks or above, additionally inflicts Curse of the Sands for 30 sec which greatly reduces DEF. Curse of the Sands is irremovalbe."
+            },
+            "3": {
+                "name": "Icon of the Sun",
+                "cost": null,
+                "cooldown": "30",
+                "description": "Deactivates the Relic of the Sky, and gathers strength to create a powerful sphere of sand reducing all taken DMG to 1. Once its strength is fully charged, it removes all positive effects placed of all enemies, then deals P.DMG and stuns them. If all Relics of the Sky are removed, this Skill is canceled, Musama takes massive DMG and is temporarily neutralized."
+            }
+        },
+        "page 2": {
+            "4": {
+                "name": "Guardian of Sekireinel",
+                "cost": null,
+                "cooldown": null,
+                "description": "A Guardian of Sekireinel is blessed with a mighty power that prevents its DEF and ATK Sd from being affected. In Stage 6 or above, Musama continuously heals its own HP."
+            },
+            "5": {
+                "name": "Relic of the Sky",
+                "cost": null,
+                "cooldown": null,
+                "description": "If there is no Relic of the Sky remaining, Musama summons a Relic of the Sky. Upon activation of the Relic of the Sky, the relic reduces all taken DMG to 1 and creates a Healing Field around Musama, granting immunity to negative effects. It restores its HP with greatly increased Heal Rate within the Healing Field, and healing is unavailable outside the field."
+            }
+        }
+    },
+    "aliases": [
+        "TrialoftheSky",
+        "TrialofSky",
+        "TrialSky",
+        "Musama"
+    ]
+}

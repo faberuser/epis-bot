@@ -1,0 +1,52 @@
+{
+    "infos": {
+        "class": "Nubis",
+        "title": "Queen of Shackles",
+        "race": "Beast",
+        "damage type": "Magical, Physical",
+        "recommended heroes": "Kaulah, Epis, Lorraine",
+        "characteristics": "[Children of the Queen] increases the ATK and DEF of the boss greatly per each minion summoned. Magic heroes with AOE spells are advantageous in this stage.",
+        "thumbnail": "./data/kr/assets/bosses/gr/Nubis.png"
+    },
+    "skills": {
+        "page 1": {
+            "1": {
+                "name": "Desert Stinger",
+                "cost": null,
+                "cooldown": "12",
+                "description": "Fire a Poison Stinger at a random enemy, dealing M.DMG and M.DoT. Also summon 3 scorpions."
+            },
+            "2": {
+                "name": "Venom Absorption",
+                "cost": null,
+                "cooldown": "20",
+                "description": "Absorb poison from the nearby area. Upon taking P.DMG, some DMG will be reflected as well as Petrifying the aggressor for 5 sec. After absorption ends, create a shockwave that deals M.DMG and knocks over nearby enemies for 3 sec."
+            },
+            "3": {
+                "name": "Petrification Venom",
+                "cost": null,
+                "cooldown": "20",
+                "description": "Injects poison into the enemy furthest away dealing M.DMG. After injection is complete. Petrify said enemy for 5 sec."
+            },
+            "4": {
+                "name": "Children of the Queen",
+                "cost": null,
+                "cooldown": null,
+                "description": "Increase ATK and DEF greatly based off the number of surviving scorpions."
+            }
+        },
+        "page 2": {
+            "5": {
+                "name": "Purify",
+                "cost": null,
+                "cooldown": null,
+                "description": "Every 30 sec, remove all negative effects and increase ATK SPD."
+            }
+        }
+    },
+    "aliases": [
+        "Nubis",
+        "GR3",
+        "GR 3"
+    ]
+}

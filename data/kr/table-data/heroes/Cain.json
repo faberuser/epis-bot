@@ -1,0 +1,250 @@
+{
+    "infos": {
+        "title": "The Immortal God King",
+        "class": "Wizard",
+        "position": "Middle-300",
+        "attack range": "9800",
+        "damage type": "Physical",
+        "gender": "Male",
+        "age": "28",
+        "height": "191",
+        "race": "Human",
+        "constellation": "Satua the Sage",
+        "birth of month": "February 1st, Month of Wisdom",
+        "like": "Laias, clowns",
+        "dislike": "darkness, backstabbing subjects, flatterers, those who are disloyal",
+        "story": "Ancient Sekireinel was a kingdom blessed with eternal prosperity under the rule of Cain, the greatest king that has ever ruled Sekireinel. Descendants of the desert address Cain as the God King, as it was their way of expressing their respect to the flawless, god-like king. The people of the desert praised and followed Cain's overwhelming charisma, and Cain in return, gifted them with the fairest rule, and showed endless generosity and benevolence to his people. In contrast, against those who would threaten his kingdom, Cain did not show any mercy. He ruthlessly tracked down and killed all those who threatened the peace of his kingdom, causing fear within the nations outside, However, deep inside the majestic, ruthless God King who asserted his reign over the kingdom, there lied a deep loneliness. When alone, the God King would contemplate endlessly. It was Laias who held Cain's hands when he was most vulnerable, and Cain fell in love with Laias who sang for him.",
+        "thumbnail": "./data/kr/assets/heroes/Cain/ico.png",
+        "story_": "Ancient Sekireinel was a kingdom blessed with eternal prosperity under the rule of Cain, the greatest king that has ever ruled Sekireinel. Descendants of the desert addess Cain as the God King, as  it was their way of expressing their respect to the flawless, god-like king.\nThe people of the desert praised and followed Cain's overwhelming charisma, and Cain in return, gifted them with the fairest rule, and showed endless generosity and benevolence to his people. In Contrast, against those who would threaten his kingdom, Cain did not show any mercy. He ruthlessly tracked down and killed all those who threatened the peace of his kingdom, causing fear within the nations outside.\nHowever, deep inside the majestic, ruthless God King who asserted his reign over the kingdom, there lied a deep loneliness. When alone, the God King would contemplate endlessly. It was Laias who held Cain's hands when he was most vulnerable, and Cain fell in love with Laias who sang for him. Cain has since strongly expressed his love to Laias, eager to help Laias fulfill anything she wants."
+    },
+    "skills": {
+        "page 1": {
+            "1 (1)": {
+                "name": "Tremble",
+                "cost": "2",
+                "cooldown": "14",
+                "description": "Cain heals the ally with the lowest HP by ??? and grants the ally with [The God King's Blessing], which reduces All DMG the ally receives by 35% and grants immunity to CC for 3.5. After 3.5 sec, Cain dispels negative effects from the target and the allies nearby. Afterwards, heals their HP by ???. [The God King's Blessing] is irremovable.",
+                "thumbnail": "./data/kr/assets/heroes/Cain/skills/1 (1).png"
+            },
+            "1 (2)": {
+                "name": "Kneel",
+                "cost": "2",
+                "cooldown": "12",
+                "description": "Cain deals ??? P.DMG to the enemy with the highest ATK and casts [Sealing Technique of the Tyrant] that reduces the target's ATK Spd by 350 and prevents the target from receiving any positive effects for 5 sec. After 5 sec, Cain deals ??? P.DMG to the target and the enemies nearby, inflicting stun for 3 sec. [Sealing Technique of the Tyrant] is irremovable.",
+                "thumbnail": "./data/kr/assets/heroes/Cain/skills/1 (2).png"
+            },
+            "2": {
+                "name": "Behold My Might",
+                "cost": "3",
+                "cooldown": "8",
+                "description": "Cain turns into a [Tyrant] and constantly attacks the target, dealing ??? P.DMG each hit. While Cain is in [Tyrant] form, [Tremble!] and [Gaze Upon My Almighty Power!] change to [Kneel.] and [Now Die.]. Upon using the Skill again, he returns to [God King] form.\n[The God King's Mercy] - While Cain is in God King form, reduces DMG all allies take by 10%.\n[Dignity of the Tyrant] - While Cain is in Tyrant form, increases DMG all enemies take by 10%.",
+                "thumbnail": "./data/kr/assets/heroes/Cain/skills/2.png"
+            }
+        },
+        "page 2": {
+            "3 (1)": {
+                "name": "Gaze Upon My Almighty Power!",
+                "cost": "3",
+                "cooldown": "25",
+                "description": "Increases All DEF of allies nearby self by ??? for 10 sec 10 times. DEF Boost effect stacks up to 10 times, and if this Skill is cast on an ally with 10 stacks, increases the target's ATK by ??? and grants immunity to CC for 10 sec.",
+                "thumbnail": "./data/kr/assets/heroes/Cain/skills/3 (1).png"
+            },
+            "3 (2)": {
+                "name": "Now Die",
+                "cost": "4",
+                "cooldown": "25",
+                "description": "Places a [Gate of Hell] in frontal area of self for 3 sec, dealing ??? P.DMG to enemies in range over 10 attacks and pulling them to the center. Afterwards, explodes the [Gate of Hell], dealing ??? P.DMG and stunning the enemies for 3 sec.",
+                "thumbnail": "./data/kr/assets/heroes/Cain/skills/3 (2).png"
+            },
+            "4": {
+                "name": "I Am the King of the Desert",
+                "cost": null,
+                "cooldown": null,
+                "description": "At the beginning of each battle, gains an irremovable stack of [King of the Desert]. Each stack of [King of the Desert] increases the effect of [The God King's Mercy] and [Dignity of the Tyrant] by 5%. Additionally, recovers 100 Mana every sec, and increases ATK by ???. If [King of the Desert] is stacked 3 times or more, self deals 50% increased DMG to Bosses. [King of the Desert] can be stacked up to 5 times.",
+                "thumbnail": "./data/kr/assets/heroes/Cain/skills/4.png"
+            }
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG and Heal Rate are increased by 10%.",
+            "III": "DMG and Heal Rate are increased by 15%.",
+            "IV": "DMG and Heal Rate are increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "3": {
+            "II": "ATK Boost and DMG are increased by 10%.",
+            "III": "TK Boost and DMG are increased by 15%.",
+            "IV": "ATK Boost and DMG are increased by 25%."
+        },
+        "4": {
+            "II": "ATK Boost is increased by 10%.",
+            "III": "ATK Boost is increased by 15%.",
+            "IV": "ATK Boost is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "[Tremble] The effect applies to 3 allies, but all the effects that activate after few will not be activated.",
+                    "thumbnail": "./data/kr/assets/heroes/Cain/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "[Kneel] The effect apples to 3 enemies, but all the effects that activate after few will not be activated.",
+                    "thumbnail": "./data/kr/assets/heroes/Cain/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Each stack of [King of the Desert] increases the DMG of this Skill by 30%.",
+                    "thumbnail": "./data/kr/assets/heroes/Cain/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Reduces Cooldown by 4 sec, and during Auto Battle, allows Cain to return to God King form after turning into Tyrant form.",
+                    "thumbnail": "./data/kr/assets/heroes/Cain/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "[Gaze Upon My Almighty Power!] Increases the duration of the effect by 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Cain/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "[Now Die] Reduces Mana Cost by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Cain/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "DMG Boost against Bosses changes to 100%.",
+                    "thumbnail": "./data/kr/assets/heroes/Cain/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Mana Recovery per sec changes to 150.",
+                    "thumbnail": "./data/kr/assets/heroes/Cain/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / HP +10%",
+                "thumbnail": "./data/kr/assets/heroes/Cain/perks/light.png"
+            },
+            "dark": {
+                "effect": "At the beginning of each battle, consumes 20% of self's current HP and increases ATK of all allies by 20% for 20 sec. If there are 3 or less allies, reduces DMG of all allies by 30%.",
+                "thumbnail": "./data/kr/assets/heroes/Cain/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Might of the God King, Tyrannicus",
+        "description": "Depending on which form Cain is in, Normal and Skill attacks grant additional effects. [God King] Stuns the target for 1 sec with a (0) chance. [Tyrant] Increases P.DMG the target takes by (1) for 5 sec. The target inflicted with this effect will not receive this effect again for 3 sec.",
+        "value": {
+            "0": {
+                "0": "20%",
+                "1": "24%",
+                "2": "29%",
+                "3": "35%",
+                "4": "42%",
+                "5": "50%"
+            },
+            "1": {
+                "0": "20%",
+                "1": "24%",
+                "2": "29%",
+                "3": "35%",
+                "4": "42%",
+                "5": "50%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Cain/uw.png",
+        "story": "Atermos was one the kings who ruled the Kingdom of Sekireinel, known as the king of insight for his great wisdom. One Day, he received a revelation from the heavens and gathered holy materials to handcraft a weapon. The legend says that as this weapon was wielded by the king of insight, Tyrannicus has the ability to look through the mind of anyone who tries to wield it. If deemed unworthy, Tyrannicus will not even let them hold itself; rather, it will serve the unworthy their death.\nAfter the passing of Atermos, Tyrannicus was used as a decoration that shined upon the throne from its behind, symbolizing the competence and authority of the king that ruled Sekireinel. Then, the day before Cain's enthronement, when cain reached his hand out to Tyrannicus, it immediately became the sun that shines upon Cain, as if it was overjoyed to find it true master."
+    },
+    "uts": {
+        "1": {
+            "name": "Rune of the Flow",
+            "description": "[Tremble!] Increase All DMG Reduction effect of the Skill by an additional (0).\n[Kneel] Reduce Mana Cost by 1.",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Cain/ut/1.png",
+            "story": "A gold ring which  was equipped to Cain's body for ritualistic purpose, when Cain's soul-bound body entered a deep slumber called death.\nThe ring, imbued with the blessing of flow by Laias herself, was put onto Cain's ring finger, so that Cain can enjoy his eternal glory in the afterlife as the God King.\nAltough ut was unexpected for Cain to be awakened by a trivial being, thousands of years have already passed when he awoke. The ring was wrapped in sand and dust, but the jewel imbued with the Blue God Dragon's blessing was still shining brightly as ever."
+        },
+        "2": {
+            "name": "Eye of the God King",
+            "description": "[Behold My Might] Increases DMG by 50% and when Cain is in Tyrant form, increases DMG by (0).",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Cain/ut/2.png",
+            "story": "A coffin with an eye decoration, the symbol of the God King.\nThe symbol carries a message that since the almighty God King watches all over the ancient Sekireinel, the poeple of the desert should fear and praise him."
+        },
+        "3": {
+            "name": "Chest of Integrity",
+            "description": "[Gaze Upon Mu Almighty Power!] Increases ATK Boost by 50%.\n[Now Die] Increases P.DMG the target takes by (0) for 10 sec.",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Cain/ut/3.png",
+            "story": "A sealed container which cannot be opened no matter how hard one exerts strength.\nIt contains a gift from Skakmeh, Cain's brother who left behind his settled life in a foreign nation and returned to Sekireinel following Cain's command.\nCain had cherished his loyal, kind brother's gift, but the day when Shakmeh became the darkness that covered Sekireinel and became Cain's nemesis, Cain used his brother's gift as a medium to seal Shakmeh.\nCain, after awakening from his long slumber, grabbed the open container that was rolling on the ground and placed it somewhere he can see clearly to reflect upon old memories."
+        },
+        "4": {
+            "name": "Archive of Sekireinel",
+            "description": "Increases ATK Boost by 50%. If there are 3 or more stacks of [King of the Desert], increases Heal Rate of all allies by (0).",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Cain/ut/4.png",
+            "story": "A historical archive that contains the history of Sekireinel.\nAfter the awakening, curious of how the story of ancient Sekireinel and his brother were passed down to the future generations, Cain asked Zafir to bring him the historical records. The archive which Zafir brought to the God King is known as the most accurate record among other records of the tribes, since it is the record written and updated by the generations of the archivist family of Sekireinel, which they guarded with their life in the times of war and turmoil."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon using Skills 5 times.",
+        "description": "Summons the soul of Might of the God King, Tyrannicus, dealing ??? P.DMG to enemies within wide range of self, and inflicting time stop for 4 sec. Afterwards, increases own ATK by 50% for 10 sec. While time stop is active, Normal and Skill attacks cannot be used, and Cooldown is fixed..",
+        "cooldown": "23",
+        "uses": "4",
+        "thumbnail": "./data/kr/assets/heroes/Cain/sw.png",
+        "advancement": {
+            "1": "Heals HP of allies within range over 10 sec.",
+            "2": "Dispels positive effects of all enemies in range."
+        },
+        "story": "When Cain first locked his eyes on Tyrannicus on the throne, he came to fully understand what the true throne of the God King is.\n\nThe form of Tyrannicus' soul was the throne of God itself, and the light it emitted was truly fitting of the title: sun.\n\nAfter seeing the authority of the God King which eyes of other beings cannot perceive, Cain paid his utmost respect to the brilliance of Tyrannicus, and swore to become one worthy of the weapon. Ultimately, he rose to become the perfect king that reigned upon the desert Tyrannicus responded to Cain and accepted him, as if it was rewarding Cain's efforts. Tyrannicus deeply resonated with Cain's soul, and helped Cain rule the desert by sharing the wisdom of the king of acumen."
+    },
+    "splashart": "./data/kr/assets/heroes/Cain/sa.png",
+    "costumes": "./data/kr/assets/heroes/Cain/cos",
+    "visual": null,
+    "aliases": null
+}

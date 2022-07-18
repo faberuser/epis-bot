@@ -1,0 +1,224 @@
+{
+    "infos": {
+        "title": "Demon Eater",
+        "class": "Warrior",
+        "position": "Front-600",
+        "attack range": "4300",
+        "damage type": "Magical",
+        "gender": "Female",
+        "age": "14 (Demon: ???)",
+        "height": "141",
+        "race": "Demon (Possessed Human)",
+        "constellation": "Hexipolia the Wanderer",
+        "birth of month": "December 20th, Month of Patience",
+        "like": "Fighting powerful demons and devouring them afterward",
+        "dislike": "Weaklings",
+        "story": "A maverick among Demons who seeks to grow her own power by devouring other powerful Demons. She embodies the worst possible meaning of the word Demon. She crossed the dimensional relift to seek out and devour the Demons who traveled to the earthly realm. She placed a limit on her own power and assumed the form of a sickly young girl to further humiliate her victims. She detests weaklings who pretend to be strong. On the other hand, she respects those who recognize their own weaknesses and risk their lives in the pursuit of strength.",
+        "thumbnail": "./data/kr/assets/heroes/Viska/ico.png",
+        "story_": "A maverick among Demons who seeks to grow her own power by devouring other powerful Demons. She embodies the worst possible meaning of the word Demon. She crossed the dimensional rift to seek out and devour the Demons who traveled to the earthly realm. She placed a limit on her own power and assumed the form of a sickly young girl to further humiliate her victims. She detests weaklings who pretend to be strong. On the other hand, she respects those who recognize their own weaknesses and risk their lives in the pursuit of strength."
+    },
+    "skills": {
+        "1": {
+            "name": "Meal Time!!",
+            "cost": "2",
+            "cooldown": "8",
+            "description": "Deals ??? M.DMG to frontal enemies in range. For 10 sec, Hit enemies' ATK is reduced by 25% for and own ATK is increased by ???. If used while holding 3 or more stacks of Soul, shackles the enemy for 3 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Viska/skills/1.png"
+        },
+        "2": {
+            "name": "I'll slice you up!!",
+            "cost": "2",
+            "cooldown": "10",
+            "description": "Moves behind the target, dispelling positive effects and dealing ??? M.DMG while inflicting knock down. Increases M.DMG the target takes by 25% will be maintained for 15 sec. If used while holding 3 or more stacks of Soul, reduces enemy M.DEF by 30% for 15 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Viska/skills/2.png"
+        },
+        "3": {
+            "name": "I'll rip you to pieces!!",
+            "cost": "4",
+            "cooldown": "13",
+            "description": "Deals ??? M.DMG to enemies in a wide surrounding area, and inflicts Stun for 3 sec. If used while holding 5 stacks of Soul, consumes all stacks to reset the cooldown of this skill.",
+            "thumbnail": "./data/kr/assets/heroes/Viska/skills/3.png"
+        },
+        "4": {
+            "name": "Yummy Souls!",
+            "cost": null,
+            "cooldown": null,
+            "description": "Enemies attacked with Viska Skills lose Souls. Upon losing their Soul, targets take ??? extra M.DMG, and per each soul stacked, Viska's HP is healed by ??? and Mana is healed by 300. Souls last until they are used, can't be dispelled and can be stacked up to 5 times max.",
+            "thumbnail": "./data/kr/assets/heroes/Viska/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "ATK Boost is increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "Enemy takes 25% increased M.DMG."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "Enemies nearby are drawn in right before the attack occurs."
+        },
+        "4": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "Enemies that had their Souls stolen lose 300 mana."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "In exchange for 1 additional Mana Cost, cooldown is reduced by 4 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Viska/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Soul condition for Shackle effect is erased.",
+                    "thumbnail": "./data/kr/assets/heroes/Viska/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Mana cost is reduced by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Viska/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Reduces the target's Heal Rate by 30% for 15 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Viska/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "The 5 Soul consuming effect no longer consumes Souls.",
+                    "thumbnail": "./data/kr/assets/heroes/Viska/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Mana cost is reduced by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Viska/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "At the beginning of each battle, steals the soul of the enemy with the highest ATK, and reduces M.DMG that self takes by 20% for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Viska/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Per each stacked Soul, ATK is increased by 10%.",
+                    "thumbnail": "./data/kr/assets/heroes/Viska/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit Chance +100",
+                "thumbnail": "./data/kr/assets/heroes/Viska/perks/light.png"
+            },
+            "dark": {
+                "effect": "Per each stacked Soul, Crit Chance is increased by 50 and Crit DMG is increased by 30%.",
+                "thumbnail": "./data/kr/assets/heroes/Viska/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Nightmare Fang, Kitrax",
+        "description": "Enemies that had their Souls stolen take (0) increased M.DMG. Lasts for 10 sec.",
+        "value": {
+            "0": {
+                "0": "25%",
+                "1": "30%",
+                "2": "36%",
+                "3": "43%",
+                "4": "51%",
+                "5": "60%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Viska/uw.png",
+        "story": "Nightmare Kitrax was known as the best, and the most terrifying, of the succubi. After devouring Kitrax whole, soul and all, Viska came up with her most powerful weapon yet. This spike is the physical manifestation of fear and despair. Death is the only fate of its unfortunate victims. It constantly injects fear into its victim's soul, reducing even the most formidable enemy to mere prey."
+    },
+    "uts": {
+        "1": {
+            "name": "Yummy Memory",
+            "description": "[Meal Time!!] Increases DMG by 50%, and makes the target unable to recover Mana for (0) sec.",
+            "value": {
+                "0": {
+                    "0": "1",
+                    "1": "1.2",
+                    "2": "1.4",
+                    "3": "1.7",
+                    "4": "2.1",
+                    "5": "2.5"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Viska/ut/1.png",
+            "story": "Jewels that Viska used to store the memory of demons that she thought were yummy. She always felt that their flavors faded away too quickly. When she couldn't find anything nice to eat around her, she came up with a brilliant idea. She thought that taking the dreams out of the Nightmare Jewels that Nightmare Kitrax had and storing her memory of eating delicious prey would allow her to relive those past pleasures. Excited, she imbued the jewel with the memory of eating a delicious demon, and ever since, Viska has been seeking for better-tasting things to put in the jewels."
+        },
+        "2": {
+            "name": "Rampaging Beast's Claw",
+            "description": "[I'll Slice You Up!] Reduces Cooldown by 30% and adds (0) M.DEF reduction.",
+            "value": {
+                "0": {
+                    "0": "8%",
+                    "1": "10%",
+                    "2": "12%",
+                    "3": "14%",
+                    "4": "17%",
+                    "5": "20%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Viska/ut/2.png",
+            "story": "Claw of the violent magic beast Urgol, who is said to bite off souls. The day Viska decided to hunt in the Material World, she devoured Urgol from the Demon World. Combined with the ability that Viska has to absorb the power of others, it displayed great power, and it is essential to eat Demons who trespassed to the Material World."
+        },
+        "3": {
+            "name": "Soul of a Giant Demon",
+            "description": "[I'll rip you to pieces!!] Gain immunity to CC during skill activation and upon every use, DMG is increased by (0). This effect is stacked max 10 times.",
+            "value": {
+                "0": {
+                    "0": "4%",
+                    "1": "4.8%",
+                    "2": "5.8%",
+                    "3": "7%",
+                    "4": "8.4%",
+                    "5": "10%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Viska/ut/3.png",
+            "story": "Crystallized form of great demon Curapis's soul, who has the power to get big. He was one of the first demons that Viska hunted in the Demon World, and it is said that it used its big body to dominate his enemies. But battle isn't all about strength, but using one's brain as well. The giant demon was defeated and eaten by a predator who used her brain. The power to get big became Viska's, and she can use it freely now."
+        },
+        "4": {
+            "name": "Symbol of Gluttony",
+            "description": "[Yummy Souls!] Upon gaining a Soul, increases Mana Recovery by (0). Each soul stacks grant 70 CC ACC.",
+            "value": {
+                "0": {
+                    "0": "100",
+                    "1": "120",
+                    "2": "140",
+                    "3": "170",
+                    "4": "210",
+                    "5": "250"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Viska/ut/4.png",
+            "story": "Crystallized Mana energy of 'Araneck,' a beast that swallowed 'Gluttony' and one of the beasts of 7 sins killed by Viska after she came over to the material world. The crystal has the ability to visualize the force of its owner with a color through the jewel in the center. It was transparent at first, but when Viska touched it, it let out a radiant red light, with a small pattern appearing on the surface. The pattern has grown bigger as Viska's powers grew, and she would sometimes think of what the pattern would look like when she becomes the Dark Lord."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up over 20 sec.",
+        "description": "Summons the Soul of Nightmare Fang, Kitrax for 10 sec. For every 1 stack of Soul owned, takes 6% reduced DMG, recovering HP equal to 1% of own Max HP and 50 Mana every sec. Afterward, deals ??? M.DMG to enemies in a wide frontal range and petrifies the hit targets for 4 sec. If Viska has 5 Souls, Skill Cooldown will reset.",
+        "cooldown": "25",
+        "uses": "5",
+        "thumbnail": "./data/kr/assets/heroes/Viska/sw.png",
+        "advancement": {
+            "1": "Increases the duration of Petrification by 3 sec and M.DMG hit targets take by 30% for 10 sec.",
+            "2": "For the duration of Skill, DMG of I'll rip you to pieces!! increases by 100%."
+        },
+        "story": "Kitrax, the queen of nightmare, was an evil being who phased between the reality and dreams, and feasted upon fear.\nEven among the Demons, there were many who feared her and refused to confront her. Viska however, was different. To her, fear was something to conquer, not to be afraid of.\nThat is why Viska challenged Kitrax face to face, crushed her fear, and annexed her strength.\n\nAfter this day, Viska became a subject of fear among the Demons.\nShe abused her newly-acquired power and became someone even more vicious than Kitrax. Over time, the number of Demons who would face Viska in the Pandemonium surely diminished.\n\nBut Viska did not care.\nTo her, it was one of the means to find those strong enough to confront her.\nViska wished to fight an opponent who can overcome even the fear of Kitrax, not the worthless ones who cannot even overcome that nightmare.\n\nViska continued to feast the Demons who challenged her, and it is told that she surpassed the limit after accumulating enough strength, and gradually turned into a great demon deserving of a title: Dark Lord."
+    },
+    "splashart": "./data/kr/assets/heroes/Viska/sa.png",
+    "costumes": "./data/kr/assets/heroes/Viska/cos",
+    "visual": null,
+    "aliases": null
+}

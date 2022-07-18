@@ -1,0 +1,52 @@
+{
+    "infos": {
+        "class": "Manticore",
+        "title": "Beast of Chaos",
+        "race": "Beast",
+        "damage type": "Physical",
+        "recommended heroes": "Kasel, Clause, Mitra",
+        "characteristics": "[Manticore Venom] deals large DMG to frontal enemies and summons scorpions. If the frontal hero cannot keep up with the DMG, the formation will fall. [Rush of Death] deals massive P.DMG to all heroes and requires to be stopped.",
+        "thumbnail": "./data/kr/assets/bosses/gr/Manticore.png"
+    },
+    "skills": {
+        "page 1": {
+            "1": {
+                "name": "Dark Flamethrower",
+                "cost": null,
+                "cooldown": "17",
+                "description": "Exhales dark flames from the sheep head, dealing P.DMG 7 times. Enemies under 50% HP will be petrified for 5 sec."
+            },
+            "2": {
+                "name": "Disintegrating Flame",
+                "cost": null,
+                "cooldown": "17",
+                "description": "Exhales fire from the lion head, dealing P.DMG 7 times and removes enemy buffs."
+            },
+            "3": {
+                "name": "Manticore Venom",
+                "cost": null,
+                "cooldown": "22",
+                "description": "Inflicts the enemy with a powerful poison that cannot be dispelled. For 5 sec, every 0.5 sec, deal 33% of current HP as DMG and summons 3 scorpions."
+            }
+        },
+        "page 2": {
+            "4": {
+                "name": "Rush of Death",
+                "cost": null,
+                "cooldown": "45",
+                "description": "The Manticore gathers powerful energy in its front paws, dealing huge P.DMG to all enemies and knocks them over for 4 sec."
+            },
+            "5": {
+                "name": "Purify",
+                "cost": null,
+                "cooldown": null,
+                "description": "Every 30 sec, remove all negative effects and increase ATK SPD."
+            }
+        }
+    },
+    "aliases": [
+        "Manticore",
+        "GR6",
+        "GR 6"
+    ]
+}

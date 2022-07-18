@@ -1,0 +1,232 @@
+{
+    "infos": {
+        "title": "Pathfinder of Fate",
+        "class": "Wizard",
+        "position": "Back-500",
+        "attack range": "4900",
+        "damage type": "Magical",
+        "gender": "Female",
+        "age": "19",
+        "height": "165",
+        "race": "Human",
+        "constellation": "Notmun the Tuner",
+        "birth of month": "July 7th, Month of Harmony",
+        "like": "Romantic stories",
+        "dislike": "Flying insects",
+        "story": "An astrologer traveling with a wandering troupe called 'Stardust.' As a member of the Witch Association, she is supposed to reside in a designated location and read the flow of fate as part of her practice. However, she is currently traveling in search of a man with a particular destiny she met in a dream. She believes that the man from her clairvoyant dream is destined to become the savior of the world. Her current priority is to find the man, and then stay at his side. elif asked about her second goal... She blushes and loses all traces of her usual calmness telling about her future with the man of destiny.",
+        "thumbnail": "./data/kr/assets/heroes/Ophelia/ico.png",
+        "story_": "An astrologer traveling with a wandering troupe called 'Stardust.' As a member of the Witch Association, she is supposed to reside in a designated location and read the flow of fate as part of her practice. However, she is currently traveling in search of a man with a particular destiny she met in a dream. She believes that the man from her clairvoyant dream is destined to become the savior of the world. Her current priority is to find the man, and then stay at his side. If asked about her second goal... She blushes and loses all traces of her usual calmness telling about her future with the man of destiny."
+    },
+    "skills": {
+        "1": {
+            "name": "Card of Death - Carta",
+            "cost": "3",
+            "cooldown": "15",
+            "description": "Attacks enemy target, dealing ??? M.DMG and inflicting Stun for 3 sec. Consumes the card in possession to inflict additional effects. Upon using the skill, gains the card of [Death]. [Death] - DMG ignores target's DEF and Stun duration increases by 5 sec. [Love] - Deals a total of ??? M.DMG over time for 10 sec and reduces heal rate by 100%. [Fortune] - Skill Cooldown does not take effect.",
+            "thumbnail": "./data/kr/assets/heroes/Ophelia/skills/1.png"
+        },
+        "2": {
+            "name": "Card of Love - Elliciad",
+            "cost": "2",
+            "cooldown": "15",
+            "description": "Increases ATK by ??? for 12 sec and Mana Recovery/Sec by 100%. Consumes a card in possession to gain an additional effect according to the card type. Gains [Love] card upon use. [Death] - DEF Penetration increases by 600 for the duration of skill and gains immunity to CC for 6 sec. [Love] - The effect applies to all allies. [Luck] - Cooldown does not apply.",
+            "thumbnail": "./data/kr/assets/heroes/Ophelia/skills/2.png"
+        },
+        "3": {
+            "name": "Card of Fortune - Vellekia",
+            "cost": "3",
+            "cooldown": "2",
+            "description": "Attacks the target and the enemies near it to deal ??? M.DMG. This attack cannot miss and deals 100% increased Crit DMG. Gains [Luck] card upon use. [Death] - Crit DMG increases by 120%. [Love] - Removes all positive effects from enemies in range and silences them for 2 sec. [Luck] - Cooldown does not apply. Recovers 1 orb of Mana.",
+            "thumbnail": "./data/kr/assets/heroes/Ophelia/skills/3.png"
+        },
+        "4": {
+            "name": "Pathfinder of Fate",
+            "cost": null,
+            "cooldown": null,
+            "description": "All allies' ATK is increased by ??? , and Crit Chance is increased by 100. Ophelia gains additional effect according to the card in possession. [Death] - ATK is increased by 30%. [Love] - Per each sec, heals 7% of max HP. [Fortune] - M.Dodge Chance is increased by 200.",
+            "thumbnail": "./data/kr/assets/heroes/Ophelia/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "ATK Boost is increased by 10%.",
+            "III": "ATK Boost is increased by 15%.",
+            "IV": "ATK Boost is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "All allies' ATK Boost is increased by 10%.",
+            "III": "All allies' ATK Boost is increased by 15%.",
+            "IV": "All allies' Crit Chance Boost is increased by 50."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "For 10 sec, target takes 25% increased M.DMG.",
+                    "thumbnail": "./data/kr/assets/heroes/Ophelia/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Mana cost is reduced by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Ophelia/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Recovers target's mana by 1000.",
+                    "thumbnail": "./data/kr/assets/heroes/Ophelia/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "ATK boost is increased by 40%.",
+                    "thumbnail": "./data/kr/assets/heroes/Ophelia/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Mana cost is increased by 1 orb but DMG is boosted by 100%.",
+                    "thumbnail": "./data/kr/assets/heroes/Ophelia/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Always inflicts a Crit Hit.",
+                    "thumbnail": "./data/kr/assets/heroes/Ophelia/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "At the start of each battle, gains the card of [Death]. This card does not have DMG boost effect.",
+                    "thumbnail": "./data/kr/assets/heroes/Ophelia/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "At the start of each battle, gains the card of [Love]. This card does not have heal effect.",
+                    "thumbnail": "./data/kr/assets/heroes/Ophelia/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit DMG +20%",
+                "thumbnail": "./data/kr/assets/heroes/Ophelia/perks/light.png"
+            },
+            "dark": {
+                "effect": "Upon using a skill, there is a 7% chance that mana cost of all skill is reduced by 1 for 7 sec. This effect cannot be dispelled.",
+                "thumbnail": "./data/kr/assets/heroes/Ophelia/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Cards of Destiny Del Arcana",
+        "description": "Attacks have a 77.7% chance to increase ATK Spd by (0) and Mana Recovery/sec by (1) for 15 sec. This effect can be stacked up to max 15 times.",
+        "value": {
+            "0": {
+                "0": "20",
+                "1": "24",
+                "2": "29",
+                "3": "35",
+                "4": "42",
+                "5": "50"
+            },
+            "1": {
+                "0": "10%",
+                "1": "12%",
+                "2": "14%",
+                "3": "17%",
+                "4": "21%",
+                "5": "25%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Ophelia/uw.png",
+        "story": "Tarot card reading is a common fortune telling method for witches. Some witches use customized cards to suit their personal styles. Ophelia's cards also function as the proof of the pacts between her and the creatures she summons. Quite popular as a guide of destiny among the entities of the mysterious dimensions, she has made pacts with countless creatures. Del Arcana, a powerful tarot deck carefully assembled by Ophelia, is the physical proof of these relationships."
+    },
+    "uts": {
+        "1": {
+            "name": "Strange Card",
+            "description": "[Card of Death - Carta] Increases DMG by 50%, and upon killing an enemy, recovers Mana by (0).",
+            "value": {
+                "0": {
+                    "0": "1000",
+                    "1": "1200",
+                    "2": "1400",
+                    "3": "1700",
+                    "4": "2100",
+                    "5": "2500"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Ophelia/ut/1.png",
+            "story": "A card made by Witch Eucaletus with all her mana, wishing to be closer to death after her loved one passed away. She was eventually burnt to ashes, leaving only this strange card behind. The card was then known to make its true owner free from life and death, and many people have been fighting over it to attain immortality. Then, a wizard started searching for it to prevent any more meaningless killing, found it, and sealed it away. No one has seen the card for centuries until Ophelia found it in an old storeroom."
+        },
+        "2": {
+            "name": "Elliciad's Heart",
+            "description": "[Card of Love - Elliciad] Dispels Negative Effects of the target and all skill cooldown are decreased by (0).",
+            "value": {
+                "0": {
+                    "0": "6%",
+                    "1": "7.2%",
+                    "2": "8.6%",
+                    "3": "10.4%",
+                    "4": "12.5%",
+                    "5": "15%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Ophelia/ut/2.png",
+            "story": "Spirit of love, Elliciad's heart. It eats both fulfilled and unfulfilled loves, so it can sometimes be as hot as lava, or as cold as ice. The power it displays depends on how contaminated a soul is, and it can display an extensive light of blessing to those with pure souls."
+        },
+        "3": {
+            "name": "Coin of Fortune",
+            "description": "[Card of Fortune - Vellekia] Mana cost is reduced by 1 and DMG is increased by (0).",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Ophelia/ut/3.png",
+            "story": "The legendary coin that is said to have changed the course of the wheel of fortune, which was headed toward destruction. Ophelia believes that it was thrown by the spirit of luck, Vellekia."
+        },
+        "4": {
+            "name": "Fate Tying Thread",
+            "description": "[Pathfinder of Fate] Upon acquiring a card, increases DMG to Non-Hero enemies by (0) and takes 20% reduced DMG for 10 sec.",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Ophelia/ut/4.png",
+            "story": "A thread that the Goddess of Fate uses to tie the fates together. Only the purest of elementals that do not have any negative karma can tie the thread of fate. By truly opening her eyes, Ophelia could see the fate of the wider world and sew new fates into its future by using her spirits as a medium. There is usually a thread piece or two left behind whenever a fate is manipulated, and Ophelia would tie the ends of the pieces and watch them magically fuse and form a string as if they were never apart. This spool of thread is the result of her habit."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon using Skills 6 times.",
+        "description": "Summons the Soul of Cards of Destiny Del Arcana, discarding all currently owned cards. Afterward, acquires the [Star] card, increasing ATK by 60% for 10 sec. Upon using a Skill while owning the [Star] card, the effects of [Death], [Love], and [Fortune] will be activated and [Star] card will be consumed.",
+        "cooldown": "17",
+        "uses": "7",
+        "thumbnail": "./data/kr/assets/heroes/Ophelia/sw.png",
+        "advancement": {
+            "1": "Upon activation, self recovers 3 orb of Mana.",
+            "2": "Changes Skill Activation requirements to 4 times."
+        },
+        "story": "A deck of cards that was awakened into a new form when Ophelia opened her eyes to her destiny.\n\nWhen their old friend faced death and crumbled to stardust and disappeared, the three spirits that weave the future as well as the sources of various emotions melted onto the world and scattered, waiting for the day when their friend would appear in a new form.\n\nA great amount of time passed from then, and they appeared before a young girl named Ophelia.\nOphelia embraced the spirits and completed Del Arcana through a contract to keep them by her side at all times.\n\nThe endless repeating dreams and the spirits of Del Arcana eventually made Ophelia realize her true identity.\n\nDel Arcana absorbed the power of insight pouring out of Ophelia and materialized itself. The true companion of the girl destined to chase the fate of the world was born.\n\nAs the constellation of insight itself, Ophelia's two eyes will witness and carry the fate of the world.\nFor she is the Pathfinder of Fate who will carry out her painful but grand destiny..."
+    },
+    "splashart": "./data/kr/assets/heroes/Ophelia/sa.png",
+    "costumes": "./data/kr/assets/heroes/Ophelia/cos",
+    "visual": null,
+    "aliases": null
+}

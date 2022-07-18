@@ -1,0 +1,248 @@
+{
+    "infos": {
+        "title": "Obsidian Arrogance",
+        "class": "Knight",
+        "position": "Front-700",
+        "attack range": "6100",
+        "damage type": "Magical",
+        "gender": "Male",
+        "age": "???",
+        "height": "161",
+        "race": "Dragon",
+        "constellation": "Asiphia the Empress",
+        "birth of month": "October 28th, Month of Friendship",
+        "like": "Laias",
+        "dislike": "Demons, Cain, Lilia and everything that gets in his way.",
+        "story": "Black dragons are notorious for being the most arrogant and ill-tempered out of all dragons. They suffered greatly from the Demon War 100 years ago. Armarta went mad, Ashen Nox robbed them, and Draconics started hunting down dragons. Neraxis was one of the few black dragons that survived that day, and he has been working and plotting to realize his revenge.",
+        "thumbnail": "./data/kr/assets/heroes/Neraxis/ico.png",
+        "story_": "Black dragons are notorious for being the most arrogant and ill-tempered out of all dragons. They suffered greatly from the Demon War 100 years ago. Armarta went mad, Ashen Nox robbed them, and Draconics started hunting down dragons. Neraxis was one of the few black dragon that survived that day, and he has been working and plotting to realize his revenge."
+    },
+    "skills": {
+        "1": {
+            "name": "Black Lightning Claw",
+            "cost": "2",
+            "cooldown": "8",
+            "description": "Draws enemies towards the target and deals ??? M.DMG. Deals ??? M.DMG around the target after 1 sec and stuns them for 3 sec. Reduces ATK Spd of hit enemies by 300 for 10 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Neraxis/skills/1.png"
+        },
+        "2": {
+            "name": "Obsidian Roar",
+            "cost": "3",
+            "cooldown": "15",
+            "description": "Increases ATK, P.DEF, and M.DEF of all allies by ??? for 15 sec. Deals ??? M.DMG to all enemies and reduces their ATK by 30% for 15 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Neraxis/skills/2.png"
+        },
+        "3": {
+            "name": "Breath of Destruction",
+            "cost": "4",
+            "cooldown": "20",
+            "description": "Deals a total of ??? M.DMG to enemies within a large area around the target over 6 times and reduces their M.DEF by 20% for 15 sec. Each hit stuns the enemy for 1 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Neraxis/skills/3.png"
+        },
+        "4": {
+            "name": "Black Dragon Hide",
+            "cost": null,
+            "cooldown": null,
+            "description": "Increases P.DEF and M.DEF by ??? and takes reduced P.DMG and M.DMG by 15%.",
+            "thumbnail": "./data/kr/assets/heroes/Neraxis/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "ATK Boost and DEF Boost are increased by 10%.",
+            "III": "ATK Boost and DEF Boost are increased by 15%.",
+            "IV": "ATK Boost and DEF Boost are increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "DEF Boost is increased by 10%.",
+            "III": "DEF Boost is increased by 15%.",
+            "IV": "DEF Boost is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Increases Stun duration by 2 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Neraxis/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Increases the M.DMG that the hit enemy takes by 25% for 10 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Neraxis/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Increases Mana Cost by 1 and ATK and DEF Boost by 100%.",
+                    "thumbnail": "./data/kr/assets/heroes/Neraxis/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Reduces ATK Spd of the hit enemy by 300 for 15 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Neraxis/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Reduce Mana Cost by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Neraxis/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Changes M.DEF Reduction to 30%.",
+                    "thumbnail": "./data/kr/assets/heroes/Neraxis/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "ATK Spd is increased by 300.",
+                    "thumbnail": "./data/kr/assets/heroes/Neraxis/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "When HP falls below 50%, skill effects are increased by 50%.",
+                    "thumbnail": "./data/kr/assets/heroes/Neraxis/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / CC Resist +100",
+                "thumbnail": "./data/kr/assets/heroes/Neraxis/perks/light.png"
+            },
+            "dark": {
+                "effect": "At the beginning of every battle, all allies except Neraxis have their DMG dealt to Non-Hero enemies increased by 5% and take 5% reduced DMG for 60 sec. This effect can be stacked up to max 3 times and is irremovable.",
+                "thumbnail": "./data/kr/assets/heroes/Neraxis/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Roaring Dragonmaw, Acravita",
+        "description": "After landing (0) normal attacks, deals M.DMG equal to 100% of ATK to 2 random enemies, stuns them for 0.5 sec, and becomes Storm of Neraxis for 10 sec. For the duration of Storm of Neraxis, increases P.DEF of all allies by (1) of own P.DEF, M.DEF by (2) of own M.DEF and ATK by (3).",
+        "value": {
+            "0": {
+                "0": "20",
+                "1": "19",
+                "2": "18",
+                "3": "17",
+                "4": "16",
+                "5": "15"
+            },
+            "1": {
+                "0": "4%",
+                "1": "4.8%",
+                "2": "5.7%",
+                "3": "6.9%",
+                "4": "8.3%",
+                "5": "10%"
+            },
+            "2": {
+                "0": "4%",
+                "1": "4.8%",
+                "2": "5.7%",
+                "3": "6.9%",
+                "4": "8.3%",
+                "5": "10%"
+            },
+            "3": {
+                "0": "10%",
+                "1": "12%",
+                "2": "14%",
+                "3": "17%",
+                "4": "21%",
+                "5": "25%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Neraxis/uw.png",
+        "story": "A magic gear crafted with pitch-black metal called Adamantite, tempered with the dark flame and the lightning of a black dragon. It holds the grudge and rage of black dragons that were killed during the Demon War. Neraxis threatened the dwarves to forge this special weapon for him. Then, he cursed and enchanted it with the grudge-filled souls of black dragons. Anyone who touches this weapon beside Neraxis will hear the raging roars of vengeful dragons."
+    },
+    "uts": {
+        "1": {
+            "name": "Cartridge of Black Lightning",
+            "description": "[Black Lightning Claw] Recovers Mana by 100 upon each hit, and increases own P.DEF and M.DEF by (0) for 10 sec.",
+            "value": {
+                "0": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Neraxis/ut/1.png",
+            "story": "A magic amplifier that contains Black Lightning. It was made with the same materials used to craft Acravita. The dwarves were threatened by Neraxis to craft Acravita, and there were some materials left when they were finished. When the Dwarves asked Neraxis if they could keep the leftover material as a reward for crafting Acravita, he yanked their hair and told them to use it all. As a result, a cartridge containing Black Lightning was created."
+        },
+        "2": {
+            "name": "Memories of the Blue God Dragon",
+            "description": "[Obsidian Roar] Increases DEF Boost of allies by (0) and dispels positive effects from all enemies upon using Obsidian Roar.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Neraxis/ut/2.png",
+            "story": "A hair accessory that Laias dropped while cleansing the waters corrupted by demons. Neraxis found it and kept it, but he still hasn't decided whether he'll give it back. It's not likely that Laias will get her lost hair accessory any time soon."
+        },
+        "3": {
+            "name": "Rage Vortex",
+            "description": "[Breath of Destruction] Increases Stun duration by 1 sec and reduces Cooldown of Breath of Destruction by (0) sec.",
+            "value": {
+                "0": {
+                    "0": "3",
+                    "1": "4",
+                    "2": "5",
+                    "3": "6",
+                    "4": "7",
+                    "5": "8"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Neraxis/ut/3.png",
+            "story": "Crafted with his own fang, this stake holds Neraxis's burning rage. When Neraxis attacks with the stake, the great energy, entangled with Neraxis's powers, swirls at the enemy at a terrifying speed. It is powerful enough to penetrate all things, and rip off the limbs of those who come near it."
+        },
+        "4": {
+            "name": "Ashen Nova",
+            "description": "[Black Dragon Hide] Every 10 sec, recovers 1 orb of Mana and increases All Block of all allies by (0) for 5 sec.",
+            "value": {
+                "0": {
+                    "0": "200",
+                    "1": "240",
+                    "2": "290",
+                    "3": "350",
+                    "4": "420",
+                    "5": "500"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Neraxis/ut/4.png",
+            "story": "Neraxis stole this treasure from Armarta's repositorium. He wanted to have a stronger weapon than Acravita, and came to think of Armarta's repositorium. He went to Ashen Peak, the ruins south from Arrovina Shore, and snuck into the repositorium. On the way out, he had to confront Armarta, who was mad and crazy, but it was worth it as he got everything he wanted. Among the most precious ones were the 'Ashen Nova,' which makes a pair with 'Ashen Nox'. Its power can be compared to the heart of a Black Dragon."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up every sec and every time self takes DMG. This Skill can be cast upon gaining 80 charges.",
+        "description": "Summons the Soul of Roaring Dragonmaw, Acravita, attacking enemies in a wide frontal range, dealing ??? M.DMG proportional to own All DEF, stunning them for 4 sec, and reducing target's ATK by 35% for 10 sec.",
+        "cooldown": "18",
+        "uses": "5",
+        "thumbnail": "./data/kr/assets/heroes/Neraxis/sw.png",
+        "advancement": {
+            "1": "Dispels positive effects of all enemies within range.",
+            "2": "Changes Skill Activation requirements to 50 times and increases M.DMG the enemies take by 25% for 10 sec."
+        },
+        "story": "Dragons usually possess great strength, for they are the facilitators of the world.\nSo when such a dragon dies and becomes a soul, its strength is incomparable to other common souls because it is of a dragon's. Among them, the souls of the dragons contained within Acravita were especially odd, for these were the souls of the Black Dragons, the Proudest of them all. The souls became vengeful specters holdung strong grudges, imbuing Acravita with extraordinarily powerful resentment and damnation.\nAs the anger of the specters grew, resentment that was imbued to Acravita became heavier. Acravita eventually turned into a weapon that emitted energy of death that makes most beings tremble in fear, thus Neraxis' friends were worried about his safety. But Neraxis dismissed such worries by threatening the specters to stand down, claiming that Acravita was his and his only.\nEven though he is young, Neraxis is still a Black Dragon and he has more pride than any other Black Dragon. He even learned to slightly suppress his arrogance, as he did not want to follow Armarta's path. The fight between the young Black Dragon and the specters was intense, but Neraxis, who was more prepared, emerged as the victor.\nNow, the Black Dragon specters follow Neraxis, strengthening his lightning and eliminating his enemies."
+    },
+    "splashart": "./data/kr/assets/heroes/Neraxis/sa.png",
+    "costumes": "./data/kr/assets/heroes/Neraxis/cos",
+    "visual": null,
+    "aliases": null
+}

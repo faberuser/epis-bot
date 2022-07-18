@@ -1,0 +1,239 @@
+{
+    "infos": {
+        "title": "The Girl Dreaming of Riches",
+        "class": "Priest",
+        "position": "Middle-100",
+        "attack range": "9000",
+        "damage type": "Magical",
+        "gender": "Female",
+        "age": "15",
+        "height": "146",
+        "race": "Human",
+        "constellation": "Gisla the Sharpshooter",
+        "birth of month": "November 7th, Month of Fortune",
+        "like": "Gold",
+        "dislike": "Financial deficit",
+        "story": "A girl who runs her own General Shop at the Orvel Castle. She is highly likable, and treats everyone with brightness and enthusiasm. Dreaming of one day she'll become the wealthiest merchant in Orvel, May usually hunts and gathers her own merchandise. Because of the effort she puts into acquiring her goods, her prices aren't exactly cheap, and people often criticize her for this. Currently, she is preparing to travel to Aegina Desert after hearing that someone recently discovered a treasure there.",
+        "thumbnail": "./data/kr/assets/heroes/May/ico.png",
+        "story_": "A girl who runs her own General Shop at the Orvel Castle. She is highly likable, and treats everyone with brightness and enthusiasm. Dreaming of one day she'll become the wealthiest merchant in Orvel, May usually hunts and gathers her own merchandise. Because of the effort she puts into acquiring her goods, her prices aren't exactly cheap, and people often criticize her for this. Currently, she is preparing to travel to Aegina Desert after hearing that someone recently discovered a treasure there."
+    },
+    "skills": {
+        "1 (1)": {
+            "name": "Take anything!",
+            "cost": "1",
+            "cooldown": "8",
+            "description": "Increases ATK of all allies by 0.5% of May's ATK + ??? for 120 sec and recovers their Mana by 500, additionally granting them either 70 DEF Penetration or 100 ATK Spd. The ATK Boost effect is multiplied by 3 for the ally with the highest ATK excluding May. All effects excluding Mana Recovery can be stacked to max 8 times. Upon using this Skill 20 times or more, changes this Skill to [Only the Best of the Best!!].",
+            "thumbnail": "./data/kr/assets/heroes/May/skills/1 (1).png"
+        },
+        "1 (2)": {
+            "name": "Only the Best of the Best!!",
+            "cost": "1",
+            "cooldown": "8",
+            "description": "Activates all of the previous effects and recovers Mana by 500. Additionally, increases DMG dealt to Non-Hero enemies by 2%. This effect can be stacked up to max 10 times.",
+            "thumbnail": "./data/kr/assets/heroes/May/skills/1 (2).png"
+        },
+        "2": {
+            "name": "Cheer up!",
+            "cost": "2",
+            "cooldown": "11",
+            "description": "All allies' HP is healed by ??? , and per each sec, each ally recovers 1% of their max HP for 10 sec. There is a 30% chance the Heal Rate is multiplied by 2. For 10 sec, increases CC Resist of all allies by 250.",
+            "thumbnail": "./data/kr/assets/heroes/May/skills/2.png"
+        },
+        "3": {
+            "name": "Not for sale!",
+            "cost": "4",
+            "cooldown": "20",
+            "description": "Attacks a random target and other enemies in range 3 times, dealing a total of ??? M.DMG and inflicting Stun for 4 sec. There is a 10% chance that the skill range, DMG, and Stun duration multiply by 2. After casting, uses [Take This!].",
+            "thumbnail": "./data/kr/assets/heroes/May/skills/3.png"
+        },
+        "4": {
+            "name": "Take this!",
+            "cost": null,
+            "cooldown": null,
+            "description": "Deals ??? M.DMG to 5 random enemies every 15 sec, increasing M.DMG they take by 25% for 10 sec and additionally inflicting either ??? continuous M.DMG for 10 sec, Stun for 2 sec, or Freeze for 5 sec.",
+            "thumbnail": "./data/kr/assets/heroes/May/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "ATK Boost is increased by 10%.",
+            "III": "ATK Boost is increased by 15%.",
+            "IV": "ATK Boost is increased by 25%."
+        },
+        "2": {
+            "II": "Heal Rate is increased by 10%.",
+            "III": "Heal Rate is increased by 15%.",
+            "IV": "Heal Rate is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "All effects are not dispelled by 'dispel positive effect' effect.",
+                    "thumbnail": "./data/kr/assets/heroes/May/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "The DMG Boost effect against Non-Hero enemies of [Only the Best of the Best!!] now stacks up to max 15 times.",
+                    "thumbnail": "./data/kr/assets/heroes/May/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Increases the duration of HP Recovery by 3 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/May/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Upon the activation of x2 Heal, recovers the ally's Mana by 1 orb.",
+                    "thumbnail": "./data/kr/assets/heroes/May/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Mana cost is reduced by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/May/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "All attacks will be focused on a single enemy.",
+                    "thumbnail": "./data/kr/assets/heroes/May/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Activates every 12 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/May/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Whenever using [Take Anything!], increases M.DMG taken Boost effect by 3%. This effect can be stacked up to max 10 times and is irremovable.",
+                    "thumbnail": "./data/kr/assets/heroes/May/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / CC Resist +100",
+                "thumbnail": "./data/kr/assets/heroes/May/perks/light.png"
+            },
+            "dark": {
+                "effect": "Each auto-attack has a 30% chance of healing the ally with the lowest HP by 3% of their HP. Also provides 5% mana to the ally.",
+                "thumbnail": "./data/kr/assets/heroes/May/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "The Box of Fragrance, Etelia",
+        "description": "Reduces Cooldown of self's active skills by (0) sec and increases the ATK Spd Boost and DEF Penetration Boost from [Take Anything!] by (1).",
+        "value": {
+            "0": {
+                "0": "1.4",
+                "1": "1.7",
+                "2": "2.1",
+                "3": "2.5",
+                "4": "3",
+                "5": "3.6"
+            },
+            "1": {
+                "0": "20",
+                "1": "24",
+                "2": "29",
+                "3": "35",
+                "4": "42",
+                "5": "50"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/May/uw.png",
+        "story": "A curious basket always carried by May whenever she goes hunting for new materials. This mysterious basket contains an infinite amount of space, and turns anything that enters it weightless. This allows May to bring back a ridiculous number of items from a single trip. At a quick glance, it might as well be filled with picnic foods. However, rumors claim that, whenever she takes it to her hunting trips, she packs it with......Other questionable things. Or so they say."
+    },
+    "uts": {
+        "1": {
+            "name": "Healthy Potion Set",
+            "description": "[Take Anything!] Reduces Mana Cost by 1, and increases the target's M.DEF by (0) for 20 sec. This effect can be stacked up to max 8 times.",
+            "value": {
+                "0": {
+                    "0": "2%",
+                    "1": "2.4%",
+                    "2": "2.9%",
+                    "3": "3.4%",
+                    "4": "4.2%",
+                    "5": "5%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/May/ut/1.png",
+            "story": "Four potions of different colors and effects make a set, and they boost willpower, concentration, mana, and vitality. May guarantees that this special set of potions have amazing rejuvenating effects, but their ingredients are still a complete mystery. Maybe it's better that way."
+        },
+        "2": {
+            "name": "Sweet Piece of Cake",
+            "description": "[Cheer Up!] Increases Heal Rate bys 50%. For 10 sec, increases Crit Chance of all allies by (0).",
+            "value": {
+                "0": {
+                    "0": "100",
+                    "1": "120",
+                    "2": "140",
+                    "3": "170",
+                    "4": "210",
+                    "5": "250"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/May/ut/2.png",
+            "story": "Special cake made by Juno. Its smells very sweet. May loves it as a snack. No one knows why she doesn't tell anyone what she put in it."
+        },
+        "3": {
+            "name": "Crystal Ball from Unknown Origin",
+            "description": "[Not for sale!] DMG is increased by (0) and attacks the enemy 1 more time.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/May/ut/3.png",
+            "story": "During the days of the ancient civilization, someone stole the spells of the sages and gathered their power in a single crystal ball. It seems like it was part of a plan to become the greatest shaman at the time. But there are no historic records of this crystal ball, and it was found far away from the village, near Eden River. Different elemental spells are mixed up in one place, making it dangerous, so it's unknown how its powers will be released."
+        },
+        "4": {
+            "name": "Dangerous Snack Set",
+            "description": "[Take This!] Changes the target to all enemies. Upon activation, all allies recover (0) Mana.",
+            "value": {
+                "0": {
+                    "0": "200",
+                    "1": "240",
+                    "2": "290",
+                    "3": "350",
+                    "4": "420",
+                    "5": "500"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/May/ut/4.png",
+            "story": "An ultra-rare, super-limited snack set that May bought at the Very Amazing Magic Toy shop in Orvelia. This is the masterpiece of the shop owner, never to be sold again. Unlike the phrase [Warning! Do not eat, ever! Ever!] written on the box, the snacks inside look incredibly yummy. However, it was actually made to be used for 'very nasty pranks,' and it explodes when thrown, and its destructive power is proportional to the amount of Mana that the thrower has. After the explosion, the snack powder gathers on its own, becomes snacks again, and returns back to the box. May, with her heart throbbing, put the cute, dangerous, and strange snack box into her cart."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up over 15 sec.",
+        "description": "Summons the soul of The Box of Fragrance, Etelia, healing a total of ??? HP of all allies over 10 sec and increasing ATK of the ally with the highest ATK excluding self by 4% for 120 sec every 3 sec. The ATK Boost effect can be stacked up to max 20 times, and upon activation, there is a 30% chance to stack 2 times at once.",
+        "cooldown": "20",
+        "uses": "5",
+        "thumbnail": "./data/kr/assets/heroes/May/sw.png",
+        "advancement": {
+            "1": "Increases Heal Rate by 100%, and changes the chance to stack 2 times at once to 50%.",
+            "2": "Increases DMG dealt to Bosses of the ally with the highest ATK by 1% per ATK Boost effect stack."
+        },
+        "story": "In the age of ancient civilizations, the sages performed numerous experiments to create a medium that can infinitely hold anything. That led to the creation of Etelia, an artificial elemental which is the combination of all of the sages' research.\nTaking a form of a graceful butterfly fairy, Etelia could not only just store simple items, but also a massive amount of information, knowledge, and even historical records.\nHowever, an unexpected development took place during the research. A feeling of curiosity sparked from Etelia's system which was not capable of self-realization whatsoever, Afterward, to satiate her curiosity, Etelia secretly copied the incantation of the sages, and even tried to experiment it on civilians. After realizing the danger Etelia possesses, the sages sealed her inside a small basket and left her in the corner of a dark cave to stop anyone from using her ability for eternity.\n\nHowever, after eons have passed, Etelia ended up in the hands of a bold girl who owns a general shop in Orvel. This girl called May, intrigued Etelia who had been bored for time immemorial through her display of diligent endeavor to reach for her dream. This stimulation led to the breaking of Etelia's seal, and Etelia appeared in front of May's eyes.\nEtelia offered to help May, saying: 'I will help you fulfill your dreams if you help me experience something new and interesting.' May answered and told Etelia that there will always be something new to experience if she becomes her friend.\n\nUpon hearing May's answer, Etelia firmly grabbed May's hands in joy."
+    },
+    "splashart": "./data/kr/assets/heroes/May/sa.png",
+    "costumes": "./data/kr/assets/heroes/May/cos",
+    "visual": null,
+    "aliases": null
+}

@@ -1,0 +1,232 @@
+{
+    "infos": {
+        "title": "Spiritual Guide",
+        "class": "Priest",
+        "position": "Back-100",
+        "attack range": "1600",
+        "damage type": "Magical",
+        "gender": "Male",
+        "age": "14",
+        "height": "110",
+        "race": "Tamia",
+        "constellation": "Asiphia the Empress",
+        "birth of month": "October 16th, Month of Friendship",
+        "like": "Souls, kind people",
+        "dislike": "Causing harm to others",
+        "story": "This pure and kindhearted Tamian soul guide can communicate with the dead. The Tamian race lives in harmony with nature, and they have the ability to read its flow and guide the souls of the dead. Rephy's ability as a soul guide is exceptional, even for a Tamian. He uses it to guide the souls of those who died in the forest and help them pass on, preventing them from turning evil. He is the most capable among the Tamians in discerning the paths of the stars, pacelifying the souls of the dead, and properly guiding them to the afterlelife.",
+        "thumbnail": "./data/kr/assets/heroes/Rephy/ico.png",
+        "story_": "This pure and kindhearted Tamian soul guide can communicate with the dead. The Tamian race lives in harmony with nature, and they have the ability to read its flow and guide the souls of the dead. Rephy's ability as a soul guide is exceptional, even for a Tamian. He uses it to guide the souls of those who died in the forest and help them pass on, preventing them from turning evil. He is the most capable among the Tamians in discerning the paths of the stars, pacifying the souls of the dead, and properly guiding them to the afterlife."
+    },
+    "skills": {
+        "1": {
+            "name": "Healing Soul",
+            "cost": "2",
+            "cooldown": "10",
+            "description": "Heals 4 allies with lowest HP 10% of Max HP, and heals extra ??? HP over 8 sec. This effect cannot be dispelled.",
+            "thumbnail": "./data/kr/assets/heroes/Rephy/skills/1.png"
+        },
+        "2": {
+            "name": "Salvation",
+            "cost": "1",
+            "cooldown": "12",
+            "description": "Dispels all negative effects. M.DEF is increased by ??? for 20 sec.",
+            "thumbnail": "./data/kr/assets/heroes/Rephy/skills/2.png"
+        },
+        "3": {
+            "name": "Soulrush",
+            "cost": "3",
+            "cooldown": "20",
+            "description": "Deals a total of ??? M.DMG over 10 attacks to enemies within range. Hit enemies' ATK Spd is reduced by 25%.",
+            "thumbnail": "./data/kr/assets/heroes/Rephy/skills/3.png"
+        },
+        "4": {
+            "name": "Spiritual Tuning",
+            "cost": null,
+            "cooldown": null,
+            "description": "Every 7 sec, an ally with the lowest Hp recovers 1 orb of mana and ??? HP.",
+            "thumbnail": "./data/kr/assets/heroes/Rephy/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "Heal Rate is increased by 10%.",
+            "III": "Heal Rate is increased by 15%.",
+            "IV": "Mana Recovery per sec of the target is increased by 50%."
+        },
+        "2": {
+            "II": "M.DEF Boost is increased by 10%.",
+            "III": "M.DEF Boost is increased by 15%.",
+            "IV": "CC Resist is increased by 250 for 20 sec."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "All DMG the target takes is increased by 25%."
+        },
+        "4": {
+            "II": "Heal rate is increased by 10%.",
+            "III": "Heal rate is increased by 15%.",
+            "IV": "Mana Recovery is increased by 50%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Mana Cost is increased by 1 and skill effect range changes to all allies.",
+                    "thumbnail": "./data/kr/assets/heroes/Rephy/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Each heal has a 20% chance to remove negative effects.",
+                    "thumbnail": "./data/kr/assets/heroes/Rephy/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Mana cost is reduced by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Rephy/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "Increases additional M.DEF by 10% of own M.DEF.",
+                    "thumbnail": "./data/kr/assets/heroes/Rephy/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Each hit removes 250 mana from the target.",
+                    "thumbnail": "./data/kr/assets/heroes/Rephy/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "In exchange for 1 additional Mana Cost, Silence enemies in range for 1 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Rephy/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Uses the skill every 5 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Rephy/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Also supplies 1 orb of mana to the ally with the highest ATK.",
+                    "thumbnail": "./data/kr/assets/heroes/Rephy/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / M.Dodge +100",
+                "thumbnail": "./data/kr/assets/heroes/Rephy/perks/light.png"
+            },
+            "dark": {
+                "effect": "Upon attacking, there is a 10% chance to reduce all DEF of the target by 20% and reduce all the hero's cooldowns by 5%.",
+                "thumbnail": "./data/kr/assets/heroes/Rephy/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "God's Lamp, Kurulati",
+        "description": "Every 20 sec, an ally with the lowest HP turns invisible for (0) sec. An invisible ally becomes immune to P.DMG, and HP will not drop below 1%. MP Recovery per sec is increased to (1).",
+        "value": {
+            "0": {
+                "0": "5",
+                "1": "6",
+                "2": "7",
+                "3": "8",
+                "4": "9",
+                "5": "10"
+            },
+            "1": {
+                "0": "120%",
+                "1": "144%",
+                "2": "172%",
+                "3": "207%",
+                "4": "248%",
+                "5": "300%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Rephy/uw.png",
+        "story": "It is the duty of a soul guide to lead the lost souls onto the right path, to help them move on to the next life. This lamp, powered by a mysterious orb created long ago by a dragon from a distant land, is a treasure of the Tamians. The orb at its core allows nearby souls to materialize, making it possible for its wielder to talk to them directly. As such, it is the ultimate medium for a soul guide. Tamian chieftains have used this relic to carry out the sacred duties of a soul guide for generations. Now, in the face a great danger that threatens the world, the lamp has been passed on to Rephy, the most powerful soul guide in existence."
+    },
+    "uts": {
+        "1": {
+            "name": "Melody of Blue Star",
+            "description": "[Healing Soul] Reduces Mana Cost by 1, and increases the target's CC ACC by (0) for the duration of skill.",
+            "value": {
+                "0": {
+                    "0": "100",
+                    "1": "120",
+                    "2": "140",
+                    "3": "170",
+                    "4": "210",
+                    "5": "250"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Rephy/ut/1.png",
+            "story": "A small music box containing the voice of Asiphia, Queen of Blue star. Rephy opens it when guiding souls. The souls heading to the Garden of Rest receive the grace of the Blue Star by listening to the song of Asiphia recorded in the box. When Asiphia's voice flows, twinkling like starlight, nothing dark or corrupt can come near those souls."
+        },
+        "2": {
+            "name": "Seed of Birth",
+            "description": "[Salvation] Increases M.DEF Boost by 50% and reduces Cooldown by (0).",
+            "value": {
+                "0": {
+                    "0": "12%",
+                    "1": "14%",
+                    "2": "17%",
+                    "3": "21%",
+                    "4": "25%",
+                    "5": "30%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Rephy/ut/2.png",
+            "story": "A collection of the energy that is created when a life is born. It's very warm and gentle, so souls like it. Rephy uses it to start a fire in a lamp to borrow the power of the souls. When a seed is put in a lamp, it shines brightly, like when the sun was first born."
+        },
+        "3": {
+            "name": "Haven of Souls",
+            "description": "[Soulrush] Mana cost is reduced by 1 and heals all allies' HP by (0) of DMG.",
+            "value": {
+                "0": {
+                    "0": "8%",
+                    "1": "10%",
+                    "2": "12%",
+                    "3": "14%",
+                    "4": "17%",
+                    "5": "20%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Rephy/ut/3.png",
+            "story": "An ornament that was used for the memorial ceremonies of deceased royalty in ancient times. Inside the green jewel, there's a crystallized tear of the mythical creature that leads people to death. It's used as a resting places to comfort the emptiness within souls."
+        },
+        "4": {
+            "name": "Angelic Advent",
+            "description": "[Spiritual Tuning] Increases Heal Rate by 50%. Targets have their ATK increased by (0) for 4 sec.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Rephy/ut/4.png",
+            "story": "A specialty of Lamp-keeper Town. This candy that looks like a blue star is Rephy's favorite snack. It is made from 'Jolt out of Sleep,' a blue herb that only grows in Lamp-keeper Town. Every time Rephy leaves town for journey, the village head always puts this candy in his pocket."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up upon using Skills 5 times.",
+        "description": "Summons the soul of God's Lamp, Kurulati for 10 sec, increasing all allies' ATK Spd by 300 and Mana recovery per sec by 100%, inflicts hallucination upon one random enemy every 3 sec, reducing their ACC by 350 for 3 sec.",
+        "cooldown": "23",
+        "uses": "6",
+        "thumbnail": "./data/kr/assets/heroes/Rephy/sw.png",
+        "advancement": {
+            "1": "Inflicts hallucination upon 2 enemies and reduces the target's Mana by 500.",
+            "2": "Upon activation, immediately activates the invisibility effect of God's Lamp, Kurulati on 2 allies."
+        },
+        "story": "Tamian Tribe had trained many Spiritual Guides. Kurulati was the lamp the guides used to guide the spirits, These are the extent of what Rephy knows after a conversation with the chief. However, what guides and even chiefs did not know, was that memories of guides have been piling up inside Kurulati.\nThat applied to Rephy as well, but one day, Rephy realized that there was another voice among the voices of spirits.\nThe voices were unfamiliar, yet strangely familiar at the same time.\nAfter listening to the lamp carefully, and talking to the voice, Rephy found out that the voice came from the entity which is the cumulative of memories of all previous guides.\nThe entity told Rephy of what all the guides had experienced, and upon hearing them, Rephy gained a deeper understanding of the power of Kurulati which even he did not know.\nThe lamp shined brighter, and lost spirits could find their way to the lamp more easily through that warm light."
+    },
+    "splashart": "./data/kr/assets/heroes/Rephy/sa.png",
+    "costumes": "./data/kr/assets/heroes/Rephy/cos",
+    "visual": null,
+    "aliases": null
+}

@@ -1,0 +1,291 @@
+{
+    "infos": {
+        "title": "Insatiable Blade",
+        "class": "Assassin",
+        "position": "Front-500",
+        "attack range": "7400",
+        "damage type": "Magical",
+        "gender": "Male",
+        "age": "27",
+        "height": "186",
+        "race": "Human",
+        "constellation": "Graham the Thief",
+        "birth of month": "May 5th, Month of Hope",
+        "like": "Demonic swords, idiots who get fooled easily, nice scenery",
+        "dislike": "Bugs, bitter food, divinations or prophecies",
+        "story": "Kibera is a cheerful wielder of demonic swords who hails from the East. Other than the fact that he's from the East, the only other thing known about Kibera is that he likes cheap food despite his noble and dashing appearance, he's a skilled swordsman, and that he is abnormally obsessed with demonic swords. Anyone with common sense would stay away from demonic swords as they are afraid of the curse and tragedies the 'evil power within these swords could bring upon. However, unphased by this so-called evil power, Kibera rather casually picks up these cursed demonic swords with no hesitation. Whenever Kibera comes across a fine demonic sword, his eyes blaze with desire as if he's declaring that he will seize the sword no matter what, This abnormal possession of trying to acquire a sword, even risking his very own life with no regard to gains or loss, has made people avoid him altogether because it feels like he's a possessed spirit of a sword.",
+        "thumbnail": "./data/kr/assets/heroes/Kibera/ico.png",
+        "story_": "Kibera is a cheerful wielder of demonic swords who hails from the East.\nOther than the fact that he's from the East, the only other thing known about Kibera is that he likes cheap food despite his noble and dashing appearance, he's a skilled swordsman, and that he is abnormally obsessed with demonic swords. Anyone with common sense would stay away from demonic swords as they are afraid of the curses and tragedies the 'evil power' within these swords could bring upon. However, unphased by this so-called 'evil power,' Kibera rather casually picks up these cursed demonic swords with no hesitation.\nWhenever Kibera comes across a fine demonic sword, his eyes blaze with desire as if he's declaring that he will seize the sword no matter what. This abnormal possession of trying to acquire a sword, even risking his very own life with no regard to gains or loss, has made people avoid him altogether because it feels like he's a possessed spirit of a sword."
+    },
+    "skills": {
+        "page 1": {
+            "1": {
+                "name": "Mm, You Better Pay Attention!",
+                "cost": "2",
+                "cooldown": "10",
+                "description": "Attacks an enemy 11 times, dealing a total of ??? M.DMG. Afterward, summons a [Dark Whirlpool] for 4 sec that attacks the target and nearby enemies 8 times, dealing ??? M.DMG. If Nocturnal Demonic Sword, [Night Sky] is selected, DMG of self's normal attacks increases by 50% and each normal attack reduces Cooldown of this Skill by 0.5 sec.",
+                "thumbnail": "./data/kr/assets/heroes/Kibera/skills/1.png"
+            },
+            "2 (1)": {
+                "name": "Heh, Let's Have Some Fun!",
+                "cost": "2",
+                "cooldown": "15",
+                "description": "Dispels all negative effects from self and turns into [Shadow Dominion] state. While in [Shadow Dominion] state, ATK is increased by ??? and HP does not fall below 10%. After Skill use, [Ha! Full of Openings!] can be used within 5 sec. If Umbral Demonic Sword, [Dark Shadow] is selected, the Mana Cost of this Skill is reduced by 1.",
+                "thumbnail": "./data/kr/assets/heroes/Kibera/skills/2 (1).png"
+            },
+            "2 (2)": {
+                "name": "Ha! Full of Openings!",
+                "cost": null,
+                "cooldown": null,
+                "description": "Moves to the back of the enemy with the highest ATK, marking the target with [Dark Corrosion] and reducing the ATK Spd of the marked target by 400 for 10 sec. Kibera's attacks will prioritize the marked target. If Umbral Demonic Sword, [Dark Shadow] is selected, enemies inflicted with Dark Corrosion cannot receive positive effects, and have their Mana reduced by 250 every 1 sec. Upon selecting Darkslayer Demonic Sword, [Vell], this skill's Mana Cost will be increased from 0 to 1.",
+                "thumbnail": "./data/kr/assets/heroes/Kibera/skills/2 (2).png"
+            }
+        },
+        "page 2": {
+            "3": {
+                "name": "Say Hello to Death!!",
+                "cost": "3",
+                "cooldown": "20",
+                "description": "Sticks Darkslayer Demonic Sword, Veil into the ground, creating a shockwave that deals ??? M.DMG to nearby enemies in a circular range of self and inflicts Stun for 5 sec. Afterward, for 10 sec, unloads [Dark Thunder] to a random enemy every 2 sec, dealing ??? M.DMG and inflicting Stun for 0.5 sec. If Darkslayer Demonic Sword, [Veil] is selected, the Mana Cost of all Skills increases by 1, but DMG inflicted by this Skill will ignore DEF and the Heal Rate of enemies hit by [Dark Thunder] will be reduced by 50% for 5 sec.",
+                "thumbnail": "./data/kr/assets/heroes/Kibera/skills/3.png"
+            },
+            "4": {
+                "name": "Three Demonic Swords",
+                "cost": null,
+                "cooldown": null,
+                "description": "At the beginning of the first battle, Kibera can select a demonic sword. He gains immunity to CC until he selects his sword, but he cannot recover Mana during that period. Once he selects a sword, his stats and the effect of a Skill will be enhanced depending on the selected sword.\nNocturnal Demonic Sword, [Night Sky] Increases ATK Spd by 300 and enhances the effect of [Mm, You Better Pay Attention!].\nUmbral Demonic Sword, [Dark Shadow] Increases DEF by ??? and enhances the effect of [Heh, Let's Have Some Fun!].\nDarkslayer Demonic Sword, [Veil] Increases ATK by ??? and enhances the effect of [Say Hello to Death!!].",
+                "thumbnail": "./data/kr/assets/heroes/Kibera/skills/4.png"
+            }
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "ATK Boost is increased by 10%.",
+            "III": "ATK Boost is increased by 15%.",
+            "IV": "ATK Boost is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "ATK and DEF Boost are increased by 10%.",
+            "III": "ATK and DEF Boost are increased by 15%.",
+            "IV": "ATK and DEF Boost are increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "Reduces Mana Cost by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Kibera/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "Gains Immunity to CC for the duration of Skill.",
+                    "thumbnail": "./data/kr/assets/heroes/Kibera/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "Upon using [Ha! Full of Openings!], inflicts Silence to all enemies for 2 sec.",
+                    "thumbnail": "./data/kr/assets/heroes/Kibera/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "When there are 3 allies or less, the effect of Shadow Dominion applies to all allies.",
+                    "thumbnail": "./data/kr/assets/heroes/Kibera/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Dispels positive effects of enemies within the range of the shockwave.",
+                    "thumbnail": "./data/kr/assets/heroes/Kibera/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Increases Mana Cost by 1, and increases DMG by 100%..",
+                    "thumbnail": "./data/kr/assets/heroes/Kibera/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "Increases own ATK by 20% and automatically selects [Nocturnal Demonic Sword, Night Sky] at the beginning of first battle.",
+                    "thumbnail": "./data/kr/assets/heroes/Kibera/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "Recovers own Mana by 150 every sec and automatically selects [Darkslayer Demonic Sword, Veil] at the beginning of first battle.",
+                    "thumbnail": "./data/kr/assets/heroes/Kibera/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP +15% / Crit DMG +20%",
+                "thumbnail": "./data/kr/assets/heroes/Kibera/perks/light.png"
+            },
+            "dark": {
+                "effect": "Every 20 sec, increases M.DMG all enemies take by 30% for 15 sec.",
+                "thumbnail": "./data/kr/assets/heroes/Kibera/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "Midnight Demonic Swords, Night Sky & Dark Shadow & Veil",
+        "description": "Selects one of Midnight Demonic Swords, Night Sky & Dark Shadow & Veil and earns one of the following effects:\n[Nocturnal Demonic Sword, Night Sky] Increases ATK Spd by (0) ACC by (1) and DMG of normal attacks by (2).\n[Umbral Demonic Sword, Dark Shadow] Recovers Mana by (3) every sec.\n[Darkslayer Demonic Sword, Veil] Increases own ATK by (4) and Crit DMG by (5) every 10 sec. This effect can be stacked up to max 3 times and is irremovable.",
+        "value": {
+            "0": {
+                "0": "200",
+                "1": "240",
+                "2": "290",
+                "3": "350",
+                "4": "420",
+                "5": "500"
+            },
+            "1": {
+                "0": "200",
+                "1": "240",
+                "2": "290",
+                "3": "350",
+                "4": "420",
+                "5": "500"
+            },
+            "2": {
+                "0": "20%",
+                "1": "24%",
+                "2": "29%",
+                "3": "35%",
+                "4": "42%",
+                "5": "50%"
+            },
+            "3": {
+                "0": "80",
+                "1": "97",
+                "2": "115",
+                "3": "138",
+                "4": "165",
+                "5": "200"
+            },
+            "4": {
+                "0": "10%",
+                "1": "12%",
+                "2": "14%",
+                "3": "17%",
+                "4": "21%",
+                "5": "25%"
+            },
+            "5": {
+                "0": "10%",
+                "1": "12%",
+                "2": "14%",
+                "3": "17%",
+                "4": "21%",
+                "5": "25%"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Kibera/uw.png",
+        "story": "Kibera, true to his infamous title as the sword collector, owns countless demonic swords. Among those demonic swords, he has taken a special liking to 3 particular swords: Dark Shadow, Night Sky, and Veil, which he carries around all the time.\n\nThe demonic sword Dark Shadow is a demonic sword from the east that Kibera was carrying even before he came to the Empire. Dark Shadow carries the legend of a fiend that terrorized the Easter continent since ancient times, even before the Demon invasion. Long ago, eight humans and monster had united to defeat this fiend that was harming humans and eating other monsters. After a fierce battle that lasted for 3 days and nights, the fiend was sealed into a pair of swords. One was named demonic sword Dark Shadow, and the other was named demonic sword Radiant Cover.\nAs the leading member of the alliance, the Yuan family carried out the duty of guarding the pair of demonic swords and keeping a close eye on the sealed fiend by assigning two succeeding heirs to watch over them. This duty was passed down the Yuan family line for generations, but 10 years ago, during the succession rite of the two genius siblings, the swords disappeared after a horrible massacre that took the lives of several prominent Yuan family members.\nAlong with the disappearance of the two swords brilliant siblings, there was a grim rumor that the demonic swords had bewitched the siblings. After the tragic incident, the next head of the Yuan family did everything in their power to find the treasured swords of the family, but the swords were nowhere to be found. After many years, the demonic sword Dark Shadow resurfaced to the world, with Kibera as its master.\n\nThe demonic sword Night Sky is a weapon that emanates Yin Mana due to harnessing the power of an archfiend blessed by the moon. In the East, Night Sky is famously associated with the 'Master of Yuho Mountains,' an archfiend who commands the fiends of the Yuho mountain range.\nThe master of Yuho Mountains is a former teacher of Kibera who vanashied shorty with the demonic sword Night Sky, but the demonic sword came under the possession of Idrian, the advisor to the emporor of the Vespian Empire. Night Sky was offered to Kibera as a reward for agreeing to a particular contract.\nKibera hadn't a single clue as to how the emperor's advisor came into possession of his master's sword, whether the advisor knew his master's whereabouts nor what he was after, but he could not pass the opportunity to obtain a powerful demonic sword that had ties to his master. Kibera accepted Idrian's proposal to join the Hound Unit.\n\nThe demonic sword Veil is a weapon that emanates Yang mana by drawing power from a gemstone that harnessed sunlight. It was used by the Demon commander whom Kibera fought while carrying out the Demon territory recon mission under Fluss' order.\nThe Demon commander was a powerful, high-ranking Demon who was hungry for greater power. Hungry for power, he insisted on using Veil, a sword of that was out of his league. Eventually his desire for Veil led to the sword corrupting the Demon's mind. The Demon commander became a puppet of the demonic sword and started destroying the ruins recklessly. The entire Hound Unit had to fight the Demon to take him down.\nKibera requested the demonic sword Veil, which can even control high-ranking Demons, to be given as a 'rightful reward' for his efforts, while neglecting his actual mission of searching the ruins. Mitra was uninterested in any swords, Pansirone said it wasn't her 'style,' and wanting to get back to the mission, Crow gave permission and thus, Veil was added to Kibera's collection of demonic swords."
+    },
+    "uts": {
+        "1": {
+            "name": "Unused Pipe",
+            "description": "[Mm, You Better Pay Attention!] Increases DMG by 20%. Every time Kibera hits an enemy with normal attacks or [Mm, You Better Pay Attention!], increases own Crit DMG by (0). This effect can be stacked up to max 100 times.",
+            "value": {
+                "0": {
+                    "0": "1%",
+                    "1": "1.2%",
+                    "2": "1.4%",
+                    "3": "1.7%",
+                    "4": "2.1%",
+                    "5": "2.5%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Kibera/ut/1.png",
+            "story": "An Eastern-style tabacco pipe. Its battered appearance tells of its age. Oddly enough, Kibera, who owns the pipe, is someone who hates smoking...\nOne can only wonder who the original owner is of the pipe.\nEven though it looks old, it's been well maintained that one could use it right away. When asked if Kibera had ever used this pipe, his expression would flash a sense of longing and reply that while he has never used the pipe, the smoke from the pipe spreads like a will o' wisp, creating a beautiful scenery."
+        },
+        "2": {
+            "name": "Jade Ornament",
+            "description": "[Heh, Let's Have Some Fun!] Reduces Mana Cost by 1.\n[Ha! Full of Openings] After movement, gains immunity to CC for (0) sec.",
+            "value": {
+                "0": {
+                    "0": "2",
+                    "1": "2.4",
+                    "2": "2.9",
+                    "3": "3.5",
+                    "4": "4.2",
+                    "5": "5"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Kibera/ut/2.png",
+            "story": "An ornament with characters of the Eastern language engraved into it.\nThe engraved characters supposedly form an Eastern name, but Kibera never told anyone how to read it.\nOnly after asking Kibera of its purpose several times, Mitra and Pansirone managed to learn that it is an identification token and that it has been enchanted by a special shamanistic spell that protects the user from... something.\nThey also asked if the token belongs to kibera or someone else, but Kibera only smiled ambiguously and answered with a 'maybe,' teasing the two.\nIrritated by Kibera's vague answer, Mitra and Pansirone left after swearing heavily on Kibera's twisted sense of humor.\n\nOr perhaps.... Kibera just wasn't keen on telling his past..."
+        },
+        "3": {
+            "name": "Special Mana Oil",
+            "description": "[Say Hello to Death!!] Increases DMG by (0) and gains immunity to CC for the duration of Skill.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Kibera/ut/3.png",
+            "story": "Unlike common swords, a demonic sword rusts in a particular way. The cursed energy such as resentment from the ones slain by that sword or the Mana waste of their user piles up, rusting the sword.\nThis odd substance of course, cannot be removed through conventional means. No matter how elaborate the owner maintains the demonic sword, its blade eventually becomes dull, and its power leaks out.\nAs someone who deeply cares for his swords, Kibera went on searching for a special maintenance technique. His search came to fruition when he heard that Valance of Magos Le'Flamme created an experimental special Mana oul.\nKibera immediately visited Valance, and protested for the whole week and a full day and a half until she offered to supply him with the special Mana oil in return for fulfilling certain annoying and dangerous tasks."
+        },
+        "4": {
+            "name": "Haunted Scroll",
+            "description": "[Three Demonic Swords] Grants effects to all allies depending on the selected sword.\n[Nocturnal Demonic Sword, Night Sky] - Increases ATK Spd of all allies by (0) for 30 sec.\n[Umbral Demonic Blade, Dark Shadow] - Reduces All DMG all allies take by (1) for 30 sec.\n[Darkslayer Demonic Sword, Veil] - Increases ATK of all allies by (2) for 30 sec. If there are 3 or less allies, all effects multiply by 2 times.",
+            "value": {
+                "0": {
+                    "0": "100",
+                    "1": "120",
+                    "2": "140",
+                    "3": "170",
+                    "4": "210",
+                    "5": "250"
+                },
+                "1": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                },
+                "2": {
+                    "0": "10%",
+                    "1": "12%",
+                    "2": "14%",
+                    "3": "17%",
+                    "4": "21%",
+                    "5": "25%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Kibera/ut/4.png",
+            "story": "The rumor has it that the picture inside the haunted scroll keeps changing. Some would see a harbor village on the brink of ruin, some would see a paradise deep inside the mountains, while some others would see the maw of a black tiger, and be consumed by that black tiger.\nThe haunted scroll from the rumors passed through many hands until it became Kibera's first exorcism target. Instead, Kibera took a liking to the shifting background of the picture and decided to add it to his collection.\nWhen Kibera left his family, the scroll was one of the items that he had to leave behind. However, he was later reunited with the scroll at the night market of the fiends while he was still staying in the East.\nIt was that moment when Kibera felt a string of destiny pulling him toward the scroll. he emptied his teacher's picket and became the master of the haunted scroll once again."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up over 24 sec.",
+        "description": "Summons the soul of Midnight Demonic Swords, Night Sky & Dark Shadow & Veil, launching a blow to all enemies within wide frontal range of self that deals ??? M.DMG, inflicting Stun for 3 sec, and reducing their Mana by 2000. Afterward, increases own ATK by 30% for 10 sec and deals a total of ??? M.DMG to 1 random enemy over 4 hits every 3 sec. Additional effects will be applied depending on Kibera's selected sword.\n[Nocturnal Demonic Sword, Night Sky] - Increases DMG dealt to enemies by 30% for 10 sec.\n[Umbral Demonic Blade, Dark Shadow] - Reduces ATK of hit enemies by 40% for 10 sec.\n[Darkslayer Demonic Sword, Veil] - DMG ignores DEF.",
+        "cooldown": "15",
+        "uses": "7",
+        "thumbnail": "./data/kr/assets/heroes/Kibera/sw.png",
+        "advancement": {
+            "1": "Reduces Skill Activation Requirements by 2 sec and increases DMG by 50%.",
+            "2": "Reduces Skill Activation Requirements by an additional 4 sec and dispels positive effects of the target."
+        },
+        "story": "The half of the beast that's been sleeping within Dark Shadow slowly consumed its owner, unlike its parted half.\nDark Shadow planned to make Kibera a full fiend rather than the half-man, half-fiend he was. Its plan was well on its way until the Master of Yuho Mountains appeared.\nWhite Night, the archfiend who was known as the Master of Yuho Mountains, took pity on Kibera, who was wandering aimlessly after running away from his family, took him in and taught how to suppress the power of Dark Shadow that was slowly consuming him.\nIt was then when Dark Shadow's plan to make Kibera his host and break free, failed.\n\nUnwilling to let Dark Shadow take control over him, Kibera swore to become stronger by using the Mana of all his demonic swords. Since then, he started to collect demonic swords across the continent. Unfortunately, the Mana of each demonic sword he acquired through many means could not harmonize with each other and ended up sinking to the depths, untapped. Kibera could only mindlessly collect demonic swords.\nWorst comes to worst, after gaining the demonic sword Night Sky from a contract, Kibera's Mana balance drastically declined to Yin, pushing him closer to the fiend side. Despite the haunting situation, the emperor's advisor who gave him Night Sky smiled softly and simply delivered a prophecy that a sword he will soon acquire will help.\nKibera set the advisor's prophecy aside and continued to seize demonic swords faster, more fiercly, and more viciously. Kibera had someone to reunite with, after all. He had an answer to hear, and above all... he could not allow the monster to turn him into a fiend controlled by a sword.\n\nOne Day, during an expedition to the ruins, Kibera came in contact with the demonic sword he so desired and charged faster than lightning to grab the sword.\nHe fell anyone be it ally or foe \u2013 who stood in his way and firmly grasped the beckoning demonic sword with shattering force. At that moment, he finally remembered the prophecy and realized the answer.\n the overflowing Yang Mana that was swirling inside the demonic sword Veil intertwined itself with the Yin Mana of Night Sky like grand tidal waves and weaved the separate powers of every demonic sword into one, becoming part of Kibera's strength.\n\nWith the countless demonic swords along with Night Sky and Veil, Kibera finally was able to draw the true power of Dark Shadow and wielded great strength to his will."
+    },
+    "splashart": "./data/kr/assets/heroes/Kibera/sa.png",
+    "costumes": "./data/kr/assets/heroes/Kibera/cos",
+    "visual": null,
+    "aliases": null
+}

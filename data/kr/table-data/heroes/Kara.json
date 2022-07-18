@@ -1,0 +1,255 @@
+{
+    "infos": {
+        "title": "Epitome of Ancient Technomagic",
+        "class": "Mechanic",
+        "position": "Middle-200",
+        "attack range": "6700",
+        "damage type": "Magical",
+        "gender": "Neutral (Female-type)",
+        "age": "???",
+        "height": "161",
+        "race": "Human-type Golem",
+        "constellation": "Graham the Thief",
+        "birth of month": "May 30th, Month of Hope",
+        "like": "Energy charge, Master",
+        "dislike": "Orders that cannot be carried out, inefficient way of doing things",
+        "story": "A human-type Golem that was made with ancient technomagic, but her appearance is just like that of a human girl. But she's an ancient weapon that has no feelings and was just made to be a tool. She was asleep in the ruins of an ancient civilization, deep underground in Galluah Plains. She was excavated by Annette, a technomagi in the Kingdom of Orvel, during her research and awakened in a new era with a new civilization...",
+        "thumbnail": "./data/kr/assets/heroes/Kara/ico.png",
+        "story_": "A human-type Golem that was made with ancient technomagic, but her appearance is just like that of a human girl. But she's an ancient weapon that has no feelings and was just made to be a tool. She was asleep in the ruins of an ancient civilization, deep underground in Galluah Plains. She was excavated by Annette, a technomagi in the Kingdom of Orvel, during her research and awakened in a new era with a new civilization..."
+    },
+    "skills": {
+        "1 (1)": {
+            "name": "Anti-personnel Laser [Anti-personnel Weapon]",
+            "cost": "2",
+            "cooldown": "8",
+            "description": "Attacks the target 4 times, dealing a total of ??? M.DMG and inflicting knockback. Attacks all enemies with the last blow, dealing ??? M.DMG and blowing them away for 3 seconds.",
+            "thumbnail": "./data/kr/assets/heroes/Kara/skills/1 (1).png"
+        },
+        "1 (2)": {
+            "name": "Siege Laser [Siege Weapon]",
+            "cost": "3",
+            "cooldown": "11",
+            "description": "Attacks the target inflicting ??? M.DMG. Crit DMG is applied 200% higher.",
+            "thumbnail": "./data/kr/assets/heroes/Kara/skills/1 (2).png"
+        },
+        "2 (1)": {
+            "name": "Wide-area Cannon [Anti-personnel Weapon]",
+            "cost": "4",
+            "cooldown": "14",
+            "description": "Attacks a random target and nearby enemies in range 4 times, inflicting a total of ??? M.DMG and stunning them for 4 seconds.",
+            "thumbnail": "./data/kr/assets/heroes/Kara/skills/2 (1).png"
+        },
+        "2 (2)": {
+            "name": "Focused Fire [Siege Weapon]",
+            "cost": "4",
+            "cooldown": "22",
+            "description": "Attacks a random target 15 times, inflicting a total of ??? M.DMG, and inflicts Focused Fire for 20 seconds. Inflicts ??? extra M.DMG with each stack of Focused Fire on the enemy. Focused Fire can be stacked up to 30 times.",
+            "thumbnail": "./data/kr/assets/heroes/Kara/skills/2 (2).png"
+        },
+        "3": {
+            "name": "Release Siege Weapon",
+            "cost": "2",
+            "cooldown": "0",
+            "description": "Kara turns into Siege Weapon mode and attacks the enemy, inflicting ??? M.DMG with each hit. When in Siege Weapon mode, changes Anti-personnel Laser and Wide-area Cannon skills to Siege Laser and Focused Fire skills. When the skill is used again, returns to Anti-personnel Weapon mode.",
+            "thumbnail": "./data/kr/assets/heroes/Kara/skills/3.png"
+        },
+        "4": {
+            "name": "Essence of Technomagic",
+            "cost": null,
+            "cooldown": null,
+            "description": "While in [Anti-personnel Weapon] mode, increases All DEF by ???, and while in [Siege Weapon] mode, increases DMG against bosses by 25%, takes 30% increased DMG from enemies, and gains immunity to CC. Dealing DMG to an enemy recovers 70 Mana each hit.",
+            "thumbnail": "./data/kr/assets/heroes/Kara/skills/4.png"
+        }
+    },
+    "books": {
+        "1": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "2": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "3": {
+            "II": "DMG is increased by 10%.",
+            "III": "DMG is increased by 15%.",
+            "IV": "DMG is increased by 25%."
+        },
+        "4": {
+            "II": "DEF Boost is increased by 10%.",
+            "III": "DEF Boost is increased by 15%.",
+            "IV": "DEF Boost is increased by 25%."
+        }
+    },
+    "perks": {
+        "t3": {
+            "1": {
+                "light": {
+                    "effect": "[Anti-personnel Laser] - Recovers 200 MP upon a Crit Hit. [Siege Laser] - Increases Mana Cost by 1 and DMG by 100%.",
+                    "thumbnail": "./data/kr/assets/heroes/Kara/perks/s1l.png"
+                },
+                "dark": {
+                    "effect": "[Anti-personnel Laser] - Reduces 300 MP of the enemy that took the DMG. [Siege Laser] - Reduces Mana Cost by 1.",
+                    "thumbnail": "./data/kr/assets/heroes/Kara/perks/s1d.png"
+                }
+            },
+            "2": {
+                "light": {
+                    "effect": "[Wide-area Cannon] - Increases the Stun duration by 1 second. [Focused Fire] - Stacks 1 additional Focused Fire.",
+                    "thumbnail": "./data/kr/assets/heroes/Kara/perks/s2l.png"
+                },
+                "dark": {
+                    "effect": "[Wide-area Cannon] - Reduces Mana Cost by 1. [Focused Fire] - Increases the Max Stack of Focused Fire to 60.",
+                    "thumbnail": "./data/kr/assets/heroes/Kara/perks/s2d.png"
+                }
+            },
+            "3": {
+                "light": {
+                    "effect": "Increases DMG by 100% when there is only 1 enemy.",
+                    "thumbnail": "./data/kr/assets/heroes/Kara/perks/s3l.png"
+                },
+                "dark": {
+                    "effect": "Reduces all skill cooldown by 3% upon a Crit Hit.",
+                    "thumbnail": "./data/kr/assets/heroes/Kara/perks/s3d.png"
+                }
+            },
+            "4": {
+                "light": {
+                    "effect": "MP Recovery triples when there is only one enemy.",
+                    "thumbnail": "./data/kr/assets/heroes/Kara/perks/s4l.png"
+                },
+                "dark": {
+                    "effect": "[Anti-personnel Weapon] - Decreases ATK by 20%, but increases MP Recovery/Sec by 100%. [Siege Weapon] - Decreases all DEF by 60%, but increases Crit DMG by 140%.",
+                    "thumbnail": "./data/kr/assets/heroes/Kara/perks/s4d.png"
+                }
+            }
+        },
+        "t5": {
+            "light": {
+                "effect": "ATK, DEF, HP+15% / Crit DMG +20%",
+                "thumbnail": "./data/kr/assets/heroes/Kara/perks/light.png"
+            },
+            "dark": {
+                "effect": "[Anti-personnel Weapon] - Increases CC ACC by 400. [Siege Weapon] - Increases ACC by 400.",
+                "thumbnail": "./data/kr/assets/heroes/Kara/perks/dark.png"
+            }
+        }
+    },
+    "uw": {
+        "name": "0-Form Perpetual Motion Cannon, Heaven Shatterer",
+        "description": "Increases ATK by 2% every second. Can be stacked up to (0) times",
+        "value": {
+            "0": {
+                "0": "15",
+                "1": "25",
+                "2": "25",
+                "3": "30",
+                "4": "35",
+                "5": "40"
+            }
+        },
+        "thumbnail": "./data/kr/assets/heroes/Kara/uw.png",
+        "story": "An artifact from an ancient civilization that has an engine that provides unlimited power. It's a mighty weapon with the power of a siege weapon, and its power comes close to that of the highest-rank magic. This weapon was found in the ruins of the old Republic of Gray, but it remained in storage since no one knew how to use it. Long after that, Kara was excavated and once she awakened, it teleported to her side. The highest-ranking technomagic weapon that was made in a similar way as the Mountain Fortress."
+    },
+    "uts": {
+        "1": {
+            "name": "Optical Lens - MF002",
+            "description": "[Anti-personnel Laser] Increases DMG by (0) and for 10 sec, increases M.DMG target receives by 25%.\n[Siege Laser] Increases DMG by (1) and ignores target's P.Block and M.Block.",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                },
+                "1": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Kara/ut/1.png",
+            "story": "An optical Lens Annette made for Kara. She made it based on the blueprint she discovered while digging Kara out of the ground. The blueprint revealed technology that was far beyond modern engineering, but she managed to interpret some of its content. The result of her study on the blueprint was this lens, which had a similar structure to the eyes of dragonflies. The lens enables the wearer to detect the tiniest of motions and catch sight of the target from hundreds of different angles. She equipped the lens on Kara, the pinnacle of Technomagic, and it resulted in a massive improvement in her attack mode change."
+        },
+        "2": {
+            "name": "Recording Device KARA-00XX",
+            "description": "[Wide-area Cannon] Increases DMG by 50% and reduces ATK Spd of the target by (0) for 10 sec.\n[Focused Fire] Reduces Cooldown by (1) upon a Crit Hit and recovers 150 Mana.",
+            "value": {
+                "0": {
+                    "0": "100",
+                    "1": "120",
+                    "2": "140",
+                    "3": "170",
+                    "4": "210",
+                    "5": "250"
+                },
+                "1": {
+                    "0": "2%",
+                    "1": "2.4%",
+                    "2": "2.9%",
+                    "3": "3.5%",
+                    "4": "4.2%",
+                    "5": "5%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Kara/ut/2.png",
+            "story": "A recording device and processor that works as Kara's brain. It's a treasure that is filled with ancient wisdom, and its capacity far surpasses that of humans. Despite being such an incredible device, it has a hard time recording and replicating emotions."
+        },
+        "3": {
+            "name": "Ancient Power Source",
+            "description": "[Release Siege Weapon] Increases DMG by 50% and decreases the target's M.DEF by 1% upon a Crit Hit. M.DEF Reduction Effect can be stacked up to (0) times.",
+            "value": {
+                "0": {
+                    "0": "20",
+                    "1": "24",
+                    "2": "29",
+                    "3": "35",
+                    "4": "42",
+                    "5": "50"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Kara/ut/3.png",
+            "story": "Kara's source of power and one of the greatest masterpieces of an ancient civilization that has been long forgotten. It's the basic technology that Annette used to make the Rascal, but not even she has been able to figure out everything about this special technology. A permanent engine that continuously creates unlimited magic power."
+        },
+        "4": {
+            "name": "Drawing of Ancient Research",
+            "description": "[Essence of Technomagic] Increases ATK and DEF boost by 50%. Crit DMG of self is increased by (0).",
+            "value": {
+                "0": {
+                    "0": "20%",
+                    "1": "24%",
+                    "2": "29%",
+                    "3": "35%",
+                    "4": "42%",
+                    "5": "50%"
+                }
+            },
+            "thumbnail": "./data/kr/assets/heroes/Kara/ut/4.png",
+            "story": "When Annette excavated Kara, she found this drawing with the blueprint of the optical lens. On the old and worn piece of parchment was a drawing of different mechanical structures, annotated with an unknown language. With Leo's help, she could vaguely translate the content of the drawing. Over the years of research, she could finally complete 'Kara,' the product of the most advanced technomagic."
+        }
+    },
+    "sw": {
+        "requirement": "Charges up over 20 sec.",
+        "description": "Summons the soul of 0-Form Perpetual Motion Cannon, Heaven Shatterer for 12 sec. The summoned soul attacks the target continuously, dealing ??? M.DMG. If the attack hits the same target for more than 5 sec, the effect is enhanced, increasing DMG by 100%.",
+        "cooldown": "24",
+        "uses": "7",
+        "thumbnail": "./data/kr/assets/heroes/Kara/sw.png",
+        "advancement": {
+            "1": "The duration of the soul Increases by 6 sec.",
+            "2": "The enemy hit by an enhanced attack is stunned for 1 sec and DMG increases by an additional 100%."
+        },
+        "story": "'For inciting the wrath of the Gods, technomagic civilization cannot avoid the punishment of calamity.\n\nSome turned their eyes onto the space where Gods cannot reach, while some had thoughs on immortality, and some, after deep agonizing, made weapons of destruction to confront the Gods.\n\nHowever, the time is short.\nIf we wish to preserve the future as well as the present, we should look for other ways as well. Our achievement, our knowledge, and our wisdom are treasures which should be passed on to our scions.\nTo protect our treasures, we have no choice but to engineer technology which can even outlast the fury of Gods.\n\nThe purpose of the Project K.A.R.A. is to create an artificial intelligence with unlimited potential that can protect future engineers, our technology, and our knowledge.\nAn artificial intelligence with a shape and mind of a human that can be easily accepted anywhere else.\nK.A.R.A. will grow, and become endlessly stronger if it meets the one with an engineer's blood.\n\nAnd they.. will be the foundation that will retain the Technomagic Kingdom.\n\nThis is our legacy.\n\nThis is our only gift we can pass on to the future generations.'\n\n- Memoir of Dr. Ignio\n- Project K.A.R.A Archive"
+    },
+    "splashart": "./data/kr/assets/heroes/Kara/sa.png",
+    "costumes": "./data/kr/assets/heroes/Kara/cos",
+    "visual": null,
+    "aliases": null,
+    "gender": "Female"
+}

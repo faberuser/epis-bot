@@ -1,0 +1,59 @@
+{
+    "infos": {
+        "class": "Imet",
+        "title": "Courage of the Desert",
+        "race": "Golem",
+        "damage type": "Physical",
+        "recommended heroes": ":** Knight, Warrior",
+        "characteristics": "** Gau, Nicky, Bernheim",
+        "thumbnail": "./data/kr/assets/bosses/trial/Imet.png"
+    },
+    "skills": {
+        "page 1": {
+            "1": {
+                "name": "Guardian's Boomerang",
+                "cost": null,
+                "cooldown": "18",
+                "description": "Stomps the ground to greatly increase the DMG all enemies take and knocks them down. Afterwards, throws its weapon, dealing DMG and knocking the enemy far back."
+            },
+            "2": {
+                "name": "Sand Prison",
+                "cost": null,
+                "cooldown": "28",
+                "description": "Imprisons all Heroes except the one with the lowest P.DEF in Sand Prison. Sand Prison cannot be resisted and Heroes cannot take any action when imprisoned. Afterwards, Imet uses [Swift Execution]."
+            },
+            "3": {
+                "name": "Desert Guardian's Bladecraft",
+                "cost": null,
+                "cooldown": "15",
+                "description": "Spins its weapong to the front, dealing continuous P.DMG. While this Skill is active, Imet's Block Chance is continuously increased by a large amount, and constantly dispels negative effects from self. Each time Imet successfully blocks an attack for the duration of Skill, Imet's ATK increase."
+            }
+        },
+        "page 2": {
+            "4": {
+                "name": "The God King's Blessing",
+                "cost": null,
+                "cooldown": null,
+                "description": "When Imet's CC gauge is depleted, the God King will grant his blessing upon the Heroes, healing their HP."
+            },
+            "5": {
+                "name": "Swift Execution",
+                "cost": null,
+                "cooldown": null,
+                "description": "Deals massive DMG to an enemy not affected by Sand Prison. This attack is unavoidable and ignores Block. If this Skill kills an enemy, another Hero with the lowest P.DEF is freed from the prison, and Swift Execution is used upon that Hero. If this Skill fails to kill a Hero, Imet becomes neutralized and takes increased DMG."
+            },
+            "6": {
+                "name": "Guardian of Sekireinel",
+                "cost": null,
+                "cooldown": null,
+                "description": "A Guardian of Sekireinel is blessed with a mighty power that prevents its DEF and ATK Spd from being affected. Additionally, in Phase 6 or above, whenever Imet deals DMG during battle, it deals continuous DMG and reduces the Heal Rate of the target."
+            }
+        }
+    },
+    "aliases": [
+        "TrialoftheEarth",
+        "TrialofEarth",
+        "TrialEarth",
+        "Imet"
+    ]
+}
