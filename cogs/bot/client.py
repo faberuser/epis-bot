@@ -280,13 +280,6 @@ class Info(commands.Cog):
         )
         await ctx.reply(embed=embed)
 
-    @commands.command(aliases=["black"]) # blacklist a user
-    @commands.is_owner()
-    async def blacklist(self, ctx, id: int):
-        with open('./data/blacklist.txt', 'a') as f:
-            f.write(str(id)+'\n')
-        await ctx.reply('Blacklisted '+ str(id))
-
     @commands.command()
     async def uptime(self, ctx): # uptime command
         days, hours, minutes, seconds = self.time()

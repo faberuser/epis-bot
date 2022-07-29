@@ -37,6 +37,12 @@ A Discord Bot made for King's Raid mobile game
     * Set `windows` to False if your system isn't Windows.
     * Set `parellel_tasks` to True if your Bot has large amount of announce channels registerd for faster post-sending to channels. Otherwise set to False is recommended, use parallel tasks in small amount of channel may decreases speed.
     #
+    > #### King's Raid Encyclopedia Guides
+    * `guide_id` - the server's id.
+    * `categories` - ids of **CATEGORIES**
+    * `kre_invite` - server invite url
+    ###### Discord Bot can only access content in a server if it's already in it. If your bot is unable to join KRE, i made a (backup of it)[https://discord.gg/4j9vtD28p5]. You can join and follow the instruction there.
+    #
     > #### API
     *Chat module which let you able to talk with the bot by mention it*
     ###### Set `api` to False if you wish to run the chat module on local engine.
@@ -58,7 +64,11 @@ A Discord Bot made for King's Raid mobile game
     > #### Profile on https://top.gg/
     *For fanart vote-checking, leave blank will skip vote-checking*
     ###### You can get the variables by upload your bot on [Discord Bot List](https://top.gg/) and be verificated.
+    #
+    > #### Custom Emojis (Heroes, Artifacts) Set up
+    ###### This may take a bit more of time, just for some listing function like `heroes`, `perks <class>` or `artifact all`. You can also freely to skip this.
+    ###### Upload each hero's icons `kr/assets/heroes/<hero>/ico.png` to your servers (3 if 50 emojis in each server) and each artifact's icons in `kr/assets/artifacts`. Then manually copy all these ids (right-click the emoji and `Open Link`, the id is the long int in the url), then edit each one in `data/emojis.json`.
 
 3. Run `python main.py`.
 
-###### *I'm no longer maintaning this project so it's data might be outdated.*
+###### *I'm no longer maintaning this project so it's data might be 

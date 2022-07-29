@@ -15,18 +15,10 @@ class Guide(commands.Cog):
         self.hash = "\u0023\u20e3"
         self.left = "\u25c0"
         self.right = "\u25b6"
-        self.guild_id = 748599474783518941
-        self.categories = [
-            748600039542358058 # BEGINNER GUIDES
-            , 748647024060137605 # GEAR
-            , 748605466401046659 # CONTENT GUIDES
-            , 748599866967457873 # HERO GUIDES (A-J)
-            , 748607570226315346 # HERO GUIDES (K-Q)
-            , 748612701973905499 # HERO GUIDES (R-Z)
-            , 748605214856183819 # GAME MECHANICS
-            , 748610529194541139 # PVP
-            ]
-        self.taken = '\n*Taken from [KR Encyclopedia](https://discord.gg/kre)*'
+        self.guild_id = config.kre_guild_id
+        self.categories = config.kre_categories
+        self.invite = config.kre_invite
+        self.taken = f'\n*Taken from [KR Encyclopedia]({self.kre_invite})*'
         with open('./data/emojis.json', 'r') as f:
             emojis = json.load(f)
         self.alphabets = []
@@ -45,12 +37,12 @@ class Guide(commands.Cog):
         if content is None:
             embed = discord.Embed(
                 title="Guide command",
-                description=(f"This command takes Guide(s) from [KR Encyclopedia](https://discord.gg/kre).\n\n"+
+                description=(f"This command takes Guide(s) from [KR Encyclopedia]({self.kre_invite}).\n\n"+
                     "Syntax:\n`guide <content>`: Shows a Guide.\n"+
                     "`guide list`: Shows a list of available Guide(s).\n"+
                     "`guide search <content>`: Search a Guide.\n\n"+
                     "**Note:** If you are knowledgeable about the game or have strong writing skills, please consider visiting the server to help contribute towards a more comprehensive collection of King's Raid information.\n\n"+
-                    "*This command won't work if the bot isn't in the [KR Encyclopedia](https://discord.gg/kre) server.*"),
+                    f"*This command won't work if the bot isn't in the [KR Encyclopedia]({self.kre_invite}) server.*"),
                 color=config.embed_color
             )
             await ctx.reply(embed=embed)

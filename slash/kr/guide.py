@@ -21,18 +21,10 @@ class Guide(commands.Cog):
         self.hash = "#"
         self.left = "\u25c0"
         self.right = "\u25b6"
-        self.guild_id = 748599474783518941
-        self.categories = [
-            748600039542358058 # BEGINNER GUIDES
-            , 748647024060137605 # GEAR
-            , 748605466401046659 # CONTENT GUIDES
-            , 748599866967457873 # HERO GUIDES (A-J)
-            , 748607570226315346 # HERO GUIDES (K-Q)
-            , 748612701973905499 # HERO GUIDES (R-Z)
-            , 748605214856183819 # GAME MECHANICS
-            , 748610529194541139 # PVP
-            ]
-        self.taken = '\n*Taken from [KR Encyclopedia](https://discord.gg/kre)*'
+        self.guild_id = config.kre_guild_id
+        self.categories = config.kre_categories
+        self.invite = config.kre_invite
+        self.taken = f'\n*Taken from [KR Encyclopedia]({self.kre_invite})*'
         with open('./data/emojis.json', 'r') as f:
             emojis = json.load(f)
         self.numbers = []
