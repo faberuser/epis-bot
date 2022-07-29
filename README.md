@@ -41,7 +41,7 @@ A Discord Bot made for King's Raid mobile game
     * `guide_id` - the server's id.
     * `categories` - ids of **CATEGORIES**
     * `kre_invite` - server invite url
-    ###### Discord Bot can only access content in a server if it's already in it. If your bot is unable to join KRE, i made a (backup of it)[https://discord.gg/4j9vtD28p5]. You can join and follow the instruction there.
+    ###### Discord Bot can only access content in a server if it's already in it. If your bot is unable to join KRE, i made a [backup of it](https://discord.gg/4j9vtD28p5). You can join and follow the instruction there.
     #
     > #### API
     *Chat module which let you able to talk with the bot by mention it*
