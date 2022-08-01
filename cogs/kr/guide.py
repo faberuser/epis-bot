@@ -17,7 +17,7 @@ class Guide(commands.Cog):
         self.right = "\u25b6"
         self.guild_id = config.kre_guild_id
         self.categories = config.kre_categories
-        self.invite = config.kre_invite
+        self.kre_invite = config.kre_invite
         self.taken = f'\n*Taken from [KR Encyclopedia]({self.kre_invite})*'
         with open('./data/emojis.json', 'r') as f:
             emojis = json.load(f)

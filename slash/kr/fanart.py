@@ -1,4 +1,4 @@
-import discord, random, json, os, asyncio, traceback
+import discord, random, json, os, asyncio
 from discord.ext import commands
 from fuzzywuzzy import process
 

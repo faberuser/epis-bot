@@ -1,4 +1,4 @@
-import discord, random, traceback
+import discord, random
 from discord.ext import commands
 
 from discord_slash import cog_ext, SlashContext
@@ -98,7 +98,6 @@ class Stuffs(commands.Cog):
             else:
                 await ctx.send(random.choice(emote) + ' ' + random.choice(re) + ' `'+ random.choice(choices) + '`.')
         except:
-            traceback.print_exc()
             await ctx.send("I can't pick any from them", hidden=True)
 
 

@@ -1,4 +1,4 @@
-import requests, os, discord, logging, json, bs4, datetime, time, asyncio
+import requests, os, discord, logging, json, datetime, time, asyncio
 from discord.ext import commands, tasks
 from bs4 import BeautifulSoup
 
@@ -323,7 +323,7 @@ class Crawler(commands.Cog):
                             if config.parallel_tasks == True:
                                 asyncio.create_task(self.sender(lang, title, url_, thumbnail, time, author_name, channel_path, self.channels))
                             else:
-                                await self.sender(lang, title, url_, thumbnail, time, author_name, channel_path)
+                                await self.sender(lang, title, url_, thumbnail, time, author_name, channel_path, self.channels)
 
             elif lang == 'TH' or lang == 'TW': # thailand and taiwan crawl
                 re = soup.find_all('article')
@@ -355,7 +355,7 @@ class Crawler(commands.Cog):
                             if config.parallel_tasks == True:
                                 asyncio.create_task(self.sender(lang, title, url_, thumbnail, time, author_name, channel_path, self.channels))
                             else:
-                                await self.sender(lang, title, url_, thumbnail, time, author_name, channel_path)
+                                await self.sender(lang, title, url_, thumbnail, time, author_name, channel_path, self.channels)
 
             else: # japanese and vietnamese crawl (old)
                 re = soup.find_all('ul', {'class': 'wp-block-latest-posts__list has-dates has-author wp-block-latest-posts'})
@@ -382,7 +382,7 @@ class Crawler(commands.Cog):
                             if config.parallel_tasks == True:
                                 asyncio.create_task(self.sender(lang, title, url_, thumbnail, time, author_name, channel_path, self.channels))
                             else:
-                                await self.sender(lang, title, url_, thumbnail, time, author_name, channel_path)
+                                await self.sender(lang, title, url_, thumbnail, time, author_name, channel_path, self.channels)
 
     async def sender(self, lang, title, url_, thumbnail, time, author_name, channel_path, channels): # get embed and send to channels
         try:
