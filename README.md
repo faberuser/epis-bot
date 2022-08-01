@@ -71,4 +71,4 @@ A Discord Bot made for King's Raid mobile game
 
 3. Run `python main.py`.
 
-###### *I'm no longer maintaning this project so it's data might be 
+###### *I'm no longer maintaning this project so it's data might be oudated
