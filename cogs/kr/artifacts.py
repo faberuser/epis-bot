@@ -1,9 +1,19 @@
-import discord
-import json
-from fuzzywuzzy import process
-from discord.ext import commands
+import re
 
-from config import config
+import discord
+from discord import app_commands
+from discord.ext import commands
+from fuzzywuzzy import process
+
+import settings
+
+from ..utils.game_data import (
+    DataUnavailable,
+    GameData,
+    selected_data,
+    stamp,
+    version_autocomplete,
+)
 from ..utils.menus import ChoiceView, asset, send_result
 from ..utils.paginator import Paginator
 from ..utils.routes import RouteCog, add_routes
@@ -13,97 +23,121 @@ class Artifact(RouteCog):
     def __init__(self, client):
         self.client = client
 
-    @commands.hybrid_command(name="atf", aliases=["artifact", "artifacts", "arti", "art"], description="Look up an artifact")
-    async def artifact(self, ctx, *, name: str = None):
+    @commands.hybrid_command(
+        name="atf",
+        aliases=["artifact", "artifacts", "arti", "art"],
+        description="Look up an artifact",
+    )
+    @app_commands.autocomplete(version=version_autocomplete)
+    async def artifact(
+        self, ctx, *, name: str | None = None, version: str | None = None
+    ):
+        dataset = selected_data(ctx, version)
         if name is None:
-            await ctx.send("Use `artifact <name>`, `artifact search <name>`, or `artifact all`.")
+            await ctx.send(
+                "Use `artifact <name>`, `artifact search <name>`, or `artifact all`."
+            )
         elif name.lower() in ("all", "list"):
-            await self.show_all(ctx)
+            await self.show_all(ctx, dataset)
         elif name.lower().startswith("search "):
-            await self.search(ctx, name[7:])
+            await self.search(ctx, name[7:], dataset)
         else:
-            result = self.get_artifact(name)
+            result = self.get_artifact(name, dataset)
             if isinstance(result[1], list):
-                await self.show_choices(ctx, result[1], result[0])
+                await self.show_choices(ctx, result[1], result[0], dataset)
             else:
                 await send_result(ctx, result)
 
-    async def show_choices(self, ctx, names, embed):
-        view = ChoiceView(ctx.author.id, [(name, name) for name in dict.fromkeys(names)], self.get_artifact, placeholder="Choose an artifact")
-        await send_result(ctx, embed, view=view)
+    async def show_choices(self, ctx, names, embed, dataset):
+        if not names:
+            raise DataUnavailable(f"No artifacts are available in {dataset.label}.")
+        view = ChoiceView(
+            ctx.author.id,
+            [(name, name) for name in dict.fromkeys(names)],
+            lambda name: self.get_artifact(name, dataset),
+            placeholder="Choose an artifact",
+        )
+        await send_result(ctx, stamp(embed, dataset), view=view)
 
-    async def search(self, ctx, name):
-        data, names, all_names, aliases = self.get_all_artifacts()
+    async def search(self, ctx, name, dataset):
+        _data, names, _all_names, _aliases = self.get_all_artifacts(dataset)
         matches = process.extract(name, names, limit=25)
-        await self.show_choices(ctx, [match[0] for match in matches], discord.Embed(title=f"Results for {name}", colour=config.embed_color))
+        await self.show_choices(
+            ctx,
+            [match[0] for match in matches],
+            discord.Embed(title=f"Results for {name}", colour=settings.EMBED_COLOR),
+            dataset,
+        )
 
     @commands.hybrid_command(description="Search artifacts")
-    async def artifact_search(self, ctx, *, name: str):
-        await self.search(ctx, name)
+    @app_commands.autocomplete(version=version_autocomplete)
+    async def artifact_search(self, ctx, *, name: str, version: str | None = None):
+        await self.search(ctx, name, selected_data(ctx, version))
 
-    async def show_all(self, ctx):
-        data, names, all_names, aliases = self.get_all_artifacts()
-        pages = [discord.Embed(title="Artifacts", description="\n".join(names[i:i+30]), colour=config.embed_color) for i in range(0, len(names), 30)]
-        await Paginator(self.client).pag(ctx, pages)
+    async def show_all(self, ctx, dataset):
+        names = list(dataset.artifacts())
+        pages = [
+            discord.Embed(
+                title="Artifacts",
+                description="\n".join(names[i : i + 30]),
+                colour=settings.EMBED_COLOR,
+            )
+            for i in range(0, len(names), 30)
+        ]
+        await Paginator(self.client).pag(ctx, stamp(pages, dataset))
 
     @commands.hybrid_command(description="List all artifacts")
-    async def artifact_all(self, ctx):
-        await self.show_all(ctx)
+    @app_commands.autocomplete(version=version_autocomplete)
+    async def artifact_all(self, ctx, *, version: str | None = None):
+        await self.show_all(ctx, selected_data(ctx, version))
 
-    def get_all_artifacts(self):
-        with open("./data/kr/table-data/artifacts.json") as f:
-            atf = json.load(f)
-        ls_base = []
-        ls = []
+    def get_all_artifacts(self, version=None):
+        dataset = version if isinstance(version, GameData) else GameData(version)
+        artifacts = dataset.artifacts()
+        names = list(artifacts)
         aliases = {}
-        for name in atf:
-            ls.append(name)
-            ls_base.append(name)
-            if atf[name]['aliases'] is not None:
-                for aliases_ in atf[name]['aliases']:
-                    ls.append(aliases_)
-                    aliases[aliases_] = name
-        return atf, ls_base, ls, aliases
+        for name, item in artifacts.items():
+            for alias in [item.get("id", name), *(item.get("aliases") or [])]:
+                aliases[alias] = name
+        return artifacts, names, names + list(aliases), aliases
 
-    def get_artifact(self, artifact:str):
-        atf, ls_base, ls, aliases = self.get_all_artifacts()
-        arti = artifact.lower()
-        ext = process.extractOne(arti, ls)
-        if ext[-1] >= 60:
-            atf_name = ext[0]
-            try:
-                atf[atf_name]['description']
-            except:
-                atf_name = aliases[atf_name]
-            des = atf[atf_name]['description']+'\n\n'
-            for value in atf[atf_name]['value']:
-                des+='('+value+'): '+atf[atf_name]['value'][value]+'\n'
-            embed = discord.Embed(
-                title=atf_name,
-                colour=config.embed_color,
-                description=des,
+    def get_artifact(self, query, version=None):
+        dataset = version if isinstance(version, GameData) else GameData(version)
+        artifacts, names, all_names, aliases = self.get_all_artifacts(dataset)
+        match = process.extractOne(query, all_names)
+        if match is None:
+            raise DataUnavailable(f"No artifacts are available in {dataset.label}.")
+        if match[1] < 60:
+            return discord.Embed(title="Did you mean", colour=settings.EMBED_COLOR), [
+                item[0] for item in process.extract(query, names, limit=5)
+            ]
+        name = aliases.get(match[0], match[0])
+        item = artifacts[name]
+        description = (
+            item["description"]
+            + "\n\n"
+            + "\n".join(
+                f"({key}): {value}" for key, value in (item.get("value") or {}).items()
             )
-            name = atf_name+'.png'
-            if ' ' in name:
-                name = name.replace(' ', '_')
-            if "'" in name:
-                name = name.replace("'", '')
-            file = asset(atf[atf_name]["thumbnail"], filename=name)
-            embed.set_thumbnail(url=f'attachment://{name}')
-            return embed, file
+        )
+        embed = discord.Embed(
+            title=name, description=description, colour=settings.EMBED_COLOR
+        )
+        filename = re.sub(r"[^a-zA-Z0-9_.-]", "_", name) + ".png"
+        file = asset(item["thumbnail"], filename=filename)
+        embed.set_thumbnail(url=f"attachment://{filename}")
+        return stamp((embed, file), dataset)
 
-        else:
-            lt = []
-            dymn = process.extract(arti, ls_base, limit=5)
-            for dym in dymn:
-                lt.append(dym)
-            embed = discord.Embed(
-                title="Did you mean",
-                colour=config.embed_color)
-            lst = [lt[0][0], lt[1][0], lt[2][0], lt[3][0], lt[4][0]]
-            return embed, lst
 
 async def setup(bot):
     cog = Artifact(bot)
     await bot.add_cog(cog)
-    add_routes(bot, cog, {"artifact name": "atf", "artifact search": "artifact_search", "artifact all": "artifact_all"})
+    add_routes(
+        bot,
+        cog,
+        {
+            "artifact name": "atf",
+            "artifact search": "artifact_search",
+            "artifact all": "artifact_all",
+        },
+    )

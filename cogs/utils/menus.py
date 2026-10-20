@@ -11,11 +11,14 @@ import discord
 @dataclass
 class MenuResult:
     result: object
-    view: object
+    view: "OwnedView"
 
 
 def text_pages(title, text, colour):
-    return [discord.Embed(title=title, description=text[i:i + 4000], colour=colour) for i in range(0, max(1, len(text)), 4000)]
+    return [
+        discord.Embed(title=title, description=text[i : i + 4000], colour=colour)
+        for i in range(0, max(1, len(text)), 4000)
+    ]
 
 
 def asset(path, *, filename):
@@ -24,7 +27,11 @@ def asset(path, *, filename):
 
 def result_kwargs(result, *, editing=False):
     if isinstance(result, str):
-        return {"content": result, "embed": None, **({"attachments": []} if editing else {})}
+        return {
+            "content": result,
+            "embed": None,
+            **({"attachments": []} if editing else {}),
+        }
     embed, file = result if isinstance(result, tuple) else (result, None)
     if file is None:
         for name in ("thumbnail", "image"):
@@ -49,17 +56,20 @@ class OwnedView(discord.ui.View):
     def __init__(self, author_id, *, timeout=120):
         super().__init__(timeout=timeout)
         self.author_id = author_id
-        self.message = None
+        self.message: discord.Message | None = None
 
     async def interaction_check(self, interaction):
         if interaction.user.id != self.author_id:
-            await interaction.response.send_message("Only the person who opened this menu can use it.", ephemeral=True)
+            await interaction.response.send_message(
+                "Only the person who opened this menu can use it.", ephemeral=True
+            )
             return False
         return True
 
     async def on_timeout(self):
         for child in self.children:
-            child.disabled = True
+            if isinstance(child, (discord.ui.Button, discord.ui.Select)):
+                child.disabled = True
         if self.message is not None:
             try:
                 await self.message.edit(view=self)
@@ -67,7 +77,9 @@ class OwnedView(discord.ui.View):
                 pass
 
     async def on_error(self, interaction, error, item):
-        logging.getLogger(__name__).error("Menu failed", exc_info=(type(error), error, error.__traceback__))
+        logging.getLogger(__name__).error(
+            "Menu failed", exc_info=(type(error), error, error.__traceback__)
+        )
         message = "This action failed. Please try again later."
         if interaction.response.is_done():
             await interaction.followup.send(message, ephemeral=True)
@@ -78,7 +90,9 @@ class OwnedView(discord.ui.View):
 class ChoiceView(OwnedView):
     """Paginate any number of choices without exceeding Discord's 25-option limit."""
 
-    def __init__(self, author_id, choices, render, *, timeout=120, placeholder="Choose an item"):
+    def __init__(
+        self, author_id, choices, render, *, timeout=120, placeholder="Choose an item"
+    ):
         super().__init__(author_id, timeout=timeout)
         if not choices:
             raise ValueError("A choice menu needs at least one option.")
@@ -95,10 +109,14 @@ class ChoiceView(OwnedView):
         start = self.page * 25
         self.selector.options = [
             discord.SelectOption(label=str(label)[:100], value=str(index))
-            for index, (label, value) in enumerate(self.choices[start:start + 25], start)
+            for index, (label, value) in enumerate(
+                self.choices[start : start + 25], start
+            )
         ]
         total = (len(self.choices) + 24) // 25
-        self.selector.placeholder = f"{self.placeholder} ({self.page + 1}/{total})"[:150]
+        self.selector.placeholder = f"{self.placeholder} ({self.page + 1}/{total})"[
+            :150
+        ]
         self.previous.disabled = self.page == 0
         self.next.disabled = self.page + 1 >= total
 
@@ -109,19 +127,28 @@ class ChoiceView(OwnedView):
         if inspect.isawaitable(result):
             result = await result
         if isinstance(result, MenuResult):
-            await interaction.edit_original_response(**result_kwargs(result.result, editing=True), view=result.view)
+            await interaction.edit_original_response(
+                **result_kwargs(result.result, editing=True), view=result.view
+            )
             result.view.message = self.message
             self.stop()
             return
         if isinstance(result, list):
             if not result:
-                await interaction.followup.send("There are no pages to display.", ephemeral=True)
+                await interaction.followup.send(
+                    "There are no pages to display.", ephemeral=True
+                )
                 return
             from .paginator import PageView
+
             pages = PageView(self.author_id, result)
-            pages.message = await interaction.followup.send(embed=result[0], view=pages, wait=True)
+            pages.message = await interaction.followup.send(
+                embed=result[0], view=pages, wait=True
+            )
             return
-        await interaction.edit_original_response(**result_kwargs(result, editing=True), view=self)
+        await interaction.edit_original_response(
+            **result_kwargs(result, editing=True), view=self
+        )
 
     @discord.ui.button(label="Previous", row=1)
     async def previous(self, interaction, button):

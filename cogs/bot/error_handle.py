@@ -1,4 +1,5 @@
 import logging
+
 from discord.ext import commands
 
 
@@ -14,7 +15,9 @@ class Error(commands.Cog):
         elif isinstance(error, commands.CheckFailure):
             message = "You don't have permission to use this command here."
         else:
-            logging.getLogger(__name__).error("Command failed", exc_info=(type(error), error, error.__traceback__))
+            logging.getLogger(__name__).error(
+                "Command failed", exc_info=(type(error), error, error.__traceback__)
+            )
             message = "This command failed. Please try again later."
         await ctx.send(message, ephemeral=True)
 

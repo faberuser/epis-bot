@@ -1,13 +1,13 @@
 import json
 import logging
+import re
 from itertools import cycle
 from pathlib import Path
 
 import discord
 from discord.ext import commands, tasks
 
-from config import config
-
+import settings
 
 DATA = Path("data")
 COG_FOLDERS = ("bot", "kr", "tasks")
@@ -16,12 +16,12 @@ log = logging.getLogger(__name__)
 
 def determine_prefix(bot, message):
     if message.guild is None:
-        return config.PREFIX
+        return settings.PREFIX
     try:
         with (DATA / "prefixes.json").open(encoding="utf-8") as source:
-            return json.load(source).get(str(message.guild.id), config.PREFIX)
+            return json.load(source).get(str(message.guild.id), settings.PREFIX)
     except (FileNotFoundError, json.JSONDecodeError):
-        return config.PREFIX
+        return settings.PREFIX
 
 
 def extension_names():
@@ -29,6 +29,10 @@ def extension_names():
         for path in sorted(Path("cogs", folder).glob("*.py")):
             if not path.name.startswith("__"):
                 yield f"cogs.{folder}.{path.stem}"
+
+
+class EpisContext(commands.Context):
+    data_version: str | None = None
 
 
 class EpisBot(commands.Bot):
@@ -41,20 +45,19 @@ class EpisBot(commands.Bot):
             intents=intents,
             help_command=None,
         )
-        self.launch_time = discord.utils.utcnow()
         self.extension_failures = []
         self.statuses = cycle(
             [
-                discord.Game(name=f"League of Gacha | /help"),
-                discord.Game(name=f"lewd Jane | /help"),
-                discord.Game(name=f"King's R*pe | /help"),
+                discord.Game(name="League of Gacha"),
+                discord.Game(name="lewd Jane"),
+                discord.Game(name="King's R*pe"),
                 discord.Activity(
                     type=discord.ActivityType.watching,
-                    name=f"King's Raid girl's pantsu | /anime",
+                    name="King's Raid girl's pantsu | /anime",
                 ),
                 discord.Activity(
                     type=discord.ActivityType.listening,
-                    name=f"King's Raid girl's lewd voices | /voice",
+                    name="King's Raid girl's lewd voices | /voice",
                 ),
             ]
         )
@@ -64,6 +67,22 @@ class EpisBot(commands.Bot):
         await self.load_extensions()
         self.write_commands()
         self.change_status.start()
+
+    async def get_context(
+        self, origin, /, *, cls: type[commands.Context] = EpisContext
+    ):
+        ctx = await super().get_context(origin, cls=cls)
+        if ctx.interaction is None and ctx.command and "version" in ctx.command.params:
+            arguments = ctx.view.buffer[ctx.view.index :]
+            match = re.search(
+                r"(?:^|\s)(?:--version|-V)(?:=|\s+)([\w-]+)(?=\s|$)", arguments
+            )
+            if match and isinstance(ctx, EpisContext):
+                ctx.data_version = match.group(1)
+                ctx.view = type(ctx.view)(
+                    arguments[: match.start()] + " " + arguments[match.end() :]
+                )
+        return ctx
 
     async def load_extensions(self):
         failures = []
@@ -85,7 +104,9 @@ class EpisBot(commands.Bot):
         for command in self.commands:
             names.add(command.name)
             names.update(command.aliases)
-        (DATA / "commands").write_text("\n".join(sorted(names)) + "\n", encoding="utf-8")
+        (DATA / "commands").write_text(
+            "\n".join(sorted(names)) + "\n", encoding="utf-8"
+        )
 
     @tasks.loop(minutes=1)
     async def change_status(self):
@@ -96,7 +117,8 @@ class EpisBot(commands.Bot):
         await self.wait_until_ready()
 
     async def on_ready(self):
-        log.info("Logged in as %s (%s)", self.user, self.user.id)
+        if self.user is not None:
+            log.info("Logged in as %s (%s)", self.user, self.user.id)
 
     async def close(self):
         self.change_status.cancel()
@@ -117,7 +139,8 @@ def create_bot():
             bot.write_commands()
             await ctx.send(
                 "Failed to load: " + ", ".join(failures)
-                if failures else "Fetched all extensions."
+                if failures
+                else "Fetched all extensions."
             )
         elif action in ("file", "files"):
             await bot.reload_extension("cogs.bot.file_handle")
@@ -130,7 +153,10 @@ def create_bot():
     async def sync_commands(ctx, scope: str = "guild"):
         """Publish the loaded application commands only when the owner asks."""
         if bot.extension_failures:
-            await ctx.send("Fix failed extensions before synchronizing: " + ", ".join(bot.extension_failures))
+            await ctx.send(
+                "Fix failed extensions before synchronizing: "
+                + ", ".join(bot.extension_failures)
+            )
             return
         if scope == "guild":
             if ctx.guild is None:
@@ -148,7 +174,10 @@ def create_bot():
 
     @bot.tree.error
     async def application_command_error(interaction, error):
-        log.error("Application command failed", exc_info=(type(error), error, error.__traceback__))
+        log.error(
+            "Application command failed",
+            exc_info=(type(error), error, error.__traceback__),
+        )
         message = "This command failed. Please try again later."
         if interaction.response.is_done():
             await interaction.followup.send(message, ephemeral=True)
@@ -159,13 +188,20 @@ def create_bot():
 
 
 def main():
+    if not settings.DISCORD_TOKEN:
+        raise RuntimeError(
+            "Set DISCORD_TOKEN in the environment or project .env file before starting the bot."
+        )
     DATA.mkdir(exist_ok=True)
     logging.basicConfig(
-        handlers=[logging.FileHandler(DATA / "log.log", "a", "utf-8"), logging.StreamHandler()],
+        handlers=[
+            logging.FileHandler(DATA / "log.log", "a", "utf-8"),
+            logging.StreamHandler(),
+        ],
         level=logging.INFO,
         format="%(asctime)s %(levelname)s %(name)s: %(message)s",
     )
-    create_bot().run(config.DISCORD_TOKEN, reconnect=True, log_handler=None)
+    create_bot().run(settings.DISCORD_TOKEN, reconnect=True, log_handler=None)
 
 
 if __name__ == "__main__":

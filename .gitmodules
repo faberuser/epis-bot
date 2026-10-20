@@ -1,0 +1,4 @@
+[submodule "kingsraid-data"]
+	path = kingsraid-data
+	url = https://github.com/faberuser/kingsraid-data
+	shallow = true

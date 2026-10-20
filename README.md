@@ -2,13 +2,15 @@
 
 A Discord Bot made for King's Raid mobile game
 
+Game data in `kingsraid-data/` is supplied by a Git submodule, with legacy as the default and optional versions per command. Initialize it with `git submodule update --init --recursive`.
+
 ## You can get
 
 - Heroes's information, skills, perks, books, uws, uts, sws, splashart, visual splashart, costumes.
 - Artifacts's information, Bosses's information and skills.
-- The newest posts from [KINGs RAID Official Community](https://kr-official.community/) up to 3 languages and tweets from [KING's RAID OFFICIAL](https://twitter.com/Play_KINGsRAID).
+- New tweets from [@kingsraid_msg](https://x.com/kingsraid_msg) and official [KING's RAID RE:VERSE Steam announcements](https://store.steampowered.com/news/app/3689540).
 - King's Raid Guide from KR Encyclopedia (the bot need to be in the server).
-- Caculator, Softcap and other things.
+- Softcap and other things.
 
 ## Installations
 
@@ -19,52 +21,22 @@ A Discord Bot made for King's Raid mobile game
 
 ### Installations
 
-- Use Virtual Environment:
-    - Create virtual environment `virtualenv .env`.
-    - Activate:
-        - Windows `.env\Scripts\activate`.
-        - Linux `source .env/bin/activate`.
+1. Create a virtual environment with `python -m venv .venv`. Activate it with `.venv\Scripts\activate` on Windows or `source .venv/bin/activate` on Linux/macOS.
+2. Initialize game data with `git submodule update --init --recursive`, then install dependencies with `python -m pip install -r requirements.txt`.
+3. Copy `.env.example` to `.env` and set `DISCORD_TOKEN`. On PowerShell: `Copy-Item .env.example .env`; on Linux/macOS: `cp .env.example .env`.
+4. Run `python main.py`.
 
-1. Install requirements `pip3 install -r requirements.txt`.
+### Environment configuration
 
-2. Open config/config.py and edit value behind the equal `=`.
+All settings come from environment variables. For local development, `settings.py` loads `.env` from the repository root. Variables already supplied by your shell or hosting platform take precedence. Restart the bot after changing settings. `.env` is ignored by Git; `.env.example` contains the documented template.
 
-    #### Required
-    - `PREFIX` is your optional default bot prefix(es).
-    - `DISCORD_TOKEN` is your bot's token from the above requirements.
-    - You can pick color for `embed_color` on [discord.py](https://discordpy.readthedocs.io/en/stable/api.html?highlight=colour#discord.Colour).
-      ![discord.py Colour](/readme/colour.png)
-    - `guild_ids` - servers's ids.
-
-    #
-
-    #### Optional
-    - Set `windows` to False if your system isn't Windows.
-    - Set `parellel_tasks` to True if your Bot has large amount of announce channels registerd for faster post-sending to channels. Otherwise set to False is recommended, use parallel tasks in small amount of channel may decreases speed.
-
-    #
-
-    > #### King's Raid Encyclopedia Guides
-    - `guide_id` - the server's id.
-    - `categories` - ids of **CATEGORIES**
-    - `kre_invite` - server invite url
-
-    ###### Discord Bot can only access content in the server if it's already in it. If your bot is unable to join KRE, you can manually copy contents in KRE to your server then edit the values under KRE Guides section in `config/config.py`.
-
-    #
-
-    > #### Twitter API
-    >
-    > _Which get newest tweets from [KING's RAID OFFICIAL](https://twitter.com/Play_KINGsRAID), leave blank will disable this module_
-
-    ###### You can get 4 tokens from [Twitter API](https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api).
-
-    #
-
-    > #### Custom Emojis (Heroes, Artifacts) Set up
-
-    ###### This may take a bit more of time, just for some listing function like `heroes`, `perks <class>` or `artifact all`. You can also freely to skip this.
-
-    ###### Upload each hero's icons `kr/assets/heroes/<hero>/ico.png` to your servers (3 if 50 emojis in each server) and each artifact's icons in `kr/assets/artifacts`. Then manually copy all these ids (right-click the emoji and `Open Link`, the id is the long int in the url), then edit each one in `data/emojis.json`.
-
-3. Run `python main.py`.
+| Variable             | Format and default                                                                                                                                       |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `DISCORD_TOKEN`      | Required Discord bot token.                                                                                                                              |
+| `PREFIX`             | JSON list of default prefixes; defaults to `["/", "."]`. In `.env`, use `PREFIX='["/", "."]'`. Per-server overrides in `data/prefixes.json` still apply. |
+| `BEARER_TOKEN`       | Optional X API bearer token with user lookup and timeline access for `kingsraid_msg`. Blank disables Twitter polling. Steam needs no API key.            |
+| `KR_DEFAULT_VERSION` | Default game dataset, `legacy`. Override per command with the slash `version` option or prefix `--version <name>` or `-V <name>`.                        |
+| `KR_LANGUAGE`        | Default game-data language, `en`, for users without a saved preference.                                                                                  |
+| `KRE_GUILD_ID`       | Guide source server ID, as an integer. Defaults to `0` (disabled).                                                                                       |
+| `KRE_CATEGORIES`     | Comma-separated category IDs, e.g. `123456789012345678,234567890123456789`. Blank disables guides.                                                       |
+| `KRE_INVITE`         | Optional invite URL displayed with guides. Blank omits the attribution link.                                                                             |

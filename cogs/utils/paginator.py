@@ -15,7 +15,7 @@ class PageView(discord.ui.View):
         self.author_id = author_id
         self.embeds = list(embeds)
         self.index = 0
-        self.message = None
+        self.message: discord.Message | None = None
         self.lock = asyncio.Lock()
         self.update_buttons()
 
@@ -34,14 +34,20 @@ class PageView(discord.ui.View):
     async def turn_page(self, interaction, step):
         async with self.lock:
             if self.is_finished():
-                await interaction.response.send_message("This menu has expired.", ephemeral=True)
+                await interaction.response.send_message(
+                    "This menu has expired.", ephemeral=True
+                )
                 return
             self.index = max(0, min(self.index + step, len(self.embeds) - 1))
             self.update_buttons()
-            await interaction.response.edit_message(embed=self.embeds[self.index], view=self)
+            await interaction.response.edit_message(
+                embed=self.embeds[self.index], view=self
+            )
 
     @discord.ui.button(emoji="\u25c0", style=discord.ButtonStyle.primary)
-    async def previous(self, interaction: discord.Interaction, button: discord.ui.Button):
+    async def previous(
+        self, interaction: discord.Interaction, button: discord.ui.Button
+    ):
         await self.turn_page(interaction, -1)
 
     @discord.ui.button(emoji="\u25b6", style=discord.ButtonStyle.primary)
@@ -51,12 +57,15 @@ class PageView(discord.ui.View):
     async def on_timeout(self):
         async with self.lock:
             for item in self.children:
-                item.disabled = True
+                if isinstance(item, (discord.ui.Button, discord.ui.Select)):
+                    item.disabled = True
             if self.message is not None:
                 try:
                     await self.message.edit(view=self)
                 except discord.HTTPException:
-                    logging.getLogger(__name__).debug("Could not disable expired paginator", exc_info=True)
+                    logging.getLogger(__name__).debug(
+                        "Could not disable expired paginator", exc_info=True
+                    )
 
 
 class Paginator:

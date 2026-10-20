@@ -6,6 +6,6 @@ aiohttp
 tweepy
 py-expression-eval
 beautifulsoup4
-pytz
 beautifultable==1.0.0
 fuzzywuzzy
+python-dotenv

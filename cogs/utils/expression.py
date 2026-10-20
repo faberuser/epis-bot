@@ -1,4 +1,5 @@
 import asyncio
+
 from py_expression_eval import Parser
 
 
@@ -9,4 +10,6 @@ def parse_expression(expression):
 
 
 async def evaluate(expression):
-    return await asyncio.wait_for(asyncio.to_thread(parse_expression, expression), timeout=1)
+    return await asyncio.wait_for(
+        asyncio.to_thread(parse_expression, expression), timeout=1
+    )
