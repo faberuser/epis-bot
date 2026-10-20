@@ -69,6 +69,7 @@ class Info(commands.Cog):
                 "softcap": "Softcap",
                 "twitter": "Twitter",
                 "steam": "Steam",
+                "github": "GitHub",
             }
             topic = topics.get(command.name) if command else None
             if name.lower().startswith(("announce", "plug")):
@@ -155,7 +156,8 @@ class Info(commands.Cog):
                 "Game data commands accept the slash `version` option or prefix `--version <name>` or `-V <name>`.\n\n"
                 "__**Announcements**__ (Require `Manage Channels` to subscribe)\n"
                 "`twitter <on/off/status>`: Send new tweets from [@kingsraid_msg](https://x.com/kingsraid_msg).\n"
-                "`steam <on/off/status>`: Send official [KING's RAID RE:VERSE](https://store.steampowered.com/app/3689540/KINGs_RAID_REVERSE/) Steam announcements."
+                "`steam <on/off/status>`: Send official [KING's RAID RE:VERSE](https://store.steampowered.com/app/3689540/KINGs_RAID_REVERSE/) Steam announcements.\n"
+                "`github <on/off/status>`: Send new commits from the configured repository and branch."
             ),
             colour=settings.EMBED_COLOR,
         )

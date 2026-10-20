@@ -1,6 +1,7 @@
 # Runtime announcement subscriptions and delivery history
 data/steam/
 data/twitter/
+data/github/
 data/prefixes.json
 data/user_preferences.json*
 data/user_preferences.sqlite3*

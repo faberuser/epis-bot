@@ -194,7 +194,7 @@ class Info_Embed:
             return discord.Embed(
                 title=title, description=description, colour=settings.EMBED_COLOR
             )
-        if cmd in ("Announcements", "Twitter", "Steam"):
+        if cmd in ("Announcements", "Twitter", "Steam", "GitHub"):
             embed = discord.Embed(
                 title=f"{cmd} commands",
                 description=(
@@ -204,6 +204,12 @@ class Info_Embed:
                 ),
                 colour=settings.EMBED_COLOR,
             )
+            if cmd in ("Announcements", "GitHub"):
+                embed.add_field(
+                    name="GitHub",
+                    value="`github on/off/status`: Follow the branch configured by GITHUB_REPO and GITHUB_BRANCH. Public repositories need no token. The first check skips existing commits.",
+                    inline=False,
+                )
             if cmd in ("Announcements", "Twitter"):
                 embed.add_field(
                     name="Twitter / X",
