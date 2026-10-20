@@ -62,6 +62,8 @@ class AnnouncementFeed(commands.Cog):
     async def poll(self):
         try:
             await self.poll_once()
+        except commands.BadArgument as error:
+            log.warning("%s announcement check failed: %s", self.label, error)
         except Exception:
             log.exception("%s announcement check failed; will retry", self.label)
 
@@ -144,6 +146,9 @@ class AnnouncementFeed(commands.Cog):
         try:
             async with self.lock:
                 posts = await self.fetch_posts()
+        except commands.BadArgument as error:
+            log.warning("%s latest item lookup failed: %s", self.label, error)
+            raise
         except Exception as error:
             log.exception("%s latest item lookup failed", self.label)
             raise commands.BadArgument(

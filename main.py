@@ -48,16 +48,15 @@ class EpisBot(commands.Bot):
         self.extension_failures = []
         self.statuses = cycle(
             [
-                discord.Game(name="League of Gacha"),
-                discord.Game(name="lewd Jane"),
-                discord.Game(name="King's R*pe"),
+                discord.Game(name="lewd jane"),
+                discord.Game(name="king's r*pe"),
                 discord.Activity(
                     type=discord.ActivityType.watching,
-                    name="King's Raid girl's pantsu | /anime",
+                    name="kr girl's pantsu",
                 ),
                 discord.Activity(
                     type=discord.ActivityType.listening,
-                    name="King's Raid girl's lewd voices | /voice",
+                    name="kr girl's lewd voices",
                 ),
             ]
         )
@@ -65,7 +64,6 @@ class EpisBot(commands.Bot):
     async def setup_hook(self):
         DATA.mkdir(exist_ok=True)
         await self.load_extensions()
-        self.write_commands()
         self.change_status.start()
 
     async def get_context(
@@ -99,15 +97,6 @@ class EpisBot(commands.Bot):
         self.extension_failures = failures
         return failures
 
-    def write_commands(self):
-        names = set()
-        for command in self.commands:
-            names.add(command.name)
-            names.update(command.aliases)
-        (DATA / "commands").write_text(
-            "\n".join(sorted(names)) + "\n", encoding="utf-8"
-        )
-
     @tasks.loop(minutes=1)
     async def change_status(self):
         await self.change_presence(activity=next(self.statuses))
@@ -131,12 +120,8 @@ def create_bot():
     @bot.command()
     @commands.is_owner()
     async def fetch(ctx, action=None):
-        if action in ("command", "commands"):
-            bot.write_commands()
-            await ctx.send("Fetched all commands.")
-        elif action in ("extension", "extensions"):
+        if action in ("extension", "extensions"):
             failures = await bot.load_extensions()
-            bot.write_commands()
             await ctx.send(
                 "Failed to load: " + ", ".join(failures)
                 if failures
@@ -146,7 +131,7 @@ def create_bot():
             await bot.reload_extension("cogs.bot.file_handle")
             await ctx.send("Reloaded `file_handle.py`.")
         else:
-            await ctx.send("Usage: `fetch <commands/extensions/file>`")
+            await ctx.send("Usage: `fetch <extensions/file>`")
 
     @bot.command(name="sync")
     @commands.is_owner()

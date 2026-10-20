@@ -3,6 +3,7 @@
 import html
 import re
 from datetime import UTC, datetime
+from urllib.parse import urlsplit
 
 import aiohttp
 import discord
@@ -17,24 +18,105 @@ NEWS_API = "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/"
 OFFICIAL_FEED = "steam_community_announcements"
 
 
-def news_post(item):
-    text = item.get("contents", "")
-    text = re.sub(r"\[img\].*?\[/img\]", "", text, flags=re.IGNORECASE | re.DOTALL)
+def web_url(value):
+    value = html.unescape(value).strip().strip("\"'")
+    value = value.replace(
+        "{STEAM_CLAN_IMAGE}", "https://clan.akamai.steamstatic.com/images"
+    )
+    try:
+        parsed = urlsplit(value)
+    except ValueError:
+        return None
+    return value if parsed.scheme in ("http", "https") and parsed.netloc else None
+
+
+def steam_content(contents):
+    """Convert Steam BBCode to Discord text and extract its first usable image."""
+    text = html.unescape(contents).replace("\xa0", " ")
+    image = None
+
+    def extract_image(match):
+        nonlocal image
+        attributes, body = match.groups()
+        source = re.search(r"""\bsrc\s*=\s*("[^"]*"|'[^']*'|[^\s\]]+)""", attributes)
+        candidate = web_url(source.group(1) if source else body)
+        if candidate and image is None:
+            image = candidate
+        return ""
+
     text = re.sub(
-        r"\[url=([^\]]+)\](.*?)\[/url\]",
-        r"\2 (\1)",
+        r"\[img\b([^\]]*)\](.*?)\[/img\]",
+        extract_image,
         text,
         flags=re.IGNORECASE | re.DOTALL,
     )
+    text = re.sub(r"<br\s*/?>", "\n", text, flags=re.IGNORECASE)
+    text = re.sub(r"</p\s*>", "\n\n", text, flags=re.IGNORECASE)
+    text = re.sub(r"<[^>]+>", "", text)
+
+    def link(match):
+        target, label = match.groups()
+        target = web_url(target)
+        label = label.strip()
+        if not target:
+            return label
+        if label == target:
+            return target
+        target = target.replace("(", "%28").replace(")", "%29")
+        return f"[{label}]({target})"
+
     text = re.sub(
-        r"\[/?(?:h[1-6]|b|i|u|list|olist|\*|quote|code|previewyoutube)(?:=[^\]]*)?\]",
+        r"\[url=([^\]]+)\](.*?)\[/url\]",
+        link,
+        text,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+
+    def emphasis(match, marker):
+        body = match.group(1)
+        if not body.strip():
+            return body
+        leading = body[: len(body) - len(body.lstrip())]
+        trailing = body[len(body.rstrip()) :]
+        return leading + marker + body.strip() + marker + trailing
+
+    for tag, marker in (("b", "**"), ("i", "*"), ("u", "__"), ("strike", "~~")):
+        text = re.sub(
+            rf"\[{tag}\](.*?)\[/{tag}\]",
+            lambda match, marker=marker: emphasis(match, marker),
+            text,
+            flags=re.IGNORECASE | re.DOTALL,
+        )
+    text = re.sub(
+        r"\[h[1-6]\](.*?)\[/h[1-6]\]",
+        lambda match: "\n\n**" + match.group(1).strip() + "**\n\n",
+        text,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    text = re.sub(r"\[\*\]\s*(?:\[p\])?", "\n- ", text, flags=re.IGNORECASE)
+    text = re.sub(
+        r"\[/?(?:p|list|olist|tr|table|quote)\b[^\]]*\]|\[hr\s*/?\]",
+        "\n\n",
+        text,
+        flags=re.IGNORECASE,
+    )
+    text = re.sub(r"\[/(?:td|th)\]", " | ", text, flags=re.IGNORECASE)
+    # Only remove known formatting tags; bracketed article text such as [CBT] stays.
+    text = re.sub(
+        r"\[/?(?:b|i|u|strike|h[1-6]|td|th|\*|code|previewyoutube|url)\b[^\]]*\]|\[/\*\]",
         "",
         text,
         flags=re.IGNORECASE,
     )
-    text = html.unescape(re.sub(r"<[^>]+>", "", text)).strip()
+    text = re.sub(r"[ \t]+\n", "\n", text)
+    text = re.sub(r"\n{3,}", "\n\n", text).strip()
+    return text, image
+
+
+def news_post(item):
+    text, image = steam_content(item.get("contents", ""))
     embed = discord.Embed(
-        title=item["title"][:256],
+        title=html.unescape(item["title"])[:256],
         url=item["url"],
         description=text[:3800]
         + (
@@ -49,6 +131,8 @@ def news_post(item):
         name="KING's RAID RE:VERSE", url=f"https://store.steampowered.com/app/{APP_ID}/"
     )
     embed.set_footer(text="Steam • Official announcements")
+    if image:
+        embed.set_image(url=image)
     return Announcement(str(item["gid"]), embed)
 
 

@@ -193,7 +193,7 @@ class Info(commands.Cog):
         embed = discord.Embed(
             title="Bot owner Commands",
             description=(
-                "List of commands:\n`fetch <command/extension/file>`: Fetch commands/extensions/files.\n`load <extension/file>`: Load a(n) extension/file.\n"
+                "List of commands:\n`fetch <extension/file>`: Reload extensions/files.\n`load <extension/file>`: Load a(n) extension/file.\n"
                 + "`unload <extension/file>`: Unload a(n) extension/file.\n`reload <extension/file>`: Reload a(n) extension/file.\n`remove <command>`: Remove a command.\n"
                 + "`sync guild`: Publish commands to this test server.\n`sync global`: Publish commands globally."
             ),

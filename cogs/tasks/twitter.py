@@ -68,7 +68,31 @@ class Twitter(AnnouncementFeed):
         return response.data or []
 
     async def fetch_posts(self):
-        tweets = await asyncio.to_thread(self.fetch_tweets)
+        try:
+            tweets = await asyncio.to_thread(self.fetch_tweets)
+        except tweepy.Forbidden as error:
+            if "attached to a project" in str(error).lower():
+                message = (
+                    "X rejected the app's API access. In the X developer portal, "
+                    "attach the app to a Project and confirm it has user lookup "
+                    "and timeline access. Set BEARER_TOKEN to that app's Bearer "
+                    "Token, then restart the bot."
+                )
+            else:
+                message = (
+                    "X denied access (403). Check the developer app's API access "
+                    "and that BEARER_TOKEN belongs to that app."
+                )
+            raise commands.BadArgument(message) from error
+        except tweepy.Unauthorized as error:
+            raise commands.BadArgument(
+                "X rejected BEARER_TOKEN (401). Set a valid app Bearer Token "
+                "and restart the bot."
+            ) from error
+        except tweepy.TooManyRequests as error:
+            raise commands.BadArgument(
+                "X's API rate limit has been reached. Please try again later."
+            ) from error
         posts = []
         for tweet in sorted(tweets, key=lambda item: int(item.id)):
             embed = discord.Embed(
