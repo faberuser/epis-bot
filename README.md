@@ -35,6 +35,7 @@ All settings come from environment variables. For local development, `settings.p
 | `DISCORD_TOKEN`      | Required Discord bot token.                                                                                                                              |
 | `PREFIX`             | JSON list of default prefixes; defaults to `["/", "."]`. In `.env`, use `PREFIX='["/", "."]'`. Per-server overrides in `data/prefixes.json` still apply. |
 | `BEARER_TOKEN`       | Optional X API bearer token with user lookup and timeline access for `kingsraid_msg`. Blank disables Twitter polling. Steam needs no API key.            |
+| `STEAM_PROXY_URL` | Optional HTTP proxy for Steam announcements, e.g. `http://192.168.1.9:1080`. Blank connects directly. Uses the HTTP mode of proxies that support both HTTP and SOCKS5. |
 | `KR_DEFAULT_VERSION` | Default game dataset, `legacy`. Override per command with the slash `version` option or prefix `--version <name>` or `-V <name>`.                        |
 | `KR_LANGUAGE`        | Default game-data language, `en`, for users without a saved preference.                                                                                  |
 | `KRE_GUILD_ID`       | Guide source server ID, as an integer. Defaults to `0` (disabled).                                                                                       |

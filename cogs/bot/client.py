@@ -167,7 +167,6 @@ class Info(commands.Cog):
                 "`softcap <value>`: Shows a Softcap table.\n"
                 "__**Other**__\n"
                 "`guide <content>/list/search <content>`: Shows guides from KR Encyclopedia.\n"
-                "`sauce <image URL/message URL/attachments>`: Finds the source of an image.\n"
                 "`choose <first option | second option | ...>`: Randomly picks from the given list.\n"
                 "`versions`: Lists the available game datasets.\n"
                 "`language <code/reset>`: Saves your preferred game-data language.\n"

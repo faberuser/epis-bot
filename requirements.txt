@@ -1,11 +1,8 @@
 discord.py==2.7.1
 requests
-cloudscraper==1.2.71
-lxml
 aiohttp
 tweepy
 py-expression-eval
-beautifulsoup4
 beautifultable==1.0.0
 fuzzywuzzy
 python-dotenv

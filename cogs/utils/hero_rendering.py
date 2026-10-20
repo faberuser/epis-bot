@@ -11,45 +11,23 @@ class HeroRendering:
     get_color = staticmethod(get_color)
 
     def get_info(self, obj, data, boss=None):
-        clr = self.get_color(data["info"]["class"].lower())
-        des = ""
-        if boss:
-            for info in data["info"]:
-                if info == "thumbnail" or info == "class":
-                    continue
-                else:
-                    des += (
-                        "**"
-                        + info.replace("_", " ").title()
-                        + "**: "
-                        + data["info"][info]
-                        + "\n"
-                    )
-        else:
-            for info in data["info"]:
-                if info == "thumbnail":
-                    continue
-                elif info == "story":
-                    des += "\n**Story**" + "\n" + data["info"][info]
-                elif info == "story_":
-                    pass
-                else:
-                    des += (
-                        "**"
-                        + info.replace("_", " ").title()
-                        + "**: "
-                        + data["info"][info]
-                        + "\n"
-                    )
+        info = data["info"]
+        hidden_fields = {"thumbnail", "class"} if boss else {"thumbnail", "story_"}
+        sections = []
+        for key, value in info.items():
+            if key in hidden_fields:
+                continue
+            if key == "story" and not boss:
+                sections.append(f"\n**Story**\n{value}")
+            else:
+                sections.append(f"**{key.replace('_', ' ').title()}**: {value}\n")
         embed = discord.Embed(
-            title=obj + " Info",
-            description=des,
-            colour=clr,
+            title=f"{obj} Info",
+            description="".join(sections),
+            colour=self.get_color(info["class"].lower()),
         )
-        name = f"{obj}_ico.png"
-        if " " in name:
-            name = name.replace(" ", "_")
-        file = asset(data["info"]["thumbnail"], filename=name)
+        name = f"{obj}_ico.png".replace(" ", "_")
+        file = asset(info["thumbnail"], filename=name)
         embed.set_thumbnail(url=f"attachment://{name}")
         return embed, file
 
@@ -81,88 +59,76 @@ class HeroRendering:
         return embeds
 
     def get_books(self, obj, data):
-        clr = self.get_color(data["info"]["class"].lower())
-        des = ""
-        for book in data["books"]:
-            des += "**Skill " + book + "**\n"
-            for upgrade in data["books"][book]:
-                des += (
-                    "[UPGRADE " + upgrade + "] " + data["books"][book][upgrade] + "\n"
-                )
-            des += "\n"
-        embed = discord.Embed(
-            title=obj + " Books",
-            description=des,
-            colour=clr,
+        sections = []
+        for skill, upgrades in data["books"].items():
+            details = "".join(
+                f"[UPGRADE {level}] {effect}\n" for level, effect in upgrades.items()
+            )
+            sections.append(f"**Skill {skill}**\n{details}\n")
+        return discord.Embed(
+            title=f"{obj} Books",
+            description="".join(sections),
+            colour=self.get_color(data["info"]["class"].lower()),
         )
-        return embed
 
     def get_class_perk(self, cls, clr, version=None, language=None):
         dataset = GameData(version, language)
-        des = "**T1 Perks**\n"
-        t1 = dataset.table("classes/General.json")["perks"]["t1"]
-        for perk in t1:
-            des += "**" + perk + "**\n" + t1[perk] + "\n"
-        des += "\n**T2 Perks**\n"
-        t2 = dataset.table(f"classes/{cls}.json")["perks"]["t2"]
-        for perk in t2:
-            des += "**" + perk + "**\n" + t2[perk] + "\n"
+        tiers = (
+            ("T1", dataset.table("classes/General.json")["perks"]["t1"]),
+            ("T2", dataset.table(f"classes/{cls}.json")["perks"]["t2"]),
+        )
+        sections = []
+        for tier, perks in tiers:
+            details = "".join(
+                f"**{name}**\n{effect}\n" for name, effect in perks.items()
+            )
+            sections.append(f"**{tier} Perks**\n{details}")
+        description = "\n".join(sections)
         embed = discord.Embed(
-            title=cls + " Perks",
-            description=des,
+            title=f"{cls} Perks",
+            description=description,
             colour=clr,
         )
-        return embed, des
+        return embed, description
 
     def get_uw(self, obj, data, stars: int | None = None):
-        clr = self.get_color(data["info"]["class"].lower())
-        des = ""
-        des = data["uw"]["name"] + "\n\n" + data["uw"]["description"] + "\n\n"
+        weapon = data["uw"]
+        description = f"{weapon['name']}\n\n{weapon['description']}\n\n"
         if stars is not None:
-            des = "☆☆☆☆☆".replace("☆", "★", stars) + "\n" + des
-            for value in data["uw"]["value"]:
-                des = des.replace(
-                    f"({value})", data["uw"]["value"][value][str(stars)], 1
-                )
+            description = "☆☆☆☆☆".replace("☆", "★", stars) + "\n" + description
+            for token, values in weapon["value"].items():
+                description = description.replace(f"({token})", values[str(stars)], 1)
         else:
-            for value in data["uw"]["value"]:
-                des += "(" + value + "): "
-                for vl in data["uw"]["value"][value]:
-                    des += data["uw"]["value"][value][vl] + ", "
-                des = des[:-2] + "\n"
+            for token, values in weapon["value"].items():
+                suffix = ": " + ", ".join(values.values()) if values else ""
+                description += f"({token}){suffix}\n"
         embed = discord.Embed(
-            title=obj + " UW",
-            description=des,
-            colour=clr,
+            title=f"{obj} UW",
+            description=description,
+            colour=self.get_color(data["info"]["class"].lower()),
         )
-        name = f"{obj}_uw.png"
-        if " " in name:
-            name = name.replace(" ", "_")
-        file = asset(data["uw"]["thumbnail"], filename=name)
+        name = f"{obj}_uw.png".replace(" ", "_")
+        file = asset(weapon["thumbnail"], filename=name)
         embed.set_thumbnail(url=f"attachment://{name}")
         return embed, file
 
     def get_sw(self, obj, data):
-        clr = self.get_color(data["info"]["class"].lower())
-        des = ""
-        des = (
-            "**Requirement**: "
-            + data["sw"]["requirement"]
-            + "\n\n"
-            + data["sw"]["description"]
+        weapon = data["sw"]
+        description = (
+            f"**Requirement**: {weapon['requirement']}\n\n{weapon['description']}"
         )
-        for adv in data["sw"]["advancement"]:
-            des += "\n\n**Advancement " + adv + "**\n" + data["sw"]["advancement"][adv]
+        for level, effect in weapon["advancement"].items():
+            description += f"\n\n**Advancement {level}**\n{effect}"
         embed = discord.Embed(
-            title=obj + " SW",
-            description=des,
-            colour=clr,
+            title=f"{obj} SW",
+            description=description,
+            colour=self.get_color(data["info"]["class"].lower()),
         )
         embed.set_footer(
-            text=f"Cooldown: {data['sw']['cooldown']} | Uses: {data['sw']['uses']}"
+            text=f"Cooldown: {weapon['cooldown']} | Uses: {weapon['uses']}"
         )
         file = None
-        thumbnail = data["sw"].get("thumbnail")
+        thumbnail = weapon.get("thumbnail")
         if thumbnail:
             name = f"{obj}_sw.png".replace(" ", "_")
             file = asset(thumbnail, filename=name)
@@ -171,14 +137,11 @@ class HeroRendering:
         return embed, file
 
     def get_sa_vs(self, obj, data, cate):
-        clr = self.get_color(data["info"]["class"].lower())
         embed = discord.Embed(
-            title=obj + " " + cate.title(),
-            colour=clr,
+            title=f"{obj} {cate.title()}",
+            colour=self.get_color(data["info"]["class"].lower()),
         )
-        name = f"{obj}_{cate}.png"
-        if " " in name:
-            name = name.replace(" ", "_")
+        name = f"{obj}_{cate}.png".replace(" ", "_")
         file = asset(data[cate], filename=name)
         embed.set_image(url=f"attachment://{name}")
         return embed, file

@@ -64,6 +64,7 @@ def _categories():
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN", "").strip()
 PREFIX = _prefixes()
 BEARER_TOKEN = os.getenv("BEARER_TOKEN", "").strip()
+STEAM_PROXY_URL = os.getenv("STEAM_PROXY_URL", "").strip() or None
 KR_DEFAULT_VERSION = os.getenv("KR_DEFAULT_VERSION", "legacy").strip() or "legacy"
 KR_LANGUAGE = os.getenv("KR_LANGUAGE", "en").strip() or "en"
 KRE_GUILD_ID = _guild_id()

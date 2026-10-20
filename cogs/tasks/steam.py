@@ -8,6 +8,8 @@ import aiohttp
 import discord
 from discord.ext import commands
 
+import settings
+
 from ..utils.announcement_feed import DATA_ROOT, Announcement, AnnouncementFeed
 
 APP_ID = 3689540
@@ -63,6 +65,7 @@ class Steam(AnnouncementFeed):
             aiohttp.ClientSession(timeout=aiohttp.ClientTimeout(total=20)) as session,
             session.get(
                 NEWS_API,
+                proxy=settings.STEAM_PROXY_URL,
                 params={
                     "appid": APP_ID,
                     "count": 100,
