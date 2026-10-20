@@ -95,6 +95,12 @@ class Steam(AnnouncementFeed):
     async def steam(self, ctx):
         await self.status(ctx)
 
+    @steam.command(name="latest", description="Show the latest Steam announcement")
+    @commands.guild_only()
+    @commands.cooldown(1, 30, commands.BucketType.user)
+    async def steam_latest(self, ctx):
+        await self.latest(ctx)
+
     @steam.command(name="status", description="Show this channel's Steam subscription")
     @commands.guild_only()
     async def steam_status(self, ctx):

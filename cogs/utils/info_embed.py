@@ -207,19 +207,19 @@ class Info_Embed:
             if cmd in ("Announcements", "GitHub"):
                 embed.add_field(
                     name="GitHub",
-                    value="`github on/off/status`: Follow the branch configured by GITHUB_REPO and GITHUB_BRANCH. Public repositories need no token. The first check skips existing commits.",
+                    value="`github on/off/status/latest`: Follow the branch configured by GITHUB_REPO and GITHUB_BRANCH. Public repositories need no token. The first check skips existing commits.",
                     inline=False,
                 )
             if cmd in ("Announcements", "Twitter"):
                 embed.add_field(
                     name="Twitter / X",
-                    value="`twitter on/off/status`: Follow [@kingsraid_msg](https://x.com/kingsraid_msg) using the X API. Requires BEARER_TOKEN with user lookup and timeline access.",
+                    value="`twitter on/off/status/latest`: Follow [@kingsraid_msg](https://x.com/kingsraid_msg) using the X API. Requires BEARER_TOKEN with user lookup and timeline access.",
                     inline=False,
                 )
             if cmd in ("Announcements", "Steam"):
                 embed.add_field(
                     name="Steam",
-                    value="`steam on/off/status`: Follow [KING's RAID RE:VERSE](https://store.steampowered.com/app/3689540/). No Steam key required.",
+                    value="`steam on/off/status/latest`: Follow [KING's RAID RE:VERSE](https://store.steampowered.com/app/3689540/). No Steam key required.",
                     inline=False,
                 )
             return embed

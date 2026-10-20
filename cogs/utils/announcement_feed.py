@@ -137,6 +137,26 @@ class AnnouncementFeed(commands.Cog):
             f"{self.label} announcements are {'on' if active else 'off'} for this channel."
         )
 
+    async def latest(self, ctx):
+        if not self.enabled:
+            raise commands.BadArgument(self.disabled_message)
+        await ctx.defer()
+        try:
+            async with self.lock:
+                posts = await self.fetch_posts()
+        except Exception as error:
+            log.exception("%s latest item lookup failed", self.label)
+            raise commands.BadArgument(
+                f"Could not fetch the latest {self.label} item. Please try again later."
+            ) from error
+        if not posts:
+            await ctx.send(f"No items are available from {self.label} yet.")
+            return
+        await ctx.send(
+            embed=posts[-1].embed,
+            allowed_mentions=discord.AllowedMentions.none(),
+        )
+
     async def status(self, ctx):
         state = "on" if self.channels.get(str(ctx.channel.id)) else "off"
         disabled = f" {self.disabled_message}" if not self.enabled else ""

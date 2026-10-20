@@ -90,6 +90,12 @@ class Twitter(AnnouncementFeed):
     async def twitter(self, ctx):
         await self.status(ctx)
 
+    @twitter.command(name="latest", description="Show the latest King's Raid tweet")
+    @commands.guild_only()
+    @commands.cooldown(1, 30, commands.BucketType.user)
+    async def twitter_latest(self, ctx):
+        await self.latest(ctx)
+
     @twitter.command(
         name="status", description="Show this channel's Twitter subscription"
     )

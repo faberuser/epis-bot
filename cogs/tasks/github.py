@@ -91,6 +91,12 @@ class GitHub(AnnouncementFeed):
     async def github(self, ctx):
         await self.status(ctx)
 
+    @github.command(name="latest", description="Show the latest tracked branch commit")
+    @commands.guild_only()
+    @commands.cooldown(1, 30, commands.BucketType.user)
+    async def github_latest(self, ctx):
+        await self.latest(ctx)
+
     @github.command(
         name="status", description="Show this channel's GitHub subscription"
     )
