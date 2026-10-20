@@ -4,32 +4,30 @@ from discord.ext import commands
 
 from ..utils import paginator, info_embed
 from config import config
+from ..utils.routes import RouteCog, add_routes
 
-client = discord.Client()
 
 
-class Info(commands.Cog):
+class Info(RouteCog):
     def __init__(self, client):
         self.client = client
         self.menus = paginator.Paginator(self.client)
-        invite_ = discord.utils.oauth_url(self.client.user.id, discord.Permissions(permissions=322624))
-        self.invite_url = invite_[:-19] + '%20applications.commands' + invite_[-19:]
-        with open('./data/time', 'r') as f:
-            self.launch_time = datetime.strptime(f.read(), '%Y-%m-%d %H:%M:%S.%f')
+        self.invite_url = discord.utils.oauth_url(
+            self.client.user.id,
+            permissions=discord.Permissions(permissions=322624),
+            scopes=("bot", "applications.commands"),
+        )
+        self.launch_time = self.client.launch_time
         self.info_embed_ = info_embed.Info_Embed()
-        self.discord_bot_list = config.DBL_URL
         self.donate = config.donate
-        self.vote_url = config.DBL_VOTE
         self.policy = config.POLICY
 
 
-    @commands.command(aliases=["h", "command", "commands", "cmd"]) # help command
-    async def help(self, ctx, morehelp=None):
+    @commands.hybrid_command(aliases=["h", "command", "commands", "cmd"], description="Show bot help")
+    async def help(self, ctx: commands.Context, morehelp: str = None):
         moreinfo = ''
         if self.policy != '':
             moreinfo += f'See my [Policy]({self.policy})\n'
-        if self.discord_bot_list != '':
-            moreinfo += f'More at [Discord Bot List]({self.discord_bot_list})\n'
         if self.donate != '':
             moreinfo += f'Support me on [Donate]({self.donate})\n'
         if morehelp is None:
@@ -50,7 +48,7 @@ class Info(commands.Cog):
                 colour=config.embed_color,
             )
             embed1.set_author(name=self.client.user.name+" Bot Help",
-                            icon_url=self.client.user.avatar_url)
+                            icon_url=self.client.user.display_avatar.url)
             embed1.set_footer(
                 text="Page 1/2 | For more aliases/syntax type command only.")
 
@@ -58,22 +56,21 @@ class Info(commands.Cog):
                 title=f"__Commands start with {config.PREFIX}__",
                 description=(moreinfo+
                 "__**Info**__\n"+
-                "`userinfo` `avatar` `serverinfo` `invite` `vote` `bot` `news` `ping` `uptime` `donate` `feedback` `help`\n"+
+                "`userinfo` `avatar` `serverinfo` `invite` `bot` `news` `ping` `uptime` `donate` `help`\n"+
                 "__**Other**__\n"+
                 "`calc <operation>`: Calculates something.\n`softcap <value>`: Shows a Softcap table.\n`tm <boss/gear> <hero_class/leave_blank>`: Shows 4 pieces of Technomagic Gear effect.\n"+
-                "`guide <content>/list/'search <content>'`: Shows Guide(s) from [KR Encyclopedia](https://discord.gg/Y6fynAy).\n`fanart <waifu/husbando>`: Random King Raid fanart.\n"+
+                "`guide <content>/list/'search <content>'`: Shows Guide(s) from [KR Encyclopedia](https://discord.gg/Y6fynAy).\n"+
                 "`sauce <url(image/message)/attachments>`: Find source of an image (Use command without arguments to find from a newest message has image in 50 newest messages).\n"+
-                "`macro`: King Raid Emulator LoH Macro.\n`mail`: Vespa Mails.\n`timezone`: Shows servers time zone.\n`choose <first option | second option | ...>`: Random pick from the given list.\n"+
-                f"`@{self.client.user.name} <message>`: Chat with {self.client.user.name} (works good with full sentence and no acronym or weird words)."),
+                "`macro`: King Raid Emulator LoH Macro.\n`mail`: Vespa Mails.\n`timezone`: Shows servers time zone.\n`choose <first option | second option | ...>`: Random pick from the given list.\n"),
                 colour=config.embed_color,
             )
             embed2.set_author(name=self.client.user.name+" Bot Help",
-                            icon_url=self.client.user.avatar_url)
+                            icon_url=self.client.user.display_avatar.url)
             embed2.set_footer(
                 text="Page 2/2 | For more aliases/syntax type command only.")
 
             embeds = [embed1, embed2]
-            await self.menus.pag(message=ctx.message, embeds=embeds)
+            await self.menus.pag(message=ctx, embeds=embeds)
 
         elif morehelp is not None: # args after help command
 
@@ -91,9 +88,6 @@ class Info(commands.Cog):
                 embed = self.info_embed_.info_embed('Artifacts')
                 await ctx.reply(embed=embed)
 
-            elif morehelp.lower().startswith("fanart"):
-                embed = self.info_embed_.info_embed('Fanart')
-                await ctx.reply(embed=embed)
 
             elif morehelp.lower().startswith("math") or morehelp.lower().startswith("calc"):
                 embed = self.info_embed_.info_embed('Math')
@@ -198,24 +192,13 @@ class Info(commands.Cog):
                 )
                 await ctx.reply(embed=embed)
 
-            elif morehelp.lower().startswith("feedback") or morehelp.lower().startswith("report"):
-                embed = self.info_embed_.info_embed('Feedback')
-                await ctx.reply(embed=embed)
-
-            elif morehelp.startswith(f"{self.client.user.mention}"):
-                embed = discord.Embed(
-                    title='Chat Module',
-                    description=f'Syntax:\n`{self.client.user.mention} <message>`: Chat with Epis (works good with full sentence and no acronym or weird words).',
-                    colour=config.embed_color,
-                )
-                await ctx.reply(embed=embed)
 
             else:
                 await ctx.reply(
                     f":x: No help **{morehelp}** found. <:broken:652813264778166278>"
                 )
 
-    @commands.command(aliases=["bot", "client", "about"])
+    @commands.hybrid_command(description="In4 information", aliases=["bot", "client", "about"])
     async def in4(self, ctx): # bot info command
         days, hours, minutes, seconds = self.time()
         embed = discord.Embed(
@@ -256,14 +239,12 @@ class Info(commands.Cog):
             useful_urls = f.read()
             useful_urls = useful_urls.replace('{self.client.user.name}', f'{self.client.user.name}')
             useful_urls = useful_urls.replace('{self.invite_url}', f'{self.invite_url}')
-            useful_urls = useful_urls.replace('{self.discord_bot_list}', f'{self.discord_bot_list}')
         embed.add_field(
             name="<:grey_circle:652813264824041492> Useful URL",
             value=useful_urls
         )
-        embed.set_author(name=self.client.user.name+" Bot", icon_url=self.client.user.avatar_url)
-        embed.set_thumbnail(url=self.client.user.avatar_url)
-        embed.set_footer(text=f"Any feedback or idea please DM me on Discord or use 'feedback'.")
+        embed.set_author(name=self.client.user.name+" Bot", icon_url=self.client.user.display_avatar.url)
+        embed.set_thumbnail(url=self.client.user.display_avatar.url)
         await ctx.reply(embed=embed)
 
     @commands.command(aliases=["owner", "botowner"])
@@ -273,14 +254,13 @@ class Info(commands.Cog):
             title='Bot owner Commands',
             description=(f"List of commands:\n`fetch <command/extension/file>`: Fetch commands/extensions/files.\n`load <extension/file>`: Load a(n) extension/file.\n"+
                 "`unload <extension/file>`: Unload a(n) extension/file.\n`reload <extension/file>`: Reload a(n) extension/file.\n`remove <command>`: Remove a command.\n"+
-                "`reply <user_id/case> <send:True/False> <message>`: Reply to a feedback/report.\n`cases <all/not>`: Shows a table of all/not reply cases.\n"+
                 "`news update <content>`: Update What's new board.\n"+
-                "`slash-load <extension/file>`: Load a Slash extension/file.\n`slash-unload <extension/file>`: Unload a Slash extension/file.\n`slash-reload <extension/file>`: Reload a Slash extension/file."),
+                "`sync guild`: Publish commands to this test server.\n`sync global`: Publish commands globally."),
             colour=config.embed_color,
         )
         await ctx.reply(embed=embed)
 
-    @commands.command()
+    @commands.hybrid_command(description="Uptime information", )
     async def uptime(self, ctx): # uptime command
         days, hours, minutes, seconds = self.time()
         embed = discord.Embed(
@@ -289,7 +269,7 @@ class Info(commands.Cog):
         )
         await ctx.reply(embed=embed)
 
-    @commands.command(aliases=['new', 'news']) # news command (can update with 'news update')
+    @commands.hybrid_command(description="Update information", aliases=['new', 'news']) # news command (can update with 'news update')
     async def update(self, ctx, update:str=None, *, text:str=None):
         embed = discord.Embed(
             title="What's new",
@@ -303,17 +283,17 @@ class Info(commands.Cog):
             with open('./data/news', 'w') as f:
                 f.write(f'{text}\nLast update: {datetime.utcnow().strftime("%b %d %Y")}')
 
-    @commands.command(aliases=["in", "inv"]) # invite command
+    @commands.hybrid_command(description="Invite information", aliases=["in", "inv"]) # invite command
     async def invite(self, ctx): 
         embed = discord.Embed(
             title="Invite me!",
             url=self.invite_url,
             colour=config.embed_color,
         )
-        embed.set_thumbnail(url=self.client.user.avatar_url)
+        embed.set_thumbnail(url=self.client.user.display_avatar.url)
         await ctx.reply(embed=embed)
 
-    @commands.command(aliases=["pong"]) # ping from server to API
+    @commands.hybrid_command(description="Ping information", aliases=["pong"]) # ping from server to API
     async def ping(self, ctx):
         embed = discord.Embed(
             title=f"Ping: {round(self.client.latency * 1000)}ms",
@@ -321,27 +301,19 @@ class Info(commands.Cog):
         )
         await ctx.reply(embed=embed)
 
-    @commands.command() # vote command
-    async def vote(self, ctx):
-        embed = discord.Embed(
-            title=f"Vote for me on Discord Bot List!",
-            url=self.vote_url,
-            colour=config.embed_color,
-        )
-        embed.set_thumbnail(url=self.client.user.avatar_url)
-        await ctx.reply(embed=embed)
 
-    @commands.command(aliases=['support', 'donator', 'supporter', 'donor']) # donate command
+    @commands.hybrid_command(description="Donate information", aliases=['support', 'donator', 'supporter', 'donor']) # donate command
     async def donate(self, ctx):
         embed = discord.Embed(
             title=f"Support me!",
             url=self.donate,
             colour=config.embed_color,
         )
-        embed.set_thumbnail(url=self.client.user.avatar_url)
+        embed.set_thumbnail(url=self.client.user.display_avatar.url)
         await ctx.reply(embed=embed)
 
-    @commands.command(aliases=["ui", "user"], pass_context=True) # get userinfo from self or a server member
+    @commands.hybrid_command(description="Userinfo information", aliases=["ui", "user"], pass_context=True) # get userinfo from self or a server member
+    @commands.guild_only()
     async def userinfo(self, ctx, member: discord.Member = None):
         if member is not None:
             au = member
@@ -350,8 +322,8 @@ class Info(commands.Cog):
         roles = [role for role in au.roles]
 
         embed = discord.Embed(color=au.color)
-        embed.set_author(name=f"{au}", icon_url=au.avatar_url)
-        embed.set_image(url=au.avatar_url)
+        embed.set_author(name=f"{au}", icon_url=au.display_avatar.url)
+        embed.set_image(url=au.display_avatar.url)
         embed.add_field(
             name="Joined at:",
             value=au.joined_at.strftime("%A, %d. %B %Y at %H:%M:%S"))
@@ -387,22 +359,23 @@ class Info(commands.Cog):
         embed.add_field(name="Top role:", value=au.top_role.mention)
         embed.add_field(name="Bot ?", value=au.bot)
         embed.set_footer(text=f"Requested by: {ctx.author}",
-                         icon_url=ctx.author.avatar_url)
+                         icon_url=ctx.author.display_avatar.url)
         await ctx.reply(embed=embed)
 
-    @commands.command(aliases=["avt", "ava"], pass_context=True) # get avatar from self or a server member
+    @commands.hybrid_command(description="Avatar information", aliases=["avt", "ava"], pass_context=True) # get avatar from self or a server member
     async def avatar(self, ctx, member:discord.Member = None):
         if member is not None:
             au = member
         if member is None:
             au = ctx.author
-        url_ = au.avatar_url
+        url_ = au.display_avatar.url
         embed = discord.Embed(title=f"{au}", colour=config.embed_color)
         embed.set_image(url=url_)
-        embed.set_footer(text=f"Requested by: {ctx.author}", icon_url=ctx.author.avatar_url)
+        embed.set_footer(text=f"Requested by: {ctx.author}", icon_url=ctx.author.display_avatar.url)
         msg = await ctx.reply(embed=embed)
 
-    @commands.command(aliases=["si", "server"], pass_context=True) # get server info
+    @commands.hybrid_command(description="Serverinfo information", aliases=["si", "server"], pass_context=True) # get server info
+    @commands.guild_only()
     async def serverinfo(self, ctx):
         roles = [role for role in ctx.guild.roles]
         role_length = len(roles)
@@ -415,13 +388,13 @@ class Info(commands.Cog):
         textchannel = len(ctx.guild.text_channels)
         voicechannel = len(ctx.guild.voice_channels)
         boostguys = len(ctx.guild.premium_subscribers)
-        regional = str(ctx.guild.region)
+        regional = str("Automatic (per voice channel)")
 
         embed = discord.Embed()
         embed.set_author(name=f"{ctx.guild.name}",
-                         icon_url=ctx.guild.icon_url)
-        embed.set_thumbnail(url=ctx.guild.icon_url)
-        embed.set_image(url=ctx.guild.banner_url)
+                         icon_url=ctx.guild.icon.url if ctx.guild.icon else None)
+        embed.set_thumbnail(url=ctx.guild.icon.url if ctx.guild.icon else None)
+        embed.set_image(url=ctx.guild.banner.url if ctx.guild.banner else None)
         embed.add_field(name="Member count:", value=ctx.guild.member_count)
         embed.add_field(name="Member boost:", value=boostguys)
         embed.add_field(name="Nitro Boost level", value=str(ctx.guild.premium_tier))
@@ -436,6 +409,17 @@ class Info(commands.Cog):
         embed.add_field(name="Region:", value=regional)
         embed.add_field(name="Roles:", value=roles[23:])
         await ctx.reply(embed=embed)
+
+    @commands.hybrid_command(description="Show a user's banner")
+    async def banner(self, ctx, member: discord.User = None):
+        await ctx.defer()
+        user = await self.client.fetch_user((member or ctx.author).id)
+        if user.banner is None:
+            await ctx.send("User has no banner.", ephemeral=True)
+            return
+        embed = discord.Embed(title=str(user), colour=config.embed_color)
+        embed.set_image(url=user.banner.url)
+        await ctx.send(embed=embed)
 
     @commands.command(aliases=['prefixes', 'change_prefix', 'change_prefixes']) # change prefix command
     @commands.has_permissions(manage_guild=True)
@@ -511,7 +495,7 @@ class Info(commands.Cog):
                 await ctx.send(f'Added `{prefix}` prefix.')
 
     @commands.Cog.listener() # remove prefix if bot being kicked
-    async def on_guild_remove(guild):
+    async def on_guild_remove(self, guild):
         with open('./data/prefixes.json', 'r') as f:
             prefixes = json.load(f)
         prefixes.pop(str(guild.id))
@@ -519,7 +503,7 @@ class Info(commands.Cog):
             json.dump(prefixes, f, indent=4)
 
     def time(self):
-        delta_uptime = datetime.utcnow() - self.launch_time
+        delta_uptime = discord.utils.utcnow() - self.launch_time
         hours, remainder = divmod(int(delta_uptime.total_seconds()), 3600)
         minutes, seconds = divmod(remainder, 60)
         days, hours = divmod(hours, 24)
@@ -536,5 +520,11 @@ class Info(commands.Cog):
             re.close()
             return news
 
-def setup(client):
-    client.add_cog(Info(client))
+async def setup(client):
+    cog = Info(client)
+    await client.add_cog(cog)
+    add_routes(client, cog, {
+        "bot info": "in4", "bot uptime": "uptime", "bot news": "update", "bot invite": "invite",
+        "bot ping": "ping", "bot donate": "donate", "user info": "userinfo",
+        "user avatar": "avatar", "user banner": "banner", "server info": "serverinfo",
+    })

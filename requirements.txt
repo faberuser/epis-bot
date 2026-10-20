@@ -1,7 +1,6 @@
-discord.py
-discord-py-slash-command
+discord.py==2.7.1
 requests
-cfscrape
+cloudscraper==1.2.71
 lxml
 aiohttp
 tweepy
@@ -9,8 +8,4 @@ py-expression-eval
 beautifulsoup4
 pytz
 beautifultable==1.0.0
-psutil
 fuzzywuzzy
-dblpy
-Pillow
-imagehash

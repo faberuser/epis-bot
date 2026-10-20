@@ -196,12 +196,6 @@ class Info_Embed:
                     "Syntax:\n`twitter <on/off>`: Send new tweets from [KING RAID OFFICIAL](https://twitter.com/Play_KINGsRAID)."),
                 colour=config.embed_color,
             )
-        elif cmd == 'Fanart':
-            embed = discord.Embed(
-                title="Fanart command(s)",
-                description=f"Syntax:\n`fanart <hero/waifu/husbando>`: Shows a random King Raid fanart.",
-                colour=config.embed_color,
-            )
         elif cmd == 'Math':
             embed = discord.Embed(
                 title="Math command(s)",
@@ -213,12 +207,6 @@ class Info_Embed:
                 title="Softcap command(s)",
                 description=(f"Syntax:\n`softcap <value>`\n`soft <value>`\n`cap <value>`\nShows a Softcap table.\n\n"+
                     "*Thanks to [Duckness](https://github.com/duckness) for this command.*"),
-                colour=config.embed_color,
-            )
-        elif cmd == 'Feedback':
-            embed = discord.Embed(
-                title='Feedback/Report command(s)',
-                description=f'Syntax:\n`feedback <text>`\n`report <text>`\nFeedback or report somethings.',
                 colour=config.embed_color,
             )
         return embed

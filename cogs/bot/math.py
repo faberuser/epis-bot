@@ -8,8 +8,8 @@ from beautifultable import BeautifulTable
 
 from ..utils import info_embed
 from config import config
+from ..utils.expression import evaluate, parse_expression
 
-client = discord.Client()
 
 
 class Math(commands.Cog):
@@ -22,13 +22,10 @@ class Math(commands.Cog):
         self.softcaps = sc
 
     async def a_parse(self, expression):
-        loop = asyncio.get_running_loop()
-        with concurrent.futures.ThreadPoolExecutor() as pool:
-            result = await loop.run_in_executor(pool, self.parse, expression)
-        return result
+        return await evaluate(expression)
 
     def parse(self, expression):
-        return self.parser.parse(expression).evaluate({})
+        return parse_expression(expression)
 
     def actualStat(self, statType, istat):
         actual = 0
@@ -162,10 +159,11 @@ class Math(commands.Cog):
 
         return "```\n" + str(table) + "\n```"
 
-    @commands.command( # calculate command
-        aliases=["calc", "math", "calculator", "calculation", "calculations"]
+    @commands.hybrid_command( # calculate command
+        name="calc", aliases=["calculate", "math", "calculation", "calculations"], description="Calculate an expression"
     )
-    async def calculate(self, ctx, *, expression=None):
+    async def calculate(self, ctx, *, operation: str = None):
+        expression = operation
         if expression is None:
             embed = self.info_embed_.info_embed('Math')
             await ctx.reply(embed=embed)
@@ -189,10 +187,11 @@ class Math(commands.Cog):
             except:
                 await ctx.reply("I can't calculate that... <:broken:652813264778166278>")
 
-    @commands.command( # softcap command
-        aliases=["soft", "softs", "cap", "caps", "softcaps", "stat", "stats"]
+    @commands.hybrid_command( # softcap command
+        aliases=["soft", "softs", "cap", "caps", "softcaps", "stat", "stats"], description="Show a softcap table"
     )
-    async def softcap(self, ctx, val: int = None):
+    async def softcap(self, ctx, value: int = None):
+        val = value
         if val is None:
             embed = self.info_embed_.info_embed('Softcap')
 
@@ -214,5 +213,5 @@ class Math(commands.Cog):
             )
 
 
-def setup(client):
-    client.add_cog(Math(client))
+async def setup(client):
+    await client.add_cog(Math(client))

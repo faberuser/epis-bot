@@ -1,8 +1,8 @@
-import discord, tweepy, asyncio, json, logging, psutil, aiohttp, traceback
+import discord, tweepy, asyncio, json, logging, aiohttp, traceback
 from discord.ext import commands, tasks
 from datetime import datetime
 
-from ..utils import info_embed, resource
+from ..utils import info_embed
 from config import config
 
 check = None
@@ -24,7 +24,6 @@ else:
 	# api = tweepy.API(auth)
 	api = tweepy.Client(bearer_token, consumer_key, consumer_secret, access_token, access_token_secret)
 
-client = discord.Client()
 
 
 class Twitter(commands.Cog):
@@ -50,9 +49,11 @@ class Twitter(commands.Cog):
 		except Exception as e:
 			raise (e)
 
+	def cog_unload(self):
+		self.twitter_.cancel()
+
 	@tasks.loop(minutes=1, reconnect=True) # twitter task checking
 	async def twitter_(self):
-		resource.states_('Tweets')
 		try:
 			tweets = self.api.get_users_tweets(1248518690535923712, max_results=10, exclude='replies')
 		except Exception as e:
@@ -149,8 +150,8 @@ class Twitter(commands.Cog):
 		with open(self.channel_path, "w") as f:
 			f.write(json.dumps(self.channels))
 
-def setup(client):
-	client.add_cog(Twitter(client))
+async def setup(client):
+	await client.add_cog(Twitter(client))
 
 
 

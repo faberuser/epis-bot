@@ -1,67 +1,77 @@
 import asyncio
+import logging
+
+import discord
+from discord.ext import commands
+
+
+class PageView(discord.ui.View):
+    """A bounded embed paginator controlled by the command's author."""
+
+    def __init__(self, author_id, embeds, *, timeout=60.0):
+        if not embeds:
+            raise ValueError("The paginator needs at least one embed.")
+        super().__init__(timeout=timeout)
+        self.author_id = author_id
+        self.embeds = list(embeds)
+        self.index = 0
+        self.message = None
+        self.lock = asyncio.Lock()
+        self.update_buttons()
+
+    def update_buttons(self):
+        self.previous.disabled = self.index == 0
+        self.next.disabled = self.index == len(self.embeds) - 1
+
+    async def interaction_check(self, interaction):
+        if interaction.user.id != self.author_id:
+            await interaction.response.send_message(
+                "Only the person who opened this menu can use it.", ephemeral=True
+            )
+            return False
+        return True
+
+    async def turn_page(self, interaction, step):
+        async with self.lock:
+            if self.is_finished():
+                await interaction.response.send_message("This menu has expired.", ephemeral=True)
+                return
+            self.index = max(0, min(self.index + step, len(self.embeds) - 1))
+            self.update_buttons()
+            await interaction.response.edit_message(embed=self.embeds[self.index], view=self)
+
+    @discord.ui.button(emoji="\u25c0", style=discord.ButtonStyle.primary)
+    async def previous(self, interaction: discord.Interaction, button: discord.ui.Button):
+        await self.turn_page(interaction, -1)
+
+    @discord.ui.button(emoji="\u25b6", style=discord.ButtonStyle.primary)
+    async def next(self, interaction: discord.Interaction, button: discord.ui.Button):
+        await self.turn_page(interaction, 1)
+
+    async def on_timeout(self):
+        async with self.lock:
+            for item in self.children:
+                item.disabled = True
+            if self.message is not None:
+                try:
+                    await self.message.edit(view=self)
+                except discord.HTTPException:
+                    logging.getLogger(__name__).debug("Could not disable expired paginator", exc_info=True)
 
 
 class Paginator:
     def __init__(self, client):
         self.client = client
 
-        self.left = "\u25c0"
-        self.right = "\u25b6"
-
-    async def pag(self, message, embeds): # embeds paginator
-        index = 0
-        msg = None
-        action = message.reply
-        while True:
-            res = await action(embed=embeds[index])
-            if res is not None:
-                msg = res
-            l = index != 0
-            r = index != len(embeds) - 1
-            if l:
-                await msg.add_reaction(self.left)
-            if r:
-                await msg.add_reaction(self.right)
-            try:
-                react, user = await self.client.wait_for(
-                    "reaction_add",
-                    check=self.predicate(msg, message, l, r),
-                    timeout=60.0,
-                )
-            except asyncio.TimeoutError:
-                await msg.edit(content="Timeout! Please try again.")
-                try:
-                    await msg.clear_reactions()
-                except:
-                    pass
-                break
-
-            if str(react.emoji) in self.left:
-                index -= 1
-                try:
-                    await msg.remove_reaction(self.left, message.author)
-                except:
-                    pass
-            elif str(react.emoji) in self.right:
-                index += 1
-                try:
-                    await msg.remove_reaction(self.right, message.author)
-                except:
-                    pass
-            action = msg.edit
-
-    def predicate(self, message, msg, l, r):
-        def check(reaction, user):
-            if (
-                reaction.message.id != message.id
-                or user != msg.author
-                or user == self.client.user
-            ):
-                return False
-            if l and str(reaction.emoji) in self.left:
-                return True
-            if r and str(reaction.emoji) in self.right:
-                return True
-            return False
-
-        return check
+    async def pag(self, message, embeds):
+        """Accept either a prefix Message or a prefix/hybrid Context."""
+        send = message.send if isinstance(message, commands.Context) else message.reply
+        if not embeds:
+            return await send("There are no pages to display.")
+        view = PageView(message.author.id, embeds)
+        try:
+            view.message = await send(embed=view.embeds[0], view=view)
+        except Exception:
+            view.stop()
+            raise
+        return view.message

@@ -1,17 +1,18 @@
-import discord, time, json, random, pytz, os, logging, psutil
+import discord, time, json, random, pytz, os, logging
 from discord.ext import commands, tasks
 from datetime import datetime
 
-from ..utils import resource
 from config import config
 
-client = discord.Client()
 
 class Guild_War(commands.Cog):
 
 	def __init__(self, client):
 		self.client = client
 		self.announce.start()
+
+	def cog_unload(self):
+		self.announce.cancel()
 
 	@commands.command(aliases=['gw']) # guild war notifer (kinda scuff)
 	@commands.has_permissions(manage_channels=True)
@@ -284,7 +285,6 @@ class Guild_War(commands.Cog):
 			pass
 		else:
 			return
-		resource.states_('Guild War attack')
 
 		asia = datetime.now(pytz.timezone('Asia/Ho_Chi_Minh'))
 		europe = datetime.now(pytz.timezone('Europe/Bucharest'))
@@ -374,5 +374,5 @@ class Guild_War(commands.Cog):
 	async def before_annoucne(self):
 		await self.client.wait_until_ready()
 
-def setup(client):
-	client.add_cog(Guild_War(client))
+async def setup(client):
+	await client.add_cog(Guild_War(client))

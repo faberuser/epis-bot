@@ -2,10 +2,9 @@ import requests, os, discord, logging, json, datetime, time, asyncio
 from discord.ext import commands, tasks
 from bs4 import BeautifulSoup
 
-from ..utils import resource, info_embed
+from ..utils import info_embed
 from config import config
 
-client = discord.Client()
 
 lg = [
     ['EN', 'https://kr-official.community/en-community/', './data/kr-official.community/en_ids', './data/plug/channels_en.json'],
@@ -265,7 +264,6 @@ class Crawler(commands.Cog):
         await self.checker(lg)
 
     async def checker(self, lg):
-        resource.states_('new posts...')
         for lg_ in lg:
             lang = lg_[0]
             url = lg_[1]
@@ -435,15 +433,18 @@ class Crawler(commands.Cog):
     async def before_checker(self):
         await self.client.wait_until_ready()
 
+    def cog_unload(self):
+        self.checker_.cancel()
+
 
 def write_channels(channel_path, channels):
     with open(channel_path, 'w', encoding='utf-8') as json_data:
         json_data.write(json.dumps(channels))
 
-def setup(client):
-    client.add_cog(EN(client))
-    client.add_cog(JP(client))
-    client.add_cog(TW(client))
+async def setup(client):
+    await client.add_cog(EN(client))
+    await client.add_cog(JP(client))
+    await client.add_cog(TW(client))
     # client.add_cog(TH(client))
     # client.add_cog(VI(client))
-    client.add_cog(Crawler(client))
+    await client.add_cog(Crawler(client))

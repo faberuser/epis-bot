@@ -1,4 +1,4 @@
-import discord, time, os, re, requests, re, cfscrape, asyncio
+import discord, time, os, re, requests, re, cloudscraper, asyncio
 from itertools import cycle
 from lxml.html import fromstring
 from discord.ext import commands
@@ -12,10 +12,11 @@ class Sauce(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @commands.command(aliases=["source"])
+    @commands.hybrid_command(aliases=["source"], description="Find the source of an image or linked message")
     @commands.cooldown(1, 10, commands.BucketType.user)
-    async def sauce(self, ctx):
-        await self.replyLinks(ctx, saucenao=True, yandex=True, iqdb=True, iqdb3d=True, google=True, tineye=True, tracemoe=True, ascii2d=True)
+    async def sauce(self, ctx, url: str = None):
+        await ctx.defer()
+        await self.replyLinks(ctx, url=url, saucenao=True, yandex=True, iqdb=True, iqdb3d=True, google=True, tineye=True, tracemoe=True, ascii2d=True)
 
     @commands.command(aliases=["source_"])
     async def sauce_(self, ctx):
@@ -93,20 +94,20 @@ class Sauce(commands.Cog):
     async def ascii2d_(self, ctx):
         await self.replyLinks(ctx, ascii2d=True, no_preview=True)
 
-    async def replyLinks(self, ctx, saucenao=False, yandex=False, iqdb=False, iqdb3d=False, google=False, tineye=False, tracemoe=False, ascii2d=False, no_preview=False):
+    async def replyLinks(self, ctx, url=None, saucenao=False, yandex=False, iqdb=False, iqdb3d=False, google=False, tineye=False, tracemoe=False, ascii2d=False, no_preview=False):
         msg = await ctx.send('Searching...')
-        result = self.analyzeCommand(ctx)
+        result = ("discord link" if "/channels/" in url else "link") if url else ("history" if ctx.interaction else self.analyzeCommand(ctx))
 
         urls = []
         if result == "file":
             urls = self.getMessageAttachmentURLs(ctx.message)
 
         elif result == "link":
-            link = ctx.message.content.replace(ctx.prefix + ctx.invoked_with, "").strip()
+            link = url or ctx.message.content.replace(ctx.prefix + ctx.invoked_with, "").strip()
             urls = [link]
 
         elif result == "discord link":
-            ids = re.findall(r"\d+", ctx.message.content, re.I)
+            ids = re.findall(r"\d+", url or ctx.message.content, re.I)
 
             linked_guild = self.client.get_guild(int(ids[0]))
             linked_channel = linked_guild.get_channel(int(ids[1]))
@@ -126,7 +127,7 @@ class Sauce(commands.Cog):
                 elif 'http' in message.content:
                     for content in message.content.split():
                         if content.startswith('http') and '://' in content and '.' in content:
-                            if self.is_url_image(content) == True:
+                            if await asyncio.to_thread(self.is_url_image, content):
                                 if content not in urls:
                                     urls.append(content)
                     break
@@ -344,7 +345,7 @@ class Sauce(commands.Cog):
 
     def yandex_first_result(self, url: str):
         html = None
-        scraper = cfscrape.create_scraper(delay=10)
+        scraper = cloudscraper.create_scraper(delay=10)
         def get_basic_html():
             try:
                 html = scraper.get(url, timeout=10.0).text
@@ -442,10 +443,10 @@ class Sauce(commands.Cog):
     def tineye_first_result(self, url: str):
         # the site need to render javascript but also having bot protection
         # javascript render can use requests_html
-        # cfscrape can deal with bot protection
+        # cloudscraper can deal with bot protection
         # but can't use 2 of above libs at the same time / need to use selenium or another lightweight solution
         try:
-            scraper = cfscrape.create_scraper()
+            scraper = cloudscraper.create_scraper()
             html = scraper.get(url).text
         except:
             return "Can't get first result."
@@ -461,7 +462,7 @@ class Sauce(commands.Cog):
             return "Can't get first result."
 
     def google_first_result(self, url: str):
-        scraper = cfscrape.create_scraper(delay=10)
+        scraper = cloudscraper.create_scraper(delay=10)
         html = None
         try:
             re = requests.get(url, timeout=15.0)
@@ -496,55 +497,23 @@ class Sauce(commands.Cog):
             return "Can't get first result."
 
     async def set_fields(self, embed, u, saucenao=False, yandex=False, iqdb=False, iqdb3d=False, google=False, tineye=False, tracemoe=False, ascii2d=False, no_preview=False):
-        with concurrent.futures.ThreadPoolExecutor() as executor:
-            futures = []
-            engines = [saucenao, yandex, iqdb, iqdb3d, google, tineye, tracemoe, ascii2d]
-            excs = [self.sauceLink, self.yandexLink, self.iqdbLink, self.iqdb3dLink, self.googleLink, self.tineyeLink, self.tracemoeLink, self.ascii2dLink]
-            for i in range(0, 8):
-                if engines[i] == True:
-                    if no_preview == True:
-                        futures.append(executor.submit(excs[i], u, True))
-                    else:
-                        futures.append(executor.submit(excs[i], u))
-            results = []
-            while True:
-                if futures == []:
-                    break
-                else:
-                    for future in futures:
-                        if future._state == 'FINISHED':
-                            re = future.result()
-                            results.append(re)
-                            futures.remove(future)
-                await asyncio.sleep(1)
-            def add_field_(engine:str):
-                for result in results:
-                    if result[0] == engine.lower():
-                        embed.add_field(name=engine, value=result[1])
-                        results.remove(result)
-                    else:
-                        continue
-            engine_list = ['SauceNAO', 'Yandex', 'IQDB', 'IQDB3D', 'Google', 'TinEye', 'TraceMoe', 'ASCII2D']
-            for engine_ in engine_list:
-                add_field_(engine_)
+        enabled = [saucenao, yandex, iqdb, iqdb3d, google, tineye, tracemoe, ascii2d]
+        engines = [self.sauceLink, self.yandexLink, self.iqdbLink, self.iqdb3dLink, self.googleLink, self.tineyeLink, self.tracemoeLink, self.ascii2dLink]
+        results = await asyncio.gather(*(asyncio.to_thread(engine, u, no_preview) for engine, active in zip(engines, enabled) if active), return_exceptions=True)
+        names = {"saucenao": "SauceNAO", "yandex": "Yandex", "iqdb": "IQDB", "iqdb3d": "IQDB3D", "google": "Google", "tineye": "TinEye", "tracemoe": "TraceMoe", "ascii2d": "ASCII2D"}
+        for result in results:
+            if isinstance(result, Exception):
+                continue
+            name, text = result
+            embed.add_field(name=names.get(name, name), value=str(text)[:1024])
         return embed
 
-    def searching_embed(self, embed):
-        embed.set_footer(text=embed.footer.text[:-51]+' | Searching...')
-        return embed
 
-    async def sauce_embed(self, embed):
-        embed.set_footer(text=embed.footer.text[:-15])
-        embed = await self.set_fields(embed, embed.image.url, saucenao=True, yandex=True, iqdb=True, iqdb3d=True, google=True, tineye=True, tracemoe=True, ascii2d=True)
-        return embed
 
-    def timeout_embed(self, embed):
-        embed.set_footer(text=embed.footer.text[:-51])
-        return embed
 
     def get_proxies(self):
         url = 'https://free-proxy-list.net/'
-        response = requests.get(url)
+        response = requests.get(url, timeout=10)
         parser = fromstring(response.text)
         proxies = set()
         proxies_yes = []
@@ -567,5 +536,5 @@ class Sauce(commands.Cog):
         else:
             return None
 
-def setup(client):
-    client.add_cog(Sauce(client))
+async def setup(client):
+    await client.add_cog(Sauce(client))
