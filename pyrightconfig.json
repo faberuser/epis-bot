@@ -1,0 +1,8 @@
+{
+  "include": ["main.py", "settings.py", "cogs"],
+  "exclude": [".venv", "kingsraid-data"],
+  "venvPath": ".",
+  "venv": ".venv",
+  "pythonVersion": "3.12",
+  "typeCheckingMode": "basic"
+}

@@ -1,151 +1,202 @@
-import discord, os, logging, warnings, json
-from datetime import datetime
+import json
+import logging
+import re
 from itertools import cycle
+from pathlib import Path
+
+import discord
 from discord.ext import commands, tasks
 
-from discord_slash import SlashCommand
+import settings
 
-from config import config
+DATA = Path("data")
+COG_FOLDERS = ("bot", "kr", "tasks")
+log = logging.getLogger(__name__)
 
-TOKEN = config.DISCORD_TOKEN
-PREFIX = config.PREFIX
 
-def determine_prefix(client, message):
-    with open('./data/prefixes.json', 'r') as f:
-        prefixes = json.load(f)
+def determine_prefix(bot, message):
+    if message.guild is None:
+        return settings.PREFIX
     try:
-        if str(message.guild.id) not in prefixes:
-            return PREFIX
-        else:
-            return prefixes[str(message.guild.id)]
-    except:
-        return PREFIX
+        with (DATA / "prefixes.json").open(encoding="utf-8") as source:
+            return json.load(source).get(str(message.guild.id), settings.PREFIX)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return settings.PREFIX
 
-client = discord.Client()
-client = commands.Bot(command_prefix=determine_prefix, case_insensitive=True)
-slash = SlashCommand(client, sync_commands=True, sync_on_cog_reload=True, delete_from_unused_guilds=True)
-client.remove_command("help")
 
-logging.basicConfig(
-    handlers=[logging.FileHandler("./data/log.log", "a", "utf-8")],
-    level=logging.INFO,
-    format="%(asctime)s %(message)s",
-    datefmt="%m/%d/%Y %I:%M:%S %p",
-)
-warnings.filterwarnings("ignore")
+def extension_names():
+    for folder in COG_FOLDERS:
+        for path in sorted(Path("cogs", folder).glob("*.py")):
+            if not path.name.startswith("__"):
+                yield f"cogs.{folder}.{path.stem}"
 
-status = cycle(
-    [
-        discord.Game(name=f"League of Gacha | /help"),
-        discord.Game(name=f"lewd Jane | /help"),
-        discord.Game(name=f"King's R*pe | /help"),
-        discord.Activity(
-            type=discord.ActivityType.watching,
-            name=f"King's Raid girl's pantsu | /anime",
-        ),
-        discord.Activity(
-            type=discord.ActivityType.listening,
-            name=f"King's Raid girl's lewd voices | /voice",
-        ),
-    ]
-)
 
-cogs = ['bot', 'kr', 'tasks']
-slash = ['bot', 'kr']
+class EpisContext(commands.Context):
+    data_version: str | None = None
 
-@client.command()
-@commands.is_owner()
-async def fetch(ctx, action=None):
-    if action == 'commands' or action == 'command':
-        commands_()
-        await ctx.send('Fetched all commands.')
-    elif action == 'extensions' or action == 'extension':
-        extensions_()
-        await ctx.send('Fetched all extensions.')
-    elif action == 'file' or action == 'files':
-        client.reload_extension(f'cogs.bot.file_handle')
-        await ctx.send('Reloaded `file_handle.py`.')
-    else:
-        embed = discord.Embed(
-                title='Fetch Command (Bot owner)',
-                description='Syntax:\n`/fetch <command/extension/file>`\nFetch commands/extensions/files.',
-                colour=discord.Colour.dark_red(),
+
+class EpisBot(commands.Bot):
+    def __init__(self):
+        intents = discord.Intents.default()
+        intents.message_content = True
+        super().__init__(
+            command_prefix=determine_prefix,
+            case_insensitive=True,
+            intents=intents,
+            help_command=None,
+        )
+        self.extension_failures = []
+        self.statuses = cycle(
+            [
+                discord.Game(name="lewd jane"),
+                discord.Game(name="king's r*pe"),
+                discord.Activity(
+                    type=discord.ActivityType.watching,
+                    name="kr girl's pantsu",
+                ),
+                discord.Activity(
+                    type=discord.ActivityType.listening,
+                    name="kr girl's lewd voices",
+                ),
+            ]
+        )
+
+    async def setup_hook(self):
+        DATA.mkdir(exist_ok=True)
+        await self.load_extensions()
+        self.change_status.start()
+
+    async def get_context(
+        self, origin, /, *, cls: type[commands.Context] = EpisContext
+    ):
+        ctx = await super().get_context(origin, cls=cls)
+        if ctx.interaction is None and ctx.command and "version" in ctx.command.params:
+            arguments = ctx.view.buffer[ctx.view.index :]
+            match = re.search(
+                r"(?:^|\s)(?:--version|-V)(?:=|\s+)([\w-]+)(?=\s|$)", arguments
             )
-        await ctx.send(embed=embed)
+            if match and isinstance(ctx, EpisContext):
+                ctx.data_version = match.group(1)
+                ctx.view = type(ctx.view)(
+                    arguments[: match.start()] + " " + arguments[match.end() :]
+                )
+        if ctx.interaction is None and ctx.command and ctx.command.name == "uts":
+            arguments = ctx.view.buffer[ctx.view.index :]
+            match = re.match(r"\s*([1-4])(?=\s|$)", arguments)
+            if match:
+                # Route `ut 4 Epis` to `ut4 Epis` before parsing hero and stars.
+                command = self.get_command(f"ut{match.group(1)}")
+                if command is not None:
+                    ctx.command = command
+                    ctx.view = type(ctx.view)(arguments[match.end() :].lstrip())
+        return ctx
 
-@tasks.loop(minutes=1)
-async def change_status():
-    await client.change_presence(status=None, activity=next(status))
+    async def load_extensions(self):
+        failures = []
+        for extension in extension_names():
+            try:
+                if extension in self.extensions:
+                    await self.reload_extension(extension)
+                else:
+                    await self.load_extension(extension)
+                log.info("Loaded %s", extension)
+            except commands.ExtensionError:
+                failures.append(extension)
+                log.exception("Failed to load %s", extension)
+        self.extension_failures = failures
+        return failures
 
-@change_status.before_loop
-async def before_change_status():
-    await client.wait_until_ready()
+    @tasks.loop(minutes=1)
+    async def change_status(self):
+        await self.change_presence(activity=next(self.statuses))
 
-@client.event
-async def on_ready():
-    change_status.start()
-    try:
-        with open('./data/time', 'w') as f:
-            f.write(str(datetime.utcnow()))
-    except FileNotFoundError:
-        with open('./data/time', 'a') as f:
-            f.write(str(datetime.utcnow()))
-    commands_()
-    extensions_()
-    print("Logged in as {0} ({0.id})".format(client.user))
-    logging.info(" | Logged in as {0} ({0.id})".format(client.user))
-    print("{0} is ready".format(client.user))
-    logging.info(" | {0} is ready".format(client.user))
+    @change_status.before_loop
+    async def before_change_status(self):
+        await self.wait_until_ready()
 
-def commands_():
-    open('./data/commands', 'a').close()
-    for command in client.commands:
-        with open('./data/commands', 'a', encoding="utf-8") as f:
-            name = str(command.name)
-            f.write(name + '\n')
-            aliases = command.aliases
-            if str(aliases) == '[]': pass
-            else:
-                for aliase in aliases:
-                    f.write(aliase + '\n')
+    async def on_ready(self):
+        if self.user is not None:
+            log.info("Logged in as %s (%s)", self.user, self.user.id)
+
+    async def close(self):
+        self.change_status.cancel()
+        await super().close()
 
 
-def extensions_():
-    for folder in cogs:
-        for filename in os.listdir(f'./cogs/{folder}'):
-            if filename.endswith('.py'):
-                if filename.startswith('chat'):
-                    continue
-                if '/' in folder:
-                    folder = folder.replace('/', '.')
-                try:
-                    client.load_extension(f'cogs.{folder}.{filename[:-3]}')
-                    print(f'Loaded {filename}')
-                except:
-                    client.reload_extension(f'cogs.{folder}.{filename[:-3]}')
-                    print(f'Reloaded {filename}')
-    try:
-        if config.api == True:
-            client.load_extension(f'cogs.bot.chat-api')
-            print('Loaded chat-api.py')
+def create_bot():
+    bot = EpisBot()
+
+    @bot.command()
+    @commands.is_owner()
+    async def fetch(ctx, action=None):
+        if action in ("extension", "extensions"):
+            failures = await bot.load_extensions()
+            await ctx.send(
+                "Failed to load: " + ", ".join(failures)
+                if failures
+                else "Fetched all extensions."
+            )
+        elif action in ("file", "files"):
+            await bot.reload_extension("cogs.bot.file_handle")
+            await ctx.send("Reloaded `file_handle.py`.")
         else:
-            client.load_extension(f'cogs.bot.chat-base')
-            print('Loaded chat-base.py')
-    except Exception as e:
-        print(e)
+            await ctx.send("Usage: `fetch <extensions/file>`")
 
-def slash_commands():
-    for folder in slash:
-        for filename in os.listdir(f'./slash/{folder}'):
-            if filename.endswith('.py'):
-                if '/' in folder:
-                    folder = folder.replace('/', '.')
-                try:
-                    client.load_extension(f'slash.{folder}.{filename[:-3]}')
-                    print(f'Loaded {filename} - slash')
-                except:
-                    client.reload_extension(f'slash.{folder}.{filename[:-3]}')
-                    print(f'Reloaded {filename} - slash')
-slash_commands()
+    @bot.command(name="sync")
+    @commands.is_owner()
+    async def sync_commands(ctx, scope: str = "guild"):
+        """Publish the loaded application commands only when the owner asks."""
+        if bot.extension_failures:
+            await ctx.send(
+                "Fix failed extensions before synchronizing: "
+                + ", ".join(bot.extension_failures)
+            )
+            return
+        if scope == "guild":
+            if ctx.guild is None:
+                await ctx.send("Run this in your test server, or use `sync global`.")
+                return
+            guild = discord.Object(id=ctx.guild.id)
+            bot.tree.copy_global_to(guild=guild)
+            synced = await bot.tree.sync(guild=guild)
+        elif scope == "global":
+            synced = await bot.tree.sync()
+        else:
+            await ctx.send("Usage: `sync guild` or `sync global`.")
+            return
+        await ctx.send(f"Synced {len(synced)} application commands ({scope}).")
 
-client.run(TOKEN, reconnect=True)
+    @bot.tree.error
+    async def application_command_error(interaction, error):
+        log.error(
+            "Application command failed",
+            exc_info=(type(error), error, error.__traceback__),
+        )
+        message = "This command failed. Please try again later."
+        if interaction.response.is_done():
+            await interaction.followup.send(message, ephemeral=True)
+        else:
+            await interaction.response.send_message(message, ephemeral=True)
+
+    return bot
+
+
+def main():
+    if not settings.DISCORD_TOKEN:
+        raise RuntimeError(
+            "Set DISCORD_TOKEN in the environment or project .env file before starting the bot."
+        )
+    DATA.mkdir(exist_ok=True)
+    logging.basicConfig(
+        handlers=[
+            logging.FileHandler(DATA / "log.log", "a", "utf-8"),
+            logging.StreamHandler(),
+        ],
+        level=logging.INFO,
+        format="%(asctime)s %(levelname)s %(name)s: %(message)s",
+    )
+    create_bot().run(settings.DISCORD_TOKEN, reconnect=True, log_handler=None)
+
+
+if __name__ == "__main__":
+    main()

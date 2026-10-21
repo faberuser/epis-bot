@@ -1,1 +1,1 @@
-from . import dbl, info_embed, paginator, resource, embed_file
+"""Shared helpers, imported by each cog only when needed."""
