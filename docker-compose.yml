@@ -1,0 +1,30 @@
+services:
+  bot:
+    image: ${BOT_IMAGE:-ghcr.io/faberuser/epis-bot:latest}
+    pull_policy: always
+    restart: unless-stopped
+    init: true
+    environment:
+      DISCORD_TOKEN: ${DISCORD_TOKEN:?Set DISCORD_TOKEN in the stack environment}
+      PREFIX: '${PREFIX:-["e."]}'
+      BEARER_TOKEN: ${BEARER_TOKEN:-}
+      STEAM_PROXY_URL: ${STEAM_PROXY_URL:-}
+      GITHUB_REPO: ${GITHUB_REPO:-}
+      GITHUB_BRANCH: ${GITHUB_BRANCH:-}
+      GITHUB_TOKEN: ${GITHUB_TOKEN:-}
+      KR_DEFAULT_VERSION: ${KR_DEFAULT_VERSION:-legacy}
+      KR_LANGUAGE: ${KR_LANGUAGE:-en}
+      KRE_GUILD_ID: ${KRE_GUILD_ID:-0}
+      KRE_CATEGORIES: ${KRE_CATEGORIES:-}
+      KRE_INVITE: ${KRE_INVITE:-}
+    volumes:
+      - bot-data:/app/data
+    stop_grace_period: 30s
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  bot-data:

@@ -1,0 +1,130 @@
+name: Build and deploy bot
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Keep publication and the webhook together without overlapping deployments.
+concurrency:
+  group: epis-bot-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    name: Build, verify and publish bot
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Checkout with pinned game data
+        uses: actions/checkout@v6
+        with:
+          submodules: recursive
+          persist-credentials: false
+
+      - name: Resolve image name
+        id: image
+        shell: bash
+        run: echo "name=ghcr.io/${GITHUB_REPOSITORY,,}" >> "$GITHUB_OUTPUT"
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v4
+
+      - name: Build image
+        uses: docker/build-push-action@v7
+        with:
+          context: .
+          file: Dockerfile
+          platforms: linux/amd64
+          load: true
+          push: false
+          tags: |
+            ${{ steps.image.outputs.name }}:latest
+            ${{ steps.image.outputs.name }}:sha-${{ github.sha }}
+          labels: |
+            org.opencontainers.image.source=${{ github.server_url }}/${{ github.repository }}
+            org.opencontainers.image.revision=${{ github.sha }}
+          cache-from: type=gha,scope=epis-bot
+          cache-to: type=gha,scope=epis-bot,mode=max
+
+      - name: Smoke-test image without connecting to Discord
+        env:
+          IMAGE: ${{ steps.image.outputs.name }}
+        shell: bash
+        run: |
+          docker run --rm -i --mount type=volume,destination=/app/data \
+            --entrypoint python "${IMAGE}:latest" - <<'PY'
+          import asyncio
+          import os
+          from pathlib import Path
+          from main import create_bot
+          from cogs.utils.game_data import GameData, available_versions
+
+          assert os.getuid() != 0, "Bot should run as an unprivileged user"
+          probe = Path("data/.write-check")
+          probe.write_text("ok")
+          probe.unlink()
+          for version in available_versions():
+              assert GameData(version, "en").entities(), version
+
+          async def check():
+              async with create_bot() as bot:
+                  assert not await bot.load_extensions(), bot.extension_failures
+                  for name in ("help", "info"):
+                      assert bot.get_command(name), name
+
+          asyncio.run(check())
+          print("Container startup, data volume, extensions and game datasets verified.")
+          PY
+
+      - name: Log in to GitHub Container Registry
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        uses: docker/login-action@v4
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Push verified image
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        env:
+          IMAGE: ${{ steps.image.outputs.name }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          docker push "${IMAGE}:sha-${GITHUB_SHA}"
+          docker push "${IMAGE}:latest"
+          echo "Published ${IMAGE}:latest and ${IMAGE}:sha-${GITHUB_SHA}" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Update Portainer stack
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        env:
+          PORTAINER_WEBHOOK_URL: ${{ secrets.PORTAINER_WEBHOOK_URL }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "$PORTAINER_WEBHOOK_URL" ]]; then
+            echo "::error::Set the PORTAINER_WEBHOOK_URL repository Actions secret. The image was published, but deployment was not triggered."
+            exit 1
+          fi
+          # Do not retry a POST that may already have started a deployment.
+          # Suppress response bodies and curl errors that could expose the URL.
+          if ! status=$(curl --silent --output /dev/null --write-out '%{http_code}' \
+            --request POST --connect-timeout 15 --max-time 120 \
+            "$PORTAINER_WEBHOOK_URL"); then
+            echo "::error::Could not reach the Portainer webhook, or the request timed out. Check Portainer before retrying."
+            exit 1
+          fi
+          if [[ "$status" != 2?? ]]; then
+            echo "::error::Portainer webhook returned HTTP ${status}; expected 2xx."
+            exit 1
+          fi
+          echo "Portainer accepted the deployment request (HTTP ${status}). Check stack status in Portainer." >> "$GITHUB_STEP_SUMMARY"

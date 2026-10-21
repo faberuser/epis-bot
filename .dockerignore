@@ -1,0 +1,20 @@
+# Only include the files needed by the image. Never send local credentials,
+# runtime data, virtual environments, or Git history to the Docker builder.
+**
+!Dockerfile
+!requirements.txt
+!main.py
+!settings.py
+!cogs/
+!cogs/**
+!kingsraid-data/
+!kingsraid-data/assets/
+!kingsraid-data/assets/**
+!kingsraid-data/table-data/
+!kingsraid-data/table-data/**
+!kingsraid-data/LICENSE
+**/.git
+**/__pycache__
+**/*.pyc
+**/.env
+**/.env.*
