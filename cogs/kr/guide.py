@@ -7,6 +7,7 @@ from fuzzywuzzy import process
 import settings
 
 from ..utils.menus import ChoiceView, send_result
+from ..utils.paginator import Paginator
 from ..utils.routes import RouteCog, add_routes
 
 
@@ -60,12 +61,17 @@ class Guide(RouteCog):
         elif content.lower().startswith("search "):
             await self.browse(ctx, content[7:])
         else:
-            await self.browse(ctx, content)
+            await self.browse(ctx, content, direct=True)
 
-    async def browse(self, ctx, query=None):
+    async def browse(self, ctx, query=None, *, direct=False):
         await ctx.defer()
         channels = self.channels()
         if query:
+            exact = [
+                channel
+                for channel in channels
+                if channel.name.casefold() == query.strip().casefold()
+            ]
             labels = {
                 f"{channel.category.name} / {channel.name}": channel
                 for channel in channels
@@ -75,8 +81,18 @@ class Guide(RouteCog):
                 for match in process.extract(query, list(labels), limit=25)
                 if match[1] >= 50
             ]
+            if direct and exact:
+                channels = exact
         if not channels:
             await ctx.send("No matching guides are available.")
+            return
+
+        if direct:
+            embeds = await self.get_embed(channels[0])
+            if not embeds:
+                await ctx.send("This guide has no content yet.")
+                return
+            await Paginator(self.client).pag(ctx, embeds)
             return
 
         async def render(channel):

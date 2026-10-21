@@ -80,6 +80,15 @@ class EpisBot(commands.Bot):
                 ctx.view = type(ctx.view)(
                     arguments[: match.start()] + " " + arguments[match.end() :]
                 )
+        if ctx.interaction is None and ctx.command and ctx.command.name == "uts":
+            arguments = ctx.view.buffer[ctx.view.index :]
+            match = re.match(r"\s*([1-4])(?=\s|$)", arguments)
+            if match:
+                # Route `ut 4 Epis` to `ut4 Epis` before parsing hero and stars.
+                command = self.get_command(f"ut{match.group(1)}")
+                if command is not None:
+                    ctx.command = command
+                    ctx.view = type(ctx.view)(arguments[match.end() :].lstrip())
         return ctx
 
     async def load_extensions(self):

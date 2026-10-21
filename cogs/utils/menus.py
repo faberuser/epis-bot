@@ -103,6 +103,9 @@ class ChoiceView(OwnedView):
         self.selector = discord.ui.Select(row=0)
         self.selector.callback = self.select
         self.add_item(self.selector)
+        if len(self.choices) <= 25:
+            self.remove_item(self.previous)
+            self.remove_item(self.next)
         self.refresh()
 
     def refresh(self):
