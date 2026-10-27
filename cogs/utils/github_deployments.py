@@ -51,11 +51,10 @@ def deployment_notice(run, previous, finished_at, *, now=None):
             + warning
         )
     minutes = max(1, math.ceil(duration / 60))
-    basis = f"Previous successful deployment took about {minutes} minutes (rounded up)."
     if run["status"] != "in_progress":
         return (
             f"The deployment is queued or waiting for approval. Once started, it may "
-            f"take about {minutes} minutes.\n{warning}\n{basis}"
+            f"take about {minutes} minutes.\n{warning}"
         )
     estimate = parse_time(run["run_started_at"]) + timedelta(minutes=minutes)
     remaining = math.ceil((estimate - now).total_seconds() / 60)
@@ -63,16 +62,16 @@ def deployment_notice(run, previous, finished_at, *, now=None):
         return (
             f"The server is expected to update in approximately **{remaining} "
             f"minute{'s' if remaining != 1 else ''}** (<t:{int(estimate.timestamp())}:R>).\n"
-            f"{warning}\n{basis} This is an estimate, not a confirmed restart time."
+            f"{warning}"
         )
     return (
         "The deployment is taking longer than the previous successful run; "
-        f"the update may happen soon, but its timing is uncertain.\n{warning}\n{basis}"
+        f"the update may happen soon, but its timing is uncertain.\n{warning}"
     )
 
 
 class GitHubDeployments(AnnouncementFeed):
-    label = "GitHub server deployments"
+    label = "GitHub Server Deployments"
 
     def __init__(self, parent, *, folder, enabled, data_root):
         super().__init__(parent.client, folder, enabled=enabled, data_root=data_root)
@@ -205,13 +204,12 @@ class GitHubDeployments(AnnouncementFeed):
                 changes = await self.changes(session, base, identity)
                 previous, finished_at = await self.timing(session, runs, run)
                 messages = [
-                    f"{item['sha'][:7]} {item['commit']['message'].strip()}"
+                    f"[{item['sha'][:7]}]({item['html_url']}) {item['commit']['message'].strip()}"
                     for item in changes
                 ]
-                full_text = "\n\n".join(messages) or "No additional commit messages."
+                full_text = "\n".join(messages) or "No additional commit messages."
                 embed = discord.Embed(
-                    title="Server update · "
-                    + merge["commit"]["message"].splitlines()[0][:220],
+                    title=merge["commit"]["message"].splitlines()[0][:256],
                     url=merge["html_url"],
                     description=full_text[:3500],
                     colour=settings.EMBED_COLOR,
@@ -222,12 +220,12 @@ class GitHubDeployments(AnnouncementFeed):
                         "\n\nFull commit messages are attached in changelog.txt."
                     )
                 embed.add_field(
-                    name="Server availability",
+                    name="Server Availability",
                     value=deployment_notice(run, previous, finished_at),
                     inline=False,
                 )
                 embed.add_field(
-                    name="Deployment workflow",
+                    name="Deployment Workflow",
                     value=f"[View build and deployment]({run['html_url']})",
                     inline=False,
                 )
