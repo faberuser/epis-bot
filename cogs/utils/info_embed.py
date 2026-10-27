@@ -207,7 +207,7 @@ class Info_Embed:
             if cmd in ("Announcements", "GitHub"):
                 embed.add_field(
                     name="GitHub",
-                    value="`github on/off/status/latest`: Follow the branch configured by GITHUB_REPO and GITHUB_BRANCH. Public repositories need no token. The first check skips existing commits.",
+                    value="`github on/off/status/latest`: Follow the configured branch and receive main-branch PR deployment summaries. `latest` shows the latest development commit. The first check skips existing history.",
                     inline=False,
                 )
             if cmd in ("Announcements", "Twitter"):
