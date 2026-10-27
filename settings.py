@@ -68,6 +68,10 @@ STEAM_PROXY_URL = os.getenv("STEAM_PROXY_URL", "").strip() or None
 GITHUB_REPO = os.getenv("GITHUB_REPO", "").strip()
 GITHUB_BRANCH = os.getenv("GITHUB_BRANCH", "").strip()
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", "").strip()
+GITHUB_DEPLOY_BRANCH = os.getenv("GITHUB_DEPLOY_BRANCH", "main").strip()
+GITHUB_DEPLOY_WORKFLOW = os.getenv(
+    "GITHUB_DEPLOY_WORKFLOW", "build-and-deploy.yml"
+).strip()
 KR_DEFAULT_VERSION = os.getenv("KR_DEFAULT_VERSION", "legacy").strip() or "legacy"
 KR_LANGUAGE = os.getenv("KR_LANGUAGE", "en").strip() or "en"
 KRE_GUILD_ID = _guild_id()

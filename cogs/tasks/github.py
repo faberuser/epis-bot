@@ -11,7 +11,13 @@ from discord.ext import commands
 
 import settings
 
-from ..utils.announcement_feed import DATA_ROOT, Announcement, AnnouncementFeed
+from ..utils.announcement_feed import (
+    DATA_ROOT,
+    Announcement,
+    AnnouncementFeed,
+    write_state,
+)
+from ..utils.github_deployments import GitHubDeployments
 
 
 class GitHub(AnnouncementFeed):
@@ -43,6 +49,29 @@ class GitHub(AnnouncementFeed):
         if configured:
             self.label = f"GitHub {self.repository} ({self.branch})"
         self.github.invoke_without_command = True
+        deployment_identity = hashlib.sha256(
+            f"{settings.GITHUB_DEPLOY_BRANCH}:{settings.GITHUB_DEPLOY_WORKFLOW}".encode()
+        ).hexdigest()[:16]
+        self.deployments = GitHubDeployments(
+            self,
+            folder=f"github/{identity}/deployments/{deployment_identity}",
+            enabled=configured
+            and bool(settings.GITHUB_DEPLOY_BRANCH and settings.GITHUB_DEPLOY_WORKFLOW),
+            data_root=data_root,
+        )
+
+    async def cog_load(self):
+        await super().cog_load()
+        await self.deployments.cog_load()
+
+    async def cog_unload(self):
+        await self.deployments.cog_unload()
+        await super().cog_unload()
+
+    def reset_delivery(self, channel_id):
+        super().reset_delivery(channel_id)
+        self.deployments.seen.pop(channel_id, None)
+        write_state(self.deployments.state_path, self.deployments.seen)
 
     async def fetch_posts(self):
         headers = {

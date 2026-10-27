@@ -4,6 +4,7 @@ import asyncio
 import json
 import logging
 from dataclasses import dataclass
+from io import BytesIO
 from pathlib import Path
 
 import discord
@@ -17,6 +18,8 @@ log = logging.getLogger(__name__)
 class Announcement:
     id: str
     embed: discord.Embed
+    attachment: bytes | None = None
+    filename: str = "changelog.txt"
 
 
 def read_state(path):
@@ -95,8 +98,18 @@ class AnnouncementFeed(commands.Cog):
                     if channel is None:
                         channel = await self.client.fetch_channel(int(channel_id))
                     for post in pending:
+                        files = (
+                            [
+                                discord.File(
+                                    BytesIO(post.attachment), filename=post.filename
+                                )
+                            ]
+                            if post.attachment is not None
+                            else []
+                        )
                         await channel.send(
                             embed=post.embed,
+                            files=files,
                             allowed_mentions=discord.AllowedMentions.none(),
                         )
                         self.seen[channel_id] = (self.seen[channel_id] + [post.id])[
@@ -131,13 +144,16 @@ class AnnouncementFeed(commands.Cog):
         channel_id = str(ctx.channel.id)
         async with self.lock:
             if active and not self.channels.get(channel_id):
-                self.seen.pop(channel_id, None)
+                self.reset_delivery(channel_id)
             self.channels[channel_id] = active
             write_state(self.channel_path, self.channels)
             write_state(self.state_path, self.seen)
         await ctx.send(
             f"{self.label} announcements are {'on' if active else 'off'} for this channel."
         )
+
+    def reset_delivery(self, channel_id):
+        self.seen.pop(channel_id, None)
 
     async def latest(self, ctx):
         if not self.enabled:
