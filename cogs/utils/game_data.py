@@ -97,7 +97,7 @@ def available_versions(root=DATA_ROOT):
 class GameData:
     def __init__(self, version=None, language=None, *, root=DATA_ROOT):
         self.root = Path(root).resolve()
-        self.version = version or getattr(settings, "KR_DEFAULT_VERSION", "legacy")
+        self.version = version or getattr(settings, "KR_DEFAULT_VERSION", "sprk")
         self.language = language or getattr(settings, "KR_LANGUAGE", "en")
         if self.version not in available_versions(self.root):
             raise DataUnavailable(
