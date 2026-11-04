@@ -54,7 +54,10 @@ def _normalize(value: Any, assets: Path, key: str | None = None) -> Any:
                     "An asset path points outside the data repository."
                 )
             return str(candidate)
-        return clean_text(value)
+        text = clean_text(value)
+        # Game formulas use literal asterisks; Discord otherwise pairs them as
+        # italic/bold markup. Escape data before renderers add their own headings.
+        return text.replace("*", r"\*") if key in ("description", "effect") else text
     return value
 
 
