@@ -12,7 +12,7 @@ class Versions(commands.Cog):
         description="List available game datasets and the default version",
     )
     async def versions(self, ctx):
-        default = getattr(settings, "KR_DEFAULT_VERSION", "legacy")
+        default = getattr(settings, "KR_DEFAULT_VERSION", "sprk")
         language = selected_language(ctx)
         embed = discord.Embed(
             title="King's Raid data versions", colour=settings.EMBED_COLOR

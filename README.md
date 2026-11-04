@@ -2,7 +2,7 @@
 
 A Discord Bot made for King's Raid mobile game
 
-Game data in `kingsraid-data/` is supplied by a Git submodule, with legacy as the default and optional versions per command. Initialize it with `git submodule update --init --recursive`.
+Game data in `kingsraid-data/` is supplied by a Git submodule, with SPRK as the default and optional versions per command. Initialize it with `git submodule update --init --recursive`.
 
 ## You can get
 
@@ -41,7 +41,7 @@ All settings come from environment variables. For local development, `settings.p
 | `GITHUB_DEPLOY_BRANCH`   | Branch to watch for merged PR deployments, defaults to `main`. Blank disables deployment alerts.                                                                       |
 | `GITHUB_DEPLOY_WORKFLOW` | Deployment workflow filename, defaults to `build-and-deploy.yml`. Blank disables deployment alerts.                                                                    |
 | `GITHUB_TOKEN`           | Optional for public repositories; recommended for frequent polling. A fine-grained token needs Contents read and Actions read access.                                  |
-| `KR_DEFAULT_VERSION`     | Default game dataset, `legacy`. Override per command with the slash `version` option or prefix `--version <name>` or `-V <name>`.                                      |
+| `KR_DEFAULT_VERSION`     | Default game dataset, `sprk`. Override per command with the slash `version` option or prefix `--version <name>` or `-V <name>`.                                      |
 | `KR_LANGUAGE`            | Default game-data language, `en`, for users without a saved preference.                                                                                                |
 | `KRE_GUILD_ID`           | Guide source server ID, as an integer. Defaults to `0` (disabled).                                                                                                     |
 | `KRE_CATEGORIES`         | Comma-separated category IDs, e.g. `123456789012345678,234567890123456789`. Blank disables guides.                                                                     |

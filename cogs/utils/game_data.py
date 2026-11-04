@@ -54,7 +54,10 @@ def _normalize(value: Any, assets: Path, key: str | None = None) -> Any:
                     "An asset path points outside the data repository."
                 )
             return str(candidate)
-        return clean_text(value)
+        text = clean_text(value)
+        # Game formulas use literal asterisks; Discord otherwise pairs them as
+        # italic/bold markup. Escape data before renderers add their own headings.
+        return text.replace("*", r"\*") if key in ("description", "effect") else text
     return value
 
 
@@ -97,7 +100,7 @@ def available_versions(root=DATA_ROOT):
 class GameData:
     def __init__(self, version=None, language=None, *, root=DATA_ROOT):
         self.root = Path(root).resolve()
-        self.version = version or getattr(settings, "KR_DEFAULT_VERSION", "legacy")
+        self.version = version or getattr(settings, "KR_DEFAULT_VERSION", "sprk")
         self.language = language or getattr(settings, "KR_LANGUAGE", "en")
         if self.version not in available_versions(self.root):
             raise DataUnavailable(

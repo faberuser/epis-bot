@@ -19,7 +19,7 @@ COPY kingsraid-data/assets/ ./kingsraid-data/assets/
 COPY kingsraid-data/table-data/ ./kingsraid-data/table-data/
 COPY kingsraid-data/LICENSE ./kingsraid-data/LICENSE
 
-RUN test -d kingsraid-data/table-data/legacy
+RUN test -d kingsraid-data/table-data/sprk/en/heroes
 
 USER bot:bot
 

@@ -72,7 +72,7 @@ GITHUB_DEPLOY_BRANCH = os.getenv("GITHUB_DEPLOY_BRANCH", "main").strip()
 GITHUB_DEPLOY_WORKFLOW = os.getenv(
     "GITHUB_DEPLOY_WORKFLOW", "build-and-deploy.yml"
 ).strip()
-KR_DEFAULT_VERSION = os.getenv("KR_DEFAULT_VERSION", "legacy").strip() or "legacy"
+KR_DEFAULT_VERSION = os.getenv("KR_DEFAULT_VERSION", "sprk").strip() or "sprk"
 KR_LANGUAGE = os.getenv("KR_LANGUAGE", "en").strip() or "en"
 KRE_GUILD_ID = _guild_id()
 KRE_CATEGORIES = _categories()
