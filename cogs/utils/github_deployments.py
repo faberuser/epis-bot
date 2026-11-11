@@ -51,11 +51,6 @@ def deployment_notice(run, previous, finished_at, *, now=None):
             + warning
         )
     minutes = max(1, math.ceil(duration / 60))
-    if run["status"] != "in_progress":
-        return (
-            f"The deployment is queued or waiting for approval. Once started, it may "
-            f"take about {minutes} minutes.\n{warning}"
-        )
     estimate = parse_time(run["run_started_at"]) + timedelta(minutes=minutes)
     remaining = math.ceil((estimate - now).total_seconds() / 60)
     if remaining > 0:
