@@ -1,4 +1,4 @@
-"""Poll a configured GitHub branch for new commits."""
+"""Poll a configured GitHub repository for new commits and PR merges."""
 
 import hashlib
 import re
@@ -15,7 +15,6 @@ from ..utils.announcement_feed import (
     DATA_ROOT,
     Announcement,
     AnnouncementFeed,
-    write_state,
 )
 from ..utils.github_deployments import GitHubDeployments
 
@@ -34,12 +33,13 @@ class GitHub(AnnouncementFeed):
         ):
             raise ValueError("GITHUB_REPO must use owner/repository format")
         configured = bool(self.repository and self.branch)
-        # Changing the source gets its own baseline and subscription state.
-        identity = hashlib.sha256(
-            f"{self.repository.lower()}:{self.branch}".encode()
-        ).hexdigest()[:16]
+        identity = github_identity(self.repository, self.branch)
         super().__init__(
-            client, f"github/{identity}", enabled=configured, data_root=data_root
+            client,
+            f"github/{identity}",
+            enabled=configured,
+            data_root=data_root,
+            name="commits",
         )
         self.source_url = (
             f"https://github.com/{self.repository}/commits/{quote(self.branch, safe='')}"
@@ -48,30 +48,7 @@ class GitHub(AnnouncementFeed):
         )
         if configured:
             self.label = f"GitHub {self.repository} ({self.branch})"
-        self.github.invoke_without_command = True
-        deployment_identity = hashlib.sha256(
-            f"{settings.GITHUB_DEPLOY_BRANCH}:{settings.GITHUB_DEPLOY_WORKFLOW}".encode()
-        ).hexdigest()[:16]
-        self.deployments = GitHubDeployments(
-            self,
-            folder=f"github/{identity}/deployments/{deployment_identity}",
-            enabled=configured
-            and bool(settings.GITHUB_DEPLOY_BRANCH and settings.GITHUB_DEPLOY_WORKFLOW),
-            data_root=data_root,
-        )
-
-    async def cog_load(self):
-        await super().cog_load()
-        await self.deployments.cog_load()
-
-    async def cog_unload(self):
-        await self.deployments.cog_unload()
-        await super().cog_unload()
-
-    def reset_delivery(self, channel_id):
-        super().reset_delivery(channel_id)
-        self.deployments.seen.pop(channel_id, None)
-        write_state(self.deployments.state_path, self.deployments.seen)
+        self.commits.invoke_without_command = True
 
     async def fetch_posts(self):
         headers = {
@@ -112,39 +89,154 @@ class GitHub(AnnouncementFeed):
             )
             embed.set_author(name=(author.get("name") or "Unknown author")[:256])
             embed.set_footer(text=f"{self.repository} · {self.branch}"[:2048])
-            posts.append(Announcement(item["sha"], embed))
+            posts.append(Announcement(item["sha"], embed, data=item))
         return posts
+
+    def group_pending(self, pending):
+        # Commits found in one check normally arrived in one push; send them together.
+        if len(pending) < 2:
+            return super().group_pending(pending)
+        first, last = pending[0].data, pending[-1].data
+        parents = first.get("parents") or []
+        url = (
+            f"https://github.com/{self.repository}/compare/"
+            f"{parents[0]['sha'][:12]}...{last['sha'][:12]}"
+            if parents
+            else last["html_url"]
+        )
+        lines, changelog, authors = [], [], []
+        for post in pending:
+            item = post.data
+            commit = item["commit"]
+            message = commit["message"].strip() or "(No commit message)"
+            name = (commit.get("author") or {}).get("name") or "Unknown author"
+            if name not in authors:
+                authors.append(name)
+            summary = message.splitlines()[0][:200]
+            lines.append(
+                f"[`{item['sha'][:7]}`]({item['html_url']}) {summary} — {name}"
+            )
+            changelog.append(f"{item['sha']} ({name})\n{message}\n")
+        description = "\n".join(lines)
+        attachment = None
+        if len(description) > 3800:
+            cut = description[:3700].rsplit("\n", 1)[0]
+            description = f"{cut}\n\n... and more. Full commit messages are attached in changelog.txt."
+            attachment = "\n".join(changelog).encode("utf-8")
+        embed = discord.Embed(
+            title=f"{len(pending)} new commits",
+            url=url,
+            description=description,
+            colour=settings.EMBED_COLOR,
+            timestamp=pending[-1].embed.timestamp,
+        )
+        embed.set_author(name=", ".join(authors)[:256])
+        embed.set_footer(text=f"{self.repository} · {self.branch}"[:2048])
+        return [
+            (
+                [post.id for post in pending],
+                Announcement(last["sha"], embed, attachment=attachment),
+            )
+        ]
 
     @commands.hybrid_group(description="Manage GitHub branch commit announcements")
     @commands.guild_only()
-    async def github(self, ctx):
+    async def commits(self, ctx):
         await self.status(ctx)
 
-    @github.command(name="latest", description="Show the latest tracked branch commit")
+    @commits.command(name="latest", description="Show the latest tracked branch commit")
     @commands.guild_only()
     @commands.cooldown(1, 30, commands.BucketType.user)
-    async def github_latest(self, ctx):
+    async def commits_latest(self, ctx):
         await self.latest(ctx)
 
-    @github.command(
+    @commits.command(
         name="status", description="Show this channel's GitHub subscription"
     )
     @commands.guild_only()
-    async def github_status(self, ctx):
+    async def commits_status(self, ctx):
         await self.status(ctx)
 
-    @github.command(name="on", description="Follow new commits in this channel")
+    @commits.command(name="on", description="Follow new commits in this channel")
     @commands.guild_only()
     @commands.has_permissions(manage_channels=True)
-    async def github_on(self, ctx):
+    async def commits_on(self, ctx):
         await self.subscription(ctx, True)
 
-    @github.command(name="off", description="Stop commit announcements in this channel")
+    @commits.command(
+        name="off", description="Stop commit announcements in this channel"
+    )
     @commands.guild_only()
     @commands.has_permissions(manage_channels=True)
-    async def github_off(self, ctx):
+    async def commits_off(self, ctx):
         await self.subscription(ctx, False)
+
+
+class GitHubMerges(GitHubDeployments):
+    disabled_message = (
+        "GitHub merge tracking is disabled. Set GITHUB_REPO, GITHUB_BRANCH, "
+        "GITHUB_DEPLOY_BRANCH and GITHUB_DEPLOY_WORKFLOW first."
+    )
+
+    def __init__(self, client, *, data_root=DATA_ROOT):
+        repository = settings.GITHUB_REPO
+        identity = github_identity(repository, settings.GITHUB_BRANCH)
+        enabled = bool(
+            repository
+            and settings.GITHUB_BRANCH
+            and settings.GITHUB_DEPLOY_BRANCH
+            and settings.GITHUB_DEPLOY_WORKFLOW
+        )
+        super().__init__(
+            client,
+            repository,
+            folder=f"github/{identity}",
+            enabled=enabled,
+            data_root=data_root,
+            name="merges",
+        )
+        self.source_url = (
+            f"https://github.com/{repository}/pulls?q=is%3Apr+is%3Amerged+base%3A"
+            f"{quote(self.branch, safe='')}"
+            if enabled
+            else ""
+        )
+        if enabled:
+            self.label = f"GitHub {repository} merges ({self.branch})"
+        self.merges.invoke_without_command = True
+
+    @commands.hybrid_group(description="Manage GitHub PR merge announcements")
+    @commands.guild_only()
+    async def merges(self, ctx):
+        await self.status(ctx)
+
+    @merges.command(
+        name="status", description="Show this channel's GitHub merge subscription"
+    )
+    @commands.guild_only()
+    async def merges_status(self, ctx):
+        await self.status(ctx)
+
+    @merges.command(name="on", description="Follow new PR merges in this channel")
+    @commands.guild_only()
+    @commands.has_permissions(manage_channels=True)
+    async def merges_on(self, ctx):
+        await self.subscription(ctx, True)
+
+    @merges.command(
+        name="off", description="Stop PR merge announcements in this channel"
+    )
+    @commands.guild_only()
+    @commands.has_permissions(manage_channels=True)
+    async def merges_off(self, ctx):
+        await self.subscription(ctx, False)
+
+
+def github_identity(repository, branch):
+    # Changing the source gets its own baseline and subscription state.
+    return hashlib.sha256(f"{repository.lower()}:{branch}".encode()).hexdigest()[:16]
 
 
 async def setup(client):
     await client.add_cog(GitHub(client))
+    await client.add_cog(GitHubMerges(client))

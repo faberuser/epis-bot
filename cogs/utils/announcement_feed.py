@@ -20,6 +20,7 @@ class Announcement:
     embed: discord.Embed
     attachment: bytes | None = None
     filename: str = "changelog.txt"
+    data: object = None  # Source item, for feeds that combine pending posts.
 
 
 def read_state(path):
@@ -42,11 +43,19 @@ class AnnouncementFeed(commands.Cog):
     source_url = ""
     disabled_message = "This announcement feed is not configured."
 
-    def __init__(self, client, folder, *, enabled=True, data_root=DATA_ROOT):
+    def __init__(
+        self, client, folder, *, enabled=True, data_root=DATA_ROOT, name=None
+    ):
         self.client = client
         self.enabled = enabled
-        self.channel_path = Path(data_root) / folder / "channels.json"
-        self.state_path = Path(data_root) / folder / "delivery.json"
+        # Named feeds can share a folder: <name>.json and <name>-delivery.json.
+        channels, delivery = (
+            (f"{name}.json", f"{name}-delivery.json")
+            if name
+            else ("channels.json", "delivery.json")
+        )
+        self.channel_path = Path(data_root) / folder / channels
+        self.state_path = Path(data_root) / folder / delivery
         self.channels = read_state(self.channel_path)
         self.seen = read_state(self.state_path)
         self.lock = asyncio.Lock()
@@ -60,6 +69,10 @@ class AnnouncementFeed(commands.Cog):
 
     async def fetch_posts(self) -> list[Announcement]:
         raise NotImplementedError("Announcement feeds must implement fetch_posts")
+
+    def group_pending(self, pending):
+        """Return (source ids, message) pairs; override to combine posts."""
+        return [([post.id], post) for post in pending]
 
     @tasks.loop(minutes=5)
     async def poll(self):
@@ -97,7 +110,7 @@ class AnnouncementFeed(commands.Cog):
                     channel = self.client.get_channel(int(channel_id))
                     if channel is None:
                         channel = await self.client.fetch_channel(int(channel_id))
-                    for post in pending:
+                    for post_ids, post in self.group_pending(pending):
                         files = (
                             [
                                 discord.File(
@@ -112,7 +125,7 @@ class AnnouncementFeed(commands.Cog):
                             files=files,
                             allowed_mentions=discord.AllowedMentions.none(),
                         )
-                        self.seen[channel_id] = (self.seen[channel_id] + [post.id])[
+                        self.seen[channel_id] = (self.seen[channel_id] + post_ids)[
                             -500:
                         ]
                         write_state(self.state_path, self.seen)

@@ -68,14 +68,13 @@ def deployment_notice(run, previous, finished_at, *, now=None):
 class GitHubDeployments(AnnouncementFeed):
     label = "GitHub Server Deployments"
 
-    def __init__(self, parent, *, folder, enabled, data_root):
-        super().__init__(parent.client, folder, enabled=enabled, data_root=data_root)
-        self.repository = parent.repository
+    def __init__(self, client, repository, *, folder, enabled, data_root, name=None):
+        super().__init__(
+            client, folder, enabled=enabled, data_root=data_root, name=name
+        )
+        self.repository = repository
         self.branch = settings.GITHUB_DEPLOY_BRANCH
         self.workflow = settings.GITHUB_DEPLOY_WORKFLOW
-        self.channels = parent.channels
-        self.channel_path = parent.channel_path
-        self.lock = parent.lock
         # Authenticated polling can warn promptly without exhausting the public API limit.
         self.poll.change_interval(minutes=1 if settings.GITHUB_TOKEN else 5)
 
@@ -199,7 +198,7 @@ class GitHubDeployments(AnnouncementFeed):
                 changes = await self.changes(session, base, identity)
                 previous, finished_at = await self.timing(session, runs, run)
                 messages = [
-                    f"[{item['sha'][:7]}]({item['html_url']}) {item['commit']['message'].strip()}"
+                    f"`[{item['sha'][:7]}]({item['html_url']})` {item['commit']['message'].strip()}"
                     for item in changes
                 ]
                 full_text = "\n".join(messages) or "No additional commit messages."

@@ -69,7 +69,8 @@ class Info(commands.Cog):
                 "softcap": "Softcap",
                 "twitter": "Twitter",
                 "steam": "Steam",
-                "github": "GitHub",
+                "commits": "GitHub",
+                "merges": "GitHub",
             }
             topic = topics.get(command.name) if command else None
             if name.lower().startswith(("announce", "plug")):
@@ -157,7 +158,8 @@ class Info(commands.Cog):
                 "__**Announcements**__ (Require `Manage Channels` to subscribe)\n"
                 "`twitter <on/off/status/latest>`: Send new tweets from [@kingsraid_msg](https://x.com/kingsraid_msg).\n"
                 "`steam <on/off/status/latest>`: Send official [KING's RAID RE:VERSE](https://store.steampowered.com/app/3689540/KINGs_RAID_REVERSE/) Steam announcements.\n"
-                "`github <on/off/status/latest>`: Send new commits from the configured repository and branch."
+                "`commits <on/off/status/latest>`: Send new commits from the configured repository and branch.\n"
+                "`merges <on/off/status>`: Send PR merge summaries and deployment estimates for the deploy branch."
             ),
             colour=settings.EMBED_COLOR,
         )
