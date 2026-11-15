@@ -198,7 +198,7 @@ class GitHubDeployments(AnnouncementFeed):
                 changes = await self.changes(session, base, identity)
                 previous, finished_at = await self.timing(session, runs, run)
                 messages = [
-                    f"`[{item['sha'][:7]}]({item['html_url']})` {item['commit']['message'].strip()}"
+                    f"[`{item['sha'][:7]}`]({item['html_url']}) {item['commit']['message'].strip()}"
                     for item in changes
                 ]
                 full_text = "\n".join(messages) or "No additional commit messages."
