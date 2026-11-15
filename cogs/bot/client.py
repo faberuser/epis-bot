@@ -158,8 +158,7 @@ class Info(commands.Cog):
                 "__**Announcements**__ (Require `Manage Channels` to subscribe)\n"
                 "`twitter <on/off/status/latest>`: Send new tweets from [@kingsraid_msg](https://x.com/kingsraid_msg).\n"
                 "`steam <on/off/status/latest>`: Send official [KING's RAID RE:VERSE](https://store.steampowered.com/app/3689540/KINGs_RAID_REVERSE/) Steam announcements.\n"
-                "`commits <on/off/status/latest>`: Send new commits from the configured repository and branch.
-"
+                "`commits <on/off/status/latest>`: Send new commits from the configured repository and branch.\n"
                 "`merges <on/off/status>`: Send PR merge summaries and deployment estimates for the deploy branch."
             ),
             colour=settings.EMBED_COLOR,
