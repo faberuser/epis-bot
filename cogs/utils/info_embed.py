@@ -206,8 +206,13 @@ class Info_Embed:
             )
             if cmd in ("Announcements", "GitHub"):
                 embed.add_field(
-                    name="GitHub",
-                    value="`github on/off/status/latest`: Follow the configured branch and receive main-branch PR deployment summaries. `latest` shows the latest development commit. The first check skips existing history.",
+                    name="GitHub Commits",
+                    value="`commits on/off/status/latest`: Follow new commits on the configured branch. `latest` shows the latest commit. The first check skips existing history.",
+                    inline=False,
+                )
+                embed.add_field(
+                    name="GitHub Merges",
+                    value="`merges on/off/status`: Receive PR merge summaries and deployment estimates for the deploy branch. The first check skips existing history.",
                     inline=False,
                 )
             if cmd in ("Announcements", "Twitter"):
