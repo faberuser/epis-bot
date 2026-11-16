@@ -71,42 +71,37 @@ class GitHub(AnnouncementFeed):
             payload = await response.json()
         if not isinstance(payload, list):
             raise TypeError("GitHub returned an unexpected commit response")
-        posts = []
         # The API returns newest first. Deliver oldest first without sorting dates,
         # which can be out of order when commits are merged or rebased.
-        for item in reversed(payload):
-            commit = item["commit"]
-            message = commit["message"].strip() or "(No commit message)"
-            author = commit.get("author") or {}
-            committer = commit.get("committer") or {}
-            date = committer.get("date") or author.get("date")
-            embed = discord.Embed(
-                title=f"{item['sha'][:7]} · {message.splitlines()[0]}"[:256],
-                url=item["html_url"],
-                description=message[:3800],
-                colour=settings.EMBED_COLOR,
-                timestamp=datetime.fromisoformat(date) if date else None,
-            )
-            embed.set_author(name=(author.get("name") or "Unknown author")[:256])
-            embed.set_footer(text=f"{self.repository} · {self.branch}"[:2048])
-            posts.append(Announcement(item["sha"], embed, data=item))
-        return posts
+        return [
+            Announcement(item["sha"], *self.commit_embed([item]), data=item)
+            for item in reversed(payload)
+        ]
 
     def group_pending(self, pending):
         # Commits found in one check normally arrived in one push; send them together.
         if len(pending) < 2:
             return super().group_pending(pending)
-        first, last = pending[0].data, pending[-1].data
+        embed, attachment = self.commit_embed([post.data for post in pending])
+        return [
+            (
+                [post.id for post in pending],
+                Announcement(pending[-1].id, embed, attachment=attachment),
+            )
+        ]
+
+    def commit_embed(self, items):
+        """One embed listing the given commits, oldest first."""
+        first, last = items[0], items[-1]
         parents = first.get("parents") or []
         url = (
             f"https://github.com/{self.repository}/compare/"
             f"{parents[0]['sha'][:12]}...{last['sha'][:12]}"
-            if parents
+            if len(items) > 1 and parents
             else last["html_url"]
         )
         lines, changelog, authors = [], [], []
-        for post in pending:
-            item = post.data
+        for item in items:
             commit = item["commit"]
             message = commit["message"].strip() or "(No commit message)"
             name = (commit.get("author") or {}).get("name") or "Unknown author"
@@ -123,21 +118,20 @@ class GitHub(AnnouncementFeed):
             cut = description[:3700].rsplit("\n", 1)[0]
             description = f"{cut}\n\n... and more. Full commit messages are attached in changelog.txt."
             attachment = "\n".join(changelog).encode("utf-8")
+        commit = last["commit"]
+        date = (commit.get("committer") or {}).get("date") or (
+            commit.get("author") or {}
+        ).get("date")
         embed = discord.Embed(
-            title=f"{len(pending)} new commits",
+            title=f"{len(items)} new commit{'s' if len(items) != 1 else ''}",
             url=url,
             description=description,
             colour=settings.EMBED_COLOR,
-            timestamp=pending[-1].embed.timestamp,
+            timestamp=datetime.fromisoformat(date) if date else None,
         )
         embed.set_author(name=", ".join(authors)[:256])
         embed.set_footer(text=f"{self.repository} · {self.branch}"[:2048])
-        return [
-            (
-                [post.id for post in pending],
-                Announcement(last["sha"], embed, attachment=attachment),
-            )
-        ]
+        return embed, attachment
 
     @commands.hybrid_group(description="Manage GitHub branch commit announcements")
     @commands.guild_only()
