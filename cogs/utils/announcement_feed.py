@@ -21,6 +21,16 @@ class Announcement:
     attachment: bytes | None = None
     filename: str = "changelog.txt"
     data: object = None  # Source item, for feeds that combine pending posts.
+    image: Path | None = None  # Local file shown as the embed image.
+
+    def files(self):
+        files = []
+        if self.attachment is not None:
+            files.append(discord.File(BytesIO(self.attachment), filename=self.filename))
+        if self.image is not None:
+            files.append(discord.File(self.image, filename=self.image.name))
+            self.embed.set_image(url=f"attachment://{self.image.name}")
+        return files
 
 
 def read_state(path):
@@ -111,18 +121,9 @@ class AnnouncementFeed(commands.Cog):
                     if channel is None:
                         channel = await self.client.fetch_channel(int(channel_id))
                     for post_ids, post in self.group_pending(pending):
-                        files = (
-                            [
-                                discord.File(
-                                    BytesIO(post.attachment), filename=post.filename
-                                )
-                            ]
-                            if post.attachment is not None
-                            else []
-                        )
                         await channel.send(
                             embed=post.embed,
-                            files=files,
+                            files=post.files(),
                             allowed_mentions=discord.AllowedMentions.none(),
                         )
                         self.seen[channel_id] = (self.seen[channel_id] + post_ids)[

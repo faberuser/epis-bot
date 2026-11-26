@@ -2,6 +2,7 @@
 
 import math
 from datetime import UTC, datetime, timedelta
+from pathlib import Path
 from urllib.parse import quote
 
 import aiohttp
@@ -10,6 +11,8 @@ import discord
 import settings
 
 from .announcement_feed import Announcement, AnnouncementFeed
+
+MERGE_IMAGE = Path(__file__).resolve().parents[1] / "assets" / "merge-notice.jpg"
 
 
 def is_pr_merge(commit):
@@ -233,6 +236,7 @@ class GitHubDeployments(AnnouncementFeed):
                         attachment=full_text.encode("utf-8")
                         if len(full_text) > 3500
                         else None,
+                        image=MERGE_IMAGE,
                     )
                 )
             return posts
