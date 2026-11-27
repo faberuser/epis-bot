@@ -133,7 +133,9 @@ class GitHub(AnnouncementFeed):
         embed.set_footer(text=f"{self.repository} · {self.branch}"[:2048])
         return embed, attachment
 
-    @commands.hybrid_group(description="Manage GitHub branch commit announcements")
+    @commands.hybrid_group(
+        aliases=["commit"], description="Manage GitHub branch commit announcements"
+    )
     @commands.guild_only()
     async def commits(self, ctx):
         await self.status(ctx)
@@ -199,7 +201,9 @@ class GitHubMerges(GitHubDeployments):
             self.label = f"GitHub {repository} merges ({self.branch})"
         self.merges.invoke_without_command = True
 
-    @commands.hybrid_group(description="Manage GitHub PR merge announcements")
+    @commands.hybrid_group(
+        aliases=["merge"], description="Manage GitHub PR merge announcements"
+    )
     @commands.guild_only()
     async def merges(self, ctx):
         await self.status(ctx)
