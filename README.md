@@ -36,7 +36,7 @@ All settings come from environment variables. For local development, `settings.p
 | `PREFIX`                 | JSON list of default prefixes; defaults to `["/", "."]`. In `.env`, use `PREFIX='["/", "."]'`. Per-server overrides in `data/prefixes.json` still apply.               |
 | `BEARER_TOKEN`           | Optional X API bearer token with user lookup and timeline access for `kingsraid_msg`. Blank disables Twitter polling. Steam needs no API key.                          |
 | `STEAM_PROXY_URL`        | Optional HTTP proxy for Steam announcements, e.g. `http://192.168.1.9:1080`. Blank connects directly. Uses the HTTP mode of proxies that support both HTTP and SOCKS5. |
-| `GITHUB_REPO`            | Repository to track in `owner/repository` format, e.g. `faberuser/sprk`. Blank disables tracking.                                                                      |
+| `GITHUB_REPO`            | Repository to track in `owner/repository` format, e.g. `faberuser/sprk-forge`. Blank disables tracking.                                                                      |
 | `GITHUB_BRANCH`          | Exact branch name, e.g. `development`. Blank disables tracking.                                                                                                        |
 | `GITHUB_DEPLOY_BRANCH`   | Branch to watch for merged PR deployments, defaults to `main`. Blank disables deployment alerts.                                                                       |
 | `GITHUB_DEPLOY_WORKFLOW` | Deployment workflow filename, defaults to `build-and-deploy.yml`. Blank disables deployment alerts.                                                                    |
