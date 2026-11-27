@@ -200,22 +200,31 @@ class GitHubDeployments(AnnouncementFeed):
                 base = await self.previous_merge(session, merge, history)
                 changes = await self.changes(session, base, identity)
                 previous, finished_at = await self.timing(session, runs, run)
-                messages = [
-                    f"[`{item['sha'][:7]}`]({item['html_url']}) {item['commit']['message'].strip()}"
-                    for item in changes
-                ]
-                full_text = "\n".join(messages) or "No additional commit messages."
+                # Only each commit's first line: bodies such as git's "# Conflicts:"
+                # list would render as Markdown headings, as in the commits feed.
+                lines, changelog = [], []
+                for item in changes:
+                    message = item["commit"]["message"].strip() or "(No commit message)"
+                    summary = message.splitlines()[0][:200]
+                    lines.append(f"[`{item['sha'][:7]}`]({item['html_url']}) {summary}")
+                    changelog.append(f"{item['sha']}\n{message}\n")
+                description = "\n".join(lines) or "No additional commit messages."
+                attachment = None
+                if len(description) > 3500:
+                    attachment = "\n".join(changelog).encode("utf-8")
+                    # Cut on a line boundary so no Markdown link is left half-open.
+                    cut = description[:3500].rsplit("\n", 1)[0]
+                    description = (
+                        f"{cut}\n\n... and more. "
+                        "Full commit messages are attached in changelog.txt."
+                    )
                 embed = discord.Embed(
                     title=merge["commit"]["message"].splitlines()[0][:256],
                     url=merge["html_url"],
-                    description=full_text[:3500],
+                    description=description,
                     colour=settings.EMBED_COLOR,
                     timestamp=parse_time(merge["commit"]["committer"]["date"]),
                 )
-                if len(full_text) > 3500:
-                    embed.description = full_text[:3500] + (
-                        "\n\nFull commit messages are attached in changelog.txt."
-                    )
                 embed.add_field(
                     name="Server Availability",
                     value=deployment_notice(run, previous, finished_at),
@@ -233,9 +242,7 @@ class GitHubDeployments(AnnouncementFeed):
                     Announcement(
                         identity,
                         embed,
-                        attachment=full_text.encode("utf-8")
-                        if len(full_text) > 3500
-                        else None,
+                        attachment=attachment,
                         image=MERGE_IMAGE,
                     )
                 )
